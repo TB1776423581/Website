@@ -1,14 +1,16 @@
 ---
 import "../styles/global.css";
+import { sitePath } from "../lib/url.js";
 
-const { title = "图像传感", current = "home" } = Astro.props;
-const pageTitle = title === "图像传感" ? "图像传感" : `${title} · 图像传感`;
+const siteName = "FDWH_Sensor_Collect";
+const { title = siteName, current = "home" } = Astro.props;
+const pageTitle = title === siteName ? siteName : `${title} · ${siteName}`;
 const nav = [
-  { href: "/", id: "home", label: "动向" },
-  { href: "/companies", id: "companies", label: "公司" },
-  { href: "/applications", id: "applications", label: "应用" },
-  { href: "/technologies", id: "technologies", label: "技术" },
-  { href: "/about", id: "about", label: "关于" },
+  { href: sitePath("/"), id: "home", label: "动向" },
+  { href: sitePath("/companies"), id: "companies", label: "公司" },
+  { href: sitePath("/applications"), id: "applications", label: "应用" },
+  { href: sitePath("/technologies"), id: "technologies", label: "技术" },
+  { href: sitePath("/about"), id: "about", label: "关于" },
 ];
 ---
 <!doctype html>
@@ -18,7 +20,7 @@ const nav = [
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{pageTitle}</title>
     <meta name="description" content="国内外图像传感器公司的产品动向。每条都链到具体产品页。" />
-    <link rel="icon" href="/favicon.svg" />
+    <link rel="icon" href={sitePath("/favicon.svg")} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -29,12 +31,9 @@ const nav = [
   <body>
     <header class="site-header">
       <div class="wrap header-inner">
-        <a class="brand" href="/">
+        <a class="brand" href={sitePath("/")}>
           <span class="mark" aria-hidden="true"></span>
-          <span>
-            <span class="brand-name">图像传感</span>
-            <span class="brand-en">IMAGE SENSOR BRIEF</span>
-          </span>
+          <span class="brand-name">FDWH_Sensor_Collect</span>
         </a>
         <nav class="nav" aria-label="主导航">
           {

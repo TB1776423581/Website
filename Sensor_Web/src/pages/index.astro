@@ -1,6 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
 import FeedCard from "../components/FeedCard.astro";
+import { sitePath } from "../lib/url.js";
 import {
   applications,
   companies,
@@ -23,7 +24,7 @@ const overseas = companies.length - domestic;
       <div class="chips">
         {
           applications.map((application) => (
-            <a class="chip" href={`/applications/${application.id}`}>
+            <a class="chip" href={sitePath(`/applications/${application.id}`)}>
               {application.name}
             </a>
           ))
@@ -40,7 +41,7 @@ const overseas = companies.length - domestic;
 
   <div class="section-head">
     <h2>动向</h2>
-    <a class="meta" href="/technologies">按技术看</a>
+    <a class="meta" href={sitePath("/technologies")}>按技术看</a>
   </div>
   <div class="feed">
     {items.map((item) => <FeedCard item={item} />)}

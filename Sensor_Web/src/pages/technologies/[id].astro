@@ -2,6 +2,7 @@
 import Base from "../../layouts/Base.astro";
 import FeedCard from "../../components/FeedCard.astro";
 import { developmentsForTechnology, technologies } from "../../data/catalog.js";
+import { sitePath } from "../../lib/url.js";
 
 export function getStaticPaths() {
   return technologies.map((technology) => ({
@@ -15,7 +16,7 @@ const items = developmentsForTechnology(technology.id);
 ---
 <Base title={technology.name} current="technologies">
   <div class="page-intro">
-    <p class="kicker"><a href="/technologies">技术</a></p>
+    <p class="kicker"><a href={sitePath("/technologies")}>技术</a></p>
     <h1>{technology.name}</h1>
     <p class="lede">{technology.description}</p>
   </div>

@@ -2,6 +2,7 @@
 import Base from "../../layouts/Base.astro";
 import FeedCard from "../../components/FeedCard.astro";
 import { companies, developmentsForCompany } from "../../data/catalog.js";
+import { sitePath } from "../../lib/url.js";
 
 export function getStaticPaths() {
   return companies.map((company) => ({
@@ -15,7 +16,7 @@ const items = developmentsForCompany(company.id);
 ---
 <Base title={company.name} current="companies">
   <div class="page-intro">
-    <p class="kicker"><a href="/companies">公司</a></p>
+    <p class="kicker"><a href={sitePath("/companies")}>公司</a></p>
     <h1>{company.name}</h1>
     <p class="lede">{company.summary}</p>
   </div>

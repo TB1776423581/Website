@@ -1,6 +1,7 @@
 ---
 import Base from "../../layouts/Base.astro";
 import { developmentsForTechnology, technologies } from "../../data/catalog.js";
+import { sitePath } from "../../lib/url.js";
 ---
 <Base title="技术" current="technologies">
   <div class="page-intro">
@@ -11,7 +12,7 @@ import { developmentsForTechnology, technologies } from "../../data/catalog.js";
   <div class="directory">
     {
       technologies.map((technology) => (
-        <a class="row" href={`/technologies/${technology.id}`}>
+        <a class="row" href={sitePath(`/technologies/${technology.id}`)}>
           <div>
             <h3>{technology.name}</h3>
             <p>{technology.description}</p>

@@ -1,6 +1,7 @@
 ---
 import Base from "../../layouts/Base.astro";
 import { applications, developmentsForApplication } from "../../data/catalog.js";
+import { sitePath } from "../../lib/url.js";
 ---
 <Base title="应用" current="applications">
   <div class="page-intro">
@@ -11,7 +12,7 @@ import { applications, developmentsForApplication } from "../../data/catalog.js"
   <div class="directory">
     {
       applications.map((application) => (
-        <a class="row" href={`/applications/${application.id}`}>
+        <a class="row" href={sitePath(`/applications/${application.id}`)}>
           <div>
             <h3>{application.name}</h3>
             <p>{application.description}</p>
