@@ -1,0 +1,30 @@
+---
+import Base from "../layouts/Base.astro";
+---
+<Base title="关于" current="about">
+  <div class="page-intro">
+    <p class="kicker">关于</p>
+    <h1>这个站记录什么</h1>
+    <p class="lede">
+      图像传感简报只跟踪图像传感器。范围是国内外公司的新产品、公开路线和已经写明的技术方向。
+    </p>
+  </div>
+  <div class="plain-row">
+    <div>
+      <h3>产品链接</h3>
+      <p>每条动向的深色按钮打开该产品自己的页面、发布页或产品手册。站内的公司名只进入本公司档案，不会跳到公司主页。</p>
+    </div>
+  </div>
+  <div class="plain-row">
+    <div>
+      <h3>日期</h3>
+      <p>有发布日的，按来源写明年月日。来源只写了年份，或产品页没有日期的，页面上会标明。</p>
+    </div>
+  </div>
+  <div class="plain-row">
+    <div>
+      <h3>怎么更新</h3>
+      <p>内容集中在 Sensor_Web/src/data/catalog.js。你不定期发来的资料，核对到来源后写入这个文件再发布。代码在 GitHub 仓库 website 的 Sensor_Web 文件夹。</p>
+    </div>
+  </div>
+</Base>

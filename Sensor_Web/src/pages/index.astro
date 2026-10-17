@@ -1,0 +1,48 @@
+---
+import Base from "../layouts/Base.astro";
+import FeedCard from "../components/FeedCard.astro";
+import {
+  applications,
+  companies,
+  sortedDevelopments,
+  technologies,
+} from "../data/catalog.js";
+
+const items = sortedDevelopments();
+const domestic = companies.filter((company) => company.region === "国内").length;
+const overseas = companies.length - domestic;
+---
+<Base current="home">
+  <section class="hero">
+    <div>
+      <p class="kicker">第一版 · 图像传感器</p>
+      <h1>各地公司的最新产品页</h1>
+      <p class="lede">
+        这一版先收录已经核对到官方产品资料的图像传感器。每条下面的深色按钮打开的是该产品，不是公司主页。日期只写来源里写明的发布日。
+      </p>
+      <div class="chips">
+        {
+          applications.map((application) => (
+            <a class="chip" href={`/applications/${application.id}`}>
+              {application.name}
+            </a>
+          ))
+        }
+      </div>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>{companies.length}</b><span>家公司</span></div>
+      <div class="stat"><b>{items.length}</b><span>个产品</span></div>
+      <div class="stat"><b>{domestic}</b><span>家国内</span></div>
+      <div class="stat"><b>{overseas}</b><span>家海外</span></div>
+    </div>
+  </section>
+
+  <div class="section-head">
+    <h2>动向</h2>
+    <a class="meta" href="/technologies">按技术看</a>
+  </div>
+  <div class="feed">
+    {items.map((item) => <FeedCard item={item} />)}
+  </div>
+</Base>

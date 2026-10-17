@@ -1,0 +1,31 @@
+---
+import Base from "../../layouts/Base.astro";
+import FeedCard from "../../components/FeedCard.astro";
+import { applications, developmentsForApplication } from "../../data/catalog.js";
+
+export function getStaticPaths() {
+  return applications.map((application) => ({
+    params: { id: application.id },
+    props: { application },
+  }));
+}
+
+const { application } = Astro.props;
+const items = developmentsForApplication(application.id);
+---
+<Base title={application.name} current="applications">
+  <div class="page-intro">
+    <p class="kicker"><a href="/applications">应用</a></p>
+    <h1>{application.name}</h1>
+    <p class="lede">{application.description}</p>
+  </div>
+  {
+    items.length === 0 ? (
+      <p class="empty">这一类还没有收录产品。</p>
+    ) : (
+      <div class="feed">
+        {items.map((item) => <FeedCard item={item} />)}
+      </div>
+    )
+  }
+</Base>

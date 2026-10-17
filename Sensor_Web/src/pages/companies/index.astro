@@ -1,0 +1,25 @@
+---
+import Base from "../../layouts/Base.astro";
+import { companies, developmentsForCompany } from "../../data/catalog.js";
+---
+<Base title="公司" current="companies">
+  <div class="page-intro">
+    <p class="kicker">公司</p>
+    <h1>正在跟踪的图像传感器公司</h1>
+    <p class="lede">点进公司看它已经收录的产品。产品按钮仍然指向该产品自己的页面。</p>
+  </div>
+  <div class="directory">
+    {
+      companies.map((company) => (
+        <a class="row" href={`/companies/${company.id}`}>
+          <div>
+            <h3>{company.name}</h3>
+            <p>{company.nameEn}</p>
+          </div>
+          <p>{company.region} · {company.hq}</p>
+          <p class="count">{developmentsForCompany(company.id).length} 个产品</p>
+        </a>
+      ))
+    }
+  </div>
+</Base>

@@ -1,0 +1,31 @@
+---
+import Base from "../../layouts/Base.astro";
+import FeedCard from "../../components/FeedCard.astro";
+import { developmentsForTechnology, technologies } from "../../data/catalog.js";
+
+export function getStaticPaths() {
+  return technologies.map((technology) => ({
+    params: { id: technology.id },
+    props: { technology },
+  }));
+}
+
+const { technology } = Astro.props;
+const items = developmentsForTechnology(technology.id);
+---
+<Base title={technology.name} current="technologies">
+  <div class="page-intro">
+    <p class="kicker"><a href="/technologies">技术</a></p>
+    <h1>{technology.name}</h1>
+    <p class="lede">{technology.description}</p>
+  </div>
+  {
+    items.length === 0 ? (
+      <p class="empty">这一路线还没有收录产品。</p>
+    ) : (
+      <div class="feed">
+        {items.map((item) => <FeedCard item={item} />)}
+      </div>
+    )
+  }
+</Base>

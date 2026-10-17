@@ -1,0 +1,49 @@
+---
+import Base from "../../layouts/Base.astro";
+import FeedCard from "../../components/FeedCard.astro";
+import { companies, developmentsForCompany } from "../../data/catalog.js";
+
+export function getStaticPaths() {
+  return companies.map((company) => ({
+    params: { id: company.id },
+    props: { company },
+  }));
+}
+
+const { company } = Astro.props;
+const items = developmentsForCompany(company.id);
+---
+<Base title={company.name} current="companies">
+  <div class="page-intro">
+    <p class="kicker"><a href="/companies">公司</a></p>
+    <h1>{company.name}</h1>
+    <p class="lede">{company.summary}</p>
+  </div>
+  <div class="detail-grid">
+    <dl class="facts">
+      <div>
+        <dt>英文名</dt>
+        <dd>{company.nameEn}</dd>
+      </div>
+      <div>
+        <dt>地区</dt>
+        <dd>{company.region}</dd>
+      </div>
+      <div>
+        <dt>所在地</dt>
+        <dd>{company.hq}</dd>
+      </div>
+      {
+        company.roadmap && (
+          <div>
+            <dt>公开路线</dt>
+            <dd>{company.roadmap}</dd>
+          </div>
+        )
+      }
+    </dl>
+    <div class="feed">
+      {items.map((item) => <FeedCard item={item} />)}
+    </div>
+  </div>
+</Base>

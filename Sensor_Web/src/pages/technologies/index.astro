@@ -1,0 +1,25 @@
+---
+import Base from "../../layouts/Base.astro";
+import { developmentsForTechnology, technologies } from "../../data/catalog.js";
+---
+<Base title="技术" current="technologies">
+  <div class="page-intro">
+    <p class="kicker">技术</p>
+    <h1>按技术路线看</h1>
+    <p class="lede">标签来自产品页上写明的结构或能力，例如堆叠、全局快门、高动态范围。</p>
+  </div>
+  <div class="directory">
+    {
+      technologies.map((technology) => (
+        <a class="row" href={`/technologies/${technology.id}`}>
+          <div>
+            <h3>{technology.name}</h3>
+            <p>{technology.description}</p>
+          </div>
+          <p></p>
+          <p class="count">{developmentsForTechnology(technology.id).length} 个产品</p>
+        </a>
+      ))
+    }
+  </div>
+</Base>

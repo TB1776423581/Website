@@ -1,0 +1,49 @@
+---
+import {
+  applicationById,
+  categories,
+  companyById,
+  formatDate,
+  technologyById,
+} from "../data/catalog.js";
+
+const { item } = Astro.props;
+const company = companyById(item.companyId);
+---
+<article class="entry">
+  <div class="entry-meta">
+    <time class="date" datetime={item.date ?? undefined}>{formatDate(item.date)}</time>
+    <div>{categories[item.category]} · {company.region}</div>
+  </div>
+  <div>
+    <a class="company-link" href={`/companies/${company.id}`}>{company.name}</a>
+    <h3>{item.title}</h3>
+    <p class="summary">{item.summary}</p>
+    <div class="tags">
+      {
+        item.applications.map((id) => {
+          const application = applicationById(id);
+          return (
+            <a class="tag" href={`/applications/${application.id}`}>
+              {application.name}
+            </a>
+          );
+        })
+      }
+      {
+        item.technologies.map((id) => {
+          const technology = technologyById(id);
+          return (
+            <a class="tag" href={`/technologies/${technology.id}`}>
+              {technology.name}
+            </a>
+          );
+        })
+      }
+    </div>
+    <a class="product-link" href={item.productUrl} target="_blank" rel="noopener noreferrer">
+      <span class="product-name">{item.productName}</span>
+      <span class="product-action">{item.linkLabel}</span>
+    </a>
+  </div>
+</article>

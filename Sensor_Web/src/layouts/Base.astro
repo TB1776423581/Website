@@ -1,0 +1,59 @@
+---
+import "../styles/global.css";
+
+const { title = "图像传感", current = "home" } = Astro.props;
+const pageTitle = title === "图像传感" ? "图像传感" : `${title} · 图像传感`;
+const nav = [
+  { href: "/", id: "home", label: "动向" },
+  { href: "/companies", id: "companies", label: "公司" },
+  { href: "/applications", id: "applications", label: "应用" },
+  { href: "/technologies", id: "technologies", label: "技术" },
+  { href: "/about", id: "about", label: "关于" },
+];
+---
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content="国内外图像传感器公司的产品动向。每条都链到具体产品页。" />
+    <link rel="icon" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="/">
+          <span class="mark" aria-hidden="true"></span>
+          <span>
+            <span class="brand-name">图像传感</span>
+            <span class="brand-en">IMAGE SENSOR BRIEF</span>
+          </span>
+        </a>
+        <nav class="nav" aria-label="主导航">
+          {
+            nav.map((item) => (
+              <a href={item.href} aria-current={current === item.id ? "page" : undefined}>
+                {item.label}
+              </a>
+            ))
+          }
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="wrap">
+        <slot />
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap">资料来自各公司公开的产品页面。外链打开的是该产品，不是公司主页。</div>
+    </footer>
+  </body>
+</html>
