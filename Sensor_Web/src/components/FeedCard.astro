@@ -4,12 +4,14 @@ import {
   categories,
   companyById,
   formatDate,
+  tagTechnologies,
   technologyById,
 } from "../data/catalog.js";
 import { sitePath } from "../lib/url.js";
 
 const { item } = Astro.props;
 const company = companyById(item.companyId);
+const technologies = tagTechnologies(item);
 ---
 <article class="entry">
   <div class="entry-meta">
@@ -18,7 +20,7 @@ const company = companyById(item.companyId);
   </div>
   <div>
     <a class="company-link" href={sitePath(`/companies/${company.id}`)}>{company.name}</a>
-    <h3>{item.title}</h3>
+    <h3><a href={sitePath(`/products/${item.id}`)}>{item.title}</a></h3>
     <p class="summary">{item.summary}</p>
     <div class="tags">
       {
@@ -32,7 +34,7 @@ const company = companyById(item.companyId);
         })
       }
       {
-        item.technologies.map((id) => {
+        technologies.map((id) => {
           const technology = technologyById(id);
           return (
             <a class="tag" href={sitePath(`/technologies/${technology.id}`)}>
@@ -42,9 +44,5 @@ const company = companyById(item.companyId);
         })
       }
     </div>
-    <a class="product-link" href={item.productUrl} target="_blank" rel="noopener noreferrer">
-      <span class="product-name">{item.productName}</span>
-      <span class="product-action">{item.linkLabel}</span>
-    </a>
   </div>
 </article>

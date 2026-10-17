@@ -198,6 +198,13 @@ h1 {
   line-height: 1.3;
 }
 
+.entry h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.entry h3 a:hover { color: var(--accent); }
+
 .company-link {
   color: var(--accent);
   font-size: 0.92rem;
@@ -257,9 +264,55 @@ h1 {
 
 .row p, .plain-row p { margin: 0.25rem 0 0; color: var(--muted); }
 
-.page-intro { max-width: 40rem; margin-bottom: 1.5rem; }
+.page-intro { max-width: 42rem; margin-bottom: 1.5rem; }
 
 .page-intro h1 { font-size: clamp(2rem, 4vw, 3.2rem); }
+
+.page-intro .date {
+  display: block;
+  margin: -0.2rem 0 0.8rem;
+  font-family: var(--mono);
+  font-size: 0.82rem;
+}
+
+.page-intro .tags { margin-top: 0.9rem; }
+
+.compare h2 { margin: 0 0 0.2rem; font-size: 1.5rem; }
+
+.model {
+  padding: 1rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.model-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: baseline;
+}
+
+.model h3 { margin: 0; font-size: 1.25rem; }
+
+.model time {
+  font-family: var(--mono);
+  font-size: 0.82rem;
+  white-space: nowrap;
+}
+
+.model ul,
+.spec-list {
+  margin: 0.55rem 0 0;
+  padding-left: 1.15rem;
+}
+
+.model li,
+.spec-list li { margin: 0.28rem 0; }
+
+.spec-list { border-top: 1px solid var(--line); padding-top: 0.9rem; }
+
+.source-links { margin-top: 1.4rem; }
+
+.source-links .product-link { margin-top: 0.55rem; }
 
 .detail-grid {
   display: grid;

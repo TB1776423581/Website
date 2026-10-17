@@ -10,7 +10,6 @@ const nav = [
   { href: sitePath("/companies"), id: "companies", label: "公司" },
   { href: sitePath("/applications"), id: "applications", label: "应用" },
   { href: sitePath("/technologies"), id: "technologies", label: "技术" },
-  { href: sitePath("/about"), id: "about", label: "关于" },
 ];
 ---
 <!doctype html>
@@ -19,7 +18,7 @@ const nav = [
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{pageTitle}</title>
-    <meta name="description" content="国内外图像传感器公司的产品动向。每条都链到具体产品页。" />
+    <meta name="description" content="国内外图像传感器公司的产品动向。" />
     <link rel="icon" href={sitePath("/favicon.svg")} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -51,8 +50,5 @@ const nav = [
         <slot />
       </div>
     </main>
-    <footer class="site-footer">
-      <div class="wrap">资料来自各公司公开的产品页面。外链打开的是该产品，不是公司主页。</div>
-    </footer>
   </body>
 </html>
