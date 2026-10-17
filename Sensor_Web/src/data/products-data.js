@@ -1,3 +1,5 @@
+import { depthProducts } from "./depth-products.js";
+
 export const products = [
   {
     id: "lytia",
@@ -617,7 +619,7 @@ export const products = [
     category: "product",
     title: "VL53L：飞行时间测距传感器",
     summary:
-      "VL53L5CX 与 VL53L8CX 做分区测距，最远约 400 cm，对角视场约 65°。VL53L4CD 是近距离测距，从 1 mm 到 1200 mm，对角视场 18°。三颗都用 940 nm VCSEL。",
+      "这一页对照 VL53L1、L3、L4、L5、L7 和 L8。分区型最远大约 350 到 400 cm，VL53L1 的测距模式最远 800 cm。都用 940 nm VCSEL。",
     applications: ["depth", "consumer"],
     technologies: ["tof"],
     models: [
@@ -641,6 +643,50 @@ export const products = [
           "直接飞行时间，分区输出可选 4×4 或 8×8，测距最远 400 cm。",
           "对角视场 65°，帧率能力 60 Hz，940 nm VCSEL，接收端为 SPAD。",
           "模块尺寸 6.4 × 3.0 × 1.5 mm。寿命承诺起始日为 2021 年 7 月 1 日。",
+        ],
+      },
+      {
+        name: "VL53L7CX",
+        date: "2023",
+        url: "https://www.st.com/en/imaging-and-photonics-solutions/vl53l7cx.html",
+        linkLabel: "打开产品页",
+        points: [
+          "对角视场 90°，方形视场 60°×60°。分区可选 4×4 或 8×8，最远 350 cm，帧率能力 60 Hz。",
+          "940 nm VCSEL，Class 1。模块 6.4 × 3.0 × 1.6 mm。与 VL53L5CX 引脚和驱动兼容。",
+          "寿命承诺起始日为 2023 年 12 月 1 日。",
+        ],
+      },
+      {
+        name: "VL53L4CX",
+        date: "2023",
+        url: "https://www.st.com/en/imaging-and-photonics-solutions/vl53l4cx.html",
+        linkLabel: "打开产品页",
+        points: [
+          "单区测距，0 mm 到 6 m，短距线性到 10 mm，视场 18°。",
+          "940 nm VCSEL，Class 1。模块 4.4 × 2.4 × 1 mm。可做多目标探测。",
+          "寿命承诺起始日为 2023 年 12 月 1 日。",
+        ],
+      },
+      {
+        name: "VL53L3CX",
+        date: "2022",
+        url: "https://www.st.com/en/imaging-and-photonics-solutions/vl53l3cx.html",
+        linkLabel: "打开产品页",
+        points: [
+          "第三代 FlightSense。全视场下探测可超过 300 cm，典型全视场 25°。",
+          "940 nm VCSEL。模块 4.4 × 2.4 × 1 mm。可做多目标探测。",
+          "寿命承诺起始日为 2022 年 12 月 31 日。",
+        ],
+      },
+      {
+        name: "VL53L1",
+        date: "2021",
+        url: "https://www.st.com/en/imaging-and-photonics-solutions/vl53l1.html",
+        linkLabel: "打开产品页",
+        points: [
+          "测距模式最远 800 cm。60 Hz 时测距能力到 300 cm。",
+          "分区扫描可选 2×2、3×3、4×4。940 nm，Class 1。模块 4.9 × 2.5 × 1.56 mm。",
+          "在产型号 VL53L1CB 的寿命承诺起始日为 2021 年 12 月 31 日。",
         ],
       },
       {
@@ -981,4 +1027,5 @@ export const products = [
       },
     ],
   },
+  ...depthProducts,
 ];
