@@ -426,4 +426,67 @@ export const spectralProducts = [
       ], "lwir"),
     ],
   },
+  {
+    id: "ir-s",
+    date: "",
+    companyId: "inright",
+    category: "product",
+    title: "IR-S：英睿红外胶体量子点短波图像传感器",
+    summary:
+      "产品页把 IR-S0615A、IR-S0615B、IR-S0615C 和 IR-S1210A 列在同一张表。光谱范围都是 0.4 到 1.7 μm，材料为硫化铅胶体量子点。",
+    applications: ["spectral", "machine"],
+    technologies: ["spectral"],
+    models: [
+      page("IR-S0615A", "", "https://www.inrighttech.com/product/cqd-swir-image-sensor/", [
+        "640×512，像元 15 μm。光谱范围 0.4 到 1.7 μm。",
+        "全局快门，最高 100 fps。1550 nm 量子效率大于 55%，可操作像元率不低于 99.5%。",
+        "TEC 制冷，功耗 80 mW。满阱 5.3 Me⁻（ITR）或 4.6 Me⁻（IWR）。",
+      ], "swir"),
+      page("IR-S0615C", "", "https://www.inrighttech.com/product/cqd-swir-image-sensor/", [
+        "与 IR-S0615A 同为 640×512、15 μm，光谱范围 0.4 到 1.7 μm。",
+        "全局快门，最高 340 fps。TEC 制冷，功耗 208 mW。",
+      ], "swir"),
+      page("IR-S0615B", "", "https://www.inrighttech.com/product/cqd-swir-image-sensor/", [
+        "640×512，像元 15 μm，光谱范围 0.4 到 1.7 μm。",
+        "卷帘快门，最高 56 fps。满阱 450 ke⁻，功耗 60 mW。",
+      ], "swir"),
+      page("IR-S1210A", "", "https://www.inrighttech.com/product/cqd-swir-image-sensor/", [
+        "1280×1024，像元 10 μm。光谱范围 0.4 到 1.7 μm。",
+        "全局快门，最高 100 fps。TEC 制冷，功耗 150 mW。",
+        "满阱 4.0 Me⁻（ITR）或 2.7 Me⁻（IWR）。可操作像元率不低于 99.5%。",
+      ], "swir"),
+    ],
+  },
+  {
+    id: "zxrc-sw",
+    date: "2025-01",
+    companyId: "zxrc",
+    category: "product",
+    title: "ZXRC-SW：中芯热成胶体量子点短波探测器",
+    summary:
+      "手册把 ZXRC-SW640、ZXRC-SW1280 和 ZXRC-SW1024×1 都写成胶体量子点短波探测器。表格中的光谱响应是 800 到 1700 nm。",
+    applications: ["spectral", "machine"],
+    technologies: ["spectral"],
+    models: [
+      page("ZXRC-SW640-F15", "2025-01", "https://www.zxrckj.com/uploads/file/20250105/dfef96edb81478a40fbcca4688f462e5.pdf", [
+        "蝶形封装手册。640×512，像元 15 μm，感光面积 9.6×7.68 mm。",
+        "表格写光谱响应 800 到 1700 nm，峰值量子效率 40%。全局快门，内置 TEC。",
+        "4 路读出，全画幅帧频 120 Hz。动态范围不低于 55 dB。",
+      ], "swir", "打开产品手册"),
+      page("ZXRC-SW640-F15-YF2", "2025-01", "https://www.xinirtech.com/uploads/file/20250105/ae7e2e2a314f6b98b7a9e19f2f394c39.pdf", [
+        "陶瓷封装手册。阵列、像元和光谱范围与蝶形封装的 ZXRC-SW640-F15 相同。",
+        "外形 26×24.5×9.37 mm。窗口为蓝宝石，800 nm 前截止。",
+      ], "swir", "打开产品手册"),
+      page("ZXRC-SW1280-F15-YF", "2024-11", "https://www.zxrckj.com/uploads/file/20241223/e0caae2aad1de7ba425d7f7b5ab85691.pdf", [
+        "陶瓷封装手册。1280×1024，像元 15 μm，感光面积 19.2×15.36 mm。",
+        "表格写光谱响应 800 到 1700 nm，峰值量子效率 40%。全局快门，内置 TEC。",
+        "读出通道 4 或 8 路。手册表格写全画幅帧频 60 Hz（4 路）或 20 Hz（8 路）。",
+      ], "swir", "打开产品手册"),
+      page("ZXRC-SW1024x1-F12.5", "2024-12", "https://www.zxrckj.com/uploads/file/20241223/bab28322b53efdff0823014b04b71e85.pdf", [
+        "陶瓷封装线阵手册。1024×1，像元 12.5×270 μm。",
+        "表格写光谱响应 800 到 1700 nm，峰值量子效率 40%。快照曝光，边积分边读出。",
+        "4 路模拟输出，行频最高 40 kHz。内置 TEC。",
+      ], "swir", "打开产品手册"),
+    ],
+  },
 ];

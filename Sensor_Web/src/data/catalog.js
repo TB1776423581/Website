@@ -373,6 +373,22 @@ export const companies = [
     hq: "",
     summary: "做制冷中波和长波红外探测器。产品页列出 PELICAN-D 640 与 PELICAN-D LW。",
   },
+  {
+    id: "inright",
+    name: "英睿红外",
+    nameEn: "InRight Tech",
+    region: "国内",
+    hq: "武汉",
+    summary: "做硫化铅胶体量子点短波红外图像传感器。产品页列出 0.4 到 1.7 μm 的面阵型号。",
+  },
+  {
+    id: "zxrc",
+    name: "中芯热成",
+    nameEn: "ZXRC",
+    region: "国内",
+    hq: "北京",
+    summary: "做胶体量子点短波红外探测器。手册列出 640、1280 面阵和 1024 线阵。",
+  },
 ];
 
 export { products };
