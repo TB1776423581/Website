@@ -230,94 +230,6 @@ const trendBranches = Object.entries(categories)
       <summary>FDWH_Sensor_Collect</summary>
       <div class="tree-children">
         <details>
-          <summary>动向</summary>
-          <div class="tree-children">
-            {
-              trendBranches.map((branch) => (
-                <details>
-                  <summary>{branch.label}</summary>
-                  <div class="tree-children">
-                    {branch.years.map((year) => (
-                      <details>
-                        <summary>{year.label}</summary>
-                        <ul class="leaves">
-                          {year.models.map((item) => (
-                            <li>
-                              <a href={hrefFor(item.product, item.model)}>{item.model.name}</a>
-                            </li>
-                          ))}
-                        </ul>
-                      </details>
-                    ))}
-                  </div>
-                </details>
-              ))
-            }
-          </div>
-        </details>
-
-        <details>
-          <summary>应用</summary>
-          <div class="tree-children">
-            {
-              applicationBranches.map((branch) => (
-                <details>
-                  <summary>{branch.label}</summary>
-                  <div class="tree-children">
-                    {branch.companies.map((company) => (
-                      <details>
-                        <summary>{company.name}</summary>
-                        <ul class="leaves">
-                          {company.models.map((item) => (
-                            <li>
-                              <a href={hrefFor(item.product, item.model)}>{item.model.name}</a>
-                            </li>
-                          ))}
-                        </ul>
-                      </details>
-                    ))}
-                  </div>
-                </details>
-              ))
-            }
-          </div>
-        </details>
-
-        <details>
-          <summary>公司</summary>
-          <div class="tree-children">
-            {
-              regionBranches.map((region) => (
-                <details>
-                  <summary>{region.label}</summary>
-                  <div class="tree-children">
-                    {region.companies.map((item) => (
-                      <details>
-                        <summary>{item.company.name}</summary>
-                        <div class="tree-children">
-                          {item.series.map((product) => (
-                            <details>
-                              <summary>{product.title}</summary>
-                              <ul class="leaves">
-                                {product.models.map((model) => (
-                                  <li>
-                                    <a href={hrefFor(product, model)}>{model.name}</a>
-                                  </li>
-                                ))}
-                              </ul>
-                            </details>
-                          ))}
-                        </div>
-                      </details>
-                    ))}
-                  </div>
-                </details>
-              ))
-            }
-          </div>
-        </details>
-
-        <details>
           <summary>技术</summary>
           <div class="tree-children">
             {
@@ -439,6 +351,94 @@ const trendBranches = Object.entries(categories)
                   </details>
                 ),
               )
+            }
+          </div>
+        </details>
+
+        <details>
+          <summary>应用</summary>
+          <div class="tree-children">
+            {
+              applicationBranches.map((branch) => (
+                <details>
+                  <summary>{branch.label}</summary>
+                  <div class="tree-children">
+                    {branch.companies.map((company) => (
+                      <details>
+                        <summary>{company.name}</summary>
+                        <ul class="leaves">
+                          {company.models.map((item) => (
+                            <li>
+                              <a href={hrefFor(item.product, item.model)}>{item.model.name}</a>
+                            </li>
+                          ))}
+                        </ul>
+                      </details>
+                    ))}
+                  </div>
+                </details>
+              ))
+            }
+          </div>
+        </details>
+
+        <details>
+          <summary>公司</summary>
+          <div class="tree-children">
+            {
+              regionBranches.map((region) => (
+                <details>
+                  <summary>{region.label}</summary>
+                  <div class="tree-children">
+                    {region.companies.map((item) => (
+                      <details>
+                        <summary>{item.company.name}</summary>
+                        <div class="tree-children">
+                          {item.series.map((product) => (
+                            <details>
+                              <summary>{product.title}</summary>
+                              <ul class="leaves">
+                                {product.models.map((model) => (
+                                  <li>
+                                    <a href={hrefFor(product, model)}>{model.name}</a>
+                                  </li>
+                                ))}
+                              </ul>
+                            </details>
+                          ))}
+                        </div>
+                      </details>
+                    ))}
+                  </div>
+                </details>
+              ))
+            }
+          </div>
+        </details>
+
+        <details>
+          <summary>动向</summary>
+          <div class="tree-children">
+            {
+              trendBranches.map((branch) => (
+                <details>
+                  <summary>{branch.label}</summary>
+                  <div class="tree-children">
+                    {branch.years.map((year) => (
+                      <details>
+                        <summary>{year.label}</summary>
+                        <ul class="leaves">
+                          {year.models.map((item) => (
+                            <li>
+                              <a href={hrefFor(item.product, item.model)}>{item.model.name}</a>
+                            </li>
+                          ))}
+                        </ul>
+                      </details>
+                    ))}
+                  </div>
+                </details>
+              ))
             }
           </div>
         </details>
