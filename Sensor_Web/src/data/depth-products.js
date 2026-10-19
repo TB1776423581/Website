@@ -536,7 +536,7 @@ export const depthProducts = [
     summary:
       "TFmini-S、TFmini Plus 和 TF-Luna 都是单点 ToF 测距模组，不输出深度图。前两款量程 0.1 到 12 m；TF-Luna 为 0.2 到 8 m。",
     applications: ["machine"],
-    technologies: ["tof"],
+    technologies: [],
     models: [
       page("TFmini Plus", "", "https://ai.benewake.com/en/products/tfmini-plus/", [
         "量程 0.1 到 12 m。0.1 到 5 m 精度 ±5 cm，5 到 12 m 为 ±1%。",
@@ -564,7 +564,7 @@ export const depthProducts = [
     summary:
       "TF03 产品页同时列出 TF03-100 与 TF03-180，都是单点测距。100 款在 90% 反射率下 100 m，180 款为 180 m。",
     applications: ["machine"],
-    technologies: ["tof"],
+    technologies: [],
     models: [
       page("TF03-180", "", "https://ai.benewake.com/en/products/tf03/", [
         "90% 反射率下 180 m，10% 反射率下 70 m。盲区不大于 0.1 m。",
@@ -586,7 +586,7 @@ export const depthProducts = [
     summary:
       "TFA170-L、TFA300、TFA300-L、TFA1200-L 和 TFA1500-L 都是单点长距测距，不输出深度图。",
     applications: ["machine"],
-    technologies: ["tof"],
+    technologies: [],
     models: [
       page("TFA170-L", "", "https://ai.benewake.com/en/products/tfa170-l/", [
         "单点测距。量程 0.1 到 170 m。10 m 以内精度 ±10 cm，10 m 以上 1%。",
@@ -687,7 +687,7 @@ export const depthProducts = [
     summary:
       "北阳产品列表把 UST 写成小型二维扫描测距仪，多款重量 130 g，扫描角常见 270°，用于机器人和无人机。",
     applications: ["machine"],
-    technologies: ["tof"],
+    technologies: [],
     models: [
       page("UST-30LX", "", hokuyoList, ["户外小型型号。列表写明重量仅 130 g，用于小型机器人或无人机。"]),
       page("UST-30LC", "", hokuyoList, ["与 UST-30LCN 同条列出，为区域配置与距离输出型扫描测距仪。"]),
@@ -715,7 +715,7 @@ export const depthProducts = [
     title: "UTM：北阳 30 m 扫描测距仪",
     summary: "UTM-30LN、UTM-30LX 和 UTM-30LX-EW 都是 30 m、270° 的二维扫描测距仪，可在 100,000 lx 下工作。",
     applications: ["machine"],
-    technologies: ["tof"],
+    technologies: [],
     models: [
       page("UTM-30LN", "", hokuyoList, ["30 m、270°。100,000 lx，IP64。扫描时间 25 ms。"]),
       page("UTM-30LX", "", hokuyoList, ["30 m、270°。100,000 lx，IP64。扫描时间 25 ms，用于室外服务机器人。"]),
@@ -730,7 +730,7 @@ export const depthProducts = [
     title: "UXM：北阳多回波扫描测距仪",
     summary: "UXM 系列是二维多回波扫描测距仪。产品列表写明防护 IP67，面向雨、雪、雾等环境。",
     applications: ["machine"],
-    technologies: ["tof"],
+    technologies: [],
     models: [
       page("UXM-30LX-EW", "", hokuyoList, ["可稳定探测黑色物体。多回波，IP67。"]),
       page("UXM-30LN-PW", "", hokuyoList, ["多回波，IP67，列表写明可用于雨、雪、雾。"]),
@@ -748,7 +748,7 @@ export const depthProducts = [
     title: "UGM-50：北阳 120 m 户外扫描测距仪",
     summary: "UGM-50 是二维扫描测距仪。距离输出型和区域型都写明最远 120 m、扫描角 190°，金属外壳，IP67。",
     applications: ["machine"],
-    technologies: ["tof"],
+    technologies: [],
     models: [
       page("UGM-50LXP", "", hokuyoList, ["距离输出型。最远 120 m，扫描角 190°。金属外壳抗单次 50 G，IP67。"]),
       page("UGM-50LXN", "", hokuyoList, ["与 UGM-50LXP 同条列出的距离输出型，最远 120 m，190°，IP67。"]),
@@ -764,7 +764,7 @@ export const depthProducts = [
     title: "UAM：北阳安全激光扫描仪",
     summary: "UAM 是防护距离 5 m、扫描角 270° 的二维安全激光扫描仪，用于 AGV 和垂直防护。",
     applications: ["machine"],
-    technologies: ["tof"],
+    technologies: [],
     models: [
       page("UAM-05LECA-T301", "", hokuyoList, ["EtherCAT 型。防护区 5 m，扫描角 270°。"]),
       page("UAM-05LP-T301", "", hokuyoList, [
@@ -807,7 +807,7 @@ export const depthProducts = [
     summary:
       "URM-40LC-EWT 是户外二维扫描测距仪。PBS-03JN 用红外 LED 做障碍探测，扫描角 180°。",
     applications: ["machine"],
-    technologies: ["tof"],
+    technologies: [],
     models: [
       page("URM-40LC-EWT", "", hokuyoList, ["户外二维扫描测距仪。量程 40 m，多回波，IP67。"]),
       page("PBS-03JN", "", hokuyoList, ["红外 LED 障碍探测。扫描角 180°。"]),
@@ -822,7 +822,7 @@ export const depthProducts = [
     summary:
       "产品手册列出二维激光雷达 picoScan120，以及 picoScan150 的 Core、Prime 和 Pro。最远工作距离分别到 30 m、25 m、60 m 和 120 m。",
     applications: ["machine"],
-    technologies: ["tof"],
+    technologies: [],
     models: [
       page(
         "picoScan120",
@@ -1082,7 +1082,7 @@ export const depthProducts = [
     summary:
       "手册里的 C1、N301、N10、M10 和 HS1 是单线或二维扫描，不形成三维点云。",
     applications: ["machine"],
-    technologies: ["tof"],
+    technologies: [],
     models: [
       page("C1", "2024-10", ls, [
         "单线机械式。70% 下 120 m，10% 下 100 m。精度 ±3 cm，1σ 为 ±1 cm。水平 360°。",

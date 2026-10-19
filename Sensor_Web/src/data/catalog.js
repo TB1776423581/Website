@@ -323,7 +323,7 @@ export const companies = [
     nameEn: "Cepton",
     region: "海外",
     hq: "圣何塞",
-    summary: "做车载激光雷达。Vista 产品页列出 Vista-X90 和 Vista-X120 Plus，地址在圣何塞。",
+    summary: "做车载激光雷达。Vista 产品页列出 Vista-X90 和 Vista-X120 Plus。小糸制作所 2025 年 1 月 7 日完成收购，Cepton 成为其子公司，并从纳斯达克退市。",
   },
   {
     id: "hamamatsu",

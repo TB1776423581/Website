@@ -139,7 +139,7 @@ export const products = [
     category: "product",
     title: "OV50：5000 万像素手机图像传感器",
     summary:
-      "OV50A、OV50E、OV50H 都是约 5000 万像素的堆叠式手机传感器，四相位对焦覆盖整个阵列，并支持 HDR。OV50H 光学尺寸更大，为 1/1.3 英寸、约 1.2 μm；OV50E 与 OV50A 约为 1.0 μm。",
+      "OV50A、OV50E、OV50H、OV50K40 都是约 5000 万像素的手机传感器。OV50K40 用 TheiaCel 做单次曝光 HDR。OV50H 与 OV50K40 的光学尺寸是 1/1.3 英寸。",
     applications: ["mobile"],
     technologies: ["stacked", "hdr", "lowlight"],
     models: [
@@ -176,6 +176,18 @@ export const products = [
           "5000 万像素、1.0 μm；页面标题光学尺寸为 1/1.55 英寸，正文写 1/1.5 英寸。规格栏像素为 1.008 μm。",
           "四相位对焦覆盖 100%，PureCel Plus-S 堆叠，2 次或 3 次曝光的交错 HDR。",
           "50MP 或 8K 为 30 fps，1250 万像素为 60 fps。页面状态为 End-of-Life。",
+        ],
+      },
+      {
+        name: "OV50K40",
+        date: "2024-03",
+        url: "https://www.ovt.com/products/ov50k40/",
+        linkLabel: "打开产品页",
+        points: [
+          "产品手册版本日期为 2024 年 3 月。页面写明已进入量产。",
+          "8192×6144，像素 1.2 μm，光学尺寸 1/1.3 英寸。卷帘快门。",
+          "首款采用 TheiaCel 的手机传感器，用 LOFIC 做单次曝光 HDR。",
+          "四像素合并后 1250 万像素最高 120 fps，HDR 时 60 fps。全分辨率 30 fps。",
         ],
       },
     ],
@@ -1060,6 +1072,74 @@ export const products = [
           "规格表标为 New。105×1560，约 16.4 万 SPAD 像素，垂直有效 dToF 像素 520。",
           "像元 3×3 SPAD。对角 15.8 mm（1 英寸），单元 10.08 μm。线模式。",
           "940 nm 下光子探测效率 37%，死时间约 6 ns。接口 MIPI CSI-2。",
+        ],
+      },
+    ],
+  },
+  {
+    id: "pregius-s",
+    date: "2020",
+    companyId: "sony",
+    category: "product",
+    title: "Pregius S：索尼 2.74 μm 全局快门图像传感器",
+    summary:
+      "IMX530 与 IMX540 都是 Pregius S 全局快门传感器，像素 2.74 μm，约 2455 万有效像素，光学尺寸 1.2 英寸，用于工业相机。",
+    applications: ["machine"],
+    technologies: ["global", "stacked"],
+    models: [
+      {
+        name: "IMX540",
+        date: "2020",
+        url: "https://www.sony-semicon.com/files/62/flyer_industry/IMX540-AAQJ_Flyer.pdf",
+        linkLabel: "打开产品手册",
+        points: [
+          "产品手册版权年为 2020、2021。对角 19.3 mm（1.2 英寸），约 2455 万有效像素。",
+          "像素 2.74 μm。全局快门。建议记录像素 5320×4600。",
+          "全像素 8 bit 最高 35 fps。用于 FA 和 ITS 相机。",
+        ],
+      },
+      {
+        name: "IMX530",
+        date: "",
+        url: "https://developer.is.sony-semicon.com/imx530",
+        linkLabel: "打开产品页",
+        points: [
+          "索尼开发者页面写明全局快门、24.5 MP、1.2 英寸、2.7 系列。",
+          "像素 2.74 μm。接口 SLVS 或 SLVS-EC。全分辨率最高 106 fps。",
+        ],
+      },
+    ],
+  },
+  {
+    id: "imx636",
+    date: "2021-09-09",
+    companyId: "sony",
+    category: "product",
+    title: "IMX636 / IMX637：索尼事件视觉传感器",
+    summary:
+      "2021 年 9 月 9 日，索尼发布与 Prophesee 合作的堆叠式事件视觉传感器。像素只在亮度变化时输出事件。IMX636 约 92 万像素，IMX637 约 33 万像素。",
+    applications: ["machine"],
+    technologies: ["event", "stacked"],
+    models: [
+      {
+        name: "IMX636",
+        date: "2021-09-09",
+        url: "https://www.sony-semicon.com/en/products/is/industry/evs.html",
+        linkLabel: "打开产品页",
+        points: [
+          "2021 年 9 月 9 日发布，样品计划 2021 年 10 月出货。",
+          "1280×720，约 92 万有效像素，像素 4.86 μm，光学尺寸 1/2.5 英寸。",
+          "1000 lx 下延迟小于 100 μs。动态范围 86 dB 以上。最高事件率 1.06 Geps。",
+        ],
+      },
+      {
+        name: "IMX637",
+        date: "2021-09-09",
+        url: "https://www.sony-semicon.com/en/products/is/industry/evs.html",
+        linkLabel: "打开产品页",
+        points: [
+          "与 IMX636 同日发布。640×512，约 33 万有效像素，像素 4.86 μm。",
+          "光学尺寸 1/4.5 英寸。动态范围、延迟和事件率与 IMX636 相同。",
         ],
       },
     ],
