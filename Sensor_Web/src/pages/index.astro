@@ -32,6 +32,37 @@ function yearOf(date) {
 
 const byName = (a, b) => a.localeCompare(b, "zh");
 
+function companyOf(product) {
+  return companies.find((company) => company.id === product.companyId)?.name || "未标明公司";
+}
+
+function byCompany(items) {
+  const groups = new Map();
+  for (const item of items) {
+    const name = companyOf(item.product);
+    if (!groups.has(name)) groups.set(name, []);
+    groups.get(name).push(item);
+  }
+  return [...groups.entries()]
+    .sort((a, b) => byName(a[0], b[0]))
+    .map(([name, models]) => ({
+      name,
+      models: models.sort((a, b) => byName(a.model.name, b.model.name)),
+    }));
+}
+
+function seriesByCompany(series) {
+  const groups = new Map();
+  for (const product of series) {
+    const name = companyOf(product);
+    if (!groups.has(name)) groups.set(name, []);
+    groups.get(name).push(product);
+  }
+  return [...groups.entries()]
+    .sort((a, b) => byName(a[0], b[0]))
+    .map(([name, grouped]) => ({ name, series: grouped }));
+}
+
 const applicationLabels = {
   depth: "3D测量",
   machine: "机器视觉",
@@ -96,9 +127,9 @@ const spectralModels = products
 const spectralBands = spectralOrder
   .map((band) => ({
     ...band,
-    models: spectralModels.filter((item) => item.band === band.id),
+    companies: byCompany(spectralModels.filter((item) => item.band === band.id)),
   }))
-  .filter((band) => band.models.length);
+  .filter((band) => band.companies.length);
 
 const applicationBranches = applicationOrder
   .map((id) => applications.find((item) => item.id === id))
@@ -111,13 +142,14 @@ const applicationBranches = applicationOrder
       id: application.id,
       label: applicationLabels[application.id] || application.name,
       series,
+      companies: seriesByCompany(series),
       subtypes: depthSubtypes
         .map((subtype) => ({
           ...subtype,
-          models: depthModels.filter((item) => item.kind === subtype.id),
+          companies: byCompany(depthModels.filter((item) => item.kind === subtype.id)),
         }))
-        .filter((subtype) => subtype.models.length),
-      rest: depthModels.filter((item) => !item.kind),
+        .filter((subtype) => subtype.companies.length),
+      rest: byCompany(depthModels.filter((item) => !item.kind)),
       spectralBands,
     };
   })
@@ -222,25 +254,39 @@ const trendBranches = Object.entries(categories)
                       {branch.subtypes.map((subtype) => (
                         <details>
                           <summary>{subtype.name}</summary>
-                          <ul class="leaves">
-                            {subtype.models.map((item) => (
-                              <li>
-                                <a href={hrefFor(item.product, item.model)}>{item.model.name}</a>
-                              </li>
+                          <div class="tree-children">
+                            {subtype.companies.map((company) => (
+                              <details>
+                                <summary>{company.name}</summary>
+                                <ul class="leaves">
+                                  {company.models.map((item) => (
+                                    <li>
+                                      <a href={hrefFor(item.product, item.model)}>{item.model.name}</a>
+                                    </li>
+                                  ))}
+                                </ul>
+                              </details>
                             ))}
-                          </ul>
+                          </div>
                         </details>
                       ))}
                       {branch.rest.length > 0 && (
                         <details>
                           <summary>其他</summary>
-                          <ul class="leaves">
-                            {branch.rest.map((item) => (
-                              <li>
-                                <a href={hrefFor(item.product, item.model)}>{item.model.name}</a>
-                              </li>
+                          <div class="tree-children">
+                            {branch.rest.map((company) => (
+                              <details>
+                                <summary>{company.name}</summary>
+                                <ul class="leaves">
+                                  {company.models.map((item) => (
+                                    <li>
+                                      <a href={hrefFor(item.product, item.model)}>{item.model.name}</a>
+                                    </li>
+                                  ))}
+                                </ul>
+                              </details>
                             ))}
-                          </ul>
+                          </div>
                         </details>
                       )}
                     </div>
@@ -252,13 +298,20 @@ const trendBranches = Object.entries(categories)
                       {branch.spectralBands.map((band) => (
                         <details>
                           <summary>{band.name}</summary>
-                          <ul class="leaves">
-                            {band.models.map((item) => (
-                              <li>
-                                <a href={hrefFor(item.product, item.model)}>{item.model.name}</a>
-                              </li>
+                          <div class="tree-children">
+                            {band.companies.map((company) => (
+                              <details>
+                                <summary>{company.name}</summary>
+                                <ul class="leaves">
+                                  {company.models.map((item) => (
+                                    <li>
+                                      <a href={hrefFor(item.product, item.model)}>{item.model.name}</a>
+                                    </li>
+                                  ))}
+                                </ul>
+                              </details>
                             ))}
-                          </ul>
+                          </div>
                         </details>
                       ))}
                     </div>
@@ -267,16 +320,23 @@ const trendBranches = Object.entries(categories)
                   <details>
                     <summary>{branch.label}</summary>
                     <div class="tree-children">
-                      {branch.series.map((product) => (
+                      {branch.companies.map((company) => (
                         <details>
-                          <summary>{product.title}</summary>
-                          <ul class="leaves">
-                            {product.models.map((model) => (
-                              <li>
-                                <a href={hrefFor(product, model)}>{model.name}</a>
-                              </li>
+                          <summary>{company.name}</summary>
+                          <div class="tree-children">
+                            {company.series.map((product) => (
+                              <details>
+                                <summary>{product.title}</summary>
+                                <ul class="leaves">
+                                  {product.models.map((model) => (
+                                    <li>
+                                      <a href={hrefFor(product, model)}>{model.name}</a>
+                                    </li>
+                                  ))}
+                                </ul>
+                              </details>
                             ))}
-                          </ul>
+                          </div>
                         </details>
                       ))}
                     </div>
