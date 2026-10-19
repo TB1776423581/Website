@@ -56,11 +56,16 @@ function seriesByCompany(series) {
   for (const product of series) {
     const name = companyOf(product);
     if (!groups.has(name)) groups.set(name, []);
-    groups.get(name).push(product);
+    groups.get(name).push(
+      ...product.models.map((model) => ({ product, model })),
+    );
   }
   return [...groups.entries()]
     .sort((a, b) => byName(a[0], b[0]))
-    .map(([name, grouped]) => ({ name, series: grouped }));
+    .map(([name, models]) => ({
+      name,
+      models: models.sort((a, b) => byName(a.model.name, b.model.name)),
+    }));
 }
 
 const applicationLabels = {
@@ -323,20 +328,13 @@ const trendBranches = Object.entries(categories)
                       {branch.companies.map((company) => (
                         <details>
                           <summary>{company.name}</summary>
-                          <div class="tree-children">
-                            {company.series.map((product) => (
-                              <details>
-                                <summary>{product.title}</summary>
-                                <ul class="leaves">
-                                  {product.models.map((model) => (
-                                    <li>
-                                      <a href={hrefFor(product, model)}>{model.name}</a>
-                                    </li>
-                                  ))}
-                                </ul>
-                              </details>
+                          <ul class="leaves">
+                            {company.models.map((item) => (
+                              <li>
+                                <a href={hrefFor(item.product, item.model)}>{item.model.name}</a>
+                              </li>
                             ))}
-                          </div>
+                          </ul>
                         </details>
                       ))}
                     </div>
