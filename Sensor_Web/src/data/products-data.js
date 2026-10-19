@@ -1144,6 +1144,132 @@ export const products = [
       },
     ],
   },
+  {
+    id: "sony-auto",
+    date: "2018-12-18",
+    companyId: "sony",
+    category: "product",
+    title: "索尼车载图像传感器",
+    summary:
+      "车载产品阵容页列出 IMX490、IMX728、IMX623 和 IMX390。页面写明这些传感器用于 HDR 成像和 LED 频闪抑制。",
+    applications: ["auto"],
+    technologies: ["hdr"],
+    models: [
+      {
+        name: "IMX490",
+        date: "2018-12-18",
+        url: "https://www.sony-semicon.com/files/62/pdf/p-15_IMX490.pdf",
+        linkLabel: "打开产品手册",
+        points: [
+          "手册写明 2018 年 12 月 18 日公布。背照式堆叠 CMOS。",
+          "建议记录像素 2896×1876，约 540 万像素。对角 10.36 mm（1/1.55 英寸），像素 3.0 μm。",
+          "按 EMVA 1288，动态范围 120 dB；优先动态范围时为 140 dB。并抑制 LED 频闪。",
+          "全像素 10 bit 40 fps，12 bit 30 fps。接口 MIPI CSI-2。AEC-Q100 Grade 2。",
+        ],
+      },
+      {
+        name: "IMX728",
+        date: "",
+        url: "https://www.sony-semicon.com/en/products/is/automotive/automotive.html",
+        linkLabel: "打开产品页",
+        points: [
+          "车载产品阵容页标为 New。839 万像素，光学尺寸 1/1.72 英寸，像素 2.1 μm。",
+          "全像素 10 bit 40 fps。接口 MIPI CSI-2，彩色滤镜 RGB。",
+        ],
+      },
+      {
+        name: "IMX623",
+        date: "",
+        url: "https://www.sony-semicon.com/en/products/is/automotive/automotive.html",
+        linkLabel: "打开产品页",
+        points: [
+          "车载产品阵容页标为 New。300 万像素，光学尺寸 1/2.42 英寸，像素 3.0 μm。",
+          "全像素 10 bit 60 fps，12 bit 30 fps。接口 MIPI CSI-2，彩色滤镜 RGB。",
+        ],
+      },
+      {
+        name: "IMX390",
+        date: "",
+        url: "https://www.sony-semicon.com/en/products/is/automotive/automotive.html",
+        linkLabel: "打开产品页",
+        points: [
+          "车载产品阵容页列出 IMX390CQV。245 万像素，光学尺寸 1/2.7 英寸，像素 3.0 μm。",
+          "WUXGA 为 10 bit 50 fps、12 bit 30 fps；Full HD 为 10 bit 60 fps、12 bit 40 fps。",
+        ],
+      },
+    ],
+  },
+  {
+    id: "imx500",
+    date: "2020-05-14",
+    companyId: "sony",
+    category: "product",
+    title: "IMX500：索尼智能视觉传感器",
+    summary:
+      "IMX500 在图像传感器上集成图像处理和 AI 推理。产品页写明公布时点为 2020 年 5 月 14 日，有效像素约 1230 万。",
+    applications: ["consumer", "machine"],
+    technologies: ["stacked"],
+    models: [
+      {
+        name: "IMX500",
+        date: "2020-05-14",
+        url: "https://www.aitrios.sony-semicon.com/edge-ai-devices/imx500",
+        linkLabel: "打开产品页",
+        points: [
+          "产品页写明公布时点为 2020 年 5 月 14 日。",
+          "有效像素 4056×3040，约 1230 万。对角 7.857 mm（1/2.3 英寸），像素 1.55 μm。",
+          "全像素读出最高 60 fps。图像加 AI 处理，或只输出元数据时，最高 30 fps。",
+          "输出 MIPI D-PHY 4 lane 或 SPI。支持 TensorFlow 和 PyTorch 模型。",
+        ],
+      },
+    ],
+  },
+  {
+    id: "xgs",
+    date: "",
+    companyId: "onsemi",
+    category: "product",
+    title: "XGS：安森美全局快门图像传感器",
+    summary:
+      "XGS 12000、XGS 9400 和 XGS 8000 属于同一全局快门家族，像素 3.2 μm，用于工业相机。封装和接口可以共用一套相机设计。",
+    applications: ["machine"],
+    technologies: ["global"],
+    models: [
+      {
+        name: "XGS12000",
+        date: "",
+        url: "https://www.onsemi.com/products/sensors/image-sensors/xgs12000",
+        linkLabel: "打开产品页",
+        points: [
+          "4096×3072，1260 万像素，光学尺寸 1 英寸，像素 3.2 μm。",
+          "全局快门。全分辨率 12 bit 最高 90 fps。",
+          "163 引脚 LGA，面向 29×29 mm 相机。有黑白和拜耳彩色版本。",
+        ],
+      },
+      {
+        name: "XGS9400",
+        date: "",
+        url: "https://www.onsemi.com/download/public-data-sheet/pdf/xgs12m-pd-d.pdf",
+        linkLabel: "打开产品手册",
+        points: [
+          "公开数据手册把 XGS 9400 与 XGS 12000、XGS 8000 列在同一家族。",
+          "家族说明写 3072×3072，940 万像素。12 bit 全分辨率最高 90 fps。",
+          "像素为该家族的 3.2 μm 全局快门。",
+        ],
+      },
+      {
+        name: "XGS8000",
+        date: "",
+        url: "https://www.onsemi.com/download/public-data-sheet/pdf/xgs12m-pd-d.pdf",
+        linkLabel: "打开产品手册",
+        points: [
+          "公开数据手册把 XGS 8000 与同家族的 XGS 12000、XGS 9400 放在一起。",
+          "家族说明写 4096×2160，880 万像素。12 bit 全分辨率最高 128 fps。",
+          "像素为该家族的 3.2 μm 全局快门。",
+        ],
+      },
+    ],
+  },
   ...depthProducts,
   ...spectralProducts,
 ];
