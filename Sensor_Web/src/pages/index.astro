@@ -1,6 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
 import { sitePath } from "../lib/url.js";
+import { broadbandModels } from "../lib/roadmap.js";
 import {
   applications,
   categories,
@@ -128,6 +129,8 @@ const spectralModels = products
     })),
   )
   .sort((a, b) => byName(a.model.name, b.model.name));
+
+const broadbandCompanies = byCompany(broadbandModels());
 
 const spectralBands = spectralOrder
   .map((band) => ({
@@ -257,6 +260,7 @@ const trendBranches = Object.entries(categories)
                     <summary>{branch.label}</summary>
                     <div class="tree-children">
                       {branch.subtypes.map((subtype) => (
+                        <div class="tree-label">
                         <details>
                           <summary>{subtype.name}</summary>
                           <div class="tree-children">
@@ -274,6 +278,10 @@ const trendBranches = Object.entries(categories)
                             ))}
                           </div>
                         </details>
+                        {(subtype.id === "itof" || subtype.id === "dtof") && (
+                          <a class="roadmap-link" href={sitePath(`/roadmap/${subtype.id}`)}>路线图</a>
+                        )}
+                        </div>
                       ))}
                       {branch.rest.length > 0 && (
                         <details>
@@ -301,6 +309,7 @@ const trendBranches = Object.entries(categories)
                     <summary>{branch.label}</summary>
                     <div class="tree-children">
                       {branch.spectralBands.map((band) => (
+                        <div class="tree-label">
                         <details>
                           <summary>{band.name}</summary>
                           <div class="tree-children">
@@ -318,7 +327,31 @@ const trendBranches = Object.entries(categories)
                             ))}
                           </div>
                         </details>
+                        <a class="roadmap-link" href={sitePath(`/roadmap/${band.id}`)}>路线图</a>
+                        </div>
                       ))}
+                      {broadbandCompanies.length > 0 && (
+                        <div class="tree-label">
+                          <details>
+                            <summary>通谱</summary>
+                            <div class="tree-children">
+                              {broadbandCompanies.map((company) => (
+                                <details>
+                                  <summary>{company.name}</summary>
+                                  <ul class="leaves">
+                                    {company.models.map((item) => (
+                                      <li>
+                                        <a href={hrefFor(item.product, item.model)}>{item.model.name}</a>
+                                      </li>
+                                    ))}
+                                  </ul>
+                                </details>
+                              ))}
+                            </div>
+                          </details>
+                          <a class="roadmap-link" href={sitePath("/roadmap/broadband")}>路线图</a>
+                        </div>
+                      )}
                     </div>
                   </details>
                 ) : (

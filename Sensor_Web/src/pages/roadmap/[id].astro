@@ -1,0 +1,181 @@
+---
+import Base from "../../layouts/Base.astro";
+import { sitePath } from "../../lib/url.js";
+import { modelAnchor } from "../../data/catalog.js";
+import {
+  colorFor,
+  formatMeters,
+  formatNm,
+  formatPixels,
+  roadmaps,
+  rowsForRoadmap,
+} from "../../lib/roadmap.js";
+
+export function getStaticPaths() {
+  return roadmaps.map((roadmap) => ({
+    params: { id: roadmap.id },
+    props: { roadmap },
+  }));
+}
+
+const { roadmap } = Astro.props;
+const rows = rowsForRoadmap(roadmap.id);
+
+function scale(value, min, max, start, size, log) {
+  if (max <= min) return start + size / 2;
+  const project = log ? (n) => Math.log10(Math.max(n, min)) : (n) => n;
+  const from = project(min);
+  const to = project(max);
+  return start + ((project(value) - from) / (to - from)) * size;
+}
+
+const width = 920;
+const height = roadmap.kind === "spectral" ? 560 : Math.max(360, 80 + rows.length * 36);
+const pad = { left: 72, right: 168, top: 28, bottom: 56 };
+const plotW = width - pad.left - pad.right;
+const plotH = height - pad.top - pad.bottom;
+
+let marks = [];
+let guides = [];
+
+if (roadmap.kind === "spectral" && rows.length) {
+  const pixels = rows.map((row) => row.pixels);
+  const waves = rows.flatMap((row) => [row.wave.min, row.wave.max]);
+  const xMin = Math.min(...pixels) / 1.4;
+  const xMax = Math.max(...pixels) * 1.4;
+  const yMin = Math.min(...waves) * 0.85;
+  const yMax = Math.max(...waves) * 1.12;
+  const xTicks = [1e3, 1e4, 1e5, 1e6, 1e7].filter((tick) => tick >= xMin && tick <= xMax);
+  const yTicks = [200, 400, 700, 1000, 1700, 2500, 5000, 8000, 14000].filter(
+    (tick) => tick >= yMin && tick <= yMax,
+  );
+  guides = [
+    ...xTicks.map((tick) => ({
+      x: scale(tick, xMin, xMax, pad.left, plotW, true),
+      label: formatPixels(tick),
+      axis: "x",
+    })),
+    ...yTicks.map((tick) => ({
+      y: scale(tick, yMin, yMax, pad.top + plotH, -plotH, false),
+      label: formatNm(tick),
+      axis: "y",
+    })),
+  ];
+  marks = rows.map((row, index) => {
+    const x = scale(row.pixels, xMin, xMax, pad.left, plotW, true) + (index % 3) * 4;
+    const y1 = scale(row.wave.max, yMin, yMax, pad.top + plotH, -plotH, false);
+    const y2 = scale(row.wave.min, yMin, yMax, pad.top + plotH, -plotH, false);
+    return {
+      ...row,
+      x,
+      y1,
+      y2,
+      color: colorFor(row.company),
+      caption: `${formatPixels(row.pixels)} · ${formatNm(row.wave.min)}–${formatNm(row.wave.max)}`,
+    };
+  });
+}
+
+if (roadmap.kind === "distance" && rows.length) {
+  const maxDistance = Math.max(...rows.map((row) => row.distance.max), 1);
+  const ticks = [0.01, 0.1, 1, 10, 100, 1000].filter((tick) => tick <= maxDistance * 1.2);
+  guides = ticks.map((tick) => ({
+    x: scale(tick, 0.01, maxDistance * 1.15, pad.left, plotW, true),
+    label: formatMeters(tick),
+    axis: "x",
+  }));
+  marks = rows.map((row, index) => {
+    const y = pad.top + 18 + index * 36;
+    const x1 = scale(Math.max(row.distance.min, 0.01), 0.01, maxDistance * 1.15, pad.left, plotW, true);
+    const x2 = scale(Math.max(row.distance.max, 0.012), 0.01, maxDistance * 1.15, pad.left, plotW, true);
+    return {
+      ...row,
+      y,
+      x1,
+      x2,
+      color: colorFor(row.company),
+      caption: row.distance.min > 0
+        ? `${formatMeters(row.distance.min)}–${formatMeters(row.distance.max)}`
+        : `最远 ${formatMeters(row.distance.max)}`,
+    };
+  });
+}
+
+const companiesInChart = [...new Set(marks.map((mark) => mark.company))];
+---
+<Base title={`${roadmap.name}路线图`}>
+  <div class="page-intro">
+    <p class="kicker"><a href={sitePath("/")}>索引</a></p>
+    <h1>{roadmap.name}路线图</h1>
+    {
+      roadmap.kind === "spectral" ? (
+        <p class="lede">横轴是像素数，纵轴是来源里写明的波长范围。每一条竖线是一个型号覆盖到的波段。</p>
+      ) : (
+        <p class="lede">横轴是来源里写明的探测距离。每一条横线是一个型号的测距范围。</p>
+      )
+    }
+  </div>
+  {
+    marks.length === 0 ? (
+      <p class="empty">这一支里还没有同时写明作图所需数字的型号。</p>
+    ) : (
+      <figure class="chart">
+        <svg viewBox={`0 0 ${width} ${height}`} role="img" aria-label={`${roadmap.name}路线图`}>
+          <line x1={pad.left} y1={pad.top} x2={pad.left} y2={pad.top + plotH} class="axis" />
+          <line x1={pad.left} y1={pad.top + plotH} x2={pad.left + plotW} y2={pad.top + plotH} class="axis" />
+          {
+            guides.map((guide) =>
+              guide.axis === "x" ? (
+                <g>
+                  <line x1={guide.x} y1={pad.top} x2={guide.x} y2={pad.top + plotH} class="grid" />
+                  <text x={guide.x} y={height - 18} text-anchor="middle" class="tick">{guide.label}</text>
+                </g>
+              ) : (
+                <g>
+                  <line x1={pad.left} y1={guide.y} x2={pad.left + plotW} y2={guide.y} class="grid" />
+                  <text x={pad.left - 8} y={guide.y + 4} text-anchor="end" class="tick">{guide.label}</text>
+                </g>
+              ),
+            )
+          }
+          {
+            roadmap.kind === "spectral"
+              ? marks.map((mark) => (
+                  <g>
+                    <line x1={mark.x} y1={mark.y1} x2={mark.x} y2={mark.y2} stroke={mark.color} stroke-width="3" />
+                    <a href={sitePath(`/products/${mark.product.id}#${modelAnchor(mark.model.name)}`)}>
+                      <text x={mark.x + 6} y={(mark.y1 + mark.y2) / 2} class="mark-label" fill={mark.color}>
+                        {mark.model.name}
+                      </text>
+                    </a>
+                  </g>
+                ))
+              : marks.map((mark) => (
+                  <g>
+                    <line x1={mark.x1} y1={mark.y} x2={mark.x2} y2={mark.y} stroke={mark.color} stroke-width="8" stroke-linecap="round" />
+                    <a href={sitePath(`/products/${mark.product.id}#${modelAnchor(mark.model.name)}`)}>
+                      <text x={pad.left + plotW + 10} y={mark.y + 4} class="mark-label" fill={mark.color}>
+                        {mark.model.name}
+                      </text>
+                    </a>
+                  </g>
+                ))
+          }
+          <text x={pad.left + plotW / 2} y={height - 2} text-anchor="middle" class="axis-name">
+            {roadmap.kind === "spectral" ? "分辨率" : "探测距离"}
+          </text>
+          {
+            roadmap.kind === "spectral" && (
+              <text x="16" y={pad.top + plotH / 2} class="axis-name" transform={`rotate(-90 16 ${pad.top + plotH / 2})`}>
+                波长
+              </text>
+            )
+          }
+        </svg>
+        <figcaption>
+          {companiesInChart.join("、")}。数字只取各型号资料里写明的范围。
+        </figcaption>
+      </figure>
+    )
+  }
+</Base>
