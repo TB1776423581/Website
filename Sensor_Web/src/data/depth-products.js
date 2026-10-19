@@ -1227,4 +1227,42 @@ export const depthProducts = [
       ]),
     ],
   },
+  {
+    id: "livox-hap",
+    date: "2021",
+    companyId: "livox",
+    category: "product",
+    title: "HAP：览沃车规激光雷达",
+    summary:
+      "HAP 规格页列出 HAP (T1) 与 HAP (TX)。100 klx、10% 反射率下 150 m，视场 120°×25°。产品页写明约 2021 年起为客户量产。",
+    applications: ["depth", "auto"],
+    technologies: ["tof"],
+    models: [
+      page("HAP (T1)", "2021", "https://www.livoxtech.com/hap/specs", [
+        "100 klx、10% 反射率下 150 m。视场 120°×25°。点频 452,000 点/秒。",
+        "ROI 角分辨率 0.23°（垂直）×0.18°（水平）。20 m 处测距随机误差 1σ 小于 2 cm。",
+        "接口 100BASE-T1。典型功耗 12 W。重量约 1120 g，尺寸 105×131.6×65 mm。IP67。",
+        "产品页写明约 2021 年开始为客户量产。",
+      ]),
+      page("HAP (TX)", "2021", "https://www.livoxtech.com/hap/specs", [
+        "测距、视场和点频与 HAP (T1) 相同。数据口是 100BASE-TX。",
+      ]),
+    ],
+  },
+  {
+    id: "robosense-bpearl",
+    date: "",
+    companyId: "robosense",
+    category: "product",
+    title: "Bpearl：速腾聚创近场补盲激光雷达",
+    summary: "Bpearl 产品页写明水平 360° 的半球视场，盲区不大于 10 cm，用于近场补盲。",
+    applications: ["depth", "auto", "machine"],
+    technologies: ["tof"],
+    models: [
+      page("Bpearl", "", "https://www.robosense.ai/en/rslidar/Bpearl", [
+        "水平视场 360°，半球视场。盲区不大于 10 cm。",
+        "产品页写明用于近场盲区探测。",
+      ]),
+    ],
+  },
 ];

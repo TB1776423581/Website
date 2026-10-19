@@ -5,11 +5,10 @@ import { sitePath } from "../lib/url.js";
 import {
   applications,
   companies,
-  sortedDevelopments,
-  technologies,
+  listedModels,
 } from "../data/catalog.js";
 
-const items = sortedDevelopments();
+const items = listedModels();
 const domestic = companies.filter((company) => company.region === "国内").length;
 const overseas = companies.length - domestic;
 ---

@@ -20,7 +20,11 @@ const technologies = tagTechnologies(item);
   </div>
   <div>
     <a class="company-link" href={sitePath(`/companies/${company.id}`)}>{company.name}</a>
-    <h3><a href={sitePath(`/products/${item.id}`)}>{item.title}</a></h3>
+    <h3>
+      <a href={sitePath(`/products/${item.id}${item.anchor ? `#${item.anchor}` : ""}`)}>
+        {item.title}
+      </a>
+    </h3>
     <p class="summary">{item.summary}</p>
     <div class="tags">
       {

@@ -359,6 +359,39 @@ export function productById(id) {
   return products.find((item) => item.id === id);
 }
 
+export function modelAnchor(name) {
+  const slug = String(name)
+    .trim()
+    .toLowerCase()
+    .replace(/\+/g, "-plus")
+    .replace(/\s+/g, "-")
+    .replace(/[^a-z0-9\u4e00-\u9fff-]+/g, "")
+    .replace(/-+/g, "-")
+    .replace(/^-|-$/g, "");
+  return `model-${slug || "item"}`;
+}
+
+export function listedModels(list = products) {
+  const rows = list.flatMap((product) =>
+    product.models.map((model) => ({
+      id: product.id,
+      anchor: modelAnchor(model.name),
+      date: model.date || product.date || "",
+      companyId: product.companyId,
+      category: product.category,
+      title: model.name,
+      summary: model.points.filter(Boolean).slice(0, 2).join(""),
+      applications: product.applications,
+      technologies: product.technologies,
+    })),
+  );
+  return rows.sort((a, b) => {
+    const byDate = (b.date ?? "").localeCompare(a.date ?? "");
+    if (byDate) return byDate;
+    return a.title.localeCompare(b.title, "zh");
+  });
+}
+
 export function tagTechnologies(item) {
   const names = new Set(item.applications.map((id) => applicationById(id)?.name));
   return item.technologies.filter((id) => !names.has(technologyById(id)?.name));
@@ -375,17 +408,17 @@ export function sortedDevelopments(list = products) {
 }
 
 export function developmentsForCompany(companyId) {
-  return sortedDevelopments(products.filter((item) => item.companyId === companyId));
+  return listedModels(products.filter((item) => item.companyId === companyId));
 }
 
 export function developmentsForApplication(applicationId) {
-  return sortedDevelopments(
+  return listedModels(
     products.filter((item) => item.applications.includes(applicationId)),
   );
 }
 
 export function developmentsForTechnology(technologyId) {
-  return sortedDevelopments(
+  return listedModels(
     products.filter((item) => item.technologies.includes(technologyId)),
   );
 }
