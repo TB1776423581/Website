@@ -239,15 +239,20 @@ export const depthProducts = [
     date: "",
     companyId: "robosense",
     category: "product",
-    title: "E1：速腾聚创全固态补盲激光雷达",
+    title: "E1：速腾聚创全固态激光雷达",
     summary:
-      "E1 是车规全固态补盲激光雷达，水平视场 120°，垂直视场 90°，10% 反射率下 30 m，帧率 10 到 30 Hz。",
-    applications: ["depth", "auto"],
+      "E1 是车规补盲激光雷达，视场 120°×90°，10% 反射率下 30 m。E1R 面向机器人，同样是 120°×90°，最远 75 m，10% 反射率下 30 m。",
+    applications: ["depth", "auto", "machine"],
     technologies: ["tof"],
     models: [
       page("E1", "", "https://www.robosense.ai/en/rslidar/E1", [
         "水平视场 120°，垂直视场 90°。帧率 10 到 30 Hz。",
         "10% 反射率下测距 30 m。页面写明地面盲区不大于 15 cm。",
+      ]),
+      page("E1R", "", "https://www.robosense.ai/en/rslidar/E1R", [
+        "全固态数字激光雷达，面向机器人。视场 120°×90°。",
+        "最远 75 m，10% 反射率下 30 m。点频 260,000 点/秒，144 线。",
+        "窗口尺寸 7×35×75 mm。采用 SPAD-SoC 与 2D VCSEL。",
       ]),
     ],
   },
@@ -399,14 +404,15 @@ export const depthProducts = [
     category: "product",
     title: "Avia：览沃测绘激光雷达",
     summary:
-      "Avia 最远 450 m，非重复扫描视场 70.4°×77.2°，三回波，测距精度 2 cm，重量 498 g。",
+      "Avia 规格页写明：0 klx、80% 反射率下 450 m，10% 反射率下 190 m。非重复扫描视场 70.4°×77.2°。",
     applications: ["depth", "machine"],
     technologies: ["tof"],
     models: [
-      page("Avia", "", "https://www.livoxtech.com/avia", [
-        "低照度下最远 450 m。非重复扫描视场 70.4°×77.2°，重复线扫描视场 70.4°×4.5°。",
-        "最多三回波。点频不低于 240,000 点/秒；双回波时为 480,000 点/秒。测距精度 2 cm。",
-        "重量 498 g，IP67。内置 IMU。",
+      page("Avia", "", "https://www.livoxtech.com/avia/specs", [
+        "0 klx：10% 反射率 190 m，20% 为 260 m，80% 为 450 m。100 klx：10% 仍是 190 m，80% 为 320 m。",
+        "非重复扫描视场 70.4°×77.2°，重复线扫描视场 70.4°×4.5°。",
+        "单回波 240,000 点/秒，双回波 480,000 点/秒，三回波 720,000 点/秒。20 m 处测距随机误差 1σ 小于 2 cm。",
+        "重量约 498 g（不含线缆），IP67。内置 BMI088。",
       ]),
     ],
   },
@@ -417,7 +423,7 @@ export const depthProducts = [
     category: "product",
     title: "Tele-15：览沃远距车载激光雷达",
     summary:
-      "Tele-15 最远 500 m，10% 反射率下仍可达 320 m，视场 14.5°×16.2°，测距精度 2 cm。",
+      "Tele-15 在 50% 反射率下最远 500 m，10% 反射率下 320 m，视场 14.5°×16.2°，测距精度 2 cm。",
     applications: ["depth", "auto"],
     technologies: ["tof"],
     models: [
@@ -483,17 +489,24 @@ export const depthProducts = [
     date: "",
     companyId: "velodyne",
     category: "product",
-    title: "VLP-16：Velodyne 中距激光雷达",
+    title: "VLP-16：Velodyne Puck",
     summary:
-      "VLP-16 是 16 线机械激光雷达，水平 360°、垂直 40°，最远 200 m，精度 ±3 cm。",
+      "VLP-16 规格书 63-9229 Rev-H 写明 16 线、量程 100 m、垂直视场 30°（+15° 到 -15°），单回波约 300,000 点/秒。",
     applications: ["depth", "machine"],
     technologies: ["tof"],
     models: [
-      page("VLP-16", "", "https://velodynelidar.com/products/puck/", [
-        "16 线。水平 360°，垂直 40°，最远 200 m，点频最高约 600,000 点/秒。",
-        "精度 ±3 cm，最高帧率 20 Hz。905 nm，Class 1。",
-        "不含线缆时重量可低至 590 g，高度×宽度 72×89 mm。IP68 与 IP69K，工作温度 -40℃ 到 +65℃。",
-      ]),
+      page(
+        "VLP-16",
+        "",
+        "https://www.mapix.com/wp-content/uploads/2018/07/63-9229_Rev-H_Puck-_Datasheet_Web.pdf",
+        [
+          "16 线。量程 100 m。水平 360°，垂直 +15.0° 到 -15.0°（30°），垂直角分辨率 2.0°。",
+          "典型精度最高 ±3 cm。转速 5 到 20 Hz。波长 903 nm，Class 1。",
+          "单回波约 300,000 点/秒，双回波约 600,000 点/秒。",
+          "不含线缆和接口盒时重量约 830 g。防护 IP67。工作温度 -10℃ 到 +60℃。典型功耗 8 W。",
+        ],
+        "打开产品手册",
+      ),
     ],
   },
   {
@@ -521,8 +534,8 @@ export const depthProducts = [
     category: "product",
     title: "TFmini：北醒近距单点激光雷达",
     summary:
-      "TFmini-S、TFmini Plus 和 TF-Luna 都是单点 ToF 测距模组。前两款量程 0.1 到 12 m；TF-Luna 为 0.2 到 8 m。",
-    applications: ["depth", "machine"],
+      "TFmini-S、TFmini Plus 和 TF-Luna 都是单点 ToF 测距模组，不输出深度图。前两款量程 0.1 到 12 m；TF-Luna 为 0.2 到 8 m。",
+    applications: ["machine"],
     technologies: ["tof"],
     models: [
       page("TFmini Plus", "", "https://ai.benewake.com/en/products/tfmini-plus/", [
@@ -530,7 +543,7 @@ export const depthProducts = [
         "帧率 1 到 1000 Hz。IP65。视场 3.6°。功耗 550 mW，重量 12±1 g。",
         "接口 UART、I/O、I²C。供电 5±0.5 V。",
       ]),
-      page("TFmini-S", "", "https://ai.benewake.com/en/products/tf-luna/", [
+      page("TFmini-S", "", "https://ai.benewake.com/en/products/tfmini-s/", [
         "同页对照表：量程 0.1 到 12 m。0.1 到 6 m 精度 ±6 cm，6 到 12 m 为 ±1%。",
         "帧率 1 到 1000 Hz。IP65。视场 2°。功耗不大于 0.7 W，重量 5±0.3 g。",
         "尺寸 42×15×16 mm。供电 5±0.1 V。",
@@ -549,8 +562,8 @@ export const depthProducts = [
     category: "product",
     title: "TF03：北醒长距单点激光雷达",
     summary:
-      "TF03 产品页同时列出 TF03-100 与 TF03-180。100 款在 90% 反射率下 100 m，180 款为 180 m。",
-    applications: ["depth", "machine"],
+      "TF03 产品页同时列出 TF03-100 与 TF03-180，都是单点测距。100 款在 90% 反射率下 100 m，180 款为 180 m。",
+    applications: ["machine"],
     technologies: ["tof"],
     models: [
       page("TF03-180", "", "https://ai.benewake.com/en/products/tf03/", [
@@ -571,25 +584,30 @@ export const depthProducts = [
     category: "product",
     title: "TFA：北醒长距单点激光雷达",
     summary:
-      "TFA170-L、TFA300、TFA1200-L 和 TFA1500-L 都是单点长距测距。前两款从 0.1 m 起，后两款分别从 3 m 和 0.5 m 起。",
-    applications: ["depth", "machine"],
+      "TFA170-L、TFA300、TFA300-L、TFA1200-L 和 TFA1500-L 都是单点长距测距，不输出深度图。",
+    applications: ["machine"],
     technologies: ["tof"],
     models: [
-      page("TFA170-L", "", "https://ai.benewake.com/en/products/tf03/", [
-        "对照表：0.1 到 170 m。10 m 以内精度 ±10 cm，10 m 以上 1%。",
+      page("TFA170-L", "", "https://ai.benewake.com/en/products/tfa170-l/", [
+        "单点测距。量程 0.1 到 170 m。10 m 以内精度 ±10 cm，10 m 以上 1%。",
         "帧率 1 到 1000 Hz。无外壳。重量约 10 g。视场小于 0.5°。RS-232，供电 12 V±10%。",
       ]),
-      page("TFA300", "", "https://ai.benewake.com/en/products/tf03/", [
-        "对照表：0.1 到 290 m。帧率 1 到 10,000 Hz。IP67。",
-        "功耗不大于 0.45 W，重量 10.5 g。视场小于 0.5°。UART 与 CAN，供电 5 V±10%。",
+      page("TFA300", "", "https://ai.benewake.com/en/resources/technical-documents/tfa300-datasheet/", [
+        "规格书：100 klux、90% 反射率下 270 m，30% 下 150 m，10% 下 90 m。盲区不大于 0.1 m。",
+        "帧率 1 到 10,000 Hz，默认 50 Hz。IP67。典型重量 34.5 g。视场小于 0.5°。UART 与 CAN，供电 5 V±10%。",
+      ], "打开产品手册"),
+      page("TFA300-L", "", "https://ai.benewake.com/en/resources/technical-documents/tfa300-datasheet/", [
+        "与 TFA300 同规格书的无外壳版本。100 klux、90% 反射率下 290 m，10% 下 100 m。",
+        "典型重量 10.5 g，尺寸 32.0×30.2×20.2 mm。防护等级写为 NA。",
+      ], "打开产品手册"),
+      page("TFA1200-L", "", "https://ai.benewake.com/en/products/tfa1200-l/", [
+        "单点测距。量程 3 到 1200 m。200 m 以内精度 1%。帧率 3 Hz。",
+        "UART。无外壳。重量 11 g。视场约 6 mrad。供电 2.7 到 5.0 V。",
       ]),
-      page("TFA1200-L", "", benewakeCenter, [
-        "产品中心写明量程 3 到 1200 m。",
-      ]),
-      page("TFA1500-L", "", benewakeCenter, [
-        "产品中心写明量程 0.5 到 1500 m。",
-        "低频自适应 1 到 4 Hz，高频自适应 60 到 800 Hz。接口 UART，无外壳。",
-      ]),
+      page("TFA1500-L", "", "https://ai.benewake.com/en/resources/technical-documents/tfa1500-l-datasheet/", [
+        "规格书：量程 0.5 到 1500 m。80 m 以内精度 ±0.5 m，80 m 以上 ±1.0 m。",
+        "默认帧率自适应 60 到 800 Hz。UART，波特率 500000。重量 11±0.5 g。无外壳。",
+      ], "打开产品手册"),
     ],
   },
   {
@@ -621,8 +639,8 @@ export const depthProducts = [
     category: "product",
     title: "北醒近距与车载激光雷达",
     summary:
-      "产品中心还列出 VLS-H5、TF-UW500、TF-NOVA、LR10、AD2-S-X3 和 NOVA20，量程从数米到 10% 反射率下 300 m。",
-    applications: ["depth", "machine"],
+      "产品中心还列出 VLS-H5、TF-UW500、TF-NOVA、LR10、AD2-S-X3 和 NOVA20。这些条目没有写明输出深度图，按测距产品收录。",
+    applications: ["machine"],
     technologies: ["tof"],
     models: [
       page("VLS-H5", "", benewakeCenter, [
@@ -667,8 +685,8 @@ export const depthProducts = [
     category: "product",
     title: "UST：北阳小型扫描测距仪",
     summary:
-      "北阳产品列表把 UST 写成小型扫描测距仪，多款重量 130 g，扫描角常见 270°，用于机器人和无人机。",
-    applications: ["depth", "machine"],
+      "北阳产品列表把 UST 写成小型二维扫描测距仪，多款重量 130 g，扫描角常见 270°，用于机器人和无人机。",
+    applications: ["machine"],
     technologies: ["tof"],
     models: [
       page("UST-30LX", "", hokuyoList, ["户外小型型号。列表写明重量仅 130 g，用于小型机器人或无人机。"]),
@@ -695,8 +713,8 @@ export const depthProducts = [
     companyId: "hokuyo",
     category: "product",
     title: "UTM：北阳 30 m 扫描测距仪",
-    summary: "UTM-30LN、UTM-30LX 和 UTM-30LX-EW 都是 30 m、270° 扫描测距仪，可在 100,000 lx 下工作。",
-    applications: ["depth", "machine"],
+    summary: "UTM-30LN、UTM-30LX 和 UTM-30LX-EW 都是 30 m、270° 的二维扫描测距仪，可在 100,000 lx 下工作。",
+    applications: ["machine"],
     technologies: ["tof"],
     models: [
       page("UTM-30LN", "", hokuyoList, ["30 m、270°。100,000 lx，IP64。扫描时间 25 ms。"]),
@@ -710,8 +728,8 @@ export const depthProducts = [
     companyId: "hokuyo",
     category: "product",
     title: "UXM：北阳多回波扫描测距仪",
-    summary: "UXM 系列产品列表写明支持多回波，防护 IP67，面向雨、雪、雾等环境。",
-    applications: ["depth", "machine"],
+    summary: "UXM 系列是二维多回波扫描测距仪。产品列表写明防护 IP67，面向雨、雪、雾等环境。",
+    applications: ["machine"],
     technologies: ["tof"],
     models: [
       page("UXM-30LX-EW", "", hokuyoList, ["可稳定探测黑色物体。多回波，IP67。"]),
@@ -728,8 +746,8 @@ export const depthProducts = [
     companyId: "hokuyo",
     category: "product",
     title: "UGM-50：北阳 120 m 户外扫描测距仪",
-    summary: "UGM-50 的距离输出型和区域型都写明最远 120 m、扫描角 190°，金属外壳，IP67。",
-    applications: ["depth", "machine"],
+    summary: "UGM-50 是二维扫描测距仪。距离输出型和区域型都写明最远 120 m、扫描角 190°，金属外壳，IP67。",
+    applications: ["machine"],
     technologies: ["tof"],
     models: [
       page("UGM-50LXP", "", hokuyoList, ["距离输出型。最远 120 m，扫描角 190°。金属外壳抗单次 50 G，IP67。"]),
@@ -744,8 +762,8 @@ export const depthProducts = [
     companyId: "hokuyo",
     category: "product",
     title: "UAM：北阳安全激光扫描仪",
-    summary: "UAM 是防护距离 5 m、扫描角 270° 的安全激光扫描仪，用于 AGV 和垂直防护。",
-    applications: ["depth", "machine"],
+    summary: "UAM 是防护距离 5 m、扫描角 270° 的二维安全激光扫描仪，用于 AGV 和垂直防护。",
+    applications: ["machine"],
     technologies: ["tof"],
     models: [
       page("UAM-05LECA-T301", "", hokuyoList, ["EtherCAT 型。防护区 5 m，扫描角 270°。"]),
@@ -778,6 +796,19 @@ export const depthProducts = [
       page("UCT-10LCM", "", hokuyoList, [
         "厚度仅 20 mm。最远 10 m，扫描角 100°（水平）×6°（垂直）。",
       ]),
+    ],
+  },
+  {
+    id: "hokuyo-scan",
+    date: "",
+    companyId: "hokuyo",
+    category: "product",
+    title: "URM 与 PBS：北阳二维探测",
+    summary:
+      "URM-40LC-EWT 是户外二维扫描测距仪。PBS-03JN 用红外 LED 做障碍探测，扫描角 180°。",
+    applications: ["machine"],
+    technologies: ["tof"],
+    models: [
       page("URM-40LC-EWT", "", hokuyoList, ["户外二维扫描测距仪。量程 40 m，多回波，IP67。"]),
       page("PBS-03JN", "", hokuyoList, ["红外 LED 障碍探测。扫描角 180°。"]),
     ],
@@ -789,8 +820,8 @@ export const depthProducts = [
     category: "product",
     title: "picoScan：SICK 二维激光雷达",
     summary:
-      "产品手册列出 picoScan120，以及 picoScan150 的 Core、Prime 和 Pro。最远工作距离分别到 30 m、25 m、60 m 和 120 m。",
-    applications: ["depth", "machine"],
+      "产品手册列出二维激光雷达 picoScan120，以及 picoScan150 的 Core、Prime 和 Pro。最远工作距离分别到 30 m、25 m、60 m 和 120 m。",
+    applications: ["machine"],
     technologies: ["tof"],
     models: [
       page(
@@ -1007,7 +1038,7 @@ export const depthProducts = [
     category: "product",
     title: "C：镭神机械式激光雷达",
     summary:
-      "C32 与 C16 都是 360° 机械式激光雷达，10% 反射率下 100 m、70% 下 150 m。C32W 垂直视场更宽。C1 是单线。",
+      "C32 与 C16 都是 360° 机械式激光雷达，10% 反射率下 100 m、70% 下 150 m。C32W 垂直视场更宽。单线型号另列。",
     applications: ["depth", "machine"],
     technologies: ["tof"],
     models: [
@@ -1036,6 +1067,23 @@ export const depthProducts = [
         "与 C32W 同表。70% 下 50 到 130 m，10% 下 10 到 60 m。",
         "接口为 Ethernet 100base-TX 与 PPS。重量约 1115 g，尺寸 Φ102×102 mm。",
       ], "打开产品手册"),
+      page("LS-PTZ-150", "2024-10", ls, [
+        "旋转扫描。905 nm，Class I。最远 150 m，最近 1 m，精度 3 cm。",
+        "水平 180°，垂直 120°。点频 150,000 点/秒。IP67，重量 3500 g。",
+      ], "打开产品手册"),
+    ],
+  },
+  {
+    id: "leishen-2d",
+    date: "2024-10",
+    companyId: "leishen",
+    category: "product",
+    title: "单线与二维：镭神扫描测距",
+    summary:
+      "手册里的 C1、N301、N10、M10 和 HS1 是单线或二维扫描，不形成三维点云。",
+    applications: ["machine"],
+    technologies: ["tof"],
+    models: [
       page("C1", "2024-10", ls, [
         "单线机械式。70% 下 120 m，10% 下 100 m。精度 ±3 cm，1σ 为 ±1 cm。水平 360°。",
         "单回波 20,000 点/秒，双回波 40,000 点/秒。10 Hz 时功耗 7 W，IP67。",
@@ -1055,10 +1103,128 @@ export const depthProducts = [
       page("HS1", "2024-10", ls, [
         "手册写探测距离 100 m，测量精度 ±2 cm，扫描频率最高 200 Hz，用于车辆外廓和限高检测。",
       ], "打开产品手册"),
-      page("LS-PTZ-150", "2024-10", ls, [
-        "旋转扫描。905 nm，Class I。最远 150 m，最近 1 m，精度 3 cm。",
-        "水平 180°，垂直 120°。点频 150,000 点/秒。IP67，重量 3500 g。",
-      ], "打开产品手册"),
+    ],
+  },
+  {
+    id: "robosense-em",
+    date: "",
+    companyId: "robosense",
+    category: "product",
+    title: "EM4：速腾聚创长距数字激光雷达",
+    summary:
+      "EM4 产品页写明最高 2160 线，视场 120°×27°，10% 反射率下 300 m，最远 600 m，点频 41.04M 点/秒。",
+    applications: ["depth", "auto"],
+    technologies: ["tof"],
+    models: [
+      page("EM4", "", "https://www.robosense.ai/en/rslidar/EM4", [
+        "数字架构，SPAD-SoC。最高 2160 线。视场 120°×27°。",
+        "10% 反射率下 300 m，最远 600 m。点频 41.04M 点/秒。",
+        "页面写明数据压缩比 60%。",
+      ]),
+    ],
+  },
+  {
+    id: "aeva-atlas",
+    date: "",
+    companyId: "aeva",
+    category: "product",
+    title: "Atlas：Aeva 调频连续波激光雷达",
+    summary:
+      "Atlas 是车规 FMCW 4D 激光雷达，可同时测距和测速。产品页写明 10% 反射率下最远 250 m，视场 120°×30°。",
+    applications: ["depth", "auto"],
+    technologies: ["tof"],
+    models: [
+      page("Atlas", "", "https://www.aeva.com/atlas/", [
+        "FMCW，逐点多普勒测速，同时输出距离。",
+        "10% 反射率下最远 250 m。视场 120°（水平）×30°（垂直）。",
+        "功能安全 ISO 26262 ASIL-B（D）。相对 Aeries II 体积小 70%。被动散热。",
+        "同页另写数字信号处理可做最远 500 m 的测量。",
+      ]),
+    ],
+  },
+  {
+    id: "valeo-scala",
+    date: "",
+    companyId: "valeo",
+    category: "product",
+    title: "SCALA 3：法雷奥长距激光雷达",
+    summary:
+      "SCALA Gen 3 产品页写明 10% 反射率下 200 m，视场 120°×26°，分辨率 0.05°，尺寸 186×46×128 mm。",
+    applications: ["depth", "auto"],
+    technologies: ["tof"],
+    models: [
+      page("SCALA 3", "", "https://www.valeo.com/en/catalogue/cda/long-range-lidar-sensors-valeo-scala-gen-3/", [
+        "10% 反射率下 200 m。水平 120°，垂直 26°。水平与垂直分辨率 0.05°。",
+        "10 fps 时每个回波 12.5M 点/秒。帧率可在 10 到 20 fps 之间配置。",
+        "尺寸 186×46×128 mm（宽×高×深）。页面更新日期是 2024-09-16，不是发布日。",
+      ]),
+    ],
+  },
+  {
+    id: "zvision-ml",
+    date: "2023-01-05",
+    companyId: "zvision",
+    category: "product",
+    title: "ML-30s：一径短距补盲激光雷达",
+    summary:
+      "ML-30s 与 ML-30s+ 都是短距激光雷达，视场 140°×70°，分辨率 320×160。ML-30s+ 于 2023 年 1 月 5 日在 CES 发布。",
+    applications: ["depth", "auto"],
+    technologies: ["tof"],
+    models: [
+      page("ML-30s", "", "https://www.zvision.xyz/en/h-col-278.html", [
+        "短距激光雷达。视场 140°×70°。分辨率 320×160。",
+        "20 klux 下、10% 反射率测距 20 m。",
+      ]),
+      page("ML-30s+", "2023-01-05", "https://www.zvision.xyz/en/h-col-262.html", [
+        "车规短距激光雷达。视场 140°×70°。分辨率 320×160。",
+        "100 klux 下、10% 反射率测距 22 m。",
+        "发布稿写明角分辨率 0.44°×0.44°，单回波 512,000 点/秒，尺寸 120×60×97 mm。",
+        "当地时间 2023-01-05 在 CES 发布。",
+      ]),
+    ],
+  },
+  {
+    id: "luminar-iris",
+    date: "",
+    companyId: "luminar",
+    category: "product",
+    title: "Iris：Luminar 车载激光雷达",
+    summary:
+      "公司年报把 Iris 写成 1550 nm 激光雷达，水平视场 120°，垂直视场软件可调、最高 30°，可探测 600 m 内的物体。",
+    applications: ["depth", "auto"],
+    technologies: ["tof"],
+    models: [
+      page(
+        "Iris",
+        "",
+        "https://investors.luminartech.com/sec-filings/all-sec-filings/content/0001140361-26-011477/ef20067963-10k.htm",
+        [
+          "1550 nm。水平视场 120°，垂直视场由软件配置，最高 30°。",
+          "可探测最远 600 m 的物体。点密度超过每平方度 200 点。",
+        ],
+        "打开产品说明",
+      ),
+    ],
+  },
+  {
+    id: "cepton-vista",
+    date: "",
+    companyId: "cepton",
+    category: "product",
+    title: "Vista：Cepton 车载激光雷达",
+    summary:
+      "Vista 产品页同时介绍 Vista-X90 和 Vista-X120 Plus。X90 视场 90°×25°，ROI 角分辨率 0.09°。X120 Plus 视场 120°×25°，10% 反射率下 200 m。",
+    applications: ["depth", "auto"],
+    technologies: ["tof"],
+    models: [
+      page("Vista-X90", "", "https://www.cepton.com/products/vista-x90", [
+        "视场 90°×25°。ROI 角分辨率 0.09°×0.09°。同组规格写 200 m。",
+        "面向挡风玻璃内侧安装。ISO 26262 ASIL-B。页面写明采用 MMT 结构。",
+      ]),
+      page("Vista-X120 Plus", "", "https://www.cepton.com/products/vista-x90", [
+        "视场 120°×25°。ROI 角分辨率 0.05°×0.05°。10% 反射率下 200 m。",
+        "尺寸 140×30×150 mm，重量约 0.8 kg。ISO 26262 ASIL-B。",
+      ]),
     ],
   },
 ];

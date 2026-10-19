@@ -71,7 +71,7 @@ export const technologies = [
   {
     id: "tof",
     name: "3D探测",
-    description: "用飞行时间或分区深度测量物体远近，并形成深度图。",
+    description: "用飞行时间、调频连续波或分区深度测量物体远近，并形成深度图。",
   },
   {
     id: "spectral",
@@ -259,7 +259,7 @@ export const companies = [
     nameEn: "Velodyne Lidar",
     region: "海外",
     hq: "美国",
-    summary: "机械式激光雷达。现行规格页由 Ouster 托管，型号仍以 VLP 和 VLS 列出。",
+    summary: "机械式激光雷达。Ouster 于 2023-02-10 完成与 Velodyne 的合并，合并后公司名为 Ouster。型号仍按 VLP 和 VLS 单独列出。",
   },
   {
     id: "sick",
@@ -284,6 +284,46 @@ export const companies = [
     region: "国内",
     hq: "深圳",
     summary: "做 1550 nm 与 905 nm 激光雷达。2024 年 10 月的产品手册列出图像级、补盲和机械式型号。",
+  },
+  {
+    id: "aeva",
+    name: "Aeva",
+    nameEn: "Aeva",
+    region: "海外",
+    hq: "美国",
+    summary: "做调频连续波 4D 激光雷达，产品页上的 Atlas 可同时测距和测速。",
+  },
+  {
+    id: "valeo",
+    name: "法雷奥",
+    nameEn: "Valeo",
+    region: "海外",
+    hq: "法国",
+    summary: "做车载长距激光雷达。产品目录页介绍 SCALA Gen 3。",
+  },
+  {
+    id: "zvision",
+    name: "一径科技",
+    nameEn: "ZVISION",
+    region: "国内",
+    hq: "北京",
+    summary: "做短距补盲激光雷达。英文产品页列出 ML-30s 和 ML-30s+。",
+  },
+  {
+    id: "luminar",
+    name: "Luminar",
+    nameEn: "Luminar",
+    region: "海外",
+    hq: "美国",
+    summary: "做 1550 nm 车载激光雷达。公司年报介绍 Iris 系列。",
+  },
+  {
+    id: "cepton",
+    name: "Cepton",
+    nameEn: "Cepton",
+    region: "海外",
+    hq: "圣何塞",
+    summary: "做车载激光雷达。Vista 产品页列出 Vista-X90 和 Vista-X120 Plus，地址在圣何塞。",
   },
 ];
 

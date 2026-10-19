@@ -80,7 +80,7 @@ export const products = [
     category: "product",
     title: "ISOCELL HP：2 亿像素手机图像传感器",
     summary:
-      "HP1、HP2、HP3、HP9 都是 2 亿像素手机传感器。HP1 像素 0.64 μm、光学尺寸 1/1.22 英寸；HP2 为 0.6 μm、1/1.3 英寸；HP3 与 HP9 为 0.56 μm。HP9 面向长焦。",
+      "HP1、HP2、HP3、HP9 都是 2 亿像素手机传感器。HP1 像素 0.64 μm、光学尺寸 1/1.22 英寸；HP2 为 0.6 μm、1/1.3 英寸；HP3 为 0.56 μm、发布稿写明 1/1.4 英寸；HP9 为 0.56 μm，面向长焦。",
     applications: ["mobile"],
     technologies: ["highres", "hdr", "lowlight"],
     models: [
@@ -112,7 +112,7 @@ export const products = [
         url: "https://semiconductor.samsung.com/image-sensor/mobile-image-sensor/isocell-hp3/",
         linkLabel: "打开产品页",
         points: [
-          "2022 年 6 月 23 日发布，2 亿像素、0.56 μm。",
+          "2022 年 6 月 23 日发布，2 亿像素、0.56 μm。发布稿写明光学尺寸 1/1.4 英寸。",
           "Tetra²pixel 有三档：0.56 μm / 2 亿像素，1.12 μm / 5000 万像素，2.24 μm / 1250 万像素。",
           "Super QPD 同时看水平和垂直相位差。Smart-ISO Pro 与 Staggered HDR，14 bit，8K 最高 30 fps。",
           "4 倍无损变焦时仍是 1250 万像素。",
@@ -217,7 +217,7 @@ export const products = [
       {
         name: "GC50B2",
         date: "2023-12",
-        url: "https://en.gcoreinc.com/products/index?subcid=4",
+        url: "https://www.gcoreinc.com/products/index",
         linkLabel: "打开产品页",
         points: [
           "5000 万像素、1/1.56 英寸、1.0 μm。",
@@ -228,7 +228,7 @@ export const products = [
       {
         name: "GC50E0",
         date: "2023-12",
-        url: "https://en.gcoreinc.com/products/index?subcid=4",
+        url: "https://www.gcoreinc.com/products/index",
         linkLabel: "打开产品页",
         points: [
           "与 GC50B2 列在同一产品表。5000 万像素、1/2.5 英寸、0.7 μm。",
@@ -1023,6 +1023,42 @@ export const products = [
           "有效阵列 3848×2168，1/2 英寸，电子卷帘快门。",
           "3 次曝光 HDR 下 3840×2160 最高约 40 fps，片上 HDR 约 140 dB。",
           "故障检测用于支持 ASIL B。接口为 4 lane MIPI CSI-2。",
+        ],
+      },
+    ],
+  },
+  {
+    id: "imx459",
+    date: "2021-09-06",
+    companyId: "sony",
+    category: "product",
+    title: "IMX459：索尼车载 SPAD 深度传感器",
+    summary:
+      "IMX459 与 IMX479 列在同一车载 SPAD dToF 页。规格表写 IMX459 为 597×168、约 10 万 SPAD 像素、1/2.9 英寸；IMX479 为 105×1560、约 16.4 万像素、1 英寸。",
+    applications: ["depth", "auto"],
+    technologies: ["tof", "stacked"],
+    models: [
+      {
+        name: "IMX459",
+        date: "2021-09-06",
+        url: "https://www.sony-semicon.com/en/products/is/automotive/tof.html",
+        linkLabel: "打开产品页",
+        points: [
+          "2021 年 9 月 6 日发布。规格表：597×168，约 10 万 SPAD 像素，垂直有效 dToF 像素 192。",
+          "像元 3×3 SPAD。对角 6.25 mm（1/2.9 英寸），单元 10.08 μm。可工作于线模式或面阵模式。",
+          "905 nm 下光子探测效率 24%。接口 MIPI CSI-2。",
+          "同页特性说明写 15 cm 距离分辨率、最远约 300 m。特性段的 189×600 与规格表的 597×168 不一致，以规格表为准。",
+        ],
+      },
+      {
+        name: "IMX479",
+        date: "",
+        url: "https://www.sony-semicon.com/en/products/is/automotive/tof.html",
+        linkLabel: "打开产品页",
+        points: [
+          "规格表标为 New。105×1560，约 16.4 万 SPAD 像素，垂直有效 dToF 像素 520。",
+          "像元 3×3 SPAD。对角 15.8 mm（1 英寸），单元 10.08 μm。线模式。",
+          "940 nm 下光子探测效率 37%，死时间约 6 ns。接口 MIPI CSI-2。",
         ],
       },
     ],
