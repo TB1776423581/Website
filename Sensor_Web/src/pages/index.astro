@@ -1,44 +1,294 @@
 ---
 import Base from "../layouts/Base.astro";
-import FeedCard from "../components/FeedCard.astro";
 import { sitePath } from "../lib/url.js";
 import {
   applications,
+  categories,
   companies,
-  listedModels,
+  modelAnchor,
+  products,
+  technologies,
 } from "../data/catalog.js";
 
-const items = listedModels();
-const domestic = companies.filter((company) => company.region === "国内").length;
-const overseas = companies.length - domestic;
+function depthKind(product, model) {
+  const match = (text) => {
+    if (/直接飞行时间|dToF|dTOF/i.test(text)) return "dtof";
+    if (/间接飞行时间|iToF|iTOF/i.test(text)) return "itof";
+    if (/双目/.test(text)) return "stereo";
+    if (/结构光/.test(text)) return "structured";
+    return "";
+  };
+  return match((model.points || []).join("\n")) || match(`${product.title}\n${product.summary}`);
+}
+
+function hrefFor(product, model) {
+  return sitePath(`/products/${product.id}#${modelAnchor(model.name)}`);
+}
+
+function yearOf(date) {
+  const match = String(date || "").match(/^(\d{4})/);
+  return match ? match[1] : "";
+}
+
+const byName = (a, b) => a.localeCompare(b, "zh");
+
+const applicationLabels = {
+  depth: "3D测量",
+  machine: "机器视觉",
+  auto: "车载",
+  mobile: "手机/端侧",
+  spectral: "光谱探测",
+  scientific: "医疗与科学",
+  consumer: "消费电子",
+};
+
+const applicationOrder = ["depth", "machine", "auto", "mobile", "spectral", "scientific", "consumer"];
+
+const depthSubtypes = [
+  { id: "itof", name: "iTOF" },
+  { id: "dtof", name: "dTOF" },
+  { id: "stereo", name: "双目视觉" },
+  { id: "structured", name: "结构光" },
+];
+
+const technologyLabels = {
+  tof: "飞行时间",
+  spectral: "光谱",
+};
+
+const depthModels = products
+  .filter((product) => product.applications.includes("depth"))
+  .flatMap((product) =>
+    product.models.map((model) => ({
+      product,
+      model,
+      kind: depthKind(product, model),
+    })),
+  )
+  .sort((a, b) => byName(a.model.name, b.model.name));
+
+const applicationBranches = applicationOrder
+  .map((id) => applications.find((item) => item.id === id))
+  .filter(Boolean)
+  .map((application) => {
+    const series = products
+      .filter((product) => product.applications.includes(application.id))
+      .sort((a, b) => byName(a.title, b.title));
+    return {
+      id: application.id,
+      label: applicationLabels[application.id] || application.name,
+      series,
+      subtypes: depthSubtypes
+        .map((subtype) => ({
+          ...subtype,
+          models: depthModels.filter((item) => item.kind === subtype.id),
+        }))
+        .filter((subtype) => subtype.models.length),
+      rest: depthModels.filter((item) => !item.kind),
+    };
+  })
+  .filter((branch) => branch.series.length);
+
+const regionBranches = [
+  { id: "国内", label: "国内" },
+  { id: "国外", label: "国外" },
+].map((region) => ({
+  ...region,
+  companies: companies
+    .filter((company) => (region.id === "国内" ? company.region === "国内" : company.region !== "国内"))
+    .map((company) => ({
+      company,
+      series: products
+        .filter((product) => product.companyId === company.id)
+        .sort((a, b) => byName(a.title, b.title)),
+    }))
+    .filter((item) => item.series.length)
+    .sort((a, b) => byName(a.company.name, b.company.name)),
+})).filter((region) => region.companies.length);
+
+const technologyBranches = technologies
+  .map((technology) => ({
+    label: technologyLabels[technology.id] || technology.name,
+    models: products
+      .filter((product) => product.technologies.includes(technology.id))
+      .flatMap((product) => product.models.map((model) => ({ product, model })))
+      .sort((a, b) => byName(a.model.name, b.model.name)),
+  }))
+  .filter((branch) => branch.models.length);
+
+const trendBranches = Object.entries(categories)
+  .map(([id, label]) => {
+    const rows = products
+      .filter((product) => product.category === id)
+      .flatMap((product) =>
+        product.models.map((model) => ({
+          product,
+          model,
+          date: model.date || product.date || "",
+        })),
+      );
+    const years = [...new Set(rows.map((row) => yearOf(row.date)))].sort((a, b) => {
+      if (!a) return 1;
+      if (!b) return -1;
+      return b.localeCompare(a);
+    });
+    return {
+      label,
+      years: years.map((year) => ({
+        label: year || "未写年份",
+        models: rows
+          .filter((row) => yearOf(row.date) === year)
+          .sort((a, b) => (b.date || "").localeCompare(a.date || "") || byName(a.model.name, b.model.name)),
+      })),
+    };
+  })
+  .filter((branch) => branch.years.some((year) => year.models.length));
 ---
 <Base current="home">
-  <section class="hero">
-    <div>
-      <h1>各地公司的最新产品页</h1>
-      <div class="chips">
-        {
-          applications.map((application) => (
-            <a class="chip" href={sitePath(`/applications/${application.id}`)}>
-              {application.name}
-            </a>
-          ))
-        }
-      </div>
-    </div>
-    <div class="stats">
-      <div class="stat"><b>{companies.length}</b><span>家公司</span></div>
-      <div class="stat"><b>{items.length}</b><span>个产品</span></div>
-      <div class="stat"><b>{domestic}</b><span>家国内</span></div>
-      <div class="stat"><b>{overseas}</b><span>家海外</span></div>
-    </div>
-  </section>
+  <div class="index-tree">
+    <details class="tree-trunk" open>
+      <summary>FDWH_Sensor_Collect</summary>
+      <div class="tree-children">
+        <details>
+          <summary>动向</summary>
+          <div class="tree-children">
+            {
+              trendBranches.map((branch) => (
+                <details>
+                  <summary>{branch.label}</summary>
+                  <div class="tree-children">
+                    {branch.years.map((year) => (
+                      <details>
+                        <summary>{year.label}</summary>
+                        <ul class="leaves">
+                          {year.models.map((item) => (
+                            <li>
+                              <a href={hrefFor(item.product, item.model)}>{item.model.name}</a>
+                            </li>
+                          ))}
+                        </ul>
+                      </details>
+                    ))}
+                  </div>
+                </details>
+              ))
+            }
+          </div>
+        </details>
 
-  <div class="section-head">
-    <h2>动向</h2>
-    <a class="meta" href={sitePath("/technologies")}>按技术看</a>
-  </div>
-  <div class="feed">
-    {items.map((item) => <FeedCard item={item} />)}
+        <details>
+          <summary>应用</summary>
+          <div class="tree-children">
+            {
+              applicationBranches.map((branch) =>
+                branch.id === "depth" ? (
+                  <details>
+                    <summary>{branch.label}</summary>
+                    <div class="tree-children">
+                      {branch.subtypes.map((subtype) => (
+                        <details>
+                          <summary>{subtype.name}</summary>
+                          <ul class="leaves">
+                            {subtype.models.map((item) => (
+                              <li>
+                                <a href={hrefFor(item.product, item.model)}>{item.model.name}</a>
+                              </li>
+                            ))}
+                          </ul>
+                        </details>
+                      ))}
+                      {branch.rest.length > 0 && (
+                        <details>
+                          <summary>其他</summary>
+                          <ul class="leaves">
+                            {branch.rest.map((item) => (
+                              <li>
+                                <a href={hrefFor(item.product, item.model)}>{item.model.name}</a>
+                              </li>
+                            ))}
+                          </ul>
+                        </details>
+                      )}
+                    </div>
+                  </details>
+                ) : (
+                  <details>
+                    <summary>{branch.label}</summary>
+                    <div class="tree-children">
+                      {branch.series.map((product) => (
+                        <details>
+                          <summary>{product.title}</summary>
+                          <ul class="leaves">
+                            {product.models.map((model) => (
+                              <li>
+                                <a href={hrefFor(product, model)}>{model.name}</a>
+                              </li>
+                            ))}
+                          </ul>
+                        </details>
+                      ))}
+                    </div>
+                  </details>
+                ),
+              )
+            }
+          </div>
+        </details>
+
+        <details>
+          <summary>公司</summary>
+          <div class="tree-children">
+            {
+              regionBranches.map((region) => (
+                <details>
+                  <summary>{region.label}</summary>
+                  <div class="tree-children">
+                    {region.companies.map((item) => (
+                      <details>
+                        <summary>{item.company.name}</summary>
+                        <div class="tree-children">
+                          {item.series.map((product) => (
+                            <details>
+                              <summary>{product.title}</summary>
+                              <ul class="leaves">
+                                {product.models.map((model) => (
+                                  <li>
+                                    <a href={hrefFor(product, model)}>{model.name}</a>
+                                  </li>
+                                ))}
+                              </ul>
+                            </details>
+                          ))}
+                        </div>
+                      </details>
+                    ))}
+                  </div>
+                </details>
+              ))
+            }
+          </div>
+        </details>
+
+        <details>
+          <summary>技术</summary>
+          <div class="tree-children">
+            {
+              technologyBranches.map((branch) => (
+                <details>
+                  <summary>{branch.label}</summary>
+                  <ul class="leaves">
+                    {branch.models.map((item) => (
+                      <li>
+                        <a href={hrefFor(item.product, item.model)}>{item.model.name}</a>
+                      </li>
+                    ))}
+                  </ul>
+                </details>
+              ))
+            }
+          </div>
+        </details>
+      </div>
+    </details>
   </div>
 </Base>

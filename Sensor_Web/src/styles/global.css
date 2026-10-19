@@ -351,6 +351,61 @@ h1 {
 
 .site-footer .wrap { padding: 1.2rem 0 1.6rem; }
 
+.index-tree { margin: 1.5rem 0 3rem; }
+
+.index-tree details { margin: 0; }
+
+.index-tree summary {
+  cursor: pointer;
+  padding: 0.35rem 0;
+  list-style: none;
+}
+
+.index-tree summary::-webkit-details-marker { display: none; }
+
+.index-tree summary::before {
+  content: "▸";
+  display: inline-block;
+  width: 1.1rem;
+  color: var(--muted);
+}
+
+.index-tree details[open] > summary::before { content: "▾"; }
+
+.index-tree summary:hover { color: var(--accent); }
+
+.tree-trunk > summary {
+  padding: 0.8rem 0 0.4rem;
+  font-family: var(--serif);
+  font-size: 1.7rem;
+}
+
+.tree-trunk > .tree-children > details > summary {
+  padding: 0.45rem 0;
+  font-family: var(--serif);
+  font-size: 1.2rem;
+}
+
+.tree-children,
+.leaves {
+  margin: 0 0 0.35rem 0.55rem;
+  padding-left: 0.85rem;
+  border-left: 1px solid var(--line);
+}
+
+.leaves {
+  list-style: none;
+  margin-bottom: 0.55rem;
+}
+
+.leaves a {
+  display: inline-block;
+  padding: 0.12rem 0;
+  text-decoration: none;
+}
+
+.leaves a:hover { color: var(--accent); }
+
 @media (max-width: 800px) {
   .hero, .entry, .detail-grid, .directory a.row, .plain-row {
     grid-template-columns: 1fr;
