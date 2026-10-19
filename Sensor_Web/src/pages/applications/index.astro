@@ -10,7 +10,9 @@ import { sitePath } from "../../lib/url.js";
   </div>
   <div class="directory">
     {
-      applications.map((application) => (
+      applications
+        .filter((application) => application.id !== "depth" && application.id !== "spectral")
+        .map((application) => (
         <a class="row" href={sitePath(`/applications/${application.id}`)}>
           <div>
             <h3>{application.name}</h3>

@@ -70,8 +70,8 @@ export const technologies = [
   },
   {
     id: "tof",
-    name: "3D探测",
-    description: "用飞行时间、调频连续波或分区深度测量物体远近，并形成深度图。",
+    name: "飞行时间",
+    description: "用飞行时间测量物体远近。间接飞行时间是 iTOF，直接飞行时间是 dTOF。",
   },
   {
     id: "spectral",

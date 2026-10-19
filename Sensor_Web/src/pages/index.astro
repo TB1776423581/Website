@@ -79,7 +79,7 @@ const applicationLabels = {
   consumer: "消费电子",
 };
 
-const applicationOrder = ["depth", "machine", "auto", "mobile", "spectral", "scientific", "consumer"];
+const applicationOrder = ["machine", "auto", "mobile", "scientific", "consumer"];
 
 const depthSubtypes = [
   { id: "itof", name: "iTOF" },
@@ -105,7 +105,7 @@ const spectralOrder = [
 
 const technologyLabels = {
   tof: "飞行时间",
-  spectral: "光谱",
+  spectral: "光谱探测",
 };
 
 const depthModels = products
@@ -151,14 +151,6 @@ const applicationBranches = applicationOrder
       label: applicationLabels[application.id] || application.name,
       series,
       companies: seriesByCompany(series),
-      subtypes: depthSubtypes
-        .map((subtype) => ({
-          ...subtype,
-          companies: byCompany(depthModels.filter((item) => item.kind === subtype.id)),
-        }))
-        .filter((subtype) => subtype.companies.length),
-      rest: byCompany(depthModels.filter((item) => !item.kind)),
-      spectralBands,
     };
   })
   .filter((branch) => branch.series.length);
@@ -180,15 +172,29 @@ const regionBranches = [
     .sort((a, b) => byName(a.company.name, b.company.name)),
 })).filter((region) => region.companies.length);
 
+const tofBranch = {
+  subtypes: depthSubtypes
+    .map((subtype) => ({
+      ...subtype,
+      companies: byCompany(depthModels.filter((item) => item.kind === subtype.id)),
+    }))
+    .filter((subtype) => subtype.companies.length),
+  rest: byCompany(depthModels.filter((item) => !item.kind)),
+};
+
 const technologyBranches = technologies
-  .map((technology) => ({
-    label: technologyLabels[technology.id] || technology.name,
-    models: products
+  .map((technology) => {
+    const models = products
       .filter((product) => product.technologies.includes(technology.id))
       .flatMap((product) => product.models.map((model) => ({ product, model })))
-      .sort((a, b) => byName(a.model.name, b.model.name)),
-  }))
-  .filter((branch) => branch.models.length);
+      .sort((a, b) => byName(a.model.name, b.model.name));
+    return {
+      id: technology.id,
+      label: technologyLabels[technology.id] || technology.name,
+      companies: byCompany(models),
+    };
+  })
+  .filter((branch) => branch.id === "tof" || branch.id === "spectral" || branch.companies.length);
 
 const trendBranches = Object.entries(categories)
   .map(([id, label]) => {
@@ -254,40 +260,99 @@ const trendBranches = Object.entries(categories)
           <summary>应用</summary>
           <div class="tree-children">
             {
-              applicationBranches.map((branch) =>
-                branch.id === "depth" ? (
+              applicationBranches.map((branch) => (
+                <details>
+                  <summary>{branch.label}</summary>
+                  <div class="tree-children">
+                    {branch.companies.map((company) => (
+                      <details>
+                        <summary>{company.name}</summary>
+                        <ul class="leaves">
+                          {company.models.map((item) => (
+                            <li>
+                              <a href={hrefFor(item.product, item.model)}>{item.model.name}</a>
+                            </li>
+                          ))}
+                        </ul>
+                      </details>
+                    ))}
+                  </div>
+                </details>
+              ))
+            }
+          </div>
+        </details>
+
+        <details>
+          <summary>公司</summary>
+          <div class="tree-children">
+            {
+              regionBranches.map((region) => (
+                <details>
+                  <summary>{region.label}</summary>
+                  <div class="tree-children">
+                    {region.companies.map((item) => (
+                      <details>
+                        <summary>{item.company.name}</summary>
+                        <div class="tree-children">
+                          {item.series.map((product) => (
+                            <details>
+                              <summary>{product.title}</summary>
+                              <ul class="leaves">
+                                {product.models.map((model) => (
+                                  <li>
+                                    <a href={hrefFor(product, model)}>{model.name}</a>
+                                  </li>
+                                ))}
+                              </ul>
+                            </details>
+                          ))}
+                        </div>
+                      </details>
+                    ))}
+                  </div>
+                </details>
+              ))
+            }
+          </div>
+        </details>
+
+        <details>
+          <summary>技术</summary>
+          <div class="tree-children">
+            {
+              technologyBranches.map((branch) =>
+                branch.id === "tof" ? (
                   <details>
                     <summary>{branch.label}</summary>
                     <div class="tree-children">
-                      {branch.subtypes.map((subtype) => (
+                      {tofBranch.subtypes.map((subtype) => (
                         <div class="tree-label">
-                        <details>
-                          <summary>{subtype.name}</summary>
-                          <div class="tree-children">
-                            {subtype.companies.map((company) => (
-                              <details>
-                                <summary>{company.name}</summary>
-                                <ul class="leaves">
-                                  {company.models.map((item) => (
-                                    <li>
-                                      <a href={hrefFor(item.product, item.model)}>{item.model.name}</a>
-                                    </li>
-                                  ))}
-                                </ul>
-                              </details>
-                            ))}
-                          </div>
-                        </details>
-                        {(subtype.id === "itof" || subtype.id === "dtof") && (
+                          <details>
+                            <summary>{subtype.name}</summary>
+                            <div class="tree-children">
+                              {subtype.companies.map((company) => (
+                                <details>
+                                  <summary>{company.name}</summary>
+                                  <ul class="leaves">
+                                    {company.models.map((item) => (
+                                      <li>
+                                        <a href={hrefFor(item.product, item.model)}>{item.model.name}</a>
+                                      </li>
+                                    ))}
+                                  </ul>
+                                </details>
+                              ))}
+                            </div>
+                          </details>
                           <a class="roadmap-link" href={sitePath(`/roadmap/${subtype.id}`)}>路线图</a>
-                        )}
                         </div>
                       ))}
-                      {branch.rest.length > 0 && (
+                      {tofBranch.rest.length > 0 && (
                         <details>
                           <summary>其他</summary>
                           <div class="tree-children">
-                            {branch.rest.map((company) => (
+                            {tofBranch.rest.map((company) => (
                               <details>
                                 <summary>{company.name}</summary>
                                 <ul class="leaves">
@@ -308,26 +373,26 @@ const trendBranches = Object.entries(categories)
                   <details>
                     <summary>{branch.label}</summary>
                     <div class="tree-children">
-                      {branch.spectralBands.map((band) => (
+                      {spectralBands.map((band) => (
                         <div class="tree-label">
-                        <details>
-                          <summary>{band.name}</summary>
-                          <div class="tree-children">
-                            {band.companies.map((company) => (
-                              <details>
-                                <summary>{company.name}</summary>
-                                <ul class="leaves">
-                                  {company.models.map((item) => (
-                                    <li>
-                                      <a href={hrefFor(item.product, item.model)}>{item.model.name}</a>
-                                    </li>
-                                  ))}
-                                </ul>
-                              </details>
-                            ))}
-                          </div>
-                        </details>
-                        <a class="roadmap-link" href={sitePath(`/roadmap/${band.id}`)}>路线图</a>
+                          <details>
+                            <summary>{band.name}</summary>
+                            <div class="tree-children">
+                              {band.companies.map((company) => (
+                                <details>
+                                  <summary>{company.name}</summary>
+                                  <ul class="leaves">
+                                    {company.models.map((item) => (
+                                      <li>
+                                        <a href={hrefFor(item.product, item.model)}>{item.model.name}</a>
+                                      </li>
+                                    ))}
+                                  </ul>
+                                </details>
+                              ))}
+                            </div>
+                          </details>
+                          <a class="roadmap-link" href={sitePath(`/roadmap/${band.id}`)}>路线图</a>
                         </div>
                       ))}
                       {broadbandCompanies.length > 0 && (
@@ -374,60 +439,6 @@ const trendBranches = Object.entries(categories)
                   </details>
                 ),
               )
-            }
-          </div>
-        </details>
-
-        <details>
-          <summary>公司</summary>
-          <div class="tree-children">
-            {
-              regionBranches.map((region) => (
-                <details>
-                  <summary>{region.label}</summary>
-                  <div class="tree-children">
-                    {region.companies.map((item) => (
-                      <details>
-                        <summary>{item.company.name}</summary>
-                        <div class="tree-children">
-                          {item.series.map((product) => (
-                            <details>
-                              <summary>{product.title}</summary>
-                              <ul class="leaves">
-                                {product.models.map((model) => (
-                                  <li>
-                                    <a href={hrefFor(product, model)}>{model.name}</a>
-                                  </li>
-                                ))}
-                              </ul>
-                            </details>
-                          ))}
-                        </div>
-                      </details>
-                    ))}
-                  </div>
-                </details>
-              ))
-            }
-          </div>
-        </details>
-
-        <details>
-          <summary>技术</summary>
-          <div class="tree-children">
-            {
-              technologyBranches.map((branch) => (
-                <details>
-                  <summary>{branch.label}</summary>
-                  <ul class="leaves">
-                    {branch.models.map((item) => (
-                      <li>
-                        <a href={hrefFor(item.product, item.model)}>{item.model.name}</a>
-                      </li>
-                    ))}
-                  </ul>
-                </details>
-              ))
             }
           </div>
         </details>
