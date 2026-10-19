@@ -1,4 +1,5 @@
 import { depthProducts } from "./depth-products.js";
+import { spectralProducts } from "./spectral-products.js";
 
 export const products = [
   {
@@ -1064,4 +1065,5 @@ export const products = [
     ],
   },
   ...depthProducts,
+  ...spectralProducts,
 ];

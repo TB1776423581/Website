@@ -51,6 +51,21 @@ const depthSubtypes = [
   { id: "structured", name: "结构光" },
 ];
 
+function spectralBand(product, model) {
+  if (model.band) return model.band;
+  const text = `${product.title}\n${product.summary}\n${(model.points || []).join("\n")}`;
+  if (/短波红外|\bSWIR\b/i.test(text)) return "swir";
+  return "";
+}
+
+const spectralOrder = [
+  { id: "uv", name: "紫外" },
+  { id: "nir", name: "近红外" },
+  { id: "swir", name: "短波" },
+  { id: "mwir", name: "中波" },
+  { id: "lwir", name: "长波" },
+];
+
 const technologyLabels = {
   tof: "飞行时间",
   spectral: "光谱",
@@ -66,6 +81,24 @@ const depthModels = products
     })),
   )
   .sort((a, b) => byName(a.model.name, b.model.name));
+
+const spectralModels = products
+  .filter((product) => product.applications.includes("spectral"))
+  .flatMap((product) =>
+    product.models.map((model) => ({
+      product,
+      model,
+      band: spectralBand(product, model),
+    })),
+  )
+  .sort((a, b) => byName(a.model.name, b.model.name));
+
+const spectralBands = spectralOrder
+  .map((band) => ({
+    ...band,
+    models: spectralModels.filter((item) => item.band === band.id),
+  }))
+  .filter((band) => band.models.length);
 
 const applicationBranches = applicationOrder
   .map((id) => applications.find((item) => item.id === id))
@@ -85,6 +118,7 @@ const applicationBranches = applicationOrder
         }))
         .filter((subtype) => subtype.models.length),
       rest: depthModels.filter((item) => !item.kind),
+      spectralBands,
     };
   })
   .filter((branch) => branch.series.length);
@@ -209,6 +243,24 @@ const trendBranches = Object.entries(categories)
                           </ul>
                         </details>
                       )}
+                    </div>
+                  </details>
+                ) : branch.id === "spectral" ? (
+                  <details>
+                    <summary>{branch.label}</summary>
+                    <div class="tree-children">
+                      {branch.spectralBands.map((band) => (
+                        <details>
+                          <summary>{band.name}</summary>
+                          <ul class="leaves">
+                            {band.models.map((item) => (
+                              <li>
+                                <a href={hrefFor(item.product, item.model)}>{item.model.name}</a>
+                              </li>
+                            ))}
+                          </ul>
+                        </details>
+                      ))}
                     </div>
                   </details>
                 ) : (
