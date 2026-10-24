@@ -451,6 +451,10 @@ export function modelAnchor(name) {
   return `model-${slug || "item"}`;
 }
 
+export function modelTechnologies(product, model) {
+  return model.technologies ?? product.technologies;
+}
+
 export function listedModels(list = products) {
   const rows = list.flatMap((product) =>
     product.models.map((model) => ({
@@ -462,7 +466,7 @@ export function listedModels(list = products) {
       title: model.name,
       summary: model.points.filter(Boolean).slice(0, 2).join(""),
       applications: product.applications,
-      technologies: product.technologies,
+      technologies: modelTechnologies(product, model),
     })),
   );
   return rows.sort((a, b) => {
@@ -504,7 +508,5 @@ export function developmentsForApplication(applicationId) {
 }
 
 export function developmentsForTechnology(technologyId) {
-  return listedModels(
-    products.filter((item) => item.technologies.includes(technologyId)),
-  );
+  return listedModels(products).filter((item) => item.technologies.includes(technologyId));
 }

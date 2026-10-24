@@ -109,13 +109,14 @@ const technologyLabels = {
 };
 
 const depthModels = products
-  .filter((product) => product.technologies.includes("tof"))
   .flatMap((product) =>
-    product.models.map((model) => ({
-      product,
-      model,
-      kind: depthKind(product, model),
-    })),
+    product.models
+      .filter((model) => (model.technologies ?? product.technologies).includes("tof"))
+      .map((model) => ({
+        product,
+        model,
+        kind: depthKind(product, model),
+      })),
   )
   .sort((a, b) => byName(a.model.name, b.model.name));
 
@@ -185,8 +186,11 @@ const tofBranch = {
 const technologyBranches = technologies
   .map((technology) => {
     const models = products
-      .filter((product) => product.technologies.includes(technology.id))
-      .flatMap((product) => product.models.map((model) => ({ product, model })))
+      .flatMap((product) =>
+        product.models
+          .filter((model) => (model.technologies ?? product.technologies).includes(technology.id))
+          .map((model) => ({ product, model })),
+      )
       .sort((a, b) => byName(a.model.name, b.model.name));
     return {
       id: technology.id,
