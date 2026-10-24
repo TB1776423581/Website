@@ -4013,6 +4013,36 @@ export const products = [
       },
     ],
   },
+  {
+    id: "vd56ga",
+    date: "2026-09-04",
+    companyId: "st",
+    category: "product",
+    title: "VD56GA：110 万像素全局快门",
+    summary:
+      "数据简报写 VD56GA 为车规 110 万像素全局快门，面向近红外。修订记录写明 2026-09-04 为首次公开发布。产品页写 2.43 μm 背照像素、1152×920、60 fps，CSP 为 3.7 mm × 3.1 mm。产品手册写封装 3.7 mm × 3.2 mm、全分辨率最高 80 fps。",
+    applications: ["auto"],
+    technologies: ["global", "stacked", "lowlight"],
+    models: [
+      {
+        name: "VD56GA",
+        date: "2026-09-04",
+        url: "https://www.st.com/en/imaging-and-photonics-solutions/vd56ga.html",
+        linkLabel: "打开产品页",
+        points: [
+          "数据简报修订记录写明 2026-09-04 为首次公开发布。",
+          "产品页写明 110 万像素全局快门，单色，2.43 μm × 2.43 μm 背照像素，ST DeepNIR。有效像素 1152×920，60 fps。",
+          "产品页写光学尺寸小于 1/5 英寸（对角 3.58 mm）。CSP 为 3.7 mm × 3.1 mm，6×5 球，球距 550 μm。3D 堆叠，40 nm/65 nm。微透镜偏移对应 20° 线性 CRA。",
+          "产品页特性表写 940 nm 绝对量子效率 41%，描述写 43%，可用一颗低功耗 LED。面向驾驶员监测，并写虚拟 200 万像素的符合性。",
+          "产品页写 AEC-Q100 Grade 2 认证进行中，结温 -40°C 到 125°C。符合 ISO 26262，用于 ASIL B 系统集成，并符合 ISO 21434。",
+          "双通道 MIPI CSE FSED，每通道最高 1.5 Gbps。片上自动曝光，可调感兴趣区域。输出 8 位和 10 位，以及单色 YUV 422 8 位。",
+          "产品手册写封装 3.7 mm × 3.2 mm，全分辨率最高 80 fps，60 fps 时典型功耗 100 mW，并写 AEC-Q100 Grade 2 已认证。",
+          "产品手册写相对上一代，MTF 提高 35%，量子效率灵敏度提高 60%。用途包括驾驶员监测、乘员监测和舱内人脸识别。产品手册写 2.5 Mp 级。",
+          "AutoSens 与 InCabin Europe 2026 活动页写等效 2.7 MP。活动日期为 2026-09-22 至 2026-09-24。",
+        ],
+      },
+    ],
+  },
   ...depthProducts,
   ...spectralProducts,
 ];
