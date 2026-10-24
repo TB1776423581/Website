@@ -280,7 +280,7 @@ export const depthProducts = [
     category: "product",
     title: "E：速腾聚创全固态激光雷达",
     summary:
-      "E1 是车规补盲激光雷达，视场 120°×90°，10% 反射率下 30 m。E1R 面向机器人，同样是 120°×90°，最远 75 m，10% 反射率下 30 m。E2 是 2026 年 7 月 28 日发布的全固态数字激光雷达，发布稿写明水平视场最高 180°。",
+      "E1 是车规补盲激光雷达，视场 120°×90°，10% 反射率下 30 m。E1R 面向机器人，同样是 120°×90°，最远 75 m，10% 反射率下 30 m。E2 是 2026 年 7 月 28 日发布的全固态数字激光雷达。发布稿写明水平视场最高 180°；产品页写明最大视场 180°×135°，10% 反射率下最远 35 m。",
     applications: ["depth", "auto", "machine"],
     technologies: ["tof"],
     models: [
@@ -299,8 +299,63 @@ export const depthProducts = [
         "https://www.robosense.ai/en/news-show-1998",
         [
           "2026 年 7 月 28 日在世界人工智能大会发布。全固态数字激光雷达，数字直接飞行时间（dToF），采用自有 SPAD-SoC。",
-          "水平视场最高 180°。半隐藏光学设计，只露出两个光学窗口。",
+          "发布稿写明水平视场最高 180°。半隐藏光学设计，只露出两个光学窗口。",
           "发布稿写明面向机器人割草机、人形机器人、四足机器人、无人机和空间智能数据采集设备。",
+          "产品页写明最大视场 180°×135°，双回波最高点频 1,500,000 点/秒，最高精度 1 cm（1σ），10% 反射率下最远 35 m。",
+          "产品页写明采用可量产的 Peacock SPAD-SoC 与 2D VCSEL，扫描方式为 2D 电子扫描。",
+        ],
+        "打开产品发布页",
+      ),
+    ],
+  },
+  {
+    id: "robosense-phoenix",
+    date: "2026-04-21",
+    companyId: "robosense",
+    category: "product",
+    title: "Phoenix：速腾聚创车规 SPAD-SoC",
+    summary:
+      "2026 年 4 月 21 日发布。Phoenix 是车规级单片 SPAD-SoC，可输出 2160 线。发布稿写明分辨率 2160×1900，探测距离 600 m，并有 AEC-Q100。2160 线方案的量产时间写为 2026 年。",
+    applications: ["depth", "auto"],
+    technologies: ["tof"],
+    models: [
+      page(
+        "Phoenix",
+        "2026-04-21",
+        "https://www.robosense.ai/en/news-show-1978",
+        [
+          "2026 年 4 月 21 日在深圳技术日发布。车规级单片 SPAD-SoC，基于 EOCENE 架构。",
+          "可独立输出 2160 线。发布稿写明分辨率 2160×1900，并输出 2K 超高清近红外图像。探测距离 600 m。AEC-Q100。",
+          "发布稿写明 Phoenix 系列有五款，分别对应 2160、1440、720、480 和 240 线的激光雷达方案。稿中没有写出另外四款的独立型号。",
+          "发布稿写明 2160 线方案已获得车企定点，量产时间为 2026 年。",
+          "同稿把 EOCENE 写成第三代 SPAD，光子探测效率 45%，28 nm，并用晶圆级混合键合做第二代三维堆叠。工作温度写为 -40°C 到 125°C。",
+        ],
+        "打开产品发布页",
+      ),
+    ],
+  },
+  {
+    id: "robosense-peacock",
+    date: "2026-04-21",
+    companyId: "robosense",
+    category: "product",
+    title: "Peacock：速腾聚创全固态 SPAD-SoC",
+    summary:
+      "2026 年 4 月 21 日发布。Peacock 是全固态超大面阵 SPAD-SoC，分辨率 640×480。发布稿写明视场 180°×135°，最近探测距离 5 cm，量产时间为 2026 年第三季度。",
+    applications: ["depth", "auto", "machine"],
+    technologies: ["tof"],
+    models: [
+      page(
+        "Peacock",
+        "2026-04-21",
+        "https://www.robosense.ai/en/news-show-1978",
+        [
+          "2026 年 4 月 21 日与 Phoenix 同日发布。全固态超大面阵 SPAD-SoC，基于 EOCENE。分辨率 640×480。",
+          "视场 180°×135°。发布稿写明精度为毫米级，最近可探测 5 cm 的物体。",
+          "发布稿写明用途包括车载补盲、低速自动驾驶、工业安全、机器人和超级传感器形态。",
+          "量产时间为 2026 年第三季度。发布稿写明首批已经向客户交付。",
+          "E2 产品页写明，E2 采用可量产的 Peacock SPAD-SoC，架构为数字直接飞行时间（dToF）。",
+          "发布稿写明，把彩色滤光片阵列与 Peacock 的输出结合做成 RGBD，并写明这款 RGBD 传感器计划于 2027 年底正式发布。稿中没有写出该 RGBD 传感器的型号。",
         ],
         "打开产品发布页",
       ),
