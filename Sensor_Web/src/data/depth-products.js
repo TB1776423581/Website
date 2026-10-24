@@ -1132,7 +1132,7 @@ export const depthProducts = [
     summary:
       "Atlas 是车规 FMCW 4D 激光雷达，可同时测距和测速。产品页写明 10% 反射率下最远 250 m，视场 120°×30°。",
     applications: ["depth", "auto"],
-    technologies: ["tof"],
+    technologies: [],
     models: [
       page("Atlas", "", "https://www.aeva.com/atlas/", [
         "FMCW，逐点多普勒测速，同时输出距离。",

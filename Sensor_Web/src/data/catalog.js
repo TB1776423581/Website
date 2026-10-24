@@ -370,8 +370,8 @@ export const companies = [
     name: "SCD",
     nameEn: "SCD",
     region: "海外",
-    hq: "",
-    summary: "做制冷中波和长波红外探测器。产品页列出 PELICAN-D 640 与 PELICAN-D LW。",
+    hq: "以色列",
+    summary: "做制冷中波和长波红外探测器。关于页写明总部和晶圆厂在以色列。产品页列出 PELICAN-D 640 与 PELICAN-D LW。",
   },
   {
     id: "inright",
@@ -388,6 +388,22 @@ export const companies = [
     region: "国内",
     hq: "北京",
     summary: "做胶体量子点短波红外探测器。手册列出 640、1280 面阵和 1024 线阵。",
+  },
+  {
+    id: "ams",
+    name: "艾迈斯欧司朗",
+    nameEn: "ams OSRAM",
+    region: "海外",
+    hq: "奥地利",
+    summary: "做全局快门 CMOS 图像传感器。Mira 产品页页脚地址在奥地利 Premstätten。",
+  },
+  {
+    id: "raytron",
+    name: "睿创微纳",
+    nameEn: "Raytron",
+    region: "国内",
+    hq: "",
+    summary: "做车载红外模组。Horus1280-AW 产品页写明集成 1280×720、8 μm 氧化钒探测器。",
   },
 ];
 

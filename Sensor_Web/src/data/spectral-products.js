@@ -31,12 +31,12 @@ export const spectralProducts = [
         "产品页写明紫外到近红外都有高灵敏度，石英窗。最高行频 4672 行/秒。",
       ], "uv"),
       page("S11639-21", "", "https://www.hamamatsu.com/eu/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S11639-21.html", [
-        "与 S11639-01 同为 2048 像素、光谱响应 200 到 1000 nm。",
+        "与 S11639-01 同为 2048×1，光谱响应 200 到 1000 nm。",
         "表面贴装陶瓷封装。产品页同样强调紫外区高灵敏度。",
       ], "uv"),
       page("S11639N-02", "", "https://www.hamamatsu.com/jp/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S11639N-02.html", [
         "无窗。光谱响应 140 到 1000 nm。产品页写明相对前代提高真空紫外灵敏度。",
-        "2048 像素，像素 14×200 μm。读出噪声 16 e⁻ rms。",
+        "2048×1，像素 14×200 μm。读出噪声 16 e⁻ rms。",
       ], "uv"),
     ],
   },
@@ -61,16 +61,16 @@ export const spectralProducts = [
     date: "",
     companyId: "hamamatsu",
     category: "product",
-    title: "G12242-0707W：滨松近红外 InGaAs 面阵",
+    title: "G12242-0707W：滨松 InGaAs 面阵",
     summary:
-      "产品页标题写近红外二维图像传感器，光谱响应 0.95 到 1.7 μm，覆盖到短波一侧。",
+      "产品页标题写近红外二维图像传感器。光谱响应 0.95 到 1.7 μm，与同范围的 G14671 一起放在短波。",
     applications: ["spectral", "machine"],
     technologies: ["spectral"],
     models: [
       page("G12242-0707W", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ingaas-image-sensor/ingaas-area-image-sensor/G12242-0707W.html", [
         "128×128，像素 20 μm。光谱响应 0.95 到 1.7 μm，峰值灵敏度典型 1550 nm。",
         "最高 258 帧/秒。两级热电制冷。全局快门与卷帘快门可切换。",
-      ], "nir"),
+      ], "swir"),
     ],
   },
   {
@@ -88,10 +88,10 @@ export const spectralProducts = [
         "选型指南：320×256，光谱响应 0.95 到 1.69 μm。两级热电制冷，芯片 15℃。",
       ], "swir", "打开产品手册"),
       page("G14672-0808W", "", hamamatsuGuide, [
-        "选型指南：光谱响应 1.12 到 1.85 μm。芯片温度 -20℃。",
+        "选型指南：320×256，像素 20 μm。光谱响应 1.12 到 1.85 μm。芯片温度 -20℃。",
       ], "swir", "打开产品手册"),
       page("G14673-0808W", "", hamamatsuGuide, [
-        "选型指南：光谱响应 1.3 到 2.15 μm。",
+        "选型指南：320×256，像素 20 μm。光谱响应 1.3 到 2.15 μm。",
       ], "swir", "打开产品手册"),
       page("G14674-0808W", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ingaas-image-sensor/ingaas-area-image-sensor/G14674-0808W.html", [
         "产品页标题写近红外，光谱响应写明 1.70 到 2.55 μm，峰值灵敏度典型 2200 nm。",
@@ -114,13 +114,13 @@ export const spectralProducts = [
         "选型指南：光谱响应 0.95 到 1.69 μm。三级热电制冷，芯片 15℃。最高帧频 503 帧/秒。",
       ], "swir", "打开产品手册"),
       page("G16562-0808T", "", hamamatsuGuide, [
-        "选型指南：光谱响应 1.12 到 1.85 μm。",
+        "选型指南：320×256，像素 20 μm。光谱响应 1.12 到 1.85 μm。",
       ], "swir", "打开产品手册"),
       page("G16563-0808T", "", hamamatsuGuide, [
-        "选型指南：光谱响应 1.3 到 2.15 μm。",
+        "选型指南：320×256，像素 20 μm。光谱响应 1.3 到 2.15 μm。",
       ], "swir", "打开产品手册"),
       page("G16564-0808T", "", hamamatsuGuide, [
-        "选型指南：光谱响应 1.7 到 2.55 μm。",
+        "选型指南：320×256，像素 20 μm。光谱响应 1.7 到 2.55 μm。",
       ], "swir", "打开产品手册"),
     ],
   },
@@ -138,7 +138,7 @@ export const spectralProducts = [
         "选型指南：320×256，三级热电制冷。光谱响应 0.9 到 2.15 μm。",
       ], "swir", "打开产品手册"),
       page("G17243-0808T", "", hamamatsuGuide, [
-        "选型指南：光谱响应 0.9 到 2.55 μm。1.7 μm 区域缺陷像素上限 0.37%，2.2 与 2.6 μm 区域为 1%。",
+        "选型指南：320×256，像素 20 μm。光谱响应 0.9 到 2.55 μm。1.7 μm 区域缺陷像素上限 0.37%，2.2 与 2.6 μm 区域为 1%。",
       ], "swir", "打开产品手册"),
     ],
   },
@@ -210,7 +210,7 @@ export const spectralProducts = [
         "NETD 小于 30 mK（f/1，300 K，30 Hz）。最高 120 Hz。",
       ], "lwir", "打开产品手册"),
       page("PICO640S BB 7-14", "", "https://www.lynred.com/products/pico640s-bb-7-14", [
-        "产品页型号为 PICO640S BB 7-14。640×480，像元 17 μm。",
+        "产品页型号为 PICO640S BB 7-14，光谱带 7 到 14 μm。640×480，像元 17 μm。",
         "热灵敏度小于 30 mK（f/1，300 K，30 Hz）。最高 60 Hz。用于气体泄漏成像。",
       ], "lwir"),
     ],
@@ -422,7 +422,8 @@ export const spectralProducts = [
       ], "mwir"),
       page("PELICAN-D LW", "", "https://www.scd-infrared.com/products/pelican-d-lw/", [
         "640×512，像元 15 μm，T2SL。产品页写长波，截止波长 9.3 μm。",
-        "工作温度 77 K。70% 阱填充时 NETD 15 mK（65%，30 Hz）。最高帧频 350 Hz。",
+        "工作温度 77 K。最高帧频 350 Hz。",
+        "产品页同一行写 NETD at 70% well fill 为 15 mK，括号里又写 65%、30 Hz。两处阱填充比例不一致，页面没有解释。",
       ], "lwir"),
     ],
   },

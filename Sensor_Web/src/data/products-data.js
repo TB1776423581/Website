@@ -632,7 +632,7 @@ export const products = [
     category: "product",
     title: "VL53L：飞行时间测距传感器",
     summary:
-      "这一页对照 VL53L1、L3、L4、L5、L7 和 L8。分区型最远大约 350 到 400 cm，VL53L1 的测距模式最远 800 cm。都用 940 nm VCSEL。",
+      "这一页对照 VL53L1、L3、L4、L5、L7 和 L8。都是直接飞行时间。分区型最远大约 350 到 400 cm，VL53L1 的测距模式最远 800 cm。都用 940 nm VCSEL。",
     applications: ["depth", "consumer"],
     technologies: ["tof"],
     models: [
@@ -1266,6 +1266,77 @@ export const products = [
           "公开数据手册把 XGS 8000 与同家族的 XGS 12000、XGS 9400 放在一起。",
           "家族说明写 4096×2160，880 万像素。12 bit 全分辨率最高 128 fps。",
           "像素为该家族的 3.2 μm 全局快门。",
+        ],
+      },
+    ],
+  },
+  {
+    id: "mira",
+    date: "",
+    companyId: "ams",
+    category: "product",
+    title: "Mira：艾迈斯欧司朗全局快门图像传感器",
+    summary:
+      "Mira220、Mira050 和 Mira016 都是近红外增强的全局快门 CMOS，像素 2.79 μm，面向机器视觉、主动立体和结构光。",
+    applications: ["machine", "consumer"],
+    technologies: ["global"],
+    models: [
+      {
+        name: "Mira220",
+        date: "",
+        url: "https://ams-osram.com/products/sensor-solutions/cmos-image-sensors/ams-mira220",
+        linkLabel: "打开产品页",
+        points: [
+          "2.2 MP，1600×1400。光学尺寸 1/2.7 英寸，像素 2.79 μm。全局快门。",
+          "最高 90 fps。位深 8、10 或 12 bit。有黑白、RGB 和 RGBIR。",
+          "产品页写明 940 nm 量子效率领先，并列出 CSP 封装。",
+        ],
+      },
+      {
+        name: "Mira050",
+        date: "",
+        url: "https://ams-osram.com/products/sensor-solutions/cmos-image-sensors/ams-mira050-cmos-image-sensor",
+        linkLabel: "打开产品页",
+        points: [
+          "0.5 MP。光学尺寸 1/6 英寸，像素 2.79 μm。背照式，全局快门。最高 120 fps。",
+          "位深 8、10 或 12 bit。有黑白、RGB 和 RGBIR。产品页写明 MIPI CSI-2。",
+          "同站图像传感器列表写有效像素 600×800。",
+        ],
+      },
+      {
+        name: "Mira016",
+        date: "",
+        url: "https://ams-osram.com/products/sensor-solutions/cmos-image-sensors/ams-mira016-cmos-image-sensor",
+        linkLabel: "打开产品页",
+        points: [
+          "0.16 MP。数据手册写有效像素 400×400，像素 2.79 μm，光学尺寸 1/11.6 英寸。",
+          "背照式全局快门。10 bit 全分辨率最高 360 fps，12 bit 最高 200 fps。",
+          "CSP 封装 1.79×1.79 mm。产品页写明可用于 AR/VR 眼动追踪。",
+        ],
+      },
+    ],
+  },
+  {
+    id: "horus",
+    date: "",
+    companyId: "raytron",
+    category: "product",
+    title: "Horus：睿创微纳车载红外模组",
+    summary:
+      "Horus1280-AW 产品页写明面向乘用车前装，集成 8 μm、1280×720 氧化钒非制冷探测器。页面没有写响应波段。",
+    applications: ["auto"],
+    technologies: [],
+    models: [
+      {
+        name: "Horus1280-AW",
+        date: "",
+        url: "https://www.raytrontek.com/product/pro-detail-613.htm",
+        linkLabel: "打开产品页",
+        points: [
+          "1280×720，像元 8 μm。Sensor 类型写氧化钒非制冷微测辐射热计。",
+          "探测器和 ASIC-ISP LY300 均为 AEC-Q100 Grade 2。帧率 30 fps。",
+          "视场 120°×61.2°。探测器 NETD ≤40 mK（25℃，F/1.0，30 Hz）。",
+          "GMSL2。前盖 IP69K，整机 IP67。重量小于 80 g。",
         ],
       },
     ],

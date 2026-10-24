@@ -13,8 +13,8 @@ export const roadmaps = [
   { id: "dtof", name: "dTOF", kind: "distance", depth: "dtof" },
 ];
 
-function textOf(product, model) {
-  return [product.title, product.summary, ...(model.points || [])].join("\n");
+function modelText(model) {
+  return (model.points || []).join("\n");
 }
 
 function companyName(product) {
@@ -35,7 +35,7 @@ function toMeters(value, unit) {
 
 export function wavelengthRangeNm(text) {
   const ranges = [];
-  const pattern = /(\d+(?:\.\d+)?)\s*(?:到|至|–|—|-|~|－)\s*(\d+(?:\.\d+)?)\s*(nm|μm|um|微米)/gi;
+  const pattern = /(\d+(?:\.\d+)?)(?:\s*±\s*\d+(?:\.\d+)?)?(?:\s*(?:nm|μm|um|微米))?\s*(?:到|至|–|—|-|~|－)\s*(\d+(?:\.\d+)?)(?:\s*±\s*\d+(?:\.\d+)?)?\s*(nm|μm|um|微米)/gi;
   let match = pattern.exec(text);
   while (match) {
     let start = toNm(match[1], match[3]);
@@ -57,13 +57,17 @@ export function resolutionPixels(text) {
     const width = Number(match[1]);
     const height = Number(match[2]);
     const pixelSize = Boolean(match[3]);
-    if (!pixelSize && ((width >= 128 && height === 1) || (width >= 64 && height >= 64))) {
+    if (!pixelSize && ((width >= 128 && height === 1) || (width >= 64 && height >= 48))) {
       counts.push(width * height);
     }
     match = arrays.exec(text);
   }
   const megapixels = text.match(/(\d+(?:\.\d+)?)\s*万像素/);
   if (megapixels) counts.push(Number(megapixels[1]) * 10000);
+  if (/线阵/.test(text)) {
+    const line = text.match(/(\d{3,5})\s*像素/);
+    if (line) counts.push(Number(line[1]));
+  }
   if (!counts.length) return null;
   return Math.max(...counts);
 }
@@ -77,13 +81,21 @@ export function distanceRangeM(text) {
     const max = toMeters(span[3], span[4]);
     return min < max ? { min, max } : { min: max, max: min };
   }
+  const shared = text.match(
+    /(\d+(?:\.\d+)?)\s*(?:到|至)\s*(\d+(?:\.\d+)?)\s*(mm|cm|m|毫米|厘米|米)/,
+  );
+  if (shared) {
+    const min = toMeters(shared[1], shared[3]);
+    const max = toMeters(shared[2], shared[3]);
+    return min < max ? { min, max } : { min: max, max: min };
+  }
   const farthest = text.match(/(?:最远|量程)(?:约|大约)?\s*(\d+(?:\.\d+)?)\s*(mm|cm|m|毫米|厘米|米)/);
   if (farthest) return { min: 0, max: toMeters(farthest[1], farthest[2]) };
   return null;
 }
 
 function depthKind(product, model) {
-  const text = textOf(product, model);
+  const text = [product.title, product.summary, modelText(model)].join("\n");
   if (/直接飞行时间|dToF|dTOF/i.test(text)) return "dtof";
   if (/间接飞行时间|iToF|iTOF/i.test(text)) return "itof";
   return "";
@@ -94,7 +106,7 @@ function spectralRows() {
     .filter((product) => product.applications.includes("spectral"))
     .flatMap((product) =>
       product.models.map((model) => {
-        const text = textOf(product, model);
+        const text = modelText(model);
         const wave = wavelengthRangeNm(text);
         const pixels = resolutionPixels(text);
         return {
@@ -127,7 +139,7 @@ export function rowsForRoadmap(id) {
     .filter((product) => product.applications.includes("depth"))
     .flatMap((product) =>
       product.models.map((model) => {
-        const text = textOf(product, model);
+        const text = modelText(model);
         return {
           product,
           model,

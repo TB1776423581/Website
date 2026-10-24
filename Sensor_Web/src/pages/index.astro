@@ -109,7 +109,7 @@ const technologyLabels = {
 };
 
 const depthModels = products
-  .filter((product) => product.applications.includes("depth"))
+  .filter((product) => product.technologies.includes("tof"))
   .flatMap((product) =>
     product.models.map((model) => ({
       product,
