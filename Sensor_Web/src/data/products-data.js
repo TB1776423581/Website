@@ -367,12 +367,12 @@ export const products = [
   },
   {
     id: "gsense4040",
-    date: "2017",
+    date: "2026-01-19",
     companyId: "gpixel",
     category: "product",
-    title: "GSENSE4040：1680 万像素科学级 CMOS",
+    title: "GSENSE：科学级 CMOS",
     summary:
-      "GSENSE4040 是 4096×4096、9 μm 的卷帘快门科学级传感器，光学尺寸 3.3 英寸。HDR 模式下暗噪声 3.7 e⁻、满阱 74.2 ke⁻，全分辨率 HDR 最高 24 fps。用于医疗成像、天文，无微透镜版本用于 X 射线和显微 CT。",
+      "GSENSE4040 是 4096×4096、9 μm 的卷帘快门科学级传感器，光学尺寸 3.3 英寸。GSENSE64105BSI 是 2026 年 1 月 19 日发布的 10240×10240、6.4 μm 背照式科学级传感器，感光面积 65.5 mm × 65.5 mm，用于天文和科学成像。",
     applications: ["scientific"],
     technologies: ["hdr", "lowlight"],
     models: [
@@ -385,6 +385,20 @@ export const products = [
           "4096×4096、9 μm，光学尺寸 3.3 英寸，感光面积 36.864 mm × 36.864 mm，卷帘快门。",
           "HDR 模式暗噪声 3.7 e⁻，满阱 74.2 ke⁻，全分辨率 HDR 最高 24 fps。峰值量子效率 73.9%（600 nm）。",
           "带微透镜的版本用于医疗成像和天文；无微透镜版本用于 X 射线、带电粒子和显微 CT。",
+        ],
+      },
+      {
+        name: "GSENSE64105BSI",
+        date: "2026-01-19",
+        url: "https://www.gpixel.com/en/details_225.html",
+        linkLabel: "打开产品发布页",
+        points: [
+          "2026 年 1 月 19 日发布，用于天文和科学成像。10240×10240，约 1.048 亿像素，像素 6.4 μm。",
+          "感光面积 65.5 mm × 65.5 mm。背照式。卷帘快门。片上双增益 HDR。",
+          "发布稿首段写场景内动态范围大于 95 dB；特性栏写 12 bit HDR 读出噪声 1.25 e⁻、13 bit 高增益 1.7 e⁻，HDR 为 98.8 dB。",
+          "550 nm 峰值量子效率 75%。暗电流 6.28 e⁻/s/pix（20°C）。12 bit HDR 路径满阱 110 ke⁻。",
+          "24 对 LVDS 加 4 路 DDR 时钟，每路 280 Mbps。典型功耗低于 1.6 W。",
+          "工程样品已向早期合作方提供。",
         ],
       },
     ],
@@ -1702,6 +1716,179 @@ export const products = [
       },
     ],
   },
+  {
+    id: "imx927",
+    date: "2025-09-29",
+    companyId: "sony",
+    category: "product",
+    title: "IMX927：工业全局快门图像传感器",
+    summary:
+      "IMX927、IMX928、IMX929、IMX937、IMX938、IMX939、IMX947 与 IMX949 于 2025 年 9 月 29 日一起发布，都是背照式堆叠全局快门，用于工业检测。前六款像素 2.74 μm；IMX947 与 IMX949 像素 5.48 μm。八款都用带连接器的陶瓷封装，输出 SLVS-EC，彩色滤光片为黑白或 Bayer。",
+    applications: ["machine"],
+    technologies: ["global", "stacked"],
+    models: [
+      {
+        name: "IMX927",
+        date: "2025-09-29",
+        url: "https://www.sony-semicon.com/en/info/2025/2025092901.html",
+        linkLabel: "打开产品发布页",
+        points: [
+          "2025 年 9 月 29 日发布，用于工业检测。背照式堆叠，全局快门，Pregius S。",
+          "2.5 英寸，对角 39.7 mm。有效像素 10272×10272，约 1.0551 亿。像素 2.74 μm。",
+          "全像素读出：8 bit 为 112 fps，10 bit 为 102 fps，12 bit 为 73 fps。发布稿另写 10 bit 输出时最高 100 fps。",
+          "输出 SLVS-EC。彩色滤光片为黑白或 Bayer。陶瓷封装，带连接器，160 引脚 × 2，45 mm × 52 mm。",
+          "样品计划 2025 年 11 月中旬出货。",
+        ],
+      },
+      {
+        name: "IMX928",
+        date: "2025-09-29",
+        url: "https://www.sony-semicon.com/en/info/2025/2025092901.html",
+        linkLabel: "打开产品发布页",
+        points: [
+          "与 IMX927 同日发布。2.0 英寸，对角 31.9 mm。有效像素 8256×8256，约 6816 万。像素 2.74 μm。",
+          "全像素读出：8 bit 为 138 fps，10 bit 为 126 fps，12 bit 为 90 fps。",
+          "全局快门，输出 SLVS-EC，彩色滤光片为黑白或 Bayer。陶瓷封装与 IMX927 相同。",
+        ],
+      },
+      {
+        name: "IMX929",
+        date: "2025-09-29",
+        url: "https://www.sony-semicon.com/en/info/2025/2025092901.html",
+        linkLabel: "打开产品发布页",
+        points: [
+          "与 IMX927 同日发布。1.8 英寸，对角 28.1 mm。有效像素 8224×6176，约 5079 万。像素 2.74 μm。",
+          "全像素读出：8 bit 为 225 fps，10 bit 为 201 fps，12 bit 为 136 fps。",
+          "全局快门，输出 SLVS-EC，彩色滤光片为黑白或 Bayer。陶瓷封装与 IMX927 相同。",
+        ],
+      },
+      {
+        name: "IMX937",
+        date: "2025-09-29",
+        url: "https://www.sony-semicon.com/en/info/2025/2025092901.html",
+        linkLabel: "打开产品发布页",
+        points: [
+          "与 IMX927 同日发布。图像尺寸与 IMX927 相同：2.5 英寸，对角 39.7 mm，10272×10272，约 1.0551 亿，像素 2.74 μm。",
+          "全像素读出：8 bit 为 56 fps，10 bit 为 51 fps，12 bit 为 36 fps。",
+          "全局快门，输出 SLVS-EC，彩色滤光片为黑白或 Bayer。陶瓷封装与 IMX927 相同。",
+        ],
+      },
+      {
+        name: "IMX938",
+        date: "2025-09-29",
+        url: "https://www.sony-semicon.com/en/info/2025/2025092901.html",
+        linkLabel: "打开产品发布页",
+        points: [
+          "与 IMX927 同日发布。图像尺寸与 IMX928 相同：2.0 英寸，对角 31.9 mm，8256×8256，约 6816 万，像素 2.74 μm。",
+          "全像素读出：8 bit 为 70 fps，10 bit 为 64 fps，12 bit 为 45 fps。",
+          "全局快门，输出 SLVS-EC，彩色滤光片为黑白或 Bayer。陶瓷封装与 IMX927 相同。",
+        ],
+      },
+      {
+        name: "IMX939",
+        date: "2025-09-29",
+        url: "https://www.sony-semicon.com/en/info/2025/2025092901.html",
+        linkLabel: "打开产品发布页",
+        points: [
+          "与 IMX927 同日发布。图像尺寸与 IMX929 相同：1.8 英寸，对角 28.1 mm，8224×6176，约 5079 万，像素 2.74 μm。",
+          "全像素读出：8 bit 为 115 fps，10 bit 为 102 fps，12 bit 为 69 fps。",
+          "全局快门，输出 SLVS-EC，彩色滤光片为黑白或 Bayer。陶瓷封装与 IMX927 相同。",
+        ],
+      },
+      {
+        name: "IMX947",
+        date: "2025-09-29",
+        url: "https://www.sony-semicon.com/en/info/2025/2025092901.html",
+        linkLabel: "打开产品发布页",
+        points: [
+          "与 IMX927 同日发布。2.5 英寸，对角 39.7 mm。有效像素 5136×5136，约 2637 万。像素 5.48 μm。",
+          "全像素读出：8 bit 为 423 fps，10 bit 为 383 fps，12 bit 为 277 fps。",
+          "全局快门，输出 SLVS-EC，彩色滤光片为黑白或 Bayer。陶瓷封装与 IMX927 相同。",
+        ],
+      },
+      {
+        name: "IMX949",
+        date: "2025-09-29",
+        url: "https://www.sony-semicon.com/en/info/2025/2025092901.html",
+        linkLabel: "打开产品发布页",
+        points: [
+          "与 IMX927 同日发布。1.8 英寸，对角 28.1 mm。有效像素 4112×3088，约 1269 万。像素 5.48 μm。",
+          "全像素读出：8 bit 为 811 fps，10 bit 为 722 fps，12 bit 为 502 fps。",
+          "全局快门，输出 SLVS-EC，彩色滤光片为黑白或 Bayer。陶瓷封装与 IMX927 相同。",
+        ],
+      },
+    ],
+  },
+
+  {
+    id: "ox03h",
+    date: "2025",
+    companyId: "omnivision",
+    category: "product",
+    title: "OX03H10：300 万像素车载观察传感器",
+    summary:
+      "OX03H10 是 1920×1536、3.0 μm 的卷帘快门传感器，光学尺寸 1/2.44 英寸，用于电子后视镜、后视和环视。TheiaCel 用单次曝光做到 140 dB 动态范围。",
+    applications: ["auto"],
+    technologies: ["hdr", "stacked", "lowlight"],
+    models: [
+      {
+        name: "OX03H10",
+        date: "2025",
+        url: "https://www.ovt.com/products/ox03h10/",
+        linkLabel: "打开产品页",
+        points: [
+          "产品页写明用于电子后视镜、后视和环视。页面没有写出完整发布日期。",
+          "1920×1536，300 万像素，像素 3.0 μm，光学尺寸 1/2.44 英寸。卷帘快门。全分辨率 60 fps。",
+          "TheiaCel 结合 LOFIC、单次曝光 DCG 和分区像素 HDR，单次曝光动态范围 140 dB，用来减轻 LED 频闪。",
+          "PureCel Plus-S 堆叠。封装 a-CSP，与 OX03F10 引脚兼容。输出接口 MIPI。",
+          "输出格式包括 20/16/14/12-bit（PWL）合成 HDR，以及未压缩 24-bit。符合 ASIL C，并带网络安全。",
+          "产品页写明样品现已提供，量产时间为 2025 年下半年。",
+        ],
+      },
+    ],
+  },
+
+  {
+    id: "glr",
+    date: "2026-05-22",
+    companyId: "gpixel",
+    category: "product",
+    title: "GLR：背照式线阵图像传感器",
+    summary:
+      "GLR1002BSI-S 与 GLR1202BSI-L 都是背照式线阵 CMOS。GLR1002BSI-S 为 2411×1、像素 10 μm × 200 μm，全局快门，用于光学相干层析和光谱。GLR1202BSI-L 为 2000×1、像素 12.5 μm × 1000 μm，用于激光位移。",
+    applications: ["scientific", "machine"],
+    technologies: [],
+    models: [
+      {
+        name: "GLR1002BSI-S",
+        date: "2026-03-23",
+        url: "https://www.gpixel.com/en/details_231.html",
+        linkLabel: "打开产品发布页",
+        points: [
+          "2026 年 3 月 23 日发布。背照式全局快门线阵，用于光学相干层析和光谱。",
+          "分辨率 2411×1，像素 10 μm × 200 μm。行频最高 250 kHz。",
+          "440 nm 峰值量子效率 91%，850 nm 为 58%。满阱 155 ke⁻。输出 12 bit 或 14 bit。",
+          "Sub-LVDS，1.2 GHz，功耗小于 450 mW。陶瓷 CLCC，双面增透玻璃，尺寸 40 mm × 11 mm。",
+          "发布稿写到的用途包括眼科、皮肤科，以及电池膜、涂层均匀性和焊缝检测。",
+          "工程样品和评估板现已可订购。发布稿写明有三种可选读出模式。",
+        ],
+      },
+      {
+        name: "GLR1202BSI-L",
+        date: "2026-05-22",
+        url: "https://www.gpixel.com/en/details_238.html",
+        linkLabel: "打开产品发布页",
+        points: [
+          "2026 年 5 月 22 日发布，用于激光位移。背照式线阵。分辨率 2000×1，像素 12.5 μm × 1000 μm。",
+          "650 nm 量子效率接近 90%。片上 1×2 合并可把灵敏度提高一倍，最高行频到 350 kHz。",
+          "另有 1K 分辨率选项，1224×1，有效成像长度 15.3 mm。",
+          "CLCC 封装，双面增透玻璃，尺寸 40 mm × 11 mm。发布稿写明有两种工作模式。",
+          "工程样品预计 2026 年 6 月中旬开始出货，现已接受订购。",
+        ],
+      },
+    ],
+  },
+
   ...depthProducts,
   ...spectralProducts,
 ];
