@@ -507,9 +507,9 @@ export const depthProducts = [
     date: "",
     companyId: "livox",
     category: "product",
-    title: "Avia：览沃测绘激光雷达",
+    title: "Avia：览沃激光雷达",
     summary:
-      "Avia 规格页写明：0 klx、80% 反射率下 450 m，10% 反射率下 190 m。非重复扫描视场 70.4°×77.2°。",
+      "Avia 规格页写明：0 klx、80% 反射率下 450 m，10% 反射率下 190 m。非重复扫描视场 70.4°×77.2°。Avia 2 的中文发布稿写 7 月 30 日发布，1535 nm，Focus 模式最远截止 1000 米。",
     applications: ["depth", "machine"],
     technologies: ["tof"],
     models: [
@@ -519,6 +519,21 @@ export const depthProducts = [
         "单回波 240,000 点/秒，双回波 480,000 点/秒，三回波 720,000 点/秒。20 m 处测距随机误差 1σ 小于 2 cm。",
         "重量约 498 g（不含线缆），IP67。内置 BMI088。",
       ]),
+      page(
+        "Avia 2",
+        "2026-07-30",
+        "https://www.livoxtech.com/cn/news/avia-2_launch",
+        [
+          "英文页面日期为 2026-07-30。中文发布稿写 7 月 30 日，览沃发布傲览 Avia 2。1535 nm。发布稿写该波长人眼安全裕度更高，脚注写它属于广义 1550 nm（1.5 μm）人眼安全波段，Class 1 与 1550 nm 对等。",
+          "Normal 模式量程 400 米（5% 反射率），发布稿写等效接近 600 米（10% 反射率）。Focus 模式 800 米（10% 反射率）。最远截止 1000 米，发布稿写针对 20% 反射率目标物测得。",
+          "规格表写 Normal ≥ 400 m（5%）、Focus ≥ 800 m（10%）。脚注写 10% 反射率下测距能力可达 600 米，为保持每秒 35 万点，把 Normal 模式截止量程锁定在 400 米，并写优化了飞行时间与测量速率的平衡。",
+          "视场角 Normal 为 80°×80°，Focus 为 15°×15°。楔形棱镜非重复式扫描。光斑发散角 0.25 mrad × 0.25 mrad，100 米处光斑直径 2.5 cm。",
+          "规格表写角度精度 ≤ 0.02°（1σ）。测距精度 5 m 到 400 m 为 ≤ 4 cm（1σ），400 m 到 700 m 为 ≤ 6 cm（1σ）。发布稿另写厘米级测距精度。",
+          "发布稿写 MTTF 可达 62,500 小时，并写为实验室典型测算值。工作温度 -20℃ 到 65℃。内置雨雾滤噪。脚注写雨天滤噪适用于小雨至中雨。",
+          "发布稿写用途包括输电线路、轨旁周界、煤场粮仓和矿石堆场量方，以及智慧航道。",
+        ],
+        "打开产品发布页",
+      ),
     ],
   },
   {
@@ -1235,8 +1250,8 @@ export const depthProducts = [
     category: "product",
     title: "Atlas：Aeva 调频连续波激光雷达",
     summary:
-      "Atlas 是车规 FMCW 4D 激光雷达，可同时测距和测速。产品页写明 10% 反射率下最远 250 m，视场 120°×30°。",
-    applications: ["depth", "auto"],
+      "Atlas 是车规 FMCW 4D 激光雷达，可同时测距和测速。产品页写明 10% 反射率下最远 250 m，视场 120°×30°。Atlas Ultra 的产品页写 10% 反射率下 250 m、视场 120°×25°。Atlas Orion 的产品页写车辆探测最远 500 m。",
+    applications: ["depth", "auto", "machine"],
     technologies: [],
     models: [
       page("Atlas", "", "https://www.aeva.com/atlas/", [
@@ -1244,6 +1259,18 @@ export const depthProducts = [
         "10% 反射率下最远 250 m。视场 120°（水平）×30°（垂直）。",
         "功能安全 ISO 26262 ASIL-B（D）。相对 Aeries II 体积小 70%。被动散热。",
         "同页另写数字信号处理可做最远 500 m 的测量。",
+      ]),
+      page("Atlas Ultra", "", "https://www.aeva.com/atlas-ultra/", [
+        "产品页未写发布日期。车规 4D 激光雷达，面向量产项目中的 SAE L3/L4 自动驾驶。",
+        "相对 Aeva Atlas，分辨率是 3 倍，厚度少 35%。10% 反射率下 250 米。视场 120°（水平）×25°（垂直），并写最宽 120°。",
+        "工作温度 -40°C 到 85°C。ISO 26262 ASIL-B（D）。",
+        "产品页写即时速度检测、无 blooming 或 ghosting、抗干扰，以及 CoreVision Lidar-on-Chip 和 X1 SoC。",
+      ]),
+      page("Atlas Orion", "", "https://www.aeva.com/atlas-orion/", [
+        "产品页未写发布日期。远距 4D 激光雷达，数据和供电走以太网，面向智慧基础设施和安防。",
+        "弱势道路使用者探测最远 200 米，车辆探测最远 500 米。水平视场 120°。两台即可覆盖路口。角分辨率 0.05°×0.05°。",
+        "支持以太网供电。耐久认证为 NEMA-TS2。",
+        "使用 Aeva X1 LiDAR SoC。页面写该 SoC 是第一款车规 FMCW 激光雷达 SoC，并写 ISO 26262、ISO 21434 和 SOTIF/PAS 21448。",
       ]),
     ],
   },
