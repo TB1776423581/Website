@@ -776,10 +776,25 @@ export const products = [
     category: "product",
     title: "ISOCELL JN：0.64 μm、5000 万像素手机传感器",
     summary:
-      "JN1 与 JN5 都是 0.64 μm、5000 万像素的小尺寸手机传感器。JN1 光学尺寸 1/2.76 英寸，暗光下四像素合并为 1.28 μm。JN5 可用于前置到长焦，并有片上 2 倍变焦。",
+      "JN1、JN5 与 JNP 都是 0.64 μm、5000 万像素的小尺寸手机传感器。JN1 光学尺寸 1/2.76 英寸，暗光下四像素合并为 1.28 μm。JN5 可用于前置到长焦，并有片上 2 倍变焦。JNP 光学尺寸 1/2.74 英寸。产品页写明 JNP 采用 Nanoprism，相对上一代感度提高 25%，页注写明上一代是 JN5。产品页没有写 JNP 的公布日期。",
     applications: ["mobile"],
     technologies: ["hdr", "lowlight"],
     models: [
+      {
+        name: "ISOCELL JNP",
+        date: "",
+        url: "https://semiconductor.samsung.com/image-sensor/mobile-image-sensor/isocell-jnp/",
+        linkLabel: "打开产品页",
+        points: [
+          "产品页没有写公布日期。规格表写产品状态为量产，用于手机。",
+          "有效分辨率 8192×6144，像素 0.64 μm，光学尺寸 1/2.74 英寸。彩色滤光片为 Tetrapixel RGB Bayer。电子卷帘快门。",
+          "产品页写明 Nanoprism 是像素内的光学结构，用高折射率纳米结构取代微透镜，按波长衍射分光。相对上一代，感度提高 25%。页注写明上一代是 ISOCELL JN5。",
+          "片上硬件 remosaic 可实时预览并输出 5000 万像素，最高 2 倍变焦时视场角保持不变。可用于广角、长焦和前置。前置配置的低功耗 Always-On 低于拍摄模式。",
+          "HDR 为 Staggered HDR 与 Dual Slope Gain。产品页写明 DSG 用两种模拟增益同时读出同一幅图像，并在传感器上合并，于单帧内处理。",
+          "全分辨率 15 fps，1250 万像素 60 fps。4K 60 fps，全高清 240 fps。对焦为 Super QPD（PDAF）。",
+          "接口为 4 lane D-PHY，每 lane 3.5 Gbps；或 3 trio C-PHY，每 trio 3.488 Gsps。输出 RAW10、RAW12。",
+        ],
+      },
       {
         name: "ISOCELL JN5",
         date: "2024-06-27",
@@ -801,6 +816,33 @@ export const products = [
           "2021 年 6 月 10 日发布。5000 万像素、0.64 μm，光学尺寸 1/2.76 英寸。",
           "可用于前置、超广角或长焦。Tetrapixel 在暗光下合并为 1.28 μm、1250 万像素。",
           "ISOCELL 2.0，场景间 HDR，Double Super PD。4K 60 fps，全高清 240 fps。",
+        ],
+      },
+    ],
+  },
+  {
+    id: "isocell-hm6",
+    date: "",
+    companyId: "samsung",
+    category: "product",
+    title: "ISOCELL HM6：1.08 亿像素手机图像传感器",
+    summary:
+      "产品页写明 ISOCELL HM6 为 1.08 亿像素、0.64 μm，采用 Nonapixel Plus 和 Super PD。规格表写光学尺寸 1/1.67 英寸，有效分辨率 12000×9000，产品状态为量产。页面没有写公布日期。",
+    applications: ["mobile"],
+    technologies: ["highres", "hdr", "lowlight"],
+    models: [
+      {
+        name: "ISOCELL HM6",
+        date: "",
+        url: "https://semiconductor.samsung.com/image-sensor/mobile-image-sensor/isocell-hm6/",
+        linkLabel: "打开产品页",
+        points: [
+          "产品页没有写公布日期。规格表写产品状态为量产，用于手机。",
+          "有效分辨率 12000×9000，像素 0.64 μm，光学尺寸 1/1.67 英寸。彩色滤光片为 Nonapixel RGB Bayer。电子卷帘快门，并带全局复位。",
+          "产品页写明这是首款采用 Nonapixel Plus 的传感器，把九个像素一次合并，得到噪声水平接近 1.92 μm 大像素的 1200 万像素图像。相对上一代 0.7 μm、1.08 亿像素 ISOCELL，对焦单元多四倍。页注的比较对象也是这款 0.7 μm 前代。",
+          "支持 3 倍无损变焦。全分辨率 8 fps，1200 万像素 90 fps。8K 24 fps，4K 120 fps。",
+          "对焦为 Super PD（PDAF）。规格表写 HDR 为 Smart-ISO Pro（iDCG）。产品页写明 Smart-ISO 可改变转换增益。",
+          "接口为 4 lane D-PHY，每 lane 4 Gbps；或 3 trio C-PHY，每 trio 3.5 Gsps。输出 RAW8（DPCM/PCM 压缩）、RAW10、RAW12。",
         ],
       },
     ],
