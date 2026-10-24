@@ -9,7 +9,7 @@ export const products = [
     category: "product",
     title: "LYTIA：手机图像传感器",
     summary:
-      "LYT-818 与 LYTIA L910 都是约 5000 万有效像素、1/1.28 英寸（对角 12.49 mm）、1.22 μm 的堆叠式手机传感器，彩色滤光片为 Quad Bayer。L910 是 LYTIA 系列第一款 LOFIC 产品，单次曝光动态范围 100 dB；LYT-818 用 UHCG 把随机噪声降到 0.95 e⁻，新 HDR 方式的动态范围是 86 dB。LYTIA 610 是 1/2.0 英寸、约 6400 万有效像素、0.7 μm 的堆叠式传感器，彩色滤光片为 Quad Bayer Coding。",
+      "LYT-818、LYT-828 与 LYTIA L910 都是约 5000 万有效像素、1/1.28 英寸（对角 12.49 mm）、1.22 μm、Quad Bayer 的堆叠式手机传感器。L910 是 LYTIA 系列第一款 LOFIC 产品，单次曝光动态范围 100 dB；LYT-818 用 UHCG 把随机噪声降到 0.95 e⁻，新 HDR 方式的动态范围是 86 dB。LYTIA 901 是 1/1.12 英寸（对角 14.287 mm）、约 2 亿有效像素、0.7 μm、Quad Quad Bayer Coding 的堆叠式传感器。LYTIA 610 是 1/2.0 英寸、约 6400 万有效像素、0.7 μm 的堆叠式传感器，彩色滤光片为 Quad Bayer Coding。",
     applications: ["mobile"],
     technologies: ["stacked", "hdr", "lowlight"],
     models: [
@@ -36,6 +36,33 @@ export const products = [
           "同时使用 TCG-HDR 和 UHCG。发布页写明，相对 LYTIA 828，随机噪声大约降低 30%。",
           "可在 HDR 下做 4K 60 fps，量产出货时间为 2026 年夏季。",
           "用于手机，面向夜景、户外和省电的高画质视频。",
+        ],
+      },
+      {
+        name: "LYTIA 901",
+        date: "2025-11-27",
+        url: "https://www.sony-semicon.com/en/info/2025/2025112701.html",
+        linkLabel: "打开产品发布页",
+        points: [
+          "2025 年 11 月 27 日发布。1/1.12 英寸（对角 14.287 mm），约 2 亿有效像素，像素 0.7 μm。堆叠式。",
+          "彩色滤光片为 Quad Quad Bayer Coding。正常拍摄时把 16 个同色像素合为一个像素，变焦时在传感器内做基于 AI 学习的 remosaic。",
+          "4 倍变焦下 4K 最高 30 fps。全像素 10 fps，50M 为 30 fps，12.5M 为 60 fps，8K 为 30 fps，4K 为 120 fps。",
+          "DCG-HDR 与 Fine12bit ADC 覆盖到 4 倍变焦。HF-HDR 在 16 像素相加模式下动态范围超过 100 dB。",
+          "量产出货时间为 2025 年 11 月。发布页写明，从这一款起，LYTIA 新产品使用「LYTIA + 产品编号」命名。",
+          "接口 MIPI C-PHY 2/3 trio，最高 6.0 Gsps/trio；或 MIPI D-PHY 2/4 lane，最高 2.5 Gbps/lane。",
+        ],
+      },
+      {
+        name: "LYT-828",
+        date: "2025-06-26",
+        url: "https://www.sony-semicon.com/en/info/2025/2025062601.html",
+        linkLabel: "打开产品发布页",
+        points: [
+          "2025 年 6 月 26 日发布，是 LYT-818 的后继，归在 LYTIA 品牌下，主要用于手机主摄和副摄。",
+          "1/1.28 英寸（对角 12.49 mm），约 5000 万有效像素，像素 1.22 μm。堆叠式，彩色滤光片 Quad Bayer Coding。",
+          "HF-HDR 的动态范围超过 100 dB。全像素 30 fps，1250 万像素 120 fps，4K 120 fps。",
+          "UHCG 电路用于降低随机噪声。量产出货时间为 2025 年 8 月下旬。",
+          "接口 MIPI C-PHY 2/3 trio，最高 6.0 Gsps/trio；或 MIPI D-PHY 2/4 lane，最高 2.5 Gbps/lane。",
         ],
       },
       {
@@ -172,15 +199,28 @@ export const products = [
   },
   {
     id: "ov50",
-    date: "2023-01-03",
+    date: "2025-04-10",
     companyId: "omnivision",
     category: "product",
     title: "OV50：5000 万像素手机图像传感器",
     summary:
-      "OV50A、OV50E、OV50H、OV50K40 都是约 5000 万像素的手机传感器。OV50K40 用 TheiaCel 做单次曝光 HDR。OV50H 与 OV50K40 的光学尺寸是 1/1.3 英寸。",
+      "OV50A、OV50E、OV50H、OV50K40、OV50X50 都是约 5000 万像素的手机传感器。OV50X50 光学尺寸 1 英寸、像素 1.6 μm，用 TheiaCel 把单次曝光 HDR 做到接近 110 dB。OV50K40 也用 TheiaCel 做单次曝光 HDR。OV50H 与 OV50K40 的光学尺寸是 1/1.3 英寸。",
     applications: ["mobile"],
     technologies: ["stacked", "hdr", "lowlight"],
     models: [
+      {
+        name: "OV50X50",
+        date: "2025-04-10",
+        url: "https://www.ovt.com/products/ov50x/",
+        linkLabel: "打开产品页",
+        points: [
+          "2025 年 4 月 10 日的发布稿公布这款传感器。产品页型号为 OV50X50，有效像素 8192×6144，写明 50.3 MP。",
+          "光学尺寸 1 英寸，像素 1.6 μm。卷帘快门。PureCel Plus-S 堆叠，TheiaCel。",
+          "单次曝光 HDR 接近 110 dB。四相位对焦。彩色滤光片为 4-Cell。",
+          "50MP 为 30 fps。1250 万像素线性模式 180 fps，HCG + LOFIC / LCG 为 90 fps，DCG + LOFIC 为 60 fps。",
+          "输出 10/12/14 bit RGB RAW，接口 MIPI。封装 COB 或 RW。产品页写明量产时间为 2025 年第三季度。",
+        ],
+      },
       {
         name: "OV50H",
         date: "2023-01-03",
@@ -1380,6 +1420,33 @@ export const products = [
     ],
   },
   {
+    id: "imx775",
+    date: "2025-10-02",
+    companyId: "sony",
+    category: "product",
+    title: "IMX775：约 500 万像素车内 RGB-IR 图像传感器",
+    summary:
+      "2025 年 10 月 2 日发布。IMX775 是 1/2.64 英寸、像素 2.1 μm 的 RGB-IR 传感器，有效像素 2593×1945，用于车内监测。RGB 动态范围 110 dB，940 nm 量子效率不低于 35%。",
+    applications: ["auto"],
+    technologies: ["hdr", "lowlight"],
+    models: [
+      {
+        name: "IMX775",
+        date: "2025-10-02",
+        url: "https://www.sony-semicon.com/en/news/2025/2025100201.html",
+        linkLabel: "打开产品发布页",
+        points: [
+          "2025 年 10 月 2 日发布。有效像素 2593×1945，约 504 万。对角 6.81 mm（1/2.64 英寸），像素 2.1 μm。",
+          "同一颗芯片输出可见光 RGB 和 940 nm 近红外。940 nm 量子效率不低于 35%。全像素最高 60 fps。",
+          "RGB 用卷帘快门配合片上处理，动态范围 110 dB；近红外用全局快门。片上算法去除 RGB 像素里的近红外成分。",
+          "计划量产前取得 AEC-Q100 Grade 2。开发流程对应 ISO 26262，并写明符合 ASIL-B。",
+          "接口 MIPI CSI-2，4 lane 或 2 lane。裸片或 120 引脚 BGA，封装尺寸 9.35 mm×8.05 mm。",
+          "量产出货计划为 2026 年春季。",
+        ],
+      },
+    ],
+  },
+  {
     id: "imx908",
     date: "2026-03-17",
     companyId: "sony",
@@ -1511,6 +1578,42 @@ export const products = [
     ],
   },
   {
+    id: "ox05c",
+    date: "2025-10-07",
+    companyId: "omnivision",
+    category: "product",
+    title: "OX05C：500 万像素车内全局快门图像传感器",
+    summary:
+      "OX05C1S 与 OX05C1B 都是 OX05C。产品页写明这是 500 万像素、2.2 μm、背照式全局快门 HDR 传感器，用于驾驶员和乘员监测。OX05C1S 为 RGB-IR，OX05C1B 为黑白。",
+    applications: ["auto"],
+    technologies: ["global", "hdr", "lowlight"],
+    models: [
+      {
+        name: "OX05C1S",
+        date: "2025-10-07",
+        url: "https://www.ovt.com/products/ox05c1s/",
+        linkLabel: "打开产品页",
+        points: [
+          "2025 年 10 月 7 日发布。500 万像素，像素 2.2 μm，光学尺寸 1/2.525 英寸。背照式，全局快门。",
+          "彩色滤光片 RGB-IR。3 次曝光 HDR 为 60 fps。输出 10/12/14/16 bit HDR RAW，接口 MIPI。",
+          "Nyxel，940 nm。片上 RGB-IR 分离。技术栏还列出 PureCel Plus-S。封装 a-CSP。",
+          "封装尺寸 6.61 mm×5.34 mm，比前代 OX05B1S 的 7.94 mm×6.34 mm 小 30%。",
+          "发布稿写明样品已可提供，量产时间为 2026 年。",
+        ],
+      },
+      {
+        name: "OX05C1B",
+        date: "2025-10-07",
+        url: "https://www.ovt.com/products/ox05c1s/",
+        linkLabel: "打开产品页",
+        points: [
+          "同一产品页写明 OX05C 有黑白版本 OX05C1B，RGB-IR 版本是 OX05C1S。",
+          "页面把 OX05C 标为 500 万像素、2.2 μm 的背照式全局快门 HDR 传感器，用于驾驶员和乘员监测。",
+        ],
+      },
+    ],
+  },
+  {
     id: "og05d",
     date: "2026-10-05",
     companyId: "omnivision",
@@ -1569,6 +1672,32 @@ export const products = [
           "120 万像素，全局快门，像素 3.5 μm。参数表写 60 fps、光学尺寸 1/3 英寸、MIPI、黑白。概述写 1/3.2 英寸。",
           "片上双激光驱动，调制频率最高 200 MHz，并有激光人眼安全阈值。深度计算放在片外。",
           "发布稿写明这一族测距最远 30 m。",
+        ],
+      },
+    ],
+  },
+  {
+    id: "ox01n1b",
+    date: "2025-04-22",
+    companyId: "omnivision",
+    category: "product",
+    title: "OX01N1B：150 万像素车内全局快门图像传感器",
+    summary:
+      "2025 年 4 月 22 日发布。OX01N1B 是 150 万像素、2.2 μm、1/4.546 英寸的黑白背照式全局快门传感器，用于驾驶员监测。产品页写明近红外量子效率 36%。",
+    applications: ["auto"],
+    technologies: ["global", "lowlight"],
+    models: [
+      {
+        name: "OX01N1B",
+        date: "2025-04-22",
+        url: "https://www.ovt.com/products/ox01n1b/",
+        linkLabel: "打开产品页",
+        points: [
+          "产品页写明 2025 年 4 月 22 日发布。1440×1080，150 万像素。像素 2.2 μm，光学尺寸 1/4.546 英寸。",
+          "黑白、背照式、全局快门。Nyxel 近红外量子效率 36%。OmniPixel4-GS。",
+          "全分辨率 90 fps。输出 10 bit 黑白 RAW 或 10 bit YUV。接口 DVP 与 MIPI。",
+          "集成 ASIL B 和网络安全。封装 a-CSP。技术栏列出 PureCel Plus-S。",
+          "产品页写明正在送样，量产时间为 2026 年第三季度。",
         ],
       },
     ],

@@ -68,9 +68,9 @@ export const depthProducts = [
     date: "",
     companyId: "hesai",
     category: "product",
-    title: "QT128：禾赛近距超广角激光雷达",
+    title: "QT：禾赛近距超广角激光雷达",
     summary:
-      "QT128 是 128 线、360° 近距激光雷达，10% 反射率下 20 m，垂直视场 105°，用于车身盲区。",
+      "QT128 与 PandarQT 都是 360° 近距激光雷达，10% 反射率下 20 m。QT128 为 128 线，垂直视场 105°。PandarQT 为 64 线，手册写垂直视场 104.2°。",
     applications: ["depth", "auto"],
     technologies: ["tof"],
     models: [
@@ -79,6 +79,20 @@ export const depthProducts = [
         "视场 360°×105°，角分辨率 0.4°×0.4°。尺寸 Φ87×83.9 mm，重量 700 g。",
         "Class 1，ISO 26262 ASIL B。",
       ]),
+      page(
+        "PandarQT",
+        "",
+        "https://www.hesaitech.com/wp-content/uploads/2025/04/PandarQT_User_Manual_Q01-en-241210.pdf",
+        [
+          "手册型号为 PandarQT，64 线，机械旋转。波长 885 nm，Class 1。",
+          "10% 反射率下 20 m。仪器量程 0.1 到 60 m。典型测距准确度 ±3 cm，典型精度 2 cm。",
+          "视场 360°×104.2°（-52.1° 到 +52.1°）。水平角分辨率 0.6°，垂直最细 1.45°。帧率 10 Hz。",
+          "单回波 384,000 点/秒，双回波 768,000 点/秒。功耗 8 W。",
+          "高度 76.0 mm，顶部/底部直径 76.3/80.2 mm，重量 0.47 kg。防护 IP6K7 与 IP6K9K。",
+          "数据接口为 Ethernet 100BASE-T1。",
+        ],
+        "打开产品手册",
+      ),
     ],
   },
   {
