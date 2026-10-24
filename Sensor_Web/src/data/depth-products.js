@@ -250,12 +250,12 @@ export const depthProducts = [
   },
   {
     id: "robosense-e1",
-    date: "",
+    date: "2026-07-28",
     companyId: "robosense",
     category: "product",
-    title: "E1：速腾聚创全固态激光雷达",
+    title: "E：速腾聚创全固态激光雷达",
     summary:
-      "E1 是车规补盲激光雷达，视场 120°×90°，10% 反射率下 30 m。E1R 面向机器人，同样是 120°×90°，最远 75 m，10% 反射率下 30 m。",
+      "E1 是车规补盲激光雷达，视场 120°×90°，10% 反射率下 30 m。E1R 面向机器人，同样是 120°×90°，最远 75 m，10% 反射率下 30 m。E2 是 2026 年 7 月 28 日发布的全固态数字激光雷达，发布稿写明水平视场最高 180°。",
     applications: ["depth", "auto", "machine"],
     technologies: ["tof"],
     models: [
@@ -268,6 +268,17 @@ export const depthProducts = [
         "最远 75 m，10% 反射率下 30 m。点频 260,000 点/秒，144 线。",
         "窗口尺寸 7×35×75 mm。采用 SPAD-SoC 与 2D VCSEL。",
       ]),
+      page(
+        "E2",
+        "2026-07-28",
+        "https://www.robosense.ai/en/news-show-1998",
+        [
+          "2026 年 7 月 28 日在世界人工智能大会发布。全固态数字激光雷达，数字直接飞行时间（dToF），采用自有 SPAD-SoC。",
+          "水平视场最高 180°。半隐藏光学设计，只露出两个光学窗口。",
+          "发布稿写明面向机器人割草机、人形机器人、四足机器人、无人机和空间智能数据采集设备。",
+        ],
+        "打开产品发布页",
+      ),
     ],
   },
   {
