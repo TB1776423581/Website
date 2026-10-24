@@ -218,6 +218,31 @@ export const depthProducts = [
     ],
   },
   {
+    id: "hesai-picasso",
+    date: "2026-04-20",
+    companyId: "hesai",
+    category: "product",
+    title: "Picasso：禾赛全彩激光雷达 SPAD-SoC",
+    summary:
+      "2026 年 4 月 20 日的发布稿介绍 Picasso。这是第五代 6D 全彩激光雷达 SPAD-SoC，在芯片上同时做 RGB 与飞行时间测距，点云自带颜色。光子探测效率超过 40%。",
+    applications: ["depth", "auto"],
+    technologies: ["tof"],
+    models: [
+      page(
+        "Picasso",
+        "2026-04-20",
+        `${hesai}/hesai-unveils-picasso-6d-full-color-spad-soc-next-gen-etx-and-innovations-in-spatial-intelligence-and-physical-ai/`,
+        [
+          "页面日期为 2026 年 4 月 20 日。文中写 2026 年 4 月 17 日举办技术开放日。",
+          "第五代 6D 全彩激光雷达 ASIC 平台。在芯片上集成 RGB 与飞行时间测距，直接生成带颜色的点云。",
+          "光子探测效率超过 40%。发布稿写明用于更远的测距、较小物体和低照度，并写明功耗包络与原来相同。",
+          "发布稿写明 ETX 基于 Picasso，通道包括 1080、2160，最高 4320，预计 2026 年下半年量产。",
+        ],
+        "打开产品发布页",
+      ),
+    ],
+  },
+  {
     id: "robosense-m",
     date: "",
     companyId: "robosense",
