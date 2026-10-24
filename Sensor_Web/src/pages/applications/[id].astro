@@ -5,7 +5,9 @@ import { applications, developmentsForApplication } from "../../data/catalog.js"
 import { sitePath } from "../../lib/url.js";
 
 export function getStaticPaths() {
-  return applications.map((application) => ({
+  return applications
+    .filter((application) => application.id !== "depth" && application.id !== "spectral")
+    .map((application) => ({
     params: { id: application.id },
     props: { application },
   }));

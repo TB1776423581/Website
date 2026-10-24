@@ -4,6 +4,7 @@ import {
   categories,
   companyById,
   formatDate,
+  listedApplications,
   tagTechnologies,
   technologyById,
 } from "../data/catalog.js";
@@ -28,7 +29,7 @@ const technologies = tagTechnologies(item);
     <p class="summary">{item.summary}</p>
     <div class="tags">
       {
-        item.applications.map((id) => {
+        listedApplications(item).map((id) => {
           const application = applicationById(id);
           return (
             <a class="tag" href={sitePath(`/applications/${application.id}`)}>

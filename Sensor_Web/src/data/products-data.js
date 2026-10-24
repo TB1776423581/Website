@@ -4,15 +4,28 @@ import { spectralProducts } from "./spectral-products.js";
 export const products = [
   {
     id: "lytia",
-    date: "2026-06-17",
+    date: "2026-06-24",
     companyId: "sony",
     category: "product",
-    title: "LYTIA：5000 万像素手机图像传感器",
+    title: "LYTIA：手机图像传感器",
     summary:
-      "LYT-818 与 LYTIA L910 都是约 5000 万有效像素、1/1.28 英寸（对角 12.49 mm）、1.22 μm 的堆叠式手机传感器，彩色滤光片为 Quad Bayer。L910 是 LYTIA 系列第一款 LOFIC 产品，单次曝光动态范围 100 dB；LYT-818 用 UHCG 把随机噪声降到 0.95 e⁻，新 HDR 方式的动态范围是 86 dB。",
+      "LYT-818 与 LYTIA L910 都是约 5000 万有效像素、1/1.28 英寸（对角 12.49 mm）、1.22 μm 的堆叠式手机传感器，彩色滤光片为 Quad Bayer。L910 是 LYTIA 系列第一款 LOFIC 产品，单次曝光动态范围 100 dB；LYT-818 用 UHCG 把随机噪声降到 0.95 e⁻，新 HDR 方式的动态范围是 86 dB。LYTIA 610 是 1/2.0 英寸、约 6400 万有效像素、0.7 μm 的堆叠式传感器，彩色滤光片为 Quad Bayer Coding。",
     applications: ["mobile"],
     technologies: ["stacked", "hdr", "lowlight"],
     models: [
+      {
+        name: "LYTIA 610",
+        date: "2026-06-24",
+        url: "https://www.sony-semicon.com/en/news/2026/2026062401.html",
+        linkLabel: "打开产品发布页",
+        points: [
+          "2026 年 6 月 24 日发布，用于手机，发布稿写明面向长焦，并缩小主摄和副摄的画质差。",
+          "1/2.0 英寸（对角 8.095 mm），约 6400 万有效像素，像素 0.7 μm。堆叠式。彩色滤光片 Quad Bayer Coding，OCL 为 RB2×2。",
+          "发布稿写明这是该像素结构里首款量产的 CMOS 图像传感器。相对同像素尺寸的 LYTIA 601，空间分辨率提高 20% 以上。",
+          "6400 万像素 24 fps；1600 万像素 60 fps，DAG-HDR 时 30 fps。4K 120 fps，DAG-HDR 时 4K 60 fps。",
+          "量产出货时间为 2026 年 6 月底。接口为 MIPI C-PHY 或 D-PHY。",
+        ],
+      },
       {
         name: "LYTIA L910",
         date: "2026-06-17",
@@ -40,15 +53,27 @@ export const products = [
   },
   {
     id: "ox08d",
-    date: "2025-10-07",
+    date: "2026-09-21",
     companyId: "omnivision",
     category: "product",
     title: "OX08D：800 万像素车外图像传感器",
     summary:
-      "OX08D10 与 OX08D20 都是 2.1 μm、TheiaCel 的 800 万像素车外传感器，用于辅助驾驶和自动驾驶。OX08D20 是 OX08D10 的升级，光学尺寸 1/1.729 英寸，HDR3 下 3840×2160 可达 60 fps。",
+      "OX08D10、OX08D20 与 OX08D30 都是 TheiaCel 的 800 万像素车外传感器，用于辅助驾驶和自动驾驶。OX08D20 是 OX08D10 的升级，光学尺寸 1/1.729 英寸，像素 2.1 μm，HDR3 下 3840×2160 可达 60 fps。OX08D30 与 OX08D10 引脚兼容，发布稿写明采用 2.1 μm TheiaCel。",
     applications: ["auto"],
     technologies: ["hdr"],
     models: [
+      {
+        name: "OX08D30",
+        date: "2026-09-21",
+        url: "https://www.ovt.com/press-releases/omnivision-announces-new-theiacel-image-sensor-with-industry-leading-led-flicker-mitigation-in-exterior-automotive-cameras/",
+        linkLabel: "打开产品发布页",
+        points: [
+          "2026 年 9 月 21 日在 AutoSens Europe 发布，用于车外辅助驾驶和自动驾驶摄像头。",
+          "800 万像素。发布稿写明采用 2.1 μm TheiaCel，结合下一代 LOFIC 与 DCG，与 OX08D10 引脚兼容。",
+          "单次曝光 HDR 用来减轻 LED 频闪。发布稿写明探测距离最高 200 m。",
+          "功耗比同级其他图像传感器低 20%，尺寸小 50%，封装为 a-CSP。样品已可提供，并已量产。",
+        ],
+      },
       {
         name: "OX08D20",
         date: "2025-10-07",
@@ -76,15 +101,28 @@ export const products = [
   },
   {
     id: "isocell-hp",
-    date: "2024-06-27",
+    date: "2025",
     companyId: "samsung",
     category: "product",
     title: "ISOCELL HP：2 亿像素手机图像传感器",
     summary:
-      "HP1、HP2、HP3、HP9 都是 2 亿像素手机传感器。HP1 像素 0.64 μm、光学尺寸 1/1.22 英寸；HP2 为 0.6 μm、1/1.3 英寸；HP3 为 0.56 μm、发布稿写明 1/1.4 英寸；HP9 为 0.56 μm，面向长焦。",
+      "HP1、HP2、HP3、HP5、HP9 都是 2 亿像素手机传感器。HP1 像素 0.64 μm、光学尺寸 1/1.22 英寸；HP2 为 0.6 μm、1/1.3 英寸；HP3 为 0.56 μm、发布稿写明 1/1.4 英寸；HP5 为 0.5 μm；HP9 为 0.56 μm，面向长焦。",
     applications: ["mobile"],
     technologies: ["highres", "hdr", "lowlight"],
     models: [
+      {
+        name: "ISOCELL HP5",
+        date: "2025",
+        url: "https://semiconductor.samsung.com/image-sensor/mobile-image-sensor/isocell-hp5/",
+        linkLabel: "打开产品页",
+        points: [
+          "产品页写明这是 2 亿像素手机传感器，像素 0.5 μm，用于广角和长焦。",
+          "三星半导体技术文章把这一 0.5 μm 像素写在 2025 年。",
+          "产品页写明采用 FDTI 与 D-VTG。DCC 相对未采用该结构的设计，转换增益提高 150%，随机噪声改善 3% 到 40%。",
+          "广角相机上传感器内变焦最高 4 倍；配合 3 倍长焦模组可到 12 倍。",
+          "增强的 Smart-ISO Pro 与 staggered HDR。E2E AI Remosaic 处理最高 2 亿像素的图像不到 2 秒。",
+        ],
+      },
       {
         name: "ISOCELL HP9",
         date: "2024-06-27",
@@ -1337,6 +1375,200 @@ export const products = [
           "探测器和 ASIC-ISP LY300 均为 AEC-Q100 Grade 2。帧率 30 fps。",
           "视场 120°×61.2°。探测器 NETD ≤40 mK（25℃，F/1.0，30 Hz）。",
           "GMSL2。前盖 IP69K，整机 IP67。重量小于 80 g。",
+        ],
+      },
+    ],
+  },
+  {
+    id: "imx908",
+    date: "2026-03-17",
+    companyId: "sony",
+    category: "product",
+    title: "IMX908：840 万像素安防图像传感器",
+    summary:
+      "IMX908 是用于安防摄像头的 4K CMOS 图像传感器。规格表写有效像素 3856×2180、约 840 万，像素 1.45 μm，对角 6.42 mm（1/2.8 英寸）。Clear HDR3 下单次曝光动态范围 96 dB。",
+    applications: ["machine"],
+    technologies: ["hdr", "lowlight"],
+    models: [
+      {
+        name: "IMX908",
+        date: "2026-03-17",
+        url: "https://www.sony-semicon.com/en/news/2026/2026031701.html",
+        linkLabel: "打开产品发布页",
+        points: [
+          "2026 年 3 月 17 日发布，用于安防摄像头。规格表型号为 IMX908-AQR1。",
+          "有效像素 3856×2180，约 840 万。对角 6.42 mm（1/2.8 英寸），像素 1.45 μm。彩色滤镜 Bayer。",
+          "采用 STARVIS 3 的 LOFIC 像素。Clear HDR3 下动态范围 96 dB，单次曝光。10 bit 90 fps，12 bit 60 fps。SNR1s 为 0.53 lx。",
+          "接口 MIPI D-PHY 2 或 4 lane。陶瓷 LGA，带 AR 镀膜，尺寸 12.0 mm × 9.3 mm。",
+          "样品计划 2026 年 3 月底出货。",
+        ],
+      },
+    ],
+  },
+  {
+    id: "imx742",
+    date: "2026-10-22",
+    companyId: "sony",
+    category: "product",
+    title: "IMX742：一次性内窥镜图像传感器",
+    summary:
+      "IMX742 是用于一次性医用内窥镜的背照式 CMOS。有效像素 720×720、约 51 万，芯片 1.00 mm × 1.00 mm，像素 1.00 μm。片上数字化后可经 5 m 线缆传输，帧率 30 fps 或 60 fps。",
+    applications: ["scientific"],
+    technologies: [],
+    models: [
+      {
+        name: "IMX742",
+        date: "2026-10-22",
+        url: "https://www.sony-semicon.com/en/news/2026/2026102201.html",
+        linkLabel: "打开产品发布页",
+        points: [
+          "2026 年 10 月 22 日发布，用于一次性医用内窥镜。发布稿写明包括支气管镜和输尿管镜。",
+          "背照式。有效像素 720×720，约 51 万。对角 1.02 mm（1/17.7 英寸），像素 1.00 μm。芯片 1.00 mm × 1.00 mm。",
+          "卷帘快门，并有 Global reset。帧率 30 fps 或 60 fps。片上把图像数字化，经双向通信用同一根线传控制和视频，引脚 6 个。",
+          "发布稿写明可在 5 m 线缆上稳定传输。封装 6 引脚 WCSP，CRA 30 度，彩色滤镜 Bayer。",
+          "样品计划 2026 年 11 月出货。发布稿写明该产品本身不是医疗器械。",
+        ],
+      },
+    ],
+  },
+  {
+    id: "imx711",
+    date: "2026-06-09",
+    companyId: "sony",
+    category: "product",
+    title: "IMX711：直接转换 X 射线 CMOS 图像传感器",
+    summary:
+      "IMX711 直接探测 X 射线，输出与能量成比例的信号，用于检测和测量仪器。有效像素约 28 万，像素 72.6 μm。全像素读出 Mode-A 为 26.1 k fps，噪声典型值 34 e-rms。",
+    applications: ["scientific", "machine"],
+    technologies: [],
+    models: [
+      {
+        name: "IMX711",
+        date: "2026-06-09",
+        url: "https://www.sony-semicon.com/en/news/2026/2026060901.html",
+        linkLabel: "打开产品发布页",
+        points: [
+          "2026 年 6 月 9 日发布。直接转换、电荷积分的 X 射线 CMOS，用于从器件检测到科学测量。",
+          "规格表型号 IMX711-AABY。有效像素 384×728，表注另有 16 个黑像素，约 28 万。像素 72.6 μm。",
+          "图像尺寸对角 59.8 mm（3.73 英寸），27.88 mm × 52.85 mm。衬底为硅，厚度 650 μm。",
+          "全像素读出 Mode-A 为 26.1 k fps，Mode-C 连续 HDR 为 17.4 k fps。噪声典型值 34 e-rms，最大 60 e-rms。接口 SLVS-EC。",
+          "量产出货时间为 FY2026 第一季度。发布稿写明与理化学研究所合作开发。",
+        ],
+      },
+    ],
+  },
+  {
+    id: "isocell-hpc",
+    date: "",
+    companyId: "samsung",
+    category: "product",
+    title: "ISOCELL HPC：手机图像传感器",
+    summary:
+      "产品页写明 ISOCELL HPC 采用 DeepPix。DeepPix 在 FDTI 上扩大光电二极管容量和共享浮置扩散，单像素满阱容量比上一代提高 60%，并支持单帧 16 bit HDR。",
+    applications: ["mobile"],
+    technologies: ["hdr", "lowlight"],
+    models: [
+      {
+        name: "ISOCELL HPC",
+        date: "",
+        url: "https://semiconductor.samsung.com/image-sensor/mobile-image-sensor/isocell-hpc/",
+        linkLabel: "打开产品页",
+        points: [
+          "产品页写明这是手机图像传感器，采用 DeepPix。页面没有写公布日期和像素数。",
+          "DeepPix 用双垂直转移栅提高电荷转移效率，并用共享浮置扩散增加电容。单像素满阱容量比上一代提高 60%。",
+          "支持单帧 16 bit HDR。产品页写明色彩表现最多可达常规 HDR 的 4 倍，4K 视频最高 180 fps。",
+          "页注写明基于 Partial PD，全像素 PDAF 时支持 4K 120 fps。",
+          "单帧 HDR 覆盖传感器内 1×、1.5×、2×、3× 和 4× 变焦。",
+        ],
+      },
+    ],
+  },
+  {
+    id: "og12s",
+    date: "2026-10-05",
+    companyId: "omnivision",
+    category: "product",
+    title: "OG12S10：1200 万像素全局快门",
+    summary:
+      "OG12S10 是 1200 万像素、3.45 μm 的背照式全局快门 CMOS，光学尺寸 1.1 英寸，用于工厂自动化和智能交通。片上 DCG HDR 的动态范围 74 dB，最高 75 fps。",
+    applications: ["machine"],
+    technologies: ["global", "hdr", "stacked", "lowlight"],
+    models: [
+      {
+        name: "OG12S10",
+        date: "2026-10-05",
+        url: "https://www.ovt.com/press-releases/omnivision-launches-new-12mp-global-shutter-sensor-for-factory-automation-and-intelligent-transportation-systems/",
+        linkLabel: "打开产品发布页",
+        points: [
+          "2026 年 10 月 5 日发布，用于工厂自动化和智能交通。",
+          "4096×3072，1200 万像素。像素 3.45 μm，背照式全局快门，光学尺寸 1.1 英寸。",
+          "片上 DCG HDR，动态范围 74 dB。该模式下满阱容量 20 ke⁻，读出噪声 2.8 e⁻。最高 75 fps，12 bit ADC。",
+          "Nyxel。发布稿写明 850 nm 量子效率 60%，940 nm 为 40%。最短曝光 1 μs，快门效率 106 dB。",
+          "PureCel Plus-S 堆叠。接口为 16 lane sub-LVDS（最高 1.1 Gbps）和 4 lane MIPI。陶瓷 LGA。",
+          "样品计划 2026 年 11 月提供，量产时间为 2026 年第四季度。",
+        ],
+      },
+    ],
+  },
+  {
+    id: "og05d",
+    date: "2026-10-05",
+    companyId: "omnivision",
+    category: "product",
+    title: "OG05D：500 万像素全局快门",
+    summary:
+      "OG05D 是 500 万像素、2.2 μm 的背照式全局快门 HDR CMOS，光学尺寸 1/2.5 英寸，用于工业机器视觉和机器人。线性模式最高 146 fps。DCG 单次曝光 HDR 与 3 次曝光 HDR 均为 60 fps。",
+    applications: ["machine"],
+    technologies: ["global", "hdr", "stacked", "lowlight"],
+    models: [
+      {
+        name: "OG05D",
+        date: "2026-10-05",
+        url: "https://www.ovt.com/press-releases/omnivision-launches-industrys-first-2-2-micron-global-shutter-hdr-sensor-for-flagship-industrial-and-robotics-machine-vision-cameras/",
+        linkLabel: "打开产品发布页",
+        points: [
+          "2026 年 10 月 5 日发布，用于工业机器视觉，包括条码扫描、工厂自动化、小型 AI 相机和人形机器人。",
+          "500 万像素，像素 2.2 μm，背照式全局快门，光学尺寸 1/2.5 英寸。发布稿写明为堆叠式背照设计，并采用 Nyxel。",
+          "线性模式最高 146 fps。DCG 单次曝光 HDR 片上合成 60 fps，3 次曝光 HDR 片上合成 60 fps。",
+          "支持 RGB、黑白和 RGB-IR，RGB-IR 在片上做 re-mosaic。",
+          "现已可提供样品，量产时间为 2026 年第四季度。",
+        ],
+      },
+    ],
+  },
+  {
+    id: "af013",
+    date: "2025-03-11",
+    companyId: "onsemi",
+    category: "product",
+    title: "AF0130 / AF0131：Hyperlux ID 间接飞行时间传感器",
+    summary:
+      "AF0130 与 AF0131 都属于 Hyperlux ID，是 120 万像素、3.5 μm 的背照式全局快门间接飞行时间传感器。产品页概述写光学尺寸 1/3.2 英寸，参数表写 1/3 英寸。发布稿写明测距最远 30 m。",
+    applications: ["depth", "machine", "consumer"],
+    technologies: ["tof", "global"],
+    models: [
+      {
+        name: "AF0130",
+        date: "2025-03-11",
+        url: "https://www.onsemi.com/products/sensors/image-sensors/af0130",
+        linkLabel: "打开产品页",
+        points: [
+          "2025 年 3 月 11 日与 AF0131 一起发布。间接飞行时间，120 万像素，全局快门，像素 3.5 μm。",
+          "产品页概述写光学尺寸 1/3.2 英寸、背照式；参数表写 1/3 英寸、60 fps、MIPI、黑白。",
+          "像素区下方堆叠深度处理 ASIC，由激光调制曝光计算深度、置信度和强度图。片上双激光驱动，调制频率最高 200 MHz。",
+          "发布稿写明测距最远 30 m，并可同时输出黑白图像和深度。用于工厂自动化、机器人，以及门禁、手势和 AR/VR。",
+        ],
+      },
+      {
+        name: "AF0131",
+        date: "2025-03-11",
+        url: "https://www.onsemi.com/products/sensors/image-sensors/af0131",
+        linkLabel: "打开产品页",
+        points: [
+          "与 AF0130 同属 Hyperlux ID，同日发布。间接飞行时间。产品页写明性能与 AF0130 相同，但没有片上深度处理。",
+          "120 万像素，全局快门，像素 3.5 μm。参数表写 60 fps、光学尺寸 1/3 英寸、MIPI、黑白。概述写 1/3.2 英寸。",
+          "片上双激光驱动，调制频率最高 200 MHz，并有激光人眼安全阈值。深度计算放在片外。",
+          "发布稿写明这一族测距最远 30 m。",
         ],
       },
     ],

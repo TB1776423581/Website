@@ -4,6 +4,7 @@ import {
   applicationById,
   companyById,
   formatDate,
+  listedApplications,
   modelAnchor,
   products,
   tagTechnologies,
@@ -37,7 +38,7 @@ const technologies = tagTechnologies(product);
     <p class="lede">{product.summary}</p>
     <div class="tags">
       {
-        product.applications.map((id) => {
+        listedApplications(product).map((id) => {
           const application = applicationById(id);
           return (
             <a class="tag" href={sitePath(`/applications/${application.id}`)}>

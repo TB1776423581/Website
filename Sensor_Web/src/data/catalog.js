@@ -472,8 +472,14 @@ export function listedModels(list = products) {
   });
 }
 
+const hiddenApplicationTags = new Set(["depth", "spectral"]);
+
+export function listedApplications(item) {
+  return item.applications.filter((id) => !hiddenApplicationTags.has(id));
+}
+
 export function tagTechnologies(item) {
-  const names = new Set(item.applications.map((id) => applicationById(id)?.name));
+  const names = new Set(listedApplications(item).map((id) => applicationById(id)?.name));
   return item.technologies.filter((id) => !names.has(technologyById(id)?.name));
 }
 
