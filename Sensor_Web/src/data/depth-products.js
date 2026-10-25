@@ -1340,6 +1340,52 @@ export const depthProducts = [
     ],
   },
   {
+    id: "aeva-omni",
+    date: "2026-01-06",
+    companyId: "aeva",
+    category: "product",
+    title: "Omni：Aeva 短距宽视场 4D 激光雷达",
+    summary:
+      "2026 年 1 月 6 日，Aeva 在 CES 发布 Omni。发布稿写明与 LG Innotek 合作，视场 360°×90°，最远 80 米，直径 85 mm。早期客户试点在 2026 年下半年，量产目标为 2027 年。产品页标注 Available 2027。",
+    applications: ["depth", "auto", "machine"],
+    technologies: [],
+    models: [
+      page("Omni", "2026-01-06", "https://www.aeva.com/omni/", [
+        "发布稿日期为 2026-01-06，正文写拉斯维加斯、2026 年 1 月 6 日。FMCW。发布稿写这是宽视场短距 4D 激光雷达，与 LG Innotek 合作开发。",
+        "发布稿写可同时检测速度和位置，对阳光和其他激光雷达信号抗干扰，逆反射物体周围无 blooming 和 ghosting。",
+        "水平视场 360°，垂直视场 90°。发布稿写逐点速度，最远 80 米，直径 85 mm。产品页写最远距离 80 米，视场 360（水平）×90（垂直），直径 85 mm。",
+        "发布稿写防护等级 IP68 和 IP69K，并写可在雨、尘、雾中工作。产品页写工作温度 -40°C 到 60°C，被动散热，CoreVision Lidar-on-Chip 和 X1 SoC。",
+        "产品页的 X1 一节写它是第一款车规 FMCW 激光雷达 SoC，集成数据采集、点云处理、扫描和应用软件，并写 ISO 26262、ISO 21434 和 SOTIF/PAS 21448。",
+        "发布稿写 2026 年下半年向早期客户试点，量产目标为 2027 年。产品页标注 Available 2027。用途写自动驾驶、机器人、无人机、防务、仓储自动化和智慧基础设施。",
+      ]),
+    ],
+  },
+  {
+    id: "aeva-eve",
+    date: "2025-09-10",
+    companyId: "aeva",
+    category: "product",
+    title: "Eve 1：Aeva 高精度激光传感器",
+    summary:
+      "Eve 1D 与 Eve 1V 共用产品页。Eve 1D 的发布稿日期为 2025-04-29，写 FMCW 激光位移、亚微米精度、工作距离 100 mm 到 20 m。Eve 1V 的发布稿日期为 2025-09-10，写非接触测速，精度为每秒亚毫米。",
+    applications: ["machine"],
+    technologies: [],
+    models: [
+      page("Eve 1D", "2025-04-29", "https://www.aeva.com/eve-1/", [
+        "发布稿日期为 2025-04-29，正文写加利福尼亚州山景城、2025 年 4 月 29 日。FMCW 激光位移传感器，用于工厂和过程自动化。",
+        "发布稿标题写亚微米重复性。正文写测量精度到亚微米，工作距离 100 mm 到 20 m，测量与处理在同一机身。产品页写量程精度 Sub-Micron，线性度 0.01%，工作距离 100 mm 到 20 m。",
+        "发布稿写使用 CoreVision lidar-on-chip，可测径向速度，并用于振动测量。产品页写环境光免疫、超高动态范围、单机身集成测量与处理。",
+        "发布稿写样品当时可供，量产预计于当年开始。产品页未另写日期。",
+      ]),
+      page("Eve 1V", "2025-09-10", "https://www.aeva.com/eve-1/", [
+        "发布稿日期为 2025-09-10，正文写加利福尼亚州山景城、2025 年 9 月 10 日。非接触运动传感器，测横向速度，包括长度、运动方向和位置。",
+        "发布稿写精度为每秒亚毫米。产品页写 Sub-Millimeter Per Second，工作距离 200 到 300 mm。",
+        "发布稿写 Class 1，非接触，面向包装、印刷、建材和挤出产线，可测卷材、片材、卷筒和分立件。产品页写无滑移、非接触。",
+        "发布稿写样品当时可供，量产预计于次年年初开始。产品页未另写日期。",
+      ]),
+    ],
+  },
+  {
     id: "valeo-scala",
     date: "",
     companyId: "valeo",
