@@ -568,6 +568,91 @@ export const spectralProducts = [
     ],
   },
   {
+    id: "s11105",
+    date: "",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S11105：滨松高速 CMOS 线阵",
+    summary:
+      "S11105 与 S11105-01 的产品页都写视频数据率 50 MHz 的 CMOS 线阵，像元 12.5 × 250 μm，512 像素，光谱响应 400 到 1000 nm。产品页没有写发布日期。手册 KMPD1111E06 把两款印在同一份 S11105 series 资料上，页脚写 Oct. 2024，并写资料截至 October 2024，记为约 2024 年 10 月。产品页窗口写成 Tempax。手册窗口写成 Borosilicate glass。",
+    applications: ["spectral", "machine"],
+    technologies: ["spectral"],
+    models: [
+      page("S11105", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-industry/S11105.html", [
+        "产品页没有写发布日期。标题写 High-speed video data rate: 50 MHz。正文写 The S11105 is a CMOS linear image sensor that delivers a video data rate of 50 MHz。特性写视频数据率最高 50 MHz，像元 12.5 × 250 μm，512 像素，各像素同时积分，积分时间可变并写 electronic shutter function，单 5 V，内置时序发生器，只需 start and clock pulse inputs，封装写成 DIP (dual inline package) type。",
+        "规格表类型为 High-speed readout type。图像尺寸 6.4 x 0.25 mm，有效像素 512 x 1，像元 12.5 x 250 μm。最高行频 88652 行/秒。无制冷，窗口写成 Tempax，封装 Ceramic。测量条件写 Typ. Ta=25 ℃，Vdd=5 V，V(CLK)=V(ST)=5 V，f(CLK)=50 MHz，unless otherwise noted。",
+        "手册结构表像素数 512，像元 12.5 × 250 µm，感光区长度 6.4 mm，封装 Ceramic，窗口材料 Borosilicate glass。特性把两种封装写成 DIP type: S11105 和 Surface mount type: S11105-01。应用栏写位置检测和图像读取。",
+        "手册时钟频率最低 1 MHz、最高 50 MHz，数据率写成等于 f(CLK)。供电电流符号写成 I，在 f(CLK)=50 MHz 时最小 60 mA、典型 90 mA、最大 140 mA。注记写 f(CLK)=1 MHz 时典型 70 mA。光灵敏度典型 40 V/(lx·s)，峰值波长典型 680 nm，转换效率典型 0.6 µV/e-。暗输出积分时间写成 Ts=10 ms，典型 1.0 mV。饱和输出典型 1.3 V。读出噪声典型 2.5 mV rms。光响应非均匀性按 506 像素计算。框图标题写成 Block diagram (S11105 series, S11108)。操作示例把 Operation 印成 Operetion，并写全 512 通道时行频 88.65 kHz。",
+      ], "nir"),
+      page("S11105-01", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-industry/S11105-01.html", [
+        "产品页没有写发布日期。标题同样写 High-speed video data rate: 50 MHz。正文把型号换成 The S11105-01。特性最后一条写成 Surface mount type，其余与 S11105 相同。",
+        "规格表图像尺寸、像素和像元与 S11105 相同。最高行频写成 88495 行/秒。窗口仍写成 Tempax，封装 Ceramic。测量条件在 f(CLK)=50 MHz 后换行，再写 unless otherwise noted。",
+        "手册没有按封装拆开电特性和光学特性。绝对最大额定的回流焊条件注记 *2 写成 S11105-01，*3 写成 JEDEC level 5。外形图标题写成 Dimensional outline (S11105-01)。引脚从 22 脚改成 16 脚。",
+        "手册操作示例只写全 512 通道行频 88.65 kHz，没有写出产品页的 88495 行/秒。手册相关资料另列 Surface mount type products/Precautions。产品页相关资料也多一份 Precautions / Surface mount type products。",
+      ], "nir"),
+    ],
+  },
+  {
+    id: "s11106",
+    date: "",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S11106-10：滨松树脂密封 CMOS 线阵",
+    summary:
+      "产品页写树脂密封 CMOS 线阵，128 像素，像元 63.5 × 63.5 μm，视频数据率最高 10 MHz，光谱响应 400 到 1000 nm。产品页没有写发布日期。手册 KMPD1150E05 把 S11106-10 与 S11107-10 印在同一份资料上，页脚写 Oct. 2024，并写资料截至 October 2024，记为约 2024 年 10 月。产品页窗口写成 Silicone resin。手册没有窗口一行，密封材料写成 Silicone resin。外形图把密封写成 Silicon resin。",
+    applications: ["spectral", "machine"],
+    technologies: ["spectral"],
+    models: [
+      page("S11106-10", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-industry/S11106-10.html", [
+        "产品页没有写发布日期。标题写 Compact size and high cost-performance。正文写 The S11106-10 is CMOS linear image sensors，用复数 sensors。特性写表面贴装封装 2.4 × 9.1 ×1.6 t mm，像元 63.5 × 63.5 μm，128 像素，数据率最高 10 MHz，3 V 或 5 V 单电源，内置时序发生器，只需 Start 和 Clock，低电流，可同时积分。",
+        "规格表类型为 Resin-sealed type package。图像尺寸 8.06 x 0.0635 mm，有效像素 128 x 1，像元 63.5 x 63.5 μm。最高行频 67568 行/秒。无制冷，窗口写成 Silicone resin，封装 Glass epoxy。测量条件写 Typ. Ta=25 ℃，Vdd=3 V/5 V，V(CLK)=V(ST)=Vdd，f(CLK)=10 MHz，unless otherwise noted。",
+        "手册正文同样用复数，并写像素 63.5 × 63.5 µm（S11106-10）、127 × 127 µm（S11107-10）。结构表像素数 128，像素间距 63.5 µm，像素高度 63.5 µm，感光区长度 8.06 mm，封装 Glass epoxy，密封材料 Silicone resin。特性封装写成 2.4 × 9.1 ×1.6t mm。应用栏写位置检测、物体测量、旋转编码器和图像读取。",
+        "手册把 Electrical characteristics 印成 Electrical characterisitics。时钟频率最低 5 kHz、最高 10 MHz，数据率写成等于 f(CLK)。供电电流符号写成 Ic。Vdd=3 V 时最小 4.0 mA、典型 6.0 mA、最大 8.0 mA，Vdd=5 V 时最小 7.0 mA、典型 9.0 mA、最大 11.0 mA。注记写 f(CLK)=10 MHz、暗态。光灵敏度符号写成 Sw，典型 80 V/(lx·s)。转换效率典型 0.75 µV/e-。峰值波长典型 700 nm。暗输出典型 0.02 mV，积分时间 10 ms。Vdd=5 V 饱和输出典型 4.0 V。读出噪声 Vdd=5 V 典型 0.7 mV rms，Vdd=3 V 典型 1.0 mV rms。光响应非均匀性按 112 像素计算，并写去掉两端各 8 个像素。",
+        "手册单像素输出波形标题把数据率符号写成 VR，印成 [f(CLK)=VR=10 MHz]。操作示例标题写成 Operetion example (S11106)，起始脉冲周期 14.8 µs，没有写行频。外形图密封一行写成 Silicon resin。绝对最大额定注记写成 Always be sure to the product within the absolute maximum ratings。",
+      ], "nir"),
+    ],
+  },
+  {
+    id: "s11107",
+    date: "",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S11107-10：滨松树脂密封 CMOS 线阵",
+    summary:
+      "产品页写树脂密封 CMOS 线阵，64 像素，像元 127 × 127 μm，视频数据率最高 10 MHz，光谱响应 400 到 1000 nm。产品页没有写发布日期。手册与 S11106-10 同一份，KMPD1150E05，页脚写 Oct. 2024，记为约 2024 年 10 月。产品页窗口写成 Silicone resin。手册密封材料写成 Silicone resin，外形图写成 Silicon resin。",
+    applications: ["spectral", "machine"],
+    technologies: ["spectral"],
+    models: [
+      page("S11107-10", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-industry/S11107-10.html", [
+        "产品页没有写发布日期。标题写 Compact size and high cost-performance。正文写 The S11107-10 is CMOS linear image sensors，用复数 sensors。特性写表面贴装封装 2.4 × 9.1 ×1.6 t mm，像元 127 × 127 μm，64 像素，数据率最高 10 MHz。电源、时序发生器和同时积分的写法与 S11106-10 相同。",
+        "规格表类型为 Resin-sealed type package。图像尺寸 8.06 x 0.127 mm，有效像素 64 x 1，像元 127 x 127 μm。最高行频 119048 行/秒。无制冷，窗口写成 Silicone resin，封装 Glass epoxy。测量条件与 S11106-10 相同。",
+        "手册结构表像素数 64，像素间距 127 µm，像素高度 127 µm，感光区长度仍写 8.06 mm。封装 Glass epoxy，密封材料 Silicone resin。应用栏与 S11106-10 写在同一组。",
+        "手册供电电流 Vdd=3 V 时最小 2.5 mA、典型 4.5 mA、最大 6.5 mA，Vdd=5 V 时最小 4.5 mA、典型 6.5 mA、最大 8.5 mA。光灵敏度典型 75 V/(lx·s)，转换效率典型 0.35 µV/e-，峰值波长典型 700 nm。暗输出典型 0.04 mV。Vdd=5 V 饱和输出典型 4.0 V。读出噪声 Vdd=5 V 典型 0.6 mV rms，Vdd=3 V 典型 0.9 mV rms。光响应非均匀性按 56 像素计算，并写去掉两端各 4 个像素。",
+        "手册单像素输出波形标题写成 [f(CLK)=DR=10 MHz]，与 S11106-10 同页的 VR 不同。操作示例标题写成 Operetion example (S11107)，起始脉冲周期 8.4 µs，没有写行频。时序图在像素数旁同时写 128 (S11106-10) 和 64 (S11107-10)。",
+      ], "nir"),
+    ],
+  },
+  {
+    id: "s11108",
+    date: "",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S11108：滨松高灵敏度 CMOS 线阵",
+    summary:
+      "产品页写在每个像素上加放大器的 CMOS 线阵，2048 像素，像元 14 × 14 μm，有效感光区长度 28.672 mm，光谱响应 400 到 1000 nm。产品页没有写发布日期。手册 KMPD1112E13 页脚写 Mar. 2024，并写资料截至 March 2024，记为约 2024 年 3 月。产品页和手册窗口都写成 Tempax。",
+    applications: ["spectral", "machine"],
+    technologies: ["spectral"],
+    models: [
+      page("S11108", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-industry/S11108.html", [
+        "产品页没有写发布日期。标题写 Achieves high sensitivity by adding an amplifier to each pixel。正文在 area 与括号之间没有空格，写成 long photosensitive area( effective photosensitive area length: 28.672 mm)。特性写像元 14 × 14 μm，2048 像素，有效感光区长度 28.672 mm，高灵敏度 50V/(lx・s)，各像素同时积分，积分时间可变，单 5 V，内置时序发生器，视频数据率最高 10 MHz，输入端电容 5 pF。",
+        "规格表类型为 High sensitivity type。图像尺寸 28.672 x 0.014 mm，有效像素 2048 x 1，像元 14 x 14 μm。最高行频 4672 行/秒。无制冷，窗口写成 Tempax，封装 LCP。测量条件第一行写 Typ. Ta=25 ℃，unless otherwise noted，下一行写 Spectral response range:Vdd=5 V, V(CLK)=V(ST)=5 V, f(CLK)=10 MHz。",
+        "手册结构表像素数 2048，像元 14 × 14 µm，感光区长度 28.672 mm，封装写成 LCP (liquid crystal polymer)，窗口材料写成 Tempax。光灵敏度写成 50 V/(lx·s)。应用栏写位置检测、图像读取、编码器和条码读取器。",
+        "手册时钟频率最低 200 kHz、最高 10 MHz，数据率写成等于 f(CLK)。供电电流符号写成 Ic，在 f(CLK)=10 MHz 时最小 20 mA、典型 30 mA、最大 50 mA。注记写 f(CLK)=200 kHz 时典型 10 mA。峰值波长典型 700 nm，转换效率典型 13 µV/e-。暗输出积分时间写成 Ts=10 ms，典型 0.3 mV。饱和输出典型 1.2 V。读出噪声典型 0.6 mV rms。光响应非均匀性按 2042 像素计算，注记写去掉两端各 3 个像素。图像滞后上限 0.6 mV。",
+        "手册光谱响应图标题把 response 印成 resposne。框图标题写成 Block diagram (S11105 series, S11108)。块切换注记写读出全部像素时 BSW 应为 NC 或 GND，读出 1024 像素（513 到 1536 通道）时为 Vdd。操作示例把 Operation 印成 Operetion。全 2048 通道起始脉冲周期写成 214 µs，1024 通道写成 111.6 µs。外形图注记把 *3 用了两次，一处写距封装边缘到感光区中心，另一处写 Glass thickness，图上玻璃厚度标成 *4。",
+      ], "nir"),
+    ],
+  },
+  {
     id: "g12242",
     date: "",
     companyId: "hamamatsu",
