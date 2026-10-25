@@ -403,7 +403,8 @@ export const companies = [
     nameEn: "Raytron",
     region: "国内",
     hq: "",
-    summary: "做车载红外模组。Horus1280-AW 产品页写明集成 1280×720、8 μm 氧化钒探测器。",
+    summary:
+      "做车载红外模组。Horus1280-AW 产品页写明集成 1280×720、8 μm 氧化钒探测器。OHLE 产品页写明 SWLP 封装的氧化钒长波探测器。",
   },
 ];
 
