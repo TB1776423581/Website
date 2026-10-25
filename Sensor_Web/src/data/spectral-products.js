@@ -76,6 +76,33 @@ export const spectralProducts = [
     ],
   },
   {
+    id: "g13393",
+    date: "",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "G13393：滨松两级制冷 InGaAs 面阵",
+    summary:
+      "G13393-0808W 与 G13393-0909W 的产品页都写近红外二维图像传感器，光谱响应 0.95 μm 到 1.7 μm。都是金属封装、两级热电制冷、全局快门。产品页没有写发布日期。手册 KMIR1029E04 与 KMIR1027E04 的页脚都写 Mar. 2025，并写资料截至 March 2025，记为约 2025 年 3 月。产品页把灵敏度写成 1 uV/e-。手册特性栏写成 1 μV/e，转换效率表的单位写成 µV/e-。",
+    applications: ["spectral", "machine"],
+    technologies: ["spectral", "global"],
+    models: [
+      page("G13393-0808W", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ingaas-image-sensor/ingaas-area-image-sensor/G13393-0808W.html", [
+        "产品页没有写发布日期。320×256，像元 20 μm × 20 μm，像元间距 20 μm。图像尺寸 6.40 mm × 5.12 mm。金属封装，两级热电制冷。",
+        "光谱响应 950 nm 到 1700 nm，峰值灵敏度典型 1550 nm。最高 228 帧/秒。暗电流典型 0.5 pA。特性写全局快门，并写内置时序发生器。测量条件写 Td=15 ℃，Vdd=Port_sel=Mode01=5 V，Mode02=0 V，Vb1=0.5 V，PD_bias=3 V，Vref=3 V。",
+        "手册把应用写成近红外无损检测（农产品检测、半导体检测、液位检测）、高光谱成像和交通监测。结构表写填充因子 100%，封装 28-pin metal，窗口为带增透膜的蓝宝石玻璃。",
+        "手册：光灵敏度典型 0.8 A/W，转换效率典型 1 µV/e-，饱和电荷典型 1100 ke，暗电流最大 2.5 pA。读出噪声符号 Nr，典型 500 µV rms。动态范围符号 DR，典型 2200。缺陷像素上限 0.37%，并写相邻缺陷像素少于 16。供电电流典型 50 mA、最大 100 mA。条件为 Ta=25 °C、Td=15 °C。",
+        "产品页写信号从一路视频线读出。手册写读出端口数为 4，一帧扫描写成 256 行 × 80 列。框图标题写成 G12242-0909W。时序图标题写成 G12242-0707R/-0707W。等效电路标题写成 G12242-0707R。",
+      ], "swir"),
+      page("G13393-0909W", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ingaas-image-sensor/ingaas-area-image-sensor/G13393-0909W.html", [
+        "产品页没有写发布日期。640×512，像元 20 μm × 20 μm，像元间距 20 μm。图像尺寸 12.80 mm × 10.24 mm。金属封装，两级热电制冷。",
+        "光谱响应 950 nm 到 1700 nm，峰值灵敏度典型 1550 nm。最高 62 帧/秒。暗电流典型 0.5 pA。特性写全局快门，并写内置时序发生器。测量条件写 Td=15 ℃，Vdd=Port_sel=Mode01=5 V，Mode02=0 V，Vb1=0.5 V，PD_bias=3 V，Vref=3 V。",
+        "手册把应用写成热像监测、高光谱成像、近红外图像检测、异物检测、半导体测试和交通监测。结构表同样写填充因子 100%、28-pin metal，窗口为带增透膜的蓝宝石玻璃。图像尺寸写成 12.8 × 10.24 mm。",
+        "手册：光灵敏度典型 0.8 A/W，转换效率典型 1 µV/e-，饱和电荷典型 1100 ke，暗电流最大 2.5 pA。读出噪声符号 Nread，典型 500 µV rms。动态范围符号 Drange，典型 2200。缺陷像素上限 0.37%，并写相邻缺陷像素少于 16。供电电流典型 70 mA、最大 140 mA。",
+        "产品页写信号从一路视频线读出。手册写读出端口数为 4，一帧扫描写成 512 行 × 160 列。框图标题写成 G12242-0909W, G13393-0909W。时序图标题写成 G12242-0707R/-0707W。等效电路标题写成 G12242-0707R。",
+      ], "swir"),
+    ],
+  },
+  {
     id: "g1467",
     date: "",
     companyId: "hamamatsu",
