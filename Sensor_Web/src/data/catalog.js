@@ -395,7 +395,8 @@ export const companies = [
     nameEn: "ams OSRAM",
     region: "海外",
     hq: "奥地利",
-    summary: "做全局快门 CMOS 图像传感器。Mira 产品页页脚地址在奥地利 Premstätten。",
+    summary:
+      "做全局快门 CMOS 图像传感器。Mira 产品页页脚地址在奥地利 Premstätten。直接飞行时间产品页列出单区和多区的 TMF 型号。",
   },
   {
     id: "raytron",

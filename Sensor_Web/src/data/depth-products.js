@@ -1580,4 +1580,61 @@ export const depthProducts = [
       ]),
     ],
   },
+  {
+    id: "tmf",
+    date: "",
+    companyId: "ams",
+    category: "product",
+    title: "TMF：艾迈斯欧司朗直接飞行时间传感器",
+    summary:
+      "直接飞行时间产品列表把 TMF8701、TMF8801、TMF8805、TMF8806、TMF8820、TMF8821、TMF8828 和 TMF8829 列在一起，波长都是 940 nm。TMF8829 的发布稿日期是 2025 年 8 月 27 日，分区最高 48×32。",
+    applications: ["depth", "mobile", "consumer", "machine"],
+    technologies: ["tof"],
+    models: [
+      page("TMF8829", "2025-08-27", "https://ams-osram.com/products/sensor-solutions/direct-time-of-flight-sensors-dtof/ams-tmf8829-48x32-multi-zone-time-of-flight-sensor", [
+        "2025 年 8 月 27 日在普雷姆施泰滕和慕尼黑发布。直接飞行时间（dToF）。发布稿写分区从常见的 8×8 提高到 48×32，最多 1536 个区，视场 80°，双 VCSEL，Class 1，测距最高 11 米，精度 0.25 mm。尺寸 5.7×2.9×1.5 mm。发布稿写约 2025 年第四季度供货。",
+        "产品页写可配置 8×8、16×16、32×32 和 48×32。参数表分区数为 1536，探测距离最大 1100 cm，视场 80°，波长 940 nm，工作温度 −40°C 到 85°C。电源最小 2.9 V、最大 3.6 V、典型 3.3 V。封装 OLGA18，5.7×2.9×1.5 mm。",
+        "产品页特性栏写测距 10 mm 到 11,000 mm，另写最小距离 1 cm、分辨率 0.25 mm。视场写成对角 80°、宽高比 4:3，并写矩形 SPAD。每个深度点最多 4 个目标。片上处理，输出距离、置信度、信号幅度和环境光。",
+        "接口为 I3C（兼容 I²C）和 SPI。参数表把输入接口写成 I²C、I³C、SPI（16 MHz）。描述写 VBUS 可让 I²C/I3C 或 SPI 使用 1.2 V、1.8 V 或 3 V 的 IO。可输出原始直方图。",
+        "订购信息：TMF8829-1A，订购码 Q65113A9854，11 英寸卷装每卷 3500 只，状态 Full production；TMF8829-1AM，订购码 Q65115A1077，7 英寸卷装每卷 500 只，同样为 Full production。两行都把分区写成 8×8、16×16、32×32、32×48。",
+        "发布稿写的例子包括咖啡机区分杯子、物流机器人、相机对焦、人数与存在检测、机器人避障、楼宇占用，以及和相机一起做 RGB 深度融合。产品页应用栏写工业、机器人、家居与楼宇、投影与显示、电器与工具、门禁、移动与可穿戴、相机增强和三维传感。",
+      ]),
+      page("TMF8828", "2022-06-20", "https://ams-osram.com/products/sensor-solutions/direct-time-of-flight-sensors-dtof/ams-tmf8828-configurable-8x8-multi-zone-time-of-flight-sensor", [
+        "2022 年 6 月 20 日的发布稿把 TMF8828 与 TMF8820、TMF8821 一起称为新的直接飞行时间传感器，探测距离 5,000 mm，并写将于 2022 年 6 月 28 日至 29 日在圣何塞 Sensors Converge 展出。",
+        "产品列表：多区，分区数 64。描述写支持 3×3、4×4、3×6 和 8×8。探测距离最大 500 cm，视场 63°。波长 940 nm。工作温度 −40°C 到 85°C。",
+        "封装 OLGA12，4.6×2.0×1.4 mm。片上处理，经 I²C 输出距离和置信度。带 VCSEL，SPAD 上有镜头，VCSEL 上方有多透镜阵列。晶圆级光学滤光片为 Yes。",
+        "发布稿写演示放在笔记本电脑里做人存在检测和手势识别，也可用于工业机器人、移动设备和扫地机器人。",
+      ]),
+      page("TMF8821", "2022-06-20", "https://ams-osram.com/products/sensor-solutions/direct-time-of-flight-sensors-dtof/ams-tmf8821-configurable-4x4-multi-zone-time-of-flight-sensor", [
+        "与 TMF8828 同在 2022 年 6 月 20 日的发布稿中公布。直接飞行时间。发布稿写探测距离 5,000 mm。",
+        "产品列表：多区，分区数 18。描述写支持 3×3、4×4 和 3×6。探测距离最大 500 cm，视场 63°。波长 940 nm。工作温度 −40°C 到 85°C。",
+        "封装 OLGA12，4.6×2.0×1.4 mm。电源最小 2.7 V、最大 3.5 V、典型 3.0 V。接口 I²C。晶圆级光学滤光片为 Yes。",
+      ]),
+      page("TMF8820", "2022-06-20", "https://ams-osram.com/products/sensor-solutions/direct-time-of-flight-sensors-dtof/ams-tmf8820-3x3-multi-zone-time-of-flight-sensor", [
+        "与 TMF8828 同在 2022 年 6 月 20 日的发布稿中公布。直接飞行时间。发布稿写探测距离 5,000 mm。",
+        "产品列表：多区，分区数 9。描述写支持 3×3，视场可动态调整。探测距离最大 500 cm，视场 63°。波长 940 nm。工作温度 −40°C 到 85°C。",
+        "封装 OLGA12，4.6×2.0×1.4 mm。电源最小 2.7 V、最大 3.5 V、典型 3.0 V。接口 I²C。晶圆级光学滤光片为 Yes。",
+      ]),
+      page("TMF8806", "", "https://ams-osram.com/products/sensor-solutions/direct-time-of-flight-sensors-dtof/ams-tmf8806-1d-time-of-flight-sensor", [
+        "产品列表上的单区直接飞行时间传感器。描述写探测距离 500 cm，用一小段固件下载后可延长到 1000 cm。参数表把最大探测距离写成 1000 cm。",
+        "视场 30°。波长 940 nm。工作温度 −40°C 到 85°C。电源最小 2.7 V、最大 3.5 V、典型 3.1 V。",
+        "封装 OLGA12，3.6×2.2×1.0 mm。接口 I²C。晶圆级光学滤光片为 No。分区数 1。",
+      ]),
+      page("TMF8805", "", "https://ams-osram.com/products/sensor-solutions/direct-time-of-flight-sensors-dtof/ams-tmf8805-1d-time-of-flight-sensor", [
+        "产品列表上的单区直接飞行时间传感器。描述写探测距离 2500 mm。参数表最大探测距离 250 cm，视场 24°。",
+        "波长 940 nm。工作温度 −30°C 到 70°C。电源最小 2.7 V、最大 3.3 V、典型 3.0 V。",
+        "封装 OLGA12，3.6×2.2×1.0 mm。接口 I²C。晶圆级光学滤光片为 No。",
+      ]),
+      page("TMF8801", "", "https://ams-osram.com/products/sensor-solutions/direct-time-of-flight-sensors-dtof/ams-tmf8801-1d-time-of-flight-sensor", [
+        "产品列表上的单区直接飞行时间传感器。描述写测距 2 到 250 cm。参数表最大探测距离 250 cm，视场 24°，分区数 1。",
+        "波长 940 nm。工作温度 −30°C 到 70°C。电源最小 2.7 V、最大 3.3 V、典型 3.0 V。封装 OLGA12，3.6×2.2×1.0 mm。接口 I²C。",
+        "描述写测量准确度在 ±5% 以内，带直方图，用于补偿盖板玻璃上的脏污，并写可在阳光下工作。晶圆级光学滤光片为 Yes。",
+      ]),
+      page("TMF8701", "", "https://ams-osram.com/products/sensor-solutions/direct-time-of-flight-sensors-dtof/ams-tmf8701-1d-time-of-flight-sensor", [
+        "产品列表上的单区直接飞行时间传感器。接近模式 0 到 10 cm，测距模式 10 到 60 cm。参数表最大探测距离 60 cm，视场 24°，分区数 1。",
+        "波长 940 nm。描述写 Class 1，VCSEL 脉冲宽度小于 500 ps。工作温度 −30°C 到 70°C。电源最小 2.7 V、最大 3.3 V、典型 3.0 V。",
+        "封装 OLGA12，3.6×2.2×1.0 mm。数据输出口写成 1.8 V I²C。描述写测量准确度在 ±5% 以内。列表写它在 2019 年 Sensors Expo 获得创新产品年度奖，没有写出颁奖的月日。",
+      ]),
+    ],
+  },
 ];
