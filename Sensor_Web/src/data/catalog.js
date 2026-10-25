@@ -366,7 +366,7 @@ export const companies = [
     region: "海外",
     hq: "瑞典",
     summary:
-      "做制冷红外探测器。Oden 产品页写芯片来自瑞典。Balder 的产品页写 T2SL，光谱范围 0.9 到 2.5 μm。Tyr 的产品页写长波 QWIP。Hnoss 330 的产品页写 T2SL，光谱范围 3.2 到 3.4 μm。",
+      "做制冷红外探测器。Oden 产品页写芯片来自瑞典。Balder 的产品页写 T2SL，光谱范围 0.9 到 2.5 μm。Tyr 的产品页写长波 QWIP。Hnoss 330 的产品页写 T2SL，光谱范围 3.2 到 3.4 μm。Skade 的产品页写 1280×1024、7.5 μm，光谱范围 3.7 到 5.1 μm。",
   },
   {
     id: "scd",
@@ -409,7 +409,7 @@ export const companies = [
     region: "国内",
     hq: "",
     summary:
-      "做车载红外模组。Horus1280-AW 产品页写明集成 1280×720、8 μm 氧化钒探测器。OHLE 产品页写明 SWLP 封装的氧化钒长波探测器。",
+      "做车载红外模组。Horus1280-AW 产品页写明集成 1280×720、8 μm 氧化钒探测器。OHLE 产品页写明 SWLP 封装的氧化钒长波探测器。陶瓷封装产品页列出 RTD6122C 与 RTDS123C。短波产品页列出 InGaAs 面阵和线阵。",
   },
 ];
 

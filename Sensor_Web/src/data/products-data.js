@@ -1831,8 +1831,8 @@ export const products = [
     category: "product",
     title: "Horus：睿创微纳车载红外模组",
     summary:
-      "Horus1280-AW 产品页写明面向乘用车前装，集成 8 μm、1280×720 氧化钒非制冷探测器。页面没有写响应波段。",
-    applications: ["auto"],
+      "Horus1280-AW 产品页写明面向乘用车前装，集成 8 μm、1280×720 氧化钒非制冷探测器。页面没有写响应波段。Horus640-D 产品页写 640×512、12 μm，光谱带 8 到 14 μm。",
+    applications: ["auto", "spectral"],
     technologies: [],
     models: [
       {
@@ -1845,6 +1845,23 @@ export const products = [
           "探测器和 ASIC-ISP LY300 均为 AEC-Q100 Grade 2。帧率 30 fps。",
           "视场 120°×61.2°。探测器 NETD ≤40 mK（25℃，F/1.0，30 Hz）。",
           "GMSL2。前盖 IP69K，整机 IP67。重量小于 80 g。",
+        ],
+      },
+      {
+        name: "Horus640-D",
+        date: "",
+        url: "https://www.raytron-microelectronics.com/uncooled-lwir-modules/automotive-lwir-thermal-imaging-module-horus640-d",
+        linkLabel: "打开产品页",
+        band: "lwir",
+        technologies: ["spectral"],
+        points: [
+          "产品页没有写发布日期。标题写车载非制冷红外热成像模组。正文写基于自研 AEC-Q100 长波 MEMS 探测器和 ASIC-ISP，并写集成自研红外探测器和 Falcon 系列图像处理芯片。",
+          "探测器类型为非制冷氧化钒。分辨率 640×512，像元 12 μm，光谱带 8~14 μm。帧率 30 Hz，并写 60 Hz 可选、需要定制。NETD ≤40 mK（25℃，F#1.0）。",
+          "重量 ＜80 g。尺寸 32.5 mm×60.5 mm×43 mm，不含连接器。防护写前向 IP69K，其余方向 IP67。工作温度 -40°C 到 +85°C，贮存温度 -40°C 到 +95°C。",
+          "供电 DC 12 V。25°C 典型功耗 1.2 W，并写不含快门和加热。最大 6 W。数据接口 MIPI/DVP YUV422 8 bit，视频协议 LVDS，物理接口 Fakra，通信 I2C。",
+          "图像算法写 Shutter-less 与 TECless。除霜阈值 +2°C / +7°C，低于 2°C 开启、高于 7°C 关闭。支持防太阳灼伤。",
+          "固定焦距无热化镜头两档：33°（水平）×26°（垂直）/ f13.5 mm，以及 48°（水平）×37°（垂直）/ f9.1 mm。规格表把第二个水平视场写成 48°(H))。",
+          "亮点栏把 consumption 写成 comsumption。产品页写用于汽车夜视、辅助驾驶和自动驾驶。",
         ],
       },
     ],

@@ -994,7 +994,7 @@ export const spectralProducts = [
     category: "product",
     title: "Njord：IRnova 中波探测器",
     summary:
-      "Njord MW 与 Njord SL 的规格表都是 1280×1024、10 μm，光谱范围 3.7 到 5.1 μm。Njord MW 的产品页正文写全 3 到 5 μm 响应。Njord SL 的产品页写它是 Njord MW 的分体线性制冷版本。",
+      "Njord MW、Njord SL 与 Njord LLT 的规格表都是 1280×1024、10 μm，光谱范围 3.7 到 5.1 μm。Njord MW 的产品页正文写全 3 到 5 μm 响应。Njord SL 的产品页写它是 Njord MW 的分体线性制冷版本。Njord LLT 的产品页写它是长寿命版本。",
     applications: ["spectral", "machine"],
     technologies: ["spectral"],
     models: [
@@ -1009,6 +1009,36 @@ export const spectralProducts = [
         "近距电子学供电 5 V，最高帧率 60 Hz，接口 Camera Link，含制冷机控制和近距电子学。",
         "制冷机 K588、SX020。功耗 2 W，并写不含近距电子学。降温时间 4 分钟。制冷机电压 12 V。重量 340 g。外形 87×72×58 mm。制冷机 MTTF 40 000 小时。环境条件 MIL-STD-810。",
         "2025 年 2 月 24 日的 Njord MW 新闻稿写，分体线性版本计划在第二季度发布，当时已接受订货。本页没有写发布日期。",
+      ], "mwir"),
+      page("Njord LLT", "", "https://www.irnova.se/products/njord-llt", [
+        "产品索引把这一型号标成 New。产品页没有写发布日期，页脚写 This is revision 1.0。",
+        "产品页写它是 Njord 的长寿命版本，把 Njord 的 T2SL 焦平面装进可配 0.5 W 制冷机的杜瓦。正文写预期寿命 50 000 小时或更长，并写这相当于将近 6 年的 24/7 运行。",
+        "1280×1024，像元 10 µm，T2SL。光谱范围 3.7 到 5.1 μm，可选二氧化碳陷波。光圈 F/1.2、F/2、F/3.4、F/4。NETD 25 mK（F/4，60 Hz）。像元可操作性 99.9%。奈奎斯特频率处 MTF 61%。",
+        "近距电子学供电 5 V，最高帧率 60 Hz，接口 Camera Link，含制冷机控制和近距电子学。",
+        "制冷机 RM3i、K508、K508N、SRI401。功耗 3 W，并写不含近距电子学。降温时间 3.5 分钟。制冷机电压 12 V，并写可选 24 V。重量 590 g。外形 143×76×62 mm。规格表制冷机 MTTF 大于 50 000 小时。环境条件 MIL-STD-810。",
+        "产品页写用途包括防空目标跟踪、边境与固定监控、工业热像与无损检测、远距离安防，以及坦克瞄具、海上和消防。",
+      ], "mwir"),
+    ],
+  },
+  {
+    id: "skade",
+    date: "",
+    companyId: "irnova",
+    category: "product",
+    title: "Skade：IRnova 中波探测器",
+    summary:
+      "产品页写 Skade 是 1280×1024、7.5 µm 的 T2SL 中波探测器。规格表光谱范围 3.7 到 5.1 µm。产品索引写约 2027 年第二季度发布。",
+    applications: ["spectral", "machine"],
+    technologies: ["spectral"],
+    models: [
+      page("Skade", "", "https://www.irnova.se/products/skade", [
+        "产品索引上方卡片写 To be released Q2 2027，产品列表标签写 Releasing Q2 2027，记为约 2027 年第二季度。产品页没有写发布日期，页脚写 This is revision 1.0。",
+        "卡片正文写它将补齐 HOT HD 探测器组合，像元间距降到 7.5 µm，并写许多新特性尚未公布。",
+        "产品页写 1280×1024、7.5 µm、T2SL，并写旋转式和分体线性两种制冷。正文写在整个 3 到 5 µm 有高量子效率。规格表光谱范围 3.7 到 5.1 µm，可选二氧化碳陷波。",
+        "光圈 F/2、F/3、F/3.4。NETD 30 mK（F/3，60 Hz）。像元可操作性 99.9%。奈奎斯特频率处 MTF 60%。",
+        "近距电子学供电 5 V。最高帧率 60 Hz，可选 120 Hz。接口 Camera Link。这一栏把 proximity electronics 写成 poximity elecronics，并写含制冷机控制。",
+        "制冷机 RMs1、K580、K588、SX020。功耗 2 W，并写不含近距电子学。降温时间 4 分钟。制冷机电压 12 V。重量 260 g（RMs1）、350 g（K588）。外形 97×58×55 mm（RMs1）、87×72×58 mm（K588）。制冷机 MTTF 为 12 500 小时（RMs1）和 40 000 小时（K588）。环境条件 MIL-STD-810。",
+        "产品页写用途包括远距离安防监控、无人机云台、机载 ISR 与瞄准、手持和电池供电系统，以及移动和固定平台。",
       ], "mwir"),
     ],
   },
@@ -1656,6 +1686,163 @@ export const spectralProducts = [
         "英文新闻写 NETD <50 mK、尺寸 11.2×11.2 mm、重量 <1 g、功耗 <120 mW、测温 -40°C 到 800°C，并写相对常规 640×512 陶瓷封装探测器，模组尺寸大约缩小 74%。",
         "产品页写明用于民用行业无人机、工业测温、户外夜视和辅助驾驶。中文新闻还写户外手持和安防监控。英文新闻写商用无人机、工业测温、户外夜视、ADAS 和手持设备。",
       ], "lwir"),
+    ],
+  },
+  {
+    id: "rtd",
+    date: "",
+    companyId: "raytron",
+    category: "product",
+    title: "RTD：睿创微纳陶瓷封装非制冷长波探测器",
+    summary:
+      "RTD6122C 的中文产品页写氧化钒微测辐射热计、陶瓷封装、640×512、12 μm，响应波段 8 到 14 μm。",
+    applications: ["spectral", "machine"],
+    technologies: ["spectral"],
+    models: [
+      page("RTD6122C", "", "https://www.raytrontek.com/product/pro-detail-417.htm", [
+        "产品页没有写发布日期。标题写 CP 非制冷红外热成像探测器。正文写氧化钒微测辐射热计、陶瓷封装、640×512、12 μm，响应波段 8-14 µm。",
+        "规格表：响应波段 8-14 μm，像元间距 12 μm，分辨率 640×512。NETD <40 mK（f/1.0，50 Hz，300 K）。帧频 ≤60 Hz。热时间常数 <12 ms。14 bit。逐行读出。X、Y 方向镜像。片上 6 位非均匀性校正。",
+        "规格表功耗 <170 mW（50 Hz，25℃）。尺寸 22×22×4.58 mm³（不计引脚），重量 ≤6 g，32-pin 陶瓷，输出极性白热。测温范围 -40~600ºC（f/1.0）。可操作率 ≥99.5%。2 bit 并行输入。工作温度 -40~+85℃。",
+        "正文写户外夜视、火灾预防。亮点栏写户外夜视、安防监控、工业测温。应用领域写安防监控、工业测温、森林防火、手持户外。",
+        "英文产品页把功耗条件写成 50 Hz、300 K，规格表表头写 Module，重量栏写成 Weigh，读出模式写成 Progressive scan。",
+      ], "lwir"),
+    ],
+  },
+  {
+    id: "rtds",
+    date: "",
+    companyId: "raytron",
+    category: "product",
+    title: "RTDS：睿创微纳陶瓷封装非制冷长波探测器",
+    summary:
+      "RTDS123C 的产品页写氧化钒微测辐射热计、陶瓷封装、1280×1024、12 μm，响应波段 8 到 14 μm。",
+    applications: ["spectral", "machine"],
+    technologies: ["spectral"],
+    models: [
+      page("RTDS123C", "", "https://www.raytrontek.com/product/pro-detail-418.htm", [
+        "产品页没有写发布日期。标题写 CP 非制冷红外热成像探测器。正文写氧化钒微测辐射热计、陶瓷封装、1280×1024、12 μm，响应波段 8-14 µm。",
+        "规格表：响应波段 8-14 μm，像元间距 12 μm，分辨率 1280×1024。NETD <40 mK（f/1.0，30 Hz，300 K）。帧频 25/30/50 Hz。热时间常数 <15 ms。数字输出 14 bit（25/30 Hz）、13 bit（50 Hz）。逐行读出。片上 6 位非均匀性校正。",
+        "规格表功耗 <300 mW（30 Hz，25ºC）。尺寸 27×27×4.6 mm³（不计引脚），重量 ≤10 g，56-Pin 陶瓷，输出极性白热。测温范围 -40~600ºC（f/1.0）。可操作率 ≥99.5%。6 bit 并行输入。工作温度 -40~+85℃。",
+        "亮点栏标题写分辨率 1280×1024，下一条却写 640×512 高分辨率。正文写工业测温、户外夜视。亮点栏写户外夜视、周界安防、工业测温。应用领域写工业测温、安消防、户外手持、森林防火。",
+      ], "lwir"),
+    ],
+  },
+  {
+    id: "rs615",
+    date: "",
+    companyId: "raytron",
+    category: "product",
+    title: "RS615：睿创微纳短波 InGaAs 面阵探测器",
+    summary:
+      "RS615BM1 与 RS6152M1 的产品页都写 640×512、15 μm、InGaAs，光谱响应 0.9 到 1.7 μm。两页都写全局快门，并写金属气密封装、内置单级 TEC。",
+    applications: ["spectral", "machine"],
+    technologies: ["spectral"],
+    models: [
+      {
+        ...page("RS615BM1", "", "https://www.raytron-microelectronics.com/swir-camera-modules/rs615bm1-short-wave-infrared-focal-plane-detector", [
+          "产品页没有写发布日期。正文写通用短波 InGaAs 焦平面，640×512，像元 15 μm，支持高帧率和 ROI 开窗。金属气密封装，内置 TEC。",
+          "光谱响应 0.9 μm 到 1.7 μm。量子效率在 1.0 μm 到 1.6 μm 大于 70%。光学填充因子 100%。有效像元率 ≥99.8%。积分方式为全局快门，最短积分时间 5 μs。",
+          "全窗口最高帧率 400 fps（25 MHz）。典型读出噪声 30 e（20°C，高增益）。可选 3 档增益。平均像元暗电流 ≤100 ke/s（20℃）。功耗 ≤240 mW。动态范围 ≥50 dB。未校正响应非均匀性 ≤5%。",
+          "输出信号摆幅 1.8±0.1 V。外形 32.0×23.5×7.0 mm³（不含引脚），重量 25±2 g。工作壳温 -40°C 到 +60°C，贮存壳温 -55°C 到 +70°C。",
+          "正文写用途包括视觉增强、机器视觉、光伏检测、工业分拣和激光检测。",
+        ], "swir"),
+        technologies: ["spectral", "global"],
+      },
+      {
+        ...page("RS6152M1", "", "https://www.raytron-microelectronics.com/swir-camera-modules/rs6152m1-short-wave-infrared-ingaas-focal-plane-detector", [
+          "产品页没有写发布日期。正文写数字短波 InGaAs 焦平面，640×512，像元 15 μm，支持高帧率和 MROI 多窗口。气密封装，内置 TEC。",
+          "光谱响应 0.9 μm 到 1.7 μm。量子效率在 1.0 μm 到 1.6 μm 大于 70%。光学填充因子 100%。有效像元率 ≥99.8%。积分方式为全局快门，最短积分时间 1 μs。",
+          "全窗口最高帧率 120 fps。典型读出噪声 35 e（20°C，高增益）。可选 3 档增益。平均像元暗电流 ≤100 ke/s（20℃）。功耗 ≤200 mW。有效输出位深 13 bit。动态范围 ≥50 dB。未校正响应非均匀性 ≤5%。",
+          "特性栏外形写成 32.0×23.5×7.0 mm3，规格表写成 32.0×23.5×7.0 mm³，都不计引脚。重量 25±2 g。工作壳温 -40°C 到 +65°C，贮存壳温 -45°C 到 +70°C。",
+          "正文写用途包括机器视觉、光谱成像、视觉增强和激光检测。",
+        ], "swir"),
+        technologies: ["spectral", "global"],
+      },
+    ],
+  },
+  {
+    id: "rss102",
+    date: "",
+    companyId: "raytron",
+    category: "product",
+    title: "RSS102：睿创微纳短波 InGaAs 面阵探测器",
+    summary:
+      "RSS102M1 的产品页写 1280×1024、10 μm、InGaAs，光谱响应 0.9 到 1.7 μm，全局快门。",
+    applications: ["spectral", "machine"],
+    technologies: ["spectral"],
+    models: [
+      {
+        ...page("RSS102M1", "", "https://www.raytron-microelectronics.com/swir-camera-modules/rss102m1-short-wave-infrared-ingaas-focal-plane-detector", [
+          "产品页没有写发布日期。正文写数字高分辨率短波 InGaAs 焦平面，1280×1024，像元 10 μm，支持高帧率 ROI 开窗。金属气密封装，内置 TEC。",
+          "光谱响应 0.9 μm 到 1.7 μm。量子效率在 1.0 μm 到 1.6 μm 大于 70%。光学填充因子 100%。有效像元率 ≥99.8%。积分方式为全局快门，最短积分时间 1 μs。",
+          "全窗口最高帧率 60 fps。典型读出噪声 45 e（20°C，高增益）。可选 3 档增益。平均像元暗电流 ≤90 ke/s（20℃）。功耗 ≤350 mW。有效输出位深 13 bit。动态范围 ≥48 dB。未校正响应非均匀性 ≤5%。",
+          "封装栏写 Gas-tight metal packaging（built-in single stage TEC）。外形 32.0×23.5×7.0 mm³（不含引脚），重量 28±2 g。工作壳温 -40°C 到 +65°C，贮存壳温 -45°C 到 +70°C。",
+          "正文写用途包括视觉增强、机器视觉、光伏检测和空间遥感。",
+        ], "swir"),
+        technologies: ["spectral", "global"],
+      },
+    ],
+  },
+  {
+    id: "rl",
+    date: "",
+    companyId: "raytron",
+    category: "product",
+    title: "RL：睿创微纳短波 InGaAs 线阵探测器",
+    summary:
+      "RL01K1 与 RL5122-H1S00 在同一产品页，分别为 1024×1、12.5 μm 和 512×2、25 μm。RL01K1-C0 是 1024×1、12.5 μm 的无 TEC 陶瓷封装。三款都写 InGaAs，光谱响应 0.9 到 1.7 μm。",
+    applications: ["spectral", "machine"],
+    technologies: ["spectral"],
+    models: [
+      page("RL01K1", "", "https://www.raytron-microelectronics.com/swir-camera-modules/rl01k1-rl5122-h1s00-short-wave-infrared-linear-array-detector", [
+        "与 RL5122-H1S00 同一产品页，页顶型号写成 RL01K1/RL5122-H1S00。产品页没有写发布日期。",
+        "规格表：InGaAs，光谱响应 0.9 μm 到 1.7 μm。量子效率在 1.0 μm 到 1.6 μm 大于 70%。光学填充因子 100%。像元 12.5 μm，线阵 1024×1。有效像元率 ≥99.8%。",
+        "最高输出行频 36 kHz。读出方式 ITR、IWR。最短积分时间 15 μs。典型读出噪声 50 e（1 到 36 kHz，20℃）。可选增益不少于 4 档。平均像元暗电流 ≤100 ke/s（20℃）。",
+        "功耗 ≤200 mW。输出信号摆幅 1.9±0.1 V。动态范围 ≥58 dB。未校正响应非均匀性 ≤5%。金属陶瓷一体化气密封装，内置单级 TEC。外形 25.5×17.7×7.0 mm³（不含引脚），重量约 8 g。工作壳温 -40°C 到 +60°C，贮存壳温 -45°C 到 +70°C。",
+        "正文写用途包括资源回收、农产品分拣、光伏检测和机器视觉。",
+      ], "swir"),
+      page("RL5122-H1S00", "", "https://www.raytron-microelectronics.com/swir-camera-modules/rl01k1-rl5122-h1s00-short-wave-infrared-linear-array-detector", [
+        "与 RL01K1 同一产品页。规格表把像元写成 25 μm，线阵写成 512×2。平均像元暗电流 ≤300 ke/s（20℃）。",
+        "光谱响应、量子效率、行频、读出方式、读出噪声、功耗、动态范围、封装和外形与同页的 RL01K1 写在同一组。重量约 8 g。",
+      ], "swir"),
+      page("RL01K1-C0", "", "https://www.raytron-microelectronics.com/swir-camera-modules/rl01k1-c0-short-wave-infrared-linear-array-detector", [
+        "产品页没有写发布日期。正文写 InGaAs 线阵，1024×1，像元 12.5 μm，光谱响应 0.9 到 1.7 μm，无 TEC 陶瓷封装。",
+        "量子效率在 1.0 μm 到 1.6 μm 大于 70%。光学填充因子 100%。有效像元率 >99.8%。最高输出行频 36 kHz。读出方式 ITR、IWR。最短积分时间 15 μs。",
+        "典型读出噪声 ≤50 e（1 到 36 kHz，20°C）。可选增益不少于 4 档。平均像元暗电流 ≤100 ke/s（20℃）。功耗 ≤200 mW。输出信号摆幅 1.9±0.1 V。动态范围 ≥58 dB。未校正响应非均匀性 ≤5%。",
+        "封装为 PGA 陶瓷、TECless。特性栏和规格表都把外形写成 28.91×18.64×4.0 mm3（不含引脚）。重量 8±2 g。工作壳温 -20°C 到 +50°C，贮存壳温 -40°C 到 +60°C。",
+        "正文写用途包括农产品分拣、资源回收、工业分拣、光伏检测和机器视觉。",
+      ], "swir"),
+    ],
+  },
+  {
+    id: "ogi330",
+    date: "",
+    companyId: "raytron",
+    category: "product",
+    title: "OGI330HM：睿创微纳光学气体成像探测器",
+    summary:
+      "产品页标题把 OGI 写成 OGl。正文写 320×256、30 μm 的 III-V 族中波气体探测器，工作温度最高 150 K。规格表把 F12BL-A、F12BL-B、F12BL-C 和 F12BL-D 列成四个响应波段。",
+    applications: ["spectral", "machine"],
+    technologies: ["spectral"],
+    models: [
+      page("F12BL-A", "", "https://www.raytron-microelectronics.com/mwir-cooled-infrared-module/ogi330hm-optical-gas-imaging-ogl-detector", [
+        "产品页型号写 OGI330HM，标题写成 Optical Gas Imaging (OGl) Detector。产品页没有写发布日期。规格表响应波段 3.2±0.1 μm 到 3.5±0.1 μm。",
+        "与同页另外三款共用：320×256，像元 30 μm，F 数 1.2，NETD ≤10 mK，有效像元率 ≥99.5%，响应不均匀性 ≤10%。",
+        "稳定功耗 ≤4 W（25℃±2℃），最大功耗 ≤10 W（25℃±2℃）。供电 12 V DC。降温时间 ≤2 分 30 秒（25℃±2℃）。重量 ≤280 g。外形 70 mm×62.5 mm×37.2 mm。工作壳温 -40℃ 到 +70℃。制冷机 MTTF ≥20000 h（25℃±2℃）。",
+        "应用栏把这一列对应甲烷、乙烷和 VOC。正文写工作温度最高 150 K，并写针对挥发性有机物。",
+      ], "mwir"),
+      page("F12BL-B", "", "https://www.raytron-microelectronics.com/mwir-cooled-infrared-module/ogi330hm-optical-gas-imaging-ogl-detector", [
+        "与 F12BL-A 同一产品页。规格表响应波段 3.8±0.1 μm 到 4.1±0.1 μm。应用栏把这一列对应炉膛安全检查。",
+        "面阵、像元、NETD、功耗、降温、重量和外形与同页其余型号写在同一行。",
+      ], "mwir"),
+      page("F12BL-C", "", "https://www.raytron-microelectronics.com/mwir-cooled-infrared-module/ogi330hm-optical-gas-imaging-ogl-detector", [
+        "与 F12BL-A 同一产品页。规格表响应波段 4.2±0.1 μm 到 4.4±0.1 μm。应用栏把这一列对应二氧化碳。",
+        "面阵、像元、NETD、功耗、降温、重量和外形与同页其余型号写在同一行。",
+      ], "mwir"),
+      page("F12BL-D", "", "https://www.raytron-microelectronics.com/mwir-cooled-infrared-module/ogi330hm-optical-gas-imaging-ogl-detector", [
+        "与 F12BL-A 同一产品页。规格表响应波段 4.5±0.1 μm 到 4.7±0.1 μm。应用栏把这一列对应一氧化碳、氧化亚氮和乙烯酮。",
+        "面阵、像元、NETD、功耗、降温、重量和外形与同页其余型号写在同一行。",
+      ], "mwir"),
     ],
   },
 ];
