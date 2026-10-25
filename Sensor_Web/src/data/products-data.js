@@ -985,9 +985,9 @@ export const products = [
     date: "2020-01",
     companyId: "infineon",
     category: "product",
-    title: "IRS2877C：REAL3 飞行时间三维图像传感器",
+    title: "IRS287：REAL3 飞行时间三维图像传感器",
     summary:
-      "IRS2877C 是 REAL3 飞行时间图像传感器，原生约 HVGA，可上采样到 640×480 的深度图，波长 940 nm，面向消费和工业。",
+      "IRS2877C 是 REAL3 飞行时间图像传感器，原生约 HVGA，可上采样到 640×480 的深度图，波长 940 nm，面向消费和工业。IRS2875C 的产品页写 HQVGA，像素 240×180，波长同样是 940 nm。",
     applications: ["depth", "consumer"],
     technologies: ["tof"],
     models: [
@@ -1000,6 +1000,17 @@ export const products = [
           "REAL3 飞行时间图像传感器，原生约 HVGA，可上采样到 640×480。",
           "波长 940 nm，面向消费和工业。",
           "产品页状态为 on request。",
+        ],
+      },
+      {
+        name: "IRS2875C",
+        date: "",
+        url: "https://www.infineon.com/part/IRS2875C",
+        linkLabel: "打开产品页",
+        points: [
+          "产品页没有写发布日期。REAL3 飞行时间图像传感器，系统分辨率写 HQVGA，像素数 240×180，约 43 K。波长 940 nm。",
+          "封装为裸片，包装类型写 WAFER SAWN。订货号 IRS2875CX1SA1，状态写 active and preferred。环境温度 -40℃ 到 85℃。",
+          "产品页应用写 Robotics、Consumer，正文写面向消费和工业。配套 VCSEL 驱动写 IRS9102C。",
         ],
       },
     ],
@@ -1034,9 +1045,9 @@ export const products = [
     date: "2019-03-05",
     companyId: "melexis",
     category: "product",
-    title: "MLX75027：VGA 间接飞行时间图像传感器",
+    title: "MLX7502：间接飞行时间图像传感器",
     summary:
-      "MLX75027 是车规级单芯片 VGA 飞行时间图像传感器，分辨率 640×480，帧率最高约 120 fps，用于舱内监测、车外近距和工业三维相机。2023 年 6 月 20 日又公布了支持功能安全的 MLX75027RTI。",
+      "MLX75027 是车规级单芯片 VGA 间接飞行时间图像传感器，分辨率 640×480，帧率最高约 120 fps。MLX75026 是同系列的 QVGA 产品，分辨率 320×240，全分辨率最高 180 fps。2023 年 6 月 20 日又公布了支持功能安全的 MLX75027RTI。",
     applications: ["depth", "auto"],
     technologies: ["tof"],
     models: [
@@ -1050,6 +1061,19 @@ export const products = [
           "分辨率 640×480，帧率最高约 120 fps。",
           "用于舱内监测、车外近距和工业三维相机。",
           "2023 年 6 月 20 日公布支持功能安全的 MLX75027RTI。",
+        ],
+      },
+      {
+        name: "MLX75026",
+        date: "2020-09-17",
+        url: "https://www.melexis.com/en/product/mlx75026/gen3-qvga-time-of-flight-3d-camera",
+        linkLabel: "打开产品页",
+        points: [
+          "2020 年 9 月 17 日的新闻稿写第三代 QVGA 飞行时间传感器开始按量供货。产品页标题写 QVGA indirect time-of-flight。",
+          "320×240。全分辨率最高 180 fps。支持 850 nm 和 940 nm，可选集成 940 nm 窄带滤光片。调制频率最高 100 MHz。光学尺寸 1/4 英寸。相位读出时间 0.8 ms。",
+          "每帧最多 8 个原始相位。支持 ROI，以及 2×2、4×4、8×8 合并。I²C 最高 400 kHz。CSI-2，MIPI D-PHY，1 条时钟通道，2 或 4 条数据通道。",
+          "封装 fcBGA，80 引脚，9.2×7.8×1 mm。环境温度 -40℃ 到 +105℃。AEC-Q100 Grade 2。产品页写与 MLX75027 兼容。",
+          "新闻稿写量子效率和测距精度超过上一代一倍以上，尺寸是 MLX75027 的一半，所需算力是 MLX75027 的 30%。",
         ],
       },
     ],

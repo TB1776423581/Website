@@ -347,7 +347,8 @@ export const companies = [
     nameEn: "Teledyne FLIR",
     region: "海外",
     hq: "美国",
-    summary: "做长波红外机芯。Boson 与 Lepton 的产品页把光谱带写成 8 到 14 μm。",
+    summary:
+      "做红外机芯。Boson 与 Lepton 的产品页把光谱带写成 8 到 14 μm。Neutrino 的 SWaP 系列页写中波。",
   },
   {
     id: "gst",
@@ -363,7 +364,8 @@ export const companies = [
     nameEn: "IRnova",
     region: "海外",
     hq: "瑞典",
-    summary: "做二类超晶格中波探测器。Oden 产品页写芯片来自瑞典。",
+    summary:
+      "做制冷红外探测器。Oden 产品页写芯片来自瑞典。Balder 的产品页写 T2SL，光谱范围 0.9 到 2.5 μm。Tyr 的产品页写长波 QWIP。",
   },
   {
     id: "scd",
@@ -371,7 +373,8 @@ export const companies = [
     nameEn: "SCD",
     region: "海外",
     hq: "以色列",
-    summary: "做制冷中波和长波红外探测器。关于页写明总部和晶圆厂在以色列。产品页列出 PELICAN-D 640 与 PELICAN-D LW。",
+    summary:
+      "做制冷与非制冷红外探测器。关于页写明总部和晶圆厂在以色列。产品页列出 PELICAN-D 640、PELICAN-D LW，以及 12 μm 氧化钒的 Robin。",
   },
   {
     id: "inright",
