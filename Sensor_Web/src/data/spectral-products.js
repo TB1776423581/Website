@@ -461,6 +461,113 @@ export const spectralProducts = [
     ],
   },
   {
+    id: "s10077",
+    date: "",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S10077：滨松数字输出 CMOS 线阵",
+    summary:
+      "产品页写用于图像输入的 CMOS 线阵，片上电荷放大器和 8-bit/10-bit AD 转换器，视频数据率最高 1 MHz，光谱响应 400 到 1000 nm。产品页没有写发布日期。手册 KMPD1088E10 页脚写 May 2019，并写资料截至 May 2019，记为约 2019 年 5 月。产品页窗口写成 Tempax。手册窗口写成 Borosilicate glass。",
+    applications: ["spectral", "scientific", "machine"],
+    technologies: ["spectral"],
+    models: [
+      page("S10077", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-industry/S10077.html", [
+        "产品页没有写发布日期。标题写 Digital output, built-in 8/10-bit AD converter, single power supply operation。正文写 The signal processing circuit has a charge amplifier，并写 a 8-bit/10-bit AD converter。特性把像元间距 14 μm 和像元高度 50 μm 写在同一行，像素数写成 1024 ch。单电源 3.3 到 5 V。视频数据率最高 1 MHz。光谱响应 400 到 1000 nm。数字输出，8-bit/10-bit 可切换 ADC。各像素同时积分，积分时间可变。",
+        "规格表类型为 Digital output type。图像尺寸 14.336 x 0.05 mm，有效像素 1024 x 1，像元 14 x 50 μm。最高行频 972 行/秒。无制冷，窗口写成 Tempax，封装 LCP。测量条件写 Typ. Ta=25 ℃，unless otherwise noted。",
+        "手册结构表感光区长度 14.336 mm，封装写成 LCP（liquid crystal polymer），窗口材料写成 Borosilicate glass。应用栏写分析仪器、位置检测和图像读取。特性把视频数据率写成 1 MHz max.，并在 start and clock pulse inputs 后加句号。手册标题把转换器写成 8/10-bit A/D converter。",
+        "手册时钟频率 8-bit 最高 12 MHz，10-bit 最高 6 MHz。数据率写成 f(CLK)/12。供电电流一栏把 Current consumption 印成 Current consumoption，符号写成 lc。Vdd=3.3 V 时 8-bit 典型 12 mA、10-bit 典型 10 mA，Vdd=5 V 时 8-bit 典型 16 mA、10-bit 典型 14 mA。注记分别写 f(CLK)=12 MHz 和 6 MHz。",
+        "手册光灵敏度典型 30 V/lx · s，峰值波长典型 700 nm，符号印成 lp。暗输出积分时间写成 Ts=10 s。Vdd=5 V 时 8-bit 暗输出典型 0.03 digit，10-bit 典型 0.12 digit。饱和输出 8-bit 为 255 digit，10-bit 为 1023 digit。读出噪声 8-bit 典型 0.7 digit，10-bit 典型 2.8 digit。光响应非均匀性按 1022 像素计算，上限 ±10%，公式一行写成 DX/X。时序图注记写 When using analog output AO。",
+      ], "nir"),
+    ],
+  },
+  {
+    id: "s10200",
+    date: "",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S10200、S10201 与 S10202：滨松背照 TDI-CCD",
+    summary:
+      "S10200-02-01、S10201-04-01、S10202-08-01 与 S10202-16-01 的产品页都写背照 TDI-CCD，光谱响应 200 到 1100 nm，像元 12 × 12 μm，TDI 级数在手册里写成 128。产品页没有写发布日期。手册 KMPD1098E11 把四款印在同一份资料上，页脚写 Jan. 2021，并写资料截至 January 2021，记为约 2021 年 1 月。产品页正文把 quantum 印成 quantμm。手册写成 quantum efficiency。",
+    applications: ["spectral", "machine", "scientific"],
+    technologies: ["spectral"],
+    models: [
+      {
+        ...page("S10200-02-01", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-industry/S10200-02-01.html", [
+          "产品页没有写发布日期。正文写背照结构把紫外到近红外的量子效率写高，光谱范围 200 到 1100 nm，并把 quantum 印成 quantμm。特性写 TDI 模式、高速连续采集、紫外到近红外高灵敏度、多端口提高行频。手册特性在这些条目之后另写 Low noise。",
+          "规格表类型分成两行，写成 TDI operation 和 TDI-CCD image sensor。图像尺寸 12.288 x 1.536 mm，有效像素 1024 x 128，像元 12 x 12 μm。行频一栏写成 Line rate (typ.)，50000 行/秒。暗电流典型 30 e-/pixel/s。读出噪声典型 35 e- rms。无制冷，窗口为石英玻璃，封装陶瓷。测量条件写 Typ. Ta=25 ℃，unless otherwise noted，operating conditions: Typ.。",
+          "手册选型表总像素 1040 × 128，有效像素 1024 × 128，端口数 2，像素速率 30 MHz/port，行频 50 kHz，垂直转移写成 Bi-directional。适用相机一栏写成 -。注记写另有临时窗口型 S10200-02N-01 和遮光罩型 S10200-02M-01，只在索取时提供，产品索引没有这两款。",
+          "手册窗口一行写 Quartz glass，注记 *4 写成 Resin sealing。暗电流符号 DS，典型 30 e-/pixel、最大 100 e-/pixel，单位不是产品页的 e-/pixel/s。注记 *12 写行频 50 kHz，并写 128 级转移后的累积暗信号。读出噪声典型 35 e- rms、最大 45 e- rms。满阱典型 100 ke-，转换效率典型 9.5 μV/e-，动态范围典型 2857。光响应非均匀性典型 ±3%、最大 ±10%。每端口功耗典型 120 mW。输出 MOSFET 供电电流每个节点典型 8 mA。应用栏写高速移动样品的连续成像、电子零件产线检查、半导体检查，并把流式细胞术印成 Flow cytometery。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+      {
+        ...page("S10201-04-01", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-industry/S10201-04-01.html", [
+          "产品页没有写发布日期。正文与 S10200-02-01 相同，包括 quantμm。特性列表也相同，没有写 Low noise。",
+          "规格表图像尺寸 24.576 x 1.536 mm，有效像素 2048 x 128，像元 12 x 12 μm。行频典型 50000 行/秒。暗电流典型 30 e-/pixel/s。读出噪声典型 35 e- rms。窗口为石英玻璃，封装陶瓷。测量条件与 S10200-02-01 相同。",
+          "手册选型表总像素 2080 × 128，有效像素 2048 × 128，端口数 4，行频 50 kHz。适用相机写成 C10000-801/-A01。注记同样列出临时窗口型 S10201-04N-01 和遮光罩型 S10201-04M-01，只在索取时提供。垂直移位寄存器电容典型 400 pF。",
+          "手册暗电流、读出噪声、满阱、转换效率和每端口功耗与同页其他型号写在同一组，没有按型号拆开。暗电流注记仍写行频 50 kHz。应用栏与 S10200-02-01 相同。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+      {
+        ...page("S10202-08-01", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-industry/S10202-08-01.html", [
+          "产品页没有写发布日期。正文与 S10200-02-01 相同，包括 quantμm。特性列表也相同。",
+          "规格表图像尺寸 49.152 x 1.536 mm，有效像素 4096 x 128，像元 12 x 12 μm。行频典型 50000 行/秒。暗电流典型 30 e-/pixel/s。读出噪声典型 35 e- rms。窗口为石英玻璃，封装陶瓷。测量条件与 S10200-02-01 相同。",
+          "手册选型表总像素 4160 × 128，有效像素 4096 × 128，端口数 8，行频 50 kHz。适用相机一栏写成 -。垂直移位寄存器电容与 S10202-16-01 同栏，典型 650 pF。",
+          "手册电特性和光学特性与另外三款写在同一张表。暗电流单位仍是 e-/pixel，注记行频 50 kHz。应用栏相同。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+      {
+        ...page("S10202-16-01", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-industry/S10202-16-01.html", [
+          "产品页没有写发布日期。正文与 S10200-02-01 相同，包括 quantμm。特性列表也相同。",
+          "规格表图像尺寸与 S10202-08-01 相同，写成 49.152 x 1.536 mm，有效像素 4096 x 128。行频典型 100000 行/秒。暗电流典型仍写 30 e-/pixel/s。读出噪声典型 35 e- rms。窗口为石英玻璃，封装陶瓷。",
+          "手册选型表总像素 4224 × 128，有效像素 4096 × 128，端口数 16，行频 100 kHz。像素速率仍是 30 MHz/port。适用相机一栏写成 -。",
+          "手册暗电流一行没有按型号拆开，注记 *12 仍写行频 50 kHz。读出噪声、满阱典型 100 ke-、转换效率典型 9.5 μV/e- 和每端口功耗典型 120 mW 与同页其余型号同一组。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+    ],
+  },
+  {
+    id: "s10226",
+    date: "",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S10226-10：滨松树脂密封 CMOS 线阵",
+    summary:
+      "产品页写小型树脂密封 CMOS 线阵，1024 像素，像元 7.8 × 125 μm，光谱响应 400 到 1000 nm，视频数据率最高 200 kHz。产品页没有写发布日期。手册 KMPD1151E05 页脚写 Oct. 2024，并写资料截至 October 2024，记为约 2024 年 10 月。产品页窗口写成 Silicone resin。手册没有窗口一行，密封材料写成 Silicone resin。",
+    applications: ["spectral", "scientific", "machine"],
+    technologies: ["spectral"],
+    models: [
+      page("S10226-10", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-industry/S10226-10.html", [
+        "产品页没有写发布日期。标题写 Small, resin-sealed CMOS image sensor。特性写小型、高性价比，像元间距 7.8 μm、像元高度 125 μm，1024 像素，单 3.3 V，高灵敏度、低暗电流、低噪声。内置时序发生器，只需 Start 和 Clock。视频数据率最高 200 kHz。光谱响应 400 到 1000 nm。",
+        "规格表类型为 Resin-sealed type package。图像尺寸 7.9872 x 0.125 mm，有效像素 1024 x 1，像元 7.8 x 125 μm。最高行频 194 行/秒。无制冷，窗口写成 Silicone resin，封装 Glass epoxy。测量条件写 Typ. Ta=25 ℃，f(CLK)=800 kHz，并同时写 Vdd=5 V 与 Vdd=3.3 V 两组时钟和起始脉冲电压。",
+        "手册正文写相对前代 S9226 系列更小、性价比更高。特性写表面贴装封装 2.4 × 9.1 × 1.6t mm，并同样写 Single 3.3 V power supply operation。推荐端电压把 Vdd 典型值写成 5 V，最小 3.3 V，最大 5.25 V。结构表感光区长度 7.9872 mm，封装 Glass epoxy，密封材料 Silicone resin。框图标题写成 Block diagram (S9226/-03, S10226 series)。",
+        "手册时钟频率最高 800 kHz，数据率写成 f(CLK)/4。供电电流 Vdd=5 V 时典型 5 mA、最大 8 mA，Vdd=3.3 V 时典型 4.5 mA、最大 7 mA。转换效率高增益典型 3.2 µV/e-，低增益典型 1.6 µV/e-。暗输出积分时间 10 ms。Vdd=5 V 高增益暗输出典型 0.3 mV、最大 8 mV。饱和输出 Vdd=5 V 典型 3.2 V，Vdd=3.3 V 典型 2.0 V。读出噪声高增益典型 1.4 mV rms，低增益典型 0.7 mV rms。峰值波长典型 700 nm。光响应非均匀性按 1022 像素计算，上限 ±8.5%。应用栏写条码读取器、位移计、折射计、干涉仪和小型光谱仪。",
+      ], "nir"),
+    ],
+  },
+  {
+    id: "s10227",
+    date: "",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S10227-10：滨松树脂密封 CMOS 线阵",
+    summary:
+      "产品页写小型树脂密封 CMOS 线阵，512 像素，像元 12.5 × 250 μm，单 5 V，视频数据率最高 5 MHz，光谱响应 400 到 1000 nm。产品页没有写发布日期。手册 KMPD1152E08 页脚写 Oct. 2024，并写资料截至 October 2024，记为约 2024 年 10 月。产品页窗口写成 Silicone resin。手册没有窗口一行，密封材料写成 Silicone resin。",
+    applications: ["spectral", "scientific", "machine"],
+    technologies: ["spectral"],
+    models: [
+      page("S10227-10", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-industry/S10227-10.html", [
+        "产品页没有写发布日期。标题写 Small, resin-sealed CMOS image sensor。特性写小型、高性价比，像元间距 12.5 μm、像元高度 250 μm，512 像素，单 5 V，视频数据率最高 5 MHz。各像素同时积分，带快门。高灵敏度、低暗电流、低噪声。内置时序发生器，只需 Start 和 Clock。光谱响应 400 到 1000 nm。",
+        "规格表类型为 Resin-sealed type package。图像尺寸 6.4 x 0.25 mm，有效像素 512 x 1，像元 12.5 x 250 μm。最高行频 9434 行/秒。无制冷，窗口写成 Silicone resin，封装 Glass epoxy。测量条件写 Typ. Ta=25 ℃，Vdd=5 V，V(CLK)=V(ST)=5 V，f(CLK)=5 MHz，unless otherwise noted。",
+        "手册正文写相对前代 S9227 系列更小、性价比更高。特性写表面贴装封装 4.4 × 9.1 × 1.6t mm，并写 Single 5 V power supply operation。推荐端电压 Vdd 最小 4.75 V、典型 5 V、最大 5.25 V。结构表感光区长度 6.4 mm，封装 Glass epoxy，密封材料 Silicone resin。光谱响应图标题写成 Spectral response (S10226, S10227)。",
+        "手册时钟频率最高 5 MHz，数据率写成等于 f(CLK)。供电电流在 f(CLK)=5 MHz 时最小 20 mA、典型 26 mA、最大 32 mA。转换效率典型 1.6 µV/e-。暗输出积分时间 10 ms，典型 1 mV、最大 10 mV。饱和输出典型 4.3 V。读出噪声典型 0.45 mV rms。峰值波长典型 700 nm。光响应非均匀性按 510 像素计算，上限 ±8.5%。应用栏写条码读取器、位移计、折射计、干涉仪和小型光谱仪。",
+      ], "nir"),
+    ],
+  },
+  {
     id: "g12242",
     date: "",
     companyId: "hamamatsu",
