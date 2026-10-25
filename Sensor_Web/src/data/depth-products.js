@@ -604,15 +604,29 @@ export const depthProducts = [
     date: "",
     companyId: "seyond",
     category: "product",
-    title: "Hummingbird D1：图达通固态闪光激光雷达",
+    title: "Hummingbird：图达通全固态激光雷达",
     summary:
-      "Hummingbird D1 是全固态闪光激光雷达，视场 140°×100°，最远 50 m，用于近场感知。",
-    applications: ["depth", "auto"],
+      "Hummingbird D1 与 Hummingbird D1-R 的视场都是 140°×100°，最远都是 50 m。D1 产品页写明是全固态闪光激光雷达。D1-R 手册写明面向机器人，盲区 0.1 m。",
+    applications: ["depth", "auto", "machine"],
     technologies: ["tof"],
     models: [
-      page("Hummingbird D1", "", "https://www.seyond.com/products", [
+      page("Hummingbird D1", "", "https://seyond.com/products/hummingbird-d1/", [
         "全固态闪光激光雷达。视场 140°×100°，最远 50 m。",
       ]),
+      page(
+        "Hummingbird D1-R",
+        "",
+        "https://www.seyond.com/wp-content/uploads/2026/01/HD1-R_Non-automotive_EN_250820.pdf",
+        [
+          "手册写明全固态电子扫描，面向机器人，并预留 IMU。",
+          "最远 50 m，10% 反射率下 30 m。盲区一处写 0.1 m，另一处写小于 10 cm。",
+          "视场 140°×100°，分辨率 0.55°×0.52°。距离精度 ±2 cm，距离精密度 2 cm（1σ）。帧率 10 FPS，手册注明可配置。",
+          "940 nm，Class 1（IEC-60825）。功耗 6 W。工作电压 9 到 32 V DC。",
+          "数据接口 100M Base-Tx，接头为 RJ45、Mini IO 或航空插头。输出 XYZ 坐标、反射率和时间戳。时间同步为 GNSS（PPS）。",
+          "最小尺寸 37×92×45 mm（高×宽×深），重量 220 g。机身 IP67，窗口 IP69K。工作温度 -40℃ 到 60℃。",
+        ],
+        "打开产品手册",
+      ),
     ],
   },
   {
