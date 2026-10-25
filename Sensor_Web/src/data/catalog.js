@@ -339,7 +339,8 @@ export const companies = [
     nameEn: "Lynred",
     region: "海外",
     hq: "法国",
-    summary: "做非制冷与制冷红外探测器。安防手册列出短波、中波和长波型号。",
+    summary:
+      "做非制冷与制冷红外探测器。安防手册列出短波、中波和长波型号。产品页还列出面向空间成像的线阵 CAPYORK、PEGA，以及面阵 COBRA、NGP SW 和 IRS。",
   },
   {
     id: "teledyne",

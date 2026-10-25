@@ -221,7 +221,8 @@ export const spectralProducts = [
     companyId: "lynred",
     category: "product",
     title: "PICO：Lynred 非制冷长波探测器",
-    summary: "手册把 PICO384S 与 PICO640S 的光谱带写成 8 到 14 μm。PICO640S BB 7-14 的型号名写明 7 到 14。",
+    summary:
+      "手册把 PICO384S 与 PICO640S 的光谱带写成 8 到 14 μm。PICO640S BB 7-14 的型号名写明 7 到 14。PICO1024Gen2、PICO384+ 与 PICO640-046/046+ 的产品页写微测辐射热计，没有写光谱范围。",
     applications: ["spectral", "machine"],
     technologies: ["spectral"],
     models: [
@@ -236,6 +237,26 @@ export const spectralProducts = [
       page("PICO640S BB 7-14", "", "https://www.lynred.com/products/pico640s-bb-7-14", [
         "产品页型号为 PICO640S BB 7-14，光谱带 7 到 14 μm。640×480，像元 17 μm。",
         "热灵敏度小于 30 mK（f/1，300 K，30 Hz）。最高 60 Hz。用于气体泄漏成像。",
+      ], "lwir"),
+      page("PICO1024Gen2", "", "https://www.lynred.com/products/pico1024gen2", [
+        "产品页没有写发布日期，也没有写光谱范围。标题为 PICO1024Gen2。1024×768，像元 17 μm，微测辐射热计。",
+        "产品页写面向远距离探测的高对比度成像。",
+        "NETD 写成 30<NETD<50 mK（f/1，300 K，30 Hz）。帧率最高 120 Hz。热时间常数小于 12 ms。功耗小于 200 mW。",
+        "产品页写兼容 Tecless 和 Shutterless。鉴定写 TWS qualified：MIL810-MIL883。",
+      ], "lwir"),
+      page("PICO384+", "", "https://www.lynred.com/products/pico384", [
+        "产品页标题为 PICO384+，正文写作 Pico384+Gen2。没有写发布日期，也没有写光谱范围。384×288，像元 17 μm，微测辐射热计。",
+        "热灵敏度小于 40 mK（f/1，300 K，50 Hz）。帧率最高 60 Hz。功耗小于 220 mW，条件写 60 Hz。",
+        "产品页写表面贴装 J-Lead44，符合 JEDEC 回流焊与操作标准，全数字，并写兼容 TECless 和 Shutterless。",
+      ], "lwir"),
+      page("PICO640-046", "", "https://www.lynred.com/products/pico640-046046", [
+        "与 PICO640-046+ 同一产品页，标题为 PICO640-046/046+。没有写发布日期，也没有写光谱范围。640×480，像元 17 μm，微测辐射热计。",
+        "热灵敏度小于 50 mK（f/1，300 K，30 Hz）。帧率最高 120 Hz（2 路输出）。热时间常数小于 12 ms。",
+        "功耗小于 130 mW（1 路输出），小于 160 mW（2 路输出）。产品页写兼容 Tecless 和 Shutterless。",
+      ], "lwir"),
+      page("PICO640-046+", "", "https://www.lynred.com/products/pico640-046046", [
+        "与 PICO640-046 同一产品页。640×480，像元 17 μm，微测辐射热计。产品页没有写光谱范围。",
+        "热灵敏度小于 40 mK（f/1，300 K，30 Hz）。帧率、热时间常数和功耗与同页的 PICO640-046 写在一起。",
       ], "lwir"),
     ],
   },
@@ -289,8 +310,9 @@ export const spectralProducts = [
     date: "",
     companyId: "lynred",
     category: "product",
-    title: "DAPHNIS HD MW：Lynred 中波探测器",
-    summary: "安防手册把 DAPHNIS HD MW 的光谱带写成 3.7 到 4.8 μm。",
+    title: "DAPHNIS：Lynred 中波探测器",
+    summary:
+      "安防手册把 DAPHNIS HD MW 的光谱带写成 3.7 到 4.8 μm。Daphnis XGA MW 的产品页写 MCT、1024×768、10 μm，没有写出光谱范围数字。",
     applications: ["spectral", "machine"],
     technologies: ["spectral"],
     models: [
@@ -298,6 +320,13 @@ export const spectralProducts = [
         "手册：1280×720，像元 10 μm，光谱带 3.7 到 4.8 μm。",
         "NETD 20 mK。最高 85 Hz。手册写明可选陷波滤光片。",
       ], "mwir", "打开产品手册"),
+      page("Daphnis XGA MW", "", "https://www.lynred.com/products/daphnis-xga-mw", [
+        "产品页没有写发布日期，也没有写出光谱范围数字。标题为 Daphnis XGA MW。1024×768，像元 10 μm，MCT。",
+        "产品页写它用来从 VGA、15 μm 的系统升级，芯片尺寸相同，接口简化，画幅为 4/3。",
+        "NETD 20 mK（293 K，70% 阱填充，2.7 me⁻）。焦平面工作温度最高 110 K。电荷容量三档增益写成 1.1 Me⁻、2.7 Me⁻、5.6 Me⁻。",
+        "视频输出 14 bit，CameraLink。全帧最高 100 Hz。阵列可操作性 99.8%。可选制冷机 RM2、RM3、K508N。",
+        "产品页写可选 CO2 陷波滤光片，用于提高对比度，距离增加 +5% 到 +10%。",
+      ], "mwir"),
     ],
   },
   {
@@ -532,6 +561,168 @@ export const spectralProducts = [
         "发布稿写用途包括无人机吊舱、战术目镜、装甲车辆观瞄、遥控武器观瞄、潜望镜，以及固定或机载监控。现场演示被写成用于远距离成像的最小 SXGA 传感器，并展示装在 6.3 英寸吊舱里的机械模型。发布稿引述其掌握 III-V 半导体技术。",
         "产品页写它是 PlugUp 平台里第一款 7.5 μm 像元的 SXGA 探测器，并写低声学噪声，适合要求紧凑和高 MTTF 的系统。",
       ], "mwir"),
+    ],
+  },
+  {
+    id: "scorpio",
+    date: "",
+    companyId: "lynred",
+    category: "product",
+    title: "SCORPIO：Lynred 制冷探测器",
+    summary:
+      "SCORPIO MW 与 SCORPIO BB MW 的产品页都写 VGA 中波、640×512、15 μm、MCT，没有写出光谱范围数字。SCORPIO LW 的产品页写长波，同样没有写出光谱范围数字。三页都没有写发布日期。",
+    applications: ["spectral", "machine"],
+    technologies: ["spectral"],
+    models: [
+      page("SCORPIO MW", "", "https://www.lynred.com/products/scorpio-mw", [
+        "产品页没有写发布日期，也没有写出光谱范围数字。标题为 SCORPIO MW，副题写独特、通用的 VGA 中波探测器。640×512，像元 15 μm，MCT。",
+        "正文写宽光谱范围，并写有最高 110 K 的版本。",
+        "NETD 19 mK（293 K，50% 阱填充，100 Hz）。焦平面工作温度最高 110 K。全帧最高 210 Hz。阵列可操作性 99.8%。",
+        "电荷容量写成 6.4×10^6 e⁻（100% 阱填充、ITR）或 5×10^6 e⁻（100% 阱填充、IWR）。",
+        "可选制冷机 RM2、RM3、RM3 Low Power、K508、K508N。",
+      ], "mwir"),
+      page("SCORPIO BB MW", "", "https://www.lynred.com/products/scorpio-bb-mw", [
+        "产品页没有写发布日期，也没有写出光谱范围数字。标题为 SCORPIO BB MW，副题写面向工业应用的 VGA 中波宽带探测器。640×512，像元 15 μm，MCT。",
+        "正文写宽光谱带，面向机器视觉高光谱和气体探测。",
+        "NETD 22 mK（293 K，50% 阱填充，100 Hz）。焦平面工作温度最高 110 K。全帧最高 120 Hz。阵列可操作性 99.6%。",
+        "电荷容量一格写成 6.410^6 e⁻（100% 阱填充、ITR），另一格写成 5×10^6 e⁻（100% 阱填充、IWR）。",
+        "可选制冷机 RM3、K508。",
+      ], "mwir"),
+      page("SCORPIO LW", "", "https://www.lynred.com/products/scorpio-lw", [
+        "产品页没有写发布日期，也没有写出光谱范围数字。标题为 SCORPIO LW。640×512，像元 15 μm，MCT。产品页写紧凑的高分辨率长波探测器，面向远距离和快速运动目标，并写低功耗适合地面应用。",
+        "NETD 写成 22 mK（f/2，210 Hz），以及 10 mK（f/2，30 Hz post acc\\ 4 frames）。焦平面工作温度最高 90 K。全帧最高 210 Hz。阵列可操作性 99.8%。",
+        "电荷容量写成 13.6×10^6 e⁻（standard），分档为 27.2×10^6 e⁻（binning）。",
+        "可选制冷机写成 K508、RM3、K508N ROHS。",
+      ], "lwir"),
+    ],
+  },
+  {
+    id: "jupiter-mw",
+    date: "",
+    companyId: "lynred",
+    category: "product",
+    title: "JUPITER MW：Lynred 中波探测器",
+    summary:
+      "产品页没有写发布日期。JUPITER MW 是 1280×1024、15 μm 的 MCT 中波探测器，光谱响应 3.7 到 4.8 μm。",
+    applications: ["spectral", "machine"],
+    technologies: ["spectral"],
+    models: [
+      page("JUPITER MW", "", "https://www.lynred.com/products/jupiter-mw", [
+        "产品页没有写发布日期。标题为 JUPITER MW，副题写高性能 SXGA 百万像素产品。1280×1024，像元 15 μm，MCT。",
+        "光谱响应 3.7 到 4.8 μm。正文写这是中波 SXGA、15 μm 的 IDCA。",
+        "NETD 18 mK（293 K，积分时间按 50% 阱填充；原文写作 intergration）。制冷机 LSF9548 与 K548。",
+        "读出为串行电气接口，快照，直接注入，积分同时读出。可编程积分时间，抗光晕，图像可 invert、revert、inverse。",
+        "开窗为 1280×1024，或可编程一个或两个窗口，最小到 260×1。",
+      ], "mwir"),
+    ],
+  },
+  {
+    id: "capyork",
+    date: "",
+    companyId: "lynred",
+    category: "product",
+    title: "CAPYORK：Lynred 空间线阵",
+    summary:
+      "产品页没有写发布日期。LYNRED Linear CAPYORK 是碲镉汞线阵。特性表光谱范围是 0.9 到 2.5 μm。正文写地球观测，从短波直到中波。",
+    applications: ["spectral", "scientific"],
+    technologies: ["spectral"],
+    models: [
+      page("LYNRED Linear CAPYORK", "", "https://www.lynred.com/products/lynred-linear-capyork", [
+        "产品页没有写发布日期。标题为 LYNRED Linear CAPYORK。线阵，(1200×1)×4，像元 15 μm，MCT。",
+        "正文写面向地球观测，光谱从短波直到中波，并写用于 LSTM 任务。特性表把光谱范围写成 0.9 到 2.5 μm。",
+        "格式为 4 个波段、每段 1200 个 TDI 像素，像元 15 μm。工作温度标称 200 K。可操作性写 100%。",
+        "读出为 CTIA，片上 TDI 12 级，快照积分，读出 IWR/ITR，4 路模拟输出。",
+        "正文还写可与交错或拼接配置兼容，可选增益，每条读出线可调积分时间。",
+      ], "swir"),
+    ],
+  },
+  {
+    id: "pega",
+    date: "",
+    companyId: "lynred",
+    category: "product",
+    title: "PEGA：Lynred 空间线阵",
+    summary:
+      "产品页没有写发布日期。LYNRED Linear PEGA 是碲镉汞线阵。正文写地球观测，从中波直到甚长波。特性表写 4 个通道、8 到 12 μm，两片阵列为长波与甚长波。",
+    applications: ["spectral", "scientific"],
+    technologies: ["spectral"],
+    models: [
+      page("LYNRED Linear PEGA", "", "https://www.lynred.com/products/lynred-linear-pega", [
+        "产品页没有写发布日期。标题为 LYNRED Linear PEGA。页首格式写成 (600×3)×4，像元 30 μm，MCT。",
+        "正文写面向地球观测，光谱从中波直到甚长波，并写用于 TRISHNA 任务。可操作性写 100%。",
+        "特性表：敏感阵列为 4 个通道、8 到 12 μm，两片阵列为 LWIR 与 VLWIR。9 条读出线、每条 600 像素，像元标称 30 μm。工作温度标称 60 K。",
+        "读出为快照，IWR 与 ITR，片外 TDI（每通道 3 条读出线）。每条读出线 1 路模拟输出，伪差分，最大输出摆幅 2.6 V。",
+        "标称帧率 4.5 kHz（像素率 3 MHz），并写可工作到 8 MHz 像素率。积分时间从 15 μs 到（帧时间减 15 μs）。",
+        "正文还写可与交错或拼接配置兼容，可选增益，每条读出线可调积分时间。",
+      ], "lwir"),
+    ],
+  },
+  {
+    id: "cobra",
+    date: "",
+    companyId: "lynred",
+    category: "product",
+    title: "COBRA：Lynred 空间面阵",
+    summary:
+      "产品页没有写发布日期。LYNRED Staring array COBRA 是 1380×640、20 μm 的碲镉汞面阵，光谱范围 0.9 到 2.5 μm。",
+    applications: ["spectral", "scientific"],
+    technologies: ["spectral"],
+    models: [
+      page("LYNRED Staring array COBRA", "", "https://www.lynred.com/products/lynred-staring-array-cobra", [
+        "产品页没有写发布日期。标题为 LYNRED Staring array COBRA。1380×640，像元 20 μm，MCT。",
+        "光谱范围 0.9 到 2.5 μm。焦平面工作温度 150 K。",
+        "产品页写高光谱与高空间分辨率，面向天基地球观测，举例大气化学或高光谱成像。",
+        "读出功能包括按行选增益、选择读出的行、抗光晕和电源管理。奈奎斯特频率处的 MTF 为 0.5。PRNU 小于 3%。",
+        "架构为 CTIA，快照积分，读出 IWR/ITR 以及非破坏多次读出。高增益模式有片上 CDS。模拟输出 6 路或 12 路，可选。",
+      ], "swir"),
+    ],
+  },
+  {
+    id: "ngp-sw",
+    date: "",
+    companyId: "lynred",
+    category: "product",
+    title: "NGP SW：Lynred 空间短波面阵",
+    summary:
+      "产品页没有写发布日期。LYNRED Staring array NGP SW 是 1024×1024、15 μm 的碲镉汞短波面阵，光谱范围 0.9 到 2.5 μm。",
+    applications: ["spectral", "scientific"],
+    technologies: ["spectral"],
+    models: [
+      page("LYNRED Staring array NGP SW", "", "https://www.lynred.com/products/lynred-staring-array-ngp-sw", [
+        "产品页没有写发布日期。标题为 LYNRED Staring array NGP SW。1024×1024，像元 15 μm，MCT。副题写大型短波红外探测器，面向空间成像。",
+        "光谱范围 0.9 到 2.5 μm。焦平面工作温度 150 K 到 200 K。",
+        "产品页写已做空间鉴定，并写超光谱、高光谱成像以及光谱测量。",
+        "架构为 CTIA，快照积分，读出 IWR/ITR 以及非破坏多次读出，4 路模拟输出。奈奎斯特频率处的 MTF 为 0.5。PRNU 小于 1%。",
+      ], "swir"),
+    ],
+  },
+  {
+    id: "lynred-irs",
+    date: "",
+    companyId: "lynred",
+    category: "product",
+    title: "IRS：Lynred 空间探测面阵",
+    summary:
+      "产品页没有写发布日期。LYNRED Staring array IRS 是碲镉汞面阵。特性表同时写出中波 4 到 6.25 μm，以及 8 到 14.5 μm。正文写从中波直到甚长波，用于傅里叶变换光谱探测。",
+    applications: ["spectral", "scientific"],
+    technologies: ["spectral"],
+    models: [
+      {
+        ...page(
+          "LYNRED Staring array IRS",
+          "",
+          "https://www.lynred.com/products/lynred-staring-array-irs",
+          [
+            "产品页没有写发布日期。标题为 LYNRED Staring array IRS。页首格式写成 160×160 / 480×480，像元 90 μm / 30 μm，MCT。",
+            "正文写已做空间鉴定，面向傅里叶变换光谱的探测，光谱从中波直到甚长波，并写用于 MTG 任务。",
+            "特性表光谱范围写成 4 到 6.25 μm（MWIR），以及 8 到 14.5 μm（该格写作 LWIR-LWIR）。焦平面工作温度 55 K。",
+            "可操作性大于 99.5%（MWIR），大于 98%（该格写作 LWIR-VLWIR）。奈奎斯特频率处的 MTF 大于 0.6。PRNU 小于 2%。",
+            "读出功能包括超像素内的子像素剔除、Normal Mode 与 Imager Mode 两种工作模式，以及 Skimming。",
+          ],
+          "mwir",
+        ),
+        bands: ["mwir", "lwir"],
+      },
     ],
   },
   {
