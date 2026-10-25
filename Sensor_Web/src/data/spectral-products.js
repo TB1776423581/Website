@@ -229,7 +229,7 @@ export const spectralProducts = [
     category: "product",
     title: "S15796：滨松 7 μm 高灵敏度 CMOS 线阵",
     summary:
-      "S15796-1024、S15796-1024-20、S15796-2048 与 S15796-2048-20 的产品页都写 S15796 series，像元 7 × 200 μm，光谱响应 200 到 1000 nm。两款 -20 的标题写表面贴装。产品页没有写发布日期。手册 KMPD1244E05 页脚写 Feb. 2024，并写资料截至 February 2024，记为约 2024 年 2 月。分光用线阵索引的短句把 S15796-2048-20 写成 1024 pixels。",
+      "S15796-1024、S15796-1024-20、S15796-2048 与 S15796-2048-20 的产品页都写 S15796 series，像元 7 × 200 μm，光谱响应 200 到 1000 nm。两款 -20 的标题写表面贴装。产品页没有写发布日期。手册 KMPD1244E05 页脚写 Feb. 2024，并写资料截至 February 2024，记为约 2024 年 2 月。手册电光特性把动态范围 2 写成 20000 times。分光用线阵索引的短句把 S15796-2048-20 写成 1024 pixels。",
     applications: ["spectral", "scientific", "machine"],
     technologies: ["spectral"],
     models: [
