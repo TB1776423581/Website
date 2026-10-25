@@ -801,14 +801,23 @@ export const spectralProducts = [
     date: "",
     companyId: "irnova",
     category: "product",
-    title: "Njord MW：IRnova 中波探测器",
-    summary: "产品页写明 T2SL Njord MW 覆盖 3 到 5 μm，规格表光谱范围 3.7 到 5.1 μm。",
+    title: "Njord：IRnova 中波探测器",
+    summary:
+      "Njord MW 与 Njord SL 的规格表都是 1280×1024、10 μm，光谱范围 3.7 到 5.1 μm。Njord MW 的产品页正文写全 3 到 5 μm 响应。Njord SL 的产品页写它是 Njord MW 的分体线性制冷版本。",
     applications: ["spectral", "machine"],
     technologies: ["spectral"],
     models: [
-      page("Njord MW", "", "https://www.irnova.se/t2sl-njord-mw", [
-        "1280×1024，像元 10 μm，T2SL。正文写全 3 到 5 μm 响应。",
-        "规格表光谱范围 3.7 到 5.1 μm，可选二氧化碳陷波。NETD 25 mK（F/4，60 Hz）。",
+      page("Njord MW", "2025-02-24", "https://www.irnova.se/t2sl-njord-mw", [
+        "2025 年 2 月 24 日发布。新闻稿把型号写成 Njord MW SXGA T2SL，并写旋转式 SWaP 版本当时即可订货。",
+        "1280×1024，像元 10 μm，T2SL。产品页正文写全 3 到 5 μm 响应。新闻稿也写覆盖整个中波 3 到 5 μm。",
+        "规格表光谱范围 3.7 到 5.1 μm，可选二氧化碳陷波。规格表 NETD 25 mK（F/4，60 Hz）。新闻稿写 F/4 下 NETD 低于 30 mK。",
+      ], "mwir"),
+      page("Njord SL", "", "https://www.irnova.se/products/njord-mw-sl", [
+        "产品页写它是 Njord MW 的分体线性制冷版本，SXGA，光轴更短，并写适合无人机云台。正文写这种制冷机几乎听不见。",
+        "1280×1024，像元 10 µm，T2SL。光谱范围 3.7 到 5.1 μm，可选二氧化碳陷波。光圈 F/2、F/3.4、F/4。NETD 25 mK（F/4，60 Hz）。像元可操作性 99.9%。奈奎斯特频率处 MTF 61%。",
+        "近距电子学供电 5 V，最高帧率 60 Hz，接口 Camera Link，含制冷机控制和近距电子学。",
+        "制冷机 K588、SX020。功耗 2 W，并写不含近距电子学。降温时间 4 分钟。制冷机电压 12 V。重量 340 g。外形 87×72×58 mm。制冷机 MTTF 40 000 小时。环境条件 MIL-STD-810。",
+        "2025 年 2 月 24 日的 Njord MW 新闻稿写，分体线性版本计划在第二季度发布，当时已接受订货。本页没有写发布日期。",
       ], "mwir"),
     ],
   },
@@ -817,8 +826,9 @@ export const spectralProducts = [
     date: "",
     companyId: "irnova",
     category: "product",
-    title: "Oden MW：IRnova 中波探测器",
-    summary: "产品页写明 Oden MW 是中波 T2SL 探测器，光谱范围 3.7 到 5.1 μm。",
+    title: "Oden：IRnova 中波探测器",
+    summary:
+      "Oden MW、Oden SL 与 Oden LLT 的规格表都写 640×512、15 μm，光谱范围 3.7 到 5.1 μm。Oden SL 的产品页写它是 Oden MW 的分体线性制冷版本。Oden LLT 的产品页写它是长寿命版本。",
     applications: ["spectral", "machine"],
     technologies: ["spectral"],
     models: [
@@ -826,6 +836,113 @@ export const spectralProducts = [
         "640×512，像元 15 μm。光谱范围 3.7 到 5.1 μm。",
         "NETD 18 mK（F/4，60 Hz）。工作温度最高 140 K。产品页写芯片来自瑞典。",
       ], "mwir"),
+      page("Oden SL", "", "https://www.irnova.se/products/oden-mw-sl", [
+        "产品页写它是 Oden MW 的分体线性制冷版本，并写光轴更短，适合空间受限的系统，例如无人机云台。正文写双对置压缩机，声音很低、振动很小。",
+        "640×512，像元 15 µm，T2SL。光谱范围 3.7 到 5.1 μm，可选二氧化碳陷波。光圈选项写 F4 与 F/5.5。NETD 18 mK（F/4，60 Hz）。像元可操作性 99.9%。奈奎斯特频率处 MTF 62%。",
+        "近距电子学供电 5 V，最高帧率 60 Hz，可选 120 Hz，接口 Camera Link，含制冷机控制和近距电子学。",
+        "制冷机 K588、SX020。功耗 2 W，并写不含近距电子学。降温时间 3.5 分钟。制冷机电压 12 V。重量 340 g。外形 86×70×52 mm。制冷机 MTTF 40 000 小时。环境条件 MIL-STD-810。",
+      ], "mwir"),
+      page("Oden LLT", "", "https://www.irnova.se/products/oden-llt", [
+        "产品页写它是 Oden 的长寿命版本，把 Oden 的 T2SL 焦平面装进可配 0.5 W 制冷机的杜瓦。正文写预期寿命 50 000 小时或更长，并写这相当于将近 6 年的 24/7 运行。",
+        "640×512，像元 15 µm，T2SL。光谱范围 3.7 到 5.1 μm，可选二氧化碳陷波。光圈选项写 F4 与 F/5.5。NETD 18 mK（F/4，60 Hz）。像元可操作性 99.9%。奈奎斯特频率处 MTF 62%。",
+        "近距电子学供电 5 V，最高帧率 60 Hz，可选 120 Hz，接口 Camera Link，含制冷机控制和近距电子学。",
+        "制冷机 RM3i、K508、K508N、SRI401。功耗 3 W。这一栏把 electronics 写成 elecroics，并写不含近距电子学。降温时间 3 分钟。制冷机电压 12 V，并写可选 24 V。重量 590 g。外形 143×76×62 mm。规格表制冷机 MTTF 大于 50 000 小时。环境条件 MIL-STD-810。",
+      ], "mwir"),
+    ],
+  },
+  {
+    id: "hnoss",
+    date: "",
+    companyId: "irnova",
+    category: "product",
+    title: "Hnoss：IRnova 光学气体成像探测器",
+    summary:
+      "Hnoss 330、Hnoss 330 SL 与 Hnoss 330 LLT 的规格表都是 640×512、15 μm 的 T2SL，光谱范围 3.2 到 3.4 μm。三页都写光学气体成像。",
+    applications: ["spectral", "machine"],
+    technologies: ["spectral"],
+    models: [
+      page("Hnoss 330", "", "https://www.irnova.se/products/hnoss-330", [
+        "产品页写这是用于光学气体成像的 SWaP 探测器，材料为 T2SL。正文写可成像甲烷、丙烷，以及乙醇、苯等液体蒸气，并写适合手持扫描泄漏。",
+        "640×512，像元 15 µm。光谱范围 3.2 到 3.4 µm。光圈 F/1.2。NETD 16 mK（F/1.2，30 Hz）。像元可操作性 99.9%。奈奎斯特频率处 MTF 62%。",
+        "近距电子学供电 5 V，最高帧率 60 Hz，可选 120 Hz，接口 Camera Link，含制冷机控制和近距电子学。",
+        "制冷机 RMs1、K580。功耗 2 W，并写不含近距电子学。降温时间 3.5 分钟。制冷机电压 12 V。重量 250 g。外形 88×50×46 mm。制冷机 MTTF 12 500 小时。环境条件 MIL-STD-810。",
+        "产品页写用途包括吸收在 3.3 µm 一带的气体，并写针对甲烷、乙烷、丙烷和其他 VOC，以及手持和电池供电相机。",
+      ], "mwir"),
+      page("Hnoss 330 SL", "", "https://www.irnova.se/products/hnoss-330-sl", [
+        "产品页写它与 Hnoss 330 SWaP VOC 探测器相同，但使用分体线性制冷机。正文写长度更短，适合无人机云台从上方查找泄漏。",
+        "640×512，像元 15 µm，T2SL。光谱范围 3.2 到 3.4 µm。光圈 F/1.2。NETD 16 mK（F/1.2，30 Hz）。像元可操作性 99.9%。奈奎斯特频率处 MTF 62%。",
+        "近距电子学供电 5 V，最高帧率 60 Hz，可选 120 Hz，接口 Camera Link，含制冷机控制和近距电子学。",
+        "制冷机 K588、SX020。功耗 2 W，并写不含近距电子学。降温时间 3.5 分钟。制冷机电压 12 V。重量 340 g。外形 87×63×52 mm。制冷机 MTTF 40 000 小时。环境条件 MIL-STD-810。",
+      ], "mwir"),
+      page("Hnoss 330 LLT", "", "https://www.irnova.se/products/t2sl-hnoss-330-llt", [
+        "页首写 640×512，并写长寿命制冷机，面向固定和移动安装。正文写分辨率提高因而视场更大。规格表格式仍是 640×512。",
+        "640×512，像元 15 μm，T2SL。光谱范围 3.2 到 3.4 μm。光圈 F/1.2。NETD 16 mK（F/1.2，30 Hz）。像元可操作性 99.9%。奈奎斯特频率处 MTF 62%。",
+        "近距电子学供电 5 V，最高帧率 60 Hz，可选 120 Hz，接口 Camera Link，含制冷机控制和近距电子学。",
+        "制冷机 RM3i、K508、K508N、SRI401。功耗 3 W，并写不含近距电子学。降温时间 3 分钟。制冷机电压 12 V，并写可选 24 V。重量 590 g。外形 133×76×66 mm。制冷机 MTTF 大于 50 000 小时。环境条件 MIL-STD-810。",
+        "正文写光谱范围 3.3 µm，并写可检测甲烷、乙烷、丙烷或其他 VOC。",
+      ], "mwir"),
+    ],
+  },
+  {
+    id: "fenrir",
+    date: "",
+    companyId: "irnova",
+    category: "product",
+    title: "Fenrir Pol：IRnova 长波偏振探测器",
+    summary:
+      "产品页写 Fenrir Pol 是制冷长波偏振 QWIP 探测器，640×512、15 μm，光谱范围 7.7 到 9.1 μm。",
+    applications: ["spectral", "machine"],
+    technologies: ["spectral"],
+    models: [
+      page("Fenrir Pol", "", "https://www.irnova.se/products/fenrir-lw-pol", [
+        "产品页写这是制冷长波偏振探测器。正文写片内 2×2 像素结构，每个像素对应一个偏振角：0°、45°、90° 和 -45°。",
+        "640×512，像元 15 μm，QWIP。光谱范围 7.7 到 9.1 μm。光圈 F/2 与 F/2.24。NETD 35 mK（F/2.24，60 Hz）。像元可操作性 99.9%。奈奎斯特频率处 MTF 45%。",
+        "近距电子学供电 5 V，最高帧率 60 Hz，可选 120 Hz，接口 Camera Link，含制冷机控制和近距电子学。",
+        "制冷机 RM3i、K508、K508N、SRI401。功耗 5.5 W，并写不含近距电子学。降温时间 5 分钟。制冷机电压 12 V，并写可选 24 V。重量 590 g。外形 142×76×68 mm。制冷机 MTTF 31 500 小时。环境条件 MIL-STD-810。",
+        "产品页写用途包括溢油探测、反伪装、简易爆炸装置探测、红外人脸识别，以及工业测温和无损检测。",
+        "下载区写 LWIR & VLWIR QWIP。规格表光谱范围是 7.7 到 9.1 μm。",
+      ], "lwir"),
+    ],
+  },
+  {
+    id: "tor",
+    date: "",
+    companyId: "irnova",
+    category: "product",
+    title: "Tor：IRnova 长波 QWIP 探测器",
+    summary:
+      "产品页写 Tor 是 15 μm 像元的 QWIP 探测器，用于制冷长波，格式 640×512，光谱范围 7.7 到 9.1 μm。",
+    applications: ["spectral", "machine"],
+    technologies: ["spectral"],
+    models: [
+      page("Tor", "", "https://www.irnova.se/products/tor-lw", [
+        "产品页写这是 15 μm 像元的 QWIP 探测器，用于高端制冷长波。",
+        "640×512，像元 15 μm，QWIP。光谱范围 7.7 到 9.1 μm。光圈 F/2 与 F/2.24。NETD 30 mK（F/2.24，60 Hz）。像元可操作性 99.9%。奈奎斯特频率处 MTF 45%。",
+        "近距电子学供电 5 V，最高帧率 60 Hz，可选 120 Hz，接口 Camera Link，含制冷机控制和近距电子学。",
+        "制冷机 RM3i、K508、K508N、SRI401。功耗 5.5 W，并写不含近距电子学。降温时间 5 分钟。制冷机电压 12 V，并写可选 24 V。重量 590 g。外形 142×76×68 mm。制冷机 MTTF 31 500 小时。环境条件 MIL-STD-810。",
+        "产品页写用途包括边境监视、防空目标跟踪、坦克观瞄、海事、消防、工业测温和无损检测，以及机载或天基对地成像。",
+        "下载区写 LWIR & VLWIR QWIP。规格表光谱范围是 7.7 到 9.1 μm。",
+      ], "lwir"),
+    ],
+  },
+  {
+    id: "idun",
+    date: "",
+    companyId: "irnova",
+    category: "product",
+    title: "Idun 1055：IRnova 长波气体成像探测器",
+    summary:
+      "产品页写 Idun 1055 是 640×512、15 μm 的 QWIP 光学气体成像探测器，光谱范围 10.3 到 10.8 μm。",
+    applications: ["spectral", "machine"],
+    technologies: ["spectral"],
+    models: [
+      page("Idun 1055", "", "https://www.irnova.se/products/qwip-idun-1055", [
+        "产品页写这是基于其 QWIP 的 640×512 光学气体成像探测器，针对六氟化硫，也可用于氨、乙烯，以及吸收在 10.55 μm 附近的其他气体。",
+        "640×512，像元 15 μm，QWIP。光谱范围 10.3 到 10.8 μm。光圈 F/1.2。NETD 一栏写 25 mK（F/1.2，0 Hz）。像元可操作性 99.9%。奈奎斯特频率处 MTF 45%。",
+        "近距电子学供电 5 V，最高帧率 60 Hz，可选 120 Hz，接口 Camera Link，含制冷机控制和近距电子学。",
+        "制冷机 RM3i、K508、K508N、SRI401。功耗 6.5 W，并写不含近距电子学。降温时间 5.5 分钟。制冷机电压 12 V，并写可选 24 V。重量 590 g。外形 133×76×67 mm。制冷机 MTTF 14 000 小时。环境条件一栏写 Commerical。",
+        "下载区写 LWIR & VLWIR QWIP。规格表光谱范围是 10.3 到 10.8 μm。",
+      ], "lwir"),
     ],
   },
   {

@@ -365,7 +365,7 @@ export const companies = [
     region: "海外",
     hq: "瑞典",
     summary:
-      "做制冷红外探测器。Oden 产品页写芯片来自瑞典。Balder 的产品页写 T2SL，光谱范围 0.9 到 2.5 μm。Tyr 的产品页写长波 QWIP。",
+      "做制冷红外探测器。Oden 产品页写芯片来自瑞典。Balder 的产品页写 T2SL，光谱范围 0.9 到 2.5 μm。Tyr 的产品页写长波 QWIP。Hnoss 330 的产品页写 T2SL，光谱范围 3.2 到 3.4 μm。",
   },
   {
     id: "scd",
