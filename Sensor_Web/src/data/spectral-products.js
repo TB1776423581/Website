@@ -314,6 +314,283 @@ export const spectralProducts = [
     ],
   },
   {
+    id: "s837",
+    date: "",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S8377 与 S8378：滨松内置时序发生器的 CMOS 线阵",
+    summary:
+      "S8377-128Q、S8377-256Q、S8377-512Q、S8378-256Q、S8378-512Q 与 S8378-1024Q 的产品页都写内置时序发生电路和信号处理电路，单 5 V。S8377 像元间距 50 μm，S8378 像元间距 25 μm，像素高度都写 0.5 mm。光谱响应 200 到 1000 nm。产品页没有写发布日期。手册标题写成 S8377/S8378 series，KMPD1066E11 页脚写 Feb. 2022，并写资料截至 February 2022，记为约 2022 年 2 月。产品页把窗口拼成 Quarts glass。手册写成 Quartz glass。",
+    applications: ["spectral", "machine"],
+    technologies: ["spectral"],
+    models: [
+      {
+        ...page("S8377-128Q", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S8377-128Q.html", [
+          "产品页没有写发布日期。正文写 The S8377-128Q is a family，又写 making them easy to use。单 5 V，只需起始脉冲和时钟。电荷放大器可在 500 kHz 读出。像素高度 0.5 mm，按 50 μm 间距排成一行。窗口写成 Quarts glass。",
+          "特性写感光区宽，像素间距 50 μm，像素高度 0.5mm，片上电荷放大器，内置时序发生器，最高时钟 500 kHz，光谱响应 200 到 1000 nm，单 5 V。特性把 One-chip 印在产品页上。",
+          "规格表类型为 Standard type。图像尺寸 6.4 x 0.5 mm，有效像素 128 x 1，像元 50 x 500 μm。最高行频 3846 行/秒。无制冷，窗口材料写成 Quartz，封装 Ceramic。测量条件写 Typ. Ta=25 ℃，Vdd=5 V，V(CLK)=V(ST)=5 V，unless otherwise noted。",
+          "手册把两列写成 S8377 series 与 S8378 series，并写 8 引脚、引脚兼容。结构表这一列像素数 128，像素间距 50 µm，像素高度 0.5 mm，封装长度 15.8 mm，8 引脚，封装 Ceramic，窗口 Quartz。外形图与 S8378-256Q 共用，感光区 6.4 × 0.5。电特性标题把 characteristics 印成 characterisitics。时钟频率写成 0.1 k 到 500 k Hz。功耗典型 15 mW。峰值波长典型 500 nm。光灵敏度符号写成 Sw，高增益典型 22 V/lx·s，低增益典型 4.4 V/lx·s。暗电流典型 0.01 pA。S8377 系列饱和电荷典型 12.5 pC。高增益读出噪声在 -128Q 一格写成典型 0.4 mV rms。时序注记把 timing 印成 timming。应用栏写图像输入装置和光学传感装置。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+      {
+        ...page("S8377-256Q", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S8377-256Q.html", [
+          "产品页没有写发布日期。正文同样写 is a family 和 them，像素高度 0.5 mm，间距 50 μm，窗口写成 Quarts glass。特性与 S8377-128Q 相同，最高时钟 500 kHz，光谱响应 200 到 1000 nm。",
+          "规格表图像尺寸 12.8 x 0.5 mm，有效像素 256 x 1，像元 50 x 500 μm。最高行频 1938 行/秒。无制冷，窗口 Quartz，封装 Ceramic。测量条件与 S8377-128Q 相同。",
+          "手册结构表像素数 256，封装长度 22.2 mm，其余结构与 S8377 系列相同。外形图与 S8378-512Q 共用。高增益读出噪声在 -256Q 一格写成典型 0.5 mV rms，低增益写成典型 0.15 mV rms。光灵敏度和峰值波长与 S8377 系列同一列。",
+          "手册正文写每种系列有 3 种像素数，随后却列出 128、256、512 和 1024。S8377-256Q 写在 256 这一组。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+      {
+        ...page("S8377-512Q", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S8377-512Q.html", [
+          "产品页没有写发布日期。正文写间距 50 μm、高度 0.5 mm，窗口写成 Quarts glass。特性与同系列相同。",
+          "规格表图像尺寸 25.6 x 0.5 mm，有效像素 512 x 1，像元 50 x 500 μm。最高行频 972 行/秒。无制冷，窗口 Quartz，封装 Ceramic。测量条件与 S8377-128Q 相同。",
+          "手册结构表像素数 512，封装长度 35.0 mm。外形图与 S8378-1024Q 共用。高增益读出噪声在 -512Q 一格写成典型 0.8 mV rms，低增益写成典型 0.2 mV rms。",
+          "手册饱和输出电压高增益典型 3.2 V、低增益典型 2.5 V，S8377 与 S8378 写在同一组。暗输出积分时间 100 ms。S8377 高增益暗输出典型 1.0 mV，低增益典型 0.2 mV。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+      {
+        ...page("S8378-256Q", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S8378-256Q.html", [
+          "产品页没有写发布日期。正文写 The S8378-256Q，间距 25 μm，高度 0.5 mm，窗口写成 Quarts glass。特性把像素间距写成 25 μm，像素高度 0.5mm，最高时钟 500 kHz，光谱响应 200 到 1000 nm。",
+          "规格表图像尺寸 6.4 x 0.5 mm，有效像素 256 x 1，像元 25 x 500 μm。最高行频 1938 行/秒。无制冷，窗口 Quartz，封装 Ceramic。测量条件与 S8377-128Q 相同。",
+          "手册写 S8378 系列像素高度同样是 0.5 mm，间距 25 µm。结构表像素数 256，封装长度 15.8 mm。外形图与 S8377-128Q 共用，感光区 6.4 × 0.5。",
+          "手册 S8378 系列饱和电荷典型 6.3 pC。高增益反馈电容典型 0.5 pF，低增益典型 2.5 pF。高增益读出噪声在 -256Q 一格写成典型 0.9 mV rms。光灵敏度仍是高增益 22 V/lx·s、低增益 4.4 V/lx·s。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+      {
+        ...page("S8378-512Q", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S8378-512Q.html", [
+          "产品页没有写发布日期。正文把型号写成 The S8377-512Q has a height of 0.5 mm，间距写成 25 μm。标题和规格表型号仍是 S8378-512Q。窗口写成 Quarts glass。",
+          "规格表图像尺寸 12.8 x 0.5 mm，有效像素 512 x 1，像元 25 x 500 μm。最高行频 972 行/秒。无制冷，窗口 Quartz，封装 Ceramic。",
+          "手册结构表像素数 512，像素间距 25 µm，封装长度 22.2 mm。外形图标题写成 S8377-256Q, S8378-512Q。高增益读出噪声在 -512Q 一格写成典型 1.3 mV rms，低增益写成典型 0.3 mV rms。",
+          "手册 S8378 高增益暗输出典型 2.0 mV、最大 6.0 mV，低增益典型 0.4 mV、最大 1.2 mV。积分时间注记写 100 ms。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+      {
+        ...page("S8378-1024Q", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S8378-1024Q.html", [
+          "产品页没有写发布日期。正文把型号写成 The S8377-1024Q has a height of 0.5 mm，间距写成 25 μm。手册像素数清单里没有 S8377-1024Q，1024 只写在 S8378-1024Q。窗口写成 Quarts glass。",
+          "规格表图像尺寸 25.6 x 0.5 mm，有效像素 1024 x 1，像元 25 x 500 μm。最高行频 487 行/秒。无制冷，窗口 Quartz，封装 Ceramic。",
+          "手册结构表像素数 1024，封装长度 35.0 mm。外形图标题写成 S8377-512Q, S8378-1024Q。高增益读出噪声在 -1024Q 一格写成典型 2.1 mV rms，低增益写成典型 0.4 mV rms。",
+          "手册光响应非均匀性上限 ±3%，注记按全部像素的平均输出计算，没有写去掉两端像素。饱和曝光高增益典型 145 mlx·s，低增益典型 570 mlx·s，两列相同。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+    ],
+  },
+  {
+    id: "s9226",
+    date: "",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S9226：滨松小型 CMOS 线阵",
+    summary:
+      "S9226-03 与 S9226-04 的产品页都写小型 CMOS 线阵，1024 像素，像元 7.8 × 125 μm，光谱响应 400 到 1000 nm，视频数据率最高 200 kHz。产品页把 CMOS 印成 Cmos，窗口印成 Broslicate glass。产品页没有写发布日期。手册 KMPD1121E11 页脚写 Dec. 2021，并写资料截至 December 2021，记为约 2021 年 12 月。手册窗口写成 Borosilicate glass。",
+    applications: ["spectral", "scientific", "machine"],
+    technologies: ["spectral"],
+    models: [
+      {
+        ...page("S9226-03", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S9226-03.html", [
+          "产品页没有写发布日期。副题写内置时序发生电路和信号处理电路，可单 3.3 V。正文写 small Cmos linear image sensor。特性写像素间距 7.8 μm，像素高度 125μm，中间没有空格。1024 像素。写可单 3.3 V。视频数据率最高 200 kHz。光谱响应 400 到 1000 nm。封装一行写 DIP (dual inline package) type。",
+          "规格表类型为 Standard type。图像尺寸 7.9872 x 0.125 mm，有效像素 1024 x 1，像元 7.8 x 125 μm。最高行频 194 行/秒。无制冷，窗口写成 Broslicate glass，封装 Ceramic。测量条件写 Typ. Ta=25 ℃，Vdd=5 V，V(CLK)=V(ST)=5 V，unless otherwise noted。",
+          "手册正文写有 DIP 和表面贴装两种封装。特性把 DIP 指定为 S9226-03，表面贴装指定为 S9226-04。结构表两列封装都写成 Ceramic，窗口都写成 Borosilicate glass，感光区长度 7.9872 mm。推荐端电压 Vdd 最小 3.3 V、典型 5 V、最大 5.25 V。",
+          "手册时钟频率最小 10 kHz、最高 800 kHz，数据率写成 f(CLK)/4。供电电流符号写成 Ic，最小 4 mA、典型 6 mA、最大 8 mA，这一行没有写时钟条件。转换效率高增益典型 3.2 μV/e-，低增益典型 1.6 μV/e-。暗电流典型 5 fA、最大 50 fA。峰值波长典型 650 nm。暗输出积分时间 10 ms。光响应非均匀性按 1022 像素计算，上限 ±5%。应用栏写分析仪器、位置检测和图像读取。",
+        ], "nir"),
+      },
+      {
+        ...page("S9226-04", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S9226-04.html", [
+          "产品页没有写发布日期。副题、正文和像素特性与 S9226-03 相同，CMOS 仍印成 Cmos，像素高度仍写成 125μm。特性最后一行改成 Surface mount type。",
+          "规格表图像尺寸、有效像素、行频和窗口与 S9226-03 相同，最高行频仍是 194 行/秒。窗口写成 Broslicate glass，封装仍写成 Ceramic。测量条件同样写 Vdd=5 V。",
+          "手册特性把这一型号写成 Surface mount type: S9226-04。结构表封装仍是 Ceramic，窗口仍是 Borosilicate glass。电特性和光学特性与 S9226-03 写在同一组。",
+          "手册焊接温度一行把 S9226-04 写成 240 (twice)，注记 *3 写回流焊，IPC/JEDEC J-STD-020 MSL 5。S9226-03 的焊接温度格子指向推荐焊接条件。",
+        ], "nir"),
+      },
+    ],
+  },
+  {
+    id: "s9227",
+    date: "",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S9227：滨松同时积分的小型 CMOS 线阵",
+    summary:
+      "S9227-03 与 S9227-04 的产品页都写小型线阵，512 像素，像元 12.5 × 250 μm，视频数据率最高 5 MHz，各像素同时积分，光谱响应 400 到 1000 nm。页面标题写 CMOS linear image sensor。正文写 small linear image sensor，并写 read out of 5 MHz。窗口印成 Broslicate glass。产品页没有写发布日期。手册 KMPD1122E15 页脚写 May 2021，并写资料截至 May 2021，记为约 2021 年 5 月。手册窗口写成 Borosilicate glass。",
+    applications: ["spectral", "machine"],
+    technologies: ["spectral"],
+    models: [
+      {
+        ...page("S9227-03", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S9227-03.html", [
+          "产品页没有写发布日期。副题写 Video data rate: 5 MHz max, simultaneous charge integration。正文写 Signal charge is integrated on all pixels simultaneously and then read out of 5 MHz。特性把像素间距和像素高度分成两行，512 像素，单 5 V，视频数据率最高 5 MHz，同时积分，带快门。光谱响应 400 到 1000 nm。封装写成 DIP (dual inline package) type。",
+          "规格表类型为 Standard type。图像尺寸 6.4 x 0.25 mm，有效像素 512 x 1，像元 12.5 x 250 μm。最高行频 9434 行/秒。无制冷，窗口写成 Broslicate glass，封装 Ceramic。测量条件写 Typ. Ta=25 ℃，Vdd=5 V，V(CLK)=V(ST)=5 V，unless otherwise noted。",
+          "手册标题写 S9227 series，正文同样写 read out of 5 MHz，并写两种封装。特性把 DIP 指定为 S9227-03，表面贴装指定为 S9227-04。结构表没有按型号分列，像素数 512，感光区长度 6.4 mm，封装 Ceramic，窗口 Borosilicate glass。",
+          "手册时钟频率最小 50 kHz，最高一格写成 5M Hz。数据率等于 f(CLK)。供电电流在 f(CLK)=5 MHz 时最小 20 mA、典型 26 mA、最大 32 mA。转换效率典型 1.6 μV/e-。暗电流典型 10 fA、最大 100 fA。饱和电荷典型 430 fC。峰值波长典型 650 nm。暗输出积分时间 10 ms，典型 1 mV。光响应非均匀性按 510 像素计算，上限 ±5%。应用栏写位置检测和图像读取。",
+        ], "nir"),
+      },
+      {
+        ...page("S9227-04", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S9227-04.html", [
+          "产品页没有写发布日期。副题和正文与 S9227-03 相同，仍写 read out of 5 MHz。特性最后一行改成 Package: Surface mount type。像素高度仍单独成行。",
+          "规格表图像尺寸、有效像素和行频与 S9227-03 相同，最高行频仍是 9434 行/秒。窗口写成 Broslicate glass，封装仍写成 Ceramic。",
+          "手册特性把这一型号写成 Surface mount type: S9227-04。结构表没有单独一列，封装和窗口与 S9227-03 同为 Ceramic 和 Borosilicate glass。电特性写在同一组。",
+          "手册焊接温度把 S9227-04 写成 240 (twice)，注记 *3 写回流焊，IPC/JEDEC J-STD-020 MSL 5。工作温度写成 -5 到 +85 ℃。",
+        ], "nir"),
+      },
+    ],
+  },
+  {
+    id: "s1012",
+    date: "",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S10121 至 S10124：滨松提高紫外灵敏度的 CMOS 线阵",
+    summary:
+      "S10121、S10122、S10123 与 S10124 的产品页都写电流输出型、每个像素可变积分时间，并写紫外灵敏度高于前代。光谱响应 200 到 1000 nm。产品页没有写发布日期。手册标题写成 S10121 to S10124 series (-01)，KMPD1162E06 页脚写 Jun. 2024，并写资料截至 June, 2024，记为约 2024 年 6 月。特性和手册都把比较级印成 High UV sensitivity than previous type。产品页用 is 接 photodiode arrays。",
+    applications: ["spectral", "scientific"],
+    technologies: ["spectral"],
+    models: [
+      {
+        ...page("S10121-128Q-01", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S10121-128Q-01.html", [
+          "产品页没有写发布日期。副题写 Higher UV sensitivity than previous type, current-output type sensors with variable integration time function。正文写 The S10121-128Q-01 is self-scanning photodiode arrays。特性写 High UV sensitivity than previous type，感光区宽，像素间距 50 μm，像素高度 2.5 mm。",
+          "规格表类型为 With variable integration time for each pixel。图像尺寸 6.4 x 2.5 mm，有效像素 128 x 1，像元 50 x 2500 μm。光谱响应 200 到 1000 nm。最高行频 1923 行/秒。无制冷，窗口 Quartz，封装 Ceramic。测量条件写 Typ. Ta=25 ℃，Vdd=5 V，Vb=Vofd=2 V，Vofg=0.2 V，f(CLK)=200 kHz，unless otherwise noted。",
+          "手册结构表像素数 128，像素间距 50 µm，像素高度 2.5 mm，封装 Ceramic，窗口 Quartz，括注 t=0.5 mm。注记 *1 写 Resin sealing，*2 写折射率 1.46。S10121 与 S10124 的时钟频率最高 250 kHz。视频数据率符号写成 VR，等于 f(CLK)。这一型号功耗典型 0.75 mW，注记写测在 250 kHz。",
+          "手册 S10121 系列暗电流典型 0.1 pA、最大 0.6 pA。饱和电荷最小 110 pC、典型 165 pC。峰值波长典型 750 nm。饱和曝光典型 580 mlx·s。光响应非均匀性上限 ±3%，注记写除去第一个和最后一个像素。应用栏写 Spectrophotometry。外形图标题印着 S3901-128Q、S3904-256Q、S10111-128Q 和 S10114-256Q，图内标注写 S10121-128Q-01, S10124-256Q-01，感光区 6.4 × 2.5。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+      {
+        ...page("S10121-256Q-01", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S10121-256Q-01.html", [
+          "产品页没有写发布日期。正文和特性与 S10121-128Q-01 同一套句子，像素间距 50 μm，像素高度 2.5 mm。比较级仍印成 High UV sensitivity than previous type。",
+          "规格表图像尺寸 12.8 x 2.5 mm，有效像素 256 x 1，像元 50 x 2500 μm。最高行频 969 行/秒。窗口 Quartz，封装 Ceramic。测量条件与 S10121-128Q-01 相同。",
+          "手册结构表像素数 256，像素高度 2.5 mm。功耗典型 1.75 mW。视频线电容与 S10122-256Q-01 写在同一组，典型 14 pF。暗电流和饱和电荷与 S10121 系列同一行。",
+          "手册外形图标题印着 S3901-256Q、S3904-512Q、S3921-256Q、S3924-512Q、S10111-256Q 和 S10114-512Q。图内标注写 S10121-256Q-01, S10124-512Q-01，感光区 12.8 × 2.5。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+      {
+        ...page("S10121-512Q-01", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S10121-512Q-01.html", [
+          "产品页没有写发布日期。像素间距 50 μm，像素高度 2.5 mm。特性没有给出以 A/W 计的紫外灵敏度数字。",
+          "规格表图像尺寸 25.6 x 2.5 mm，有效像素 512 x 1，像元 50 x 2500 μm。最高行频 486 行/秒。窗口 Quartz，封装 Ceramic。测量条件与 S10121-128Q-01 相同。",
+          "手册功耗典型 4.25 mW。视频线电容与 S10122-512Q-01 同一组，典型 22 pF。饱和电荷与 S10121 系列同一行，典型 165 pC。",
+          "手册外形图标题印着 S3901-512Q、S3904-1024Q、S3921-512Q、S3924-1024Q、S10111-512Q 和 S10114-1024Q。图内标注写 S10121-512Q-01, S10124-1024Q-01，感光区 25.6 × 2.5。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+      {
+        ...page("S10122-128Q-01", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S10122-128Q-01.html", [
+          "产品页没有写发布日期。副题与 S10121 相同。特性像素间距 50 μm，像素高度改成 0.5 mm。比较级仍印成 High UV sensitivity than previous type。",
+          "规格表图像尺寸 6.4 x 0.5 mm，有效像素 128 x 1，像元 50 x 500 μm。最高行频 3846 行/秒。窗口 Quartz，封装 Ceramic。测量条件与 S10121-128Q-01 相同，时钟仍写 200 kHz。",
+          "手册结构表像素高度 0.5 mm，像素间距 50 µm。S10122 与 S10123 的时钟频率最高 500 kHz。这一型号功耗典型 1.5 mW，注记写测在 500 kHz。视频线电容与 S10121-128Q-01 同一组，典型 10 pF。",
+          "手册 S10122 系列暗电流典型 0.02 pA、最大 0.12 pA。饱和电荷最小 22 pC、典型 32 pC。峰值波长、饱和曝光和光响应非均匀性与全系列同一行。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+      {
+        ...page("S10122-256Q-01", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S10122-256Q-01.html", [
+          "产品页没有写发布日期。像素间距 50 μm，像素高度 0.5 mm。正文仍用 is 接 arrays。",
+          "规格表图像尺寸 12.8 x 0.5 mm，有效像素 256 x 1，像元 50 x 500 μm。最高行频 1938 行/秒。窗口 Quartz，封装 Ceramic。",
+          "手册功耗典型 3.5 mW。视频线电容典型 14 pF，与 S10121-256Q-01 同一组。暗电流和饱和电荷与 S10122 系列同一行。",
+          "手册时钟最高 500 kHz 写在 S10122/S10123 series 一行。产品页测量条件仍写 f(CLK)=200 kHz。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+      {
+        ...page("S10122-512Q-01", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S10122-512Q-01.html", [
+          "产品页没有写发布日期。像素间距 50 μm，像素高度 0.5 mm。",
+          "规格表图像尺寸 25.6 x 0.5 mm，有效像素 512 x 1，像元 50 x 500 μm。最高行频 972 行/秒。窗口 Quartz，封装 Ceramic。",
+          "手册功耗典型 8.25 mW。视频线电容典型 22 pF。饱和电荷与 S10122 系列同一行，典型 32 pC。",
+          "手册外形图标题印着 S10112-512Q, S10113-1024Q。图内标注写 S10122-512Q-01, S10123-1024Q-01，感光区 25.6 × 0.5。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+      {
+        ...page("S10123-256Q-01", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S10123-256Q-01.html", [
+          "产品页没有写发布日期。特性像素间距 25 μm，像素高度 0.5 mm。比较级仍印成 High UV sensitivity than previous type。",
+          "规格表图像尺寸 6.4 x 0.5 mm，有效像素 256 x 1，像元 25 x 500 μm。最高行频 1938 行/秒。窗口 Quartz，封装 Ceramic。测量条件与 S10121-128Q-01 相同。",
+          "手册结构表像素间距 25 µm，像素高度 0.5 mm。功耗典型 3.25 mW，时钟条件与 S10122 同为 500 kHz。视频线电容与 S10124-256Q-01 同一组，典型 13 pF。",
+          "手册 S10123 系列暗电流典型 0.02 pA、最大 0.12 pA。饱和电荷最小 11 pC、典型 14 pC。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+      {
+        ...page("S10123-512Q-01", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S10123-512Q-01.html", [
+          "产品页没有写发布日期。像素间距 25 μm，像素高度 0.5 mm。",
+          "规格表图像尺寸 12.8 x 0.5 mm，有效像素 512 x 1，像元 25 x 500 μm。最高行频 972 行/秒。窗口 Quartz，封装 Ceramic。",
+          "手册功耗典型 7.25 mW。视频线电容与 S10124-512Q-01 同一组，典型 19 pF。饱和电荷与 S10123 系列同一行，典型 14 pC。",
+          "手册峰值波长典型 750 nm，饱和曝光典型 580 mlx·s，两行覆盖 S10121 到 S10124。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+      {
+        ...page("S10123-1024Q-01", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S10123-1024Q-01.html", [
+          "产品页没有写发布日期。像素间距 25 μm，像素高度 0.5 mm。",
+          "规格表图像尺寸 25.6 x 0.5 mm，有效像素 1024 x 1，像元 25 x 500 μm。最高行频 487 行/秒。窗口 Quartz，封装 Ceramic。",
+          "手册功耗典型 18.25 mW，是功耗表里最大的一格。视频线电容与 S10124-1024Q-01 同一组，典型 32 pF。",
+          "手册另两张外形图标题印着 S10112-128Q, S10113-256Q 和 S10112-256Q, S10113-512Q。图内标注分别写 S10122-128Q-01, S10123-256Q-01（感光区 6.4 × 0.5）和 S10122-256Q-01, S10123-512Q-01（感光区 12.8 × 0.5）。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+      {
+        ...page("S10124-256Q-01", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S10124-256Q-01.html", [
+          "产品页没有写发布日期。特性像素间距 25 μm，像素高度 2.5 mm。",
+          "规格表图像尺寸 6.4 x 2.5 mm，有效像素 256 x 1，像元 25 x 2500 μm。最高行频 969 行/秒。窗口 Quartz，封装 Ceramic。测量条件仍写 f(CLK)=200 kHz。",
+          "手册结构表像素间距 25 µm，像素高度 2.5 mm。时钟最高与 S10121 同为 250 kHz。功耗典型 1.75 mW。视频线电容典型 13 pF。",
+          "手册 S10124 系列暗电流典型 0.1 pA、最大 0.6 pA。饱和电荷最小 55 pC、典型 75 pC。外形图内标注把这一型号和 S10121-128Q-01 放在 6.4 × 2.5 那一张。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+      {
+        ...page("S10124-512Q-01", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S10124-512Q-01.html", [
+          "产品页没有写发布日期。像素间距 25 μm，像素高度 2.5 mm。",
+          "规格表图像尺寸 12.8 x 2.5 mm，有效像素 512 x 1，像元 25 x 2500 μm。最高行频 486 行/秒。窗口 Quartz，封装 Ceramic。",
+          "手册功耗典型 3.75 mW。视频线电容典型 19 pF。饱和电荷与 S10124 系列同一行，典型 75 pC。",
+          "手册暗电流与 S10121 系列同为典型 0.1 pA。时钟最高 250 kHz 写在 S10121/S10124 series 一行。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+      {
+        ...page("S10124-1024Q-01", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S10124-1024Q-01.html", [
+          "产品页没有写发布日期。像素间距 25 μm，像素高度 2.5 mm。",
+          "规格表图像尺寸 25.6 x 2.5 mm，有效像素 1024 x 1，像元 25 x 2500 μm。最高行频 243 行/秒。窗口 Quartz，封装 Ceramic。",
+          "手册功耗典型 8.25 mW。视频线电容典型 32 pF。饱和电荷典型 75 pC。",
+          "手册光响应非均匀性注记写除去第一个和最后一个像素，上限 ±3%。产品页另有一份 467 KB 的技术说明，规格表数字来自产品页和 KMPD1162E06。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+    ],
+  },
+  {
+    id: "s1590",
+    date: "",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S15908 与 S15909：滨松紫外到近红外平滑光谱的 CMOS 线阵",
+    summary:
+      "S15908-512Q 与 S15909-1024Q 的产品页都写紫外到近红外光谱平滑，并写每个像素可变积分时间。光谱响应 200 到 1000 nm。产品页没有写发布日期。手册 KMPD1239E02 把两款印在同一份资料上，页脚写 Jun. 2024，并写资料截至 June 2024，记为约 2024 年 6 月。特性写 250 nm 的紫外灵敏度 0.09 A/W。手册光谱图把 S10121 到 S10124 series (-01) 标成前代。",
+    applications: ["spectral", "scientific"],
+    technologies: ["spectral"],
+    models: [
+      {
+        ...page("S15908-512Q", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S15908-512Q.html", [
+          "产品页没有写发布日期。正文把 specifically 印成带连字的 speciﬁcally，并写 self-scanning photodiode array，面向分光，紫外到近红外光谱响应平滑。特性写抑制紫外到红外的光谱响应条纹，紫外灵敏度 0.09 A/W（λ=250 nm），暗电流 0.03 pA，饱和电荷 200 pC，每个像素可变积分时间。",
+          "规格表类型为 With variable integration time for each pixel。图像尺寸 25.6 x 2.5 mm，有效像素 512 x 1，像元 50 x 2500 μm。光谱响应 200 到 1000 nm。最高行频 486 行/秒。无制冷，窗口 Quartz，封装 Ceramic。测量条件写 Typ. Ta=25 ℃，Vdd=5 V，Vb=Vofd=2 V，Vofg=0.2 V，f(CLK)=200 kHz，unless otherwise noted。",
+          "手册特性把饱和电荷的 200 拆开，行末是 2，下一行是 00 pC (S15908-512Q)。结构表像素数 512，间距 50 µm，像素高度 2.5 mm，封装 Ceramic，窗口 Quartz，重量 3.5 g。注记 *1 写 Resin sealing，*2 写折射率 1.46。功耗典型 4.25 mW，注记写 f(CLK)=250 kHz。视频线电容典型 22 pF。",
+          "手册饱和电荷最小 150 pC、典型 200 pC。暗电流典型 0.03 pA、最大 0.3 pA。峰值波长典型 750 nm。饱和曝光典型 700 mlx·s。光响应非均匀性上限 ±3%，注记写除去第一个和最后一个像素。起始脉冲周期写成 514/f(CLK)。读出电路示例把 S15908-512Q 和 S15909-1024Q 标在 SD210DE 旁边。光谱图把前代写成 S10121 to S10124 series (-01)。外形图标题印着 S3901-512Q、S3904-1024Q、S3921-512Q、S3924-1024Q、S10111-512Q 和 S10114-1024Q，感光区 25.6 × 2.5。应用栏写 Spectrophotometry。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+      {
+        ...page("S15909-1024Q", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S15909-1024Q.html", [
+          "产品页没有写发布日期。正文与 S15908-512Q 相同，仍写 speciﬁcally 和 near IR region。特性紫外灵敏度同样写成 0.09 A/W（λ=250 nm），暗电流 0.03 pA。饱和电荷改成 100 pC。",
+          "规格表图像尺寸同样是 25.6 x 2.5 mm，有效像素 1024 x 1，像元 25 x 2500 μm。最高行频 243 行/秒。窗口 Quartz，封装 Ceramic。测量条件与 S15908-512Q 相同。",
+          "手册结构表像素数 1024，间距 25 µm，像素高度 2.5 mm，重量与 S15908-512Q 同格写成 3.5 g。功耗典型 8.25 mW。视频线电容典型 32 pF。饱和电荷最小 75 pC、典型 100 pC。起始脉冲周期写成 1026/f(CLK)。",
+          "手册有一张光响应非均匀性图只写 S15909-1024Q，对照图标题写成 Previous type (S10124-1024-01)，型号里没有 Q。光源注记写 red LED（λ=635 nm）。暗电流、峰值波长和饱和曝光与 S15908-512Q 同一行。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+    ],
+  },
+  {
     id: "s13499",
     date: "",
     companyId: "hamamatsu",
