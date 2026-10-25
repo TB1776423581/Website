@@ -123,11 +123,13 @@ const depthModels = products
 const spectralModels = products
   .filter((product) => product.applications.includes("spectral"))
   .flatMap((product) =>
-    product.models.map((model) => ({
-      product,
-      model,
-      band: spectralBand(product, model),
-    })),
+    product.models.flatMap((model) => {
+      const bands =
+        Array.isArray(model.bands) && model.bands.length
+          ? model.bands
+          : [spectralBand(product, model)];
+      return bands.filter(Boolean).map((band) => ({ product, model, band }));
+    }),
   )
   .sort((a, b) => byName(a.model.name, b.model.name));
 

@@ -447,13 +447,50 @@ export const spectralProducts = [
     companyId: "gst",
     category: "product",
     title: "GST：高芯科技非制冷长波探测器",
-    summary: "GST212W、GST612C、GST817M 和 GST1212M 的产品页都把响应波段写成 8 到 14 μm。",
+    summary:
+      "这些型号的产品页都把响应波段写成 8 到 14 μm。GST212W、GST417W、GST612W 和 GST612W9 是晶圆级封装。GST412C、GST417C 和 GST612C 是陶瓷封装。GST417M、GST612M、GST817M 和 GST1212M 是金属封装。GST612W9 的标题写车规级红外探测器，正文写非制冷红外热成像模组。",
     applications: ["spectral", "machine"],
     technologies: ["spectral"],
     models: [
       page("GST212W", "", "https://www.gst-ir.com/products-ir-detector/256X192/GST212W.html", [
         "晶圆级封装。256×192，像元 12 μm。光谱范围 8 到 14 μm。",
         "规格表典型 NETD 小于 40 mK。最高 50 Hz。重量小于 0.5 g。",
+      ], "lwir"),
+      page("GST417W", "", "https://www.gst-ir.com/products-ir-detector/400X300/GST417W.html", [
+        "晶圆级封装，氧化钒。400×300，像元 17 μm。光谱范围 8 到 14 μm。",
+        "规格表典型 NETD <40 mK。热响应时间 <12 ms。最大帧频 50 Hz。功耗 ≤180 mW。",
+        "尺寸 18×16×2.75 mm（不含接口），重量 <2 g。工作温度 -40°C 到 +85°C。",
+      ], "lwir"),
+      page("GST412C", "", "https://www.gst-ir.com/products-ir-detector/400X300/GST412C.html", [
+        "陶瓷封装，氧化钒，无 TEC。400×300，像元 12 μm。光谱范围 8 到 14 μm。",
+        "规格表典型 NETD ＜35 mK，最大帧频 50 Hz，功耗 ≤140 mW。特性栏另写功耗低至 80 mW。",
+        "尺寸 18.5×18.5×3.8 mm（不计引脚），重量 <4.5 g。工作温度 -40°C 到 +85°C。",
+      ], "lwir"),
+      page("GST612W", "", "https://www.gst-ir.com/products-ir-detector/640X512/GST612W.html", [
+        "晶圆级封装，氧化钒。640×512，像元 12 μm。光谱范围 8 到 14 μm。",
+        "规格表典型 NETD <40 mK。最大帧频 50 Hz。功耗 ≤150 mW。",
+        "尺寸 18×16×2.75 mm（不含接口），重量 <2 g。工作温度 -40°C 到 +85°C。",
+      ], "lwir"),
+      page("GST417C", "", "https://www.gst-ir.com/products-ir-detector/400X300/578.html", [
+        "陶瓷封装，氧化钒，无 TEC。400×300，像元 17 μm。光谱范围 8 到 14 μm。",
+        "规格表典型 NETD ＜30 mK，最大帧频 50 Hz，功耗 ＜180 mW。",
+        "规格表尺寸写 18.×18.5×3.8 mm（不计引脚），特性栏写 18.5×18.5×3.8 mm。重量 ＜4.5 g。",
+      ], "lwir"),
+      page("GST417M", "", "https://www.gst-ir.com/products-ir-detector/400X300/GST417M.html", [
+        "金属封装，氧化钒，内置 TEC。400×300，像元 17 μm。光谱范围 8 到 14 μm。",
+        "规格表典型 NETD <30 mK。最大帧频 50 Hz。功耗 ≤180 mW。",
+        "尺寸 30×19.8×7.32 mm（不计引脚），重量 <15 g。工作温度 -40°C 到 +85°C。",
+      ], "lwir"),
+      page("GST612M", "", "https://www.gst-ir.com/products-ir-detector/640X512/GST612M.html", [
+        "金属封装，氧化钒，内置 TEC。640×512，像元 12 μm。光谱范围 8 到 14 μm。",
+        "规格表典型 NETD <35 mK。最大帧频 50 Hz。功耗 ≤150 mW。",
+        "尺寸 30×19.8×7.32 mm（不计引脚），重量 <20 g。工作温度 -40°C 到 +85°C。",
+      ], "lwir"),
+      page("GST612W9", "", "https://www.gst-ir.com/products-ir-detector/640X512/GST612W9.html", [
+        "标题写车规级红外探测器，正文写非制冷红外热成像模组。氧化钒，晶圆级封装。640×512，像元 12 μm。光谱范围 8 到 14 μm。",
+        "正文写国内首获车规级 AEC-Q104 认证，已实现大批量生产，用于智能驾驶。",
+        "规格表典型 NETD ＜30 mK，最大帧频 50 Hz，功耗 ＜150 mW。特性栏功耗写 ＜120 mW。",
+        "尺寸 19.1×24×3.75 mm（不含接口），重量 ＜2 g。工作温度 -40℃ 到 105℃。",
       ], "lwir"),
       page("GST612C", "", "https://www.gst-ir.com/products-ir-detector/640X512/GST612C.html", [
         "陶瓷封装。640×512，像元 12 μm。响应波段 8 到 14 μm。",
@@ -474,8 +511,9 @@ export const spectralProducts = [
     date: "",
     companyId: "gst",
     category: "product",
-    title: "C615S：高芯科技长波制冷探测器",
-    summary: "产品页标题写长波制冷红外探测器，光谱范围 7.7 到 9.4 μm。",
+    title: "C615：高芯科技制冷红外探测器",
+    summary:
+      "C615S 是长波二类超晶格，光谱范围 7.7±0.2 μm 到 9.4±0.3 μm。C615M 是中波碲镉汞，光谱范围 3.7±0.2 μm 到 4.8±0.2 μm。两款都是 640×512、像元 15 μm。",
     applications: ["spectral", "machine"],
     technologies: ["spectral"],
     models: [
@@ -483,6 +521,65 @@ export const spectralProducts = [
         "640×512，像元 15 μm，二类超晶格。光谱范围 7.7±0.2 μm 到 9.4±0.3 μm。",
         "NETD 典型值：F2、ITR 为 25 mK；隔行合并为 22 mK。",
       ], "lwir"),
+      page("C615M", "", "https://www.gst-ir.com/products-ir-detectors/medium-wave/C615M.html", [
+        "中波制冷红外探测器。640×512，像元 15 μm，碲镉汞。光谱范围 3.7±0.2 μm 到 4.8±0.2 μm。",
+        "NETD 典型值 F2 为 16 mK，F4 为 18 mK。有效像元率 ≥99.76%。",
+        "可配置制冷机 RS058、RS046 和 LS734。规格表按制冷机分列功耗和重量。",
+      ], "mwir"),
+    ],
+  },
+  {
+    id: "c1212",
+    date: "",
+    companyId: "gst",
+    category: "product",
+    title: "C1212M：高芯科技中波制冷探测器",
+    summary:
+      "产品页写 C1212M 是碲镉汞中波制冷红外探测器，1280×1024、像元 12 μm，光谱范围 3.7±0.2 μm 到 4.8±0.2 μm。",
+    applications: ["spectral", "machine"],
+    technologies: ["spectral"],
+    models: [
+      page("C1212M", "", "https://www.gst-ir.com/products-ir-detectors/medium-wave/C1212M.html", [
+        "1280×1024，像元 12 μm，碲镉汞。光谱范围 3.7±0.2 μm 到 4.8±0.2 μm。",
+        "NETD 典型值 F2 为 16 mK，F4 为 18 mK。有效像元率 ≥99.5%。",
+        "可配置制冷机 RS058。稳定功耗 ≤7 W，最大功耗 ≤17 W。制冷时间 ≤6 min。重量 ≤600 g。",
+      ], "mwir"),
+    ],
+  },
+  {
+    id: "c330",
+    date: "",
+    companyId: "gst",
+    category: "product",
+    title: "C330：高芯科技制冷红外探测器",
+    summary:
+      "C330M 是 320×256、30 μm 的碲镉汞中波探测器。C330S 长波与 C330S 双色都是 320×256、30 μm 的二类超晶格。双色产品页同时给出中波和长波两段光谱范围。",
+    applications: ["spectral", "machine"],
+    technologies: ["spectral"],
+    models: [
+      page("C330M", "", "https://www.gst-ir.com/products-ir-detectors/medium-wave/C330M.html", [
+        "中波制冷红外探测器。320×256，像元 30 μm，碲镉汞。光谱范围 3.7±0.2 μm 到 4.8±0.2 μm。",
+        "NETD 典型值 F2 为 9 mK，F4 为 15 mK。工作模式写明 ITR 积分。",
+        "可配置制冷机 RS058 与 RS046H。",
+      ], "mwir"),
+      page("C330S", "", "https://www.gst-ir.com/products-ir-detectors/long-wave/C330S.html", [
+        "长波制冷红外探测器。320×256，像元 30 μm，二类超晶格。光谱范围 7.7±0.2 μm 到 9.4±0.3 μm。",
+        "NETD 典型值 20 mK（F2）。可配置制冷机 RS058。稳定功耗 ≤8 W，最大功耗 ≤17 W。",
+      ], "lwir"),
+      {
+        ...page(
+          "C330S 双色",
+          "",
+          "https://www.gst-ir.com/products-ir-detectors/two-color/C330STC.html",
+          [
+            "产品页型号写 C330S 中长波双色制冷红外探测器。320×256，像元 30 μm，二类超晶格。",
+            "中波段 3.7±0.2 μm 到 4.8±0.2 μm，长波段 7.7±0.2 μm 到 9.4±0.3 μm。",
+            "NETD 典型值中波 20 mK，长波 25 mK。可配置制冷机 RS058。稳定功耗 ≤9 W。",
+          ],
+          "mwir",
+        ),
+        bands: ["mwir", "lwir"],
+      },
     ],
   },
   {

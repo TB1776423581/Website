@@ -756,6 +756,64 @@ export const depthProducts = [
     ],
   },
   {
+    id: "benewake-tf350",
+    date: "",
+    companyId: "benewake",
+    category: "product",
+    title: "TF350：北醒超长距单点激光雷达",
+    summary:
+      "产品页写 TF350 是单点激光雷达，量程 0.2 到 350 m，输出单点距离，不输出点云。",
+    applications: ["machine"],
+    technologies: [],
+    models: [
+      page("TF350", "", "https://ai.benewake.com/en/products/tf350/", [
+        "量程 0.2 到 350 m。10 m 及以内精度 ±10 cm，10 m 以上 1%。",
+        "帧率 1 到 1000 Hz。视场 0.35°。功耗 ≤1 W，重量 224±3 g。",
+        "尺寸 78×67×40 mm。防护 IP67。接口 UART、CAN、RS-232、RS-485。供电 5 到 24 V。",
+        "输出为单点距离。产品页应用栏列出无人机、液位检测和安防预警。",
+      ]),
+    ],
+  },
+  {
+    id: "benewake-tfs20",
+    date: "",
+    companyId: "benewake",
+    category: "product",
+    title: "TFS20-L：北醒微型单点激光雷达",
+    summary:
+      "产品页写 TFS20-L 是无外壳单点模组，重量约 1.35 g，量程 0.2 到 20 m，由主机提供安装和环境防护。",
+    applications: ["machine"],
+    technologies: [],
+    models: [
+      page("TFS20-L", "", "https://ai.benewake.com/en/products/tfs20-l/", [
+        "无外壳。重量约 1.35 g。量程 0.2 到 20 m。0.2 到 6 m 精度 ±6 cm，6 m 及以上 1%。",
+        "帧率 0、20、50、100、250 Hz。视场小于 2°。功耗 ≤0.43 W。尺寸 21×15×7.87 mm。",
+        "接口 UART、I²C。供电 DC 3.3±9% V。输出为单点距离。",
+        "产品页应用栏列出无人机，以及机器人防跌落和避障。",
+      ]),
+    ],
+  },
+  {
+    id: "benewake-sr18",
+    date: "",
+    companyId: "benewake",
+    category: "product",
+    title: "SR18：北醒 18 通道激光雷达",
+    summary:
+      "产品页写 SR18 输出点云，18 通道，10% 反射率下 30 m，视场 360°×48°。",
+    applications: ["depth", "machine"],
+    technologies: ["tof"],
+    models: [
+      page("SR18", "", "https://ai.benewake.com/en/products/sr18-lidar/", [
+        "输出点云。18 通道。10% 反射率下 30 m。精度 3 cm（1σ）。盲区 ≤0.15 m。",
+        "视场 360°×48°（-8° 到 40°）。默认帧率 5 Hz，可定制 10 Hz。",
+        "中心波长 940 nm。激光安全等级写 Class 1 Eye-safe，并注明 IEC 60825-1:2014。",
+        "接口 RS485。防护 IP66。功耗 ≤4 W，重量 190 g。尺寸 Ø71.8×64 mm（不含线束）。",
+        "供电 9 到 16 V。工作温度 -20°C 到 +60°C。",
+      ]),
+    ],
+  },
+  {
     id: "benewake-horn",
     date: "",
     companyId: "benewake",

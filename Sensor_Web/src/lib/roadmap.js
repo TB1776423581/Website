@@ -33,7 +33,7 @@ function toMeters(value, unit) {
   return number;
 }
 
-export function wavelengthRangeNm(text) {
+function wavelengthRangesNm(text) {
   const ranges = [];
   const pattern = /(\d+(?:\.\d+)?)(?:\s*±\s*\d+(?:\.\d+)?)?(?:\s*(?:nm|μm|um|微米))?\s*(?:到|至|–|—|-|~|－)\s*(\d+(?:\.\d+)?)(?:\s*±\s*\d+(?:\.\d+)?)?\s*(nm|μm|um|微米)/gi;
   let match = pattern.exec(text);
@@ -44,9 +44,31 @@ export function wavelengthRangeNm(text) {
     if (end > 80 && end < 30000) ranges.push([start, end]);
     match = pattern.exec(text);
   }
+  return ranges;
+}
+
+function widestRange(ranges) {
   if (!ranges.length) return null;
-  ranges.sort((a, b) => b[1] - b[0] - (a[1] - a[0]));
-  return { min: ranges[0][0], max: ranges[0][1] };
+  const sorted = [...ranges].sort((a, b) => b[1] - b[0] - (a[1] - a[0]));
+  return { min: sorted[0][0], max: sorted[0][1] };
+}
+
+export function wavelengthRangeNm(text) {
+  return widestRange(wavelengthRangesNm(text));
+}
+
+function waveForBand(text, band) {
+  const ranges = wavelengthRangesNm(text);
+  const fits = ranges.filter(([min, max]) => {
+    const mid = (min + max) / 2;
+    if (band === "uv") return mid < 400;
+    if (band === "nir") return mid >= 700 && mid < 1400;
+    if (band === "swir") return mid >= 900 && mid < 3000;
+    if (band === "mwir") return mid >= 3000 && mid < 7000;
+    if (band === "lwir") return mid >= 7000 && mid < 20000;
+    return false;
+  });
+  return widestRange(fits.length ? fits : ranges);
 }
 
 export function resolutionPixels(text) {
@@ -105,19 +127,23 @@ function spectralRows() {
   return products
     .filter((product) => product.applications.includes("spectral"))
     .flatMap((product) =>
-      product.models.map((model) => {
+      product.models.flatMap((model) => {
         const text = modelText(model);
-        const wave = wavelengthRangeNm(text);
         const pixels = resolutionPixels(text);
-        return {
-          product,
-          model,
-          company: companyName(product),
-          band: model.band || "",
-          wave,
-          pixels,
-          broadband: Boolean(wave && wave.min <= 450 && wave.max >= 1000),
-        };
+        const bands =
+          Array.isArray(model.bands) && model.bands.length ? model.bands : [model.band || ""];
+        return bands.map((band) => {
+          const wave = model.bands?.length ? waveForBand(text, band) : wavelengthRangeNm(text);
+          return {
+            product,
+            model,
+            company: companyName(product),
+            band,
+            wave,
+            pixels,
+            broadband: Boolean(wave && wave.min <= 450 && wave.max >= 1000),
+          };
+        });
       }),
     );
 }
