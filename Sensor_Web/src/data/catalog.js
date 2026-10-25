@@ -267,7 +267,8 @@ export const companies = [
     nameEn: "SICK",
     region: "海外",
     hq: "德国",
-    summary: "做多层和二维激光雷达，产品手册列出 multiScan、MRS 和 picoScan。",
+    summary:
+      "做多层和二维激光雷达，产品手册列出 multiScan、MRS 和 picoScan。产品家族页还列出多层激光雷达 LD-MRS。",
   },
   {
     id: "analog",
@@ -331,7 +332,8 @@ export const companies = [
     nameEn: "Hamamatsu Photonics",
     region: "海外",
     hq: "日本",
-    summary: "做分光用线阵和 InGaAs 面阵。产品页给出紫外到短波的光谱响应范围。",
+    summary:
+      "做分光用线阵和 InGaAs 面阵。产品页给出紫外到短波的光谱响应范围。约 2026 年 3 月的选型指南列出 640×512 的 G1656。线阵产品页还包括 G920、G11135、G11508、G11608、G11620、G11475 到 G11478 和 G14237。",
   },
   {
     id: "lynred",

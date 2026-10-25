@@ -11,6 +11,8 @@ const lynredBrief =
   "https://www.lynred.com/sites/default/files/2026-01/web_BrochureSurveillance_2026.pdf";
 const hamamatsuGuide =
   "https://www.hamamatsu.com/content/dam/hamamatsu-photonics/sites/documents/99_SALES_LIBRARY/ssd/ingaas_is_kmir1037e.pdf";
+const hamamatsuLine = (part) =>
+  `https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ingaas-image-sensor/ingaas-linear-image-sensor/${part}.html`;
 const leptonSheet = "https://flir.netx.net/file/asset/56466/original/attachment";
 const bosonPage = "https://oem.flir.com/products/boson?segment=oem&vertical=lwir";
 
@@ -106,7 +108,7 @@ export const spectralProducts = [
     category: "product",
     title: "G1656：滨松三级制冷 InGaAs 面阵",
     summary:
-      "选型指南把 G16561 到 G16564 列为 320×256、三级热电制冷，光谱响应与 G1467 同档。",
+      "选型指南把 G16561 到 G16564 的 0808 列为 320×256、三级热电制冷，最高帧频 503 帧/秒。约 2026 年 3 月的同一指南还列出 0909，为 640×512、像素 20 μm，最高帧频 116 帧/秒。光谱响应与 G1467 同档。",
     applications: ["spectral", "machine"],
     technologies: ["spectral"],
     models: [
@@ -121,6 +123,18 @@ export const spectralProducts = [
       ], "swir", "打开产品手册"),
       page("G16564-0808T", "", hamamatsuGuide, [
         "选型指南：320×256，像素 20 μm。光谱响应 1.7 到 2.55 μm。",
+      ], "swir", "打开产品手册"),
+      page("G16561-0909T", "", hamamatsuGuide, [
+        "约 2026 年 3 月的选型指南：640×512，像素 20 μm。光谱响应 0.95 到 1.69 μm。三级热电制冷，芯片 15℃。最高帧频 116 帧/秒。缺陷像素上限 0.37%。",
+      ], "swir", "打开产品手册"),
+      page("G16562-0909T", "", hamamatsuGuide, [
+        "选型指南与 G16561-0909T 同在 640×512、像素 20 μm 这一组，最高帧频 116 帧/秒。光谱响应 1.12 到 1.85 μm。",
+      ], "swir", "打开产品手册"),
+      page("G16563-0909T", "", hamamatsuGuide, [
+        "选型指南：640×512，像素 20 μm。光谱响应 1.3 到 2.15 μm。三级热电制冷，芯片 -20℃。最高帧频 116 帧/秒。缺陷像素上限 1%。",
+      ], "swir", "打开产品手册"),
+      page("G16564-0909T", "", hamamatsuGuide, [
+        "选型指南与 G16563-0909T 同在 640×512、像素 20 μm 这一组，最高帧频 116 帧/秒。光谱响应 1.7 到 2.55 μm。",
       ], "swir", "打开产品手册"),
     ],
   },
@@ -161,6 +175,223 @@ export const spectralProducts = [
       page("G13441-01", "", hamamatsuGuide, [
         "选型指南：192×96，像素 50 μm。光谱响应 1.3 到 2.15 μm。最高 867 帧/秒。",
       ], "swir", "打开产品手册"),
+    ],
+  },
+  {
+    id: "g920",
+    date: "",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "G920：滨松 DWDM 监测用 InGaAs 线阵",
+    summary:
+      "G9203-256DA 与 G9204-512DA 的产品页都写用于光通信里的 WDM 监测。光谱响应都是 900 nm 到 1700 nm，无制冷，陶瓷封装。转换效率可选 16 nV/e⁻ 或 320 nV/e⁻。",
+    applications: ["spectral", "scientific"],
+    technologies: ["spectral"],
+    models: [
+      page("G9203-256DA", "", hamamatsuLine("G9203-256DA"), [
+        "产品页没有写发布日期。标题写用于 DWDM 波长监测的图像传感器。256 像素，1 路视频。像元 50 μm × 500 μm，像元间距 50 μm。图像尺寸 12.8 mm × 0.5 mm。",
+        "光谱响应 900 nm 到 1700 nm，峰值灵敏度典型 1550 nm。无制冷。最高行频 1910 行/秒。暗电流最大 20 pA。",
+        "封装为气密陶瓷，窗口有减反射膜。测量条件写典型 Ta=25℃。",
+      ], "swir"),
+      page("G9204-512DA", "", hamamatsuLine("G9204-512DA"), [
+        "产品页没有写发布日期。512 通道，产品页写 2 路视频，并写高分辨率 25 μm 间距。像元 25 μm × 500 μm，像元间距 25 μm。图像尺寸 12.8 mm × 0.5 mm。",
+        "光谱响应 900 nm 到 1700 nm，峰值灵敏度典型 1550 nm。无制冷。规格表最高行频 960 行/秒。页上另写：用两路视频读出时，行频与 256 通道相同。暗电流最大 5 pA。",
+        "与 G9203-256DA 同页说明可选转换效率 16 nV/e⁻ 和 320 nV/e⁻。陶瓷封装。测量条件写典型 Ta=25℃。",
+      ], "swir"),
+    ],
+  },
+  {
+    id: "g11608",
+    date: "",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "G11608：滨松宽光谱 InGaAs 线阵",
+    summary:
+      "G11608-256DA 与 G11608-512DA 的产品页都写光谱响应 0.5 μm 到 1.7 μm，用于近红外多通道分光。两款都是无制冷陶瓷封装，峰值灵敏度典型 1550 nm。",
+    applications: ["spectral", "scientific"],
+    technologies: ["spectral"],
+    models: [
+      {
+        ...page("G11608-256DA", "", hamamatsuLine("G11608-256DA"), [
+          "产品页没有写发布日期。标题写宽光谱近红外图像传感器，0.5 μm 到 1.7 μm。正文写短波一侧灵敏度有增强。",
+          "256 像素，像元 50 μm × 500 μm，像元间距 50 μm。图像尺寸 12.8 mm × 0.5 mm。无制冷，陶瓷封装。最高行频 17200 行/秒。",
+          "规格表光谱响应 500 nm 到 1700 nm，峰值灵敏度典型 1550 nm。暗电流最大 10 pA。测量条件写典型 Ta=25℃，f=500 kHz。",
+        ], "nir"),
+        bands: ["nir", "swir"],
+      },
+      {
+        ...page("G11608-512DA", "", hamamatsuLine("G11608-512DA"), [
+          "产品页没有写发布日期。特性同样写光谱响应 0.5 μm 到 1.7 μm。512 像素，像元 25 μm × 500 μm，像元间距 25 μm。图像尺寸 12.8 mm × 0.5 mm。",
+          "无制冷，陶瓷封装。最高行频 9150 行/秒。规格表光谱响应 500 nm 到 1700 nm，峰值灵敏度典型 1550 nm。暗电流最大 5 pA。",
+          "测量条件写典型 Ta=25℃，f=500 kHz。",
+        ], "nir"),
+        bands: ["nir", "swir"],
+      },
+    ],
+  },
+  {
+    id: "g11508",
+    date: "",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "G11508：滨松一级制冷 InGaAs 线阵",
+    summary:
+      "G11508-256SA 与 G11508-512SA 的产品页都写近红外传感器，光谱响应 900 nm 到 1670 nm，一级热电制冷，金属封装。用于近红外多通道分光。",
+    applications: ["spectral", "scientific"],
+    technologies: ["spectral"],
+    models: [
+      page("G11508-256SA", "", hamamatsuLine("G11508-256SA"), [
+        "产品页没有写发布日期。正文把 consist of 写成 consist an。256 像素，像元 50 μm × 500 μm，像元间距 50 μm。图像尺寸 12.8 mm × 0.5 mm。",
+        "光谱响应 900 nm 到 1670 nm，峰值灵敏度典型 1550 nm。一级热电制冷，金属封装。最高行频 17200 行/秒。暗电流最大 10 pA。",
+        "测量条件写典型 Ta=25℃，光谱响应范围的芯片温度为 -10℃。数据手册和选型指南都把缺陷像素上限写成 0。",
+      ], "swir"),
+      page("G11508-512SA", "", hamamatsuLine("G11508-512SA"), [
+        "产品页没有写发布日期。正文同样把 consist of 写成 consist an，并写高分辨率 25 μm 间距。512 像素，像元 25 μm × 500 μm，像元间距 25 μm。图像尺寸 12.8 mm × 0.5 mm。",
+        "光谱响应 900 nm 到 1670 nm，峰值灵敏度典型 1550 nm。一级热电制冷，金属封装。规格表最高行频 9150 行/秒。页上另写：用两路视频读出时，行频与 256 通道相同。暗电流最大 5 pA。",
+        "测量条件写典型 Ta=25℃，光谱响应范围的芯片温度为 -10℃。",
+      ], "swir"),
+    ],
+  },
+  {
+    id: "g11620",
+    date: "",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "G11620：滨松分光用 InGaAs 线阵",
+    summary:
+      "产品页写 G11620 系列用于近红外多通道分光。InGaAs 阵列只与一片 CMOS 用凸点连接，用来减小奇数像素和偶数像素的视频输出差。规格表光谱响应都是 950 nm 到 1700 nm。",
+    applications: ["spectral", "scientific"],
+    technologies: ["spectral"],
+    models: [
+      page("G11620-256DA", "", hamamatsuLine("G11620-256DA"), [
+        "产品页没有写发布日期。标题写单路视频、256 像素，0.95 μm 到 1.7 μm。像元 50 μm × 500 μm，像元间距 50 μm。图像尺寸 12.8 mm × 0.5 mm。",
+        "无制冷，陶瓷封装。最高行频 17200 行/秒。峰值灵敏度典型 1550 nm。暗电流最大 5 pA。测量条件写典型 Ta=25℃，f=1 MHz。",
+      ], "swir"),
+      page("G11620-256DF", "", hamamatsuLine("G11620-256DF"), [
+        "产品页没有写发布日期。标题写单路视频、256 像素。特性写高分辨率 25 μm 间距。像元 25 μm × 500 μm，像元间距 25 μm。图像尺寸 6.4 mm × 0.5 mm。",
+        "光谱响应 950 nm 到 1700 nm，峰值灵敏度典型 1550 nm。无制冷，陶瓷封装。最高行频 17200 行/秒。暗电流最大 5 pA。",
+      ], "swir"),
+      page("G11620-512DA", "", hamamatsuLine("G11620-512DA"), [
+        "产品页没有写发布日期。标题写单路视频、512 像素，0.95 μm 到 1.7 μm。特性写高分辨率 25 μm 间距。像元 25 μm × 500 μm，像元间距 25 μm。图像尺寸 12.8 mm × 0.5 mm。",
+        "无制冷，陶瓷封装。最高行频 9150 行/秒。规格表光谱响应 950 nm 到 1700 nm，峰值灵敏度典型 1550 nm。暗电流最大 5 pA。",
+      ], "swir"),
+      page("G11620-256SA", "", hamamatsuLine("G11620-256SA"), [
+        "产品页没有写发布日期。标题写制冷型、单路视频、256 像素。像元 50 μm × 500 μm，像元间距 50 μm。图像尺寸 12.8 mm × 0.5 mm。金属封装，一级热电制冷。",
+        "规格表光谱响应 950 nm 到 1700 nm，峰值灵敏度典型 1550 nm。最高行频 17200 行/秒。暗电流最大 5 pA。测量条件写典型 Ta=25℃。",
+        "选型指南把一级制冷型号的光谱响应写成 0.95 到 1.67 μm，芯片温度 -10℃。",
+      ], "swir"),
+      page("G11620-512SA", "", hamamatsuLine("G11620-512SA"), [
+        "产品页没有写发布日期。标题写制冷型、单路视频、512 像素。特性写高分辨率 25 μm 间距。像元 25 μm × 500 μm，像元间距 25 μm。图像尺寸 12.8 mm × 0.5 mm。金属封装，一级热电制冷。",
+        "规格表光谱响应 950 nm 到 1700 nm，峰值灵敏度典型 1550 nm。最高行频 9150 行/秒。暗电流最大 5 pA。测量条件写典型 Ta=25℃。",
+        "选型指南把一级制冷型号的光谱响应写成 0.95 到 1.67 μm，芯片温度 -10℃。",
+      ], "swir"),
+    ],
+  },
+  {
+    id: "g1147",
+    date: "",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "G1147：滨松两级制冷 InGaAs 线阵",
+    summary:
+      "产品页把 G11475 到 G11478 写成同一系列，用于近红外多通道分光。都是金属封装、两级热电制冷，测量条件写芯片温度 -20℃。256 像素的像元为 50 μm × 250 μm，最高行频 17200 行/秒。512 像素的像元为 25 μm × 250 μm，最高行频 9150 行/秒。选型指南写 256 像素型号的缺陷像素上限为 5%，512 像素型号为 4%。数据手册把这一系列的缺陷像素上限写成 5%。",
+    applications: ["spectral", "scientific"],
+    technologies: ["spectral"],
+    models: [
+      page("G11475-256WB", "", hamamatsuLine("G11475-256WB"), [
+        "产品页没有写发布日期。标题写 0.9 μm 到 1.85 μm。正文把 consist of 写成 consist an。256 有效像素，像元 50 μm × 250 μm，像元间距 50 μm。图像尺寸 12.8 mm × 0.25 mm。",
+        "光谱响应 900 nm 到 1850 nm，峰值灵敏度典型 1750 nm。两级热电制冷，金属封装。最高行频 17200 行/秒。暗电流最大 20 pA。",
+        "测量条件写典型 Ta=25℃，并写 Tchip=-20℃。",
+      ], "swir"),
+      page("G11475-512WB", "", hamamatsuLine("G11475-512WB"), [
+        "产品页没有写发布日期。标题写 0.9 μm 到 1.85 μm，并写高分辨率 25 μm 间距。512 有效像素，像元 25 μm × 250 μm，像元间距 25 μm。图像尺寸 12.8 mm × 0.25 mm。",
+        "光谱响应 900 nm 到 1850 nm，峰值灵敏度典型 1750 nm。两级热电制冷。最高行频 9150 行/秒。暗电流最大 20 pA。测量条件写 Tchip=-20℃。",
+        "页底前代产品写成 G9205-512WB，光谱 900 到 1850 nm，最高行频 1910 行/秒。",
+      ], "swir"),
+      page("G11476-256WB", "", hamamatsuLine("G11476-256WB"), [
+        "产品页没有写发布日期。标题写 0.9 μm 到 2.05 μm。256 有效像素，像元 50 μm × 250 μm，像元间距 50 μm。图像尺寸 12.8 mm × 0.25 mm。",
+        "光谱响应 900 nm 到 2050 nm，峰值灵敏度典型 1950 nm。两级热电制冷，金属封装。最高行频 17200 行/秒。暗电流最大 40 pA。测量条件写 Tchip=-20℃。",
+        "页底前代产品写成 G9206-256WB，光谱 900 到 2050 nm。",
+      ], "swir"),
+      page("G11477-256WB", "", hamamatsuLine("G11477-256WB"), [
+        "产品页没有写发布日期。标题写 0.9 μm 到 2.15 μm。规格表写的是总像素数 256，没有有效像素栏，也没有峰值波长栏。像元 50 μm × 250 μm，像元间距 50 μm。图像尺寸 12.8 mm × 0.25 mm。",
+        "光谱响应 900 nm 到 2150 nm。两级热电制冷，金属封装。最高行频 17200 行/秒。暗电流最大 50 pA。测量条件写成 unless otherwise noted,Tchip=-20℃。",
+        "页底前代产品写成 G9206-02B，光谱 900 到 2050 nm。",
+      ], "swir"),
+      page("G11477-512WB", "", hamamatsuLine("G11477-512WB"), [
+        "产品页没有写发布日期。标题写 0.9 μm 到 2.15 μm。512 有效像素，像元 25 μm × 250 μm，像元间距 25 μm。图像尺寸 12.8 mm × 0.25 mm。",
+        "光谱响应 900 nm 到 2150 nm，峰值灵敏度典型 1950 nm。两级热电制冷。最高行频 9150 行/秒。暗电流最大 50 pA。测量条件写 Tchip=-20℃。",
+        "页底前代产品写成 G9206-512WB，光谱 900 到 2050 nm。",
+      ], "swir"),
+      page("G11478-256WB", "", hamamatsuLine("G11478-256WB"), [
+        "产品页没有写发布日期。标题写 0.9 μm 到 2.55 μm。256 有效像素，像元 50 μm × 250 μm，像元间距 50 μm。图像尺寸 12.8 mm × 0.25 mm。",
+        "光谱响应 900 nm 到 2550 nm，峰值灵敏度典型 2300 nm。两级热电制冷，金属封装。最高行频 17200 行/秒。暗电流最大 1000 pA。测量条件写 Tchip=-20℃。",
+        "页底前代产品写成 G9208-256WB，光谱 900 到 2550 nm。",
+      ], "swir"),
+      page("G11478-512WB", "", hamamatsuLine("G11478-512WB"), [
+        "产品页没有写发布日期。标题写 0.9 μm 到 2.55 μm。512 有效像素，像元 25 μm × 250 μm，像元间距 25 μm。图像尺寸 12.8 mm × 0.25 mm。",
+        "光谱响应 900 nm 到 2550 nm，峰值灵敏度典型 2300 nm。两级热电制冷。最高行频 9150 行/秒。暗电流最大 1000 pA。测量条件写 Tchip=-20℃。",
+        "页底前代产品写成 G9208-512WB，光谱 900 到 2550 nm。",
+      ], "swir"),
+    ],
+  },
+  {
+    id: "g11135",
+    date: "",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "G11135：滨松异物检测用 InGaAs 线阵",
+    summary:
+      "G11135-256DD 与 G11135-512DE 的产品页都写用于异物检测设备，光谱响应 950 nm 到 1700 nm，无制冷，陶瓷封装，单路视频。",
+    applications: ["spectral", "machine"],
+    technologies: ["spectral"],
+    models: [
+      page("G11135-256DD", "", hamamatsuLine("G11135-256DD"), [
+        "产品页没有写发布日期。标题在 512 pixels 与 near 之间没有空格，写成 Single video line (256 pixels)near infrared image sensor。",
+        "256 有效像素，像元 50 μm × 50 μm，像元间距 50 μm。图像尺寸 12.8 mm × 0.050 mm。无制冷，陶瓷封装。最高行频 14000 行/秒。",
+        "光谱响应 950 nm 到 1700 nm，峰值灵敏度典型 1550 nm。暗电流最大 2.5 pA。特性写最高数据率 5 MHz，并写内置温度传感器。测量条件写典型 Ta=25℃。",
+      ], "swir"),
+      page("G11135-512DE", "", hamamatsuLine("G11135-512DE"), [
+        "产品页没有写发布日期。标题同样把 (512 pixels)near 连写。512 有效像素，像元 25 μm × 25 μm，像元间距 25 μm。图像尺寸 12.8 mm × 0.025 mm。",
+        "无制冷，陶瓷封装。最高行频 8150 行/秒。光谱响应 950 nm 到 1700 nm，峰值灵敏度典型 1550 nm。暗电流最大 2.5 pA。",
+        "特性写最高数据率 5 MHz，并写内置温度传感器。",
+      ], "swir"),
+    ],
+  },
+  {
+    id: "g14006",
+    date: "",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "G14006-512DE：滨松异物检测用 InGaAs 线阵",
+    summary:
+      "产品页写 G14006-512DE 用于异物检测，单路视频 512 像素，光谱响应 1120 nm 到 1900 nm，无制冷。",
+    applications: ["spectral", "machine"],
+    technologies: ["spectral"],
+    models: [
+      page("G14006-512DE", "", hamamatsuLine("G14006-512DE"), [
+        "产品页没有写发布日期。标题把 (512 pixels)near 连写。正文写室温工作。512 有效像素，像元 25 μm × 25 μm，像元间距 25 μm。图像尺寸 12.8 mm × 0.025 mm。",
+        "光谱响应 1120 nm 到 1900 nm，峰值灵敏度典型 1750 nm。无制冷，陶瓷封装。最高行频 8150 行/秒。暗电流最大 10 pA。",
+        "特性写最高数据率 5 MHz，并写内置温度传感器。测量条件写典型 Ta=25℃。",
+      ], "swir"),
+    ],
+  },
+  {
+    id: "g14237",
+    date: "",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "G14237-512WA：滨松拉曼用 InGaAs 线阵",
+    summary:
+      "产品页写 G14237-512WA 用于 1064 nm 激光的拉曼光谱。相对前代 G11508-512SA，截止波长缩短，暗电流降到前代（截止波长 1.7 μm）的 1/10 或更低。",
+    applications: ["spectral", "scientific"],
+    technologies: ["spectral"],
+    models: [
+      page("G14237-512WA", "", hamamatsuLine("G14237-512WA"), [
+        "产品页没有写发布日期。512 有效像素，像元 25 μm × 500 μm，像元间距 25 μm。图像尺寸 12.8 mm × 0.5 mm。金属封装，两级热电制冷。特性写高分辨率 25 μm 间距。",
+        "光谱响应 850 nm 到 1450 nm，峰值灵敏度典型 1350 nm。最高行频 9150 行/秒。暗电流最大 2 pA。转换效率可选四档。测量条件写典型 Ta=25℃，CE=16 nV/e⁻。",
+        "选型指南写芯片温度 -20℃，缺陷像素上限 1%，行频格为 9150 并带星号。星号说明：用两路视频读出时，行频与 256 像素相同。",
+      ], "swir"),
     ],
   },
   {
