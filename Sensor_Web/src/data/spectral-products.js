@@ -215,6 +215,159 @@ export const spectralProducts = [
     ],
   },
   {
+    id: "s17122",
+    date: "",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S17122：滨松高速数字 CMOS 线阵",
+    summary:
+      "工业用线阵索引把 S17122 标成新。产品页写最高 80 MHz 读出、数字输出，并写可做像素合并。光谱响应 400 到 1000 nm。产品页没有写发布日期，也没有给出手册。",
+    applications: ["spectral", "machine"],
+    technologies: ["spectral"],
+    models: [
+      page("S17122", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-industry/S17122.html", [
+        "产品页没有写发布日期。正文写最高读出 80 MHz、最高行频 61 kHz。内置时序发生器、偏置发生器和 12-bit A/D 转换器，数字输入输出。做像素合并时，像元按 14 μm × 200 μm、有效像素按 1024 使用，信号电平提高，数据传输时间缩短。",
+        "特性写像元 7 μm × 200 μm，像素数 2048，有效感光区长度 14.336 mm，最高读出 61 kHz，并写排有用于光学位置对准的像素。单 3.3 V 供电。SPI 一行括注写成 bining function, partial readout, offset adjustment。正文里的合并一词写成 binning。索引短句也写成 binning function。页末写 Please contact us for more details。",
+        "规格表类型为高速读出，图像尺寸 14.336 x 0.2 mm，有效像素 2048 x 1，像元 7 x 200 μm。光谱响应 400 到 1000 nm。最高行频 61000 行/秒。无制冷，窗口写成 Broslicate glass，封装陶瓷。测量条件写读出全部 2048 像素时的行频。",
+      ], "nir"),
+    ],
+  },
+  {
+    id: "s15611",
+    date: "",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S15611：滨松 40 MHz 数字 CMOS 线阵",
+    summary:
+      "S15611、S15611-10 与 S15611W 的产品页都写最高 40 MHz 读出、最高行频 34 kHz，1024 像素，像元 7 × 200 μm，光谱响应 400 到 1000 nm。S15611-10 写光谱响应比前代 S15611 更平滑。S15611W 写 CSP。产品页都没有写发布日期。工业用线阵索引把 S15611W 标成新。手册 KMPD1221E10 封面也在 S15611W 上方印 NEW，并写资料截至 September 2026，记为约 2026 年 9 月。",
+    applications: ["spectral", "machine"],
+    technologies: ["spectral"],
+    models: [
+      page("S15611", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-industry/S15611.html", [
+        "产品页没有写发布日期。1024 像素，像元 7 × 200 μm，有效感光区长度 7.168 mm。最高读出 40 MHz。各像素同时积分，积分时间可变，括注电子快门。单 3.3 V 供电。SPI 可做部分读出和偏置调整。内置 12-bit A/D 转换器。",
+        "规格表图像尺寸 7.168 x 0.2 mm，有效像素 1024 x 1，最高行频 34000 行/秒。无制冷，窗口写成 Broslicate glass，封装陶瓷。测量条件写读出全部 1024 像素时的行频。",
+        "手册 KMPD1221E10 与 S15611W 合订，页脚写 Cat. No. KMPD1221E10，资料截至 September 2026，记为约 2026 年 9 月。特性把封装分成两行：S15611 为 Ceramic，S15611W 为 Borosilicate glass + Si substrate。结构表窗口一栏在 S15611 下写成 Borosilicate glass。应用栏写编码器、位置检测和机器视觉。",
+        "手册供电电流典型 120 mA、最大 150 mA，条件 f(MCLK)=40 MHz。光灵敏度符号写成 S，700 nm 时典型 0.38 A/W，另一行典型 3300 DN/(nJ/cm2)。转换效率典型 50 µV/e-。暗输出典型 1.2 mV、2.5 DN。饱和电荷典型 34 ke-。读出噪声典型 0.63 mV rms、1.3 DN rms。",
+      ], "nir"),
+      page("S15611-10", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-industry/S15611-10.html", [
+        "产品页没有写发布日期。正文写光谱响应比前代 S15611 更平滑，并写这是 COB（chip on board），封装紧凑，厚度 0.7 mm。像素、行频、同时积分、电子快门、3.3 V、SPI 和 12-bit A/D 与 S15611 的产品页相同。",
+        "规格表图像尺寸写成 7.168 × 0.2 mm，有效像素 1024 x 1，最高行频 34000 行/秒。无制冷。窗口材料写成 Silicone resin，封装 Glass epoxy。测量条件同样是读出全部 1024 像素。",
+        "手册 KMPD1257E04 页脚写 Nov. 2024，并写资料截至 November 2024，记为约 2024 年 11 月。结构表封装为 Glass epoxy，密封材料写成 Silicone resin，没有单独的窗口一行。应用栏写编码器、位置检测和机器视觉。",
+        "手册供电电流典型 120 mA、最大 150 mA，条件写 f(MCLK)=40 MHz 的普通模式，并写行频降低时可降低功耗。峰值波长典型 700 nm。光灵敏度典型 980 V/(lx∙s) 与 2000 k DN/(lx∙s)，注记 *6 写 2856 K 钨灯。转换效率典型 40 µV/e-。饱和电荷典型 43 ke-。读出噪声典型 0.63 mV rms、1.3 DN rms。",
+      ], "nir"),
+      page("S15611W", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-industry/S15611W.html", [
+        "产品页没有写发布日期。工业用线阵索引把它标成新。正文写 CSP（chip size package），因此封装紧凑且薄。像素、40 MHz、34 kHz、同时积分、电子快门、3.3 V、SPI 和 12-bit A/D 与 S15611 的产品页相同。",
+        "规格表图像尺寸 7.168 x 0.2 mm，有效像素 1024 x 1，最高行频 34000 行/秒。无制冷。窗口写成 Broslicate glass。封装写成 Borosilicate glass + Si substrate。产品页给出的手册仍是与 S15611 合订的 KMPD1221E10。",
+        "手册封面在型号 S15611W 上方印 NEW，结构表表头写成 S15611W NEW。封装一行写成 Borosilicate glass + Si substrate。绝对最大额定的注记把 JEDEC 拼成 FJEDEC J-STD-020 MSL 2, see P17。",
+        "手册暗输出与 S15611 分开写：S15611W 典型 3.6 mV、7.5 DN。供电电流、转换效率 50 µV/e-、饱和电荷和读出噪声与 S15611 同一张表。应用栏同样写编码器、位置检测和机器视觉。",
+      ], "nir"),
+    ],
+  },
+  {
+    id: "s13774",
+    date: "",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S13774：滨松 100 klines/s CMOS 线阵",
+    summary:
+      "产品页写面向需要高速扫描的工业相机，列并行读出，最高 100 klines/s。4096 像素，像元 7 × 7 μm，光谱响应 400 到 1000 nm。产品页没有写发布日期。手册 KMPD1184E06 页脚写 Sep. 2022，并写资料截至 September 2022，记为约 2022 年 9 月。",
+    applications: ["spectral", "machine"],
+    technologies: ["spectral"],
+    models: [
+      page("S13774", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-industry/S13774.html", [
+        "产品页没有写发布日期。每个像素有读出放大器和 A/D 转换器。A/D 可选 10-bit，高速模式最高 100 klines/s；或 12-bit，低速模式最高 25 klines/s。图像数据以 180 MHz LVDS 串行输出。",
+        "特性写像元 7 × 7 μm，像素数 4096，各像素同时积分，3.3 V 供电，SPI，内置 10-bit/12-bit A/D 转换器。规格表图像尺寸 28.672 × 0.007 mm，有效像素 4096 x 1，最高行频 100000 行/秒。无制冷，窗口写成 Broslicate glass，封装陶瓷。测量条件写高速模式的行频。",
+        "手册结构表写有效感光区长度 28.672 mm，窗口材料写成 Borosilicate glass，并写 400 到 800 nm 的增透膜反射率不大于 1%。应用栏写机器视觉、胶片检查、印制电路板外观检查和印刷检查。",
+        "手册主时钟典型 30 MHz。高速模式行频在 tpi(MST)=300/f(MCLK) 时为 100 klines/s，低速模式在 tpi(MST)=1200/f(MCLK) 时为 25 klines/s。供电电流在 LR=100 klines/s 时，Vdd(A) 典型 140 mA，Vdd(D) 典型 400 mA，Vdd(C) 典型 810 mA，注记写饱和曝光光进入时。",
+      ], "nir"),
+    ],
+  },
+  {
+    id: "s14772",
+    date: "",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S14772：滨松 125 klines/s CMOS 线阵",
+    summary:
+      "产品页写面向需要高速扫描的工业相机，列并行读出，最高 125 klines/s。2048 像素，像元 14 × 14 μm，光谱响应 400 到 1000 nm。产品页没有写发布日期。手册 KMPD1202E03 页脚写 Sep. 2022，并写资料截至 September 2022，记为约 2022 年 9 月。",
+    applications: ["spectral", "machine"],
+    technologies: ["spectral"],
+    models: [
+      page("S14772", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-industry/S14772.html", [
+        "产品页没有写发布日期。正文把 readout amplifier 印成 readout ampliﬁer。A/D 可选 10-bit，高速模式最高 125 klines/s；或 11-bit，低速模式最高 62.5 klines/s。视频信号以 225 MHz LVDS 串行输出。",
+        "特性写像元 14 × 14 μm，像素数 2048，各像素同时积分，3.3 V 供电，SPI，内置 10-bit/11-bit A/D 转换器。规格表图像尺寸 28.672 × 0.014 mm，有效像素 2048 x 1，最高行频 125000 行/秒。无制冷，窗口写成 Broslicate glass，封装陶瓷。测量条件写高速模式的行频。",
+        "手册结构表窗口材料写成 Borosilicate glass。应用栏写机器视觉、胶片检查、印制电路板外观检查和印刷检查。主时钟典型 37.5 MHz，范围 36.5 到 38.5 MHz。",
+        "手册供电电流在 f(MCLK)=37.5 MHz、LR=125 klines/s 时，Vdd(A) 典型 90 mA，Vdd(D) 典型 280 mA，Vdd(C) 典型 510 mA，注记写饱和曝光光进入时。A/D 转换电压范围写成 0 to 1.3 V。高速模式注记写从偏置输出到饱和输出约 1024 DN，低速模式约 2048 DN。",
+      ], "nir"),
+    ],
+  },
+  {
+    id: "s1481",
+    date: "",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S14810 与 S14813：滨松 TDI-CCD 线阵",
+    summary:
+      "S14810 与 S14813 的产品页都写 TDI-CCD 与 CMOS 读出电路合在一起，10-bit 数字输出，最高行频 100 kHz。都是 1024×128，像元 12×12 μm。S14810 为前照，光谱响应 400 到 1100 nm。S14813 为背照，光谱响应 200 到 1100 nm。产品页没有写发布日期。手册 KMPD1216E05 把两款印在同一份资料上，并写资料截至 July 2026，记为约 2026 年 7 月。",
+    applications: ["spectral", "machine"],
+    technologies: ["spectral"],
+    models: [
+      page("S14810", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-industry/S14810.html", [
+        "产品页没有写发布日期。标题写前照。正文写 TDI-CCD 在高速成像时仍能保证亮度，并配 CMOS 读出电路做数字输出。特性写 10-bit 数字输出，最高行频 100 kHz，低噪声 8 e- rms typ.，可双向转移。",
+        "规格表图像尺寸 12.288 x 1.536 mm，有效像素 1024 x 128，像元 12 x 12 μm。光谱响应 400 到 1100 nm。行频一栏写成 Line rate (typ.)，100000 行/秒。暗电流典型 10000 e-/pixel/s。读出噪声典型 30 e- rms。无制冷，窗口为硼硅玻璃，封装陶瓷。测量条件写 Typ. Ta=25 ℃，读出噪声为 low（gain=1）。",
+        "工业用线阵索引把输出写成 Analog，行频最高一栏写成 --。手册特性写有效位数 9.4-bit（数据宽度 10-bit），低噪声一行把 S14810 写成 8 e- rms typ.。结构表总像素 1024×132，有效像素 1024×128，填充因子 100%，TDI 级数 128，抗晕光写成 FW × 100 min.，垂直时钟 2 相、双向，输出电路 1。",
+        "手册暗电流两款都写典型 10 ke-/pixel/s、最大 15 ke-/pixel/s。读出噪声按增益分开：增益 1 倍时 S14810 典型 30 e- rms，增益 10 倍时典型 8 e- rms。转换效率增益 1 倍典型 25 µV/e-、0.015 DN/e-，增益 10 倍典型 250 µV/e-、0.15 DN/e-。供电电流典型值，模拟与数字端合计 430 mA，注记写这是两颗 ROIC 的合计；计数端典型 250 mA，注记写饱和时。应用栏写高速运动物体的连续成像和机器视觉。",
+      ], "nir"),
+      {
+        ...page("S14813", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-industry/S14813.html", [
+        "产品页没有写发布日期。标题写背照。正文写紫外到可见光的灵敏度高于前照的 S14810，低照度下仍能得到清晰图像。特性写 10-bit 数字输出，最高行频 100 kHz，耐紫外，低噪声 12 e- rms typ.，可双向转移。",
+        "规格表与 S14810 同为 1024 x 128、12 x 12 μm、12.288 x 1.536 mm。光谱响应 200 到 1100 nm。行频一栏同样写成 Line rate (typ.)，100000 行/秒。暗电流典型写成 10 e-/pixel/s。读出噪声典型 40 e- rms。无制冷，窗口为石英玻璃，封装陶瓷。测量条件同样写读出噪声为 low（gain=1）。",
+        "工业用线阵索引同样把输出写成 Analog，行频最高一栏写成 --。手册把耐紫外只写在 S14813，低噪声写成 12 e- rms typ.。增益 1 倍时读出噪声典型 40 e- rms，增益 10 倍时典型 12 e- rms。转换效率增益 1 倍典型 15 µV/e-、0.009 DN/e-，增益 10 倍典型 150 µV/e-、0.09 DN/e-。",
+        "手册暗电流写典型 10 ke-/pixel/s。产品页暗电流写 10 e-/pixel/s。计数端供电电流典型 230 mA，模拟与数字端典型 430 mA。应用栏与 S14810 相同。",
+      ], "uv"),
+        bands: ["uv", "nir"],
+      },
+    ],
+  },
+  {
+    id: "s15778",
+    date: "",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S15778：滨松 8192 像素高速 CMOS 线阵",
+    summary:
+      "产品页写面向需要高速扫描的工业相机，8192 像素，像元 7 × 7 μm，最高 100 klines/s。光谱响应 400 到 1000 nm。产品页没有写发布日期。手册 KMPD1238E04 页脚写 Jun. 2026，并写资料截至 June 2026，记为约 2026 年 6 月。",
+    applications: ["spectral", "machine"],
+    technologies: ["spectral"],
+    models: [
+      page("S15778", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-industry/S15778.html", [
+        "产品页没有写发布日期。正文把 readout amplifier 印成 readout ampliﬁer。A/D 可选 10-bit，高速模式最高 100 klines/s；或 11-bit，低速模式最高 50 klines/s。视频信号以 360 MHz LVDS 串行输出。",
+        "特性写像元 7 × 7 μm，像素数 8192，各像素同时积分，供电 3.3/1.8 V，SPI，内置 10-bit/11-bit A/D 转换器。规格表图像尺寸 57.344 × 0.007 mm，有效像素 8192 x 1，最高行频 100000 行/秒。无制冷，窗口写成 Broslicate glass，封装写成 Glass epoxy and FeNiCo alloy。测量条件写高速模式的行频。",
+        "手册结构表有效感光区长度 57.344 mm，窗口材料写成 Borosilicate glass，并写 400 到 800 nm 的增透膜反射率不大于 1%。应用栏写机器视觉、胶片检查、印制电路板外观检查和印刷检查。",
+        "手册供电电流在 Vdd(A)=Vdd(D)=3.3 V、Vdd(C)=1.8 V、f(MCLK)=30 MHz、LR=100 klines/s 时，Vdd(A) 典型 250 mA，Vdd(D) 典型 740 mA，Vdd(C) 典型 680 mA，注记写饱和曝光光进入时。",
+      ], "nir"),
+    ],
+  },
+  {
+    id: "s16074",
+    date: "",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S16074：滨松可切换像元的 CMOS 线阵",
+    summary:
+      "产品页写面向工业相机，感光区并行排着 7 × 7 µm、9.3 × 9.3 µm 和 14 × 14 µm 三条像元，可用 SPI 切换。光谱响应 400 到 1000 nm。14 × 14 µm 时最高 65 klines/s。产品页没有写发布日期。手册 KMPD1241E04 页脚写 Jan. 2026，并写资料截至 January 2026，记为约 2026 年 1 月。",
+    applications: ["spectral", "machine"],
+    technologies: ["spectral"],
+    models: [
+      page("S16074", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-industry/S16074.html", [
+        "产品页没有写发布日期。正文写内置时序发生器、偏置发生器、放大器和 12-bit A/D 转换器，视频信号以 320 MHz LVDS 串行输出。像元尺寸在正文里用 µm。各像素同时积分。3.3 V 供电。",
+        "规格表按三条像元列出：有效像素 4096 x 1、3072 x 1、2048 x 1，像元 7 x 7 μm、9.3 x 9.3 μm、14 x 14 μm，图像尺寸 28.672 x 0.007 mm、28.672 x 0.0093 mm、28.672 x 0.014 mm。光谱响应 400 到 1000 nm。最高行频 65000 行/秒。无制冷，窗口写成 Broslicate glass，封装陶瓷。测量条件写成 Line rate (pixel size: 14 x 14 um)。",
+        "手册结构表写总像素 4160、3120、2080，有效像素 4096、3072、2048，两侧另有哑像素和遮光像素，注记写初始设置不读出，可用 SPI 改成读出。窗口材料写成 Borosilicate glass，双面多层增透，400 nm 到 800 nm 反射率不大于 1 %。工作温度 -40 到 +85 °C。应用栏写机器视觉、胶片检查、印制电路板外观检查和印刷检查。",
+        "手册把转换系数写成 Conversion factor，符号仍是 CE。增益 1 时，7 µm、9.3 µm、14 µm 的转换系数典型 42、38、13 µV/e-，光灵敏度典型 45、72、54 V/(lx∙s)，饱和电荷典型 27、30、87 ke-。供电电流在 f(MCLK)=40 MHz 时，Vdd(A) 典型 320 mA，Vdd(D) 典型 160 mA。",
+      ], "nir"),
+    ],
+  },
+  {
     id: "g12242",
     date: "",
     companyId: "hamamatsu",
