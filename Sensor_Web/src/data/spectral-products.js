@@ -591,6 +591,97 @@ export const spectralProducts = [
     ],
   },
   {
+    id: "s838",
+    date: "",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S8380 与 S8381：滨松红外增强 NMOS 线阵",
+    summary:
+      "S8380-128Q、S8380-256Q、S8380-512Q、S8381-256Q、S8381-512Q 与 S8381-1024Q 的产品页都写 NMOS 线阵。规格表类型写成 Current output type（Infrared enhanced type）。光谱响应 200 到 1000 nm。产品页没有写发布日期。手册标题写成 S8380/S8381 series，KMPD1045E03 页脚写 Feb. 2017，并写资料截至 February 2017，记为约 2017 年 2 月。手册写相对标准 NMOS 线阵，红外和软 X 射线区灵敏度更高，峰值波长在近红外，λp=750 nm。",
+    applications: ["spectral", "scientific", "machine"],
+    technologies: ["spectral"],
+    models: [
+      {
+        ...page("S8380-128Q", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S8380-128Q.html", [
+          "产品页没有写发布日期。标题写 NMOS linear image sensor。正文写相对标准 NMOS 线阵，红外和软 X 射线区灵敏度更高，峰值波长在近红外（λp=750 nm）。λp 那句的句号后面没有空格，直接接 The photodiode。正文用单数 photodiode，并写高度 2.5 mm，按 50 μm 间距排成一行。窗口写成 Quartz glass。",
+          "特性写红外和软 X 射线区高灵敏度、感光区宽、紫外灵敏度高且稳定、暗电流低、饱和电荷高、室温下可长时间积分、动态范围宽、线性度和空间均匀性好。功耗写成 Lower power consumption: 1 mW max.。起始脉冲和时钟与 CMOS 逻辑兼容。",
+          "规格表类型为 Current output type（Infrared enhanced type）。图像尺寸 6.4 x 2.5 mm，有效像素 128 x 1，像元 50 x 2500 μm。光谱响应 200 到 1000 nm。最高行频 15600 行/秒。无制冷，窗口 Quartz，封装 Ceramic。Dedicated driver circuit 那一格是空的。测量条件写 Typ. Ta=25 ℃，unless otherwise noted。饱和电荷条件写 Vb=2.0 V，Vφ=5.0 V。",
+          "手册把 photodiode 写成复数 are arrayed。正文写每种系列有 3 种像素数，different 在行末拆成 differ- 和 ent，随后却列出 128、256、512 和 1024。结构表这一列像素数 128，像素间距 50 µm，像素高度 2.5 mm。封装长度与 S8380-256Q 写在合并格 31.75 mm，22 引脚，窗口 Quartz，重量与 S8380-256Q 合并写成 3.0 g。外形图标题写成 S8380-128Q, S8381-256Q，感光区 6.4 × 2.5，封装长度 31.75 ± 0.3 mm。注记 *3 写可提供光纤面板，但不包括 S8380-128Q 和 S8381-256Q。手册没有把这些光纤面板写成单独型号。",
+          "手册光谱响应范围注记写 10 % of peak。峰值波长典型 750 nm。S8380 系列暗电流典型 0.2 pA、最大 0.6 pA。光电二极管电容典型 20 pF。饱和曝光典型 90 mlx · s，单位中间有空格，光源注记写 2856 K, tungsten lamp。饱和电荷典型 50 pC。光响应非均匀性上限 ±3%，注记写饱和的 50%，并除去起始像素和最后一个像素。绝对最大功耗 1 mW，条件 Vɸ=5.0 V。数据率最小 0.1 kHz、最大 2000 kHz。-128 Q 一格的视频延迟典型 80 ns，时钟线电容典型 21 pF，饱和控制栅电容典型 12 pF，视频线电容典型 7 pF。视频延迟注记写用 C7883 驱动电路测量。应用栏写 Multichannel spectrophotometry 和 Image readout system。工作温度 -40 到 +65 ℃，注记写 No dew condensation。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+      {
+        ...page("S8380-256Q", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S8380-256Q.html", [
+          "产品页没有写发布日期。正文与 S8380-128Q 同一套句子，高度 2.5 mm，间距 50 μm，句号后同样没有空格。特性与功耗 1 mW max. 也相同。",
+          "规格表图像尺寸 12.8 x 2.5 mm，有效像素 256 x 1，像元 50 x 2500 μm。最高行频 7800 行/秒。无制冷，窗口 Quartz，封装 Ceramic。Dedicated driver circuit 一格是空的。测量条件与 S8380-128Q 相同。",
+          "手册结构表像素数 256。封装长度与 S8380-128Q 同在 31.75 mm 的合并格，重量同在 3.0 g 的合并格。外形图标题写成 S8380-256Q, S8381-512Q，感光区 12.8 × 2.5，封装长度仍印 31.75 ± 0.3 mm。感光区结构图把 S8380 系列写成 a=50 μm，b=45 μm。",
+          "手册暗电流、饱和电荷、饱和曝光和峰值波长与 S8380 系列同一列。-256 Q 一格的视频延迟典型 120 ns，时钟线电容典型 36 pF，饱和控制栅电容典型 20 pF，视频线电容典型 11 pF。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+      {
+        ...page("S8380-512Q", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S8380-512Q.html", [
+          "产品页没有写发布日期。正文仍写间距 50 μm、高度 2.5 mm，并仍把 photodiode 写成单数。特性与同系列相同。",
+          "规格表图像尺寸 25.6 x 2.5 mm，有效像素 512 x 1，像元 50 x 2500 μm。最高行频 3900 行/秒。无制冷，窗口 Quartz，封装 Ceramic。Dedicated driver circuit 一格是空的。",
+          "手册结构表像素数 512。封装长度单独写成 40.6 mm，重量单独写成 3.5 g。外形图标题写成 S8380-512Q, S8381-1024Q，感光区 25.6 × 2.5，封装长度 40.6 ± 0.3 mm。引脚图写 Vss, Vsub and NC should be grounded。End of scan 写用 10 kΩ 上拉到 5 V。",
+          "手册 -512 Q 一格的视频延迟典型 160 ns，时钟线电容典型 67 pF，饱和控制栅电容典型 35 pF，视频线电容典型 20 pF。时钟高电平最小 4.5 V、典型 5 V、最大 10 V。视频偏置在 ɸ1、ɸ2 幅度为 5 V 时，手册推荐 2 V。推荐条件表把视频偏置典型值写成 Vɸ - 3.0。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+      {
+        ...page("S8381-256Q", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S8381-256Q.html", [
+          "产品页没有写发布日期。正文把间距写成 25 μm，高度仍是 2.5 mm，photodiode 仍是单数，句号后仍没有空格。特性与 S8380 相同，功耗仍写 1 mW max.。",
+          "规格表图像尺寸 6.4 x 2.5 mm，有效像素 256 x 1，像元 25 x 2500 μm。最高行频 7800 行/秒。无制冷，窗口 Quartz，封装 Ceramic。Dedicated driver circuit 一格是空的。测量条件与 S8380-128Q 相同。",
+          "手册写 S8381 系列高度 2.5 mm，间距 25 μm。结构表像素数 256。封装长度与 S8381-512Q 写在合并格 31.75 mm，重量合并写成 3.0 g。外形图与 S8380-128Q 共用，感光区 6.4 × 2.5。注记 *3 把这一型号排除在光纤面板之外。感光区结构图把 S8381 系列写成 a=25 μm，b=20 μm。",
+          "手册 S8381 系列暗电流典型 0.1 pA、最大 0.3 pA。光电二极管电容典型 10 pF。饱和电荷典型 25 pC。饱和曝光仍是 90 mlx · s。-256 Q 一格的视频延迟典型 100 ns，时钟线电容典型 27 pF，饱和控制栅电容典型 14 pF，视频线电容典型 10 pF。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+      {
+        ...page("S8381-512Q", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S8381-512Q.html", [
+          "产品页没有写发布日期。正文写间距 25 μm、高度 2.5 mm。特性与同系列相同。",
+          "规格表图像尺寸 12.8 x 2.5 mm，有效像素 512 x 1，像元 25 x 2500 μm。最高行频 3900 行/秒。无制冷，窗口 Quartz，封装 Ceramic。Dedicated driver circuit 一格是空的。",
+          "手册结构表像素数 512。封装长度与 S8381-256Q 同在 31.75 mm 的合并格，重量同在 3.0 g 的合并格。外形图与 S8380-256Q 共用，感光区 12.8 × 2.5。",
+          "手册暗电流和饱和电荷与 S8381 系列同一列。-512 Q 一格的视频延迟典型 150 ns，时钟线电容典型 50 pF，饱和控制栅电容典型 24 pF，视频线电容典型 16 pF。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+      {
+        ...page("S8381-1024Q", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S8381-1024Q.html", [
+          "产品页没有写发布日期。正文写间距 25 μm、高度 2.5 mm。手册像素数清单里，1024 只写在 S8381-1024Q。",
+          "规格表图像尺寸 25.6 x 2.5 mm，有效像素 1024 x 1，像元 25 x 2500 μm。最高行频 1950 行/秒。无制冷，窗口 Quartz，封装 Ceramic。Dedicated driver circuit 一格是空的。",
+          "手册结构表像素数 1024。封装长度 40.6 mm，重量 3.5 g。外形图与 S8380-512Q 共用，感光区 25.6 × 2.5。光谱图把 S8380/S8381 series 标成 IR high-sensitivity type，对照曲线只写 Standard type，没有给出标准型的型号。",
+          "手册 -1024 Q 一格的视频延迟典型 200 ns，时钟线电容典型 100 pF，饱和控制栅电容典型 45 pF，视频线电容典型 30 pF。光响应非均匀性上限 ±3%，与 S8380 系列同一行。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+    ],
+  },
+  {
+    id: "s14290",
+    date: "",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S14290：滨松高速背照式 CCD 线阵",
+    summary:
+      "S14290 的产品页写背照式 CCD 线阵，多端口读出，最高行频 30 kHz，并写纵向长像素。光谱响应 320 到 1100 nm。正文写近红外灵敏度高，适合 raman spectroscopy 和 OCT，raman 以小写印在产品页上。产品页没有写发布日期。手册 KMPD1232E02 页脚写 May 2022，并写资料截至 May 2022，记为约 2022 年 5 月。",
+    applications: ["spectral", "scientific"],
+    technologies: ["spectral"],
+    models: [
+      {
+        ...page("S14290", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S14290.html", [
+          "产品页没有写发布日期。标题写 Back-thinned type CCD linear image sensor。正文写最高行频 30 kHz，多端口读出，每端口最高 10 MHz，并写适合光谱仪的纵向长像素。特性只列 High-speed line rate: 30 kHz max.。",
+          "规格表类型为 High-speed type。图像尺寸 24.576 x 0.500 mm，有效像素 1024 x 1，像元 24 x 500 μm。光谱响应 320 到 1100 nm。行频典型 10000 行/秒，最高 30000 行/秒。暗电流典型 120000 e-/pixel/s。读出噪声典型 100 e- rms。无制冷，窗口 Borosilicate glass，封装 Ceramic。测量条件写 Typ. Ta=25 ℃，unless otherwise noted，operating conditions: Typ.。",
+          "手册结构表总像素 1056 × 1，有效像素 1024 × 1，像元 24 × 500 µm，图像尺寸 24.576 × 0.500 mm。水平时钟两相。输出电路写成 Two-stage MOSFET source follower。封装写成 54-pin ceramic DIP。窗口 Borosilicate glass，注记 *1 写 Resin sealing。注记 *2 把 Window-less 拆成行首的 W 和下一行的 indow-less，并写可按要求提供无窗型 S14290N 和石英窗型 S14290Q。无窗型写临时窗用胶带固定。这两款没有单独的产品页，这里不另开型号。注记 *14 把这两款的光谱响应写成 200 到 1100 nm。",
+          "手册信号输出频率典型 5 MHz、最大 10 MHz。行频典型 10 kHz、最大 30 kHz。满阱最小 400 ke-、典型 500 ke-。转换效率最小 4 µV/e-、典型 5 µV/e-、最大 6 µV/e-。暗电流一行写成典型 120 ke-/pixel/s、最大 600 ke-/pixel/s，下一行写成典型 80 pA/cm2、最大 400 pA/cm2。产品页只列出 120000 e-/pixel/s。读出噪声典型 100 e- rms、最大 150 e- rms。注记 *12 把 output 印成 outoput，条件写 Signal outoput frequency=10 MHz。动态范围最小 2600、典型 5000。注记 *13 写 Dynamic range=Full well capacity/Readout noise。光响应非均匀性典型 ±3%、最大 ±10%。图像滞后典型 10%、最大 20%。电荷转移效率最小 0.99995、典型 0.99999。",
+          "手册片上放大器加负载电阻的功耗典型 75 mW，这一格没有写最大。阻性栅功耗最小 0.6 mW、典型 3.1 mW、最大 6.3 mW。阻性栅电阻典型 1.5 kΩ。引脚表列出 OS1 到 OS8。器件结构标题有一行把 structure 印成 stracture。结构图标着 128 pixels、4-blank，以及 OS1、OS2、OS7、OS8。时序图印着 D1 到 D4 和像素 1 到 128。外形图重量 3.5 g，折射率一栏 S14290 为 1.52、S14290Q 为 1.45，AR coat 写成 none。积分时间最小 33 µs、典型 66 µs。工作温度 -50 到 +50 ℃，注记写 Package temperature。贮存温度 -50 到 +70 ℃。焊接温度 260 °C max.（5 seconds or less），并写至少离开引脚根部 2 mm。注意事项写 Handle these sensors with bare hands or wearing cotton gloves。另有一段写紫外照射可能使特性变差。光谱响应图标题写 without window。应用栏写 OCT（optical coherence tomography）和 Spectrophotometry。绝对最大额定值注记指向阻性栅 CCD 的技术资料，规格数字来自产品页和 KMPD1232E02。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+    ],
+  },
+  {
     id: "s13499",
     date: "",
     companyId: "hamamatsu",
