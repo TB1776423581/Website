@@ -24,7 +24,7 @@ export const spectralProducts = [
     category: "product",
     title: "S11639：滨松紫外到近红外线阵",
     summary:
-      "S11639-01 与 S11639-21 的光谱响应都是 200 到 1000 nm，产品页强调紫外灵敏度。S11639N-02 写明 140 到 1000 nm，并强调真空紫外。",
+      "S11639-01 与 S11639-21 的光谱响应都是 200 到 1000 nm，产品页强调紫外灵敏度。S11639N-02 写明 140 到 1000 nm，并强调真空紫外。S11639-11 的产品页写带遮光像素。特性写有效像素 2004，规格表写有效像素 2048×1。",
     applications: ["spectral", "scientific"],
     technologies: ["spectral"],
     models: [
@@ -39,6 +39,12 @@ export const spectralProducts = [
       page("S11639N-02", "", "https://www.hamamatsu.com/jp/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S11639N-02.html", [
         "无窗。光谱响应 140 到 1000 nm。产品页写明相对前代提高真空紫外灵敏度。",
         "2048×1，像素 14×200 μm。读出噪声 16 e⁻ rms。",
+      ], "uv"),
+      page("S11639-11", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S11639-11.html", [
+        "产品页没有写发布日期。标题写高灵敏度、纵向长像素感光区，并写带遮光像素。光谱响应 200 到 1000 nm。无制冷，窗口为石英，封装 LCP。最高行频 4672 行/秒。测量条件写典型 Ta=25 ℃，Vdd=5 V，V(CLK)=V(ST)=5 V，f(CLK)=10 MHz。",
+        "特性写像元 14×200 μm，有效像素 2004，两端各 10 个像素为光学黑，有效感光区长度 28.056 mm，灵敏度 1300 V/(lx·s)。规格表把有效像素写成 2048×1，图像尺寸写成 28.672×0.200 mm。",
+        "手册 KMPD1174E11 页脚写 Apr. 2024，并写资料截至 April 2024，记为约 2024 年 4 月。结构表写像素数 2048、有效像素 2004、感光区长度 28.672 mm，封装为 LCP（liquid crystal polymer）。特性与产品页同写用于低成本光谱仪。应用栏在光谱仪之外还写位置检测、图像读取和编码器。",
+        "手册电特性：供电电流典型 30 mA、最小 20 mA、最大 50 mA。光灵敏度典型 1300 V/(lx·s)，转换效率典型 20 µV/e-，读出噪声典型 0.4 mV rms。",
       ], "uv"),
     ],
   },
@@ -55,6 +61,156 @@ export const spectralProducts = [
       page("S11151-2048", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S11151-2048.html", [
         "2048×1，像素 14×200 μm。光谱响应 200 到 1000 nm。",
         "产品页写明 200 nm 紫外灵敏度接近背照式 CCD。典型行频 484 行/秒。",
+      ], "uv"),
+    ],
+  },
+  {
+    id: "s13496",
+    date: "",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S13496：滨松高灵敏度 CMOS 线阵",
+    summary:
+      "S13496、S13496-11、S13496-20 与 S13496N-02 的产品页都写高灵敏度 CMOS 线阵，像元 7×200 μm。前三款光谱响应 200 到 1000 nm。S13496N-02 写 140 到 1000 nm，并写真空紫外灵敏度高于前代 S13496。产品页都没有写发布日期。",
+    applications: ["spectral", "scientific", "machine"],
+    technologies: ["spectral"],
+    models: [
+      page("S13496", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S13496.html", [
+        "产品页没有写发布日期。4096 像素，像元 7×200 μm，有效感光区长度 28.672 mm。光谱响应 200 到 1000 nm。无制冷，窗口为石英，封装 LCP。最高行频 2387 行/秒。规格表图像尺寸 28.672×0.200 mm，有效像素 4096×1。",
+        "特性写灵敏度 650 V/(lx?s)，问号就印在产品页上。手册 KMPD1164E09 写成 650 V/(lx·s)。视频数据率最大 10 MHz。单 5 V 供电，内置时序发生器，各像素同时积分，并写可变积分时间的电子快门。测量条件与 S11639-11 相同。",
+        "手册页脚写 Apr. 2024，并写资料截至 April 2024，记为约 2024 年 4 月。结构表封装为 LCP（liquid crystal polymer）。应用栏写位置检测、编码器、光谱仪和图像读取。正文写另有表面贴装型 S13496-20。",
+        "手册：转换效率典型 20 µV/e-，供电电流典型 40 mA、最小 20 mA、最大 60 mA。暗输出电压典型 0.1 mV，饱和输出电压典型 2.0 V，读出噪声典型 0.4 mV rms。",
+      ], "uv"),
+      page("S13496-11", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S13496-11.html", [
+        "产品页没有写发布日期。标题写带遮光像素。光谱响应 200 到 1000 nm。无制冷，窗口为石英，封装 LCP。最高行频 2387 行/秒。规格表有效像素 4096×1，图像尺寸 28.672×0.200 mm。",
+        "特性写有效像素 4008，两端各 20 个像素为光学黑，有效感光区长度 28.056 mm，灵敏度 650 V/(lx・s)。正文写紫外区高灵敏度、耐紫外，并写用于低成本光谱仪。",
+        "手册 KMPD1189E06 页脚写 Apr. 2024，并写资料截至 April 2024，记为约 2024 年 4 月。结构表写像素数 4096、有效像素 4008、感光区长度 28.672 mm。应用栏写位置检测、图像读取、编码器和光谱仪。",
+        "手册：光灵敏度典型 650 V/(lx·s)，转换效率典型 20 µV/e-，供电电流典型 40 mA。暗输出电压典型 0.1 mV，读出噪声典型 0.4 mV rms。",
+      ], "uv"),
+      page("S13496-20", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S13496-20.html", [
+        "产品页没有写发布日期。标题写表面贴装。4096 像素，像元 7×200 μm，有效感光区长度 28.672 mm。光谱响应 200 到 1000 nm。无制冷，窗口为石英。规格表封装写成 Ceramic，最高行频 2387 行/秒。",
+        "特性写灵敏度 650 V/(lx・s)，并写表面贴装。手册 KMPD1201E06 页脚写 Oct. 2024，并写资料截至 October 2024，记为约 2024 年 10 月。结构表封装为 Ceramic。注记写可按要求提供无窗型 S13496N-20。正文写另有 DIP 型 S13496。",
+        "手册应用栏写位置检测、图像读取、编码器和光谱仪。转换效率典型 25 µV/e-，符号写成 CE。光灵敏度符号写成 Sw，典型 650 V/(lx·s)。供电电流典型 40 mA。",
+      ], "uv"),
+      page("S13496N-02", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S13496N-02.html", [
+        "产品页没有写发布日期。标题写真空紫外区高灵敏度。4096 像素，像元 7×200 μm，有效感光区长度 28.672 mm。光谱响应 140 到 1000 nm。规格表类型写 High sensitivity type (vacuum UV)，窗口材料写 None，封装 LCP，无制冷，最高行频 2387 行/秒。",
+        "特性写灵敏度 650 V/(lx・s)，低噪声 20 e- rms。正文写真空紫外灵敏度高于前代 S13496。",
+        "手册 KMPD1258E02 页脚写 Dec 2024，并写资料截至 December 2024，记为约 2024 年 12 月。窗口注记拼成 Tempopary window，并写交货时用胶带固定玻璃，以保护感光区和引线。应用栏只写 Spectrometers。",
+        "手册电特性里的读出噪声典型 0.4 mV rms，转换效率典型 20 µV/e-，供电电流典型 40 mA。特性栏的低噪声仍写 20 e- rms。",
+      ], "uv"),
+    ],
+  },
+  {
+    id: "s16514",
+    date: "",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S16514-2048-11：滨松近红外高灵敏度 CMOS 线阵",
+    summary:
+      "产品页写近红外灵敏度高、光谱响应平滑。光谱响应 400 到 1050 nm。正文写 830 nm 的灵敏度接近前代 S11639-11 的两倍。产品页没有写发布日期。手册 KMPD1254E04 页脚写 Jan. 2026，并写资料截至 January 2026，记为约 2026 年 1 月。",
+    applications: ["spectral", "scientific", "machine"],
+    technologies: ["spectral"],
+    models: [
+      page("S16514-2048-11", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S16514-2048-11.html", [
+        "产品页没有写发布日期。像元 14×200 μm。特性写有效像素 2004，两端各 10 个像素为光学黑，有效感光区长度 28.056 mm，灵敏度 1800 V/(lx·s)。规格表有效像素 2004×1，图像尺寸 28.672×0.200 mm。光谱响应 400 到 1050 nm。无制冷，窗口为带增透膜的硼硅玻璃，封装 LCP。最高行频 4672 行/秒。",
+        "视频数据率最大 10 MHz。单 5 V 供电，各像素同时积分，并写可变积分时间的电子快门。正文写用于低成本光谱仪。测量条件写典型 Ta=25 ℃，Vdd=5 V，V(CLK)=V(ST)=5 V，f(CLK)=10 MHz。",
+        "约 2026 年 6 月的 CCD/CMOS 选型指南 KMPD0002E35 在像素数一栏写成 2048，行频 4672 行/秒。手册结构表写像素数 2048、有效像素 2004、感光区长度 28.672 mm。窗口注记写 400 nm 到 1050 nm 的平均反射率不大于 1%，并写可按要求提供无窗型 S16514-2048N-11。",
+        "手册应用栏写拉曼光谱仪、位置检测、图像读取，以及 SD-OCT（spectral domain-optical coherence tomography）。转换效率典型 20 µV/e-，供电电流典型 30 mA、最小 20 mA、最大 50 mA。暗输出电压典型 0.5 mV，读出噪声典型 0.4 mV rms。",
+      ], "nir"),
+    ],
+  },
+  {
+    id: "s16596",
+    date: "",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S16596-4096-11：滨松近红外高灵敏度 CMOS 线阵",
+    summary:
+      "产品页写近红外灵敏度高、光谱响应平滑。光谱响应 400 到 1050 nm。正文写 830 nm 的灵敏度接近前代 S13496-11 的两倍。产品页没有写发布日期。手册 KMPD1255E04 页脚写 Jan. 2026，并写资料截至 January 2026，记为约 2026 年 1 月。",
+    applications: ["spectral", "scientific", "machine"],
+    technologies: ["spectral"],
+    models: [
+      page("S16596-4096-11", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S16596-4096-11.html", [
+        "产品页没有写发布日期。像元 7×200 μm。特性写有效像素 4008，两端各 20 个像素为光学黑，有效感光区长度 28.056 mm，灵敏度 900 V/(lx・s)。规格表有效像素 4008×1，图像尺寸 28.672×0.200 mm。光谱响应 400 到 1050 nm。无制冷，窗口为带增透膜的硼硅玻璃，封装 LCP。最高行频 2387 行/秒。",
+        "视频数据率最大 10 MHz。单 5 V 供电，各像素同时积分，并写可变积分时间的电子快门。正文写用于低成本光谱仪。测量条件与 S16514-2048-11 的产品页相同。",
+        "约 2026 年 6 月的选型指南在像素数一栏写成 4096，行频 2387 行/秒。手册结构表写像素数 4096、有效像素 4008、感光区长度 28.672 mm。窗口注记写平均反射率 1 % or less，范围 400 nm 到 1050 nm，并写可按要求提供无窗型 S16596-4096N-11。",
+        "手册应用栏写拉曼光谱仪、位置检测、图像读取，以及 SD-OCT（spectral domain-optical coherence tomography）。光灵敏度写成 900 V/(lx·s)，转换效率典型 20 µV/e-，供电电流典型 40 mA。暗输出电压典型 0.25 mV，读出噪声典型 0.4 mV rms。",
+      ], "nir"),
+    ],
+  },
+  {
+    id: "s13499",
+    date: "",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S13499：滨松近红外 CMOS 面阵",
+    summary:
+      "产品页写近红外高灵敏度的 APS 型 CMOS 面阵，格式 VGA。光谱响应 400 到 1100 nm。卷帘快门与全局快门可选。产品页没有写发布日期。手册 KMPD1190E02 页脚写 Apr. 2020，并写资料截至 April 2020，记为约 2020 年 4 月。",
+    applications: ["spectral", "machine", "scientific"],
+    technologies: ["spectral", "global", "lowlight"],
+    models: [
+      page("S13499", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/area-sensor/for-camera/S13499.html", [
+        "产品页没有写发布日期。659×494，像元 9.9×9.9 μm。图像尺寸 6.524×4.891 mm。光谱响应 400 到 1100 nm。最高 75 帧/秒。无制冷，封装陶瓷。窗口一栏写成 Broslicate glass。",
+        "特性写读出噪声 5e- rms，条件为卷帘快门、列放大器 8 倍增益。单 3.3 V 供电。全数字输入输出，内置时序发生器、偏置发生器、放大器和 A/D 转换器。SPI 可做部分读出、增益切换和帧起始模式选择。",
+        "手册结构表写总像素 704×539，有效像素 659×494，窗口材料写成 Borosilicate glass。约 2026 年 6 月的选型指南把这一行标成 Front-illuminated type，帧频 75 帧/秒。",
+        "手册应用栏写近红外激光光斑检测，括注位置检测和图案识别；另一项写近红外图像检测，括注晶圆透射图像和静脉认证。",
+      ], "nir"),
+    ],
+  },
+  {
+    id: "s14250",
+    date: "",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S14250：滨松少像素近红外 CMOS 面阵",
+    summary:
+      "产品页写近红外高灵敏度、像素少、功耗低的 APS 型 CMOS 面阵。30×30 像素，像元 50×50 μm，光谱响应 400 到 1100 nm。特性写全局快门。产品页没有写发布日期。手册 KMPD1194E06 页脚写 Aug. 2025，并写资料截至 August 2025，记为约 2025 年 8 月。",
+    applications: ["spectral", "machine"],
+    technologies: ["spectral", "global", "lowlight"],
+    models: [
+      page("S14250", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/area-sensor/for-camera/S14250.html", [
+        "产品页没有写发布日期。有效像素 30×30，像元 50×50 μm。图像尺寸 1.5×1.5 mm。光谱响应 400 到 1100 nm。最高 344 帧/秒。无制冷，封装陶瓷。窗口一栏写成 Broslicate glass。",
+        "正文写像元大，低照度下仍可采集；像素少，因此全部像素最高 344 帧/秒读出，部分读出还可以再减少像素。单 3.3 V 供电。成像时功耗约 30 mW，关断功能下待机不高于 0.7 mW。",
+        "手册结构表写总像素 32×32，有效像素 30×30，窗口材料写成 Borosilicate glass。选型指南把帧频写成 344 帧/秒。",
+        "手册应用栏写安防相机，括注夜视和运动物体检测；另一项写监控相机，括注低分辨率以兼顾隐私。",
+      ], "nir"),
+    ],
+  },
+  {
+    id: "s14501",
+    date: "",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S14501：滨松背照式可见到近红外 CMOS 面阵",
+    summary:
+      "产品页写背照式 APS，可见到近红外高灵敏度，格式 SXGA。光谱响应 400 到 1100 nm。卷帘快门与全局快门可选。产品页没有写发布日期。手册 KMPD1217E05 页脚写 Oct. 2022，并写资料截至 October 2022，记为约 2022 年 10 月。",
+    applications: ["spectral", "machine"],
+    technologies: ["spectral", "global", "lowlight"],
+    models: [
+      page("S14501", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/area-sensor/for-camera/S14501.html", [
+        "产品页没有写发布日期。1280×1024，像元 7.4×7.4 μm。图像尺寸 9.472×7.578 mm。光谱响应 400 到 1100 nm。最高 146 帧/秒。无制冷，封装陶瓷。窗口一栏写成 Broslicate glass。",
+        "全数字输入输出，内置时序发生器、偏置发生器、放大器和 A/D 转换器。垂直方向读出行数可变。SPI 可做部分读出、增益切换和帧起始模式选择。",
+        "手册结构表写总像素 1280×1064，有效像素 1280×1024，窗口材料写成 Borosilicate glass。1024 行时，高分辨率模式的帧频是全局快门 28 帧/秒、卷帘快门 29 帧/秒；高速模式是全局快门 140 帧/秒、卷帘快门 146 帧/秒。高分辨率模式写 12-bit，高速模式写 9.4-bit resolution（数据宽度 10-bit）。主时钟条件都写 f(MCLK)=30 MHz。",
+        "手册应用栏写机器视觉、追踪、安防（红外相机），以及红外光斑的位置和形状识别。选型指南把这一行标成 Back-illuminated type。",
+      ], "nir"),
+    ],
+  },
+  {
+    id: "s16101",
+    date: "",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S16101：滨松背照式紫外 CMOS 面阵",
+    summary:
+      "产品页写背照式 APS，紫外高灵敏度，格式 SXGA。光谱响应 245 到 1100 nm。卷帘快门与全局快门可选。产品页没有写发布日期。手册 KMPD1237E02 页脚写 Oct. 2024，并写资料截至 October 2024，记为约 2024 年 10 月。",
+    applications: ["spectral", "machine", "scientific"],
+    technologies: ["spectral", "global"],
+    models: [
+      page("S16101", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/area-sensor/for-camera/S16101.html", [
+        "产品页没有写发布日期。1280×1024，像元 7.4×7.4 μm。图像尺寸 9.472×7.578 mm。光谱响应 245 到 1100 nm。最高 146 帧/秒。无制冷，窗口为石英玻璃，封装陶瓷。",
+        "特性第一行拼成 High UV sensitivy，下一行写紫外光照下特性稳定。正文写垂直方向可做高速部分读出。全数字输入输出，内置时序发生器、偏置发生器、放大器和 A/D 转换器。",
+        "手册特性把同一行写成 High UV sensitivity，并另写最高读出 146 帧/秒。结构表写总像素 1280×1064，有效像素 1280×1024。1024 行时，高分辨率模式的帧频是全局快门 28 帧/秒、卷帘快门 29 帧/秒；高速模式是全局快门 140 帧/秒、卷帘快门 146 帧/秒。高分辨率模式写 12-bit，高速模式写 9.4-bit resolution（数据宽度 10-bit）。",
+        "手册应用栏写紫外相机、机器视觉和追踪。选型指南写光谱响应 245 到 1100 nm，并标成 Back-illuminated type，帧频 146 帧/秒。",
       ], "uv"),
     ],
   },
