@@ -374,7 +374,7 @@ export const companies = [
     region: "海外",
     hq: "以色列",
     summary:
-      "做制冷与非制冷红外探测器。关于页写明总部和晶圆厂在以色列。产品页列出 PELICAN-D 640、PELICAN-D LW，以及 12 μm 氧化钒的 Robin。",
+      "做制冷与非制冷红外探测器。关于页写明总部和晶圆厂在以色列。产品页列出 PELICAN-D、Robin、Blackbird、Crane、Sparrow、Hercules、Kinglet、Swift、Cardinal 和 Bird。",
   },
   {
     id: "inright",

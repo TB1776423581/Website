@@ -990,7 +990,7 @@ export const spectralProducts = [
     category: "product",
     title: "PELICAN-D：SCD 制冷红外探测器",
     summary:
-      "PELICAN-D 640 产品页写中波 3.6 到 5 μm。PELICAN-D LW 产品页写长波，截止波长 9.3 μm。",
+      "PELICAN-D 640 产品页写中波 3.6 到 5 μm。PELICAN-D LW 产品页写长波，截止波长 9.3 μm。HOT PELICAN-D 640 产品页写 XBn，工作温度 150 K。PELICAN-D JT 与 PELICAN-D LW JT 的产品页写焦耳-汤姆逊制冷。",
     applications: ["spectral", "machine"],
     technologies: ["spectral"],
     models: [
@@ -1002,6 +1002,24 @@ export const spectralProducts = [
         "640×512，像元 15 μm，T2SL。产品页写长波，截止波长 9.3 μm。",
         "工作温度 77 K。最高帧频 350 Hz。",
         "产品页同一行写 NETD at 70% well fill 为 15 mK，括号里又写 65%、30 Hz。两处阱填充比例不一致，页面没有解释。",
+      ], "lwir"),
+      page("HOT PELICAN-D 640", "", "https://www.scd-infrared.com/products/hot-pelican-d-640/", [
+        "产品页写它基于 SCD 的 XBn bariode，焦平面工作温度 150 K。产品页没有写发布日期。",
+        "640×512，像元 15 μm。光谱带 3.6 到 4.2 μm，并写可选 1 到 4.2 μm。70% 阱填充时 NETD 23 mK。最高帧频 350 Hz。",
+        "制冷机为高可靠整体旋转式。23℃ 制冷机功耗 6 W，近距电子学功耗 1.7 W。长度 140 mm，重量 650 gr。读出功能写 Windowing。",
+        "标准配置制冷机 K508N，可选 K508。标准滤光片 3.6 到 4.2 μm。标准冷屏 f/4，可选 f/5.5。近距电子学标准为带 Camera Link 的数字输出，可选 Video Engine。",
+      ], "mwir"),
+      page("PELICAN-D JT", "", "https://www.scd-infrared.com/products/pelican-d-jt/", [
+        "产品页把 JT 探测器写成面向导弹相关应用，用焦耳-汤姆逊制冷。产品页没有写发布日期。",
+        "640×512，像元 15 μm，InSb。光谱带 3.6 到 5 μm。工作温度 77 K。70% 阱填充时 NETD 20 mK。最高帧频 350 Hz。",
+        "23℃ 降温时间小于 14 秒，并写冷却气体为 N2。含制冷机和近距板的光轴长度 84 mm，含制冷机和近距板的重量 250 gr。",
+        "同页配置栏把其他 JT 配置写成 Pelican-D LW 和 Blackbird 640。",
+      ], "mwir"),
+      page("PELICAN-D LW JT", "", "https://www.scd-infrared.com/products/pelican-d-lw-jt/", [
+        "与 PELICAN-D JT 一样，产品页写焦耳-汤姆逊制冷，并写焦平面发热量低，可支持更长的任务时间。产品页没有写发布日期。",
+        "640×512，像元 15 μm，T2SL。光谱带写长波截止 9.3 μm。工作温度 77 K。70% 阱填充时 NETD 32 mK。最高帧频 350 Hz。",
+        "23℃ 降温时间小于 20 秒，并写冷却气体为 N2。含近距板、不含制冷机的光轴长度 80 mm。含制冷机和近距板的重量 280 gr。",
+        "同页配置栏把其他 JT 配置写成 Pelican-D 和 Blackbird 640。",
       ], "lwir"),
     ],
   },
@@ -1032,6 +1050,288 @@ export const spectralProducts = [
         "产品页：帧率 25/30 Hz、50/60 Hz、100/120 Hz。两路同时视频，一路全处理最高 60 Hz，一路 NUC 和 BPR 最高 120 Hz。60 Hz、25℃ 功耗不大于 1.2 W。",
         "不含镜头尺寸 23×23×25 mm³。仅机芯重量不大于 23 g。工作温度 -40℃ 到 +71℃。产品页写支持有快门和无快门。",
       ], "lwir"),
+    ],
+  },
+  {
+    id: "blackbird",
+    date: "",
+    companyId: "scd",
+    category: "product",
+    title: "Blackbird：SCD 中波探测器",
+    summary:
+      "产品页上的 Blackbird 都写中波。BLACKBIRD 1920 是 1920×1536、10 μm 的 InSb。1280 一档是 1280×1024、10 μm，材料按页分为 HFM、XBn 和 InSb。BLACKBIRD 640 JT 是 640×512、15 μm，制冷方式写焦耳-汤姆逊。这些产品页都没有写发布日期。",
+    applications: ["spectral", "machine"],
+    technologies: ["spectral"],
+    models: [
+      page("BLACKBIRD 1920", "", "https://www.scd-infrared.com/products/blackbird-1920/", [
+        "产品页写 3 Megapixel 焦平面，格式 1920×1536，像元 10 μm，材料 InSb，读出电路为数字 CMOS。",
+        "性能表光谱范围 1 到 5.4 μm。标准滤光片 3.6 到 4.9 μm，可选 3.6 到 4.2 μm，或 3.6 到 4.9 μm 并在 1.06 做陷波。",
+        "NETD 小于 28 mK（2 Me⁻ 电容，70% 阱填充）。工作温度 80 K。全格式、4 路视频时最高帧频不小于 120 Hz。",
+        "制冷机功耗 18 W，近距电子学功耗 4.5 W。制冷机写整体旋转式或分体。标准制冷机 K543，可选 K548。标准冷屏 f/3，可选 f/2、f/4。长度 150 mm，重量 1.1 Kg。读出功能写 Binning 和 Windowing。近距电子学为 LVDS 数字输出。",
+      ], "mwir"),
+      page("MINI BLACKBIRD 1280 HFM", "", "https://www.scd-infrared.com/products/blackbird-1280-hfm/", [
+        "产品页写 Mini Blackbird SXGA，材料为 Hot Full Midwave（HFM），像元 10 μm，并写近距板带 Video Engine。",
+        "1280×1024。光谱范围 3.6 到 4.9 μm。工作温度 120°K。NETD 27 mK（2 Me⁻ 电容，70% 阱填充）。最高帧频 60 Hz。",
+        "制冷机为分体线性。制冷机功耗 5 W。光轴长度 92 mm，重量 350 g。读出功能写 Binning 和 windowing。",
+        "片上视频处理写 NUC、BPR、AGC、DRC、自动对焦支持、数字变焦、图形叠加、伪彩色查找表，以及空间和时间降噪。这一行又写最高帧频 60 Hz。",
+      ], "mwir"),
+      page("BLACKBIRD 1280 XBn", "", "https://www.scd-infrared.com/products/hot-blackbird-1280/", [
+        "产品页写 BLACKBIRD SXGA，材料为 XBn，像元 10 μm。产品索引卡片也写 MWIR XBn。",
+        "1280×1024。光谱范围 3.6 到 4.2 μm。工作温度 150°K。NETD 29 mK（2 Me⁻ 电容，70% 阱填充）。最高帧频 60 Hz。",
+        "制冷机写高可靠整体旋转式。制冷机功耗 7 W，近距电子学功耗 3.5 W。光轴长度 145 mm，重量 720 g。",
+        "读出功能写 Binning 和 windowing。片上视频处理与 MINI BLACKBIRD 1280 HFM 同页所列项目相同，并写最高帧频 60 Hz。",
+      ], "mwir"),
+      page("BLACKBIRD 1280 HFM", "", "https://www.scd-infrared.com/products/blackbird-1280-2/", [
+        "产品页性能表写材料为 HFM，像元 10 μm。产品索引卡片把这一条写成 MWIR XBn。",
+        "1280×1024。光谱范围 3.6 到 4.9 μm。工作温度 120°K。NETD 29 mK（2 Me⁻ 电容，70% 阱填充）。性能表最高帧频 100 Hz。",
+        "片上视频处理那一行写最高帧频 60 Hz，和性能表的 100 Hz 不一致，页面没有解释。",
+        "制冷机写高可靠整体旋转式。制冷机功耗 8.5 W，近距电子学功耗 3.5 W。光轴长度 140 mm，重量 720 g。读出功能写 Binning 和 windowing。",
+      ], "mwir"),
+      page("BLACKBIRD 1280 InSb", "", "https://www.scd-infrared.com/products/blackbird-1280/", [
+        "产品页写材料为 InSb，像元 10 μm。",
+        "1280×1024。光谱范围 3.6 到 5 μm，并写可按要求提供 1 到 5.4 μm。工作温度 80°K。NETD 29 mK（2 Me⁻ 电容，70% 阱填充）。最高帧频 60 Hz。",
+        "制冷机选项写分体旋转式、整体旋转式和高可靠整体旋转式。制冷机功耗 10 W，近距电子学功耗 3.5 W。光轴长度 140 mm，重量 720 g。",
+        "读出功能写 Binning 和 windowing。片上视频处理一行写最高帧频 60 Hz。",
+      ], "mwir"),
+      page("MINI BLACKBIRD 1280 XBn", "", "https://www.scd-infrared.com/products/mini-blackbird-1280/", [
+        "产品页写低 SWaP-C 的高清中波机芯，材料为 XBn，焦平面工作温度 150 K。正文写重量小于 350 gr，室温总功耗大约 5 W。",
+        "性能表：1280×1024，像元 10 μm。光谱范围 3.6 到 4.2 μm，并写可按要求提供 1 到 4.2 μm。工作温度 150°K。重量 350 gr。",
+        "制冷机功耗 3 W，近距电子学功耗 3.5 W。性能表没有把这两项加总成正文里的大约 5 W。光轴长度 82 mm。制冷机选项写整体旋转式或分体线性。",
+        "NETD 27 mK（2 Me⁻ 电容，70% 阱填充）。性能表全幅原始图像最高帧频 60 Hz。配置栏写原始数字输出全窗口最高 90 Hz，全处理数据 60 Hz。",
+        "读出功能写 Binning 和 windowing。接口写沿用原有连接器，带 Camera Link。",
+      ], "mwir"),
+      page("BLACKBIRD 640 JT", "", "https://www.scd-infrared.com/products/blackbird-640-jt/", [
+        "产品页把 JT 探测器写成面向导弹相关应用，焦平面 640×512，用焦耳-汤姆逊制冷。",
+        "性能表像元 15 μm。技术栏写 InSb / XBn。光谱带 3.6 到 5 μm / 3.6 到 4.2 μm。工作温度 77 K / 150 K。70% 阱填充时 NETD 30 mK。最高帧频 350 Hz。",
+        "23℃ 降温时间小于 20 秒，并写取决于冷却气体。含近距板、不含制冷机的光轴长度 49 mm。含制冷机和近距板的重量 120 gr。",
+        "同页配置栏把其他 JT 配置写成 Pelican-D 和 Pelican-D LW。",
+      ], "mwir"),
+    ],
+  },
+  {
+    id: "crane",
+    date: "",
+    companyId: "scd",
+    category: "product",
+    title: "Crane：SCD 中波探测器",
+    summary:
+      "CRANE HFM 与 CRANE XBn 的产品页都写 2560×2048、5 μm 的中波探测器。HFM 页写工作温度 120°K，XBn 页写 150°K。两页都没有写发布日期。",
+    applications: ["spectral", "machine"],
+    technologies: ["spectral"],
+    models: [
+      page("CRANE HFM", "", "https://www.scd-infrared.com/products/crane-hfm/", [
+        "产品页写 5-megapixel，格式 2560×2048，像元 5 μm，材料为 Hot Full Midwave（HFM）。正文写焦平面在 120 K 工作。",
+        "性能表光谱范围 3.6 到 4.9 μm。工作温度 120°K。70% 阱填充时 NETD 40 mK。最高帧频 150 Hz。制冷机写分体旋转式。",
+        "制冷机功耗 17 W，近距电子学功耗 5.5 W。光轴长度 103 mm，重量 1300 g。读出功能写 Binning、Windowing 和 multi-mode operation。",
+        "配置栏只列技术 HFM。",
+      ], "mwir"),
+      page("CRANE XBn", "", "https://www.scd-infrared.com/products/crane/", [
+        "产品页写 5-megapixel，格式 2560×2048，像元 5 μm，材料为 XBn。正文写焦平面在 150 K 工作。",
+        "性能表光谱范围 3.6 到 4.2 μm，并写可按要求提供 1 到 4.2 μm。工作温度 150°K。70% 阱填充时 NETD 45 mK。",
+        "制冷机选项写整体旋转式或分体旋转式。光轴长度 88 mm / 96 mm，重量 360 g / 1300 g。制冷机功耗 5 W / 13 W。近距电子学功耗两栏都是 5.5 W。",
+        "最高帧频一栏写 60 Hz at 12 bit / 100 Hz at 13 bit, 140 Hz at 12 bit。配置栏把技术写成 HFM、XBn，性能表只列 XBn。",
+      ], "mwir"),
+    ],
+  },
+  {
+    id: "hercules",
+    date: "",
+    companyId: "scd",
+    category: "product",
+    title: "HERCULES 1280：SCD 中波探测器",
+    summary:
+      "HERCULES 1280 产品页写 1280×1024、15 μm。技术栏同时列出 InSb 和 XBn，对应两组光谱带和工作温度。产品页没有写发布日期。",
+    applications: ["spectral", "machine"],
+    technologies: ["spectral"],
+    models: [
+      page("HERCULES 1280", "", "https://www.scd-infrared.com/products/hercules-1280/", [
+        "产品页写 15 μm 的 InSb，以及 0.18 μm 硅 CMOS 读出电路，并写整体旋转式斯特林制冷机。性能表技术栏为 InSb / XBn。",
+        "格式 1280×1024，像元 15 μm。光谱带 3.6 到 5 μm / 3.6 到 4.2 μm。工作温度 80 K / 150 K。",
+        "制冷机选项写分体旋转式、整体旋转式和高可靠整体旋转式。光轴长度 138 mm / 162 mm / 149 mm。重量 1570 g / 860 g / 750 g。",
+        "23℃ 制冷机功耗 20 W / 19 W / 5.5 W。23℃ 近距电子学功耗三栏都是 3.3 W。14 bit、全窗口最高帧频 100 F/s。NETD 18 mK（5.8 Me⁻ 电容，70% 阱填充）。视频输出 Camera Link。读出功能写 Windowing 和 dilution。",
+      ], "mwir"),
+    ],
+  },
+  {
+    id: "sparrow",
+    date: "",
+    companyId: "scd",
+    category: "product",
+    title: "Sparrow：SCD 中波机芯",
+    summary:
+      "SPARROW-HD 产品页写 1280×1024、5 μm，技术为 XBn 和 HFM。SPARROW HFM 与 SPARROW XBn 的产品页都写 640×512、10 μm 的低 SWaP 中波机芯。三页都没有写发布日期。",
+    applications: ["spectral", "machine"],
+    technologies: ["spectral"],
+    models: [
+      page("SPARROW-HD", "", "https://www.scd-infrared.com/products/sparrow-hd/", [
+        "产品页写低 SWaP 的 5 μm 中波探测器模组。正文写两种材料：XBn 截止波长 4.2 μm、工作温度 150 K；HFM 截止波长 4.85 μm、工作温度 120 K，并写最高支持 200 Hz。",
+        "性能表格式 1280×1024，像元 5 μm。冷滤光片 3.6 到 4.15 μm / 3.6 到 4.85 μm。工作温度 150°K / 120°K。正文的 4.2 μm 截止和性能表的 3.6 到 4.15 μm 不是同一个写法。",
+        "制冷机为分体线性。冷屏 F/1.8，高度 12 mm。积分模式 ITR、IWR。增益选项 0.9 Me / 0.9 Me / 2.6 Me。最高帧频 Up to 60 Hz / Up to 200 Hz。视频输出 Camera-Link 或 MIPI CSI-2。数字分辨率 12/13 bit。",
+        "NETD 为 40 mK（0.9 Me 电容的 70%）/ 25 mK（2.6 Me 电容的 70%）。残余非均匀性小于 0.05% STD/DR（20% 到 80% 阱填充）。23℃ 功耗小于 4 W / 小于 6 W（60 Hz，0.9 Me⁻）。",
+        "尺寸小于 70×53×58 mm / 小于 72×53×62 mm，均注明光轴。重量小于 350 Gr / 小于 380 Gr。制冷机 MTTFF 大于 22,000 小时，条件写 For GM (Ground Mobile) @ 35°C。可选片上视频处理写在 60 Hz 工作。",
+      ], "mwir"),
+      page("SPARROW HFM", "", "https://www.scd-infrared.com/products/sparrow-hfm/", [
+        "产品页写低 SWaP 的 10 μm 中波机芯，并写采用 HOT Blackbird 焦平面和分体线性制冷机。",
+        "640×512，像元 10 μm。性能表技术为 HFM。光谱带 3.6 到 4.9 μm。工作温度 120°K。光圈 F/3.6。70% 阱填充时 NETD 30 mK（2 Me⁻ 电容）。全幅原始图像最高帧频 180 Hz。",
+        "尺寸 58×62×42 mm，重量 300 gm。23℃、proxy 模式下模组总功耗 7.8 W。读出功能写 Binning 和 windowing。",
+        "DDC 一栏写 Sparrow / See spot / Extended SWIR。性能表没有给出扩展短波的波长。配置栏把技术写成 XBn，和性能表的 HFM 不一致。",
+      ], "mwir"),
+      {
+        ...page("SPARROW XBn", "", "https://www.scd-infrared.com/products/blackbird-640-sparrow/", [
+          "产品页标题为 SPARROW XBn。正文同样写低 SWaP 的 10 μm 中波机芯和 HOT Blackbird 焦平面。原文链接是这一页。",
+          "640×512，像元 10 μm。性能表技术为 XBn。光谱带三档为 3.6 到 4.2 μm、3.6 到 4.2 μm 并在 1.064 μm 做窄陷波、1.6 到 2.4 μm。工作温度 150°K。",
+          "光圈 F/3.6 / F/3.6 / F/2。23℃、proxy 模式下模组总功耗 4 W / 4.3 W / 5.7 W。70% 阱填充时 NETD 28 mK / 28 mK / NA。全幅原始图像最高帧频 180 Hz。",
+          "尺寸 58×62×42 mm，重量 300 gm。DDC 一栏写 Sparrow / See spot / Extended SWIR。配置栏把技术写成 HFM，和性能表的 XBn 不一致。",
+        ], "mwir"),
+        bands: ["mwir", "swir"],
+      },
+    ],
+  },
+  {
+    id: "kinglet",
+    date: "",
+    companyId: "scd",
+    category: "product",
+    title: "Kinglet 640：SCD 中波探测器",
+    summary:
+      "Kinglet 640 产品页写 640×512、15 μm 的 XBn（InAsSb），焦平面工作温度 150 K。产品页没有写发布日期。",
+    applications: ["spectral", "machine"],
+    technologies: ["spectral"],
+    models: [
+      page("Kinglet 640", "", "https://www.scd-infrared.com/products/kinglet-640-15/", [
+        "产品页写 XBn（InAsSb）在 150 K 仍有性能，并写可配旋转式制冷机或线性制冷机。旋转式对应手持，线性对应云台。",
+        "640×512，像元 15 μm。光谱带 3.6 到 4.2 μm，并写可选 1 到 4.2 μm。工作温度 150°K。70% 阱填充时 NETD 23 mK。最高帧频 100 Hz。",
+        "性能表制冷机选项只写整体旋转式。配置栏标准制冷机为 K562S（旋转式），可选 580（旋转式）和 SX020（线性）。",
+        "23℃ 制冷机功耗 2.5 W，近距电子学功耗 0.8 W。长度 80 mm，重量 280 gr。读出功能写 Binning 和 windowing。标准冷屏 f/5.5，可选 f/4。近距电子学写紧凑、低功耗，带 Camera Link。",
+      ], "mwir"),
+    ],
+  },
+  {
+    id: "swift",
+    date: "",
+    companyId: "scd",
+    category: "product",
+    title: "SWIFT：SCD 短波探测器",
+    summary:
+      "SWIFT-EI 产品页写事件驱动的短波红外传感器，InGaAs，640×512、10 μm。SWIFT 640 产品页写同一格式的 InGaAs 视频模组，光谱范围都写 0.6 到 1.7。两页都没有写发布日期。",
+    applications: ["spectral", "machine"],
+    technologies: ["spectral"],
+    models: [
+      {
+        ...page("SWIFT-EI", "", "https://www.scd-infrared.com/products/swift-ei/", [
+          "产品页写它按像素异步检测场景变化，并写延迟在微秒级。成像模式写全局快门。另有独立的事件检测通道，以及最高 50 kHz 的异步激光脉冲检测。",
+          "材料 InGaAs。格式一栏写 640×512、10 μm 对应 SIM，320×256 分箱对应 LNIM、ALPD 和 Event。光谱范围 0.6 到 1.7，并标注 VIS-SWIR。1550 nm 量子效率大于 80%。",
+          "典型暗电流约 1 fA（280 K）。全窗口帧频：只开 SIM 时 13 bit 为 800 F/s，11 bit 为 1600 F/s。尺寸 25×22×6.1 mm。焦平面功耗 200 mW 到 500 mW，并写随工作模式变化。视频输出 4 lane JESD204B。",
+        ], "swir"),
+        technologies: ["spectral", "event", "global"],
+      },
+      page("SWIFT 640", "", "https://www.scd-infrared.com/products/swift-640/", [
+        "产品页写低 SWaP-C 的短波视频模组，10 μm VGA InGaAs，数字读出，陶瓷封装，带 TEC 和近距电子学板。",
+        "640×512，像元 10 μm。光谱范围 0.6 到 1.7，并标注 VIS-SWIR。1550 nm 量子效率大于 80%。典型暗电流小于 1 fA（280 K）。",
+        "NEP 小于 0.5 fW（高增益，积分时间 27 msec）。工作模式写高增益 10 Ke、带 CDS 时 40 e，中增益 500 Ke、170 e（ALPD），低增益 1 Me、350 e。帧频 25、50 F/s。",
+        "功耗小于 1.7 W（50 Hz，环境 25 c，不含 TEC）。尺寸 34×33×34 mm，重量 100 gr。视频输出 Camera Link。",
+      ], "swir"),
+    ],
+  },
+  {
+    id: "cardinal",
+    date: "",
+    companyId: "scd",
+    category: "product",
+    title: "Cardinal：SCD 短波探测器",
+    summary:
+      "Cardinal 640 与 Cardinal 640 Low Noise 都是 640×512、15 μm 的 InGaAs。Cardinal 1280 是 1280×1024、10 μm 的 InGaAs。三页光谱范围都写 0.6 到 1.7，并写全局快门。产品页都没有写发布日期。",
+    applications: ["spectral", "machine"],
+    technologies: ["spectral", "global"],
+    models: [
+      page("Cardinal 640", "", "https://www.scd-infrared.com/products/cardinal-640/", [
+        "产品页写 SWIR VGA、像元 15 μm，带 TEC，并写异步激光脉冲检测和二维激光测距。",
+        "640×512。配置为 Standard。1550 nm 量子效率大于 85%。光谱范围 0.6 到 1.7，并标注 VIS-SWIR。典型暗电流小于 4.5 fA（283 K）。",
+        "满阱：高增益 12 Ke，中增益 0.6 Me，低增益 3 Me，另有 ALPD。低增益、全窗口最高帧频 350 F/s，13 bit，全局快门。",
+        "焦平面功耗小于 100 mW（60 F/sec）。近距板功耗小于 1.7 W（60 Hz，环境 25 c，不含 TEC）。尺寸 30×23×30 mm（加高窗口、不含近距板）或 30×20×30 mm（不含近距板）。视频输出 Camera Link。",
+      ], "swir"),
+      page("Cardinal 640 Low Noise (LOON)", "", "https://www.scd-infrared.com/products/cardinal-640-low-noise-loon/", [
+        "与 Cardinal 640 同一段介绍，性能表配置写 Low noise。",
+        "640×512，像元 15 μm，InGaAs。1550 nm 量子效率大于 80%。光谱范围 0.6 到 1.7，并标注 VIS-SWIR。典型暗电流小于 4.5 fA（283 K）。",
+        "满阱：高增益 15 Ke，低增益 0.3 Me，另有主动成像。配置栏写极低底噪模式 15 e。低增益、全窗口最高帧频 350 F/s，13 bit，全局快门。",
+        "焦平面功耗约 100 mW（60 F/s）。近距板功耗小于 1.7 W（60 Hz，环境 25 c，不含 TEC）。含近距板尺寸 51×45×61 mm。视频输出 Camera Link。配置栏写门控成像，64×64 感兴趣区的时间常数 100 ns。",
+      ], "swir"),
+      page("Cardinal 1280", "", "https://www.scd-infrared.com/products/cardinal-1280/", [
+        "产品页写高清短波 InGaAs，像元 10 μm，带 TEC 和异步激光脉冲检测。封装分金属和陶瓷。",
+        "1280×1024。光谱范围 0.6 到 1.7 μm，并标注 VIS-SWIR。1550 nm 量子效率大于 80%。典型暗电流 1 fA（283 K）。",
+        "满阱：高增益 10 Ke，中增益 0.5 Me，低增益 1 Me。ALPD 写第二代，最高 1 kHz。全窗口最高帧频两栏为 150 F/s 和 151 F/s，都写 13 bit 全局快门。",
+        "焦平面功耗约 150 mW（60 F/s）。近距板功耗 2 W（TEC 关闭）。制冷能力：环境 30 C 时分别可到 -10 C 和 0 C。含近距板尺寸一栏为 43×45×43 mm，另一栏为 37×34×37 mm。",
+      ], "swir"),
+    ],
+  },
+  {
+    id: "bird",
+    date: "",
+    companyId: "scd",
+    category: "product",
+    title: "Bird：SCD 非制冷长波探测器",
+    summary:
+      "Bird 640 的金属封装和陶瓷封装产品页都写 640×480、17 μm 氧化钒微测辐射热计。Bird XGA 产品页写 1024×768、17 μm。三页都没有写发布日期。",
+    applications: ["spectral", "machine"],
+    technologies: ["spectral"],
+    models: [
+      page("Bird 640, 17μm – Metallic", "", "https://www.scd-infrared.com/products/bird-640-17%ce%bcm-metallic/", [
+        "产品页写 17 μm 氧化钒微测辐射热计，面向 VGA 长波。配置为 HS。",
+        "640×480，像元 17 μm。时间域 NETD 不大于 32 mK（25 C，F/1，60 Hz）。光谱响应 8 到 14 μm。",
+        "帧频 25/30 Hz、50/60 Hz、100/120 Hz。热时间常数 14 mS。工作温度 -40°C 到 71°C。存储温度 -40°C 到 85°C。",
+        "视频输出 Analog-1/2 lines。25°C 功耗 350 mW，并写不含 Tec。焦平面稳定方式为 TEC。尺寸 30×41×9 mm，重量 27 gr。MTTF 大于 20 年（25°C 真空寿命，90% confidence）。",
+      ], "lwir"),
+      page("Bird 640, 17μm – Ceramic", "", "https://www.scd-infrared.com/products/bird-640-17/", [
+        "与金属封装页同一段介绍。配置为 LTTC / HS / BB。",
+        "640×480，像元 17 μm。时间域 NETD（25 C，F/1，60 Hz）写 <=55 mK / 不大于 35 mK / 不大于 26 mK。光谱响应 8 到 14 μm / 8 到 14 μm / 3 到 14 μm。",
+        "热时间常数 7 mS / 14 mS / 14 mS。25°C 功耗 400 mW / 350 mW / 350 mW。焦平面稳定方式写 TEC-less。尺寸 23×26×5 mm，重量 8 gr。",
+        "帧频、工作温度、存储温度、视频输出和 MTTF 与金属封装页写在同一组：帧频到 100/120 Hz，工作温度 -40°C 到 71°C，MTTF 大于 20 年（25°C，90% confidence）。",
+      ], "lwir"),
+      page("Bird XGA", "", "https://www.scd-infrared.com/products/bird-xga-17/", [
+        "产品页写 17 μm 氧化钒微测辐射热计，面向 XGA 长波。配置 FAST / HS / BB。",
+        "1024×768，像元 17 μm。时间域 NETD（25°C，F#1，60 Hz）一栏写 <100 mK / <36 mK -<50 mK / <32 mK。光谱响应 8 到 12 μm / 8 μm 到 14 μm 或 8 μm 到 12 μm / 3 μm 到 14 μm。",
+        "帧频 25/30 Hz、50/60 Hz、100 Hz。工作温度 -40°C 到 71°C。存储温度 -40°C 到 85°C。视频输出 Analog 2/4 lines。",
+        "25°C 功耗 750 mW 到 900 mW。焦平面稳定方式为 TEC。尺寸 52 mm×52 mm×11 mm，并写不含引脚和真空管。重量 70 gr。MTTF 大于 20 年（25°C 真空寿命，90% confidence）。可选近距电子学写 4 路视频 ADC、功率级、TEC 驱动和快门控制。",
+      ], "lwir"),
+    ],
+  },
+  {
+    id: "vox-imager",
+    date: "",
+    companyId: "scd",
+    category: "product",
+    title: "VOx Imager：SCD 长波视频引擎",
+    summary:
+      "VOx Imager 产品页写 17 μm 氧化钒微测辐射热计的 VGA 长波视频引擎。性能表光谱范围为 8 到 14 μm，宽带配置为 3 到 14 μm。产品页没有写发布日期。",
+    applications: ["spectral", "machine"],
+    technologies: ["spectral"],
+    models: [
+      page("VOx Imager", "", "https://www.scd-infrared.com/products/vox-imager/", [
+        "产品页写 17 μm 氧化钒，VGA 长波视频引擎。格式 VGA，640×480，像元 17 μm。",
+        "光谱范围 8 到 14 μm，宽带配置为 3 到 14 μm。灵敏度小于 35 mK（30 Hz，f/1，25˚C），并写不做降噪。配置栏宽带一项的灵敏度也小于 35 mK（30 Hz，f/1），双动态范围写 50°C 或 250°C，条件 @ F#1。",
+        "性能表帧频 9/25/30/50/60 Hz。出图时间小于 3 秒。延迟写 Sub frame。30 Hz、25˚C 功耗 1.55 W。写 TEC-Less，并写温度标定。",
+        "视频输出 14 bit 并行、BT.656、Camera Link，可选模拟视频或 USB3。工作温度 -40°C 到 +71°C。存储温度 -40°C 到 +85°C。冲击 500 G（0.5 msec）。尺寸 31×31×29.7 mm，重量 43 gr。",
+        "配置栏宽带帧频写 25/30 Hz，并写另有小于 9 Hz 的版本。性能表已经列出 9 Hz。图像处理写 NUC、BPR、场景 NUC、降噪、动态范围压缩和穹顶效应校正。",
+      ], "lwir"),
+    ],
+  },
+  {
+    id: "rd2600",
+    date: "",
+    companyId: "scd",
+    category: "product",
+    title: "RD2600X4MS：SCD 可见光到近红外线阵",
+    summary:
+      "RD2600X4MS 产品页写背照式 CMOS 线阵，一块硅片上有 4 条独立线，每条 2600 像素。谱段由客户在可见光到近红外里选择。产品页写按设计抗辐射，并写适用于空间。产品页没有写发布日期，也没有给出各谱段的起止波长。",
+    applications: ["spectral", "scientific"],
+    technologies: ["spectral"],
+    models: [
+      page("RD2600X4MS", "", "https://www.scd-infrared.com/products/cmos-rd2600x4ms/", [
+        "产品页写背照式、全 CMOS、可见光到近红外的多线双向扫描探测器。4 条独立线，每条 2600 像素，像元 26 μm。窗口可按线加不同谱段的滤光片，一共 4 个谱段。",
+        "像元为高增益、低噪声 4T CMOS。TDI 级数 8 到 64，步进 8。标称满阱 300 ke⁻，并写可由通信改变。底噪小于 120 e⁻（全部 64 级 TDI）。动态范围 71 dB。线性度小于 2%，括号里写到满阱 95%。",
+        "最高行频 7,500 行/秒，设计目标 10,000 行/秒。配置栏写最高 10,000 行/秒，双向。最高行频功耗小于 1.8 W。片上 12 bit ADC。通信为串口。主时钟为单路 LVDS，最高 58 MHz，另有行同步。读出方向双向。",
+        "环境栏写为空间应用做了抗辐射。正文写 CMOS 管芯按设计抗辐射，并写因此适用于空间。密封陶瓷封装，玻璃窗靠近焦平面。产品页没有给出重量和外形尺寸的数字。",
+      ], "nir"),
     ],
   },
   {
