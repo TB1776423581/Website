@@ -368,6 +368,99 @@ export const spectralProducts = [
     ],
   },
   {
+    id: "s1441",
+    date: "",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S14416 与 S14417：滨松宽动态范围 CMOS 线阵",
+    summary:
+      "S14416-02、S14416-06、S14416-12、S14417-02 与 S14417-06 的产品页都写低功耗 CMOS 线阵，视频数据率 10 MHz。S14416 像元 63.5 × 63.5 μm，标题写 400 dpi。S14417 像元 127 × 127 μm，标题写 200 dpi。光谱响应都是 400 到 1000 nm。产品页没有写发布日期。手册 KMPD1191E06 标题写成 S14416/S14417 series，并写 Wide dynamic range and 200 dpi/400 dpi，资料截至 October 2022，记为约 2022 年 10 月。手册把数据率写成 10 MHz data rate，产品页写成 10 MHz video data rate。",
+    applications: ["spectral", "machine"],
+    technologies: ["spectral"],
+    models: [
+      page("S14416-02", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-industry/S14416-02.html", [
+        "产品页没有写发布日期。标题写 400 dpi sensor with a wide dynamic range。正文写 The S14416 series，像元 63.5 × 63.5 μm。特性写 256 像素，最高数据率 10 MHz，单 3 V 或 5 V，内置时序发生器，只需起始脉冲和时钟，低电流，可同时积分。",
+        "规格表类型为高速读出。图像尺寸 16.12×0.0635 mm，有效像素 256 x 1，像元 63.5 x 63.5 μm。光谱响应 400 到 1000 nm。最高行频 36231 行/秒。无制冷，窗口写成 Broslicate glass，封装陶瓷。测量条件写 Typ. Ta=25 ℃，Vdd=3 V/5 V，V(CLK)=V(ST)=Vdd，f(CLK)=10 MHz。",
+        "手册结构表有效感光区长度 16.256 mm，窗口材料写成 Borosilicate glass。像素间距与像素高度都是 63.5 µm。供电电流在 f(CLK)=10 MHz、暗态时，Vdd=3 V 典型 12 mA，Vdd=5 V 典型 18 mA。",
+        "手册把光灵敏度和转换效率按系列列出。S14416 系列光灵敏度典型 80 V/(lx∙s)，转换效率典型 0.75 µV/e-，峰值波长典型 700 nm。暗输出典型 0.02 mV，积分时间 10 ms。Vdd=5 V 时饱和输出典型 4.0 V，读出噪声典型 0.7 mV rms。应用栏写位置检测、物体测量和各类图像读取。",
+      ], "nir"),
+      page("S14416-06", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-industry/S14416-06.html", [
+        "产品页没有写发布日期。标题写成 Wide dynamic range and 400 dpi。正文同样写 The S14416 series，像元 63.5 × 63.5 μm。特性写 768 像素。内置时序发生器一行在 start pulse 后换行，再接 and clock pulse for operation。",
+        "规格表图像尺寸 48.36×0.0635 mm，有效像素 768 x 1，像元 63.5 x 63.5 μm。最高行频 12690 行/秒。无制冷，窗口写成 Broslicate glass，封装 Glass epoxy。测量条件与 S14416-02 相同。",
+        "手册有效感光区长度 48.768 mm，窗口材料与 S14416-02 同栏写成 Borosilicate glass。供电电流在 f(CLK)=10 MHz、暗态时，Vdd=3 V 典型 36 mA，Vdd=5 V 典型 54 mA。光灵敏度、转换效率和峰值波长与 S14416 系列同一列。",
+        "手册光响应非均匀性按 762 像素计算，并写去掉两端各 3 个像素。光谱响应图把 S14416-06 与 S14416-02、S14417-02、S14417-06 画在同一张图上。应用栏与 S14416-02 相同。",
+      ], "nir"),
+      page("S14416-12", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-industry/S14416-12.html", [
+        "产品页没有写发布日期。标题写成 Wide dynamic range and 400 dpi。正文改成单数 The S14416-12 is，不再写 series。像元仍是 63.5 × 63.5 μm。特性写 1536 像素。时序发生器一行同样在 start pulse 后换行。",
+        "规格表图像尺寸 97.472×0.0635 mm，有效像素 1536 x 1。最高行频 6426 行/秒。无制冷。窗口写成 Silicone resin，封装 Glass epoxy。测量条件与 S14416-02 相同。",
+        "手册有效感光区长度同样是 97.472 mm。窗口材料写成 Silicone resin，与产品页一致。封装为 Glass epoxy。供电电流在 f(CLK)=10 MHz、暗态时，Vdd=3 V 典型 72 mA，Vdd=5 V 典型 108 mA。",
+        "手册光谱响应单独画一张 S14416-12。光灵敏度、转换效率仍与 S14416 系列同一列，典型 80 V/(lx∙s)、0.75 µV/e-。光响应非均匀性按 1530 像素计算。应用栏与同系列相同。",
+      ], "nir"),
+      page("S14417-02", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-industry/S14417-02.html", [
+        "产品页没有写发布日期。标题写 200 dpi sensor with a wide dynamic range。正文写 The S14417 series，像元 127 × 127 μm。特性写 128 像素，其余条目与 S14416-02 的特性列表相同。",
+        "规格表图像尺寸 16.189 x 0.127 mm，有效像素 128 x 1，像元 127 x 127 μm。光谱响应 400 到 1000 nm。最高行频 67567 行/秒。无制冷，窗口写成 Broslicate glass，封装陶瓷。规格表没有测量条件一行。",
+        "手册有效感光区长度 16.256 mm，像素间距与像素高度都是 127 µm，窗口材料写成 Borosilicate glass。供电电流在 f(CLK)=10 MHz、暗态时，Vdd=3 V 典型 9 mA，Vdd=5 V 典型 13 mA。",
+        "手册 S14417 系列光灵敏度典型 75 V/(lx∙s)，转换效率典型 0.35 µV/e-，峰值波长典型 700 nm。暗输出典型 0.04 mV。Vdd=5 V 时饱和输出典型 4.0 V，读出噪声典型 0.6 mV rms。光响应非均匀性按 122 像素计算。",
+      ], "nir"),
+      page("S14417-06", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-industry/S14417-06.html", [
+        "产品页没有写发布日期。标题写成 Wide dynamic range and 200 dpi。正文写 The S14417 series，像元 127 × 127 μm。特性写 384 像素。Built-in timing generator 一行在分号后换行。",
+        "规格表图像尺寸 48.701 x 0.127 mm，有效像素 384 x 1，像元 127 x 127 μm。最高行频 24752 行/秒。无制冷，窗口写成 Broslicate glass，封装 Glass epoxy。规格表同样没有测量条件一行。",
+        "手册有效感光区长度 48.768 mm，窗口材料写成 Borosilicate glass，封装 Glass epoxy。供电电流在 f(CLK)=10 MHz、暗态时，Vdd=3 V 典型 27 mA，Vdd=5 V 典型 39 mA。光灵敏度与转换效率与 S14417 系列同一列。",
+        "手册光响应非均匀性按 378 像素计算。并行读出时序图在 S14417-06 旁同时写 192 和 384，串行读出时序图写 384。应用栏与 S14416 相同。",
+      ], "nir"),
+    ],
+  },
+  {
+    id: "s13131",
+    date: "",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S13131：滨松薄封装 CMOS 线阵",
+    summary:
+      "S13131-512、S13131-736 与 S13131-1536 的产品页都写条码读取器、编码器和扫描用线阵，COB，厚度 0.8 mm，单 3.3 V，像元 5.5 × 63.5 μm，光谱响应 400 到 1000 nm。产品页把 applications 印成 ap-plications。窗口写成 Epoxy resin。产品页没有写发布日期。三份手册页脚都写 Nov. 2024，并写资料截至 November 2024，记为约 2024 年 11 月。手册密封材料写成 Silicone resin，没有单独的窗口一行。",
+    applications: ["spectral", "machine"],
+    technologies: ["spectral"],
+    models: [
+      page("S13131-512", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-industry/S13131-512.html", [
+        "产品页没有写发布日期。正文写厚度是前代产品的一半，0.8 mm，并写低功耗和高灵敏度。特性写 512 像素，有效感光区长度 2.816 mm，视频数据率最大 2 MHz，输入端电容 5 pF，封装 3.5 × 3.0 × 0.8 t mm。",
+        "规格表类型为树脂密封封装。图像尺寸 2.816 x 0.0635 mm，有效像素 512 x 1，像元 5.5 x 63.5 μm。最高行频 3787 行/秒。无制冷，窗口写成 Epoxy resin，封装 Glass epoxy。测量条件写 Typ. Ta=25 ℃，Vdd=3.3 V，V(CLK)=V(ST)=3.3 V，f(CLK)=2 MHz。",
+        "手册 KMPD1158E06 结构表像素数 512，像素间距 5.5 µm，像素高度 63.5 µm，感光区长度 2.816 mm，封装 Glass epoxy，密封材料 Silicone resin。特性里的封装厚度写成 0.8t mm。应用栏写编码器、各类图像扫描和条码读取器。",
+        "手册供电电流在 f(CLK)=2 MHz 时最小 7 mA、典型 12 mA、最大 17 mA。注记 *4 写成 Higher the clock pulse frequency，并写 f(CLK)=200 kHz 时典型 11 mA。光灵敏度典型 280 V/(lx·s)，峰值波长典型 650 nm，转换效率典型 45 µV/e-。暗输出典型 1.5 mV，积分时间 10 ms。读出噪声典型 0.4 mV rms。光响应非均匀性按 506 像素计算。",
+      ], "nir"),
+      page("S13131-736", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-industry/S13131-736.html", [
+        "产品页没有写发布日期。正文与 S13131-512 相同，包括 ap-plications 和 0.8 mm。特性写 736 像素，有效感光区长度 4.048 mm，封装 4.7 × 2.8 × 0.8 t mm。视频数据率和输入端电容与 512 像素款相同。",
+        "规格表图像尺寸 4.048 x 0.0635 mm，有效像素 736 x 1，像元 5.5 x 63.5 μm。最高行频 2659 行/秒。窗口写成 Epoxy resin，封装 Glass epoxy。测量条件与 S13131-512 相同。",
+        "手册 KMPD1157E06 感光区长度 4.048 mm，密封材料同样写成 Silicone resin。回流焊一行把 Peak temperature 260 °C 与 three times 分成两行。注记 *2 写 JEDEC level 2a。",
+        "手册供电电流、光灵敏度、峰值波长、转换效率和暗输出与 S13131-512 同一组数字。光响应非均匀性按 730 像素计算，并写去掉两端各 3 个像素。应用栏相同。",
+      ], "nir"),
+      page("S13131-1536", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-industry/S13131-1536.html", [
+        "产品页没有写发布日期。正文同样印成 ap-plications。特性写 1536 像素，有效感光区长度 8.448 mm，封装 9.1 × 2.4 × 0.8 t mm。",
+        "规格表图像尺寸 8.448 x 0.0635 mm，有效像素 1536 x 1，像元 5.5 x 63.5 μm。最高行频 1288 行/秒。窗口写成 Epoxy resin，封装 Glass epoxy。测量条件与另外两款相同。",
+        "手册 KMPD1159E06 感光区长度 8.448 mm，封装 Glass epoxy，密封材料 Silicone resin。供电电流典型仍是 12 mA，注记 *4 同样写 200 kHz 时典型 11 mA。",
+        "手册光灵敏度典型 280 V/(lx·s)，转换效率典型 45 µV/e-，读出噪声典型 0.4 mV rms。光响应非均匀性按 1530 像素计算。应用栏写编码器、各类图像扫描和条码读取器。",
+      ], "nir"),
+    ],
+  },
+  {
+    id: "s13434",
+    date: "",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S13434-2496：滨松 2496 像素 CMOS 线阵",
+    summary:
+      "产品页写条码读取器、编码器和扫描用线阵，COB，厚度 0.8 mm，单 3.3 V。像元 5.25 × 63.5 μm，2496 像素，光谱响应 400 到 1000 nm。产品页把 applications 写成完整单词。窗口写成 Epoxy resin。产品页没有写发布日期。手册 KMPD1160E06 页脚写 Nov. 2024，并写资料截至 November 2024，记为约 2024 年 11 月。手册密封材料写成 Silicone resin。",
+    applications: ["spectral", "machine"],
+    technologies: ["spectral"],
+    models: [
+      page("S13434-2496", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-industry/S13434-2496.html", [
+        "产品页没有写发布日期。正文写厚度是前代产品的一半，0.8 mm，低功耗和高灵敏度。特性写像元 5.25 × 63.5 μm，2496 像素，有效感光区长度 13.104 mm，视频数据率最大 2 MHz，输入端电容 5 pF，封装 13.8 × 2.1 × 0.8 t mm。",
+        "规格表类型为树脂密封封装。图像尺寸 13.104 x 0.0635 mm，有效像素 2496 x 1，像元 5.25 x 63.5 μm。最高行频 796 行/秒。无制冷，窗口写成 Epoxy resin，封装 Glass epoxy。测量条件写 Typ. Ta=25 ℃，Vdd=3.3 V，V(CLK)=V(ST)=3.3 V，f(CLK)=2 MHz。",
+        "手册结构表像素间距 5.25 µm，像素高度 63.5 µm，感光区长度 13.104 mm，封装 Glass epoxy，密封材料 Silicone resin，没有单独的窗口一行。特性里的封装厚度写成 0.8t mm。应用栏写编码器、各类图像扫描和条码读取器。",
+        "手册供电电流在 f(CLK)=2 MHz 时典型 12 mA、最小 7 mA、最大 17 mA。注记 *4 写成 Higher the clock pulse frequency，并写 f(CLK)=200 kHz 时典型 11 mA。光灵敏度典型 280 V/(lx·s)，峰值波长典型 650 nm，转换效率典型 45 µV/e-，暗输出典型 1.5 mV，读出噪声典型 0.4 mV rms。光响应非均匀性按 2490 像素计算。",
+      ], "nir"),
+    ],
+  },
+  {
     id: "g12242",
     date: "",
     companyId: "hamamatsu",
