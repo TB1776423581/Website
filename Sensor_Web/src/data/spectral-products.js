@@ -4031,4 +4031,137 @@ export const spectralProducts = [
       },
     ],
   },
+{
+    id: "s7030",
+    date: "",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S7030 与 S7031：滨松背照式 FFT-CCD",
+    summary:
+      "S7030-0906、S7030-0907、S7030-1006、S7030-1007、S7031-0906S、S7031-0907S、S7031-1006S 与 S7031-1007S 的产品页写背照式 FFT-CCD，光谱响应 200 到 1100 nm。分光索引里 S7030 的简介写成 High sensitivity. wide spectral response range back-thinned FFT-CCD。S7031 的简介在逗号后写 one-stage TE-cooled type。S7030 无制冷，窗口 Quartz，驱动电路 C7040。S7031 为一阶热电制冷，窗口 AR-coated sapphire，驱动电路 C7041。产品页都没有写发布日期。手册标题写成 S7030/S7031 series，KMPD1023E22 页脚写 Jul. 2026，并写资料截至 July 2026，记为约 2026 年 7 月。",
+    applications: ["spectral", "scientific", "machine"],
+    technologies: ["spectral"],
+    models: [
+      {
+        ...page("S7030-0906", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S7030-0906.html", [
+          "产品页没有写发布日期。页面标题写 CCD area image sensor。页内一级标题只写 S7030-0906。二级标题写 Back-thinned FFT-CCD。正文把这一只型号写成 a family of FFT-CCD image sensors，并写低光科学检测。binning 之后可当作沿器件长度方向有长孔径的线阵，句子写成 suites for use in spectrophotometry。binning 相对外部电路数字相加写成 by and external cicuit。另写 low noise and low dark signal (MPP mode operation)，可做低光检测和长积分，从而得到宽动态范围。",
+          "特性写 Non-cooled type、像元 24 × 24 μm、Line, pixel binning、峰值波长量子效率大于 90%、光谱响应范围宽、读出噪声低、动态范围宽、MPP operation，以及 High UV sensitivity with good stability。",
+          "规格表类型分成两行，Binning type 和 Standard type。图像尺寸 12.288 x 1.392 mm，有效像素 512 x 58 pixels，像元 24 x 24 μm。光谱响应 200 到 1100 nm。行频典型 418 行/秒，最高 1375 行/秒。暗电流典型 100 e-/pixel/s。读出噪声典型 8 e- rms。冷却 Non-cooled。窗口 Quartz，封装 Ceramic。Dedicated driver circuit 写 C7040。测量条件写成 Typ. Ta=25 ℃，unless otherwise noted，frame rate: full line binning,Dark current: MPP mode，逗号后没有空格。手册链接文件名 s7030-0906_etc_kmpd1023e.pdf，产品页标 760 KB。",
+          "手册标题写成 S7030/S7031 series，目录号 KMPD1023E22，页脚写 Jul. 2026 DN，并写资料截至 July 2026，记为约 2026 年 7 月。手册把 suited 和 by an external circuit 写全，并写 have low noise, low dark current and wide dynamic range, and long integration time enables to detect low-level light。有效像元 24 × 24 μm。面积从 12.288 (H) × 1.392 (V) mm²（512 × 58 像素）写到 24.576 (H) × 2.928 (V) mm²（1024 × 250 像素）。选型表里垂直方向最多是 122 像素，没有 1024 × 250 的型号。",
+          "手册特性把无制冷写成 S7030 series，一阶热电制冷写成 S7031 series。应用栏写 Fluorescence spectrometer, ICP、Industrial inspection、Semiconductor inspection、DNA sequencer 和 Low-light-level detection。选型表总像素与有效像素：S7030-0906 为 532 × 64 和 512 × 58，S7030-0907 为 532 × 128 和 512 × 122，S7030-1006 为 1044 × 64 和 1024 × 58，S7030-1007 为 1044 × 128 和 1024 × 122。多通道探测头 S7030 系列写 C7040，S7031 系列写 C7041。注记写两级热电制冷的 S7032-1006/-1007 可按要求订制。这个订制型号没有加入。",
+          "结构表像元 24 × 24 µm，垂直和水平时钟都写 2 phases，输出电路写 One-stage MOSFET source follower，封装写 24-pin ceramic DIP。窗口注记 *1 写可按要求提供临时窗口，例子是 S7030-0906N。这个型号没有加入。*2 把石英窗的密封写成 Resing sealing。*3 写 AR-coated sapphire 为 Hermetic sealing。绝对最大额定值工作温度 -50 到 +50 ℃，贮存温度 -50 到 +70 ℃。注记 *4 写 S7030 系列按封装温度，S7031 系列按芯片温度。注记写即使瞬间超过绝对最大额定值也可能使产品质量下降。",
+          "手册电气特性没有行频一行。信号输出频率典型 0.25 MHz、最大 1 MHz。垂直寄存器电容 S703*-0906 典型 750 pF，S703*-0907/-1006 典型 1500 pF，S703*-1007 典型 3000 pF。水平寄存器电容 S703*-0906/-0907 典型 110 pF，S703*-1006/-1007 典型 180 pF。求和栅和复位栅电容都是典型 30 pF。转移栅电容前两档典型 55 pF，后两档典型 75 pF。电荷转移效率最小 0.99995、典型 0.99999。直流输出电平典型 16 V。输出阻抗典型 3 kΩ、最大 4 kΩ。功耗典型 13 mW、最大 14 mW。注记 *7 写这是片上放大器加上负载电阻的功耗。",
+          "满阱垂直方向最小 240 ke-、典型 320 ke-，水平方向最小 800 ke-、典型 1000 ke-，线性写成 ±1.5%。转换效率最小 1.8 µV/e-、典型 2.2 µV/e-。MPP 暗电流 25 ℃ 典型 100 e-/pixel/s、最大 1000 e-/pixel/s，0 ℃ 典型 10 e-/pixel/s、最大 100 e-/pixel/s。注记写温度每升高 5 到 7 ℃，暗电流大约加倍。读出噪声典型 8 e- rms、最大 16 e- rms。注记 *10 写用 HAMAMATSU C4880 数字 CCD 相机和 CDS 电路测量，传感器温度 -40 ℃，工作频率 150 kHz。动态范围行 binning 最小 50000、典型 125000，面扫描最小 15000、典型 40000。光响应非均匀性典型 ±3%、最大 ±10%。注记 *12 写用峰值发射波长 560 nm 的 LED，在饱和输出的一半处测量。白点最大 0，黑点最大 10，簇缺陷最大 3，列缺陷最大 0。",
+          "光谱响应图标题写 without window，图号 KMPDB0058EB。注记 *16 写装上石英玻璃或镀增透蓝宝石后，响应按窗材料的光谱透过特性下降。器件结构图画 4 个空白像素和 6-bevel，并写 H=512, 1024，V=58, 122。注记写从入射光方向看，水平移位寄存器盖着厚硅死层，长波光可能被它探测到，需要时对该区域加遮光。行 binning 时序把 S703*-0906/-1006 写成 58 + 6 (bevel)，把 S703*-0907/-1007 写成 122 + 6 (bevel)。P1V 脉冲宽度典型值按这三档写成 2 µs、4 µs 和 8 µs。",
+          "S7030-0906 与 S7030-0907 共用外形图。窗口 16.3，感光区标 12.29，封装长度 34.0 ± 0.34 mm，引脚间距 2.54 ± 0.13 mm。高度相关尺寸写成 2.35 ± 0.15、3.75 ± 0.44、4.4 ± 0.44 和 4.8 ± 0.49，另有 22.4 ± 0.30 和 22.9 ± 0.30。S7030-0906 的 A=1.392，S7030-0907 的 A=2.928。S7030-1006 与 S7030-1007 的窗口写成 28.6，感光区标 24.58，封装长度 44.0 ± 0.44 mm，A 仍是 1.392 和 2.928。引脚表 S7030 的第 16 到 19 脚是短横线。注记 *19 写标准用法里 TG should be applied the same pulse as P2V。",
+          "手册末尾另列多通道探测头 C7040 和 C7041，分别对应 S7030 系列和 S7031 系列。特性写 Area scanning or full line-binnng operation，读出频率 250 kHz，读出噪声 20 e- rms。这两只探测头没有当作传感器加入。注意事项写 Handle these sensors with bare hands or wearing cotton gloves。外接制冷时，冷却或回温的温度变化率要小于 5 K/minute。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+      {
+        ...page("S7030-0907", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S7030-0907.html", [
+          "产品页没有写发布日期。正文把型号换成 S7030-0907，仍写 suites 和 by and external cicuit。特性仍以 Non-cooled type 开头。规格表光谱响应 200 到 1100 nm。",
+          "规格表类型仍是两行 Binning type 和 Standard type。图像尺寸 12.288 x 2.928 mm，有效像素 512 x 122 pixels。行频典型 316 行/秒，最高 767 行/秒。暗电流、读出噪声、窗口、封装和 C7040 与 S7030-0906 相同。测量条件同样在 binning 和 Dark current 之间少一个空格。手册仍是 KMPD1023E22。",
+          "手册选型表总像素 532 × 128，有效像素 512 × 122，感光区 12.288 × 2.928。外形图 A=2.928。垂直寄存器电容与 S703*-0907 一档相同，典型 1500 pF。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+      {
+        ...page("S7030-1006", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S7030-1006.html", [
+          "产品页没有写发布日期。正文仍写 suites 和 cicuit。规格表图像尺寸 24.576 x 1.392 mm，有效像素 1024 x 58 pixels。行频典型 213 行/秒，最高 698 行/秒。其余规格行与 S7030-0906 相同，驱动电路仍是 C7040。规格表光谱响应 200 到 1100 nm。",
+          "手册总像素 1044 × 64，有效像素 1024 × 58，感光区 24.576 × 1.392。外形图窗口 28.6，感光区标 24.58，封装长度 44.0 ± 0.44 mm，A=1.392。水平寄存器电容与 S703*-1006 一档相同，典型 180 pF。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+      {
+        ...page("S7030-1007", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S7030-1007.html", [
+          "产品页没有写发布日期。规格表图像尺寸 24.576 x 2.928 mm，有效像素 1024 x 122 pixels。行频典型 160 行/秒，最高 387 行/秒。暗电流典型仍是 100 e-/pixel/s，读出噪声典型仍是 8 e- rms。规格表光谱响应 200 到 1100 nm。",
+          "手册总像素 1044 × 128，有效像素 1024 × 122，感光区 24.576 × 2.928。外形图 A=2.928。垂直寄存器电容典型 3000 pF。P1V 脉冲宽度典型 8 µs。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+      {
+        ...page("S7031-0906S", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S7031-0906S.html", [
+          "产品页没有写发布日期。正文仍把这一只型号写成 a family，并仍写 suites 和 by and external cicuit。特性第一条写成 One-stage TE-cooled type。分光索引简介写 one-stage TE-cooled type。规格表光谱响应 200 到 1100 nm。",
+          "规格表图像尺寸、像素和行频与 S7030-0906 相同，典型 418 行/秒，最高 1375 行/秒。暗电流典型仍是 100 e-/pixel/s，读出噪声典型仍是 8 e- rms。冷却一行写 One-stage TE-cooled。窗口 AR-coated sapphire，封装 Ceramic。Dedicated driver circuit 写 C7041。测量条件同样少一个空格。",
+          "手册窗口注记 *3 写 Hermetic sealing。选型表冷却写 One-stage TE-cooled，探测头 C7041。引脚第 16、17 脚是热敏电阻 Th1 和 Th2，第 18、19 脚是 TE-cooler- 和 TE-cooler+。外形图标出 TE-cooler，封装长度 34.0 ± 0.34 mm，另标 42.0 和 50.0 ± 0.30，A=1.392。制冷器相关高度写成 4.89 ± 0.15、6.32 ± 0.63、6.92 ± 0.63 和 7.7 ± 0.68。",
+          "手册热电制冷器表写 Typ. vacuum condition。S7031-0906S 与 S7031-0907S 一列：内阻 2.5 Ω，最大电流 1.5 A，最大电压 3.8 V，最大吸热 3.4 W。散热侧最高温度 70 ℃。注记写为保护制冷器，供电电流应小于这个最大电流的 60%。热敏电阻与 CCD 装在同一封装，句子写成 monitored with it. A relation。公式写成 RT1 = RT2 × exp BT1/T2 (1/T1 - 1/T2)。R298=10 kΩ，B298/323=3450 K。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+      {
+        ...page("S7031-0907S", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S7031-0907S.html", [
+          "产品页没有写发布日期。特性仍写 One-stage TE-cooled type。规格表图像尺寸 12.288 x 2.928 mm，有效像素 512 x 122 pixels。行频典型 316 行/秒，最高 767 行/秒。窗口、封装和 C7041 与 S7031-0906S 相同。规格表光谱响应 200 到 1100 nm。",
+          "手册总像素 532 × 128。外形图与 S7031-0906S 共用，A=2.928。热电制冷器数值与 S7031-0906S 同一列。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+      {
+        ...page("S7031-1006S", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S7031-1006S.html", [
+          "产品页没有写发布日期。规格表图像尺寸 24.576 x 1.392 mm，有效像素 1024 x 58 pixels。行频典型 213 行/秒，最高 698 行/秒。冷却、窗口和 C7041 与 S7031-0906S 相同。规格表光谱响应 200 到 1100 nm。",
+          "手册总像素 1044 × 64。外形图窗口 28.6，感光区标 24.58，封装长度 44.0 ± 0.44 mm，另标 52.0 和 60.0 ± 0.30，A=1.392。热电制冷器另一列：内阻 1.2 Ω，最大电流 3.0 A，最大电压 3.6 V，最大吸热 5.1 W。散热侧最高温度仍写 70 ℃。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+      {
+        ...page("S7031-1007S", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S7031-1007S.html", [
+          "产品页没有写发布日期。规格表图像尺寸 24.576 x 2.928 mm，有效像素 1024 x 122 pixels。行频典型 160 行/秒，最高 387 行/秒。暗电流和读出噪声仍与 S7031-0906S 的产品页相同。规格表光谱响应 200 到 1100 nm。",
+          "手册总像素 1044 × 128，感光区 24.576 × 2.928。外形图 A=2.928。热电制冷器数值与 S7031-1006S 同一列。垂直寄存器电容典型 3000 pF。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+    ],
+  },
+  {
+    id: "s7033",
+    date: "",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S7033 与 S7034：滨松大满阱背照式 FFT-CCD",
+    summary:
+      "S7033-0907、S7033-1007、S7034-0907S 与 S7034-1007S 的产品页写背照式 FFT-CCD，类型为 Large full well type，光谱响应 200 到 1100 nm。S7033 无制冷，窗口 Quartz。S7034 为一阶热电制冷，窗口 Sapphire。四页的 Dedicated driver circuit 都是空的，也都没有写发布日期。手册标题写成 S7033/S7034 series，KMPD1029E15 页脚写 Jul. 2026，并写资料截至 July 2026，记为约 2026 年 7 月。",
+    applications: ["spectral", "scientific", "machine"],
+    technologies: ["spectral"],
+    models: [
+      {
+        ...page("S7033-0907", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S7033-0907.html", [
+          "产品页没有写发布日期。二级标题写 Back-thinned FFT-CCD。正文写成 The S7033-0907 is families of FFT-CCD image sensors，并写水平 CCD 寄存器满阱大。binning 后可当作有 long height 的线阵，句子写 suited for use in spectrophotometry。significant 被拆成 signifi cant，efficiency 被拆成 effi ciency。外部电路数字相加写成 by an external circuit。",
+          "特性写 Line, pixel binning、峰值波长量子效率大于 90 %、Wide spectral range、Wide dynamic range 和 MPP operation。规格表类型分成两行，Binning type 和 Large full well type。图像尺寸 12.288 x 2.928 mm，有效像素 512 x 122 pixels，像元 24 x 24 μm。光谱响应 200 到 1100 nm。行频典型 316 行/秒，最高 767 行/秒。暗电流典型 100 e-/pixel/s。读出噪声典型 30 e- rms。冷却 Non-cooled。窗口 Quartz，封装 Ceramic。Dedicated driver circuit 这一格是空的。测量条件写成 frame rate: full line binning, dark current: MPP mode。手册文件名 s7033-0907_etc_kmpd1029e.pdf，产品页标 623 KB。",
+          "手册标题写成 S7033/S7034 series，目录号 KMPD1029E15，页脚写 Jul. 2026 DN，并写资料截至 July 2026，记为约 2026 年 7 月。手册写 feature large full-well capacity in horizontal CCD register。像元 24 × 24 μm。面积从 S7033-0907、S7034-0907S 的 12.288 (H) × 2.928 (V) mm² 写到 S7033-1007、S7034-1007S 的 24.576 (H) × 2.928 (V) mm²。正文写封装内可装一阶或两级热电制冷器，括注 S7034/S7035 series。室温下一级可冷到 -10 °C，两级可冷到 -30 °C。句子写成 In addition since both the CCD chip and the thermoelectric cooler are hermetically sealed, no dry air is required。",
+          "手册特性写 Built-in thermoelectric cooler (S7034/S7035 series)。应用栏写 Fluorescence spectrometer, ICP、Industrial inspection requiring、Semiconductor inspection、DNA sequencer 和 Low-light-level detection。选型表 S7033-0907 总像素 532 × 128、有效像素 512 × 122，S7033-1007 总像素 1044 × 128、有效像素 1024 × 122，冷却都写 Non-cooled。S7034 两只写 One-stage TE-cooled。注记写两级热电制冷的 S7035 series 也可提供，选型表没有给出具体型号。分光索引这次没有 S7035 的产品页，没有加入。",
+          "总则表把垂直和水平时钟都写成 2 phase，封装写成 24 pin ceramic DIP。S7033 的内置制冷器一格是短横线，S7034 写 One-stage。窗口 S7033 写 Quartz glass，S7034 写 AR-coated sapphire。注记 *1 写可按要求提供临时窗口，例子是 S7033-0907N。这个型号没有加入。窗材料表另写两系列都有 window-less 选项，并列出 S7035 series 为 two-stage TE-cooled type。注记 *15 写 Resin sealing，*16 写 Hermetic sealing。没有单独的 window-less 产品页，没有加入。",
+          "绝对最大额定值工作温度 -50 到 +50 ℃，贮存温度 -50 到 +70 ℃。注记 *2 只写 Chip temperature。手册电气特性没有行频一行。信号输出频率典型 0.25 MHz、最大 1 MHz。垂直寄存器电容 S703*-0907(S) 典型 1500 pF，S703*-1007(S) 典型 3000 pF。水平寄存器电容分别是典型 260 pF 和 300 pF。转移栅电容典型 60 pF 和 80 pF。电荷转移效率最小 0.99995、典型 0.99999。直流输出电平最小 12 V、典型 15 V、最大 18 V。输出阻抗典型 2 kΩ、最大 3 kΩ。功耗典型 13 mW、最大 14 mW。输入栅电压最大写 0 V。",
+          "满阱垂直方向最小 240 ke-、典型 320 ke-，水平方向最小 2700 ke-、典型 3400 ke-，线性写成 ±1.5 %。转换效率最小 0.5 µV/e-、典型 0.6 µV/e-。MPP 暗电流 25 ℃ 典型 100、最大 1000，0 ℃ 典型 10、最大 100，单位 e-/pixel/s。读出噪声典型 30 e- rms、最大 45 e- rms。注记 *8 只写工作频率 150 kHz，没有写出相机型号。动态范围行 binning 最小 60000、典型 113300，面扫描最小 5333、典型 10700。注记 *9 写成 Full well/Readout noise。光响应非均匀性典型 ±3%、最大 ±10%。注记 *10 写在满阱输出的一半处测量，没有写出 LED 波长。缺陷表把 column defect 的首字母写成小写。白点最大 0，黑点最大 10，簇缺陷最大 3，列缺陷最大 0。",
+          "光谱响应图标题写 without window，图号仍是 KMPDB0058EB。注记 *14 写成 Spectral response with quartz glass or sapphire are decreased by the transmittance。器件结构图画 V=122，H=512, 1024。死层注记仍写长波光可能进入水平移位寄存器，需要时加遮光。行 binning 时序把斜边写成 (BEVEL)。面扫描时序写成 (Bevel)。P1V 脉冲宽度最小 6 µs、典型 8 µs。注记 *18 写 In case of the S7033-1007, S7034-1007S。面扫描的对应注记 *20 写成 In case of the 7033-1007, S7034-1007S，7033 前面没有 S。",
+          "S7033-0907 外形图窗口 16.3，有效区 12.288，高度方向标 2.928，封装长度 34.0 ± 0.34 mm。另有 22.4 ± 0.3 和 22.9 ± 0.3，以及 2.4 ± 0.15、3.8 ± 0.44、4.4 ± 0.44 和 4.8 ± 0.49。引脚表 S7033 的第 16 到 19 脚是短横线。注意事项标题写成 Precaution for use，正文仍写 Handle these sensors with bare hands or wearing cotton gloves。温度变化率写成 less than 5 K/min。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+      {
+        ...page("S7033-1007", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S7033-1007.html", [
+          "产品页没有写发布日期。正文同样写 is families，并把 significant 和 efficiency 拆开。特性没有 Built-in thermoelectric cooler。规格表光谱响应 200 到 1100 nm。",
+          "规格表图像尺寸 24.576 x 2.928 mm，有效像素 1024 x 122 pixels。行频典型 160 行/秒，最高 387 行/秒。暗电流典型 100 e-/pixel/s，读出噪声典型 30 e- rms。冷却 Non-cooled，窗口 Quartz，封装 Ceramic。Dedicated driver circuit 这一格是空的。手册仍是 KMPD1029E15。",
+          "手册总像素 1044 × 128，有效像素 1024 × 122。外形图窗口 28.6，有效区 24.576，封装长度 44.0 ± 0.34 mm。垂直寄存器电容与 S703*-1007 一档相同，典型 3000 pF。水平寄存器电容典型 300 pF。注记 *18 点名 S7033-1007。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+      {
+        ...page("S7034-0907S", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S7034-0907S.html", [
+          "产品页没有写发布日期。正文仍写 is families，但 significant 和 efficiency 没有拆开。另起一句写 One-stage thermoelectric cooler is built into the package ，句号前有空格。室温下一级制冷可到 -10 ℃，并写 hermetically sealed，不需要干燥空气。句子写成 In addition since。分光索引简介写 one-stage TE-cooled type。规格表光谱响应 200 到 1100 nm。",
+          "特性末尾写 Built-in thermoelectric cooler。规格表图像尺寸和像素与 S7033-0907 相同。行频典型 316 行/秒，最高 767 行/秒。暗电流典型 100 e-/pixel/s，读出噪声典型 30 e- rms。冷却 One-stage TE-cooled。窗口 Sapphire，封装 Ceramic。Dedicated driver circuit 这一格是空的。",
+          "手册窗口写成 AR-coated sapphire，不是产品页上的 Sapphire。选型表冷却写 One-stage TE-cooled，总像素 532 × 128。引脚第 16、17 脚是 Th1 和 Th2，第 18、19 脚是 TE-cooler- 和 TE-cooler+。外形图窗口 16.3，有效区 12.288，引脚间距写成 2.54，没有公差。封装长度 34.0 ± 0.34 mm，另标 42.0 和 50.0 ± 0.3。制冷器相关高度写成 4.8 ± 0.15、6.7 ± 0.63、7.3 ± 0.63 和 7.7 ± 0.68。",
+          "手册热电制冷器表标题只写 Typ.，没有写 vacuum condition。S7034-0907S 一列：内阻 2.5 Ω，最大电流 1.5 A，最大电压 3.8 V，最大吸热 3.4 W。散热侧最高温度 70 ℃。注记写供电电流应小于最大电流的 60%。热敏电阻句子同样写成 monitored with it. A relation。公式和 R298=10 kΩ、B298/323=3450 K 与 S7030/S7031 手册相同。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+      {
+        ...page("S7034-1007S", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S7034-1007S.html", [
+          "产品页没有写发布日期。正文回到 S7033 那种写法，significant 和 efficiency 再次拆开，也没有 S7034-0907S 那段制冷器说明。特性没有 Built-in thermoelectric cooler。分光索引简介只写 large full-well capacity type，没有写 one-stage TE-cooled type。规格表光谱响应 200 到 1100 nm。",
+          "规格表图像尺寸 24.576 x 2.928 mm，有效像素 1024 x 122 pixels。行频典型 160 行/秒，最高 387 行/秒。暗电流典型 100 e-/pixel/s，读出噪声典型 30 e- rms。冷却一行仍写 One-stage TE-cooled。窗口 Sapphire，封装 Ceramic。Dedicated driver circuit 这一格是空的。",
+          "手册总像素 1044 × 128，窗口仍写 AR-coated sapphire。外形图窗口 28.6，有效区 24.576，封装长度 44.0 ± 0.44 mm，另标 52.0 和 60.0 ± 0.3。热电制冷器另一列：内阻 1.2 Ω，最大电流 3.0 A，最大电压 3.6 V，最大吸热 5.1 W。垂直寄存器电容典型 3000 pF。注记 *20 把 S7033-1007 印成 7033-1007。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+    ],
+  },
 ];
