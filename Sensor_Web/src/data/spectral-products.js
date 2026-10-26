@@ -4164,4 +4164,137 @@ export const spectralProducts = [
       },
     ],
   },
+  {
+    id: "s10140",
+    date: "",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S10140 与 S10141：滨松低噪声背照式 FFT-CCD",
+    summary:
+      "S10140-1107-01、S10140-1108-01、S10140-1109-01、S10141-1107S-01、S10141-1108S-01 与 S10141-1109S-01 的产品页写背照式 FFT-CCD，光谱响应 200 到 1100 nm。正文把 S10140/S10141 series (-01) 写成 low noise type。S10140 无制冷，窗口 Quartz。S10141 为一阶热电制冷，窗口 AR-coated sapphire。六页都没有写发布日期，规格表也都没有 Dedicated driver circuit。手册与 S13240/S13241 共用，标题分成两行，目录号 KMPD1181E05，页脚写 Oct. 2023，并写资料截至 October 2023，记为约 2023 年 10 月。",
+    applications: ["spectral", "scientific", "machine"],
+    technologies: ["spectral"],
+    models: [
+      {
+        ...page("S10140-1107-01", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S10140-1107-01.html", [
+          "产品页没有写发布日期。页面标题写 Back-thinned type CCD area image sensor。一级标题只写 S10140-1107-01。二级标题写 Low readout noise, high resolution (pixel size: 12μm)，12 和 μm 之间没有空格。正文从 The S13240/S13241 series and S10140/S10141 series (-01) 写起。binning 后可当作垂直方向感光区很长的线阵，句子写 suited for use in spectrophotometry。宽动态范围写成 increasing the saturation charge than that of the previous product (S10140/S10141 series)。句号后直接接 The S13240，没有空格。S13240/S13241 写成 high-speed readout type，这一组写成 low noise type。These prod-ucts 用连字符拆开，并写 have an pixel size of 12 × 12 μm。面积从 24.576 (H) × 1.464 (V) mm2 写到 24.576 (H) × 6.072 (V) mm2，mm2 没有上标。",
+          "特性写 Wide dynamic range。读出噪声写成 4e-rms typ.，减号放在上标，e 前面没有空格。后面是像元 12 × 12 μm、Non-cooled type、峰值量子效率 90% or higher、Wide spectral response range、MPP operation、High UV sensitivity and stable characteristics under UV light irradiation，以及 Pin compatible with the S7030/S7031 series。",
+          "规格表类型分成两行，Binning type 和 High resolution type。图像尺寸 24.576 x 1.464 mm，有效像素 2048 x 122 pixels，像元 12 x 12 μm。光谱响应 200 to 1100 nm。行频典型 107 行/秒，最高 203 行/秒。暗电流典型 30 e-/pixel/s。读出噪声典型 4 e- rms，这一格在 e 两侧有空格。冷却 Non-cooled。窗口 Quartz，封装 Metal。规格表没有 Dedicated driver circuit 这一行。测量条件写成 Typ. Ta=25 ℃，unless otherwise noted, frame rate: full line binning, Dark current: MPP mode。手册文件名 s13240_etc_kmpd1181e.pdf，产品页标 648 KB。",
+          "手册标题分成 S13240/S13241 series 和 S10140/S10141 series (-01)。目录号 KMPD1181E05，页脚写 Oct. 2023 DN，并写资料截至 October 2023，记为约 2023 年 10 月。手册把 products 在行末拆成 prod- 和 ucts，同样写 have an pixel size。特性里这一组的读出噪声写成 4 e- rms typ.，高速那组写成 30 e- rms typ.。无制冷写成 S13240 series, S10140 series (-01)。一阶热电制冷写成 S13241 series, S10141 series (-01)。与 S7030/S7031 引脚兼容只括在 S10140/S10141 series (-01)。应用栏写 Fluorescence spectrophotometry, ICP、Industrial product inspection、Semiconductor inspection、DNA sequencer、Low-light-level detection 和 Raman spectroscopy。",
+          "选型表读出速度最大：S13240/S13241 为 10 MHz，S10140/S10141 为 0.5 MHz。总像素与有效像素，-1107 为 2068 × 128 和 2048 × 122，感光区 24.576 × 1.464；-1108 为 2068 × 256 和 2048 × 250，感光区 24.576 × 3.000；-1109 为 2068 × 512 和 2048 × 506，感光区 24.576 × 6.072。多通道探测头 S10140 写 C10150-01，S10141 写 C10151-01，S13240 和 S13241 是短横线。注记写两级热电制冷的 S10142 series (-01) 可按要求订制。这个订制系列没有加入。",
+          "结构表像元 12 × 12 µm，垂直和水平时钟都写 2-phase。输出电路 S13240/S13241 写 Two-stage MOSFET source follower，S10140/S10141 写 One-stage MOSFET source follower。封装写 24-pin ceramic DIP，不是产品页上的 Metal。窗口 S10140 写 Quartz glass，S10141 写 AR-coated sapphire。注记 *1 写可按要求提供临时窗口，例子是 S13240-1107N。这个型号没有加入。*2 写 Resin sealing，*3 写 Hermetic sealing。",
+          "绝对最大额定值工作温度 -50 到 +50 ℃，贮存温度 -50 到 +70 ℃。注记 *4 写 S13240 与 S10140 按封装温度，S13241 与 S10141 按芯片温度。输出晶体管漏极电压这一组最大 +25 V，S13240/S13241 最大 +20 V。内置制冷器最大电流 3.0 A，最大电压 3.6 V，散热侧最高温度 70 ℃。注记写即使瞬间超过绝对最大额定值也可能使产品质量下降。注记 *5 写供电电流应小于这个最大电流的 60%。",
+          "手册电气特性没有行频一行。信号输出频率这一组典型 0.25 MHz、最大 0.5 MHz。垂直寄存器电容 -1107 典型 1600 pF，-1108 典型 3200 pF，-1109 典型 6400 pF。水平寄存器电容典型 150 pF。求和栅和复位栅电容都是典型 30 pF。转移栅电容典型 70 pF。电荷转移效率最小 0.99995、典型 0.99999。直流输出电平典型 17 V。输出阻抗典型 5 kΩ。功耗典型 16 mW。负载电阻典型 22 kΩ。注记 *7 写 S10140/S10141 的条件是 VOD=22 V，RL=22 kΩ。",
+          "满阱垂直方向最小 60 ke-、典型 70 ke-，水平方向和求和都是最小 400 ke-、典型 500 ke-。转换效率最小 4 µV/e-、典型 5 µV/e-、最大 6 µV/e-。MPP 暗电流 25 ℃ 典型 30 e-/pixel/s、最大 300 e-/pixel/s，0 ℃ 典型 3、最大 30。读出噪声典型 4 e- rms、最大 18 e- rms。注记 *12 写工作频率 20 kHz，温度 -50 ºC。动态范围行 binning 最小 22222、典型 125000，面扫描最小 3333、典型 20000。注记 *13 写成 Dynamic range=Saturation charge/Readout noise。光响应非均匀性典型 ±3%、最大 ±10%。注记 *14 写用峰值发射波长 470 nm 的 LED，在饱和输出的一半处测量。白点最大 0，黑点最大 10，簇缺陷最大 3，列缺陷最大 0。",
+          "光谱响应图标题写 without window，图号 KMPDB0485EA。注记 *18 写成 Spectral response with quartz glass or AR-coated sapphire are decreased according to the spectral transmittance characteristics of window material。器件结构图画 4 blank pixels 和 6-bevel，并写 H=2048，V=122, 250, 506。死层注记写长波光可能进入水平移位寄存器，需要时加遮光。行 binning 时序把三档写成 122 + 6 (bevel)、250 + 6 (bevel) 和 506 + 6 (bevel)，型号写成 S1324*/S1014*-1107 (-01) 这一类。P1V 脉冲宽度这一组的典型值按三档写成 4 µs、8 µs 和 16 µs。",
+          "S10140 与 S13240 共用外形图 KMPDA0567EB。保证透过率的窗口写成 28.6 × 8.2 mm。重量写成 weight: 11.9 g，weight 是小写。窗口 29.6 ± 0.13，感光区标 24.58，另有 9.2 ± 0.13、22.4 ± 0.3 和 22.9 ± 0.3。封装长度 44 ± 0.44 mm，引脚间距 2.54 ± 0.13 mm。高度相关尺寸写成 2.35 ± 0.15、3.75 ± 0.44、4.4 ± 0.44 和 4.8 ± 0.49。S10140-1107-01 的 A=1.464。引脚表第 6 脚和第 16 到 19 脚是短横线。标准用法写 RL=22 kΩ，RD 为 +15 V，OD 为 +22 V。注记 *21 写 In standard operation, TG should be applied the same pulse as P2V。",
+          "手册末尾另列多通道探测头 C10150-01 和 C10151-01，标题写成 S10140/S10141 series(-01)，括号前没有空格。C10150-01 对应无制冷的 S10140 series (-01)，C10151-01 对应一阶热电制冷的 S10141 series (-01)。制冷温度写成 Tchip=-10 ± 0.05 °C。控制器 C7557-01 写通过 USB 用附带软件采集数据。连接图注记写 Shutter, etc. are not available。这三只没有当作传感器加入。注意事项写 Handle these sensors with bare hands or wearing cotton gloves。外接制冷时温度变化率要小于或等于 5 K/minute。焊接条件写 260 °C max. (once, within 5 seconds)，距引线根部至少 2 mm。",
+          "CCD/CMOS 选型指南 KMPD0002E35 写资料截至 June 2026，记为约 2026 年 6 月。高分辨率一栏把这六只的行频写成 107、80 和 40，与产品页典型值相同。注记 *2 再次写 S10142 series (-01) 可按要求订制。另写 Windowless types are also available，没有给出具体型号，没有加入。同一栏还列了 S12101，注记写 With anti-blooming function。分光索引没有 S12101，没有加入。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+      {
+        ...page("S10140-1108-01", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S10140-1108-01.html", [
+          "产品页没有写发布日期。正文和特性与 S10140-1107-01 相同，仍写 prod-ucts，读出噪声仍是 4e-rms typ.。规格表光谱响应 200 to 1100 nm。",
+          "规格表图像尺寸 24.576 x 3.000 mm，有效像素 2048 x 250 pixels。行频典型 80 行/秒，最高 138 行/秒。暗电流、读出噪声、窗口和封装与 S10140-1107-01 相同。手册仍是 KMPD1181E05。",
+          "手册总像素 2068 × 256，有效像素 2048 × 250，感光区 24.576 × 3.000。外形图 A=3.000。垂直寄存器电容典型 3200 pF。P1V 脉冲宽度典型 8 µs。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+      {
+        ...page("S10140-1109-01", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S10140-1109-01.html", [
+          "产品页没有写发布日期。正文和特性仍与 S10140-1107-01 相同。规格表光谱响应 200 to 1100 nm。",
+          "规格表图像尺寸 24.576 x 6.072 mm，有效像素 2048 x 506 pixels。行频典型 40 行/秒，最高 60 行/秒。暗电流典型 30 e-/pixel/s，读出噪声典型 4 e- rms。窗口 Quartz，封装 Metal。",
+          "手册总像素 2068 × 512，有效像素 2048 × 506，感光区 24.576 × 6.072。外形图 A=6.072。垂直寄存器电容典型 6400 pF。P1V 脉冲宽度典型 16 µs。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+      {
+        ...page("S10141-1107S-01", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S10141-1107S-01.html", [
+          "产品页没有写发布日期。正文仍写 prod-ucts 和 have an pixel size。特性把 Non-cooled type 换成 One-stage TE-cooled type。读出噪声仍写成 4e-rms typ.，并仍写 Pin compatible with the S7030/S7031 series。规格表光谱响应 200 to 1100 nm。",
+          "规格表图像尺寸、像素和行频与 S10140-1107-01 相同，典型 107 行/秒，最高 203 行/秒。暗电流典型 30 e-/pixel/s，读出噪声典型 4 e- rms。冷却 One-stage TE-cooled。窗口 AR-coated sapphire，封装 Metal。",
+          "手册窗口写 AR-coated sapphire，探测头 C10151-01。引脚第 16、17 脚是 Th1 和 Th2，第 18、19 脚是 P- 和 P+。第 6 脚仍是短横线。外形图与 S13241 共用，图号 KMPDA0358EB。保证透过率的窗口写成 27.6 × 7.2 mm。重量写成 Weight: 38.7 g。窗口 29.6 ± 0.13，封装长度 44 ± 0.44 mm，另标 (52) 和 60 ± 0.3，A=1.464。制冷器相关高度写成 4.89 ± 0.15、6.32 ± 0.63、7.3 ± 0.63 和 7.7 ± 0.68。",
+          "热电制冷器表只给一列，S13241 与 S10141 共用：内阻 1.2 Ω，最大吸热 5.1 W。这一表没有最大电流和最大电压，绝对最大额定值里才写 3.0 A 和 3.6 V。注记 *22 写这是理论吸热。要把制冷侧降到 -10 °C，散热侧必须在 30 °C 或以下。散热器热阻写成 no more than 1 °C /W，斜线前有空格。热敏电阻句子写成 is express by the following equation。公式写成 RT1 = RT2 × exp BT1/T2 (1/T1 - 1/T2)。R298=10 kΩ，B298/323=3450 K。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+      {
+        ...page("S10141-1108S-01", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S10141-1108S-01.html", [
+          "产品页没有写发布日期。特性仍写 One-stage TE-cooled type，读出噪声仍是 4e-rms typ.。规格表光谱响应 200 to 1100 nm。",
+          "规格表图像尺寸 24.576 x 3.000 mm，有效像素 2048 x 250 pixels。行频典型 80 行/秒，最高 138 行/秒。窗口 AR-coated sapphire，封装 Metal。手册仍是 KMPD1181E05。",
+          "手册总像素 2068 × 256。外形图 A=3.000。垂直寄存器电容典型 3200 pF。P1V 脉冲宽度典型 8 µs。热电制冷器数值与 S10141-1107S-01 同一列。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+      {
+        ...page("S10141-1109S-01", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S10141-1109S-01.html", [
+          "产品页没有写发布日期。规格表图像尺寸 24.576 x 6.072 mm，有效像素 2048 x 506 pixels。行频典型 40 行/秒，最高 60 行/秒。暗电流典型 30 e-/pixel/s，读出噪声典型 4 e- rms。冷却 One-stage TE-cooled，窗口 AR-coated sapphire。规格表光谱响应 200 to 1100 nm。",
+          "手册总像素 2068 × 512，感光区 24.576 × 6.072。外形图 A=6.072。垂直寄存器电容典型 6400 pF。P1V 脉冲宽度典型 16 µs。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+    ],
+  },
+  {
+    id: "s13240",
+    date: "",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S13240 与 S13241：滨松高速读出背照式 FFT-CCD",
+    summary:
+      "S13240-1107、S13240-1108、S13240-1109、S13241-1107S、S13241-1108S 与 S13241-1109S 的产品页写背照式 FFT-CCD，光谱响应 200 到 1100 nm。正文把 S13240/S13241 写成 high-speed readout type。S13240 无制冷，窗口 Quartz。S13241 为一阶热电制冷，窗口 AR-coated sapphire。六页都没有写发布日期，规格表也都没有 Dedicated driver circuit。手册与 S10140/S10141 共用，KMPD1181E05，页脚写 Oct. 2023，并写资料截至 October 2023，记为约 2023 年 10 月。",
+    applications: ["spectral", "scientific", "machine"],
+    technologies: ["spectral"],
+    models: [
+      {
+        ...page("S13240-1107", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S13240-1107.html", [
+          "产品页没有写发布日期。页面标题写 Back-thinned type CCD area image sensor。二级标题仍写 Low readout noise, high resolution (pixel size: 12μm)。正文与 S10140 相同，仍把这一组写成 high-speed readout type，并把 products 拆成 prod-ucts。规格表光谱响应 200 to 1100 nm。",
+          "特性读出噪声写成 30 e-rms typ.，e 前面有空格，减号放在上标。特性没有 Pin compatible with the S7030/S7031 series。冷却一条写 Non-cooled type。规格表类型仍是两行 Binning type 和 High resolution type。",
+          "规格表图像尺寸 24.576 x 1.464 mm，有效像素 2048 x 122 pixels，像元 12 x 12 μm。行频典型 921 行/秒，最高 2501 行/秒。暗电流典型 30 e-/pixel/s。读出噪声典型 30 e- rms。冷却 Non-cooled。窗口 Quartz，封装 Metal。规格表没有 Dedicated driver circuit 这一行。测量条件与 S10140 相同。手册文件名仍是 s13240_etc_kmpd1181e.pdf，产品页标 648 KB。",
+          "手册读出噪声典型 30 e- rms、最大 45 e- rms。注记 *12 写工作频率 2.5 MHz，温度 0 ºC。转换效率最小 4.5 µV/e-、典型 5.5 µV/e-、最大 6.5 µV/e-。动态范围行 binning 最小 8888、典型 16666，面扫描最小 1333、典型 2333。信号输出频率典型 2.5 MHz、最大 10 MHz。直流输出电平典型 11 V。输出阻抗典型 0.2 kΩ。输出放大器回流电流典型 0.4 mA。功耗典型 100 mW。负载电阻典型 2.2 kΩ。注记 *7 的条件是 VOD=16 V，RL=2.2 kΩ。选型表探测头是短横线，读出速度最大 10 MHz。",
+          "输出电路写 Two-stage MOSFET source follower。工作条件里输出放大器回流电压典型 4 V、最大 5 V。引脚第 6 脚是 Vret，标准用法写 +4 V。第 16 到 19 脚是短横线。标准用法写 RL=2.2 kΩ，RD 和 OD 都是 +16 V。注记 *20 写 In standard operation, TG should be applied the same pulse as P2V。P1V 脉冲宽度这一组的典型值按三档写成 1 µs、2 µs 和 4 µs。外形图与 S10140 共用，A=1.464，重量仍写 weight: 11.9 g。",
+          "CCD/CMOS 选型指南 KMPD0002E35 的高速读出一栏把 S13240-1107、S13240-1108 和 S13240-1109 的行频写成 921、539 和 203，与产品页典型值相同，并写 Windowless types are also available。没有具体型号，没有加入。临时窗口的例子 S13240-1107N 也没有加入。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+      {
+        ...page("S13240-1108", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S13240-1108.html", [
+          "产品页没有写发布日期。正文和特性与 S13240-1107 相同，读出噪声仍写成 30 e-rms typ.。规格表光谱响应 200 to 1100 nm。",
+          "规格表图像尺寸 24.576 x 3.000 mm，有效像素 2048 x 250 pixels。行频典型 539 行/秒，最高 1204 行/秒。暗电流典型 30 e-/pixel/s，读出噪声典型 30 e- rms。窗口 Quartz，封装 Metal。",
+          "手册总像素 2068 × 256，有效像素 2048 × 250。外形图 A=3.000。垂直寄存器电容典型 3200 pF。P1V 脉冲宽度典型 2 µs。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+      {
+        ...page("S13240-1109", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S13240-1109.html", [
+          "产品页没有写发布日期。规格表图像尺寸 24.576 x 6.072 mm，有效像素 2048 x 506 pixels。行频典型 203 行/秒，最高 304 行/秒。暗电流典型 30 e-/pixel/s，读出噪声典型 30 e- rms。冷却 Non-cooled，窗口 Quartz。规格表光谱响应 200 to 1100 nm。",
+          "手册总像素 2068 × 512，感光区 24.576 × 6.072。外形图 A=6.072。垂直寄存器电容典型 6400 pF。P1V 脉冲宽度典型 4 µs。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+      {
+        ...page("S13241-1107S", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S13241-1107S.html", [
+          "产品页没有写发布日期。特性把冷却写成 One-stage TE-cooled type。读出噪声仍写成 30 e-rms typ.，没有 Pin compatible 那一条。规格表光谱响应 200 to 1100 nm。",
+          "规格表图像尺寸和行频与 S13240-1107 相同，典型 921 行/秒，最高 2501 行/秒。暗电流典型 30 e-/pixel/s，读出噪声典型 30 e- rms。冷却 One-stage TE-cooled。窗口 AR-coated sapphire，封装 Metal。",
+          "手册窗口写 AR-coated sapphire。选型表冷却写 One-stage TE-cooled，探测头仍是短横线。引脚第 6 脚是 Vret，第 16、17 脚是 Th1 和 Th2，第 18、19 脚是 P- 和 P+。外形图与 S10141 共用，A=1.464，重量写成 Weight: 38.7 g。热电制冷器与 S10141 同一列：内阻 1.2 Ω，最大吸热 5.1 W。热敏电阻句子同样写成 is express by the following equation。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+      {
+        ...page("S13241-1108S", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S13241-1108S.html", [
+          "产品页没有写发布日期。特性仍写 One-stage TE-cooled type，读出噪声仍是 30 e-rms typ.。规格表光谱响应 200 to 1100 nm。",
+          "规格表图像尺寸 24.576 x 3.000 mm，有效像素 2048 x 250 pixels。行频典型 539 行/秒，最高 1204 行/秒。窗口 AR-coated sapphire，封装 Metal。手册仍是 KMPD1181E05。",
+          "手册总像素 2068 × 256。外形图 A=3.000。垂直寄存器电容典型 3200 pF。P1V 脉冲宽度典型 2 µs。热电制冷器数值与 S13241-1107S 同一列。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+      {
+        ...page("S13241-1109S", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S13241-1109S.html", [
+          "产品页没有写发布日期。规格表图像尺寸 24.576 x 6.072 mm，有效像素 2048 x 506 pixels。行频典型 203 行/秒，最高 304 行/秒。暗电流典型 30 e-/pixel/s，读出噪声典型 30 e- rms。冷却 One-stage TE-cooled，窗口 AR-coated sapphire。规格表光谱响应 200 to 1100 nm。",
+          "手册总像素 2068 × 512，感光区 24.576 × 6.072。外形图 A=6.072。垂直寄存器电容典型 6400 pF。P1V 脉冲宽度典型 4 µs。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+    ],
+  },
 ];
