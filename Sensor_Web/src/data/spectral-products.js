@@ -4413,4 +4413,59 @@ export const spectralProducts = [
       },
     ],
   },
+  {
+    id: "s11155",
+    date: "",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S11155-2048-02：滨松带电子快门的背照式 CCD 线阵",
+    summary:
+      "S11155-2048-02 的产品页写背照式 CCD 线阵，内置电子快门，用于光谱仪。光谱响应 200 到 1100 nm。像元 14×500 μm，有效像素 2048×1。产品页没有写发布日期。手册与 S11156-2048-02 共用，目录号 KMPD1155E06，页脚写 Apr. 2019 DN，并写资料截至 April 2019，记为约 2019 年 4 月。",
+    applications: ["spectral", "scientific"],
+    technologies: ["spectral"],
+    models: [
+      {
+        ...page("S11155-2048-02", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S11155-2048-02.html", [
+          "产品页没有写发布日期。一级标题只写 S11155-2048-02。二级标题写 Back-thinned CCD image sensors with electronic shutter function。页面标题写成 Back-thinned type CCD linear image sensor。正文写 The S11155-2048-02 is back-thinned CCD linear image sensors，is 后面用了复数 sensors。电阻栅结构写成 allows high-speed transfer，没有 a。像元一句用 The pixel has。图像拖影写成 reduced by nearly a magnitude of 10，比较对象是 previous product (S11155-2048-01)，product 是单数。覆盖水平移位寄存器的死层一句也写 compared to previous product。",
+          "分光索引的简介写成 is a back-thinned CCD linear image sensor，像元一句用 Each pixel has，并写 allows high-speed transfer。索引简介停在 low image lag，没有图像拖影降到十分之一量级和死层这两句。",
+          "特性写内置电子快门、最短积分时间 2 μs、紫外区高灵敏度、读出速度 10 MHz max.、图像拖影 0.1% typ.。光谱响应写在紫外这一条的括号里，200 to 1100 nm。规格表类型写 Built-in electronic shutter type。图像尺寸 28.672 x 0.500 mm，乘号是 x。有效像素 2048 x 1 pixels，像元 14 x 500 μm。行频典型 2327 行/秒，最高 4633 行/秒。暗电流典型 10000 e-/pixel/s。读出噪声典型 30 e- rms。冷却 Non-cooled。窗口 Quartz。封装 Ceramic。专用驱动电路 C11165-02。测量条件写成 Typ. Ta=25 ℃，unless otherwise noted, Dark current: MPP mode。",
+          "手册文件名 s11155-2048-02_kmpd1155e.pdf，产品页标 718 KB。产品页另链技术说明 resistive_gate_ccd_kmpd9005e.pdf，标 832 KB。下面的规格取自产品页和手册。手册标题写 CCD linear image sensors，并列 S11155-2048-02 和 S11156-2048-02。目录号 KMPD1155E06，页脚写 Apr. 2019 DN，并写资料截至 April 2019，记为约 2019 年 4 月。手册正文用 are，写成 allows a high-speed transfer，像元用 Each pixel has，比较对象写成 previous products (S11155-2048-01, S11156-2048-01)。这两只 -01 没有出现在分光索引的型号行里，没有加入。手册特性里的最短积分时间写成 2 μs。应用栏写 Spectrometers 和 Image readout。",
+          "结构表像元 14 × 500 µm，总像素 2128 × 1，有效像素 2048 × 1，感光区 28.672 × 0.500 mm。水平时钟 2-phase。输出电路 Two-stage MOSFET source follower。封装写 24-pin ceramic DIP，不是产品页上的 Ceramic。窗口写 Quartz glass。注记 *2 写 Resin sealing。冷却 Non-cooled。注记 *1 写可按要求提供临时窗口，例子是 S11155-2048N-02。这个例子没有加入，注记没有另给 S11156 的临时窗口型号。图题把 potential 写成 potentioal，另一则写成 pctentioal。",
+          "手册解释普通 CCD 一个像元里有多根电极，靠不同时钟脉冲转移信号电荷。电阻栅在感光区做一根高阻电极，靠电极两端不同电压形成的电位斜坡转移电荷。相对靠行 binning 当线阵用的面阵 CCD，感光区带电阻栅的一维 CCD 转移更快，像元高度很大时仍能低拖影读出。",
+          "绝对最大额定值工作温度 -50 到 +60 ℃，贮存温度 -50 到 +70 ℃。注记 *3 写封装温度。注记 *4 写高速工作时传感器可能发热，建议按需要散热，并指向技术资料 Resistive gate type CCD linear image sensors with electronic shutter。焊接条件 260 ℃、5 秒以内、距引线根部至少 2 mm。注记 *5 写 Use a soldering iron。注记写即使瞬间超过绝对最大额定值也可能使产品质量下降。",
+          "手册电气特性没有按产品页的行/秒分行。行频符号 LR，典型 2 kHz、最大 4 kHz。同一符号 LR 在后一张表里又用于线性误差。信号输出频率典型 5 MHz、最大 10 MHz。电阻栅电容这一只典型 1000 pF。片上放大器功耗典型 75 mW。电阻栅功耗最小 50 mW、典型 100 mW、最大 160 mW。电阻栅电阻最小 0.4 kΩ、典型 0.7 kΩ、最大 1.4 kΩ。直流输出电平典型 10 V。输出阻抗典型 300 Ω。",
+          "满阱最小 150 ke-、典型 200 ke-。转换效率最小 9 µV/e-、典型 10 µV/e-、最大 11 µV/e-。暗电流非 MPP 典型 100 ke-/pixel/s、最大 300 ke-/pixel/s，MPP 典型 10 ke-/pixel/s、最大 40 ke-/pixel/s。产品页的 10000 e-/pixel/s 与手册 MPP 典型值同一数量。注记 *16 写温度每降 5 到 7 ℃，暗电流减半。读出噪声典型 30 e- rms、最大 45 e- rms。动态范围典型 6670。注记 *17 写成 Dynamic range (Drange) = Full well capacity / Readout noise。峰值波长典型 600 nm。光响应非均匀性典型 ±3%、最大 ±10%。图像拖影全部像元平均典型 0.1%、最大 1%，全部像元里的最大值典型 1%、最大 3%。注记 *21 写测量时这一只的积分时间是 5 μs。缺陷像元最大 0。",
+          "光谱响应图标题写 without window。图内窗口透过率标注写着 S10420-1006/-1106 和 S11071/S10420-01 series。注记 *22 写成 spectral transmittance characteristic，characteristic 是单数。器件结构注记写 transferred.Then，句号后没有空格，并写 provide light shield。信号电荷以感光区中线为界分别向上或向下转移，再经水平寄存器合并后由放大器读出。",
+          "时序图页眉先写 Timing chart，下一行又写 Timing chart。非 MPP 图上写 REGH=+1 V，REGL=-7.0 V。水平时钟数到 2128。输出标注写 D3..D70, S1...S2048, D71..D78。积分时间这一只最小 2 µs、典型 5 µs。产品页写的最短积分时间 2 μs 对的是这个最小值。MPP 图上注记 *24 写 Tpwar 的最小值等于正常读出周期。注记 *23 写对称时钟应在最大幅度的 50% 处重叠。",
+          "外形图感光区长度 28.672，A=0.500。重量写成 Weight: 3.8 g typ.。玻璃厚度注记写 refractive index≈1.5。引脚镀金，材料 Alloy 42。Index mark 标了两处。封装长度 38.10 ± 0.4 mm，另有 27.94 ± 0.3，引脚间距 2.54 ± 0.13 mm。引脚表第 16、19、22 脚是短横线。第 20、21 脚都是 STG，注记 *26 写这两脚在封装内短接。第 7 脚 REGL 的标准用法写 -7 V (Non-MPP operation)，第 8 脚 REGH 写 +1 V (Non-MPP operation)。第 1 脚 OS 写 RL=2.2 kΩ，第 5 脚 Vret 写 +1 V。电路例子标题写 using S11155/S11156-2048-02 and analog front-end IC，图中写 AD9826KRS，并把第 22 脚标成 NC。",
+          "手册末尾的驱动电路 C11165-02 写 sold separately，对象是 S11155-2048-02 和 S11156-2048-02。句子写 can be used in spectrometer，spectrometer 前面没有 a。特性写内置 16-bit A/D、接口 USB 2.0、由 DC+5 V 工作。这只驱动电路没有当作传感器加入。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+    ],
+  },
+  {
+    id: "s11156",
+    date: "",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S11156-2048-02：滨松带电子快门的背照式 CCD 线阵",
+    summary:
+      "S11156-2048-02 的产品页写背照式 CCD 线阵，内置电子快门，用于光谱仪。光谱响应 200 到 1100 nm。像元 14×1000 μm，有效像素 2048×1。产品页没有写发布日期。手册与 S11155-2048-02 共用，KMPD1155E06，页脚写 Apr. 2019，并写资料截至 April 2019，记为约 2019 年 4 月。",
+    applications: ["spectral", "scientific"],
+    technologies: ["spectral"],
+    models: [
+      {
+        ...page("S11156-2048-02", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S11156-2048-02.html", [
+          "产品页没有写发布日期。一级标题只写 S11156-2048-02。二级标题与 S11155-2048-02 相同，写 Back-thinned CCD image sensors with electronic shutter function。正文仍写 is back-thinned CCD linear image sensors。图像拖影的比较对象换成 previous product (S11156-2048-01)。死层一句仍写 previous product，是单数。特性里最短积分时间写成 2 us，没有 μ。读出速度仍是 10 MHz max.，图像拖影仍是 0.1% typ.。光谱响应 200 to 1100 nm。",
+          "分光索引的简介写成 is a back-thinned CCD linear image sensor，并写 Each pixel has 和 allows high-speed transfer。索引简介停在 low image lag，没有图像拖影相对前代降低的那句，也没有死层那句。",
+          "规格表类型仍写 Built-in electronic shutter type。图像尺寸 28.672 x 1.000 mm，有效像素 2048 x 1 pixels，像元 14 x 1000 μm。行频与 S11155-2048-02 的产品页相同，典型 2327 行/秒，最高 4633 行/秒。暗电流典型 15000 e-/pixel/s。读出噪声典型 30 e- rms。冷却 Non-cooled。窗口 Quartz。封装 Ceramic。专用驱动电路 C11165-02。测量条件同样写 Dark current: MPP mode。手册链接的文件名仍是 s11155-2048-02_kmpd1155e.pdf，产品页标 718 KB。技术说明仍是 resistive_gate_ccd_kmpd9005e.pdf，标 832 KB。",
+          "手册与 S11155-2048-02 共用，目录号 KMPD1155E06，页脚写 Apr. 2019 DN，资料截至 April 2019，记为约 2019 年 4 月。手册特性里的最短积分时间写成 2 μs，和这一页产品页上的 2 us 不同。结构表像元 14 × 1000 µm，感光区 28.672 × 1.000 mm。总像素和有效像素仍是 2128 × 1 和 2048 × 1。窗口写 Quartz glass，注记 *2 写 Resin sealing。封装写 24-pin ceramic DIP。注记 *1 的临时窗口例子只写 S11155-2048N-02，没有给这一只的临时窗口型号，没有加入。前代 S11156-2048-01 也没有加入。",
+          "手册行频仍是两只共用的一行，符号 LR，典型 2 kHz、最大 4 kHz，没有写成产品页上的 2327 行/秒和 4633 行/秒。电阻栅电容这一只典型 2000 pF。片上放大器功耗典型仍是 75 mW。电阻栅功耗最小 30 mW、典型 60 mW、最大 90 mW。电阻栅电阻最小 0.7 kΩ、典型 1.1 kΩ、最大 2.2 kΩ。满阱、转换效率和读出噪声与 S11155-2048-02 同一列，满阱典型 200 ke-，转换效率典型 10 µV/e-，读出噪声典型 30 e- rms、最大 45 e- rms。",
+          "暗电流非 MPP 典型 200 ke-/pixel/s、最大 600 ke-/pixel/s，MPP 典型 15 ke-/pixel/s、最大 60 ke-/pixel/s。产品页的 15000 e-/pixel/s 与手册 MPP 典型值同一数量。动态范围典型仍是 6670。峰值波长典型 600 nm。图像拖影数字与 S11155-2048-02 相同。注记 *21 写测量时这一只的积分时间是 20 μs。积分时间最小 2 µs、典型 20 µs。MPP 转移时间最小 2 µs、典型 20 µs。外形图 A=1.000，重量仍写 3.8 g typ.。驱动电路 C11165-02 同时写了这一只，句子仍是 can be used in spectrometer，没有当作传感器加入。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+    ],
+  },
 ];
