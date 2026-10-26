@@ -4833,4 +4833,63 @@ export const spectralProducts = [
       },
     ],
   },
+  {
+    id: "s15254",
+    date: "",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S15254-2048：滨松带电子快门的背照式 CCD 线阵",
+    summary:
+      "S15254-2048 的产品页写背照式 CCD 线阵，内置电子快门，用于光谱仪。规格表光谱响应 200 到 1100 nm。像元 14×200 μm，有效像素 2048×1。产品页没有写发布日期。冷却是 Non-cooled，窗口是 Quartz glass，封装是 Ceramic。手册与 S15257-2048 共用，目录号 KMPD1247E01，页脚写 Dec. 2024 DN，并写资料截至 December 2024，记为约 2024 年 12 月。",
+    applications: ["spectral", "scientific"],
+    technologies: ["spectral"],
+    models: [
+      {
+        ...page("S15254-2048", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S15254-2048.html", [
+          "产品页没有写发布日期。页面标题写 Back-thinned type CCD linear image sensor。导语写 CCD linear image sensor。一级标题只写 S15254-2048。二级标题写 Back-thinned CCD image sensors with electronic shutter function。正文写 The S15254-2048 is a back-thinned CCD linear image sensor。电阻栅结构写成 allows a high-speed transfer。像元一句用 Each pixel has。末句写 suitable for short time period trigger control。",
+          "特性以连字符开头，连字符和字之间没有空格。第一条写 Built-in electronic shutter。紫外一条的下一行以不换行空格起头，括号里的光谱响应写成 200 to 1000 nm。规格表写成 200 to 1100 nm。读出速度 10 MHz max.。图像拖影 0.1% typ.。像元内电荷复位时间写成 1 µs min.。最后一条写 Light-shielded CCD horizontal shift registers。",
+          "分光索引的简介只写 Back-thinned CCD image sensors with electronic shutter function，没有产品页上 short time period trigger control 那一句。索引类型写成 Back-thinned type CCD，以及 With electronic shutter function。索引有效像素 2048 x 1 pixels，像元 14 x 200 μm，图像尺寸 28.672 x 0.200 mm，乘号都是 x。光谱响应 200 to 1100 nm。索引行频只给出最高 4000 lines/s。索引冷却写成 Non-cooled，封装写成 Ceramic。索引没有窗口一格。缩略图文件名是 k_s15257-2048_pp_xx.jpg，和 S15257-2048 相同，thumbAlt 是空的。索引 newState 不是这一只。整份索引里标成 new 的仍只有 S16929-01。",
+          "规格表类型写 With electronic shutter function。图像尺寸 28.672 x 0.200 mm，有效像素 2048 x 1 pixels，像元 14 x 200 μm。光谱响应 200 to 1100 nm。行频典型 2000 行/秒，最高 4000 行/秒。暗电流典型 8000 e-/pixel/s。读出噪声典型 30 e- rms。冷却 Non-cooled。窗口 Quartz glass。封装 Ceramic。规格表没有专用驱动电路一行。测量条件写成 Typ. Ta=25 ℃，fc=5 MHz，unless otherwise noted，operating conditions: Typ.，Dark current: MPP mode。摄氏度符号是 ℃。",
+          "手册文件名 s15254-2048_etc_kmpd1247e.pdf，产品页标 499 KB。产品页另链技术说明 resistive_gate_ccd_kmpd9005e.pdf，标 832 KB。相关文档还链着免责声明 disclaimer_en.pdf，标 37 KB，图像传感器注意事项 kxx-a12018-eng.pdf，标 576 KB，选型指南 image_sensor_kmpd0002e.pdf，标 4.7 MB，以及技术说明 ccd_kmpd9002e.pdf，标 3.8 MB。下面的规格取自产品页和手册 KMPD1247E01，没有拿 ccd_kmpd9002e.pdf 里的数字。手册标题写 CCD linear image sensors，并列 S15254-2048 和 S15257-2048。目录号 KMPD1247E01，页脚写 Dec. 2024 DN，并写资料截至 December 2024，记为约 2024 年 12 月。手册正文用 are。特性里的光谱响应写成 200 to 1100 nm，和产品页特性括号里的 200 to 1000 nm 不同。电荷复位时间写成 1 µs min. (S15254-2048)，没有写到 S15257-2048。应用栏写 Spectrometers、Image readout 和 Optical emission spectrophotometry。",
+          "结构表像元 14 × 200 µm，总像素 2102 × 1，有效像素 2048 × 1，感光区 28.672 × 0.200 mm。水平时钟 2-phase。输出电路 Two-stage MOSFET source follower。封装写 24-pin ceramic DIP，不是产品页上的 Ceramic。窗口写 Quartz glass (without AR coating)。注记 *2 写 Resin sealing。冷却 Non-cooled。注记 *1 的临时窗口例子写 S15254-2048N 和 S15257-2048N，写 available upon request，没有加入。",
+          "电阻栅说明写普通 CCD 一个像元里有多根电极，靠不同时钟脉冲转移信号电荷。电阻栅在感光区做一根高阻电极，靠电极两端不同电压形成的电位斜坡转移电荷。相对靠行 binning 当线阵用的面阵 CCD，感光区带电阻栅的一维 CCD 转移更快，像元高度很大时仍能低拖影读出。两张示意图的标题把 potential 写成 potentioal 和 pctentioal。图号是 KMPDC0320EA 和 KMPDC0321EB。",
+          "绝对最大额定值工作温度 -50 到 +60 ℃，贮存温度 -50 到 +70 ℃。贮存温度这一行末尾粘着图号 KMPDC0321EB。输出晶体管漏极电压那一行中间粘着图号 KMPDC0320EA，最大仍是 +25 V。复位漏极、输出放大器回流电压、全复位漏极和水平输入源最大都是 +18 V。各栅极电压最小 -12 V、最大 +15 V。注记 *3 写 No dew condensation，并写高湿环境下产品和周围有温差时表面可能结露。注记 *4 写封装温度。注记 *5 写高速工作时传感器可能发热，建议按需要散热，并指向技术资料 Resistive gate type CCD linear image sensors with electronic shutter。注记写即使瞬间超过绝对最大额定值也可能使产品质量下降。",
+          "工作条件标题写 Ta=25 °C。输出晶体管漏极电压最小 12 V、典型 15 V、最大 18 V。复位漏极和全复位漏极都是最小 13 V、典型 14 V、最大 15 V。全复位栅高电平最小 7 V、典型 8 V、最大 9 V，低电平最小 0.5 V、典型 1 V、最大 2 V。注记 *6 写 All reset on，*7 写 All reset off。输出栅和存储栅都是最小 2.5 V、典型 3.5 V、最大 4.5 V。衬底电压典型 0 V。电阻栅高电压的高电平最小 0.5 V、典型 1 V、最大 1.5 V，低电平最小 -10.5 V、典型 -9.5 V、最大 -8.5 V。电阻栅低电压的高电平典型写成 VREGHH - 8.0，减号两边有空格。输出放大器回流电压典型 1 V、最大 2 V。注记 *8 的 Output 被拆开，O 单独一行，句子写成 the direction of flow out of the sensor。水平输入源接到 VRD。水平输入栅典型 -9.5 V。水平移位寄存器和求和栅的高电平最小 5 V、典型 6 V、最大 8 V，低电平最小 -6 V、典型 -5 V、最大 -4 V。复位栅高电平最小 7 V、典型 8 V、最大 9 V。转移栅高电平最小 9.5 V、典型 10.5 V、最大 11.5 V，低电平最小 -6 V、典型 -5 V、最大 -4 V。外接负载电阻最小 2.0 kΩ、典型 2.2 kΩ、最大 2.4 kΩ。",
+          "电气特性条件写成 Ta=25 °C，fc=5 MHz。手册电气表的行频符号 LR，典型 2 kHz、最大 4 kHz，没有写成产品页上的 2000 行/秒和 4000 行/秒。同一符号 LR 在后一张表里又用于线性误差。信号输出频率典型 5 MHz、最大 10 MHz。水平寄存器电容典型 200 pF。全复位栅电容典型 100 pF。电阻栅电容这一只典型 500 pF。求和栅和复位栅电容都是典型 10 pF。转移栅电容典型 100 pF。电荷转移效率最小 0.99995、典型 0.99999。直流输出电平最小 9 V、典型 10 V、最大 11 V。输出阻抗典型 300 Ω。输出放大器回流电流典型 0.4 mA。片上放大器功耗典型 75 mW。电阻栅功耗最小 3.2 mW、典型 12.8 mW、最大 128 mW。电阻栅电阻最小 0.5 kΩ、典型 5 kΩ、最大 20 kΩ。注记 *9 写按 CCD 移位寄存器的每个像元、在满阱一半处测量。注记 *10 写 Absolute value，并写电流流出传感器。注记 *11 写片上放大器加上负载电阻。注记 *12 写 REG 上的功耗。注记 *13 写 REGH 和 REGL 之间的电阻。",
+          "满阱最小 150 ke-、典型 200 ke-。线性误差典型 ±3%、最大 ±10%。转换效率最小 9 µV/e-、典型 10 µV/e-、最大 11 µV/e-。暗电流非 MPP 典型 40 ke-/pixel/s、最大 120 ke-/pixel/s，MPP 典型 8 ke-/pixel/s、最大 32 ke-/pixel/s。产品页的 8000 e-/pixel/s 与手册 MPP 典型值同一数量。暗输出非均匀性非 MPP 最大 300%，MPP 最大是短横线。读出噪声典型 30 e- rms、最大 45 e- rms。动态范围典型 6670。缺陷像元最大 0。光谱响应 200 to 1100 nm。峰值波长典型 600 nm。光响应非均匀性典型 ±3%、最大 ±10%。图像拖影全部像元平均典型 0.1%、最大 1%，全部像元里的最大值典型 1%、最大 3%。用 ARG 的电荷复位时间这一只最小 1 µs。注记 *14 写工作电压取典型值。注记 *15 写信号从 1 ke- 到 150 ke-，并写线性误差在满阱一半处定义为零。注记 *16 写温度每降 5 到 7 °C，暗电流减半。注记 *17 写成 Dynamic range (Drange) = Full well capacity / Readout noise。注记 *18 写超过 DSNU 或 PRNU 最大值的像元。注记 *21 写测量时积分时间是 5 μs for the S15254-2048 和 100 μs for the S15257-2048。注记 *22 写复位后全部像元平均的像元内电荷拖影降到 0.1% 以下所需的时间。",
+          "光谱响应图标题写 without window，左右两张图号是 KMPDB0316EA 和 KMPDB0440EA，下一页又把这两个图号各印一次，第二个图号停在 KMPDB0440。注记 *23 写成 spectral transmittance characteristic，characteristic 是单数。窗口透过率图号 KMPDB0303EB，器件结构图里又把这个图号印了一次。器件结构图号 KMPDC0960EA，同一页印了两次。图上写 Light shielding、Thinning、Resistive gate、Storage area，以及 D1D2、S1 到 S2048、D45 到 D54。注记写从入射光方向看，水平移位寄存器盖着厚硅死层，长波光可能被它探测到，需要时加遮光，并写 covering the horizontal shift register was reduced compared to previous products。previous products 没有给出型号。信号电荷一句写成 transferred.Then，句号后没有空格。图号 KMPDC0964EA 插在 upward 和 or downward 之间。信号电荷以感光区中线为界分别向上或向下转移，再经水平寄存器合并后由放大器读出。",
+          "时序图页眉先写 Timing chart，下一行又写 Timing chart。非 MPP 图上写 REGH=+1 V，REGL=-7.0 V。水平时钟这一只写到 3..2101、2102、2103，再到 2104... N。输出标注写 D3..D44, S1...S2048, D45..D54。图上还有 D1、D2，以及 Normal readout period 和 Dummy readout period。图号 KMPDC0961EA，同一页印了两次。星号写 dummy readout 期间要给指定端子加时钟，总时钟数 N 按积分时间设定。积分时间这一只最小 5 µs、典型 20 µs。MPP 图上同样先写 REGH=+1 V，REGL=-7.0 V，另一段写成 REGH, REGL=-9.5 V。图号 KMPDC0962EA，也印了两次。注记 *25 写 Tpwar 的最小值等于正常读出周期。注记 *24 和 *26 都写对称时钟应在最大幅度的 50% 处重叠。MPP 转移时间这一只最小 5 µs、典型 20 µs。全复位栅脉冲宽度非 MPP 最小 1 µs。转移栅脉冲宽度最小 2 µs。水平时钟脉冲宽度最小 50 ns、典型 100 ns，占空比最小 40%、典型 50%、最大 60%。复位栅脉冲宽度最小 5 ns、典型 15 ns。TG 与 P1H 的重叠时间最小 1 µs、典型 2 µs。",
+          "外形图标题写了两遍 Dimensional outline (unit: mm)，图号 KMPDA0643EA，也印了两次。材料写 Gold-plated, Alloy 42。感光区长度标着 28.672。型号表的 A 一栏这一只写成 0.2，S15257-2048 写成 2.5。玻璃厚度写成 refractive index≈1.5。重量写成 Weight: 3.8 g。图上还有 5.015 ± 0.3、3.3 ± 0.35、10.41 ± 0.25、10.03 ± 0.3、0.6 ± 0.05、19.05 ± 0.4、27.94 ± 0.3、38.10 ± 0.4、1.47 ± 0.18、1.83 ± 0.17、0.46 ± 0.05、2.54 ± 0.13 和 1.27 ± 0.2。0.25 的公差写成下一行的 - 0.03 和 +0.05。",
+          "引脚表共 24 脚。第 1 脚 OS 写 RL=2.2 kΩ，第 2 脚 OD 为 +15 V，第 3 脚 OG 为 +3.5 V，第 4 脚 SG 写 Same pulse as P2H，第 5 脚 Vret 为 +1 V，第 6 脚和第 18 脚 RD 为 +14 V。第 7 脚 REGL 写 -7 V (Non-MPP operation)，第 8 脚 REGH 写 +1 V (Non-MPP operation)。第 16、19、22 脚是短横线。第 20 脚和第 21 脚都是 STG，都写 +3.5 V。注记 *27 写封装内短接。第 23 脚 TG 为 +10.5 V/-5 V，第 24 脚 RG 为 +8 V/-5 V。输出波形例子写 fc=5 MHz，RL=2.2 kΩ，VOD=+15 V。高速处理电路写 using S15254/S15257-2048，并写模拟前端型号 AD9826KRS，两端都标 To FPGA。电路图上的负载写成 2.2 k，没有写出欧姆符号。第 22 脚在电路图上标成 NC。图号 KMPDC0963EA，同一页印了两次。焊接条件写 260 °C max. (5 s or less)，距引线根部至少 2 mm。注记写设定焊接条件前先试，确认产品不出问题。注意事项写 Handle these sensors with bare hands or wearing cotton gloves。另有一段写紫外照射可能使紫外灵敏度和暗电流变差，建议在实际紫外环境里先确认耐受程度。",
+          "手册末尾的驱动电路 C15361-2105 写 sold separately，并写 designed for S15254-2048 and S15257-2048。句子写成 can be used in spectrometer。特性写内置 16-bit A/D，接口 USB 3.1 Gen 1，供电 DC+5 V。这只驱动电路没有当作传感器加入。约 2026 年 6 月的 CCD/CMOS 选型指南 KMPD0002E35 把这一组放在 Built-in electronic shutter type，页码 19/42。说明写 High-speed transfer is enabled by adopting a resistive gate structure，括号里写 except for S15351-2048。器件结构图题写成 S11155/S11156/S13255/S13256-2048-02, S15254/S15257-2048，图号 KMPDC0543EB。这一行像元 14 × 200，行频 2356 lines/s。产品页的典型行频是 2000 行/秒，最高是 4000 行/秒。有效像素 2048 × 1 印在 S13256-2048-02 那一行，这一行没有另印。驱动电路 C15361-2105 印在这一行和 S15257-2048 旁边，冷却写 Non-cooled。光谱响应图例把型号写成 S15254 2048，中间没有连字符，另一条写 S15351 2048，图号 KMPDB0680EA。S15351-2048 是另一份手册，没有从这页加入。指南注记写 Windowless types are also available，没有给出型号。驱动电路页 39/42 把这一只的行频最大值写成 2340 lines/s，接口写 USB 3.1 Gen1，适用传感器写 S15254-2048。这个 2340 不是产品页上的行频。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+    ],
+  },
+  {
+    id: "s15257",
+    date: "",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S15257-2048：滨松带电子快门的背照式 CCD 线阵",
+    summary:
+      "S15257-2048 的产品页写背照式 CCD 线阵，内置电子快门，像元纵向很长。规格表光谱响应 200 到 1100 nm。像元 14×2500 μm，有效像素 2048×1。产品页没有写发布日期。冷却是 Non-cooled，窗口是 Quartz glass，封装是 Ceramic。手册与 S15254-2048 共用，KMPD1247E01，页脚写 Dec. 2024，并写资料截至 December 2024，记为约 2024 年 12 月。",
+    applications: ["spectral", "scientific"],
+    technologies: ["spectral"],
+    models: [
+      {
+        ...page("S15257-2048", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S15257-2048.html", [
+          "产品页没有写发布日期。页面标题、导语和二级标题与 S15254-2048 相同。正文写 The S15257-2048 is a back-thinned CCD linear image sensor，并写 allows a high-speed transfer 和 Each pixel has。末句写 features pixels that are long vertically, and have a high aspect ratio of 14 µm × 2500 µm，乘号用 µm。规格表像元写成 14 x 2500 μm。特性里没有 S15254-2048 那条 Charge reset time in pixels。紫外一条的括号仍写 200 to 1000 nm，连字符和字之间仍没有空格。",
+          "分光索引的简介同样只有 Back-thinned CCD image sensors with electronic shutter function，没有高长宽比那一句。索引类型仍写 Back-thinned type CCD 和 With electronic shutter function。索引有效像素 2048 x 1 pixels，像元 14 x 2500 μm，图像尺寸 28.672 x 2.500 mm。索引行频只给出最高 4000 lines/s。索引冷却写成 Non-cooled，封装写成 Ceramic。索引没有窗口一格。缩略图文件名仍是 k_s15257-2048_pp_xx.jpg，thumbAlt 是空的。",
+          "规格表类型仍写 With electronic shutter function。图像尺寸 28.672 x 2.500 mm，有效像素 2048 x 1 pixels，像元 14 x 2500 μm。光谱响应 200 to 1100 nm。行频与 S15254-2048 的产品页相同，典型 2000 行/秒，最高 4000 行/秒。暗电流典型 20000 e-/pixel/s。读出噪声典型 30 e- rms。冷却 Non-cooled。窗口 Quartz glass。封装 Ceramic。规格表没有专用驱动电路一行。测量条件同样写 Dark current: MPP mode，温度符号仍是 ℃。手册链接的文件名仍是 s15254-2048_etc_kmpd1247e.pdf，产品页标 499 KB。技术说明仍是 resistive_gate_ccd_kmpd9005e.pdf，标 832 KB。免责声明仍标 37 KB，图像传感器注意事项仍标 576 KB，选型指南仍标 4.7 MB，CCD 技术说明仍标 3.8 MB。",
+          "手册与 S15254-2048 共用，目录号 KMPD1247E01，页脚写 Dec. 2024 DN，资料截至 December 2024，记为约 2024 年 12 月。手册特性里的光谱响应写成 200 to 1100 nm。电荷复位时间那一条只括注 S15254-2048，没有括注这一只。结构表像元 14 × 2500 µm，总像素 2160 × 1，感光区 28.672 × 2.500 mm。有效像素仍是 2048 × 1。窗口仍写 Quartz glass (without AR coating)，注记 *2 仍写 Resin sealing。封装仍写 24-pin ceramic DIP。临时窗口例子仍写 S15257-2048N，available upon request，没有加入。应用栏仍是 Spectrometers、Image readout 和 Optical emission spectrophotometry。",
+          "手册行频仍是两只共用的一行，符号 LR，典型 2 kHz、最大 4 kHz。电阻栅电容这一只典型 3000 pF。片上放大器功耗典型仍是 75 mW。电阻栅功耗最小 0.64 mW、典型 2.56 mW、最大 25.6 mW。电阻栅电阻最小 2.5 kΩ、典型 25 kΩ、最大 100 kΩ。满阱、转换效率和读出噪声与 S15254-2048 同一列，满阱典型 200 ke-，转换效率典型 10 µV/e-，读出噪声典型 30 e- rms、最大 45 e- rms。",
+          "暗电流非 MPP 典型 500 ke-/pixel/s、最大 1500 ke-/pixel/s，MPP 典型 20 ke-/pixel/s、最大 80 ke-/pixel/s。产品页的 20000 e-/pixel/s 与手册 MPP 典型值同一数量。动态范围典型仍是 6670。峰值波长典型 600 nm。图像拖影数字与 S15254-2048 相同。用 ARG 的电荷复位时间这一只最小 100 µs。注记 *21 仍把积分时间写成 S15254-2048 的 5 μs 和这一只的 100 μs。时序图水平方向这一只写到 3..2159、2160、2161，再到 2162... N。输出标注写 D3..D102, S1...S2048, D103..D112。非 MPP 积分时间最小 100 µs、典型 150 µs。MPP 转移时间最小 100 µs、典型 150 µs。器件结构图号 KMPDC0964EA。外形图 A 写成 2.5，重量仍写 3.8 g。引脚表、高速处理电路和注意事项与 S15254-2048 共用。",
+          "选型指南这一行的像元是 14 × 2500，行频 2294 lines/s。产品页的典型行频是 2000 行/秒，最高是 4000 行/秒。C15361-2105 印在这一行旁边，冷却写 Non-cooled。驱动电路页把行频最大值写成 1870 lines/s，接口写 USB 3.1 Gen1，适用传感器写 S15257-2048。这个 1870 不是产品页上的行频。手册末尾的 C15361-2105 仍写可用于这一只，没有当作传感器加入。临时窗口例子仍是 S15257-2048N，没有加入。指南注记仍写 Windowless types are also available，没有给出这一只的无窗型号。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+    ],
+  },
 ];
