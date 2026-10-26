@@ -4613,4 +4613,62 @@ export const spectralProducts = [
       },
     ],
   },
+  {
+    id: "s13255",
+    date: "",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S13255-2048-02：滨松一级制冷带电子快门的背照式 CCD 线阵",
+    summary:
+      "S13255-2048-02 的产品页写背照式 CCD 线阵，内置电子快门，用于光谱仪。光谱响应 200 到 1100 nm。像元 14×500 μm，有效像素 2048×1。产品页没有写发布日期。冷却是 One-stage TE-cooled，窗口是 Quartz，封装是 Metal。手册与 S13256-2048-02 共用，目录号 KMPD1179E03，页脚写 Jun. 2026 DN，并写资料截至 June 2026，记为约 2026 年 6 月。",
+    applications: ["spectral", "scientific"],
+    technologies: ["spectral"],
+    models: [
+      {
+        ...page("S13255-2048-02", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S13255-2048-02.html", [
+          "产品页没有写发布日期。页面标题写 Back-thinned type CCD linear image sensor。一级标题只写 S13255-2048-02。二级标题写 Back-thinned CCD image sensors with electronic shutter function。正文写 The S13255-2048-02 is a back-thinned CCD linear image sensor。电阻栅结构写成 allows a high-speed transfer。像元一句用 Each pixel has。封装内的半导体制冷器写成 keep the element temperature constant (about 5°C)，5 和 °C 之间没有空格。",
+          "分光索引的简介写到 low image lag 为止，没有产品页上 about 5°C 那一句。索引类型写成 Back-thinned type CCD，以及 Built-in electronic shutter type。索引有效像素 2048 x 1 pixels，像元 14 x 500 μm，图像尺寸 28.672 x 0.500 mm，光谱响应 200 to 1100 nm。索引行频只给出最高 4633 lines/s。索引冷却写成 One-stage TE-cooled，封装写成 Metal。索引没有窗口一格。缩略图文件名是 k_s11850-1106_pp_xx.jpg，thumbAlt 是空的。索引 newState 不是这一只。整份索引里标成 new 的仍只有 S16929-01。",
+          "特性写内置电子快门、最短积分时间 2 μs、紫外区高灵敏度、读出速度 10 MHz max.、图像拖影 0.1% typ.。光谱响应写在紫外这一条的括号里，200 to 1100 nm。规格表类型写 Built-in electronic shutter type。图像尺寸 28.672 x 0.500 mm，乘号是 x。有效像素 2048 x 1 pixels，像元 14 x 500 μm。行频典型 2327 行/秒，最高 4633 行/秒。暗电流典型 10000 e-/pixel/s。读出噪声典型 30 e- rms。冷却 One-stage TE-cooled。窗口 Quartz。封装 Metal。规格表没有专用驱动电路一行。测量条件写成 Typ. Ta=25 ℃，unless otherwise noted, Dark current: MPP mode。",
+          "手册文件名 s13255-2048-02_kmpd1179e.pdf，产品页标 415 KB。产品页另链技术说明 resistive_gate_ccd_kmpd9005e.pdf，标 832 KB。相关文档还链着选型指南 image_sensor_kmpd0002e.pdf，标 4.7 MB，以及技术说明 ccd_kmpd9002e.pdf，标 3.8 MB。下面的规格取自产品页和手册 KMPD1179E03，没有拿 ccd_kmpd9002e.pdf 里的数字。手册标题写 CCD linear image sensors，并列 S13255-2048-02 和 S13256-2048-02。目录号 KMPD1179E03，页脚写 Jun. 2026 DN，并写资料截至 June 2026，记为约 2026 年 6 月。手册正文用 are，写成 allows a high-speed transfer，像元用 Each pixel has，元件温度仍写 about 5°C。手册特性里的最短积分时间写成 2 μs。应用栏写 Spectrometers 和 Image readout。",
+          "结构表像元 14 × 500 µm，总像素 2128 × 1，有效像素 2048 × 1，感光区 28.672 × 0.500 mm。水平时钟 2-phase。输出电路 Two-stage MOSFET source follower。封装写 28-pin ceramic DIP，不是产品页上的 Metal。窗口写 Quartz glass。注记 *1 写 Hermetic sealing。冷却 One-stage TE-cooled。手册没有临时窗口型号。电阻栅说明写普通 CCD 一个像元里有多根电极，靠不同时钟脉冲转移信号电荷。电阻栅在感光区做一根高阻电极，靠电极两端不同电压形成的电位斜坡转移电荷。相对靠行 binning 当线阵用的面阵 CCD，感光区带电阻栅的一维 CCD 转移更快，像元高度很大时仍能低拖影读出。两张示意图号是 KMPDC0320EA 和 KMPDC0321EB。",
+          "绝对最大额定值工作温度 -50 到 +60 ℃，贮存温度 -50 到 +70 ℃。注记 *2 写芯片温度。注记 *3 写高速工作时传感器可能发热，建议按需要散热，并指向技术资料 Resistive gate type CCD linear image sensors with electronic shutter。输出晶体管漏极电压最大 +25 V。复位漏极、输出放大器回流电压、全复位漏极和水平输入源最大都是 +18 V。各栅极电压最小 -12 V、最大 +15 V。半导体制冷器最大电流 1.8 A，最大电压 3.5 V，条件写成 Tc=Th=25 °C。注记 *4 写超过这一电流后吸热会因焦耳热下降，这个值不是损坏阈值，供电电流应低于该最大电流的 60%。注记 *5 写 ΔT 应小于 30 °C，超过后暗电流均匀性等特性可能变差。注记 *6 是制冷侧温度，*7 是散热侧温度。焊接条件 260 °C、5 秒以内、距引线根部至少 1.5 mm。注记 *8 写 Use a soldering iron。注记写即使瞬间超过绝对最大额定值也可能使产品质量下降。",
+          "工作条件标题写 Ta=25 °C。输出晶体管漏极电压最小 12 V、典型 15 V、最大 18 V。复位漏极和全复位漏极都是最小 13 V、典型 14 V、最大 15 V。全复位栅高电平最小 7 V、典型 8 V、最大 9 V，低电平最小 0.5 V、典型 1 V、最大 2 V。注记 *9 写 All reset on，*10 写 All reset off。输出栅和存储栅都是最小 2.5 V、典型 3.5 V、最大 4.5 V。衬底电压典型 0 V。电阻栅高电压的高电平最小 0.5 V、典型 1 V、最大 1.5 V，低电平最小 -10.5 V、典型 -9.5 V、最大 -8.5 V。电阻栅低电压的高电平典型写成 VREGHH - 8.0，减号两边有空格。输出放大器回流电压典型 1 V、最大 2 V。注记 *11 写回流电压相对衬底为正，但电流流出传感器，句子写成 the direction of flow out of the sensor。水平输入源接到 VRD。水平移位寄存器、求和栅的高电平最小 5 V、典型 6 V、最大 8 V，低电平最小 -6 V、典型 -5 V、最大 -4 V。复位栅高电平最小 7 V、典型 8 V、最大 9 V。转移栅高电平最小 9.5 V、典型 10.5 V、最大 11.5 V。外接负载电阻最小 2.0 kΩ、典型 2.2 kΩ、最大 2.4 kΩ。",
+          "电气特性条件写成 Ta=25 °C，fc=5 MHz。手册电气表的行频符号 LR，典型 2 kHz、最大 4 kHz，没有写成产品页上的 2327 行/秒和 4633 行/秒。同一符号 LR 在后一张表里又用于线性误差。信号输出频率典型 5 MHz、最大 10 MHz。水平寄存器电容典型 200 pF。全复位栅电容典型 100 pF。电阻栅电容这一只典型 1000 pF。求和栅和复位栅电容都是典型 10 pF。转移栅电容典型 100 pF。电荷转移效率最小 0.99995、典型 0.99999。直流输出电平最小 9 V、典型 10 V、最大 11 V。输出阻抗典型 300 Ω。输出放大器回流电流典型 0.4 mA。片上放大器功耗典型 75 mW。电阻栅功耗最小 50 mW、典型 100 mW、最大 160 mW。电阻栅电阻最小 0.4 kΩ、典型 0.7 kΩ、最大 1.4 kΩ。注记 *12 写按每个像元、在满阱一半处测量。注记 *13 写片上放大器加上负载电阻。注记 *14 写 REG 上的功耗。注记 *15 写 REGH 和 REGL 之间的电阻。",
+          "满阱最小 150 ke-、典型 200 ke-。线性误差典型 ±3%、最大 ±10%。转换效率最小 9 µV/e-、典型 10 µV/e-、最大 11 µV/e-。暗电流非 MPP 典型 100 ke-/pixel/s、最大 300 ke-/pixel/s，MPP 典型 10 ke-/pixel/s、最大 40 ke-/pixel/s。产品页的 10000 e-/pixel/s 与手册 MPP 典型值同一数量。暗输出非均匀性非 MPP 最大 300%，MPP 最大是短横线。读出噪声典型 30 e- rms、最大 45 e- rms。动态范围典型 6670。注记 *19 写成 Dynamic range (Drange) = Full well capacity / Readout noise。缺陷像元最大 0。光谱响应 200 to 1100 nm。峰值波长典型 600 nm。光响应非均匀性典型 ±3%、最大 ±10%。图像拖影全部像元平均典型 0.1%、最大 1%，全部像元里的最大值典型 1%、最大 3%。注记 *16 写工作电压取典型值。注记 *17 写信号从 1 ke- 到 150 ke-，并写线性误差在满阱一半处定义为零。注记 *18 写温度每降 5 到 7 ℃，暗电流减半。注记 *21 写用峰值发射波长 660 nm 的 LED，在饱和输出一半处测量。注记 *23 写测量时积分时间是 5 μs for the S11155-2048-02 和 20 μs for the S11156-2048-02，没有写这一只。",
+          "光谱响应图标题写 without window，左右两张图号是 KMPDB0316EA 和 KMPDB0440EA。注记 *24 写成 spectral transmittance characteristic，characteristic 是单数。窗口透过率图号 KMPDB0303EB。暗电流对芯片温度图号 KMPDB0482EA，图例分列这一只和 S13256-2048-02 的 Non-MPP 与 MPP。器件结构图号 KMPDC0609EA。注记写从入射光方向看，水平移位寄存器盖着厚硅死层，长波光可能被它探测到，需要时加遮光，并写 covering the horizontal shift register was reduced compared to previous products。previous products 没有给出型号。信号电荷一句写成 transferred.Then，句号后没有空格。信号电荷以感光区中线为界分别向上或向下转移，再经水平寄存器合并后由放大器读出。",
+          "时序图页眉先写 Timing chart，下一行又写 Timing chart。非 MPP 图上写 REGH=+1 V，REGL=-7.0 V。水平时钟数到 2128，接着是 2129、2130 到 N。输出标注写 D3..D70, S1...S2048, D71..D78，图上还有 D1、D2、D79、D80。图号 KMPDC0541EB。积分时间这一只最小 2 µs、典型 5 µs。产品页写的最短积分时间 2 μs 对的是这个最小值。MPP 图上同样先写 REGH=+1 V，REGL=-7.0 V，另一段写成 REGH, REGL=-9.5 V。图号 KMPDC0542EB。注记 *26 写 Tpwar 的最小值等于正常读出周期。注记 *25 和 *27 都写对称时钟应在最大幅度的 50% 处重叠。MPP 转移时间这一只最小 2 µs、典型 5 µs。",
+          "外形图标题写 Dimensional outline (unit: mm)，图号 KMPDA0354EB。材料写 Kovar alloy (gold plating)。图上标出 Light input window、Photosensitive area、Thermoelectric cooler、Index mark 和 1 ch。未注公差 ±0.15。重量写成 Weight: 9 g。窗口折射率写成 1.46。AR coating 写成 none。星号写 Distance from package bottom to photosensitive area，对应尺寸 3.82 ± 0.3。这一只的 A 写成 28.672 × 0.500，B 写成 5.98 ± 0.3。S13256-2048-02 的 A 写成 28.672 × 1.000，B 写成 5.73 ± 0.3。另有 33.02 ± 0.2、4.67 ± 0.3、5.0 ± 0.8、0.46 ± 0.05、0.25 ± 0.05 和 0.6 ± 0.1，引脚间距 2.54。窗口一侧标着 35.0、38.0、45.5 和 48.0。",
+          "引脚表共 28 脚。第 1 脚 OS 写 RL=2.2 kΩ，第 2 脚 OD 为 +15 V，第 3 脚 OG 为 +3.5 V，第 4 脚 SG 写 Same pulse as P2H，第 5 脚 Vret 为 +1 V，第 6 脚和第 20 脚 RD 为 +14 V。第 7 脚 Th1 和第 22 脚 Th2 是 Thermistor。第 8 脚 P- 和第 21 脚 P+ 是 TE-cooler。第 9 脚 REGL 写 -7 V (non-MPP operation)，第 10 脚 REGH 写 +1 V (non-MPP operation)。第 18、25、26 脚是短横线。第 23 脚和第 24 脚都是 STG，都写 +3.5 V，注记没有写封装内短接。第 27 脚 TG 为 +10.5/-5 V，第 28 脚 RG 为 +8/-5 V。",
+          "内置半导体制冷器在真空条件下内阻典型 1.6 Ω，条件 Ta=25 °C。最大吸热 Qmax 为 4.0 W。注记 *28 写这是供给最大电流时用来修正温差的理论吸热量。电流对电压、电流对 CCD 温度的图号是 KMPDC0517EA，条件写成 Typ. Th=25 °C。热敏电阻一段写 built in the same package with a CCD chip，温度 can be monitored with it。relation 在行末拆成 rela-tion。公式写成 RT1 = RT2 × exp BT1/T2 (1/T1 - 1/T2)。R298=10 kΩ，B298/323=3900 K。图号 KMPDC0518EA。注意事项写制冷器散热不足时产品温度会上升并造成物理损坏或性能下降，建议在产品和散热器之间整面涂高导热材料并拧紧。另写 Handle these sensors with bare hands or wearing cotton gloves。手册末尾没有驱动电路。相关资料只列出电阻栅技术说明。",
+          "约 2026 年 6 月的 CCD/CMOS 选型指南 KMPD0002E35 把这一组放在 Built-in electronic shutter type。说明写 High-speed transfer is enabled by adopting a resistive gate structure，括号里写 except for S15351-2048。器件结构图题写成 S11155/S11156/S13255/S13256-2048-02, S15254/S15257-2048，图号 KMPDC0543EB。行频一栏只印了一次 2327 lines/s，位置在 S11156-2048-02 和这一只之间。有效像素 2048 × 1 印在 S13256-2048-02 那一行。冷却分成 Non-cooled 和 One-stage TE-cooled，这一对写在 One-stage TE-cooled 下面。驱动电路 C11165-02 印在 Non-cooled 旁边，这一对的行上没有驱动电路。指南注记写 Windowless types are also available，没有给出型号，没有加入。同一页的光谱响应图例是 S15254-2048 和 S15351-2048，图号 KMPDB0680EA，不是这一只。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+    ],
+  },
+  {
+    id: "s13256",
+    date: "",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S13256-2048-02：滨松一级制冷带电子快门的背照式 CCD 线阵",
+    summary:
+      "S13256-2048-02 的产品页写背照式 CCD 线阵，内置电子快门，用于光谱仪。光谱响应 200 到 1100 nm。像元 14×1000 μm，有效像素 2048×1。产品页没有写发布日期。冷却是 One-stage TE-cooled，窗口是 Quartz，封装是 Metal。手册与 S13255-2048-02 共用，KMPD1179E03，页脚写 Jun. 2026，并写资料截至 June 2026，记为约 2026 年 6 月。",
+    applications: ["spectral", "scientific"],
+    technologies: ["spectral"],
+    models: [
+      {
+        ...page("S13256-2048-02", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S13256-2048-02.html", [
+          "产品页没有写发布日期。页面标题写 Back-thinned type CCD linear image sensor。一级标题只写 S13256-2048-02。二级标题与 S13255-2048-02 相同。正文写 The S13256-2048-02 is a back-thinned CCD linear image sensor，并写 allows a high-speed transfer 和 Each pixel has。元件温度仍写 about 5°C，5 和 °C 之间没有空格。特性里最短积分时间写成 2 us，没有 μ。读出速度仍是 10 MHz max.，图像拖影仍是 0.1% typ.。光谱响应 200 to 1100 nm。",
+          "分光索引的简介同样停在 low image lag，没有 about 5°C 那一句。索引类型仍写 Back-thinned type CCD 和 Built-in electronic shutter type。索引有效像素 2048 x 1 pixels，像元 14 x 1000 μm，图像尺寸 28.672 x 1.000 mm。索引行频只给出最高 4633 lines/s。索引冷却写成 One-stage TE-cooled，封装写成 Metal。索引没有窗口一格。缩略图文件名仍是 k_s11850-1106_pp_xx.jpg，thumbAlt 是空的。",
+          "规格表类型仍写 Built-in electronic shutter type。图像尺寸 28.672 x 1.000 mm，有效像素 2048 x 1 pixels，像元 14 x 1000 μm。行频与 S13255-2048-02 的产品页相同，典型 2327 行/秒，最高 4633 行/秒。暗电流典型 15000 e-/pixel/s。读出噪声典型 30 e- rms。冷却 One-stage TE-cooled。窗口 Quartz。封装 Metal。规格表没有专用驱动电路一行。测量条件同样写 Dark current: MPP mode。手册链接的文件名仍是 s13255-2048-02_kmpd1179e.pdf，产品页标 415 KB。技术说明仍是 resistive_gate_ccd_kmpd9005e.pdf，标 832 KB。选型指南仍标 4.7 MB，CCD 技术说明仍标 3.8 MB。",
+          "手册与 S13255-2048-02 共用，目录号 KMPD1179E03，页脚写 Jun. 2026 DN，资料截至 June 2026，记为约 2026 年 6 月。手册特性里的最短积分时间写成 2 μs，和这一页产品页上的 2 us 不同。结构表像元 14 × 1000 µm，感光区 28.672 × 1.000 mm。总像素和有效像素仍是 2128 × 1 和 2048 × 1。窗口写 Quartz glass，注记 *1 写 Hermetic sealing。封装写 28-pin ceramic DIP。手册没有给这一只的临时窗口型号。应用栏仍是 Spectrometers 和 Image readout。",
+          "手册行频仍是两只共用的一行，符号 LR，典型 2 kHz、最大 4 kHz。电阻栅电容这一只典型 2000 pF。片上放大器功耗典型仍是 75 mW。电阻栅功耗最小 30 mW、典型 60 mW、最大 90 mW。电阻栅电阻最小 0.7 kΩ、典型 1.1 kΩ、最大 2.2 kΩ。满阱、转换效率和读出噪声与 S13255-2048-02 同一列，满阱典型 200 ke-，转换效率典型 10 µV/e-，读出噪声典型 30 e- rms、最大 45 e- rms。",
+          "暗电流非 MPP 典型 200 ke-/pixel/s、最大 600 ke-/pixel/s，MPP 典型 15 ke-/pixel/s、最大 60 ke-/pixel/s。产品页的 15000 e-/pixel/s 与手册 MPP 典型值同一数量。动态范围典型仍是 6670。峰值波长典型 600 nm。图像拖影数字与 S13255-2048-02 相同。注记 *23 仍把积分时间写成 S11155-2048-02 的 5 μs 和 S11156-2048-02 的 20 μs。时序表里这一只的积分时间最小 2 µs、典型 20 µs。MPP 转移时间最小 2 µs、典型 20 µs。外形图 A 写成 28.672 × 1.000，B 写成 5.73 ± 0.3，重量仍写 9 g。引脚表、半导体制冷器、热敏电阻和注意事项与 S13255-2048-02 共用。手册末尾没有驱动电路。",
+          "选型指南 KMPD0002E35 的行频 2327 lines/s 仍只印一次，有效像素 2048 × 1 印在这一行。这一行的像元是 14 × 1000，冷却写在 One-stage TE-cooled 下面。C11165-02 没有印在这一行。指南注记仍写 Windowless types are also available，没有给出这一只的无窗型号，没有加入。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+    ],
+  },
 ];
