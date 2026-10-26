@@ -4537,4 +4537,80 @@ export const spectralProducts = [
       },
     ],
   },
+  {
+    id: "s12600",
+    date: "",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S12600：滨松无制冷高速读出背照式 FFT-CCD",
+    summary:
+      "S12600-1006 与 S12600-1007 的产品页写背照式 FFT-CCD，光谱响应 200 到 1100 nm。两页都没有写发布日期。冷却都是 Non-cooled，窗口都是 Quartz，封装都是 Ceramic。手册与 S12601 共用，标题写成 S12600/S12601 series，目录号 KMPD1182E04，页脚写 Jul. 2026 DN，并写资料截至 July 2026，记为约 2026 年 7 月。",
+    applications: ["spectral", "scientific", "machine"],
+    technologies: ["spectral"],
+    models: [
+      {
+        ...page("S12600-1006", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S12600-1006.html", [
+          "产品页没有写发布日期。页面标题写 Back-thinned type CCD area image sensor。页内导语写 CCD area image sensor。一级标题只写 S12600-1006。二级标题写 Back-thinned FFT-CCD。正文写 The S12600/S12601 series are measurement type FFT-CCD area image sensors，用于 low-light-level detection。binning 之后可当作线阵，长边沿感光区高度方向，句子写成 suited for use in spectrophotometry detectors。binning 相对外部电路数字相加，产品页把 significant 和 amplifier 里的 fi 印成一个字符。高速读出归因于寄存器走线电阻降低，并采用高速放大器。",
+          "分光索引的简介写成 High-speed response back-thinned FFT-CCD。产品页二级标题没有写 High-speed response。索引类型写成 Back-thinned type CCD，以及 Binning type 和 Standard type。索引有效像素 1024 x 58 pixels，像元 24 x 24 μm，图像尺寸 24.576 x 1.392 mm，光谱响应 200 to 1100 nm。索引行频只给出最高 3650 lines/s。索引冷却写成 Non-cooled，封装写成 Ceramic。索引没有窗口一格。缩略图文件名沿用 k_s7030-1006_etc_pp_xx.jpg，thumbAlt 是空的。",
+          "特性第一条写 Non-cooled type。其后是像元 24 × 24 μm、Line/pixel binning、峰值量子效率 90% or higher、光谱响应范围宽、High-speed readout (fc=5 MHz max.)、动态范围宽、MPP operation、High UV sensitivity and stable characteristics under UV light irradiation，以及 Fill factor: 100%。规格表没有专用驱动电路一行。",
+          "规格表类型分成两行，Binning type 和 Standard type。图像尺寸 24.576 x 1.392 mm，乘号是 x。有效像素 1024 x 58 pixels，像元 24 x 24 μm。光谱响应 200 to 1100 nm。行频典型 2097 行/秒，最高 3650 行/秒。暗电流典型 100 e-/pixel/s。读出噪声典型 30 e- rms。冷却 Non-cooled。窗口 Quartz。封装 Ceramic。测量条件写成 Typ. Ta=25 ℃，unless otherwise noted, Dark current: MPP mode。手册文件名 s12600_s12601_series_kmpd1182e.pdf，产品页标 517 KB。相关文档还链着选型指南 image_sensor_kmpd0002e.pdf，标 4.7 MB，以及技术说明 ccd_kmpd9002e.pdf，标 3.8 MB。技术说明没有拿来写这一只的数字。",
+          "手册标题写 CCD area image sensors，系列名写成 S12600/S12601 series，副题写 Back-thinned FFT-CCD。目录号 KMPD1182E04，页脚写 Jul. 2026 DN，并写资料截至 July 2026，记为约 2026 年 7 月。手册正文与产品页同一段，行末把 significant 拆成 sig-nificant，amplifier 没有把 fi 印成一个字符。手册特性只列 One-stage TE-cooled type (S12601 series)，没有把 Non-cooled type 写成一条。应用栏写 Fluorescence spectrophotometry, ICP、Industrial product inspection、Semiconductor inspection、DNA sequencer 和 Low-light-level detection。",
+          "选型表总像素与有效像素：这一只是 1044 × 64 和 1024 × 58，感光区 24.576 × 1.392。S12600-1007 是 1044 × 128 和 1024 × 122，感光区 24.576 × 2.928。S12601-1006S 与这一只的像素数相同，冷却写成 One-stage TE-cooled。S12601-1007S 与 S12600-1007 的像素数相同。选型表没有行频，也没有驱动电路。结构表像元 24 × 24 µm。垂直时钟 2-phase，水平时钟 2-phase。输出电路写 Two-stage MOSFET source follower。封装写 24-pin ceramic DIP，产品页写 Ceramic。窗口 S12600 写 Quartz glass，注记 *2 写 Resin sealing。S12601 写 AR-coated sapphire，注记 *3 写 Hermetic sealing。注记 *1 写可按要求提供临时窗口，例子是 S12600-1006N/-1007N。这两只没有加入。注记没有给 S12601 的临时窗口型号。",
+          "绝对最大额定值工作温度 -50 到 +50 ℃，贮存温度 -50 到 +70 ℃。注记 *4 写 S12600 按封装温度，S12601 按芯片温度。注记 *5 写 No dew condensation，并写高湿环境下产品与周围有温差时表面可能结露。输出晶体管漏极电压最大 +20 V。复位漏极和输出放大器回流电压最大 +18 V。半导体制冷器最大电流典型 3.0 A，最大电压典型 3.6 V，条件写成 Tc=Th=25 °C。散热侧最高温度 70 ℃。注记 *6 的 When 在版面上 W 单独起行，写超过这一电流后吸热会因焦耳热下降，这个值不是损坏阈值，供电电流应低于该最大电流的 60%。注记 *7 是制冷侧温度，*8 是散热侧温度。注记写即使瞬间超过绝对最大额定值也可能使产品质量下降。",
+          "工作条件标题写 MPP mode, Ta=25 °C。输出晶体管漏极电压最小 14 V、典型 15 V、最大 16 V。复位漏极电压最小 13 V、典型 14 V、最大 15 V。输出放大器回流电压最小 1.5 V、典型 2 V、最大 3 V。注记 *9 写回流电压相对衬底为正，但电流流出传感器。输出栅电压最小 1 V、典型 3 V、最大 5 V。衬底电压典型 0 V。垂直和水平输入源都接到 VRD。输入栅电压最小 -9 V、典型 -8 V。垂直和水平移位寄存器、求和栅、转移栅的高电平最小 4 V、典型 6 V、最大 8 V，低电平最小 -9 V、典型 -8 V、最大 -7 V。复位栅高电平最小 5 V、典型 7 V、最大 9 V。外接负载电阻最小 1 kΩ、典型 2.2 kΩ、最大 3 kΩ。",
+          "电气特性条件写成 Ta=25 °C，fc=3 MHz。信号输出频率最小 0.1 MHz、典型 3 MHz、最大 5 MHz。垂直寄存器电容这一只与 S12601-1006S 同一档，典型 1500 pF。S12600-1007 与 S12601-1007S 典型 3000 pF。水平寄存器电容典型 180 pF。求和栅电容典型 30 pF。复位栅电容典型 15 pF。转移栅电容典型 75 pF。电荷转移效率最小 0.99995、典型 0.99999。直流输出电平最小 9 V、典型 10 V、最大 11 V。输出阻抗典型 200 Ω。功耗典型 90 mW、最大 100 mW。注记 *10 写按每个像元、在饱和输出一半处测量。注记 *11 写数值随负载电阻变化，条件是 VOD=15 V，load resistance=2.2 kΩ。注记 *12 写片上放大器加上负载电阻。手册电气表没有行频一行。",
+          "满阱垂直方向最小 240 ke-、典型 320 ke-。水平方向最小 800 ke-、典型 1000 ke-。注记 *13 写线性 ±1.5%。饱和输出电压写成 Fw × Sv。转换效率最小 1.8 µV/e-、典型 2.2 µV/e-、最大 3 µV/e-。暗电流 25 ℃ 典型 100 e-/pixel/s、最大 1000 e-/pixel/s，0 ℃ 典型 10 e-/pixel/s、最大 100 e-/pixel/s。注记 *14 写温度每升高 5 到 7 ℃，暗电流大约加倍。产品页只列出 25 ℃ 的典型值。读出噪声最小 20 e- rms、典型 30 e- rms、最大 40 e- rms。注记 *15 写用带 CDS 的 Hamamatsu 评估电路，芯片温度 0 °C，工作频率 3 MHz。动态范围 line binning 最小 20000、典型 33000，area scanning 最小 6000、典型 10700。注记 *16 写成 Dynamic range=Saturation charge/Readout noise。光响应非均匀性典型 ±3%、最大 ±10%。注记 *17 写用峰值发射波长 560 nm 的 LED，在饱和输出的一半处测量，并印出 Fixed pattern noise 的公式。白点最大 0，黑点最大 10，簇缺陷最大 3，列缺陷最大 0。注记 *18 写白点是 0 ℃ 积分一秒后暗电流高于 1 ke- 的像素，黑点是灵敏度低于平均像元输出一半的像素。注记 *19 写 2 到 9 个连续缺陷。注记 *20 写 10 个或更多连续缺陷。光谱响应范围写 200 to 1100 nm。",
+          "光谱响应图标题写 without window，图号 KMPDB0058EB。图上分开标 Back-thinned CCD、Front-illuminated CCD (UV coated) 和 Front-illuminated CCD。注记 *21 写加石英玻璃或镀增透蓝宝石后，响应按窗材料的光谱透过特性下降。窗口透过率图号 KMPDB0110EA，两条曲线是 Quartz glass window 和 AR-coated sapphire。暗电流对温度图号 KMPDB0256EA。器件结构图号 KMPDC0616EC。图上写 V=58, 122，H=1024，并写 4 blank pixels、6-bevel、2-bevel、4-bevel 和 2 signal out。注记写从入射光方向看，水平移位寄存器盖着厚硅死层，长波光可能被它探测到，需要时对该区域加遮光。",
+          "行 binning 时序图号 KMPDC0617EB。积分时段写 shutter must be open，垂直合并和读出时段写 shutter must be closed。垂直方向这一档写成 64←58 + 6 (bevel): S1260*-1006/-1006S。1007 这一档写成 128←122 + 6 (bevel): S1260*-1007/-1007S。水平方向写到 1044。输出标注写 D1、D2..D10, S1..S1024, D11..D19、D20。P1V、P2V、TG 的注记号是 *22。P1H、P2H 的注记号印成 *21，和光谱响应注记 *21 用了同一个号。时序表下面只印出 *22：Symmetrical clock pulses should be overlapped at 50% of maximum pulse amplitude。这一档 P1V 脉冲宽度最小 0.5 µs、典型 1 µs。1007 这一档最小 1 µs、典型 2 µs。上升下降时间最小 20 ns。水平时钟脉冲宽度最小 100 ns、典型 166 ns，占空比典型 50%。复位栅脉冲宽度最小 20 ns、典型 33 ns。TG 与 P1H 的重叠时间最小 1 µs、典型 2 µs。",
+          "外形图标题写 S12600 series，图号 KMPDA0588EC。材料写 Kovar alloy (gold plating)。窗口标 28.6*，感光区标 24.58，另有 8.2*。封装长度 44 ± 0.44 mm。引脚间距 2.54 ± 0.13 mm。高度相关尺寸写成 0.65 ± 0.05、0.5 ± 0.05、2.35 ± 0.15、3.75 ± 0.44、4.4 ± 0.44 和 4.8 ± 0.49，另有 22.4 ± 0.3、22.9 ± 0.3 和 3.0 ± 0.5。引脚写成 (24 ×) 0.5 ± 0.05。图上写 1st pin indication pad。这一只的 A=1.392，S12600-1007 的 A=2.928。星号写窗口尺寸保证光谱透过率图里的透过率。重量写成 Weight: 11.9 g。",
+          "引脚表共 24 脚。第 1 脚 RD 为 +14 V，第 2 脚 OS 写 RL=2.2 kΩ，第 3 脚 OD 为 +15 V，第 4 脚 OG 为 +3 V。第 5 脚 SG 写 Same timing as P2H。第 6 脚 Vret 为 +2 V。第 7 脚是短横线。第 16 到 19 脚也是短横线。第 20 脚 SS 接 GND。第 12 脚 ISH 和第 21 脚 ISV 都写 Connect to RD。第 10、11、22、23 脚测试点为 -8 V。第 13 脚 TG 的注记 *23 写它是垂直寄存器和水平寄存器之间的隔离栅，标准用法里 TG should be applied the same pulse as P2V。",
+          "约 2026 年 6 月的 CCD/CMOS 选型指南 KMPD0002E35 把这一系列放在 High-speed readout type，并写 This type has a built-in high-speed readout amplifier。行频注记写 Full line binning (typ.)。这一只的行频是 2097 lines/s，与产品页典型值相同。指南没有印产品页上的最高行频。数据率一栏的 5 印在 S12601-1006S 那一行。光谱响应图例写成 S9037/S9038/S12600/S12601 series，图号 KMPDB0689EA。指南注记写 Windowless types are also available，没有给出型号。S9037 和 S9038 不在分光索引上，没有加入。手册末尾没有驱动电路。注意事项写 Handle these sensors with bare hands or wearing cotton gloves。外接制冷时，冷却或回温的温度变化率要小于 5 K/minute。焊接条件 260 °C max. (once, within 5 seconds)，距引线根部至少 1.5 mm。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+      {
+        ...page("S12600-1007", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S12600-1007.html", [
+          "产品页没有写发布日期。二级标题、正文和特性与 S12600-1006 相同，特性仍以 Non-cooled type 开头，significant 和 amplifier 仍把 fi 印成一个字符。规格表光谱响应 200 to 1100 nm。",
+          "分光索引的简介仍写 High-speed response back-thinned FFT-CCD。索引有效像素 1024 x 122 pixels，图像尺寸 24.576 x 2.928 mm。索引行频只给出最高 2146 lines/s。索引冷却仍是 Non-cooled，封装仍是 Ceramic，没有窗口一格。",
+          "规格表类型仍是两行 Binning type 和 Standard type。图像尺寸 24.576 x 2.928 mm，有效像素 1024 x 122 pixels，像元 24 x 24 μm。行频典型 1162 行/秒，最高 2146 行/秒。暗电流典型 100 e-/pixel/s，读出噪声典型 30 e- rms。冷却 Non-cooled。窗口 Quartz。封装 Ceramic。测量条件与 S12600-1006 相同。规格表没有专用驱动电路一行。手册仍是 KMPD1182E04，产品页标 517 KB。",
+          "手册总像素 1044 × 128，有效像素 1024 × 122，感光区 24.576 × 2.928。窗口仍写 Quartz glass，注记 *2 仍写 Resin sealing。封装仍写 24-pin ceramic DIP。垂直寄存器电容与 S12601-1007S 同一档，典型 3000 pF。时序图垂直方向按 S1260*-1007/-1007S 写成 128←122 + 6 (bevel)。P1V 脉冲宽度最小 1 µs、典型 2 µs。外形图 A=2.928，重量仍写 11.9 g。引脚表与 S12600-1006 共用，第 7 脚和第 16 到 19 脚仍是短横线。选型指南行频典型 1162 lines/s，与产品页典型值相同。临时窗口 S12600-1007N 只在手册注记 *1 里按要求提供，没有加入。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+    ],
+  },
+  {
+    id: "s12601",
+    date: "",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S12601：滨松一阶制冷高速读出背照式 FFT-CCD",
+    summary:
+      "S12601-1006S 与 S12601-1007S 的产品页写背照式 FFT-CCD，光谱响应 200 到 1100 nm。两页都没有写发布日期。冷却都是 One-stage TE-cooled，窗口都是 AR-coated sapphire，封装都是 Ceramic。手册与 S12600 共用，KMPD1182E04，页脚写 Jul. 2026，并写资料截至 July 2026，记为约 2026 年 7 月。",
+    applications: ["spectral", "scientific", "machine"],
+    technologies: ["spectral"],
+    models: [
+      {
+        ...page("S12601-1006S", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S12601-1006S.html", [
+          "产品页没有写发布日期。页面标题写 Back-thinned type CCD area image sensor。一级标题只写 S12601-1006S。二级标题与 S12600 相同，写 Back-thinned FFT-CCD。正文仍写 S12600/S12601 series，significant 和 amplifier 仍把 fi 印成一个字符。特性第一条写成 One-stage TE-cooled type。其余特性与 S12600 相同，包括 fc=5 MHz max. 和 Fill factor: 100%。",
+          "分光索引的简介仍写 High-speed response back-thinned FFT-CCD。索引类型仍写 Binning type 和 Standard type。索引有效像素 1024 x 58 pixels，图像尺寸 24.576 x 1.392 mm。索引行频只给出最高 3650 lines/s。索引冷却写成 One-stage TE-cooled，封装写成 Ceramic。索引没有窗口一格。",
+          "规格表类型仍分成 Binning type 和 Standard type。图像尺寸 24.576 x 1.392 mm，有效像素 1024 x 58 pixels，像元 24 x 24 μm。光谱响应 200 to 1100 nm。行频典型 2097 行/秒，最高 3650 行/秒。暗电流典型 100 e-/pixel/s。读出噪声典型 30 e- rms。冷却 One-stage TE-cooled。窗口 AR-coated sapphire。封装 Ceramic。测量条件写成 Typ. Ta=25 ℃，unless otherwise noted, Dark current: MPP mode。规格表没有专用驱动电路一行。手册文件名仍是 s12600_s12601_series_kmpd1182e.pdf，产品页标 517 KB。",
+          "手册与 S12600 共用，目录号 KMPD1182E04，页脚写 Jul. 2026 DN，资料截至 July 2026，记为约 2026 年 7 月。手册特性把一阶制冷写成 One-stage TE-cooled type (S12601 series)。选型表总像素 1044 × 64，有效像素 1024 × 58，感光区 24.576 × 1.392，冷却写 One-stage TE-cooled。结构表输出电路仍写 Two-stage MOSFET source follower。窗口写 AR-coated sapphire，注记 *3 写 Hermetic sealing。封装仍写 24-pin ceramic DIP，产品页写 Ceramic。注记 *1 的临时窗口例子只写 S12600-1006N/-1007N，没有给这一只的临时窗口型号，没有加入。",
+          "半导体制冷器最大电流 3.0 A、最大电压 3.6 V 写在两系列共用的绝对最大额定值里，散热侧最高 70 ℃。内置制冷器一节没有按型号分列。内阻典型 1.2 Ω，条件 Ta=25 °C。最大吸热 Qmax 为 5.1 W。注记 *24 写这是供给最大电流时用来修正温差的理论吸热量。电流对电压、电流对 CCD 温度的图号是 KMPDB0716EA。正文写散热侧要设在 30 °C 或更低，才能使制冷区到 -10 °C，并写散热器热阻 1°C/W or lower，1 和 °C 之间没有空格。",
+          "热敏电阻一段写 built into the same package with a CCD chip，并写 monitors the operating CCD chip temperature。下一句把 expressed 写成 is express。公式写成 RT1 = RT2 × exp BT1/ T2 (1/T1 – 1/T2)，BT1/ 和 T2 之间有空格。R298=10 kΩ，B298/323=3450 K。图号 KMPDB0111EB。满阱、转换效率、暗电流、读出噪声和动态范围与 S12600 同一列。读出噪声注记 *15 仍写芯片温度 0 °C、fc=3 MHz。垂直寄存器电容典型 1500 pF。时序图与 S12600-1006 同列，垂直方向写 S1260*-1006/-1006S。选型指南数据率一栏的 5 印在这一行，行频典型 2097 lines/s。",
+          "外形图另列一页，标题写 S12601 series，图号 KMPDA0356ED。图上标出 Thermistor 和 TE-cooler。窗口仍标 28.6*，感光区仍标 24.58。封装长度 44 ± 0.44 mm，旁边括着 (52)，再往外是 60 ± 0.3。图上写 1st pin index mark，S12600 写的是 indication pad。制冷器相关高度写成 4.89 ± 0.15、6.32 ± 0.63、7.3 ± 0.63 和 7.7 ± 0.68，另有 (19) 和 (4)。这一只的 A=1.392。重量 38.7 g 缩进在透过率星号下面。引脚第 16 脚 Th1、第 17 脚 Th2 是 Thermistor。第 18 脚 P- 和第 19 脚 P+ 是 TE-cooler。第 7 脚仍是短横线。手册末尾没有驱动电路。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+      {
+        ...page("S12601-1007S", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S12601-1007S.html", [
+          "产品页没有写发布日期。特性仍写 One-stage TE-cooled type。正文与 S12601-1006S 相同。规格表光谱响应 200 to 1100 nm。",
+          "分光索引的简介仍写 High-speed response back-thinned FFT-CCD。索引有效像素 1024 x 122 pixels，图像尺寸 24.576 x 2.928 mm。索引行频只给出最高 2146 lines/s。索引冷却仍是 One-stage TE-cooled，封装仍是 Ceramic。",
+          "规格表图像尺寸 24.576 x 2.928 mm，有效像素 1024 x 122 pixels，像元 24 x 24 μm。行频典型 1162 行/秒，最高 2146 行/秒。暗电流典型 100 e-/pixel/s，读出噪声典型 30 e- rms。冷却 One-stage TE-cooled。窗口 AR-coated sapphire。封装 Ceramic。测量条件与 S12601-1006S 相同。规格表没有专用驱动电路一行。手册仍是 KMPD1182E04，产品页标 517 KB。",
+          "手册总像素 1044 × 128，有效像素 1024 × 122，感光区 24.576 × 2.928。窗口仍写 AR-coated sapphire，注记 *3 仍写 Hermetic sealing。封装仍写 24-pin ceramic DIP。垂直寄存器电容典型 3000 pF。时序图垂直方向按 S1260*-1007/-1007S 写成 128←122 + 6 (bevel)。P1V 脉冲宽度最小 1 µs、典型 2 µs。外形图与 S12601-1006S 共用，A=2.928，重量仍写 38.7 g。选型指南行频典型 1162 lines/s。热敏电阻、半导体制冷器和引脚表与 S12601-1006S 共用。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+    ],
+  },
 ];
