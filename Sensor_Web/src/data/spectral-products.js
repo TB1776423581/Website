@@ -665,7 +665,7 @@ export const spectralProducts = [
     category: "product",
     title: "S3901 与 S3904：滨松电流输出 NMOS 线阵",
     summary:
-      "S3901-128Q、S3901-256Q、S3901-512Q、S3904-256Q、S3904-512Q 与 S3904-1024Q 的产品页写 NMOS 线阵，类型为 Current output type（Standard type），光谱响应 200 到 1000 nm。S3901-1024Q 与 S3904-2048Q 的产品页写感光区长度 51.2 mm，光谱响应同样是 200 到 1000 nm。S3901-256F、S3901-512F、S3904-512F 与 S3904-1024F 的产品页写光纤窗，类型为 Current output type（With FOP），光谱响应 360 到 1000 nm。产品页都没有写发布日期。石英窗短阵列手册 KMPD1036E07 页脚写 May 2024，并写资料截至 May 2024，记为约 2024 年 5 月。光纤窗手册 KMPD1003E06 页脚同样写 May 2024，记为约 2024 年 5 月。长阵列手册 KMPD1049E06 页脚写 Jun. 2024，并写资料截至 June 2024，记为约 2024 年 6 月。",
+      "S3901-128Q、S3901-256Q、S3901-512Q、S3904-256Q、S3904-512Q 与 S3904-1024Q 的产品页写 NMOS 线阵，类型为 Current output type（Standard type），光谱响应 200 到 1000 nm。S3901-1024Q 与 S3904-2048Q 的产品页写感光区长度 51.2 mm，光谱响应同样是 200 到 1000 nm。S3901-256F、S3901-512F、S3904-512F 与 S3904-1024F 的产品页写光纤窗，类型为 Current output type（With FOP），光谱响应 360 到 1000 nm。产品页都没有写发布日期。石英窗短阵列手册 KMPD1036E07 页脚写 May 2024，并写资料截至 May 2024，记为约 2024 年 5 月。光纤窗手册 KMPD1003E06 页脚同样写 May 2024，记为约 2024 年 5 月。长阵列手册 KMPD1049E06 页脚写 Jun. 2024，并写资料截至 June 2024，记为约 2024 年 6 月。S3901-256FX 与 S3901-512FX 的产品页写涂荧光粉的光纤窗，对 10 k 到 100 keV 的 X 射线灵敏度高。产品页没有写发布日期。手册 KMPD1005E07 页脚写 Mar. 2017 DN，并写资料截至 March 2017，记为约 2017 年 3 月。",
     applications: ["spectral", "scientific", "machine"],
     technologies: ["spectral"],
     models: [
@@ -779,6 +779,29 @@ export const spectralProducts = [
           "手册视频延迟典型 200 ns。时钟线电容典型 100 pF，饱和控制栅电容典型 45 pF，视频线电容典型 30 pF。",
         ], "uv"),
         bands: ["uv", "nir"],
+      },
+      {
+        ...page("S3901-256FX", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/x-ray-image-sensor/x-ray-line-sensor/S3901-256FX.html", [
+          "产品页没有写发布日期。页面标题写 NMOS linear image sensor。描述先写自扫描光电二极管阵列，面向多通道分光，再写 Current output type。S3901-256FX 这一句写成 image sensor is  variants，is 和 variants 之间有两个空格，variants 用复数。荧光粉写成 gadolinium ox sulfide (Gd2O2S:Tb)，冒号，峰值发射 550 nm。正文写对 10 k 到 100 keV 的 X 射线灵敏度特别高，感光区按 50 μm 间距、高度 2.5 mm 排列。",
+          "特性写感光区宽、暗电流低、饱和电荷高、室温下可长时间积分、动态范围宽、线性度和空间均匀性好。功耗写成 Lower power consumption: 1 mW max.。起始脉冲和时钟写成 clock pulses，复数，与 CMOS 逻辑兼容。特性没有再列像素间距和高度。",
+          "X 射线线阵索引简介写 NMOS linear image sensor with FOS，FOS 不是产品页上的 FOP。有效像素 256×1 pixels，像元 50 x 2500 μm，像素间距 50 μm，图像尺寸 12.8 x 2.5 mm。帧频一格是 --。闪烁体写成 Gd2O2S・Tb (+FOP)，Gd 和 O 用下标，中间是 ・。封装 Ceramic。索引没有窗口一格，也没有冷却一格。缩略图文件名是 k_s3901-256fx_pp_xx.jpg，thumbAlt 是空的。typeNameSort 写成 S03901-256FX。productName 写 NMOS linear image sensor。newState 是 false。手册在索引上标 212 KB。",
+          "规格表图像尺寸 12.8 x 2.5 mm，有效像素 256×1 pixels，像元 50 x 2500 μm，像素间距 50 μm。封装 Ceramic。闪烁体与索引相同，仍用下标和 ・。规格表没有帧频、窗口、冷却和专用驱动电路。手册文件名 s3901-256fx_etc_kmpd1005e.pdf，产品页标 212 KB。相关文档还链着免责声明 disclaimer_en.pdf，标 37 KB，图像传感器注意事项 kxx-a12018-eng.pdf，标 576 KB，选型指南 image_sensor_kmpd0002e.pdf，标 4.7 MB，以及 X 射线探测器技术说明 x-ray_kmpd9016e.pdf，标 2.4 MB。下面的规格取自产品页和手册 KMPD1005E07，没有拿技术说明里的数字。",
+          "手册标题写 NMOS linear image sensor，并列 S3901-FX series。正文写 are variants of S3901-F series，are 是复数。荧光粉仍写成 gadolinium ox sulfide，化学式写成 Gd2O2S·Tb，用中间点。目录号 KMPD1005E07，页脚写 Mar. 2017 DN，并写资料截至 March 2017，记为约 2017 年 3 月。特性功耗写成 Low power consumption: 1 mW max.，时钟写成 clock pulse，单数，并列出像素间距 50 μm、高度 2.5 mm。应用栏写 Test equipment using X-ray and electron beam transmission、X-ray non-destructive inspection，以及 X-ray and electron beam detector。",
+          "手册光谱响应范围注记写 20% of peak，范围 10 to 100 keV。光灵敏度典型 0.013 pC/mR。暗电流典型 0.2 pA、最大 0.6 pA。光电二极管电容典型 20 pF。饱和曝光典型 4 R。饱和电荷典型 50 pC。光响应非均匀性上限 ±10%，注记写包含荧光粉发射的均匀性，并除去暗电流成分。X 射线管电压 40 kV，管电流 3 mA，距离 4 cm。注记里的荧光粉写成 Gd2O2S ∙ Tb，点号两边有空格，厚度 200 μm，λp=550 nm，衰减时间 1 ms。这些电气条件写 Vb=2.0 V，Vɸ=5.0 V。",
+          "结构表像素数 256，封装长度 31.75 mm，引脚数表头写成 Number of pin，窗口 Fiber optic plate，重量 8.0 g。注记 *3 写为减少杂散光，荧光粉光纤板上装有铝盖。绝对最大功耗 1 mW，条件 Vɸ=5.0 V。工作温度 -30 到 +60 °C，注记写 No condensation。贮存温度 -40 到 +80 °C。数据率最小 0.1 kHz、最大 2000 kHz。视频延迟典型 120 ns，注记写饱和的 50%，并用 C7883 驱动电路测量。时钟线电容典型 36 pF，饱和控制栅电容典型 20 pF，视频线电容典型 11 pF。C7883 没有当作传感器加入。",
+          "感光区结构图写 45 µm 和 50 µm，图上写 Oxidation silicon。外形图感光区 12.8 × 2.5，封装长度印 31.75。引脚图写 Vss, Vsub and NC should be grounded。手册另写 Hamamatsu S3904 series 也可以配同样荧光粉的光纤窗，没有给出型号，没有加入。手册还写不用荧光粉和光纤窗的光电二极管可以直接探测 10 keV 以下的 X 射线，没有给出型号，没有加入。手册末尾没有驱动电路。",
+          "约 2026 年 6 月的选型指南 KMPD0002E35 写资料截至 June 2026，记为约 2026 年 6 月。X 射线 TDI-CCD 一页没有列入 S3901-256FX。",
+        ]),
+        technologies: [],
+      },
+      {
+        ...page("S3901-512FX", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/x-ray-image-sensor/x-ray-line-sensor/S3901-512FX.html", [
+          "产品页没有写发布日期。描述与 S3901-256FX 同一套分光导语。型号句写成 image sensor is variants，is 和 variants 之间只有一个空格，variants 仍是复数。荧光粉仍写成 Gd2O2S:Tb，峰值发射 550 nm。特性功耗仍写 Lower power consumption，时钟仍写 clock pulses。",
+          "X 射线线阵索引有效像素 512×1 pixels，图像尺寸 25.6 x 2.5 mm。帧频一格仍是 --。闪烁体、封装和 productName 与 S3901-256FX 相同。缩略图文件名是 k_s3901-512fx_pp_xx.jpg，thumbAlt 是空的。typeNameSort 写成 S03901-512FX。newState 是 false。手册仍标 212 KB。",
+          "规格表图像尺寸 25.6 x 2.5 mm，有效像素 512×1 pixels。手册仍是 s3901-256fx_etc_kmpd1005e.pdf，212 KB，目录号 KMPD1005E07，记为约 2017 年 3 月。结构表像素数 512，封装长度 40.6 mm，重量 10.0 g。视频延迟典型 160 ns。时钟线电容典型 67 pF，饱和控制栅电容典型 35 pF，视频线电容典型 20 pF。外形图感光区 25.6 × 2.5，封装长度印 40.6。",
+          "约 2026 年 6 月的选型指南没有列入 S3901-512FX。",
+        ]),
+        technologies: [],
       },
     ],
   },
@@ -5308,6 +5331,74 @@ export const spectralProducts = [
           "约 2026 年 6 月的选型指南在 Standard type 页 11/42 把这一行印成 24 × 24、512 × 512、0.9 frames/s。文字层里的 24 × 24 只出现在这一行。冷却字样 One-stage TE-cooled 印在旁边的 S7031 一组上，这一行没有单独再印冷却，也没有印驱动电路。星号 *2 仍写 Area scanning (typ.)。",
         ], "uv"),
         bands: ["uv", "nir"],
+      },
+    ],
+  },
+  {
+    id: "s7199",
+    date: "",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S7199：滨松双芯片 TDI-CCD",
+    summary:
+      "S7199-01 的产品页写前照式 FFT-CCD，两片 CCD 靠近排列，感光区大约 150 mm，并直接耦合对 X 射线敏感的 FOS。S7199-01F 的产品页写耦合 FOP，没有闪烁体。两只有效像素在产品页上都写成 3072×128，像元 48×48 μm，帧频典型 15 帧/秒。产品页没有写发布日期。手册目录号 KMPD1077E12，页脚写 Feb. 2014 DN，并写资料截至 February, 2014，记为约 2014 年 2 月。",
+    applications: ["scientific", "machine"],
+    technologies: [],
+    models: [
+      {
+        ...page("S7199-01", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/x-ray-image-sensor/x-ray-line-sensor/S7199-01.html", [
+          "产品页没有写发布日期。页面标题写 CCD area image sensor。二级标题写长而窄的感光区，并注明 FOS type。正文写 front-illuminated FFT-CCD，两片 CCD 靠近排列。configure 印成 cofinure。approx. 150 mm 后面的句号和 The 之间没有空格。scintillator material 在行末拆成 mate-rial。",
+          "特性以连字符开头，连字符和字之间没有空格。像素写成 1536 (H) × 128 (V) × 2 chips。X 射线感光区 146 × 6 mm。像元 48 × 48 μm。另写 Buttable structure of 2 chips、TDI (Time Delay Integration) operation、100 % fill factor，百分号两边有空格。暗电流写成 Low dark signal。还有低读出噪声和 MPP operation。",
+          "X 射线线阵索引简介写 Image sensor with a long, narrow photosensitive area for X-ray imaging (FOS type)。productName 写 CCD area image sensor。有效像素 3072×128 pixels，像元 48 x 48 μm，像素间距 48 μm，图像尺寸 147.456 x 6.144 mm。帧频典型 15 frames/s。闪烁体 CsI (+FOP)。封装 Ceramic。缩略图文件名是 k_s7199-01_pp_xx.jpg，thumbAlt 是空的。typeNameSort 写成 S07199-01。newState 是 false。手册标 266 KB。",
+          "规格表总像素 1536×128 pixels，有效像素 3072×128 pixels。图像尺寸、像元、帧频、闪烁体和封装与索引相同。规格表没有窗口、冷却和专用驱动电路。手册文件名 s7199-01_01f_kmpd1077e.pdf，产品页标 266 KB。相关文档还链着免责声明，标 37 KB，图像传感器注意事项，标 576 KB，选型指南，标 4.7 MB，以及 X 射线探测器技术说明，标 2.4 MB。下面的规格取自产品页、手册 KMPD1077E12 和选型指南，没有拿技术说明里的数字。",
+          "手册标题写 TDI-CCD area image sensor，并列 S7199-01/-01F。正文用 are 的位置改成 The S7199-01 is。暗电流在手册特性里写成 Low dark current。TDI 括号写成 time delay integration，t 是小写。填充因子写成 100%，百分号前没有空格。目录号 KMPD1077E12，页脚写 Feb. 2014 DN，并写资料截至 February, 2014，记为约 2014 年 2 月。应用栏写 General X-ray imaging、Non-destructive inspection 和 Dental panorama。",
+          "手册结构表 CCD 写成 Full frame transfer or TDI。窗口是 FOS (fiber optic plate with scintillator)，没有写 CsI。感光区 73.728 × 6.144 mm (× 2 chips)。X 射线感光区 146 × 6 mm。总像素和有效像素都写成 1536 × 128 (× 2 chips)。填充因子 100%。垂直时钟和水平时钟都是 2 phases。输出电路是 Two-stage MOSFET source follower with load resistance。X 射线分辨率 4 to 6 Lp/mm at 60 kVp, 20 μGy。总剂量 50 Gy max.。封装 40-pin ceramic。冷却 Non-cooled。",
+          "满阱垂直、水平和求和都是典型 1200 ke-、最小 600 ke-。CCD 节点灵敏度典型 0.6 μV/e-、最小 0.45 μV/e-。MPP 暗电流典型 8 ke-/pixel/s、最大 24 ke-/pixel/s。读出噪声 25 °C 典型 90 e- rms，-40 °C 典型 60 e- rms、最大 120 e- rms。动态范围典型 20000、最小 5000。XRNU 典型 ±10%、最大 ±30%。白点和黑点最大 10，簇缺陷和列缺陷最大 0。信号输出频率典型 2 MHz、最大 4 MHz。垂直寄存器电容典型 15000 pF，水平寄存器电容典型 500 pF。片上放大器功耗典型 60 mW，注记写 each chip。注记 *6 写温度每升高 5 到 7 °C，暗电流加倍。注记 *7 写工作频率 2 MHz。",
+          "外形图标题写成 DImensional outline，I 是大写，并另写 S7199, S7199-01。死区 130 to 200 µm。X 射线感光区 146.0 (H) × 6.0 (V)。FOP 150.0 ± 0.2。引脚表 B20 的 ISV 说明写成 Test Point，P 是大写。注意事项写 Handle these sensors with bare hands or wearing cotton gloves。保修写 shipment 之后 12 个月，并把超过 50 Gy 的总剂量排除在保修之外，入射 X 射线能量写成 70 kVp。手册没有驱动电路。",
+          "约 2026 年 6 月的选型指南把这一只放在 TDI-CCD area image sensors，页码 37/42。说明写 long and narrow type CCDs coupled with FOS，用于 X-ray radiography 和 non-destructive X-ray inspection。闪烁体写成 CsI (+ FOP)，加号后面有空格。有效像素印成 1536 × 128 (× 2-chip buttable)，像元 48 × 48。行频最高 2100 lines/s，星号 *1 写 TDI scanning。这一行没有印产品页上的 15 frames/s。星号 *2 写也提供没有闪烁体、只耦合 FOP 的 S7199-01F 和 S8658-01F。指南另写若用于医疗诊断，客户须取得医疗器械许可。",
+        ]),
+      },
+      {
+        ...page("S7199-01F", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/x-ray-image-sensor/x-ray-line-sensor/S7199-01F.html", [
+          "产品页没有写发布日期。描述从特性开始，没有 S7199-01 那段 FOS 正文。特性仍没有连字符后的空格，像素仍写 1536 (H) × 128 (V) × 2 chips，X 射线感光区仍写 146 × 6 mm。多一条 Coupled with FOP for X-ray imaging。暗电流仍写 Low dark signal。注记写用于 X 射线探测时，使用者需要在 FOP 上贴荧光屏等。",
+          "X 射线线阵索引简介写 FOP type, without scintillator。有效像素、像元、图像尺寸和帧频与 S7199-01 相同，帧频仍是 15 frames/s。闪烁体一格是空的。封装 Ceramic。缩略图文件名是 k_s7199-01f_pp_xx.jpg，thumbAlt 是空的。typeNameSort 写成 S07199-01F。newState 是 false。手册仍标 266 KB。",
+          "规格表总像素和有效像素都写成 3072×128 pixels。S7199-01 的总像素一格是 1536×128 pixels。闪烁体写成 None。帧频仍是 15 frames/s。手册仍是 s7199-01_01f_kmpd1077e.pdf，目录号 KMPD1077E12，记为约 2014 年 2 月。手册窗口写成 FOP (fiber optic plate)，注记 *1 写使用者需要在 FOP 上贴荧光屏等。X 射线感光区、X 射线分辨率和总剂量这三格是短横。封装仍写 40-pin ceramic，冷却 Non-cooled。",
+          "外形图标题写 S7199-01F。死区仍是 130 to 200 µm。FOP 厚度一格写成 5.2，S7199-01 那张图写成 5.6。图上没有闪烁体一层。约 2026 年 6 月的选型指南在星号 *2 里点名这一只，没有给它单独一行，也没有印 15 frames/s。",
+        ]),
+      },
+    ],
+  },
+  {
+    id: "s8658",
+    date: "",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S8658：滨松三芯片 TDI-CCD",
+    summary:
+      "S8658-01 的产品页写 FFT-CCD 面阵，三片 CCD 排成一列，每片感光区 73.728×6.144 mm，三片合起来最长 220 mm。S8658-01F 的产品页没有这段正文，注记写要在 FOP 上另贴荧光屏。两只在产品页上的有效像素都是 4608×128，像元 48×48 μm，帧频典型 15 帧/秒。产品页没有写发布日期。手册目录号 KMPD1078E10，页脚写 Dec. 2013 DN，并写资料截至 December, 2013，记为约 2013 年 12 月。",
+    applications: ["scientific", "machine"],
+    technologies: [],
+    models: [
+      {
+        ...page("S8658-01", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/x-ray-image-sensor/x-ray-line-sensor/S8658-01.html", [
+          "产品页没有写发布日期。页面标题写 CCD area image sensor。描述写 a FFT-CCD area image sensor，a 后面直接接 FFT。X 射线转可见光写成 Xrays，中间没有连字符。每片感光区写成 73.728 (H) × 6.144 (V) mm2，2 没有上标。μm 后面的句号和 When 之间没有空格。三片 CCD 排成一列，总长度 up to 220 mm。每片 1536 × 128，像元 48 × 48 μm。TDI 用于传送带上的非破坏检查。",
+          "特性连字符后面有空格。像素写成 1536 (H) × 128 (V) (× 3 chips)。X 射线感光区 220 × 6 mm。另写把 3 片 CCD 排齐后得到 220 mm 长的狭缝图像。TDI 写成 Time Delay Integration。填充因子 100 %，百分号两边有空格。暗电流写成 Low dark current。特性没有低读出噪声这一条。",
+          "X 射线线阵索引简介写 for X-ray imaging (FOP type)。产品页写的是 FOS，索引写成 FOP。productName 写 CCD area image sensor。有效像素 4608×128 pixels，像元 48 x 48 μm，像素间距 48 μm，图像尺寸 221.184 x 6.144 mm。帧频典型 15 frames/s。闪烁体 CsI (+FOP)。封装 Ceramic。缩略图文件名是 k_s8658-01_pp_xx.jpg，thumbAlt 是空的。typeNameSort 写成 S08658-01。newState 是 false。手册标 249 KB。",
+          "规格表总像素和有效像素都写成 4608×128 pixels。帧频、闪烁体和封装与索引相同。规格表没有窗口、冷却和专用驱动电路。手册文件名 s8658-01_kmpd1078e.pdf，产品页标 249 KB。相关文档还链着免责声明，标 37 KB，图像传感器注意事项，标 576 KB，选型指南，标 4.7 MB，以及 X 射线探测器技术说明，标 2.4 MB。下面的规格取自产品页、手册 KMPD1078E10 和选型指南，没有拿技术说明里的数字。",
+          "手册标题写成 S8658-01/01F，01F 前面没有连字符。正文写 an front-illuminated，an 后面接辅音。FOS 前面用 A。三片靠近排列，感光区大约 220 mm。没有涂闪烁体的型号写成 S8658-01F。目录号 KMPD1078E10，页脚写 Dec. 2013 DN，并写资料截至 December, 2013，记为约 2013 年 12 月。应用栏写 General X-ray imaging、Non-destructive inspection，以及 Dental panorama, cephalo。",
+          "手册结构表窗口是 FOS，没有写 CsI。感光区 73.728 × 6.144 mm (× 3 chips)。X 射线感光区写成 X-ray photosensitive area，220 × 6 mm。总像素写成 1536 × 128 pixel (× 3 chips)，pixel 是单数。有效像素写成 1536 × 128 (× 3 chips)。垂直时钟和水平时钟都写成 2 phases and 2 lines。输出电路与 S7199 相同。X 射线分辨率 4 to 6 Lp/mm at 60 kVp, 20 μGy。总剂量 50 Gy max.。封装 60-pin ceramic。冷却 Non-cooled。注记 *1 写使用者必须把荧光屏贴到感光区，用的是 must。",
+          "满阱、节点灵敏度、暗电流、读出噪声、动态范围和缺陷上限与 S7199 的手册相同。读出噪声单位写成 e-rms，中间没有空格。XRNU 的测量区域注记仍写 146.0 mm (H) × 6.0 mm (V)。信号输出频率典型 2 MHz、最大 4 MHz。垂直寄存器电容典型 15000 pF。片上放大器功耗典型 60 mW。注记 *6 写暗电流每 5 到 7 °C 加倍。注记 *7 写成 Operating frequency=2 MHz，等号两边没有空格。",
+          "器件结构图把有效像素写成 ACTIVE ELEMENTS，全大写。像素格式里垂直方向的表头写成 Top ← Horizontal Direction → Right。外形图 X 射线感光区 220.0 (H) × 6.0 (V)。死区 1 最小 250 μm、最大 350 μm，死区 2 最小 130 μm、最大 200 μm。公差一行写成 5mm ≤，5 和 mm 之间没有空格。手册没有 S7199 那种 12 个月保修和 50 Gy 除外的段落，也没有驱动电路。",
+          "约 2026 年 6 月的选型指南在同一页把这一行印成 1536 × 128 (× 3-chip buttable)，闪烁体 CsI (+ FOP)，像元 48 × 48。行频最高仍是和 S7199-01 共用的 2100 lines/s，星号写 TDI scanning。指南没有印产品页上的 15 frames/s。星号 *2 点名没有闪烁体的 S8658-01F。",
+        ]),
+      },
+      {
+        ...page("S8658-01F", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/x-ray-image-sensor/x-ray-line-sensor/S8658-01F.html", [
+          "产品页没有写发布日期。描述从特性开始，没有 S8658-01 那段 FOS 正文。特性连字符后面有空格，像素、220 × 6 mm 的 X 射线感光区和 220 mm 狭缝都还在。暗电流仍写 Low dark current。注记写用于 X 射线探测时，使用者需要在 FOP 上贴荧光屏等，用的是 needs。",
+          "X 射线线阵索引简介写成 Imagesensor，Image 和 sensor 之间没有空格，后面写 FOP type, without scintillator。有效像素、像元、图像尺寸和帧频与 S8658-01 相同。闪烁体一格是空的。封装 Ceramic。缩略图文件名是 k_s8658-01f_pp_xx.jpg，thumbAlt 是空的。typeNameSort 写成 S08658-01F。newState 是 false。手册仍标 249 KB。",
+          "规格表总像素和有效像素都写成 4608×128 pixels。闪烁体写成 None。帧频仍是 15 frames/s。手册仍是 s8658-01_kmpd1078e.pdf，目录号 KMPD1078E10，记为约 2013 年 12 月。手册窗口写成 FOP。X 射线感光区、X 射线分辨率和总剂量这三格是短横。封装仍写 60-pin ceramic。注记 *1 写 must affix a phosphor sheet to the photosensitive area。",
+          "外形图标题写 S8658-01F。FOP 厚度一格写成 5.2，S8658-01 那张图写成 5.6。公差一行写成 5 mm ≤，5 和 mm 之间有空格。死区范围与 S8658-01 相同。约 2026 年 6 月的选型指南在星号 *2 里点名这一只，没有给它单独一行。",
+        ]),
       },
     ],
   },
