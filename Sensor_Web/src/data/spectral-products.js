@@ -4297,4 +4297,120 @@ export const spectralProducts = [
       },
     ],
   },
+  {
+    id: "s10420",
+    date: "",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S10420-01：滨松低噪声背照式 CCD",
+    summary:
+      "S10420-1004-01、S10420-1006-01、S10420-1104-01、S10420-1106-01、S10420-1106NU-01 与 S10420-1106NW-01 的产品页写背照式 CCD，用于光谱仪。前五只光谱响应 200 到 1100 nm。S10420-1106NW-01 写 120 到 1100 nm。六页都没有写发布日期，冷却都是 Non-cooled，封装都是 Ceramic。手册与 S11071 共用，标题写 S11071/S10420-01 series，目录号 KMPD1120E14，页脚写 Feb. 2023 DN，并写资料截至 February 2023，记为约 2023 年 2 月。",
+    applications: ["spectral", "scientific"],
+    technologies: ["spectral"],
+    models: [
+      {
+        ...page("S10420-1004-01", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S10420-1004-01.html", [
+          "产品页没有写发布日期。页面标题写 Back-thinned type CCD area image sensor。一级标题只写 S10420-1004-01。二级标题写 Improved etaloning characteristics, Low noise type available。正文写 designed for spectrometers，并写 Low noise type is available with improved etaloning characteristics。量子效率写成 high quantμm efficiency，quant 和 m 之间是 μm 的 μ。特性写节点灵敏度 6.5 uV/e-，u 不是 μ，以及 High full well capacity and wide dynamic range，像元 14 × 14 μm。产品页特性列表没有手册里的 with anti-blooming function。",
+          "规格表类型分成两行，Binning type 和 Low etaloning type。图像尺寸 14.336 x 0.224 mm，有效像素 1024 x 16 pixels，像元写成 14 x 14 μm，乘号是 x。光谱响应 200 to 1100 nm。行频典型 221 行/秒，最高 424 行/秒。暗电流典型 50 e-/pixel/s。读出噪声典型 6 e- rms。冷却 Non-cooled。封装 Ceramic。规格表没有窗口一行。专用驱动电路 C11287-01。测量条件写成 Typ. Ta=25 ℃，unless otherwise noted, Frame rate: full line binning，Frame 大写。手册文件名 s11071-1004_etc_kmpd1120e.pdf，产品页标 463 KB。",
+          "手册标题写 CCD image sensors，系列名 S11071/S10420-01 series。目录号 KMPD1120E14，页脚写 Feb. 2023 DN，并写资料截至 February 2023，记为约 2023 年 2 月。正文写 The S11071/S10420-01 series offer，offer 没有 s，并写 high quantum efficiency。特性把节点灵敏度分成 8 μV/e-（S11071 series）和 6.5 μV/e-（S10420-01 series）。满阱和动态范围后面括着 with anti-blooming function。高紫外耐受只写给 S10420-1106NU-01/-1106NW-01。应用栏写 Spectrometers, etc.。手册解释 etaloning 是入射光在 CCD 正反面之间反复反射、衰减后造成灵敏度高低交替，长波进入背照式 CCD 时与硅片厚度和吸收长度有关，这一组用不易发生干涉的结构减轻这种现象。图号 KMPDB0284EB。",
+          "选型表总像素与有效像素：-1004 为 1044 × 22 和 1024 × 16，感光区 14.336 × 0.224；-1006 为 1044 × 70 和 1024 × 64，感光区 14.336 × 0.896；-1104 为 2068 × 22 和 2048 × 16，感光区 28.672 × 0.224；-1106、-1106NU-01 和 -1106NW-01 为 2068 × 70 和 2048 × 64，感光区 28.672 × 0.896。读出速度最大：S11071 为 10 MHz，S10420-01 为 0.5 MHz。驱动电路分别写 C11288-01 和 C11287-01。",
+          "结构表像元 14 × 14 µm。垂直时钟 2-phase，水平时钟 4-phase。输出电路 S11071 写 Two-stage MOSFET source follower，S10420-01 写 One-stage MOSFET source follower。封装写 24-pin ceramic DIP，不是产品页上的 Ceramic。窗口：S11071 和 S10420 的 -1004-01、-1006-01、-1104-01、-1106-01 写 Quartz glass (resin sealing)。S10420-1106NU-01 和 -1106NW-01 写 None。注记 *1 写可按要求提供临时窗口，例子是 S11071-1106N 和 S10420-1106N-01。这两个例子没有加入。注记 *2 写 Temporary window (borosilicate glass)。冷却都是 Non-cooled。",
+          "绝对最大额定值工作温度 -50 到 +50 ℃，贮存温度 -50 到 +70 ℃。注记 *3 写封装温度。输出晶体管漏极电压 S11071 最大 +25 V，S10420-01 最大 +30 V。注记写即使瞬间超过绝对最大额定值也可能使产品质量下降。工作条件标题写 MPP mode, Ta=25 °C。外接负载电阻 S11071 典型 2.2 kΩ，S10420-01 典型 100 kΩ。注记 *4 只给 S11071 的输出放大器回流电压，写相对衬底为正，但电流流出传感器。S10420-01 的这一格是空的。",
+          "信号输出频率 S10420-01 典型 0.25 MHz、最大 0.5 MHz，S11071 典型 5 MHz、最大 10 MHz。垂直寄存器电容符号 CP1V、CP2V，-1004 典型 200 pF，-1006 典型 600 pF，-1104 典型 400 pF，-1106 典型 1200 pF。水平寄存器电容把 -1004 与 -1006 的符号写成 CP1H、CP2H，典型 80 pF；-1104 与 -1106 写成 CP3H、CP4H，典型 160 pF。求和栅和复位栅电容都是典型 10 pF。转移栅电容 -1004 与 -1006 典型 30 pF，-1104 与 -1106 典型 60 pF。电荷转移效率最小 0.99995、典型 0.99999。直流输出电平 S10420-01 典型 17 V，S11071 典型 8 V。输出阻抗 S10420-01 典型 10 kΩ，S11071 典型 0.3 kΩ。功耗 S10420-01 典型 4 mW，S11071 典型 75 mW。注记 *5 写 S10420-01 的条件是 VOD=24 V，RL=100 kΩ。注记 *6 写按每个像元、在满阱一半处测量。注记 *7 写片上放大器加上负载电阻。",
+          "手册电气光学特性没有行频一行。满阱垂直方向两组都是最小 50 ke-、典型 60 ke-。水平方向 S10420-01 最小 250 ke-、典型 300 ke-，S11071 最小 150 ke-、典型 200 ke-。转换效率 S10420-01 最小 5.5 µV/e-、典型 6.5 µV/e-、最大 7.5 µV/e-，S11071 最小 7、典型 8、最大 9。暗电流典型 50 e-/pixel/s、最大 500 e-/pixel/s。注记 *9 写温度每降 5 到 7 ℃，暗电流减半。读出噪声 S10420-01 典型 6 e- rms、最大 15 e- rms，S11071 典型 23、最大 28。注记 *10 写 S10420-01 在 -40 ℃、fc=20 kHz 测量，S11071 在 25 ℃、fc=2 MHz 测量。动态范围只有 line binning 一行，S10420-01 最小 16600、典型 50000，S11071 最小 5350、典型 8700。注记 *11 写成 Dynamic range = Full well capacity / Readout noise。光响应非均匀性典型 ±3%、最大 ±10%。注记 *12 写用峰值发射波长 660 nm 的 LED，在饱和输出的一半处测量。",
+          "光谱响应图标题写 typical example, without window。图中分开画了 S11071 series、S10420-1004-01/-1006-01、S10420-1104-01/-1106-01、S10420-1106NW-01 和 S10420-1106NU-01。图号 KMPDB0578EB。窗口透过率图号 KMPDB0303EB。注记 *13 写加石英玻璃后的光谱响应要按窗口透过率下降。暗电流对温度图号 KMPDB0304EB。器件结构图画 4 blank pixels 和 6-bevel，并写 H=1024, 2048，V=16, 64。S11071 的图上同时出现 2 signal output 和 2n signal output。S10420-01 的图写 2n signal output。图号 KMPDC0343EC 和 KMPDC0269EC。注记写长波光可能穿过不感光的厚硅区进入水平移位寄存器，需要时加遮光。",
+          "行 binning 时序图页眉先写 Timing chart (S11071/S10420 series)，正文标题写 Timing chart (line binning)。-1004 与 -1104 的垂直方向写成 22←16 + 6 (bevel)，-1006 与 -1106 写成 70←64 + 6 (bevel)。水平方向 -1004 与 -1006 写到 1044，-1104 与 -1106 写到 2068。输出标注对 -1004 与 -1006 写 D3...D10, S1...S1024, D11...D18，对 -1104 与 -1106 写 S1...S2048，图上还有 D1、D2、D19、D20。图号 KMPDC0270ED。P1V 脉冲宽度 S10420-01 最小 6 µs、典型 8 µs，S11071 最小 1 µs、典型 8 µs。注记 *14 写对称时钟应在最大幅度的 50% 处重叠。时序图没有单独写出 NU 和 NW。",
+          "石英窗外形图标题写成 Dimensional outline (S11071/S10420-1 series, unit: mm)，S10420-01 写成了 S10420-1。下面又有一行 Dimensional outline (unit: mm)。图号 KMPDA0223EF。玻璃厚度注记写 refractive index≈1.5。Index mark 标了两处。引脚镀金，材料 Alloy 42。封装长度 38.10 ± 0.4 mm，引脚间距 2.54 ± 0.13 mm，另有 27.94 ± 0.3。感光区表把 -1004(-01) 写成 14.336 (H)、0.224 (V)。S10420-1106NU-01 与 -1106NW-01 另用图号 KMPDA0627EB，图上标 0.896，没有玻璃厚度注记。",
+          "引脚表 S10420-01 的第 1 脚 OS 写 RL=100 kΩ，第 2 脚 OD 为 +24 V，第 5 脚是 SS，接 GND。第 13 脚功能写成 Over flow gate，中间分开，标准电压 +12 V。第 23 脚 TG 写 Same pulse as P2V。S11071 的第 5 脚是 Vret，标准电压 +1 V，OS 写 RL=2.2 kΩ，OD 为 +15 V。注意事项写 Handle these sensors with bare hands or wearing cotton gloves。临时窗口型 S10420-1106NU-01/-1106NW-01 另写 Never touch or wipe the photosensitive surface。手册末尾的驱动电路 C11287-01 和 C11288-01 写 sold separately，内置 16-bit A/D，接口 USB 2.0。C11287-01 写 USB bus power，并写可用于 S10420-01 series、S16010 series 和 S14650 series。C11288-01 写 DC+5 V，并写可用于 S11071 series 和 S14660 series。这两只驱动电路没有当作传感器加入。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+      {
+        ...page("S10420-1006-01", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S10420-1006-01.html", [
+          "产品页没有写发布日期。二级标题写成 Improved etaloning characteristics, Low noise type，没有 S10420-1004-01 标题里的 available。正文仍写 Low noise type is available，量子效率仍写成 quantμm。特性仍是 6.5 uV/e-。规格表光谱响应 200 to 1100 nm。",
+          "规格表图像尺寸 14.336 x 0.896 mm，有效像素 1024 x 64 pixels。行频典型 189 行/秒，最高 341 行/秒。暗电流典型 50 e-/pixel/s，读出噪声典型 6 e- rms。冷却 Non-cooled，封装 Ceramic，没有窗口一行。专用驱动电路 C11287-01。手册仍是 KMPD1120E14。",
+          "手册总像素 1044 × 70，有效像素 1024 × 64，感光区 14.336 × 0.896。垂直寄存器电容典型 600 pF。水平寄存器电容与 -1004 同列，典型 80 pF。时序图垂直方向按 -1006 写成 70←64 + 6 (bevel)，水平方向写到 1044。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+      {
+        ...page("S10420-1104-01", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S10420-1104-01.html", [
+          "产品页没有写发布日期。二级标题与 S10420-1006-01 相同，写 Low noise type。正文仍写 quantμm 和 Low noise type is available。规格表光谱响应 200 to 1100 nm。",
+          "规格表图像尺寸 28.672 x 0.224 mm，有效像素 2048 x 16 pixels。行频典型 116 行/秒，最高 227 行/秒。暗电流、读出噪声、冷却、封装和驱动电路与 S10420-1004-01 相同。手册仍是 KMPD1120E14。",
+          "手册总像素 2068 × 22，有效像素 2048 × 16，感光区 28.672 × 0.224。垂直寄存器电容典型 400 pF。水平寄存器电容典型 160 pF，符号写成 CP3H、CP4H。转移栅电容典型 60 pF。时序图垂直方向按 -1104 写成 22←16 + 6 (bevel)，水平方向写到 2068。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+      {
+        ...page("S10420-1106-01", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S10420-1106-01.html", [
+          "产品页没有写发布日期。二级标题仍写 Low noise type。正文仍写 quantμm。规格表光谱响应 200 to 1100 nm。",
+          "规格表图像尺寸 28.672 x 0.896 mm，有效像素 2048 x 64 pixels。行频典型 106 行/秒，最高 200 行/秒。暗电流典型 50 e-/pixel/s，读出噪声典型 6 e- rms。封装 Ceramic，没有窗口一行。专用驱动电路 C11287-01。手册仍是 KMPD1120E14。",
+          "手册总像素 2068 × 70，感光区 28.672 × 0.896。窗口写 Quartz glass (resin sealing)。垂直寄存器电容典型 1200 pF。水平寄存器电容典型 160 pF。时序图按 -1106 写成 70←64 + 6 (bevel) 和 2068。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+      {
+        ...page("S10420-1106NU-01", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S10420-1106NU-01.html", [
+          "产品页没有写发布日期。二级标题写 Improved etaloning characteristics, Low noise type, High UV resistance。正文同时写出 high-speed type (S11071 series) 和 low noise type (S10420-01 series)。量子效率写成 high quantum eﬃciency，ffi 连成一个字符。特性在 6.5 uV/e- 和 14 × 14 μm 之外另写 High UV resistance。规格表光谱响应 200 to 1100 nm。",
+          "规格表图像尺寸、像素和行频与 S10420-1106-01 相同，典型 106 行/秒，最高 200 行/秒。暗电流典型 50 e-/pixel/s，读出噪声典型 6 e- rms。窗口写成 None (temporary window)。封装 Ceramic。专用驱动电路写成 C11287，没有 -01。手册选型表仍把这一只放在 C11287-01 一列。",
+          "手册窗口写 None，注记 *2 写 Temporary window (borosilicate glass)。总像素 2068 × 70，感光区 28.672 × 0.896。外形图用 KMPDA0627EB，图上标 0.896，没有玻璃厚度注记。注意事项写不要触摸或擦拭感光面。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+      {
+        ...page("S10420-1106NW-01", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S10420-1106NW-01.html", [
+          "产品页没有写发布日期。二级标题、正文和特性与 S10420-1106NU-01 相同，量子效率仍写成 quantum eﬃciency，并写 High UV resistance。规格表光谱响应改成 120 to 1100 nm。",
+          "规格表图像尺寸 28.672 x 0.896 mm，有效像素 2048 x 64 pixels。行频典型 106 行/秒，最高 200 行/秒。暗电流典型 50 e-/pixel/s，读出噪声典型 6 e- rms。窗口 None (temporary window)，封装 Ceramic。专用驱动电路同样写成 C11287。手册仍是 KMPD1120E14。",
+          "手册光谱响应一行把 120 to 1100 nm 单列给这一只。窗口仍写 None，注记 *2 仍写 borosilicate glass。外形图与 S10420-1106NU-01 共用 KMPDA0627EB。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+    ],
+  },
+  {
+    id: "s11071",
+    date: "",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S11071：滨松高速背照式 CCD",
+    summary:
+      "S11071-1004、S11071-1006、S11071-1104 与 S11071-1106 的产品页写背照式 CCD，光谱响应 200 到 1100 nm。二级标题写 High-speed type。规格表类型仍写 Low etaloning type。四页都没有写发布日期，冷却都是 Non-cooled，封装都是 Ceramic，规格表都没有窗口一行。手册与 S10420-01 共用，KMPD1120E14，页脚写 Feb. 2023，并写资料截至 February 2023，记为约 2023 年 2 月。",
+    applications: ["spectral", "scientific"],
+    technologies: ["spectral"],
+    models: [
+      {
+        ...page("S11071-1004", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S11071-1004.html", [
+          "产品页没有写发布日期。页面标题写 Back-thinned type CCD area image sensor。一级标题只写 S11071-1004。二级标题写 Improved etaloning characteristics, High-speed type。正文写 The S11071-1004 offer，offer 没有 s，量子效率写成 high quantμm efficiency。特性写节点灵敏度 8 uV/e-，u 不是 μ。规格表类型仍分成 Binning type 和 Low etaloning type，没有写 High-speed type。",
+          "规格表图像尺寸 14.336 x 0.224 mm，有效像素 1024 x 16 pixels，像元 14 x 14 μm。光谱响应 200 to 1100 nm。行频典型 1777 行/秒，最高 6693 行/秒。暗电流典型 50 e-/pixel/s。读出噪声典型 23 e- rms。冷却 Non-cooled。封装 Ceramic。规格表没有窗口一行。专用驱动电路 C11288-01。测量条件与 S10420 相同，Frame rate 的 Frame 大写。手册文件名仍是 s11071-1004_etc_kmpd1120e.pdf，产品页标 463 KB。",
+          "手册与 S10420-01 共用，目录号 KMPD1120E14，页脚写 Feb. 2023 DN，资料截至 February 2023，记为约 2023 年 2 月。这一组写成 high-speed type，读出速度最大 10 MHz，输出电路 Two-stage MOSFET source follower。窗口写 Quartz glass (resin sealing)。注记 *1 的临时窗口例子 S11071-1106N 没有加入。节点灵敏度手册写 8 μV/e-。满阱水平方向最小 150 ke-、典型 200 ke-。转换效率典型 8 µV/e-。读出噪声典型 23 e- rms、最大 28 e- rms，注记 *10 写在 25 ℃、fc=2 MHz 测量。动态范围 line binning 最小 5350、典型 8700。功耗典型 75 mW。输出阻抗典型 0.3 kΩ。直流输出电平典型 8 V。外接负载电阻典型 2.2 kΩ。引脚第 5 脚是 Vret，标准电压 +1 V。",
+          "选型表总像素 1044 × 22，有效像素 1024 × 16，感光区 14.336 × 0.224。垂直寄存器电容典型 200 pF。水平寄存器电容典型 80 pF。时序图垂直方向按 -1004 写成 22←16 + 6 (bevel)，水平方向写到 1044。P1V 脉冲宽度最小 1 µs、典型 8 µs。外形图与带石英窗的 S10420 共用 KMPDA0223EF。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+      {
+        ...page("S11071-1006", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S11071-1006.html", [
+          "产品页没有写发布日期。正文仍写 The S11071-1006 offer，量子效率仍写成 quantμm。特性仍是 8 uV/e-。规格表类型仍写 Low etaloning type。光谱响应 200 to 1100 nm。",
+          "规格表图像尺寸 14.336 x 0.896 mm，有效像素 1024 x 64 pixels。行频典型 751 行/秒，最高 4074 行/秒。暗电流典型 50 e-/pixel/s，读出噪声典型 23 e- rms。封装 Ceramic，没有窗口一行。专用驱动电路 C11288-01。手册仍是 KMPD1120E14。",
+          "手册总像素 1044 × 70，有效像素 1024 × 64，感光区 14.336 × 0.896。垂直寄存器电容典型 600 pF。水平寄存器电容典型 80 pF。时序图按 -1006 写成 70←64 + 6 (bevel) 和 1044。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+      {
+        ...page("S11071-1104", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S11071-1104.html", [
+          "产品页没有写发布日期。正文仍写 offer 和 quantμm。规格表光谱响应 200 to 1100 nm，类型仍写 Low etaloning type。",
+          "规格表图像尺寸 28.672 x 0.224 mm，有效像素 2048 x 16 pixels。行频典型 1303 行/秒，最高 3971 行/秒。暗电流典型 50 e-/pixel/s，读出噪声典型 23 e- rms。专用驱动电路 C11288-01。手册仍是 KMPD1120E14。",
+          "手册总像素 2068 × 22，有效像素 2048 × 16，感光区 28.672 × 0.224。垂直寄存器电容典型 400 pF。水平寄存器电容典型 160 pF。转移栅电容典型 60 pF。时序图按 -1104 写成 22←16 + 6 (bevel) 和 2068。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+      {
+        ...page("S11071-1106", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S11071-1106.html", [
+          "产品页没有写发布日期。正文仍写 The S11071-1106 offer 和 quantμm。规格表光谱响应 200 to 1100 nm。",
+          "规格表图像尺寸 28.672 x 0.896 mm，有效像素 2048 x 64 pixels。行频典型 651 行/秒，最高 2875 行/秒。暗电流典型 50 e-/pixel/s，读出噪声典型 23 e- rms。冷却 Non-cooled，封装 Ceramic，没有窗口一行。专用驱动电路 C11288-01。",
+          "手册总像素 2068 × 70，感光区 28.672 × 0.896。窗口写 Quartz glass (resin sealing)。垂直寄存器电容典型 1200 pF。水平寄存器电容典型 160 pF。时序图按 -1106 写成 70←64 + 6 (bevel) 和 2068。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+    ],
+  },
 ];
