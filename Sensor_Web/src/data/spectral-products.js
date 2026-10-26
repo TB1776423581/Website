@@ -783,6 +783,75 @@ export const spectralProducts = [
     ],
   },
   {
+    id: "s3902",
+    date: "",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S3902 与 S3903：滨松电流输出 NMOS 线阵",
+    summary:
+      "S3902-128Q、S3902-256Q、S3902-512Q、S3903-256Q、S3903-512Q 与 S3903-1024Q 的产品页写 NMOS 线阵，类型为 Current output type（Standard type），光谱响应 200 到 1000 nm。导语写 Current output, high UV sensitivity, excellent linearity, low power consumption。产品页都没有写发布日期。手册 KMPD1043E06 页脚写 May 2024，并写资料截至 May 2024，记为约 2024 年 5 月。",
+    applications: ["spectral", "scientific", "machine"],
+    technologies: ["spectral"],
+    models: [
+      {
+        ...page("S3902-128Q", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S3902-128Q.html", [
+          "产品页没有写发布日期。标题写 NMOS linear image sensor。导语写 Current output, high UV sensitivity, excellent linearity, low power consumption。正文用单数 photodiode，写高度 0.5 mm，按 50 μm 间距排成一行。窗口写成 Quartz glass。",
+          "特性写感光区宽、紫外灵敏度高且稳定、暗电流低、饱和电荷高、室温下可长时间积分、动态范围宽、线性度和空间均匀性好。功耗写成 Low power consumption: 1 mW max.。起始脉冲和时钟与 CMOS 逻辑兼容。正文还写低照度下仍有高信噪比，扫描电路易于使用。",
+          "规格表类型为 Current output type（Standard type）。图像尺寸 6.4 x 0.5 mm，有效像素 128 x 1，像元 50 x 500 μm。光谱响应 200 到 1000 nm。最高行频 15600 行/秒。无制冷，窗口 Quartz，封装 Ceramic。Dedicated driver circuit 那一格是空的。测量条件写 Typ. Ta=25 ℃，unless otherwise noted。饱和电荷条件写成 Saturation charge: Vb=2.0 V，冒号后面有空格，Vφ=5.0 V。",
+          "手册标题写成 S3902/S3903 series，KMPD1043E06 页脚写 May 2024，并写资料截至 May 2024，记为约 2024 年 5 月。手册把 photodiode 写成复数 are arrayed。S3902 系列高度 0.5 mm、间距 50 µm，S3903 系列高度 0.5 mm，并写 but are arrayed，间距 25 µm。正文写每种系列有 3 种像素数，different 在行末拆成 dif- 和 ferent，随后却列出 128（S3902-128Q）、256（S3902-256Q、S3903-256Q）、512（S3902-512Q、S3903-512Q）和 1024（S3903-1024Q）。特性功耗写成 Lower power consumption: 1 mW max.。Pixel pitch 的 50 在行末拆开，先印 5，下一行才是 0 µm (S3902 series)。应用栏写 Multichannel spectrophotometry 和 Image readout system。",
+          "手册结构表这一列像素数 128。封装长度与 S3902-256Q 写在合并格 31.75 mm，表头写成 Number of pin，数值与整个 S3902 系列合并为 22。窗口 Quartz。重量与 S3902-256Q 合并写成 3.0 g。外形图标题写成 S3902-128Q, S3903-256Q, S3922-128Q, S3923-256Q，感光区 6.4 × 0.5，封装长度印 31.75。光学距离标注 1.3 ± 0.2，注记写从石英窗外表面到芯片表面。S3922 和 S3923 不从这张图的标题另开型号。感光区结构图把 S3902 系列写成 a=50 µm，b=45 µm。",
+          "手册光谱响应范围注记写 10% of peak。峰值波长典型 600 nm。S3902 系列暗电流典型 0.08 pA、最大 0.15 pA。光电二极管电容典型 4 pF。饱和曝光典型 180 mlx · s，单位中间有空格，光源注记写 2856 K, tungsten lamp。饱和电荷典型 10 pC。光响应非均匀性上限 ±3%，注记写饱和的 50%，并除去起始像素和最后一个像素。绝对最大功耗 1 mW，条件 Vɸ=5.0 V。工作温度 -40 到 +65 ℃，注记 *2 写 No condensation。贮存温度 -40 到 +85 ℃。数据率最小 0.1 kHz、最大 2000 kHz。手册写视频数据率等于时钟频率，因为视频在 ɸ2 上升沿同步读出。这张电气特性表没有把视频延迟写成一行。-128 Q 一格的时钟线电容典型 21 pF，饱和控制栅电容典型 12 pF，视频线电容符号写成 CV，典型 7 pF。手册写 ɸ1、ɸ2 幅度为 5 V 时，视频偏置推荐 2 V。End of scan 写用 10 kΩ 上拉到 5 V。手册写这一系列不需要直流电源，Vss、Vsub 和全部 NC 应接地。全复位脉冲宽度写长于 5 µs。等效电路标题写成 S3901/S3902/S3903/S3904 series。引脚图标题写成 S3901/S3902/S3903/S3904/S8380/S8381 series。时序图标题写成 S3901/S3902/S3903/S3904 series。这些名称不从这张图的标题另开型号。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+      {
+        ...page("S3902-256Q", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S3902-256Q.html", [
+          "产品页没有写发布日期。正文与 S3902-128Q 同一套句子，高度 0.5 mm，间距 50 μm，photodiode 仍是单数，并写 is arrayed in a row。特性与功耗 Low power consumption: 1 mW max. 也相同。",
+          "规格表图像尺寸 12.8 x 0.5 mm，有效像素 256 x 1，像元 50 x 500 μm。最高行频 7800 行/秒。无制冷，窗口 Quartz，封装 Ceramic。Dedicated driver circuit 一格是空的。测量条件与 S3902-128Q 相同，饱和电荷冒号后面有空格。",
+          "手册结构表像素数 256。封装长度与 S3902-128Q 同在 31.75 mm 的合并格，重量同在 3.0 g 的合并格。外形图标题写成 S3902-256Q, S3903-512Q, S3922-256Q, S3923-512Q，感光区 12.8 × 0.5，封装长度仍印 31.75。S3922 和 S3923 不从这张图的标题另开型号。",
+          "手册暗电流、饱和电荷、饱和曝光和峰值波长与 S3902 系列同一列。-256 Q 一格的时钟线电容典型 36 pF，饱和控制栅电容典型 20 pF，视频线电容典型 11 pF。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+      {
+        ...page("S3902-512Q", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S3902-512Q.html", [
+          "产品页没有写发布日期。正文仍写间距 50 μm、高度 0.5 mm，并仍把 photodiode 写成单数，句子里有 in a row。特性与同系列相同。",
+          "规格表图像尺寸 25.6 x 0.5 mm，有效像素 512 x 1，像元 50 x 500 μm。最高行频 3900 行/秒。无制冷，窗口 Quartz，封装 Ceramic。Dedicated driver circuit 一格是空的。测量条件把饱和电荷写成 Saturation charge: Vb=2.0 V，冒号后面有空格。",
+          "手册结构表像素数 512。封装长度单独写成 40.6 mm，重量单独写成 3.5 g。外形图标题写成 S3902-512Q, S3903-1024Q, S3922-512Q, S3923-1024Q，感光区 25.6 × 0.5，封装长度 40.6。",
+          "手册 -512 Q 一格的时钟线电容典型 67 pF，饱和控制栅电容典型 35 pF，视频线电容典型 20 pF。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+      {
+        ...page("S3903-256Q", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S3903-256Q.html", [
+          "产品页没有写发布日期。正文把间距写成 25 μm，高度仍是 0.5 mm，photodiode 仍是单数，句子写成 is arrayed at a spacing，没有写 but，也没有写 in a row。特性与 S3902-128Q 相同，功耗仍写 Low power consumption: 1 mW max.。",
+          "规格表图像尺寸 6.4 x 0.5 mm，有效像素 256 x 1，像元 25 x 500 μm。最高行频 7800 行/秒。无制冷，窗口 Quartz，封装 Ceramic。Dedicated driver circuit 一格是空的。测量条件与 S3902-128Q 相同。",
+          "手册写 S3903 系列高度 0.5 mm，并写 but are arrayed，间距 25 µm。结构表像素数 256。封装长度与 S3903-512Q 写在合并格 31.75 mm，重量合并写成 3.0 g。外形图与 S3902-128Q 共用，感光区 6.4 × 0.5。感光区结构图把 S3903 系列写成 a=25 µm，b=20 µm。",
+          "手册 S3903 系列暗电流典型 0.04 pA、最大 0.08 pA。光电二极管电容典型 2 pF。饱和电荷典型 5 pC。饱和曝光仍是 180 mlx · s。-256 Q 一格的时钟线电容典型 27 pF，饱和控制栅电容典型 12 pF，视频线电容典型 10 pF。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+      {
+        ...page("S3903-512Q", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S3903-512Q.html", [
+          "产品页没有写发布日期。正文写间距 25 μm、高度 0.5 mm，并写 is arrayed at a spacing，没有写 but。特性与同系列相同。",
+          "规格表图像尺寸 12.8 x 0.5 mm，有效像素 512 x 1，像元 25 x 500 μm。最高行频 3900 行/秒。无制冷，窗口 Quartz，封装 Ceramic。Dedicated driver circuit 一格是空的。",
+          "手册结构表像素数 512。封装长度与 S3903-256Q 同在 31.75 mm 的合并格，重量同在 3.0 g 的合并格。外形图与 S3902-256Q 共用，感光区 12.8 × 0.5。",
+          "手册暗电流和饱和电荷与 S3903 系列同一列。-512 Q 一格的时钟线电容典型 50 pF，饱和控制栅电容典型 24 pF，视频线电容典型 16 pF。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+      {
+        ...page("S3903-1024Q", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S3903-1024Q.html", [
+          "产品页没有写发布日期。正文写间距 25 μm、高度 0.5 mm，并写 is arrayed at a spacing。手册像素数清单里，1024 只写在 S3903-1024Q。",
+          "规格表图像尺寸 25.6 x 0.5 mm，有效像素 1024 x 1，像元 25 x 500 μm。最高行频 1950 行/秒。无制冷，窗口 Quartz，封装 Ceramic。Dedicated driver circuit 一格是空的。",
+          "手册结构表像素数 1024。封装长度 40.6 mm，重量 3.5 g。外形图与 S3902-512Q 共用，感光区 25.6 × 0.5。光谱图标题写成 Spectral response (NMOS linear image sensor: standard type)。",
+          "手册 -1024 Q 一格的时钟线电容典型 100 pF，饱和控制栅电容典型 45 pF，视频线电容典型 30 pF。光响应非均匀性上限 ±3%，与 S3902 系列同一行。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+    ],
+  },
+  {
     id: "s14290",
     date: "",
     companyId: "hamamatsu",
