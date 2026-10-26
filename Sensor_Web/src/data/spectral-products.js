@@ -4468,4 +4468,73 @@ export const spectralProducts = [
       },
     ],
   },
+  {
+    id: "s11850",
+    date: "",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S11850：滨松低噪声一级制冷背照式 CCD",
+    summary:
+      "S11850-1006-01 与 S11850-1106-01 的产品页写背照式 CCD，用于光谱仪。光谱响应 200 到 1100 nm。两页都没有写发布日期。冷却都是 One-stage TE-cooled，窗口都是 Quartz glass，封装都是 Ceramic。手册与 S11851-1106-01 共用，目录号 KMPD1246E03，页脚写 Jun. 2025 DN，并写资料截至 June 2025，记为约 2025 年 6 月。",
+    applications: ["spectral", "scientific"],
+    technologies: ["spectral"],
+    models: [
+      {
+        ...page("S11850-1006-01", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S11850-1006-01.html", [
+          "产品页没有写发布日期。页面标题写 Back-thinned type CCD area image sensor。一级标题只写 S11850-1006-01。二级标题写 Improved etaloning characteristics, Constant element temperature control。正文写 designed for spectrometers。低噪声这一组的括号写成 low noise type (S11850-1006-01, S11850-1006-01)，同一型号写了两遍。高速这一组写成 high-speed type (S11851-1106-01)。正文接着写 from the UV to near infrared region，并写元件温度在工作时保持恒定，approx. 5 °C。",
+          "分光索引的简介写成 Low readout noise, back-thinned FFT-CCD improved etaloning characteristics，FFT-CCD 和 improved 之间没有逗号。产品页正文没有写 Low readout noise，也没有写 FFT-CCD。索引类型写成 Back-thinned type CCD，以及 Binning type 和 Low etaloning type。索引行频只给出最高 341 lines/s。索引冷却写成 One-stage TE-cooled，封装写成 Ceramic。索引没有窗口一格。",
+          "特性写 Improved etaloning characteristics、One-stage TE-cooled type，括号里是 element temperature: approx. 5 °C。宽光谱高灵敏度和接近平坦的光谱响应被写成同一条，中间用 and 连接。节点灵敏度写成 6.5 μV/e-。满阱和动态范围后面括着 with anti-blooming function。像元 14 × 14 μm。规格表没有专用驱动电路一行。",
+          "规格表类型分成两行，Binning type 和 Low etaloning type。图像尺寸 14.336 x 0.896 mm，乘号是 x。有效像素 1024 x 64 pixels，像元写成 14 x 14 μm。光谱响应 200 to 1100 nm。行频典型 189 行/秒，最高 341 行/秒。暗电流典型 50 e-/pixel/s。读出噪声典型 6 e- rms。冷却 One-stage TE-cooled。窗口 Quartz glass。封装 Ceramic。测量条件写成 Typ. Ta=25 ℃，Dark current: MPP mode, unless otherwise noted。手册文件名 s11850-1006-01_etc_kmpd1246e.pdf，产品页标 621 KB。",
+          "手册标题写 CCD image sensors，并列 S11850-1006-01、S11850-1106-01 和 S11851-1106-01。目录号 KMPD1246E03，页脚写 Jun. 2025 DN，并写资料截至 June 2025，记为约 2025 年 6 月。手册正文把低噪声这一组写成 low noise type (S11850-1106-01, S11850-1106-01)，两遍都是 -1106-01，没有写出 S11850-1006-01。高速这一组仍是 S11851-1106-01。应用栏写 Spectrometers, etc.。手册解释 etaloning 是入射光在 CCD 正反面之间反复反射、衰减后造成灵敏度高低交替，长波进入背照式 CCD 时与硅片厚度和吸收长度有关。图题写 S11850/S11851 series (-01)，并写用不易发生干涉的结构减轻这种现象。图中分开画了 Etaloning-improved type 和 Previous type，Previous type 没有给出型号。图号 KMPDB0284EB，条件写成 Ta=25 °C。",
+          "手册特性把节点灵敏度分成 6.5 μV/e-（S11850-1006-01, S11850-1106-01）和 8 μV/e-（S11851-1106-01）。宽光谱高灵敏度和接近平坦的光谱响应分成两条，产品页把它们连成一条。满阱和动态范围后面同样括着 with anti-blooming function。选型表总像素与有效像素：这一只是 1044 × 70 和 1024 × 64，感光区 14.336 × 0.896，读出速度最大 0.5 MHz。S11850-1106-01 和 S11851-1106-01 都是 2068 × 70 和 2048 × 64，感光区 28.672 × 0.896，读出速度最大分别是 0.5 MHz 和 10 MHz。选型表没有驱动电路一列，也没有行频一行。",
+          "结构表像元 14 × 14 µm。垂直时钟 2-phase，水平时钟 4-phase。输出电路这一组写 One-stage MOSFET source follower，S11851-1106-01 写 Two-stage MOSFET source follower。封装写 28-pin ceramic DIP，产品页写 Ceramic。窗口三只共用一格，写 Quartz glass。注记 *1 写 Hermetic sealing。手册没有把 S11851-1106-01 的窗口写成产品页上的 AR-coated sapphire，也没有把封装写成产品页上的 Metal。",
+          "绝对最大额定值工作温度 -50 到 +50 ℃，贮存温度 -50 到 +70 ℃。注记 *2 写芯片温度。输出晶体管漏极电压这一组最大 +30 V，S11851-1106-01 最大 +25 V。半导体制冷器最大电流典型 1.8 A，最大电压典型 3.5 V，条件都写成 Tc=Th=25 °C。热敏电阻功耗最大 100 mW。注记 *3 写超过这一电流后吸热会因焦耳热下降，这个值不是损坏阈值，供电电流应低于该最大电流的 60%。注记 *4 写 ΔT 应小于 30 °C，超过后暗电流均匀性等特性可能变差。注记写即使瞬间超过绝对最大额定值也可能使产品质量下降。",
+          "工作条件标题写 MPP mode, Ta=25 °C。输出晶体管漏极电压这一组最小 23 V、典型 24 V、最大 25 V。外接负载电阻最小 90 kΩ、典型 100 kΩ、最大 110 kΩ。输出放大器回流电压这一组是空的。溢出栅电压典型 12 V、最大 13 V。注记 *7 写回流电压相对衬底为正，但电流流出传感器。",
+          "信号输出频率典型 0.25 MHz、最大 0.5 MHz。垂直寄存器电容符号 CP1V、CP2V，这一只典型 600 pF。水平寄存器电容把符号 CP1H、CP2H 和 CP3H、CP4H 叠在同一行数值上，这一只典型 80 pF。求和栅和复位栅电容都是典型 10 pF。转移栅电容这一只典型 30 pF。电荷转移效率最小 0.99995、典型 0.99999。直流输出电平最小 16 V、典型 17 V、最大 18 V。输出阻抗典型 10 kΩ。功耗典型 4 mW。注记 *8 写数值随负载电阻变化，这一组的条件是 VOD=24 V，RL=100 kΩ。注记 *9 写按每个像元、在满阱一半处测量。注记 *10 写片上放大器加上负载电阻。",
+          "手册电气光学特性没有行频一行。满阱垂直方向最小 50 ke-、典型 60 ke-。水平方向最小 250 ke-、典型 300 ke-。转换效率最小 5.5 µV/e-、典型 6.5 µV/e-、最大 7.5 µV/e-。暗电流典型 50 e-/pixel/s、最大 500 e-/pixel/s。注记 *12 写温度每降 5 到 7 ℃，暗电流减半。读出噪声典型 6 e- rms、最大 15 e- rms。注记 *13 写这一组在 Tchip=-40 °C、fc=20 kHz 测量。动态范围只有 line binning 一行，最小 16600、典型 50000。注记 *14 写成 Dynamic range = Full well capacity / Readout noise。光响应非均匀性典型 ±3%、最大 ±10%。注记 *15 写用峰值发射波长 470 nm 的 LED，在饱和输出的一半处测量。",
+          "光谱响应图标题写 without window，左右两张图号是 KMPDB0659EA 和 KMPDB0316EA。注记 *16 写加石英玻璃后的光谱响应要按窗口透过率下降。窗口透过率图号 KMPDB0303EB。暗电流对温度图号 KMPDB0304EB。器件结构图画 4 blank pixels、6-bevel、2-bevel 和 4-bevel，并同时出现 2 signal output 和 2n signal output。图上写 V=64，H=1024 (S11850-1006-01)，下一行写 2048 (S11850-1106-01)，没有再写 H=。图号 KMPDC0945EA。注记写长波光可能穿过不感光的厚硅区进入水平移位寄存器，需要时加遮光。",
+          "行 binning 时序图标题写 Timing chart (line binning)。积分时段写 external shutter has to be open，垂直合并和读出时段写 has to be closed。星号写 An external shutter is not necessarily required，不用外快门时，垂直合并和读出期间进入的光也作为信号读出。垂直方向写成 3...69，接着是 70←64 + 6 (bevel)。水平方向这一只写到 1044。输出标注写 D3...D10, S1...S1024, D11...D18，图上还有 D1、D2、D19、D20。图号 KMPDC0946EA。P1V 脉冲宽度最小 6 µs、典型 8 µs。水平时钟脉冲宽度最小 1000 ns、典型 2000 ns。复位栅脉冲宽度最小 100 ns、典型 1000 ns。注记 *17 写对称时钟应在最大幅度的 50% 处重叠。",
+          "外形图标题写 Dimensional outline (unit: mm)，标题下一行单独有一个右括号。图号 KMPDA0369EB。重量写成 Weight: 9 g。注记 *1 写 Distance from package bottom to photosensitive surface。注记 *2 写 Glass thickness (reflective index≈1.5)，用的是 reflective。未注公差 ±0.15。引脚镀金，材料 alloy 42。图上标有 Window、Photosensitive area、TE-cooler 和 Index mark。这一只的 A 写成 14.336 × 0.896，B 写成 11.83 ± 0.3。另有 33.02 ± 0.2，引脚间距 2.54。",
+          "引脚表共 28 脚。第 1 脚 OS 写 RL=100 kΩ，第 2 脚 OD 为 +24 V，第 5 脚是 SS，接 GND。第 15 脚 OFG 为 +12 V。第 7 脚 Th1 和第 22 脚 Th2 是 Thermistor。第 8 脚 P- 和第 21 脚 P+ 是 TE-cooler。第 27 脚 TG 写 Same pulse as P2V。波形例子条件写成 fc=250 kHz, RL=100 kΩ, VOD=+24 V，图上标 feed-through、Reset、DC level (Reset level) 和 Signal。",
+          "内置半导体制冷器在真空条件下内阻典型 1.6 Ω，条件 Ta=25 °C。最大吸热 Qmax 为 4.0 W。注记 *18 写这是供给最大电流时用来修正温差的理论吸热量。电流对电压、电流对 CCD 温度的图号是 KMPDB0469EA，条件写成 Typ. Ta=25 °C。热敏电阻一段写 built in the same package with a CCD chip，温度 can be monitored with it。relation 在行末拆成 rela-tion。公式写成 RT1 = RT2 × exp BT1/T2 (1/T1 - 1/T2)，并写 BT1/T2: B constant。R298=10 kΩ，B298/323=3900 K。图号 KMPDB00470EA。焊接条件 260 °C max. (once, less than 5 s)，距引线根部至少 1.8 mm。注意事项写制冷器散热不足时产品温度会上升并造成物理损坏或性能下降，建议在产品和散热器之间整面涂高导热材料并拧紧。另写 Handle these sensors with bare hands or wearing cotton gloves。手册末尾没有驱动电路。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+      {
+        ...page("S11850-1106-01", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S11850-1106-01.html", [
+          "产品页没有写发布日期。二级标题与 S11850-1006-01 相同。正文把低噪声这一组写成 low noise type (S11850-1106-01, S11850-1106-01)，同一型号写了两遍，和手册正文相同。高速这一组仍写 S11851-1106-01。特性仍是 6.5 μV/e-。规格表光谱响应 200 to 1100 nm。",
+          "分光索引的简介与 S11850-1006-01 相同，仍写 Low readout noise 和 FFT-CCD improved。索引行频只给出最高 200 lines/s。索引封装仍是 Ceramic。",
+          "规格表图像尺寸 28.672 x 0.896 mm，有效像素 2048 x 64 pixels，像元 14 x 14 μm。行频典型 106 行/秒，最高 200 行/秒。暗电流典型 50 e-/pixel/s，读出噪声典型 6 e- rms。冷却 One-stage TE-cooled。窗口 Quartz glass。封装 Ceramic。测量条件与 S11850-1006-01 相同，写 Dark current: MPP mode, unless otherwise noted。规格表没有专用驱动电路一行。手册仍是 KMPD1246E03，产品页标 621 KB。",
+          "手册总像素 2068 × 70，有效像素 2048 × 64，感光区 28.672 × 0.896，读出速度最大 0.5 MHz。窗口仍写 Quartz glass，注记 *1 仍写 Hermetic sealing。封装仍写 28-pin ceramic DIP。垂直寄存器电容典型 1200 pF。水平寄存器电容典型 160 pF。转移栅电容典型 60 pF。满阱、转换效率、暗电流、读出噪声和动态范围与 S11850-1006-01 同一列。时序图水平方向按 S11850/S11851-1106-01 写到 2068，输出标注写 S1...S2048。外形图 A 写成 28.672 × 0.896，B 写成 4.66 ± 0.3。引脚表与 S11850-1006-01 共用。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+    ],
+  },
+  {
+    id: "s11851",
+    date: "",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S11851-1106-01：滨松高速一级制冷背照式 CCD",
+    summary:
+      "S11851-1106-01 的产品页写背照式 CCD，光谱响应 200 到 1100 nm。产品页没有写发布日期。冷却是 One-stage TE-cooled，窗口是 AR-coated sapphire，封装是 Metal。手册与 S11850 共用，KMPD1246E03，页脚写 Jun. 2025，并写资料截至 June 2025，记为约 2025 年 6 月。",
+    applications: ["spectral", "scientific"],
+    technologies: ["spectral"],
+    models: [
+      {
+        ...page("S11851-1106-01", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S11851-1106-01.html", [
+          "产品页没有写发布日期。页面标题写 Back-thinned type CCD area image sensor。一级标题只写 S11851-1106-01。二级标题与 S11850 相同，写 Improved etaloning characteristics, Constant element temperature control。正文把两组都写成这一只：low noise type (S11851-1106-01, S11851-1106-01) and high-speed type (S11851-1106-01)。UV to near infrared 和 approx. 5 °C 两句仍在。特性节点灵敏度写成 8 μV/e-。宽光谱高灵敏度和接近平坦的光谱响应仍用 and 连成一条。满阱和动态范围后面仍括着 with anti-blooming function。像元 14 × 14 μm。",
+          "分光索引的简介与 S11850 相同，仍写 Low readout noise, back-thinned FFT-CCD improved etaloning characteristics。索引类型仍写 Binning type 和 Low etaloning type，没有写 High-speed type。索引行频只给出最高 2875 lines/s。索引冷却写成 One-stage TE-cooled，封装写成 Metal。",
+          "规格表类型仍分成 Binning type 和 Low etaloning type。图像尺寸 28.672 x 0.896 mm，有效像素 2048 x 64 pixels，像元 14 x 14 μm。光谱响应 200 to 1100 nm。行频典型 651 行/秒，最高 2875 行/秒。暗电流典型 50 e-/pixel/s。读出噪声典型 23 e- rms。冷却 One-stage TE-cooled。窗口 AR-coated sapphire。封装 Metal。测量条件写成 Typ. Ta=25 ℃，unless otherwise noted, frame rate: full line binning, Dark current: MPP mode，frame 小写。规格表没有专用驱动电路一行。手册文件名仍是 s11850-1006-01_etc_kmpd1246e.pdf，产品页标 621 KB。",
+          "手册与 S11850 共用，目录号 KMPD1246E03，页脚写 Jun. 2025 DN，资料截至 June 2025，记为约 2025 年 6 月。手册正文把这一只单独放在 high-speed type，低噪声括号里没有它。选型表总像素 2068 × 70，有效像素 2048 × 64，感光区 28.672 × 0.896，读出速度最大 10 MHz。结构表输出电路写 Two-stage MOSFET source follower。窗口一格仍写 Quartz glass，注记 *1 写 Hermetic sealing。封装一格仍写 28-pin ceramic DIP。产品页窗口写 AR-coated sapphire，封装写 Metal。",
+          "输出晶体管漏极电压最小 12 V、典型 15 V、最大 18 V，绝对最大额定值最大 +25 V。外接负载电阻最小 2.0 kΩ、典型 2.2 kΩ、最大 2.4 kΩ。输出放大器回流电压最小是短横线、典型 1 V、最大 2 V。溢出栅电压最小 0 V、典型 13 V、最大 14 V。信号输出频率典型 5 MHz、最大 10 MHz。垂直寄存器电容典型 1200 pF。水平寄存器电容典型 160 pF。转移栅电容典型 60 pF。直流输出电平最小 7 V、典型 8 V、最大 9 V。输出阻抗典型 0.3 kΩ。功耗典型 75 mW。注记 *8 写 VOD=15 V, RL=2.2 kΩ(S11851-1106-01)，kΩ 和左括号之间没有空格。",
+          "满阱水平方向最小 150 ke-、典型 200 ke-。垂直方向与 S11850 同一列，典型 60 ke-。转换效率最小 7 µV/e-、典型 8 µV/e-、最大 9 µV/e-。暗电流典型 50 e-/pixel/s、最大 500 e-/pixel/s。读出噪声典型 23 e- rms、最大 28 e- rms。注记 *13 写这一只在 Tchip=25 °C、fc=2 MHz 测量。动态范围 line binning 最小 5350、典型 8700。光响应非均匀性仍用 470 nm 的 LED。手册没有行频一行。",
+          "器件结构图号 KMPDC0403EC。图上写 H=2048，V=64，并写 4 blank pixels、6-bevel 和 2n signal output。时序图与 S11850-1106-01 同列，水平方向写到 2068，输出标注写 S1...S2048。P1V 脉冲宽度最小 1 µs、典型 8 µs。水平时钟脉冲宽度最小 50 ns、典型 100 ns。复位栅脉冲宽度最小 5 ns、典型 50 ns。外形图与 S11850 共用 KMPDA0369EB，A 写成 28.672 × 0.896，B 写成 4.66 ± 0.3，重量仍写 9 g。",
+          "引脚表另列一页。第 1 脚 OS 写 RL=2.2 kΩ，第 2 脚 OD 为 +15 V，第 5 脚是 Vret，写 +1 V。第 6 脚和第 20 脚 RD 为 +15 V。第 15 脚 OFG 为 +13 V。Th1、Th2、P-、P+ 和 TG 的写法与 S11850 相同。波形例子条件写成 fc=5 MHz, RL=2.2 kΩ, VOD=+15 V，图上标 Signal feed-through。半导体制冷器、热敏电阻、焊接条件和注意事项与 S11850 共用。手册末尾没有驱动电路。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+    ],
+  },
 ];
