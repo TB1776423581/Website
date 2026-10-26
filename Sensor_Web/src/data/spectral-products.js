@@ -3979,4 +3979,56 @@ export const spectralProducts = [
       },
     ],
   },
+  {
+    id: "s5930",
+    date: "",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S5930 与 S5931：滨松电流输出 NMOS 线阵",
+    summary:
+      "S5930-256S、S5930-512S、S5931-512S 与 S5931-1024S 的产品页写 NMOS 线阵，类型为 Current output type (Standard type)，光谱响应 200 到 1000 nm。页内二级标题写 Built-in thermoelectric cooler ensures long exposure time and stable operation。规格表冷却一行却写 Non-cooled。产品页都没有写发布日期。手册标题写成 S5930/S5931 series，KMPD1018E07 页脚写 Nov. 2022，并写资料截至 November 2022，记为约 2022 年 11 月。",
+    applications: ["spectral", "scientific", "machine"],
+    technologies: ["spectral"],
+    models: [
+      {
+        ...page("S5930-256S", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S5930-256S.html", [
+          "产品页没有写发布日期。页面标题写 NMOS linear image sensor。页内一级标题只写 S5930-256S。二级标题写 Built-in thermoelectric cooler ensures long exposure time and stable operation。正文用单数 The photodiode，写大感光面积、紫外灵敏度高但噪声很低。扫描电路写成 N-channel MOS transistors，低功耗、易于使用。内置风冷热电制冷器，可做长时间曝光并在低光下得到高信噪比。管帽使用气密封接的蓝宝石玻璃窗。",
+          "特性写感光区宽、紫外灵敏度高且稳定、暗电流低且饱和电荷高、室温下可长时间积分并得到宽动态范围、输出线性和空间均匀性好。起始脉冲和时钟与 CMOS 逻辑兼容。另写 Built-in air-cooled thermoelectric cooler (setting temperature: 0 ℃)。",
+          "规格表类型为 Current output type (Standard type)，写在同一格。图像尺寸 12.8 x 2.5 mm，有效像素 256 x 1 pixels，像元 50 x 2500 μm。光谱响应 200 到 1000 nm。最高行频 7800 行/秒。冷却一行写 Non-cooled。窗口 Sapphire，封装 Metal。Dedicated driver circuit 这一格是空的。测量条件写 Typ. Ta=25 ℃，unless otherwise noted。饱和电荷条件写成 Saturation charge: Vb=2.0 V, Vφ=5.0 V。手册文件名写成 s5930-256s_etc_kmpd1018e.pdf，产品页标 942 KB。",
+          "手册标题写成 S5930/S5931 series，KMPD1018E07 页脚写 Nov. 2022，并写资料截至 November 2022，记为约 2022 年 11 月。手册把 photodiode 写成 Each photodiode。spectroscopy 在行末拆成 spectrosco- 和 py。integration 在特性里拆成 inte- 和 gration。S5930 系列间距 50 μm，S5931 系列间距 25 μm，高度都写 2.5 mm。选型表把 S5930-512S 的像元尺寸与 256 像素合并，把 S5931-1024S 的像元尺寸与 512 像素合并。应用栏写 Multichannel spectrophotometry 和 Image readout system。",
+          "手册另写还提供近红外灵敏度更高的 S8382/S8383 series，并写主要特性几乎与本系列相同，只是峰值波长 750 nm，饱和电荷写成 90 mlx.s。光谱响应图把这一对照标成 IR high-sensitivity type。选型表没有列出 S8382 或 S8383 的具体型号。等效电路图标题写成 Equivalent circuit (S3901/S3902/S3903/S3904 series)。感光区结构图把材料写成 Oxidation silicon，S5930 系列 a=50 μm，b=45 μm。",
+          "手册绝对最大额定值：输入脉冲电压 15 V。环境温度 -40 到 +65 ℃，芯片温度 -40 到 +50 ℃，贮存温度 -40 到 +85 ℃。注记 *1 写 No dew condensation。注记 *2 写用热敏电阻电阻值监视芯片温度。光谱响应范围注记写 10% of peak。峰值波长典型 600 nm。S5930 系列 25 ℃ 暗电流典型 0.2 pA、最大 0.6 pA，0 ℃ 典型 0.006 pA、最大 0.018 pA。光电二极管电容典型 20 pF。饱和曝光典型 180 mlx · s。饱和电荷典型 50 pC。光响应非均匀性上限 ±3%，注记编号印成 * 5，写饱和的 50%，并除去起始像素和最后一个像素。",
+          "手册数据率最小 0.1 kHz、最大 2000 kHz。-256S 视频延迟典型 120 ns，时钟线电容典型 36 pF，饱和控制栅电容典型 20 pF，视频线电容典型 11 pF。视频延迟注记写用 C7883 测量。视频偏置裕量图标题写成 Video bias voltage margin (S3901/S3902/S3903/S3904/S8380/S8381 series)。手册写这一系列工作不需要直流电源，但 Vss、Vsub 和全部 NC 必须接地。End of scan 写用 10 kΩ 上拉到 5 V。引脚说明写第 20 脚与封装金属之间有电流流通。外形图与 S5931-512S 共用，封装长度印 32.0 ± 0.3 mm，感光区宽度标 12.8，总长标 50.0。蓝宝石玻璃厚度标 *1，数值 0.8。玻璃表面到芯片的距离标 *2，数值 4.05 ± 0.4。焊接写 260 ℃ 以下、5 秒以内。热敏电阻与 a NMOS chip 装在同一封装，句子写成 monitored with it, A relation。公式写成 RT1 = RT2 × exp BT1/ T2 (1/T1 – 1/T2)，斜线后有空格。热敏电阻写成 R298=10 kΩ，B298/323=3450 K。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+      {
+        ...page("S5930-512S", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S5930-512S.html", [
+          "产品页没有写发布日期。正文、二级标题和特性与 S5930-256S 相同，photodiode 仍是单数。规格表类型仍把 Current output type (Standard type) 写在同一格。",
+          "规格表图像尺寸 25.6 x 2.5 mm，有效像素 512 x 1 pixels，像元 50 x 2500 μm。最高行频 3900 行/秒。冷却一行仍写 Non-cooled。窗口 Sapphire，封装 Metal。Dedicated driver circuit 这一格是空的。测量条件与 S5930-256S 相同。手册仍是 KMPD1018E07。",
+          "手册选型表像素数 512，感光区 25.6 × 2.5，像元尺寸与 S5930-256S 写在合并格 50 × 2500。暗电流、饱和电荷、饱和曝光和峰值波长与 S5930 系列同一列。",
+          "手册 -512S 一格的视频延迟典型 160 ns，时钟线电容典型 67 pF，饱和控制栅电容典型 35 pF，视频线电容典型 20 pF。外形图与 S5931-1024S 共用，封装长度印 40.64 ± 0.3 mm，感光区宽度标 25.6，总长标 58.84。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+      {
+        ...page("S5931-512S", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S5931-512S.html", [
+          "产品页没有写发布日期。正文、二级标题和特性与 S5930-256S 相同。规格表把类型拆成两行，先写 Current output type，下一行写 (Standard type)。",
+          "规格表图像尺寸 12.8 x 2.5 mm，有效像素 512 x 1 pixels，像元 25 x 2500 μm。最高行频 3900 行/秒。冷却一行写 Non-cooled。窗口 Sapphire，封装 Metal。Dedicated driver circuit 这一格是空的。测量条件与 S5930-256S 相同。",
+          "手册写 S5931 系列间距 25 μm、高度 2.5 mm。结构图写成 a=25 μm，b=20 μm。选型表像素数 512，感光区 12.8 × 2.5。S5931 系列 25 ℃ 暗电流典型 0.1 pA、最大 0.3 pA，0 ℃ 典型 0.003 pA、最大 0.009 pA。光电二极管电容典型 10 pF。饱和电荷典型 25 pC。饱和曝光仍是 180 mlx · s。峰值波长典型 600 nm。",
+          "手册 -512S 一格的视频延迟典型 150 ns，时钟线电容典型 50 pF，饱和控制栅电容典型 24 pF，视频线电容典型 16 pF。外形图与 S5930-256S 共用，封装长度 32.0 ± 0.3 mm，感光区宽度 12.8。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+      {
+        ...page("S5931-1024S", "", "https://www.hamamatsu.com/us/en/product/optical-sensors/image-sensor/ccd-cmos-nmos-image-sensor/line-sensor/for-spectrophotometry/S5931-1024S.html", [
+          "产品页没有写发布日期。规格表同样把 Current output type 和 (Standard type) 分成两行。正文仍用单数 photodiode，并仍写内置风冷热电制冷器。",
+          "规格表图像尺寸 25.6 x 2.5 mm，有效像素 1024 x 1 pixels，像元 25 x 2500 μm。最高行频 1950 行/秒。冷却一行写 Non-cooled。窗口 Sapphire，封装 Metal。Dedicated driver circuit 这一格是空的。",
+          "手册选型表像素数 1024，感光区 25.6 × 2.5，像元尺寸与 S5931-512S 写在合并格 25 × 2500。暗电流和饱和电荷与 S5931 系列同一列。光响应非均匀性上限 ±3%，与 S5930 系列同一行。",
+          "手册 -1024S 一格的视频延迟典型 200 ns，时钟线电容典型 100 pF，饱和控制栅电容典型 45 pF，视频线电容典型 30 pF。外形图与 S5930-512S 共用，封装长度 40.64 ± 0.3 mm，感光区宽度 25.6，总长 58.84。",
+        ], "uv"),
+        bands: ["uv", "nir"],
+      },
+    ],
+  },
 ];
