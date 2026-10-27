@@ -8,6 +8,7 @@ import { monoColorProducts } from "./mono-color-products.js";
 import { rgbColorProducts } from "./rgb-color-products.js";
 import { illuminanceProducts } from "./illuminance-products.js";
 import { schmittProducts } from "./schmitt-products.js";
+import { lightModulationProducts } from "./light-modulation-products.js";
 import { lidarApdProducts } from "./lidar-apd-products.js";
 import { psdModuleProducts } from "./psd-module-products.js";
 import { psdProducts } from "./psd-products.js";
@@ -4462,4 +4463,5 @@ export const products = [
   ...rgbColorProducts,
   ...illuminanceProducts,
   ...schmittProducts,
+  ...lightModulationProducts,
 ];
