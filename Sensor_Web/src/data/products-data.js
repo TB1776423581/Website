@@ -16,6 +16,7 @@ import { siStripProducts } from "./si-strip-products.js";
 import { siPhotodiodeProducts } from "./si-photodiode-products.js";
 import { ingaasPinProducts } from "./ingaas-pin-products.js";
 import { apdProducts } from "./apd-products.js";
+import { siApdArrayProducts } from "./si-apd-array-products.js";
 import { lidarApdProducts } from "./lidar-apd-products.js";
 import { psdModuleProducts } from "./psd-module-products.js";
 import { psdProducts } from "./psd-products.js";
@@ -4478,4 +4479,5 @@ export const products = [
   ...siPhotodiodeProducts,
   ...ingaasPinProducts,
   ...apdProducts,
+  ...siApdArrayProducts,
 ];
