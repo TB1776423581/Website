@@ -13,6 +13,7 @@ import { photoIcRestProducts } from "./photo-ic-rest-products.js";
 import { segmentedProducts } from "./segmented-products.js";
 import { siArrayProducts } from "./si-array-products.js";
 import { siStripProducts } from "./si-strip-products.js";
+import { siPhotodiodeProducts } from "./si-photodiode-products.js";
 import { lidarApdProducts } from "./lidar-apd-products.js";
 import { psdModuleProducts } from "./psd-module-products.js";
 import { psdProducts } from "./psd-products.js";
@@ -4472,4 +4473,5 @@ export const products = [
   ...segmentedProducts,
   ...siArrayProducts,
   ...siStripProducts,
+  ...siPhotodiodeProducts,
 ];
