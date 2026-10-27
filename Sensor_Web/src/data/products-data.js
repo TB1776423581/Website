@@ -646,15 +646,30 @@ export const products = [
   },
   {
     id: "gsense4040",
-    date: "2026-01-19",
+    date: "2026-10-27",
     companyId: "gpixel",
     category: "product",
     title: "GSENSE：科学级 CMOS",
     summary:
-      "GSENSE4040 是 4096×4096、9 μm 的卷帘快门科学级传感器，光学尺寸 3.3 英寸。GSENSE64105BSI 是 2026 年 1 月 19 日发布的 10240×10240、6.4 μm 背照式传感器，感光面 65.5 mm × 65.5 mm。GSENSE6504BSI 是 2025 年 6 月 26 日发布的 2048×2048、6.5 μm 背照式传感器，英文发布稿写对角线 18.8 mm。GSENSE1517BSI 是 15 μm、4116×4100 的背照式传感器，感光面 61.74 mm × 61.50 mm。",
+      "GSENSE9016BSI 是 2026 年 10 月 27 日发布的 4096×4096、16.7 MP、9 μm × 9 μm 背照式卷帘快门科学级传感器，光学尺寸 3.3 英寸，产品页写峰值量子效率 95%（450 nm）。GSENSE4040 是 4096×4096、9 μm 的卷帘快门科学级传感器，光学尺寸 3.3 英寸。GSENSE64105BSI 是 2026 年 1 月 19 日发布的 10240×10240、6.4 μm 背照式传感器，感光面 65.5 mm × 65.5 mm。GSENSE6504BSI 是 2025 年 6 月 26 日发布的 2048×2048、6.5 μm 背照式传感器，英文发布稿写对角线 18.8 mm。GSENSE1517BSI 是 15 μm、4116×4100 的背照式传感器，感光面 61.74 mm × 61.50 mm。",
     applications: ["scientific"],
     technologies: ["hdr", "lowlight"],
     models: [
+      {
+        name: "GSENSE9016BSI",
+        date: "2026-10-27",
+        url: "https://www.gpixel.com/en/details_244.html",
+        linkLabel: "打开产品发布页",
+        points: [
+          "2026 年 10 月 27 日发布。英文列表日期写 2026-10-27，正文写 October 27, 2026。中文页 https://www.gpixel.com/details_244.html 的日期写 2026年10月27日，正文与英文发布稿相同。发布稿写 Gpixel（股票代码 03277.HK ）推出 GSENSE9016BSI，右括号前面有一个空格。16.7 MP 大靶面背照式科学级 CMOS 图像传感器，采用新架构和新制造工艺，灵敏度、噪声和量子效率相对前一代有提高。发布稿写用途包括天文观测、透射电子显微镜和生命科学成像。",
+          "发布稿写 GSENSE4040BSI 自推出后用于电子显微镜和天文成像。GSENSE9016BSI 是它的下一代，像素仍是 9 µm × 9 µm，分辨率仍是 4096（H）× 4096（V），峰值量子效率提高到 95%。发布稿写可以不改现有光学设计，并使用与 GSENSE4040BSI 相同的陶瓷封装。",
+          "发布稿写低照度成像常靠长曝光积累弱信号，并写量子效率、读出噪声和暗电流是关键参数。读出噪声降到前一代的大约三分之一，为 0.7 e⁻。暗电流在 −30 °C 为 0.04 e⁻/pixel/s。发布稿写更低的读出噪声和暗电流改善弱信号检测，并减少对深制冷的需要。双增益架构支持 HDR 和 STD。STD 模式最高 44 fps，HDR 模式动态范围最高 104 dB。发布稿另写新增 14 bit ADC。",
+          "发布稿写作为 GSENSE4040BSI 的升级，近紫外灵敏度提高，200 nm 到 280 nm 的峰值量子效率从 50% 提高到 80% 以上。发布稿写由此适合半导体深紫外检测、荧光蛋白检测和其他紫外成像。工程样品和评估板现已可订购。",
+          "产品页 https://www.gpixel.com/en/pro_details_11320.html 标题写 16.7 MP BSI sCMOS Image Sensor。正文写分辨率 4096 × 4096（16.7 MP），光学尺寸 3.3 英寸，像素 9 μm × 9 μm，卷帘快门，背照工艺，峰值量子效率 95%。双增益 HDR 最高帧率 26 fps，读出噪声 0.7 e⁻，动态范围 104 dB。芯片温度 -30 °C 时暗电流低至 0.04 e⁻/s/p。正文写用途例如天文观测和生命科学，并写与 GSENSE4040BSI 机械封装兼容。特性写 BSI、Low Noise 0.7 e‾、High Speed 44 fps、Peak QE 95%、14/12 bit ADC。",
+          "规格表写 Resolution 16.7 MP，Nr of Active Pixels 4096 (H) x 4096 (V)，Optical Format 3.3 \"，引号前有空格。Pixel Size 9 μm x 9 μm，Photosensitive Area 36.8 mm x 36.8 mm，Shutter Type Rolling Shutter。Peak QE 95% (450 nm)。Full Well Capacity 118 ke‾。Temporal Noise 0.7 e⁻。Dark Current 0.04 e‾/pixel/s (-30 ℃)，用 ℃。Dynamic Range 104 dB (12 bit HDR)。Max Frame Rate 分成三行：13 fps (14 bit STD)、26 fps (12 bit HDR)、44 fps (12 bit STD)。ADC 14/12 bit。Output Format 18 x sub-LVDS。Max. Data Rate 0.96 Gbps。Chroma Mono。Supply Voltage 写成 3.3 V (analog)、1.5 V (digital)、1.8-3.3 V (IO)。Power Consumption < 2 W。Package 140 pins PGA，下一行 (51.5 mm x 53 mm)。Availability Engineering Sample。",
+          "订购型号写 GSENSE9016BSI-BBM-NUN-ARE。说明写 Monochrome, no microlens, Ceramic 140 pins PGA, Removable D 263® T eco glass with no AR coating,ES，coating 和 ES 之间没有空格。产品页应用列 Life Sciences、Astronomy、X-Ray。手册标题写 GSENSE9016BSI_Datasheet_V0.2.0，旁边写 Register for Access，这一页不打开手册。简报链接 https://www.gpixel.com/public/uploads/admin/file/pdf-3edcdcc397fa98ddf18bf58750066318.pdf，页面上的名称写 GSENSE9016BSI Product Flyer。简报没有文本层，规格表与产品页同一套数字，封装尺寸写成 51.5 mm x 53.0 mm。页脚写 GP-PR261023 V1.0。发布稿没有写卷帘快门、3.3 英寸、满阱、18 路 sub-LVDS 和功耗。产品页没有写透射电子显微镜，也没有写 200 nm 到 280 nm 的量子效率。这些句子对不上 3D 探测或光谱探测，所以不放在技术下面的这两支。半导体深紫外检测写在型号正文里；这一页还收着其他 GSENSE 型号，应用标签仍只标医疗与科学。",
+        ],
+      },
       {
         name: "GSENSE64105BSI",
         date: "2026-01-19",
