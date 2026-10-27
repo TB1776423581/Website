@@ -27,6 +27,12 @@ const docs =
 const place =
   "手册应用写 Optical measurement including LiDAR、Optical fiber communications、Communication in industrial and semiconductor manufacturing equipment、SS-OCT 和 Laser power monitor。这些句子没有写 TOF，也对不上本站的应用标签，所以不放在应用下面，也不放在技术下面。";
 
+const g9801Sheet =
+  "https://www.hamamatsu.com/content/dam/hamamatsu-photonics/sites/documents/99_SALES_LIBRARY/ssd/g9801_series_kird1081e.pdf";
+
+const g9801Place =
+  "手册应用只写 Power monitor in optical fiber communications。这句没有写 TOF，也对不上本站的应用标签，所以不放在应用下面。光谱范围是光电二极管的响应范围，不是按波段成像，所以不放在技术下面。";
+
 export const ingaasPinProducts = [
   {
     id: "g14942",
@@ -56,6 +62,37 @@ export const ingaasPinProducts = [
         `手册仍是 ${sheet}，记为约 2026 年 7 月。产品表这一列没有写 NEW，Mounted type 写 Panel，连接器仍写 FC。电特性与 G14942-22 同一列，所以典型暗电流仍是 0.02 nA，产品页规格表仍只写最大 0.4 nA。外形图号 KIRDA0283EB，产品页文件名没有 EB。` +
           `约 2026 年 8 月的选型指南 KIRD0001E23 也没有列出 G14942-32。` +
           place,
+      ]),
+    ],
+  },
+  {
+    id: "g9801",
+    date: "2015-08",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "G9801：滨松 FC 插座型 InGaAs PIN 光电二极管",
+    summary:
+      "产品页没有写发布日期。G9801-22 和 G9801-32 共用这一页。手册目录号 KIRD1081E03，页脚写 Aug. 2015 DN，并写 Information described in this material is current as of August, 2015，August 后面有逗号，记为约 2015 年 8 月。索引 newState 都是 false。产品页暗电流最大写成 0.95 nA。手册最大是 0.4 nA，典型是 0.02 nA。",
+    applications: [],
+    technologies: [],
+    models: [
+      page("G9801-22", "2015-08", part("G9801-22"), [
+        "产品页没有写发布日期。页眉写 InGaAs PIN photodiode。一级标题写 G9801-22。页面标题和 og:title 都写 InGaAs PIN photodiode G9801-22 | Hamamatsu Photonics。og:url 走 infrared-detector 路径，索引给出的产品地址走 photodiodes 路径。二级标题写 Receptacle type, 1.3/1.55 μm, 2 GHz。正文写 The G9801-22 is a high-speed receiver specifically developed for 1.3/1.55 μm band power monitor in optical fiber communications。下一句写 This device incorporates a high-speed, high-sensitivity InGaAs PIN photodiode integrated in a receptacle，然后换行再写 module。特性四条用 <br /> 分开，连字符后面是一个空格：High-speed response: 2 GHz typ.、Low dark current: 20 pA typ.、High sensitivity: 0.9 A/W typ. (λ=1.31 μm)、Low terminal capacitance: 1 pF typ.。产品页没有写应用栏。下载标 233 KB/PDF。meta description 把 receptacle 和 module 连成 receptaclemodule，并在 module. 和 Features 之间没有空格。keywords 写成 InGaAs photodiodes,InGaAs photodiodes。",
+        "规格表元件数 1，封装 Receptacle，封装类别 FC board，冷却 Non-cooled。光谱范围 0.9 to 1.7 μm，峰值典型 1.55 μm，光灵敏度典型 0.95 A/W，暗电流最大 0.95 nA，截止频率典型 2000 MHz，终端电容典型 1 pF。规格表没有感光面积，也没有噪声等效功率。测量条件写 Typ. Ta=25 ℃，unless otherwise noted，Photosensitivity: λ=λp，Dark current: V<sub>R</sub>=5 V，Cutoff frequency: V<sub>R</sub>=5 V,  R<sub>L</sub>=50 Ω，逗号后面有两个空格，再写 λ=1.3 μm, -3 dB，Terminal capacitance: V<sub>R</sub>=5 V, f=1 MHz。外形标题写 Dimensional outline (unit: mm)，图文件是 kirda0079ec.svg，页面里另有一份大写的 KIRDA0079EC.svg。" +
+          docs,
+        `${indexIntro}这一行 newState 是 false。productExp 写 FC receptacle-board mount, 1.3/1.55 μm, 2 GHz，比二级标题多了 FC 和 board mount。thumbAlt 写 G9801-22。缩略图文件名是 k_receptacle_-22_pp_xx.jpg。typeNameSort 写成 G09801-22。感光面积和噪声等效功率都是 --。光灵敏度 0.95 A/W。截止频率 2000 MHz。终端电容 1 pF。封装的值写成 Receptacle，显示写成 Receptacle，末尾多一个空格。封装类别的值写成 FC，显示写成 FC board。冷却 Non-cooled。手册标 233 KB。索引地址 ${index}。`,
+        `手册 ${g9801Sheet}。目录号 KIRD1081E03，页脚写 Cat. No. KIRD1081E03 Aug. 2015 DN，并写 current as of August, 2015。封面写 InGaAs PIN photodiodes、G9801 series，副题写 Receptacle type, 1.3/1.55 μm, 2 GHz。引言写 The G9801 series are high-speed receivers specifically developed for 1.3/1.55 μm band power monitor in optical fiber communications。产品页用单数 is a，手册用复数 are。特性没有连字符，灵敏度条件写成 λ=1.31 μm。应用只写 Power monitor in optical fiber communications。电特性表头写 Ta=25 °C。光谱范围写成 0.9 to 1.7 μm。峰值典型 1.55 μm。光灵敏度这一行的名称写成 Photo sensitivity，中间有空格，符号 S。λ=1.3 μm 时最小 0.75 A/W、典型 0.9 A/W。λ=1.55 μm 时最小 0.8 A/W、典型 0.95 A/W。产品页规格表只留下 0.95 A/W，特性里的 0.9 A/W 对应手册 1.3 μm 那一格，但特性写成 1.31 μm。暗电流条件 VR=5 V，典型 0.02 nA、最大 0.4 nA。特性里的 20 pA typ. 和 0.02 nA 是同一数值。产品页规格表把最大写成 0.95 nA。截止频率写成 Cut-off frequency，有连字符，典型 2 GHz，条件 VR=5 V, RL=50 Ω，λ=1.3 μm, -3 dB。产品页写成 Cutoff frequency 和 2000 MHz。终端电容典型 1 pF、最大 1.5 pF。噪声等效功率条件 VR=5 V, λ=1.55 μm，典型 3 × 10-15 W/Hz1/2。产品页和索引都没有这一行。注 *2 写 Using a single mode optical fiber with a master plug，single 和 mode 之间没有连字符。封装表 Mount type 写 Board，连接器写 FC。外形图号 KIRDA0079EC。图注写 compatible with FC/PC, FC/SPC, and FC/UPC optical plugs，并写 It is not compatible with FC/Angled PC plugs。引脚写 Anode、Cathode、Case。文末写 The G9801 series may be damaged by electrostatic discharge, etc.。相关信息写 Disclaimer、Metal, ceramic, plastic products，技术信息写 Infrared detectors。产品页的注意事项标题不是 Metal, ceramic, plastic products。` +
+          `选型指南 ${guideUrl}，产品页标 2.2 MB/PDF。目录号 KIRD0001E23，页脚写 Aug. 2026 DN，并写 Information described in this material is current as of August 2026，记为约 2026 年 8 月。指南正文没有 G9801。` +
+          g9801Place,
+      ]),
+      page("G9801-32", "2015-08", part("G9801-32"), [
+        "产品页没有写发布日期。页眉、一级标题的型号、页面标题和 og:title 都换成 G9801-32。og:url 仍走 infrared-detector 路径。二级标题与 G9801-22 相同。正文写 The G9801-32 is high-speed receiver，is 和 high-speed 之间没有 a。其余句子相同，receptacle 和 module 之间同样换行。特性四条与 G9801-22 相同。产品页没有写应用栏。下载仍标 233 KB/PDF。meta description 同样把 receptaclemodule 连在一起，并在 module. 和 Features 之间没有空格。",
+        "规格表元件数、光谱范围、峰值、光灵敏度、暗电流、截止频率和终端电容与 G9801-22 相同，暗电流最大仍是 0.95 nA。封装仍是 Receptacle，冷却仍是 Non-cooled。封装类别写成 FC panel，不是 FC board。测量条件同样在截止频率的逗号后面有两个空格。外形图文件是 kirda0080ec.svg，页面里另有一份大写的 KIRDA0080EC.svg。" +
+          docs,
+        `${indexIntro}这一行 newState 是 false。productExp 写 FC receptacle-panel mount, 1.3/1.55 μm, 2 GHz。thumbAlt 写 G9801-32。缩略图文件名是 k_receptacle_-32_pp_xx.jpg。typeNameSort 写成 G09801-32。感光面积和噪声等效功率都是 --。封装显示同样在末尾多一个空格。封装类别的值写成 FC，显示写成 FC panel。手册仍标 233 KB。`,
+        `手册仍是 ${g9801Sheet}，记为约 2015 年 8 月。封装表这一列 Mount type 写 Panel，连接器仍写 FC。电特性与 G9801-22 同一列，所以暗电流最大仍是 0.4 nA，产品页仍写 0.95 nA。外形图号 KIRDA0080EC。图注同样写不兼容 FC/Angled PC plugs。` +
+          `约 2026 年 8 月的选型指南 KIRD0001E23 正文也没有 G9801-32。` +
+          g9801Place,
       ]),
     ],
   },
