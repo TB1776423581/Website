@@ -5,6 +5,7 @@ import { profileProducts } from "./profile-products.js";
 import { frontendProducts } from "./frontend-products.js";
 import { laserSyncProducts } from "./laser-sync-products.js";
 import { lidarApdProducts } from "./lidar-apd-products.js";
+import { psdModuleProducts } from "./psd-module-products.js";
 import { psdProducts } from "./psd-products.js";
 import { spectralProducts } from "./spectral-products.js";
 
@@ -4434,6 +4435,7 @@ export const products = [
   ...intensifierProducts,
   ...profileProducts,
   ...psdProducts,
+  ...psdModuleProducts,
   ...lidarApdProducts,
   ...frontendProducts,
   ...laserSyncProducts,

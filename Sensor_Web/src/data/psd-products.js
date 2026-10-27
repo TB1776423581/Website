@@ -356,7 +356,7 @@ export const psdProducts = [
         "产品页没有写发布日期。meta description 写 Large active area: 9 × 9 mm、thin package: 1.26 mmt、Improved tetra-lateral type (pin-cushion type)。评估板一句写 Evaluation circuit boards provided，没有写出 C4674-01。包装写 Tray: S5991-01 和 Reel: S5991-11。",
         "规格表感光面积 9 x 9 mm，封装 Ceramic，封装类别 Surface mount type。峰值 960 nm，光灵敏度 0.6 A/W。光谱范围 320 to 1100，没有 nm。暗电流最大 50 nA，上升时间典型 2 μs，终端电容典型 500 pF，极间电阻典型 7 kΩ。",
         `索引 ${twoIndex} 这一行 newState 是 false。productExp 写 Pin-Cushion, chip carrier package. For spot light detection, pointing device, position measurement。typeNameSort 写成 S05991-01。缩略图 alt 写 Two-dimensional PSD  S5991-01，PSD 和型号之间有两个空格。手册标 740 KB。`,
-        `手册仍是 ${s5990Sheet}，记为约 2026 年 3 月。S5991-01 和 S5991-11 在同一列，感光面积 9×9 mm。位置检测误差典型 ±150 μm、最大 ±250 μm。暗电流典型 1 nA、最大 50 nA。终端电容典型 500 pF。位置分辨率典型 1.5 μm。S5991-11 和 C4674-01 不作为传感器收录。`,
+        `手册仍是 ${s5990Sheet}，记为约 2026 年 3 月。S5991-01 和 S5991-11 在同一列，感光面积 9×9 mm。位置检测误差典型 ±150 μm、最大 ±250 μm。暗电流典型 1 nA、最大 50 nA。终端电容典型 500 pF。位置分辨率典型 1.5 μm。S5991-11 不在索引上。C4674-01 在 PSD 电路索引上单独收录。`,
       ]),
     ],
   },
