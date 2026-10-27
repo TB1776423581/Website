@@ -33,6 +33,15 @@ const g9801Sheet =
 const g9801Place =
   "手册应用只写 Power monitor in optical fiber communications。这句没有写 TOF，也对不上本站的应用标签，所以不放在应用下面。光谱范围是光电二极管的响应范围，不是按波段成像，所以不放在技术下面。";
 
+const g6854Sheet =
+  "https://www.hamamatsu.com/content/dam/hamamatsu-photonics/sites/documents/99_SALES_LIBRARY/ssd/g6854-01_kird1013e.pdf";
+
+const g6854Docs =
+  "相关文档里免责声明 Disclaimer / Opto-semiconductors 标 37 KB/PDF，安全注意事项 Safety consideration / Opto-semiconductors 标 34 KB/PDF，化合物光半导体注意事项 Precautions / Compound opto-semiconductors (photosensors, light emitters) 标 390 KB/PDF。选型指南 Selection guide / Infrared detectors 标 2.2 MB/PDF，技术笔记 Technical note / Compound opto-semiconductor photosensors 标 3.1 MB/PDF。";
+
+const g6854Place =
+  "手册应用只写 Optical fiber communications。这句没有写 TOF，也对不上本站的应用标签，所以不放在应用下面。光谱响应是一条灵敏度曲线，不是按波段成像，所以不放在技术下面。";
+
 export const ingaasPinProducts = [
   {
     id: "g14942",
@@ -93,6 +102,28 @@ export const ingaasPinProducts = [
         `手册仍是 ${g9801Sheet}，记为约 2015 年 8 月。封装表这一列 Mount type 写 Panel，连接器仍写 FC。电特性与 G9801-22 同一列，所以暗电流最大仍是 0.4 nA，产品页仍写 0.95 nA。外形图号 KIRDA0080EC。图注同样写不兼容 FC/Angled PC plugs。` +
           `约 2026 年 8 月的选型指南 KIRD0001E23 正文也没有 G9801-32。` +
           g9801Place,
+      ]),
+    ],
+  },
+  {
+    id: "g6854",
+    date: "2017-09",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "G6854：滨松球面透镜窗、便于光纤耦合的 InGaAs PIN 光电二极管",
+    summary:
+      "产品页没有写发布日期。手册目录号 KIRD1013E05，页脚写 Sep. 2017 DN，并写 Information described in this material is current as of September 2017，记为约 2017 年 9 月。索引 newState 是 false。产品页暗电流最大写成 0.4 nA。手册最大写成 400 pA，典型 80 pA。手册把 careful 写成 carefull。",
+    applications: [],
+    technologies: [],
+    models: [
+      page("G6854-01", "2017-09", part("G6854-01"), [
+        "产品页没有写发布日期。页眉写 InGaAs PIN photodiode。一级标题写 G6854-01。页面标题和 og:title 都写 InGaAs PIN photodiode G6854-01 | Hamamatsu Photonics。og:url 走 infrared-detector 路径，索引给出的产品地址走 photodiodes 路径。二级标题写 Spherical lens window package for efficient fiber coupling。产品页正文没有另起一段说明，特性直接从 Features 开始。特性五条，连字符后面是一个普通空格：Easy optical axis alignment、High fiber coupling efficiency、CD package、Package weldable by YAG laser、Spherical lens window with AR coating minimizes　return light input。最后一条 minimizes 和 return 之间是一个全角空格。产品页没有写应用栏。下载名称写 InGaAs PIN photodiode G6854-01，标 926 KB/PDF，文件名是 g6854-01_kird1013e.pdf。og:description 从 Features 起连成一段，条与条之间没有空格。keywords 写成 InGaAs photodiodes,InGaAs photodiodes。",
+        "规格表感光面积 φ0.08 mm，元件数 1，封装 Metal，封装类别 TO-18 (with lens)，冷却 Non-cooled。光谱范围 0.9 to 1.7 μm。峰值典型 1.55 μm。光灵敏度典型 0.95 A/W。暗电流最大 0.4 nA。截止频率典型 2000 MHz。终端电容典型 1 pF。噪声等效功率典型 2×10<sup>-15</sup> W/Hz<sup>1/2</sup>，-15 和 1/2 都是上标。规格表没有分流电阻，也没有探测率。测量条件写 Typ. Ta=25 ℃，unless otherwise noted，Photosensitivity: λ=λp，Dark current: V<sub>R</sub>=5 V，Cutoff frequency: V<sub>R</sub>=5 V, R<sub>L</sub>=50 Ω，λ=1.3 μm -3 dB，μm 和 -3 之间没有逗号，Terminal capacitance: V<sub>R</sub>=5 V, f=1 MHz。锚点有 Specifications、Spectral response、Dimensional outline (unit: mm) 和 Related documents。光谱图资源写成 k_g6854-01_sr_xx,0.jpg，逗号后面是 0，页面地址把下划线换成连字符，并把逗号写成 %2C。外形图文件是 kirda0063ed.svg，资源路径写成 KIRDA0063ED.svg。" +
+          g6854Docs,
+        `${indexIntro}这一行 newState 是 false，排在 G14942-32 后面。productExp 与二级标题相同。thumbAlt 是 null。缩略图文件名是 k_g6854-01_pp_xx.jpg。typeNameSort 写成 G06854-01，在 G 后面插入一个 0。感光面积的值写成 φ0.08，显示写成 φ0.08 mm。光谱范围的值写成 0.9 to 1.7，显示才补上 μm。峰值 1.55 μm。光灵敏度 0.95 A/W。截止频率 2000 MHz。终端电容 1 pF。噪声等效功率的值写成 2×10<sup>-15</sup>，显示写成 2×10<sup>-15</sup> W/Hz<sup>1/2</sup>。封装的值和显示都写成 Metal。封装类别的值在 with 处截断，写成 TO-18 (with，显示才补成 TO-18 (with lens)。冷却 Non-cooled。手册名称写 InGaAs PIN photodiode G6854-01，标 926 KB。索引地址 ${index}。`,
+        `手册 ${g6854Sheet}。目录号 KIRD1013E05，页脚写 Cat. No. KIRD1013E05 Sep. 2017 DN，并写 current as of September 2017，September 后面没有逗号。封面写 InGaAs PIN photodiode，型号写 G6854-01。副题分成两行，写 Spherical lens window package for efficient fiber coupling，与产品页二级标题相同。特性没有连字符。CD package 下面多一句 High degree of base positioning accuracy allows easy positioning。产品页没有这一句。最后一条没有全角空格。应用只写 Optical fiber communications。绝对最大表头写 Ta=25 °C。反向电压符号写成 VR Max.，数值 20 V。工作温度 -40 to +85 °C，贮存温度 -55 to +125 °C。电特性表头写 Photo sensitivity，中间有空格。λ=1.3 μm 一行最小 0.8 A/W、典型 0.9 A/W。λ=1.55 μm 一行最小 0.85 A/W、典型 0.95 A/W。产品页规格表只留典型 0.95 A/W，条件写成 λ=λp。暗电流条件 VR=5 V，典型 80 pA、最大 400 pA。400 pA 与产品页的 0.4 nA 是同一数值，产品页没有写典型 80 pA。截止频率最小 1 GHz、典型 2 GHz，条件 VR=5 V, RL=50 Ω，λ=1.3 μm, -3 dB，μm 和 -3 之间有逗号。产品页写成 2000 MHz，并且没有逗号。终端电容典型 1 pF、最大 1.5 pF。分流电阻典型 8 GΩ，条件 VR=10 mV。探测率符号 D*，典型 5 × 10<sup>12</sup> cm · Hz<sup>1/2</sup>/W，12 和 1/2 都是上标，条件 λ=λp。噪声等效功率典型 2 × 10<sup>-15</sup> W/Hz<sup>1/2</sup>，条件 λ=λp。产品页用乘号紧贴 10，手册在 × 两边留空格。文末写 G6854-01 may be damaged by Electro Static Discharge, etc. Be carefull when using G6854-01。carefull 多一个 l，Electro 和 Static 各自首字母大写。光谱图号 KIRDB0002EC，暗电流图号 KIRDB0152EB，终端电容图号 KIRDB0153EB，频率响应图号 KIRDB0154EB，光纤耦合图号 KIRDB0155EC 和 KIRDB0156EC。外形图号 KIRDA0063ED。相关信息列出 Disclaimer 和 Metal, ceramic, plastic package products。产品页的注意事项没有 package products 这一份。` +
+          `选型指南 ${guideUrl}，产品页标 2.2 MB/PDF。目录号 KIRD0001E23，页脚写 Aug. 2026 DN，并写 current as of August 2026，记为约 2026 年 8 月。第 5 页这一行写 G6854-01、Non-cooled、ϕ0.08、0.9 to 1.7、2000 (VR=5 V)，封装栏写成 With CD lens 和 TO-18。截止频率表头的单位是 MHz。` +
+          g6854Place,
       ]),
     ],
   },
