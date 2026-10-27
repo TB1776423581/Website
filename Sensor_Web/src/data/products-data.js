@@ -2,6 +2,7 @@ import { depthProducts } from "./depth-products.js";
 import { fairchildProducts } from "./fairchild-products.js";
 import { intensifierProducts } from "./intensifier-products.js";
 import { profileProducts } from "./profile-products.js";
+import { psdProducts } from "./psd-products.js";
 import { spectralProducts } from "./spectral-products.js";
 
 export const products = [
@@ -4429,4 +4430,5 @@ export const products = [
   ...fairchildProducts,
   ...intensifierProducts,
   ...profileProducts,
+  ...psdProducts,
 ];
