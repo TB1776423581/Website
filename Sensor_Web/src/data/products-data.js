@@ -4,6 +4,7 @@ import { intensifierProducts } from "./intensifier-products.js";
 import { profileProducts } from "./profile-products.js";
 import { frontendProducts } from "./frontend-products.js";
 import { laserSyncProducts } from "./laser-sync-products.js";
+import { monoColorProducts } from "./mono-color-products.js";
 import { lidarApdProducts } from "./lidar-apd-products.js";
 import { psdModuleProducts } from "./psd-module-products.js";
 import { psdProducts } from "./psd-products.js";
@@ -4439,4 +4440,5 @@ export const products = [
   ...lidarApdProducts,
   ...frontendProducts,
   ...laserSyncProducts,
+  ...monoColorProducts,
 ];
