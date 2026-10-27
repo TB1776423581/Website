@@ -11,6 +11,7 @@ import { schmittProducts } from "./schmitt-products.js";
 import { lightModulationProducts } from "./light-modulation-products.js";
 import { photoIcRestProducts } from "./photo-ic-rest-products.js";
 import { segmentedProducts } from "./segmented-products.js";
+import { siArrayProducts } from "./si-array-products.js";
 import { lidarApdProducts } from "./lidar-apd-products.js";
 import { psdModuleProducts } from "./psd-module-products.js";
 import { psdProducts } from "./psd-products.js";
@@ -4468,4 +4469,5 @@ export const products = [
   ...lightModulationProducts,
   ...photoIcRestProducts,
   ...segmentedProducts,
+  ...siArrayProducts,
 ];
