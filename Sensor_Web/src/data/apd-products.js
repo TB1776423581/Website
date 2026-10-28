@@ -24,6 +24,9 @@ const s17268Sheet =
 const s2384Sheet =
   "https://www.hamamatsu.com/content/dam/hamamatsu-photonics/sites/documents/99_SALES_LIBRARY/ssd/s12023-02_etc_kapd1007e.pdf";
 
+const s5344Sheet =
+  "https://www.hamamatsu.com/content/dam/hamamatsu-photonics/sites/documents/99_SALES_LIBRARY/ssd/s12053-02_etc_kapd1001e.pdf";
+
 const g15978Sheet =
   "https://www.hamamatsu.com/content/dam/hamamatsu-photonics/sites/documents/99_SALES_LIBRARY/ssd/g15978-0020p_kapd1092e.pdf";
 
@@ -56,6 +59,9 @@ const placeS2384 =
 
 const placeS4315 =
   "手册封面应用写 FSO 和 Optical rangefinders。选型指南第 11 页左边写 FSO, optical fiber communications, etc.。第 3 页 TE-cooled type 那一行写 Low-light-level detection。这些句子没有写 TOF，也对不上本站的应用标签，所以不放在应用下面。光谱响应是一条灵敏度曲线，不是按波段成像，所以不放在技术下面。";
+
+const placeS5344 =
+  "手册应用写 Low-light-level measurement 和 Analytical instrument。这些句子没有写 TOF，也对不上本站的应用标签，所以不放在应用下面。光谱响应是一条灵敏度曲线，不是按波段成像，所以不放在技术下面。";
 
 const placeIr =
   "手册应用写 Distance measurement 和 Low-light-level detection。这些句子没有写 TOF，也对不上本站的应用标签，所以不放在应用下面。光谱响应是一条灵敏度曲线，不是按波段成像，所以不放在技术下面。";
@@ -204,6 +210,37 @@ export const apdProducts = [
         `手册仍是 ${s2384Sheet}，记为约 2026 年 7 月。第 6 页这一行 APD used 写 S2384。峰值 800 标 *8，注 *8 写 M=60。前三只的注是 *7，M=100。击穿电压仍是最小 160 V、典型 180 V、最大 200 V。第 2 页 S2384 那一行暗电流典型 1 nA、最大 10 nA，截止频率 120 MHz，终端电容 40 pF，增益 60。结构表外形 (5)/K，封装 TO-5，感光面 ϕ3.0 mm。产品页封装类别写 TO-8，感光面积写 φ3 mm，击穿电压写 180 V。S2384 单独那一页的击穿电压写 150 V。` +
           `约 2026 年 6 月的选型指南第 11 页把 Built-in APD 写成 S2384。封装 TO-8 印在这一组中间，不在这一行单独再印。` +
           placeS4315,
+      ]),
+    ],
+  },
+  {
+    id: "s5344",
+    date: "2025-09",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S5344：滨松短波、600 nm 波段 Si APD",
+    summary:
+      "产品页没有写发布日期。S5344 和 S5345 共用这一页。手册文件名是 s12053-02_etc_kapd1001e.pdf，页脚写 Cat. No. KAPD1001E08 Sep. 2025 DN，并写 Information described in this material is current as of September 2025，记为约 2025 年 9 月。索引 newState 都是 false，是第 10 行和第 11 行。产品页没有正文段。手册副题写 Short wavelength type APD, for 600 nm band。手册正文写 These are short wavelength APDs with improved sensitivity in the UV to visible range。",
+    applications: [],
+    technologies: [],
+    models: [
+      page("S5344", "2025-09", si("S5344"), [
+        "产品页没有写发布日期。一级标题写 S5344。页面标题和 og:title 都写 Si APD S5344 | Hamamatsu Photonics，竖线前面是一个空格。二级标题写 Short wavelength type APD，是一行。二级标题下面是两个空的 p，没有另起一段说明。特性只有一条，连字符后面是普通空格：High sensitivity and low noise in UV to visible range。这一条写在 br 和 b 标签里，Features 是粗体。特性后面还有一个空的 p。name 和 og:description 都写成 Features- High sensitivity and low noise in UV to visible range，连字符两边没有空格。keywords 写 Si APDs，末尾有一个空格。面包屑里的 Si APDs 末尾有一个空格。产品页没有写应用栏。下载标 625 KB/PDF。相关产品列 APD module C12702-12、Si APD S12053-02、Si APD S12053-05、Si APD S12053-10、Si APD S9075 和 Si APD S5345。C12702-12 的图片 alt 写 C12702 product photo，链接是 apd-module/C12702-12.html。S12053-02 的 alt 写成 Si APD  product photo，Si APD 和 product 之间有两个空格。S12053-05 和 S12053-10 的 alt 写成 Si APD product photo，中间一个空格。S9075 的 alt 写成 Si APD  S9075 product photo，Si APD 后面有两个空格。S5345 的 alt 写 S5345 product photo。S12053 和 S9075 是别的前缀，没有放进这一页。C12702-12 是模块，没有另开产品页。",
+        "规格表类型分成两行，写 Short wavelength type，下一行 (Low bias operation)。感光面积 φ3 mm，φ 是 U+03C6。封装 Metal。封装类别的表头写成 Package Category，C 是大写，值是 TO-5。峰值 620 nm。光谱范围 200 to 1000 nm。光灵敏度典型 0.42 A/W。暗电流最大 10 nA。截止频率典型 25 MHz。终端电容典型 120 pF。击穿电压典型 160 V。温度系数典型 0.15 V/℃，℃ 是 U+2103。增益典型 50。规格表没有冷却，没有窗材料，没有量子效率，也没有过剩噪声。测量条件写 Typ. Ta=25 ℃，unless otherwise noted,，逗号后面换行，下一行写 Photosensitivity: λ=620 nm, M=1。没有写出暗电流、截止频率、终端电容、击穿电压和增益的条件。光谱图地址里的文件名是 k-s5343-sr-xx,0.jpeg，逗号写成 %2C。data-asset 写成 k_s5343_sr_xx,0.jpg。文件名是 S5343，不是 S5344。外形图文件是 kapda0016ec.svg。data-asset 写成 KAPDA0016EC.svg。" +
+          s2384Docs,
+        `${siIntro}这一行是第 10 行，newState 是 false。productExp 写 Short wavelength type APD。thumbAlt 写 S5344 product photo。typeNameSort 写成 S05344。类型的值停在 Short wavelength type，换行后再写 (Low bias，没有把 operation) 放进值里；显示才写成 Short wavelength type，换行 (Low bias operation)。感光面积的值写成 φ3，显示写成 φ3 mm。光谱范围的值写成 200 to 1000，显示才补上 nm。峰值 620 nm。击穿电压 160 V。温度系数 0.15 V/℃。截止频率 25 MHz。光灵敏度 0.42 A/W。暗电流 10 nA。终端电容 120 pF。增益的值是 50，没有单位。封装的值和显示都写成 Metal。封装类别的值和显示都写成 TO-5。冷却的值写成 Non-cooled，显示也是 Non-cooled。产品页规格表没有冷却这一行。手册标 625 KB。索引地址 ${siIndex}。S5345 放在同一页。同一手册上的 S12053 和 S9075 是别的前缀，没有放进这一页。`,
+        `手册 ${s5344Sheet}。文件名是 s12053-02_etc_kapd1001e.pdf。目录号 KAPD1001E08，页脚写 Cat. No. KAPD1001E08 Sep. 2025 DN，并写 Information described in this material is current as of September 2025。封面标题写 Si APD，型号分成两行，上一行 S12053 series，下一行 S9075, S5344, S5345。副题写 Short wavelength type APD, for 600 nm band。正文第一句写 These are short wavelength APDs with improved sensitivity in the UV to visible range。第二句写 They offer high gain, high sensitivity, and low noise in the short wavelength range。第三句写 They are suitable for applications such as low-light-level measurement and analytical instrument。特性没有连字符，只写 High sensitivity and low noise in UV to visible range。应用写 Low-light-level measurement 和 Analytical instrument。结构表这一只外形 (2)/U，封装 TO-5 印在 S9075 和 S5344 两行中间，感光面 ϕ3.0 mm，ϕ 是 U+03D5，产品页用的是 φ，没有写成 ϕ3.0。注 *1 写 U=UV glass。注 *2 写 Area in which a typical gain can be obtained。产品页规格表没有窗材料。绝对最大表这一组的正向电流 10 mA，反向电流 200 µA。工作温度 -20 to +60 °C，贮存温度 -55 to +100 °C。注 *3 前面有 U+0007，然后写 No dew condensation，后面还有一段 dew condensation may occur。绝对最大额定值那条 Note 前面也有 U+0007。电特性表头写 Typ. Ta=25 °C, unless otherwise noted，这里是 °C，不是产品页的 ℃。光谱范围 200 to 1000 nm，峰值 620 nm 标 *4，光灵敏度 0.42 A/W，量子效率 80%，击穿电压最小 140 V、典型 160 V、最大 180 V，温度系数 0.15 V/°C，过剩噪声因子 1.6 和 1.9，过剩噪声指数 0.12 和 0.16，增益 50，这几格是整组共用，这一行没有再印一遍。光灵敏度和量子效率的条件写 λ=620 nm, M=1。增益表头写 λ=650 nm。过剩噪声因子的两列写 λ=450 nm 和 λ=650 nm，过剩噪声指数也是这两列。产品页没有量子效率、击穿电压的最小和最大，也没有过剩噪声。这一行暗电流标 *4，典型 1 nA、最大 10 nA。截止频率 25 MHz，表头写 RL=50 Ω，Ω 是 U+2126。终端电容 120 pF。注 *4 写 Values measured at a gain listed in the characteristics table。产品页暗电流、截止频率和终端电容的测量条件没有写这项增益。光谱图号 KAPDB0010ED，条件 (Typ. Ta=25 °C, M at 650 nm)。产品页文件名是 k_s5343_sr_xx,0.jpg，不是 KAPDB0010ED。量子效率图号 KAPDB0023EB，条件 (Typ. Ta=25 °C)。暗电流对反向电压图号 KAPDB0009EE，条件 (Typ. Ta=25 °C)，图上标了 S5344。增益对反向电压图号 KAPDB0011EC，条件 (Typ. λ=650 nm)。光谱图和量子效率图中间抽出一行 Gain vs. reverse voltage (S5343, S5344, S5345)。封面型号没有 S5343。终端电容图号 KAPDB0015ED，条件 (Typ. Ta=25 °C, f=1 MHz)，图上标了 S5344。过剩噪声图号 KAPDB0678EA，条件 (Typ. Ta=25 °C, f=10 kHz, B=1 Hz)，波长写 λ=430 nm、λ=650 nm 和 λ=850 nm。产品页只放了那张文件名写成 S5343 的光谱图。外形图 (2) 写 S9075, S5344，图号 KAPDA0015EB。产品页文件名是 kapda0016ec.svg，data-asset 写成 KAPDA0016EC.svg。手册把 KAPDA0016EC 放在 (3) S5345。图上写 Window、Photosensitive surface、Lead 和 Case。感光面中心对管帽中心写 -0.3≤X≤+0.3 和 -0.3≤Y≤+0.3。图上有一行写成 ϕ1.5. max.，1.5 后面多一个句点。引线节距印成 ϕ5.08 ± 0.2。旁边还有 0.4 max.。窗玻璃那句写 The glass window may extend a maximum of 0.2 mm above the upper surface of the cap。这一张没有印 Index mark。抽出的文本在终端电容图旁边还有一行 Dimensional outlines (S5344, unit: mm)。第 4 页紫外注意事项写 Long-term exposure to UV will cause produt characteristics deteriorate，produt 少一个字母，后面写 Avoid exposing the products to any unnecessary UV irradiation。相关信息的注意事项写 Precautions / Metal, ceramic, plastic package products，ceramic 和 plastic 是小写。产品页写成 Metal, Ceramic, Plastic products。手册的目录只列 Technical note / Si APD。S12053 和 S9075 是别的前缀，没有放进这一页。` +
+          `选型指南 ${siGuide}，产品页标 2.6 MB/PDF。目录号 KAPD0001E15，页脚写 Jun. 2026 DN，并写 Information described in this material is current as of June 2026，记为约 2026 年 6 月。第 7 页标题写 Short wavelength type Si APD。左边写 Low bias operation，下一行写 Enhanced sensitivity in the UV to visible region。手册写的是 improved sensitivity 和 visible range，不是 Enhanced 和 region。这一行感光面写成 ɸ3.0，ɸ 是 U+0278。截止频率 25 MHz，表头写 R<sub>L</sub>=50 Ω，Ω 是 U+03A9。终端电容 120 pF。光谱范围 200 to 1000 nm、击穿电压最大 180 V、温度系数 0.15 V/°C 和增益 50 印在整组中间，这一行没有再印一遍。增益表头写 λ=650 nm。封装 TO-5 印在 S9075 和 S5344 两行中间。S5345 那一行写成 TO-8。注 *1 写 Area in which a typical gain can be obtained。注 *2 写 Value obtained when operated at the gain indicated in the table。手册把增益注编成 *4。光谱图号 KAPDB0010EE，手册是 KAPDB0010ED。量子效率图号 KAPDB0023EC，条件写 (Typ. Ta=25 °C, M=1)，手册图号是 KAPDB0023EB，条件没有写 M=1。增益图号 KAPDB0011EC，与手册相同。页脚页码写 7 / 22。第 20 页模块表 Type no. 写 C12702-12，Built-in APD 写 S5344，Effective photosensitive area 写 ɸ3.0。High band 写 40 MHz。Photoelectric conversion sensitivity 写 -1.9 × 10^4，表头单位 (V/W)。Minimum detection limit 写 6.3，表头单位 (nW rms)。Type 写 For short wavelength，Low band 写 4 kHz，Supply voltage 写 +5，这三格印在 C12702-11 和 C12702-12 两行中间。W×D×H 写 80 × 50 × 23，印在 C12702-12 这一行下面。表里没有 S5345。这是模块，没有另开产品页。页脚页码写 20 / 22。` +
+          placeS5344,
+      ]),
+      page("S5345", "2025-09", si("S5345"), [
+        "产品页没有写发布日期。一级标题写 S5345。页面标题和 og:title 都写 Si APD S5345 | Hamamatsu Photonics，竖线前面是一个空格。二级标题、空的 p 和那一条特性与 S5344 相同。name 和 og:description 同样写成 Features- High sensitivity and low noise in UV to visible range，连字符两边没有空格。keywords 写 Si APDs，末尾有一个空格。产品页没有写应用栏。下载标 625 KB/PDF。相关产品列 Si APD S12053-02、Si APD S12053-05、Si APD S12053-10、Si APD S9075 和 Si APD S5344。这一列没有 C12702-12。S12053-02 的 alt 仍写成 Si APD  product photo，中间两个空格。S9075 的 alt 仍写成 Si APD  S9075 product photo。S5344 的 alt 写 S5344 product photo。S12053 和 S9075 是别的前缀，没有放进这一页。",
+        "规格表类型同样分成两行，写 Short wavelength type，下一行 (Low bias operation)。感光面积 φ5 mm。封装 Metal，封装类别 TO-8。峰值 620 nm。光谱范围 200 to 1000 nm。光灵敏度典型 0.42 A/W。暗电流最大 30 nA。截止频率典型 8 MHz。终端电容典型 300 pF。击穿电压典型 160 V。温度系数典型 0.15 V/℃。增益典型 50。规格表没有冷却。测量条件与 S5344 相同，只写出光灵敏度 λ=620 nm, M=1。光谱图文件名仍是 k-s5343-sr-xx,0.jpeg，data-asset 仍是 k_s5343_sr_xx,0.jpg。外形图文件仍是 kapda0016ec.svg，data-asset 仍写成 KAPDA0016EC.svg。" +
+          s2384Docs,
+        `${siIntro}这一行是第 11 行，newState 是 false。productExp 写 Short wavelength type APD。thumbAlt 写 S5345 product photo。typeNameSort 写成 S05345。类型的值同样停在 (Low bias。感光面积的值写成 φ5，显示写成 φ5 mm。暗电流 30 nA。截止频率 8 MHz。终端电容 300 pF。击穿电压 160 V。增益的值是 50，没有单位。封装 Metal，封装类别 TO-8。冷却的值和显示都写成 Non-cooled。产品页规格表没有冷却这一行。手册标 625 KB。`,
+        `手册仍是 s12053-02_etc_kapd1001e.pdf，记为约 2025 年 9 月。结构表这一只外形 (3)/U，封装 TO-8 印在这一行，感光面 ϕ5.0 mm，ϕ 是 U+03D5，产品页用的是 φ。窗材料注仍是 *1，U=UV glass。暗电流标 *4，典型 3 nA、最大 30 nA。截止频率 8 MHz，终端电容 300 pF。击穿电压仍是整组共用的最小 140 V、典型 160 V、最大 180 V。产品页只写典型 160 V。光谱图号仍是 KAPDB0010ED，产品页文件名仍是 S5343。外形图 (3) 写 S5345，图号 KAPDA0016EC，与产品页的 KAPDA0016EC.svg 相同。图上写 Window、Photosensitive surface、Lead、Index mark 和 Case。感光面中心对管帽中心写 -0.4≤X≤+0.4 和 -0.4≤Y≤+0.4。图上有一行写成 ϕ1.0 max.。引线节距印成 ϕ7.5 ± 0.2，旁边印着 Index mark 和 ϕ1.4。还有一行 0.5 max.。窗玻璃那句写 The glass window may extend a maximum of 0.2 mm above the upper surface of the cap。同一页写 Long-term exposure to UV will cause produt characteristics deteriorate。` +
+          `约 2026 年 6 月的选型指南第 7 页把这一行的感光面写成 ɸ5.0，截止频率 8 MHz，终端电容 300 pF。封装写成 TO-8，印在这一行。光谱范围、击穿电压最大 180 V、温度系数和增益仍印在整组中间。第 20 页的模块表没有把 Built-in APD 写成 S5345。` +
+          placeS5344,
       ]),
     ],
   },
