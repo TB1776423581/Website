@@ -63,6 +63,18 @@ const g10899Ir = (name) =>
 const g10899Place =
   "手册应用写 Spectroanalysis 和 Thermometer。这两句没有写 TOF，也对不上本站的应用标签，所以不放在应用下面。光谱响应是一条灵敏度曲线，不是按波段成像，所以不放在技术下面。";
 
+const g11193Sheet =
+  "https://www.hamamatsu.com/content/dam/hamamatsu-photonics/sites/documents/99_SALES_LIBRARY/ssd/g11193_series_kird1111e.pdf";
+
+const g11193Docs =
+  "相关文档里免责声明 Disclaimer / Opto-semiconductors 标 37 KB/PDF，安全注意事项 Safety consideration / Opto-semiconductors 标 34 KB/PDF，化合物光半导体注意事项 Precautions / Compound opto-semiconductors (photosensors, light emitters) 标 390 KB/PDF，表面贴装注意事项 Precautions / Surface mount type products 标 407 KB/PDF。选型指南 Selection guide / Infrared detectors 标 2.2 MB/PDF，技术笔记 Technical note / Compound opto-semiconductor photosensors 标 3.1 MB/PDF。";
+
+const g11193Place =
+  "手册应用写 Optical power meter 和 Measurement/analytical instruments。这两句没有写 TOF，也对不上本站的应用标签，所以不放在应用下面。光谱响应是一条灵敏度曲线，不是按波段成像，所以不放在技术下面。";
+
+const g11193SheetNote =
+  `手册 ${g11193Sheet}。文件名是 g11193_series_kird1111e.pdf。目录号 KIRD1111E04，页脚写 Cat. No. KIRD1111E04 Nov. 2017 DN，并写 Information described in this material is current as of November 2017，November 后面没有逗号。封面写 InGaAs PIN photodiodes，是复数，型号写 G11193 series。副题只写 Small package, surface mount type，没有产品页二级标题里的 Active area。手册没有另起一段说明。特性没有连字符：Small SMD (surface mount device) package、Low noise, low dark current、Low price。应用写 Optical power meter 和 Measurement/analytical instruments。结构表封装三只都写 SMD。感光面写成 ϕ0.2、ϕ0.3、ϕ1.0，ϕ 是 phi 符号。窗材料三只都写 Resin。结构表没有冷却，也没有元件数。绝对最大表反向电压三只都是 10 V，符号写成 VR Max.。工作温度 -25 to +85 °C，贮存温度 -40 to +100 °C，条件都写 No dew condensation*1。回流焊条件写 Peak temperature 240 °C, one time。注 *1 写 When there is a temperature difference between a product and the surrounding area in high humidity environment, dew condensation may occur on the product surface。另一条注写 Exceeding the absolute maximum ratings even momentarily may cause a drop in product quality。电特性表头写 Ta=25 °C，没有 Typ.，也没有 unless otherwise noted。光谱范围条件写 Higher than 10% of peak，数值 0.9 to 1.7 µm，µm 是微符号，三只共用。峰值 1.55 µm，三只共用。正文里的波长用的是希腊字母 μ，这一表用的是微符号。光灵敏度名称写成 Photo sensitivity，中间有空格，符号 S。λ=1.3 µm 最小 0.75 A/W、典型 0.85 A/W。λ=1.55 µm 最小 0.77 A/W、典型 1.0 A/W。产品页规格表只留下 1 A/W。暗电流符号 ID，条件 VR=5 V，单位是 pA。暗电流温度系数三只共用，符号写成 ΔTID，条件 VR=1 V，数值 1.09 times/°C。产品页没有这一行。截止频率名称写成 Cut-off frequency，有连字符，符号 fc，条件 VR=5 V, RL=50 Ω, -3 dB，单位是 GHz。终端电容符号 Ct，条件 VR=5 V, f=1 MHz。分流电阻符号 Rsh，条件 VR=10 mV，单位是 GΩ。探测率符号 D*，条件 λ=λp，最小 1 × 10<sup>12</sup>、典型 5 × 10<sup>12</sup>，单位写成 cm∙Hz<sup>1/2</sup>/W，中间的点是 U+2219，这一格三只共用，手册在 × 两边留空格。噪声等效功率符号 NEP，条件 λ=λp。光谱图号 KIRDB0445EA，条件 (Typ. Ta=25 °C)，纵轴写成 Photo sensitivity (A/W)。温度特性图号 KIRDB0636EA，条件 (Typ., Vr=0 V)，Vr 的 r 是小写。暗电流对反向电压图号 KIRDB0446EB，图题写 Dark current vs. reverse voltage (G11193 series)，条件 (Typ. Ta=25 °C)。终端电容对反向电压图号 KIRDB0447EB，条件 (Typ. Ta=25 °C, f=1 MHz)。暗电流对温度图号 KIRDB0448EB，条件 (Typ. VR=5 V)。回流焊图号 KIRDB0627EA。图下写 After unpacking, store the device in an environment at a temperature range of 5 to 30 °C and a humidity of 60% or less, and perform reflow soldering within 1 year。下一句把 Thermal 写成 Therminal。预热写 70 to 90 s，焊接写 40 s max.。外形图号 KIRDA0210EC，图题写 Dimensional outline (unit: mm)，另一处写成 Dimensional outline (G11193 series, unit: mm)。未注公差写 Tolerance unless otherwise noted: ±0.1。感光面中心对基准中心写 -0.2≤X≤+0.2 和 -0.2≤Y≤+0.2。型号表把感光面写成 0.2、0.3、1.0，没有直径符号。文末写 The G11193 series may be damaged by electrostatic discharge, etc. Be careful when using the G11193 series。careful 的拼写没有多字母。相关信息列出 Disclaimer、Safety consideration 和 Surface mount type products，技术信息写 Infrared detectors。手册没有把化合物注意事项、选型指南和技术笔记列进相关信息。产品页的技术笔记标题是 Compound opto-semiconductor photosensors。`;
+
 const g10899SheetNote =
   `手册 ${g10899Sheet}。文件名是 g10899_series_kird1109e.pdf。目录号 KIRD1109E05，页脚写 Cat. No. KIRD1109E05 Feb. 2024 DN，并写 current as of February 2024，February 后面没有逗号。封面写 InGaAs PIN photodiodes，是复数，型号写 G10899 series。副题只写 Wide spectral response range (0.5 to 1.7 μm)，没有产品页二级标题里的 active area。正文写 The G10899 series is an InGaAs PIN photodiode，series 后面用单数 is。产品页把 series 换成具体型号，也用 is。后面写到 shorter wavelength side，以及 A wide range of spectrum can be detected with a single detector。特性没有连字符。应用写 Spectroanalysis 和 Thermometer。结构表窗材料五只都写 Borosilicate glass。感光面写成 φ0.3、φ0.5、φ1、φ2、φ3，φ 是希腊小写字母。产品页把后三只写成 φ1.0 mm、φ2.0 mm、φ3.0 mm。G10899-003K、G10899-005K、G10899-01K 的封装是 TO-18，G10899-02K、G10899-03K 是 TO-5。绝对最大表反向电压，前三只是 5 V，后两只是 2 V。正向电流五只都是 10 mA。工作温度 -40 to +85 °C，贮存温度 -55 to +125 °C。注写 *1: No dew condensation。电特性表头写 Ta=25 °C，没有 Typ.，也没有 unless otherwise noted。光谱范围写成 0.5 to 1.7 µm，µm 是微符号，峰值 1.55 µm，这两格五只共用。正文里的波长用的是希腊字母 μ。光灵敏度名称写成 Photosensitivity，符号 S。λ=0.65 µm 最小 0.15 A/W、典型 0.22 A/W。λ=0.85 µm 最小 0.35 A/W、典型 0.45 A/W。λ=1.3 µm 最小 0.8 A/W、典型 0.9 A/W。λ=λp 最小 0.85 A/W、典型 1 A/W。产品页规格表只留下 1 A/W。暗电流温度系数五只共用，符号写成 ΔTID，条件 VR=1 V，数值 1.07 times/°C。探测率符号 D*，条件 λ=λp，最小 1 × 10<sup>12</sup>、典型 5 × 10<sup>12</sup> cm·Hz<sup>1/2</sup>/W，这一格五只共用，手册在 × 两边留空格。截止频率表头写 VR=1 V, RL=50 Ω，没有写 -3 dB。终端电容表头写 VR=1 V, f=1 MHz。分流电阻表头写 VR=10 mV。噪声等效功率条件 λ=λp。光谱图号 KIRDB0408EA，条件 Typ. Ta=25 °C。纵轴写成 Photo sensitivity，中间有空格。图上还标 Si photodiode S1337-BQ、Si photodiode S1337-BR 和 InGaAs PIN photodiode (standard type)。窗透过率图号 KIRDB0643EA。产品页没有这张图。温度特性图号 KIRDB0409EB，条件 Typ. VR=0 V。线性图号 KIRDB0735EA，条件写 Irradiation of the entire photosensitive area, Typ. Ta=25 °C, λ=1.3 µm, RL=2 Ω, VR=0 V，Ω 是欧姆符号。暗电流对反向电压图号 KIRDB0414EC。终端电容对反向电压图号 KIRDB0410EC。分流电阻对温度图号 KIRDB0411ED。外形图号 KIRDA0220EA 给前三只，KIRDA0221EA 给后两只。图上的直径用 ϕ，是 phi 符号，结构表用的是 φ。文末写 The G10899 series may be damaged by electrostatic discharge, etc. Be careful when using the G10899 series。careful 的拼写没有多字母。相关信息列出 Disclaimer、Safety consideration、Compound opto-semiconductors (photosensors, light emitters)，技术信息写 Infrared detectors。产品页的技术笔记标题是 Compound opto-semiconductor photosensors。手册没有把选型指南列进相关信息。`;
 
@@ -269,6 +281,49 @@ export const ingaasPinProducts = [
           `这一只暗电流典型 15 nA、最大 75 nA。产品页只写最大 75 nA。截止频率最小 2 MHz、典型 5 MHz。终端电容典型 600 pF、最大 1200 pF。分流电阻最小 1 MΩ、典型 10 MΩ。噪声等效功率典型 5 × 10<sup>-14</sup> W/Hz<sup>1/2</sup>、最大 2 × 10<sup>-13</sup> W/Hz<sup>1/2</sup>。反向电压最大 2 V。结构表感光面写成 φ3，产品页写成 φ3.0 mm。` +
           `约 2026 年 8 月的选型指南第 4 页这一行写 G10899-03K、ϕ3 和 5。页码印在这一页末，写 4 / 26。` +
           g10899Place,
+      ]),
+    ],
+  },
+  {
+    id: "g11193",
+    date: "2017-11",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "G11193：滨松小型表面贴装 InGaAs PIN 光电二极管",
+    summary:
+      "产品页没有写发布日期。G11193-02R、G11193-03R 和 G11193-10R 共用这一页。手册文件名是 g11193_series_kird1111e.pdf，页脚目录号 KIRD1111E04，写 Nov. 2017 DN，并写 Information described in this material is current as of November 2017，记为约 2017 年 11 月。索引 newState 都是 false。产品页封装写 Ceramic 和 Surface mount type。手册结构表封装写 SMD，窗材料写 Resin。",
+    applications: [],
+    technologies: [],
+    models: [
+      page("G11193-02R", "2017-11", part("G11193-02R"), [
+        "产品页没有写发布日期。页眉写 InGaAs PIN photodiode。一级标题写 G11193-02R。页面标题和 og:title 都写 InGaAs PIN photodiode G11193-02R | Hamamatsu Photonics。索引地址走 photodiodes 路径，返回 200。infrared-detector 路径也返回 200，标题仍是这一只。og:url 走 infrared-detector 路径，所以两条地址都打开这一只，页底链接用索引给出的 photodiodes 地址。二级标题写 Small package, surface mount type, Active area: Φ0.2 mm，Φ 是希腊大写 phi。二级标题后面是一个空的 p，再一个空的 p，然后特性直接从 Features 开始，没有另起一段说明。特性三条，b 只包住 Features，连字符后面是一个普通空格：Small SMD (surface mount device) package、Low noise, low dark current、Low price。产品页没有写应用栏。下载名称写 Datasheet，标 768 KB/PDF，文件名是 g11193_series_kird1111e.pdf。og:description 写成 Features- Small SMD (surface mount device) package- Low noise, low dark current- Low price，连字符前面没有空格，连字符后面有一个空格。keywords 写成 InGaAs photodiodes,InGaAs photodiodes。",
+        "规格表感光面积 φ0.2 mm，φ 是希腊小写字母。元件数 1，封装 Ceramic，封装类别 Surface mount type，冷却 Non-cooled。光谱范围 0.9 to 1.7 μm。峰值典型 1.55 μm。光灵敏度典型 1 A/W。暗电流最大 0.8 nA。截止频率典型 1000 MHz。终端电容典型 3 pF。噪声等效功率典型 3×10<sup>-15</sup> W/Hz<sup>1/2</sup>，-15 和 1/2 都是上标，乘号是 ×。规格表没有窗材料、分流电阻、探测率、暗电流温度系数、最小截止频率和最大终端电容。测量条件写 Typ. Ta=25 ℃，unless otherwise noted，Photosensitivity: λ=λp，Dark current: V<sub>R</sub>=5 V，Cutoff frequency: V<sub>R</sub>=5 V,  R<sub>L</sub>=50 Ω，逗号后面有两个空格，再写 -3 dB，Terminal capacitance: V<sub>R</sub>=5 V, f=1 MHz。℃ 是单独的摄氏度符号。锚点有 Specifications、Spectral response、Dimensional outline (unit: mm) 和 Related documents。光谱图资源写成 k-g11193-02r-sr-xx.jpeg，下划线换成连字符。资源路径是 k_g11193-02r_sr_xx.jpg。外形图文件是 KIRDA0210EC.svg，路径里 Dimensional outline 中间有空格。" +
+          g11193Docs,
+        `${indexIntro}这一行 newState 是 false，排在 G10899-03K 后面，是第 15 行。productExp 与二级标题相同，Φ 仍是希腊大写 phi。thumbAlt 是 null。缩略图文件名是 k_g11193-02r_pp_xx.jpg。typeNameSort 写成 G11193-02R，没有在 G 后面插 0。感光面积的值写成 φ0.2，显示写成 φ0.2 mm。光谱范围的值写成 0.9 to 1.7，显示才补上 μm。峰值 1.55 μm。光灵敏度的值写成 1，显示写成 1 A/W。截止频率 1000 MHz。终端电容 3 pF。噪声等效功率的值写成 3×10<sup>-15</sup>，显示写成 3×10<sup>-15</sup> W/Hz<sup>1/2</sup>。封装的值和显示都写成 Ceramic。封装类别的值写成 Surface mount，显示写成 Surface mount type。冷却 Non-cooled。筛选项的值写成 Standard type (0.9 to 1.7 μm)。终端电容、噪声等效功率和封装的复选框没有勾选。光谱范围、峰值、感光面积、光灵敏度、截止频率、封装类别和冷却的复选框是勾选的。索引规格表没有暗电流。手册名称写 Datasheet，标 768 KB。索引地址 ${index}。`,
+        g11193SheetNote +
+          `这一只暗电流典型 40 pA、最大 800 pA。800 pA 与产品页的 0.8 nA 是同一数值，产品页没有写典型 40 pA。截止频率最小 0.6 GHz、典型 1 GHz。1 GHz 与产品页的 1000 MHz 是同一数值。终端电容典型 3 pF、最大 5 pF。分流电阻最小 0.25 GΩ、典型 1.4 GΩ。噪声等效功率典型 3 × 10<sup>-15</sup> W/Hz<sup>1/2</sup>、最大 1 × 10<sup>-14</sup> W/Hz<sup>1/2</sup>。结构表感光面写成 ϕ0.2，产品页写成 φ0.2 mm。` +
+          `选型指南 ${guideUrl}，产品页标 2.2 MB/PDF。目录号 KIRD0001E23，页脚写 Aug. 2026 DN，并写 current as of August 2026，记为约 2026 年 8 月。第 6 页这一组写 G11193-02R、ϕ0.2 和 1000。封装栏写成 Ceramic，下一行 (surface mount type)，和另外两只连在一起。截止频率表头写 VR=5 V，单位是 MHz。同页说明写 peak sensitivity wavelength of 1.55 µm，并写 Suitable for optical power meters and NIR photometry，以及 Wavelength: 0.9 µm to 1.7 µm。这一行本身没有印出光谱范围和峰值。旁边的光谱图号写成 KIRDB0719EB，手册是 KIRDB0445EA。同页靠后的图旁印着 G11193 series，图号 KIRDB0646EC。页码印在这一页末，写 6 / 26。` +
+          g11193Place,
+      ]),
+      page("G11193-03R", "2017-11", part("G11193-03R"), [
+        "产品页没有写发布日期。页眉、一级标题、页面标题和 og:title 都换成 G11193-03R。索引地址走 photodiodes 路径，返回 200。infrared-detector 路径也返回 200，标题仍是这一只。og:url 走 infrared-detector 路径。二级标题写 Small package, surface mount type, Active area: Φ0.3 mm，Φ 仍是希腊大写 phi。说明段前面仍是两个空的 p。特性三条与 G11193-02R 相同，b 仍只包住 Features。产品页没有写应用栏。下载仍标 768 KB/PDF，文件名仍是 g11193_series_kird1111e.pdf。og:description 同样在 Features 和连字符之间没有空格。keywords 仍写成 InGaAs photodiodes,InGaAs photodiodes。",
+        "规格表感光面积 φ0.3 mm，元件数 1，封装 Ceramic，封装类别 Surface mount type，冷却 Non-cooled。光谱范围、峰值和光灵敏度与 G11193-02R 相同。暗电流最大 1.2 nA。截止频率典型 500 MHz。终端电容典型 5 pF。噪声等效功率典型 4×10<sup>-15</sup> W/Hz<sup>1/2</sup>。测量条件与 G11193-02R 相同，截止频率的逗号后面仍有两个空格。光谱图资源和 G11193-02R 相同，仍写成 k-g11193-02r-sr-xx.jpeg，文件名仍是 02R。外形图文件仍是 KIRDA0210EC.svg。" +
+          g11193Docs,
+        `${indexIntro}这一行 newState 是 false，是第 16 行。productExp 与二级标题相同。thumbAlt 是 null。缩略图文件名是 k_g11193-03r_pp_xx.jpg。typeNameSort 写成 G11193-03R。感光面积的值写成 φ0.3，显示写成 φ0.3 mm。截止频率 500 MHz。终端电容 5 pF。噪声等效功率的值写成 4×10<sup>-15</sup>。封装的值和显示都写成 Ceramic。封装类别的值写成 Surface mount，显示写成 Surface mount type。冷却 Non-cooled。手册仍标 768 KB。`,
+        g11193SheetNote +
+          `这一只暗电流典型 100 pA、最大 1200 pA。1200 pA 与产品页的 1.2 nA 是同一数值，产品页没有写典型 100 pA。截止频率最小 0.2 GHz、典型 0.5 GHz。0.5 GHz 与产品页的 500 MHz 是同一数值。终端电容典型 5 pF、最大 8 pF。分流电阻最小 0.2 GΩ、典型 1 GΩ。噪声等效功率典型 4 × 10<sup>-15</sup> W/Hz<sup>1/2</sup>、最大 1 × 10<sup>-14</sup> W/Hz<sup>1/2</sup>。结构表感光面写成 ϕ0.3，产品页写成 φ0.3 mm。` +
+          `约 2026 年 8 月的选型指南第 6 页这一行写 G11193-03R、ϕ0.3 和 500。` +
+          g11193Place,
+      ]),
+      page("G11193-10R", "2017-11", part("G11193-10R"), [
+        "产品页没有写发布日期。页眉、一级标题、页面标题和 og:title 都换成 G11193-10R。索引地址走 photodiodes 路径，返回 200。infrared-detector 路径也返回 200，标题仍是这一只。og:url 走 infrared-detector 路径。二级标题写 Small package, surface mount type, Active area: Φ1.0 mm，Φ 仍是希腊大写 phi。说明段前面仍是两个空的 p。特性三条与 G11193-02R 相同。产品页没有写应用栏。下载仍标 768 KB/PDF，文件名仍是 g11193_series_kird1111e.pdf。og:description 同样在 Features 和连字符之间没有空格。keywords 仍写成 InGaAs photodiodes,InGaAs photodiodes。",
+        "规格表感光面积 φ1.0 mm，元件数 1，封装 Ceramic，封装类别 Surface mount type，冷却 Non-cooled。光谱范围、峰值和光灵敏度与 G11193-02R 相同。暗电流最大 4 nA。截止频率典型 60 MHz。终端电容典型 55 pF。噪声等效功率典型 1.4×10<sup>-14</sup> W/Hz<sup>1/2</sup>，-14 和 1/2 都是上标。测量条件与 G11193-02R 相同。光谱图资源仍写成 k-g11193-02r-sr-xx.jpeg，文件名仍是 02R。外形图文件仍是 KIRDA0210EC.svg。" +
+          g11193Docs,
+        `${indexIntro}这一行 newState 是 false，是第 17 行。productExp 与二级标题相同。thumbAlt 是 null。缩略图文件名是 k_g11193-10r_pp_xx.jpg。typeNameSort 写成 G11193-10R。感光面积的值写成 φ1.0，显示写成 φ1.0 mm。截止频率 60 MHz。终端电容 55 pF。噪声等效功率的值写成 1.4×10<sup>-14</sup>。封装的值和显示都写成 Ceramic。封装类别的值写成 Surface mount，显示写成 Surface mount type。冷却 Non-cooled。手册仍标 768 KB。`,
+        g11193SheetNote +
+          `这一只暗电流典型 800 pA、最大 4000 pA。4000 pA 与产品页的 4 nA 是同一数值，产品页没有写典型 800 pA。截止频率最小 0.025 GHz、典型 0.06 GHz。0.06 GHz 与产品页的 60 MHz 是同一数值。终端电容典型 55 pF、最大 120 pF。分流电阻最小 0.025 GΩ、典型 0.125 GΩ。噪声等效功率典型 1.4 × 10<sup>-14</sup> W/Hz<sup>1/2</sup>、最大 4 × 10<sup>-14</sup> W/Hz<sup>1/2</sup>。结构表感光面写成 ϕ1.0，产品页写成 φ1.0 mm。` +
+          `约 2026 年 8 月的选型指南第 6 页这一行写 G11193-10R、ϕ1 和 60。指南的直径写成 ϕ1，手册写成 ϕ1.0，产品页写成 φ1.0 mm。` +
+          g11193Place,
       ]),
     ],
   },
