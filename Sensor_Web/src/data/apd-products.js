@@ -21,6 +21,9 @@ const ingaasIndex =
 const s17268Sheet =
   "https://www.hamamatsu.com/content/dam/hamamatsu-photonics/sites/documents/99_SALES_LIBRARY/ssd/s17268_series_kapd1094e.pdf";
 
+const s2384Sheet =
+  "https://www.hamamatsu.com/content/dam/hamamatsu-photonics/sites/documents/99_SALES_LIBRARY/ssd/s12023-02_etc_kapd1007e.pdf";
+
 const g15978Sheet =
   "https://www.hamamatsu.com/content/dam/hamamatsu-photonics/sites/documents/99_SALES_LIBRARY/ssd/g15978-0020p_kapd1092e.pdf";
 
@@ -44,6 +47,12 @@ const irDocs =
 
 const placeSi =
   "手册应用写 Optical rangefinders、Flow cytometry 和 Particle counters。这些句子没有写 TOF，也对不上本站的应用标签，所以不放在应用下面。量子效率和光谱响应是灵敏度曲线，不是按波段成像，所以不放在技术下面。";
+
+const s2384Docs =
+  "相关文档里免责声明 Disclaimer / Opto-semiconductors 标 37 KB/PDF，金属、陶瓷和塑料产品注意事项 Precautions / Metal, Ceramic, Plastic products 标 290 KB/PDF。选型指南 Selection guide / Si APD 标 2.6 MB/PDF，技术笔记 Technical note / Si APD 标 2.1 MB/PDF，APD 模块技术笔记 Technical note / APD modules 标 759 KB/PDF。";
+
+const placeS2384 =
+  "手册应用写 FSO 和 Optical rangefinders。选型指南这一节写 FSO, optical fiber communications, etc.。这些句子没有写 TOF，也对不上本站的应用标签，所以不放在应用下面。光谱响应是一条灵敏度曲线，不是按波段成像，所以不放在技术下面。";
 
 const placeIr =
   "手册应用写 Distance measurement 和 Low-light-level detection。这些句子没有写 TOF，也对不上本站的应用标签，所以不放在应用下面。光谱响应是一条灵敏度曲线，不是按波段成像，所以不放在技术下面。";
@@ -77,6 +86,28 @@ export const apdProducts = [
         `手册仍是 ${s17268Sheet}，记为约 2025 年 8 月。特性里的截止频率只点名 S17268-02 的 2 GHz，没有写这一只的 0.8 GHz。电特性表这一列截止频率典型 0.8 GHz，终端电容典型 3.6 pF，暗电流典型 0.2 nA、最大 2 nA。感光面积 ϕ0.5 mm。击穿电压范围仍是 140 V、160 V、180 V。外形图把这一只的感光面写成 ϕ0.5。` +
           `约 2026 年 6 月的选型指南把这一行的感光面积写成 ɸ0.5，截止频率 800 MHz，终端电容 3.6 pF，光谱范围与 S17268-02 同一格 350 to 1000 nm。封装两行仍是 Glass 和 epoxy。` +
           placeSi,
+      ]),
+    ],
+  },
+  {
+    id: "s2384",
+    date: "2026-07",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S2384：滨松低偏压、800 nm 波段 Si APD",
+    summary:
+      "产品页没有写发布日期。这一页只有 S2384。手册文件名是 s12023-02_etc_kapd1007e.pdf，页脚目录号 KAPD1007E19，写 Jul. 2026 DN，并写 Information described in this material is current as of July 2026，记为约 2026 年 7 月。索引 newState 是 false，是第 3 行。产品页没有正文段。手册正文写 These are 800 nm band near-infrared Si APDs。",
+    applications: [],
+    technologies: [],
+    models: [
+      page("S2384", "2026-07", si("S2384"), [
+        "产品页没有写发布日期。一级标题写 S2384。页面标题和 og:title 都写 Si APD S2384 | Hamamatsu Photonics，竖线前面是一个空格。二级标题写 Low bias operation, for 800 nm band，是一行。二级标题下面是两个空的 p，没有另起一段说明。特性三条，连字符后面是普通空格：Stable operation at low bias、High-speed response、High sensitivity and low noise。name 和 og:description 都写成 Features- Stable operation at low bias- High-speed response- High sensitivity and low noise，连字符两边没有空格。产品页没有写应用栏。下载标 876 KB/PDF。",
+        "规格表类型分成两行，写 Near infrared type，下一行 (Low bias operation)。感光面积 φ3 mm，φ 是希腊小写 phi。封装 Metal。封装类别的表头写成 Package Category，C 是大写，值是 TO-5。峰值 800 nm。光谱范围 400 to 1000 nm。光灵敏度典型 0.5 A/W。暗电流最大 10 nA。截止频率典型 120 MHz。终端电容典型 40 pF。击穿电压典型 150 V。温度系数典型 0.65 V/℃，℃ 是 U+2103。增益典型 60。规格表没有冷却，没有窗材料，没有量子效率，也没有过剩噪声。测量条件写 Typ. Ta=25 ℃，unless otherwise noted，然后换行。光灵敏度条件 λ=800 nm, M=1。没有写出暗电流、截止频率、终端电容、击穿电压和增益的条件。光谱图文件是 kapdb0020ed.svg。外形图文件是 kapda0012ec.svg。" +
+          s2384Docs,
+        `${siIntro}这一行是第 3 行，newState 是 false。productExp 写 Low bias operation, for 800 nm band。thumbAlt 写 S2384 product photo。typeNameSort 写成 S02384。类型的值停在 Near infrared type，换行后再写 (Low bias，没有把 operation) 放进值里；显示才写成 Near infrared type，换行 (Low bias operation)。感光面积的值写成 φ3，显示写成 φ3 mm。光谱范围的值写成 400 to 1000，显示才补上 nm。峰值 800 nm。击穿电压 150 V。温度系数 0.65 V/℃。截止频率 120 MHz。光灵敏度 0.5 A/W。暗电流 10 nA。终端电容 40 pF。增益的值是 60，没有单位。封装的值和显示都写成 Metal。封装类别的值和显示都写成 TO-5。冷却的值写成 Non-cooled，显示也是 Non-cooled。产品页规格表没有冷却这一行。手册标 876 KB。索引地址 ${siIndex}。同一手册上的 S2385、S3884、S12023、S12051、S12086 和 S4315 是别的前缀，没有放进这一页。`,
+        `手册 ${s2384Sheet}。文件名是 s12023-02_etc_kapd1007e.pdf。目录号 KAPD1007E19，页脚写 Cat. No. KAPD1007E19，下一行 Jul. 2026 DN，并写 Information described in this material is current as of July 2026。封面标题写 Si APD，型号写 S12023 series, etc.。副题写 Low bias operation, for 800 nm band。正文写 These are 800 nm band near-infrared Si APDs that can operate at low voltages, 200 V or less。下一句写 They are suitable for applications such as FSO (free space optics) and optical rangefinders。再下一句写 TE-cooled type S4315 series are also avaiable (see P.6)，avaiable 少一个字母。特性没有连字符：Stable operation at low bias、High-speed response、High sensitivity and low noise。应用写 FSO 和 Optical rangefinders。结构表这一只外形 (5)/K，封装 TO-5，感光面 ϕ3.0 mm，ϕ 是 U+03D5，产品页用的是 φ。注 *1 写 K=borosilicate glass, L=lens type borosilicate glass。注 *2 写 Photosensitive area in which a typical gain can be obtained。产品页规格表没有窗材料。绝对最大表这一组的正向电流 10 mA，反向电流 200 µA。工作温度 -20 to +85 °C，贮存温度 -55 to +125 °C。注 *3 写 No dew condensation。电特性表头写 Typ. Ta=25 °C, unless otherwise noted。光谱范围 400 to 1000 nm，峰值 800 nm，光灵敏度 0.5 A/W，量子效率 75%，击穿电压典型 150 V、最大 200 V，温度系数 0.65 V/°C，这几格是整组共用，产品页没有量子效率，击穿电压也没有最大 200 V。暗电流标 *5，典型 1 nA、最大 10 nA。截止频率 120 MHz，终端电容 40 pF，过剩噪声 0.3，增益 60。注 *5 写 The value at the gain listed in “Gain M”。产品页暗电流、截止频率和终端电容的测量条件没有写这项增益。光谱图号 KAPDB0020ED，条件 (Typ. Ta=25 °C, λ=800 nm)。量子效率图号 KAPDB0021EC。暗电流对反向电压图号 KAPDB0016ED，增益图号 KAPDB0017EC，终端电容图号 KAPDB0018ED，过剩噪声图号 KAPDB0022EA。产品页只放了光谱图。外形图 (5) S2384，图号 KAPDA0012EC，产品页文件名没有 EC。感光面中心对管帽中心写 -0.3≤X≤+0.3 和 -0.3≤Y≤+0.3。图上有一行写成 1.5. max.，1.5 后面多一个句点。窗玻璃那句写 The glass window may extend a maximum of 0.2 mm above the upper surface of the cap。焊接条件写 Solder temperature: 260 °C (10 s or less, once)。下一句写 Solder the leads at a point at least 1 mm away from the package body。第 6 页把 S4315-04 的 APD used 写成 S2384，峰值注 *8 写 M=60。注 *9 把 temperature 写成 temperatuer。S4315 是另一个前缀，没有放进这一页。相关信息的注意事项写 Precautions / Metal, ceramic, plastic package products，ceramic 和 plastic 是小写。产品页写成 Metal, Ceramic, Plastic products。手册的目录只列 Technical note / Si APD，没有把选型指南和 APD 模块技术笔记列进去。` +
+          `选型指南 ${siGuide}，产品页标 2.6 MB/PDF。目录号 KAPD0001E15，页脚写 Jun. 2026 DN，并写 Information described in this material is current as of June 2026，记为约 2026 年 6 月。第 11 页标题写 Low bias operation。正文写 They can obtain high gain with a bias voltage of 200 V or less, so they are suitable for FSO, optical fiber communications, etc.。手册写的是 optical rangefinders，不是 optical fiber communications。这一行感光面写成 ɸ3.0，ɸ 是 U+0278。截止频率 120 MHz，表头写 R<sub>L</sub>=50 Ω。终端电容 40 pF。增益 60，表头写 λ=800 nm。光谱范围 400 to 1000 nm、击穿电压最大 200 V 和温度系数 0.65 V/°C 印在整组中间，这一行没有再印一遍。封装 TO-5 印在 S3884 和 S2384 两行中间。S2385 那一行写成 TO-8。注 *1 写 Area in which a typical gain can be obtained。注 *2 写 Value obtained when operated at the gain indicated in the table。手册把面积注编成 *2，把增益注编成 *5。光谱图号 KAPDB0020ED，与手册相同。增益图号 KAPDB0017EC，也与手册相同。页脚页码写 11 / 22。第 20 页把模块 C12702-04 和 C12703-01 的 Built-in APD 写成 S2384，感光面都写成 ɸ3.0。这两只是模块，没有另开产品页。` +
+          placeS2384,
       ]),
     ],
   },
