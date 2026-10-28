@@ -26,15 +26,28 @@ import { spectralProducts } from "./spectral-products.js";
 export const products = [
   {
     id: "lytia",
-    date: "2026-06-24",
+    date: "2026-10-28",
     companyId: "sony",
     category: "product",
     title: "LYTIA：手机图像传感器",
     summary:
-      "LYT-818、LYT-828 与 LYTIA L910 都是约 5000 万有效像素、1/1.28 英寸（对角 12.49 mm）、1.22 μm、Quad Bayer 的堆叠式手机传感器。L910 是 LYTIA 系列第一款 LOFIC 产品，单次曝光动态范围 100 dB；LYT-818 用 UHCG 把随机噪声降到 0.95 e⁻，新 HDR 方式的动态范围是 86 dB。LYTIA 901 是 1/1.12 英寸（对角 14.287 mm）、约 2 亿有效像素、0.7 μm、Quad Quad Bayer Coding 的堆叠式传感器。LYTIA 610 是 1/2.0 英寸、约 6400 万有效像素、0.7 μm 的堆叠式传感器，彩色滤光片为 Quad Bayer Coding。",
+      "LYTIA 720 是 1/1.56 英寸（对角 10.24 mm）、约 5000 万有效像素、1.0 μm、Quad Bayer Coding 的堆叠式手机传感器，HF-HDR 动态范围 100 dB。LYT-818、LYT-828 与 LYTIA L910 都是约 5000 万有效像素、1/1.28 英寸（对角 12.49 mm）、1.22 μm、Quad Bayer 的堆叠式手机传感器。L910 是 LYTIA 系列第一款 LOFIC 产品，单次曝光动态范围 100 dB；LYT-818 用 UHCG 把随机噪声降到 0.95 e⁻，新 HDR 方式的动态范围是 86 dB。LYTIA 901 是 1/1.12 英寸（对角 14.287 mm）、约 2 亿有效像素、0.7 μm、Quad Quad Bayer Coding 的堆叠式传感器。LYTIA 610 是 1/2.0 英寸、约 6400 万有效像素、0.7 μm 的堆叠式传感器，彩色滤光片为 Quad Bayer Coding。",
     applications: ["mobile"],
     technologies: ["stacked", "hdr", "lowlight"],
     models: [
+      {
+        name: "LYTIA 720",
+        date: "2026-10-28",
+        url: "https://www.sony-semicon.com/en/info/2026/2026102801.html",
+        linkLabel: "打开产品发布页",
+        points: [
+          "2026 年 10 月 28 日发布，用于手机主摄。标题写 Approx. 50-Effective Megapixel，并写 With Superb Low-Light Performance and 4K HDR Video Recording。斜体一行写 Delivering top-tier technology honed in the LYTIA high-end series。",
+          "1/1.56 英寸（对角 10.24 mm），约 5000 万有效像素，像素 1.0 μm（H）×1.0 μm（V），括号是全角。堆叠式。彩色滤光片 Quad Bayer Coding。规格表有效像素写成 Approx. 50 megapixels。型号栏把 approximately 拆开印。",
+          "UHCG 把暗环境随机噪声相对常规产品大约降低 50%。注 *3 写 Compared with LYTIA 700, a 1/1.56-type approximately 50-effective megapixel CMOS image sensor。对比图说明左边是 Conventional model LYTIA 700，右边是 New model LYTIA 720，700 和 Right 之间是全角空格，拍摄条件 2 lux。LYTIA 700 不是这一页要发布的新型号，没有另开一页。",
+          "HF-HDR 把 DCG-HDR 和短曝光帧合在一起，动态范围 100 dB。全像素自动对焦下，5000 万像素 30 fps；1250 万像素 90 fps，DCG-HDR 时 30 fps；4K2K 120 fps，DCG-HDR 时 60 fps。DCG-HDR 的括号是全角。发布页写这是第一款像素 1.0 μm 的 1/1.56 英寸 LYTIA，能在 HDR 打开时做 4K 60 fps 全像素自动对焦。",
+          "量产出货时间为 2026 年 11 月初。模拟电源 2.8 v/1.8 v，数字 1.1 v，接口 1.8 v 或 1.2 v，电压单位写成小写 v。输出接口 MIPI C-PHY 2/3 trio，最高 4.5 Gsps/trio；或 MIPI D-PHY 2/4 lane，最高 2.5 Gbps/lane。",
+        ],
+      },
       {
         name: "LYTIA 610",
         date: "2026-06-24",
