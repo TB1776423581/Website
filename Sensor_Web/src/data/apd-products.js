@@ -27,6 +27,9 @@ const s2384Sheet =
 const s5344Sheet =
   "https://www.hamamatsu.com/content/dam/hamamatsu-photonics/sites/documents/99_SALES_LIBRARY/ssd/s12053-02_etc_kapd1001e.pdf";
 
+const s6045Sheet =
+  "https://www.hamamatsu.com/content/dam/hamamatsu-photonics/sites/documents/99_SALES_LIBRARY/ssd/s6045_etc_kapd1005e.pdf";
+
 const g15978Sheet =
   "https://www.hamamatsu.com/content/dam/hamamatsu-photonics/sites/documents/99_SALES_LIBRARY/ssd/g15978-0020p_kapd1092e.pdf";
 
@@ -62,6 +65,9 @@ const placeS4315 =
 
 const placeS5344 =
   "手册应用写 Low-light-level measurement 和 Analytical instrument。这些句子没有写 TOF，也对不上本站的应用标签，所以不放在应用下面。光谱响应是一条灵敏度曲线，不是按波段成像，所以不放在技术下面。";
+
+const placeS6045 =
+  "手册应用写 Optical rangefinders、FSO 和 Optical fiber communications。选型指南这一节写 FSO, optical fiber communications, etc.。这些句子没有写 TOF，也对不上本站的应用标签，所以不放在应用下面。光谱响应是一条灵敏度曲线，不是按波段成像，所以不放在技术下面。";
 
 const placeIr =
   "手册应用写 Distance measurement 和 Low-light-level detection。这些句子没有写 TOF，也对不上本站的应用标签，所以不放在应用下面。光谱响应是一条灵敏度曲线，不是按波段成像，所以不放在技术下面。";
@@ -241,6 +247,46 @@ export const apdProducts = [
         `手册仍是 s12053-02_etc_kapd1001e.pdf，记为约 2025 年 9 月。结构表这一只外形 (3)/U，封装 TO-8 印在这一行，感光面 ϕ5.0 mm，ϕ 是 U+03D5，产品页用的是 φ。窗材料注仍是 *1，U=UV glass。暗电流标 *4，典型 3 nA、最大 30 nA。截止频率 8 MHz，终端电容 300 pF。击穿电压仍是整组共用的最小 140 V、典型 160 V、最大 180 V。产品页只写典型 160 V。光谱图号仍是 KAPDB0010ED，产品页文件名仍是 S5343。外形图 (3) 写 S5345，图号 KAPDA0016EC，与产品页的 KAPDA0016EC.svg 相同。图上写 Window、Photosensitive surface、Lead、Index mark 和 Case。感光面中心对管帽中心写 -0.4≤X≤+0.4 和 -0.4≤Y≤+0.4。图上有一行写成 ϕ1.0 max.。引线节距印成 ϕ7.5 ± 0.2，旁边印着 Index mark 和 ϕ1.4。还有一行 0.5 max.。窗玻璃那句写 The glass window may extend a maximum of 0.2 mm above the upper surface of the cap。同一页写 Long-term exposure to UV will cause produt characteristics deteriorate。` +
           `约 2026 年 6 月的选型指南第 7 页把这一行的感光面写成 ɸ5.0，截止频率 8 MHz，终端电容 300 pF。封装写成 TO-8，印在这一行。光谱范围、击穿电压最大 180 V、温度系数和增益仍印在整组中间。第 20 页的模块表没有把 Built-in APD 写成 S5345。` +
           placeS5344,
+      ]),
+    ],
+  },
+  {
+    id: "s6045",
+    date: "2026-02",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S6045：滨松低温度系数、800 nm 波段 Si APD",
+    summary:
+      "产品页没有写发布日期。S6045-04、S6045-05 和 S6045-06 共用这一页。手册文件名是 s6045_etc_kapd1005e.pdf，页脚目录号 KAPD1005E07，写 Feb. 2026 DN，并写 Information described in this material is current as of February 2026，记为约 2026 年 2 月。索引 newState 都是 false，是第 12 行到第 14 行。产品页没有正文段。手册副题写 Low temperature coefficient type APD for 800 nm band。手册正文写 The S6045 and S12060 series are near infrared Si APDs developed for use in the 800 nm wavelength band。",
+    applications: [],
+    technologies: [],
+    models: [
+      page("S6045-04", "2026-02", si("S6045-04"), [
+        "产品页没有写发布日期。一级标题写 S6045-04。页面标题和 og:title 都写 Si APD S6045-04 | Hamamatsu Photonics，竖线前面是一个空格。二级标题写 Low temperature coefficient type APD for 800 nm band，是一行。二级标题下面是两个空的 p，没有另起一段说明。特性三条，连字符后面没有空格：Low temperature coefficient: 0.4 V/℃、High-speed response、High sensitivity, low noise。℃ 是 U+2103。这三条写在 br 和 b 标签里，Features 是粗体。特性后面还有一个空的 p。name 和 og:description 都写成 Features-Low temperature coefficient: 0.4 V/℃-High-speed response-High sensitivity, low noise，连字符两边没有空格。keywords 写 Si APDs，末尾有一个空格。面包屑里的 Si APDs 末尾有一个空格。产品页没有写应用栏。下载标 708 KB/PDF。相关产品列 Si APD S6045-05 和 Si APD S6045-06。图注写 Si APD S6045-05 和 Si APD S6045-06，alt 写 S6045-05 product photo 和 S6045-06 product photo。同一手册上的 S12060 是别的前缀，没有放进这一页。",
+        "规格表类型分成两行，写 Near infrared type，下一行 (Low temperature coefficient)。感光面积 φ1.5 mm，φ 是 U+03C6。封装 Metal。封装类别的表头写成 Package Category，C 是大写，值是 TO-5。峰值 800 nm。光谱范围 400 to 1000 nm。光灵敏度典型 0.5 A/W。暗电流最大 5 nA。截止频率典型 350 MHz。终端电容典型 12 pF。击穿电压典型 200 V。温度系数典型 0.4 V/℃。增益典型 100。规格表没有冷却，没有窗材料，没有量子效率，也没有过剩噪声。测量条件写 Typ. Ta=25 ℃，unless otherwise noted,，逗号后面换行，下一行写 Photosensitivity: λ=800 nm, M=1。没有写出暗电流、截止频率、终端电容、击穿电压和增益的条件。光谱图地址里的文件名是 k-s6045-01-sr-xx,0.jpeg，逗号写成 %2C。data-asset 写成 k_s6045-01_sr_xx,0.jpg。文件名是 S6045-01，不是 S6045-04。外形图文件是 kapda0011ec.svg。data-asset 写成 KAPDA0011EC.svg。" +
+          s2384Docs,
+        `${siIntro}这一行是第 12 行，newState 是 false。productExp 写 Low temperature coefficient type APD for 800 nm band。thumbAlt 写 S6045-04 product photo。typeNameSort 写成 S06045-04。类型的值停在 Near infrared type，换行后再写 (Low temperature，没有把 coefficient) 放进值里；显示才写成 Near infrared type，换行 (Low temperature coefficient)。感光面积的值写成 φ1.5，显示写成 φ1.5 mm。光谱范围的值写成 400 to 1000，显示才补上 nm。峰值 800 nm。击穿电压 200 V。温度系数 0.4 V/℃。截止频率 350 MHz。光灵敏度 0.5 A/W。暗电流 5 nA。终端电容 12 pF。增益的值是 100，没有单位。封装的值和显示都写成 Metal。封装类别的值和显示都写成 TO-5。冷却的值写成 Non-cooled，显示也是 Non-cooled。产品页规格表没有冷却这一行。手册标 708 KB。索引地址 ${siIndex}。S6045-05 和 S6045-06 放在同一页。同一手册上的 S12060-02、S12060-05 和 S12060-10 是别的前缀，没有放进这一页。`,
+        `手册 ${s6045Sheet}。文件名是 s6045_etc_kapd1005e.pdf。目录号 KAPD1005E07，页脚写 Cat. No. KAPD1005E07，下一行 Feb. 2026 DN，并写 Information described in this material is current as of February 2026。封面标题写 Si APD，型号写 S6045/S12060 series。副题分成两行，上一行 Low temperature coefficient type APD，下一行 for 800 nm band。正文第一句写 The S6045 and S12060 series are near infrared Si APDs developed for use in the 800 nm wavelength band。第二句写 These APDs are designed so that the temperature coefficient of the operating voltage is low enough to ensure stable operation over a wide temperature range。第三句写 They are suitable for applications such as optical rangefinders and FSO (free space optics)。特性没有连字符，第一条写 Temperature coefficient of breakdown voltage: 0.4 V/°C，° 是 U+00B0。后两条写 High-speed response 和 High sensitivity and low noise。产品页第三条写成 High sensitivity, low noise，用逗号，没有 and。应用写 Optical rangefinders、FSO 和 Optical fiber communications。结构表这一只外形 (2)/K，封装 TO-5 印在 S6045-04 和 S6045-05 两行中间，感光面 ϕ1.5 mm，ϕ 是 U+03D5，产品页用的是 φ，没有写成 ϕ1.5。注 *1 写 K=borosilicate glass。注 *2 写 Area in which a typical gain can be obtained。产品页规格表没有窗材料。绝对最大表这一组的正向电流 10 mA，反向电流 200 µA。工作温度 -40 to +85 °C，贮存温度 -55 to +125 °C。Note 和 Exceeding 之间有 U+0007。电特性表头写 Typ. Ta=25 °C, unless otherwise noted，这里是 °C，不是产品页的 ℃。光谱范围 400 to 1000 nm，峰值 800 nm 标 *3，光灵敏度 0.5 A/W，量子效率 75%，击穿电压典型 200 V、最大 300 V，温度系数 0.4 V/°C，过剩噪声 0.3，这几格是整组共用。光灵敏度和量子效率的条件写 λ=800 nm, M=1。增益表头写 λ=800 nm。这一组和 S12060 共用增益 100。S6045-05 印 60，S6045-06 印 40。过剩噪声的条件写 λ=800 nm。产品页没有量子效率、击穿电压的最大 300 V，也没有过剩噪声。这一行暗电流标 *3，典型 0.5 nA、最大 5 nA。截止频率 350 MHz，表头写 RL=50 Ω，Ω 是 U+2126。终端电容 12 pF。注 *3 写 Values measured at a gain listed in the characteristics table。产品页暗电流、截止频率和终端电容的测量条件没有写这项增益。光谱图号 KAPDB0026EA，条件 (Typ. Ta=25 °C, M at 800 nm)。产品页文件名是 k_s6045-01_sr_xx,0.jpg，不是 KAPDB0026EA。量子效率图号 KAPDB0027EA，条件 (Typ. Ta=25 °C)。暗电流对反向电压图号 KAPDB0028EB，图上标了 S6045-04、S6045-05 和 S6045-06。增益对反向电压图号 KAPDB0029EC，条件 (Typ. λ=800 nm)，图上标了 -20 °C、0 °C、20 °C、40 °C 和 60 °C。终端电容图号 KAPDB0030EB，条件 (Typ. Ta=25 °C, f=1 MHz)，图上标了 S6045-04。产品页只放了那张文件名写成 S6045-01 的光谱图。外形图 (2) 写 S6045-04，图号 KAPDA0011EC，与产品页的 KAPDA0011EC.svg 相同。图上写 Window、Photosensitive surface、Lead 和 Case。感光面中心对管帽中心写 -0.3≤X≤+0.3 和 -0.3≤Y≤+0.3。图上有一行写成 1.5 max.。引线节距印成 5.08 ± 0.2。旁边还有 0.4 max.。窗玻璃那句写 The glass window may extend a maximum of 0.2 mm above the upper surface of the cap。这一张没有印 Index mark。焊接条件写 Solder temperature: 260 °C (10 s or less, once)。下一句写 Solder the leads at a point at least 1 mm away from the package body。替换表把 S6045-01、S6045-02 和 S6045-03 写成 previous product，对应 S12060-02、S12060-05 和 S12060-10。注写 Products that have been removed from this datasheet。这三只不在索引上，没有另开产品页。相关信息的注意事项写 Precautions / Metal, ceramic, plastic package products，ceramic 和 plastic 是小写。产品页写成 Metal, Ceramic, Plastic products。手册的目录只列 Technical note / Si APD。S12060 是别的前缀，没有放进这一页。` +
+          `选型指南 ${siGuide}，产品页标 2.6 MB/PDF。目录号 KAPD0001E15，页脚写 Jun. 2026 DN，并写 Information described in this material is current as of June 2026，记为约 2026 年 6 月。第 3 页近红外类型下面有一行 Low temperature coefficient type，波长写成 700 to 900，峰值 800，特性写 Low temperature coefficient of bias voltage, easy gain adjustment，应用写 FSO, optical fiber communications。这一行没有型号。产品页光谱范围是 400 to 1000 nm。手册应用还写了 Optical rangefinders。第 12 页标题写 Low temperature coefficient。正文写 They produce stable gain over a wide temperature range. They are suitable for FSO, optical fiber communications, etc.。这一行感光面写成 ɸ1.5，ɸ 是 U+0278。截止频率 350 MHz，表头写 R<sub>L</sub>=50 Ω，Ω 是 U+03A9。终端电容 12 pF。增益 100，表头写 λ=800 nm。光谱范围 400 to 1000 nm、击穿电压最大 300 V 和温度系数 0.4 V/°C 印在整组中间，这一行没有再印一遍。封装 TO-5 印在 S6045-04 和 S6045-05 两行中间。S6045-06 那一行写成 TO-8。注 *1 写 Area in which a typical gain can be obtained。注 *2 写 Value obtained when operated at the gain indicated in the table。手册把增益注编成 *3。光谱图号 KAPDB0026EB，手册是 KAPDB0026EA。量子效率图号 KAPDB0027EB，条件写 (Typ. Ta=25 °C, M=1)，手册图号是 KAPDB0027EA，条件没有写 M=1。增益图号 KAPDB0029EC，与手册相同。页脚页码写 12 / 22。选型指南没有把 Built-in APD 写成 S6045。` +
+          placeS6045,
+      ]),
+      page("S6045-05", "2026-02", si("S6045-05"), [
+        "产品页没有写发布日期。一级标题写 S6045-05。页面标题和 og:title 都写 Si APD S6045-05 | Hamamatsu Photonics，竖线前面是一个空格。二级标题、两个空的 p 和三条特性与 S6045-04 相同。name 和 og:description 同样写成 Features-Low temperature coefficient: 0.4 V/℃-High-speed response-High sensitivity, low noise，连字符两边没有空格。keywords 写 Si APDs，末尾有一个空格。产品页没有写应用栏。下载标 708 KB/PDF。相关产品列 Si APD S6045-04 和 Si APD S6045-06。图注写 Si APD S6045-04 和 Si APD S6045-06，alt 写 S6045-04 product photo 和 S6045-06 product photo。S12060 是别的前缀，没有放进这一页。",
+        "规格表类型同样分成两行，写 Near infrared type，下一行 (Low temperature coefficient)。感光面积 φ3 mm。封装 Metal，封装类别 TO-5。峰值 800 nm。光谱范围 400 to 1000 nm。光灵敏度典型 0.5 A/W。暗电流最大 10 nA。截止频率典型 80 MHz。终端电容典型 50 pF。击穿电压典型 200 V。温度系数典型 0.4 V/℃。增益典型 60。规格表没有冷却。测量条件与 S6045-04 相同，只写出光灵敏度 λ=800 nm, M=1。光谱图文件名仍是 k-s6045-01-sr-xx,0.jpeg，data-asset 仍是 k_s6045-01_sr_xx,0.jpg。外形图文件是 kapda0012ec.svg，data-asset 写成 KAPDA0012EC.svg。" +
+          s2384Docs,
+        `${siIntro}这一行是第 13 行，newState 是 false。productExp 写 Low temperature coefficient type APD for 800 nm band。thumbAlt 写 S6045-05 product photo。typeNameSort 写成 S06045-05。类型的值同样停在 (Low temperature。感光面积的值写成 φ3，显示写成 φ3 mm。暗电流 10 nA。截止频率 80 MHz。终端电容 50 pF。击穿电压 200 V。增益的值是 60，没有单位。封装 Metal，封装类别 TO-5。冷却的值和显示都写成 Non-cooled。产品页规格表没有冷却这一行。手册标 708 KB。`,
+        `手册仍是 ${s6045Sheet}，记为约 2026 年 2 月。结构表这一只外形 (3)/K，封装 TO-5 印在上一行和这一行中间，感光面 ϕ3.0 mm，ϕ 是 U+03D5，产品页用的是 φ，没有写成 ϕ3.0。窗材料注仍是 *1，K=borosilicate glass。暗电流标 *3，典型 1 nA、最大 10 nA。截止频率 80 MHz，终端电容 50 pF，增益 60。击穿电压仍是整组共用的典型 200 V、最大 300 V。产品页只写典型 200 V。光谱图号仍是 KAPDB0026EA，产品页文件名仍是 S6045-01。外形图 (3) 写 S6045-05，图号 KAPDA0012EC，与产品页的 KAPDA0012EC.svg 相同。图上写 Window、Photosensitive surface、Lead 和 Case。感光面中心对管帽中心写 -0.3≤X≤+0.3 和 -0.3≤Y≤+0.3。图上有一行写成 1.5. max.，1.5 后面多一个句点。引线节距印成 5.08 ± 0.2。旁边还有 0.4 max.。窗玻璃那句写 The glass window may extend a maximum of 0.2 mm above the upper surface of the cap。这一张没有印 Index mark。` +
+          `约 2026 年 6 月的选型指南第 12 页把这一行的感光面写成 ɸ3.0，截止频率 80 MHz，终端电容 50 pF，增益 60。封装 TO-5 印在上一行和这一行中间。光谱范围、击穿电压最大 300 V 和温度系数仍印在整组中间。` +
+          placeS6045,
+      ]),
+      page("S6045-06", "2026-02", si("S6045-06"), [
+        "产品页没有写发布日期。一级标题写 S6045-06。页面标题和 og:title 都写 Si APD S6045-06 | Hamamatsu Photonics，竖线前面是一个空格。二级标题、两个空的 p 和三条特性与 S6045-04 相同。name 和 og:description 同样写成 Features-Low temperature coefficient: 0.4 V/℃-High-speed response-High sensitivity, low noise，连字符两边没有空格。keywords 写 Si APDs，末尾有一个空格。产品页没有写应用栏。下载标 708 KB/PDF。相关产品列 Si APD S6045-04 和 Si APD S6045-05。图注写 Si APD S6045-04 和 Si APD S6045-05，alt 写 S6045-04 product photo 和 S6045-05 product photo。S12060 是别的前缀，没有放进这一页。",
+        "规格表类型同样分成两行，写 Near infrared type，下一行 (Low temperature coefficient)。感光面积 φ5 mm。封装 Metal，封装类别 TO-8。峰值 800 nm。光谱范围 400 to 1000 nm。光灵敏度典型 0.5 A/W。暗电流最大 30 nA。截止频率典型 35 MHz。终端电容典型 120 pF。击穿电压典型 200 V。温度系数典型 0.4 V/℃。增益典型 40。规格表没有冷却。测量条件与 S6045-04 相同，只写出光灵敏度 λ=800 nm, M=1。光谱图文件名仍是 k-s6045-01-sr-xx,0.jpeg，data-asset 仍是 k_s6045-01_sr_xx,0.jpg。外形图文件是 kapda0139ea.svg，data-asset 写成 KAPDA0139EA.svg。" +
+          s2384Docs,
+        `${siIntro}这一行是第 14 行，newState 是 false。productExp 写 Low temperature coefficient type APD for 800 nm band。thumbAlt 写 S6045-06 product photo。typeNameSort 写成 S06045-06。类型的值同样停在 (Low temperature。感光面积的值写成 φ5，显示写成 φ5 mm。暗电流 30 nA。截止频率 35 MHz。终端电容 120 pF。击穿电压 200 V。增益的值是 40，没有单位。封装 Metal，封装类别 TO-8。冷却的值和显示都写成 Non-cooled。产品页规格表没有冷却这一行。手册标 708 KB。`,
+        `手册仍是 ${s6045Sheet}，记为约 2026 年 2 月。结构表这一只外形 (4)/K，封装 TO-8 印在这一行，感光面 ϕ5.0 mm，ϕ 是 U+03D5，产品页用的是 φ。窗材料注仍是 *1，K=borosilicate glass。暗电流标 *3，典型 3 nA、最大 30 nA。截止频率 35 MHz，终端电容 120 pF，增益 40。击穿电压仍是整组共用的典型 200 V、最大 300 V。产品页只写典型 200 V。光谱图号仍是 KAPDB0026EA，产品页文件名仍是 S6045-01。外形图 (4) 写 S6045-06，图号 KAPDA0139EA，与产品页的 KAPDA0139EA.svg 相同。图上写 Window、Photosensitive surface、Lead、Index mark 和 Case。感光面中心对管帽中心写 -0.4≤X≤+0.4 和 -0.4≤Y≤+0.4。图上有一行写成 1.0 max.。引线节距印成 7.5 ± 0.2，旁边印着 Index mark 和 1.4。还有一行 0.5 max.。窗玻璃那句写 The glass window may extend a maximum of 0.2 mm above the upper surface of the cap。` +
+          `约 2026 年 6 月的选型指南第 12 页把这一行的感光面写成 ɸ5.0，截止频率 35 MHz，终端电容 120 pF，增益 40。封装写成 TO-8，印在这一行。光谱范围、击穿电压最大 300 V 和温度系数仍印在整组中间。` +
+          placeS6045,
       ]),
     ],
   },
