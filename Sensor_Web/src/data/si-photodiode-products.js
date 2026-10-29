@@ -156,6 +156,21 @@ const s2506SheetLead =
 const placeS2506 =
   "手册应用写 FSO (free space optics)、Optical switches 和 Laser radar, etc.。这些句子对不上本站的应用标签，所以不放在应用下面。没有写 TOF。光谱响应是一条灵敏度曲线，不是按波段成像，所以不放在技术下面。";
 
+const s2592Sheet =
+  "https://www.hamamatsu.com/content/dam/hamamatsu-photonics/sites/documents/99_SALES_LIBRARY/ssd/s2592-03_etc_kspd1003e.pdf";
+
+const s2592Page =
+  "产品页没有写发布日期。导语写 Si photodiode。页面标题和 og:title 在型号和竖线之间有一个空格。keywords 写 Si photodiodes，末尾没有空格。型号区 class 含 Type--Migration。二级标题写在 span class=\"Txt__Limit\" 里，是一行：Thermoelectrically cooled photodiode for low-light-level detection in UV to near IR。二级标题下面先是一个只含不换行空格的 p，U+00A0，然后是正文段。特性三条写在同一个 p 里，Features 是粗体，前面是 br，后面也是 br。每条另起一行，行首是连字符，后面是一个普通空格：High S/N、High UV sensitivity、Built-in thermistor allows stable operation。最后一条末尾没有句号。产品页没有写应用栏。下载标 916 KB/PDF。面包屑里的 Si photodiodes 末尾没有空格。主图 alt 写 Si photodiode product photo。主图没有图注。两只主图文件名都是 k_s2592-03_-04_pp_xx.jpg。";
+
+const s2592Measure =
+  "规格表没有类型，没有窗材料，也没有截止频率。表头 Package category 的 c 是小写。测量条件写成一行：Typ. Ta=25 ℃，℃ 是 U+2103，Photosensitivity: λ=960 nm，Dark current: V<sub>R</sub>=10 mV，Terminal capacitance: V<sub>R</sub>=0 V，Noise equivalent power: V<sub>R</sub>=0 V, λ=λp，unless otherwise noted。λ 是 U+03BB。测量条件没有写上升时间。";
+
+const s2592SheetLead =
+  `手册 ${s2592Sheet}。文件名是 s2592-03_etc_kspd1003e.pdf。目录号 KSPD1003E12。pdf 信息里的 Title 是 Si photodiodes S2592 series。封面可见文本先写 Si photodiodes，再写 S2592 series。副题分成两行：Thermoelectrically cooled photodiodes for，for 后面是两个空格再换行，下一行写 low-light-level detection in UV to near IR。产品页把 photodiodes 写成 photodiode，并合成一行。正文写 The S2592 series sensors combine a UV to near infrared Si photodiode with a thermoelectric cooler. A thermistor is also included in the same package to sense the Si photodiode chip temperature. This allows stable operation over long periods of time, making these sensors suitable for low-light-level detection where a high S/N is required. A dedicated temperature controller (C1103-04) and heatsink (A3179 series) are also available as options (sold separately).。产品页把 series sensors combine 写成型号加 combines，把 these sensors 写成 this sensor，并另写 hermetically sealed in a TO-8 package，没有写 C1103-04 和 A3179。特性没有连字符，行首是一个普通空格：High S/N、High UV sensitivity、Built-in thermistor allows stable operation.。最后一条末尾有句号。应用写 Low-light-level detection，行首也是一个普通空格。产品页没有应用栏。结构表内置光电二极管写 S1336 series，窗材料写 Sapphire glass，制冷写 One-stage TE-cooled，封装写 TO-8，这四项印在两只中间，单位栏是横线。感光面积写在各自那一行。绝对最大反向电压 5 V、工作温度 -40 to +70 °C、贮存温度 -55 to +85 °C，两只共用，° 是 U+00B0。注 *1 的 No 前面是 U+0007。Note 的 Exceeding 前面是 U+0007。电特性表头写 Electrical and optical characteristics (Typ. Ta=25 °C)，没有 unless otherwise noted。光谱范围 190 to 1100、峰值 960 nm、λp 光灵敏度 0.42 A/W、暗电流温度系数 1.15 times/°C、制冷温度 35 °C，印在两只中间。制冷温度符号是 ∆，∆ 是 U+2206。表头 λ 是 U+03BB。短路电流单位 µA 和上升时间单位 µs 的 µ 是 U+00B5。上升时间条件 VR=0 V, RL=1 kΩ，Ω 是 U+2126。暗电流条件 VR=10 mV，表里只有最大值。终端电容条件 VR=0 V，没有写频率。分流电阻条件 VR=10 mV，单位 GΩ。噪声等效功率条件 VR=0 V, λ=λp，文本层在 × 两边有空格，× 是 U+00D7，指数没有写成上标。产品页 × 两边没有空格，指数写成上标，上升时间用的 μ 是 U+03BC。光谱图号 KSPDB0182EC，条件 (Typ. Ta=25 °C)，并写 QE=100%，百分号前面没有空格。光灵敏度温度特性图号 KSPDB0053EC，条件 (Typ. )，Typ 和右括号之间有空格。分流电阻对芯片温度图号 KSPDB0183EB，条件 (Typ. VR=10 mV)，曲线标 S2592-03 和 S2592-04。产品页只放了光谱 jpg 和外形图。制冷器规格表头写 TE-cooler specifications (Ta=25 °C, unless otherwise noted)。允许电流最大 1.5 A，允许电压最大 1.0 V，符号写成 VTE max。热敏电阻电阻最小 8.1 kΩ、典型 9.0 kΩ、最大 9.9 kΩ。B 常数条件 T1=25 °C, T2=-20 °C，典型 3.3 K。功耗最大 0.2 mW。制冷特性图号 KSPDB0184EB，电流电压图号 KSPDB0185EC，条件都写 (Typ. Ta=25 °C, thermal resistance of heatsink=3 °C/W)。热敏电阻温度特性图号 KIRDB0116EB，条件 (Typ.)，电阻单位 Ω 是 U+03A9。外形图题写 Dimensional outline (unit: mm)，outline 是单数。图号 KSPDA0133EB。图上 ɸ 是 U+0278。相关产品页写温度控制器 C1103-04 和散热器 A3179。A3179 外形图号 KIRDA0018EE，图上 (4 ×) ϕ3.5 的 ϕ 是 U+03D5。附件电缆 A4372-05 前面是 U+0008。这些不是这一索引上的光电二极管型号，没有另开一页。S1336 已经单独成页，没有放进这一页。相关信息网址写 http://www.hamamatsu.com/sp/ssd/doc_en.html。注意事项写 ∙ Disclaimer 和 ∙ Metal, ceramic, plastic package products，∙ 是 U+2219。技术笔记写 ∙ Si photodiodes。紫外注意事项两条都以 ∙ 开头，后面是一个空格再加 U+0007。末页写 Information described in this material is current as of February 2023。最后一行写 Cat. No. KSPD1003E12，后面是两个空格，再写 Feb. 2023 DN。末页没有写 Created in Japan，改印销售地址，地址写 Higashi-ku。记为约 2023 年 2 月。`;
+
+const placeS2592 =
+  "手册应用写 Low-light-level detection。这句话对不上本站的应用标签，所以不放在应用下面。没有写 TOF。光谱响应是一条灵敏度曲线，不是按波段成像，所以不放在技术下面。";
+
 const s1337Resin =
   "树脂灌封那句写 The resin potting may extend a maximum of 0.1 mm above the upper surface of the package.。";
 
@@ -1048,6 +1063,46 @@ export const siPhotodiodeProducts = [
           "结构表这一只光谱范围 760 to 1100。660 nm 和 780 nm 是横线。830 nm 光灵敏度 0.25 A/W 写在这一行。短路电流 4.1 µA 写在这一行。产品页光灵敏度写成 0.56 A/W，对得上印在两行中间的 λp，测量条件仍写 λ=780 nm，这一列在手册里是横线。产品页峰值写成 960 nm，手册也印在两行中间。" +
           `${guide}第 17 页这一行写 0.25 (λ=830 nm) 和 0.56 (λ=λp)。封装写成 Plastic，下一行写 (visible-cut type)。截止频率、终端电容和感光面积与 S2506-02 印在中间，没有再写一遍。` +
           placeS2506,
+      ]),
+    ],
+  },
+
+  {
+    id: "s2592",
+    date: "2023-02",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S2592：滨松热电制冷、紫外到近红外弱光探测 Si 光电二极管",
+    summary:
+      "产品页没有写发布日期。两只共用这一页。手册文件名是 s2592-03_etc_kspd1003e.pdf。pdf 信息里的 Title 是 Si photodiodes S2592 series。末页写 Information described in this material is current as of February 2023。最后一行写 Cat. No. KSPD1003E12，后面是两个空格，再写 Feb. 2023 DN，记为约 2023 年 2 月。索引 newState 都是 false，是第 57 行和第 58 行。",
+    applications: [],
+    technologies: [],
+    models: [
+      page("S2592-03", "2023-02", part("S2592-03"), [
+        s2592Page +
+          "一级标题写 S2592-03。主图 src 写成 k_s2592-03_-04_pp_xx.jpg.thumb.252.252.jpg。正文写 The S2592-03 combines a UV to near infrared Si photodiode with a thermoelectric cooler. A thermistor is also included in the same package to sense the Si photodiode chip temperature. This allows stable operation over long periods of time, making this sensor suitable for low-light-level detection where a high S/N is required. The S2592-03 is hermetically sealed in a TO-8 package.。手册写 The S2592 series sensors combine，并写 these sensors，还写 C1103-04 和 A3179 series。name=\"description\" 和 og:description 都把 package. 和 Features 接上，中间有一个空格，Features 和连字符之间没有空格，连字符后面是一个空格：Features- High S/N- High UV sensitivity- Built-in thermistor allows stable operation。相关产品轮播只列 S2592-04，链接是 /us/en/，没有 target。图注写 Si photodiode S2592-04，alt 写 Si photodiode product photo，文件名仍是 k_s2592-03_-04_pp_xx.jpg。",
+        "规格表感光面积 2.4 × 2.4 mm，× 是 U+00D7，两边有空格。封装 Metal。封装类别 TO-8。冷却 TE-cooled。反向电压最大 5 V。光谱范围 190 to 1100 nm。峰值 960 nm。光灵敏度典型 0.5 A/W。暗电流最大 38 pA。上升时间典型 0.2 μs，μ 是 U+03BC。终端电容典型 65 pF。噪声等效功率典型 8.1×10<sup>-15</sup> W/Hz<sup>1/2</sup>，× 两边没有空格，× 是 U+00D7。" +
+          s2592Measure +
+          "光谱图是 jpg，data-asset 写成 k_s2592-03_sr_xx,0.jpg，逗号在文件名里。目录名是 03_02_Characteristic Chart，Chart 前面有一个空格。coreimg 文件名写成小写 k-s2592-03-sr-xx%2C0.jpeg，下划线换成连字符，时间戳 1635494117433。外形图标题写 Dimensional outline (unit: mm)，outline 是单数。data-asset 写成 k_s2592-03_do_xx,0.jpg。目录名是 03_03_Dimensional Outline，Dimensional 和 Outline 之间有一个空格。coreimg 文件名写成小写 k-s2592-03-do-xx%2C0.jpeg，时间戳 1635494276682。" +
+          s1226Docs,
+        `${indexIntro}这一行是第 57 行，newState 是 false。productName 写 Si photodiode。productExp 与二级标题相同。thumbAlt 写 Si photodiode product photo。缩略图文件名是 k_s2592-03_-04_pp_xx.jpg。typeNameSort 写成 S02592-0003。类型的值和显示都写成 --。感光面积的值写成 2.4 × 2.4，显示写成 2.4 × 2.4 mm。光谱范围的值写成 190 to 1100，显示才补上 nm。光灵敏度 0.5 A/W。暗电流 38 pA。上升时间的值写成 0.2，显示写成 0.2 μs，μ 是 U+03BC。截止频率是 --。终端电容 65 pF。噪声等效功率的值写成 8.1×10<sup>-15</sup>，× 是 U+00D7，显示补上 W/Hz<sup>1/2</sup>。封装 Metal，封装类别 TO-8。冷却 TE-cooled。手册标 916 KB。索引地址 ${index}。另一只放在同一页。`,
+        s2592SheetLead +
+          "结构表这一只感光面积 2.4 × 2.4 mm。短路电流 5 µA。暗电流最大 10 pA。上升时间 0.2 µs。终端电容 65 pF。分流电阻 1 GΩ。噪声等效功率文本层写成 8.1 × 10-15。产品页光灵敏度写成 0.5 A/W，测量条件写 λ=960 nm。手册 λp 是 0.42 A/W，峰值也是 960 nm。产品页暗电流写成 38 pA，手册这一行是 10 pA。" +
+          `${guide}第 28 页标题写 TE-cooled type Si photodiodes。说明写 These photosensors combine a UV to near infrared Si photodiode with a TE-cooler and deliver low dark current.。这一行感光面积 2.4 × 2.4，暗电流 10，噪声等效功率 8.1 × 10-15。制冷温度 35、光谱范围 190 to 1100、峰值 960 和封装 TO-8 印在两只中间。表头 Δ 是 U+0394。这一页没有光灵敏度栏。页脚页码写 28 / 46。光谱图号 KSPDB0182EC，并写 QE=100%，百分号前面没有空格。星号写 Refer to “Precautions against UV light exposure (P.45).”，引号是弯引号。暗电流对得上手册的 10 pA，对不上产品页和索引的 38 pA。` +
+          placeS2592,
+      ]),
+      page("S2592-04", "2023-02", part("S2592-04"), [
+        s2592Page +
+          "一级标题写 S2592-04。主图 src 仍写成 k_s2592-03_-04_pp_xx.jpg.thumb.252.252.jpg。正文把型号写成 S2592-04，其余句子和 S2592-03 相同，仍写 hermetically sealed in a TO-8 package。name=\"description\" 和 og:description 同样把 package. 和 Features 接上，中间有一个空格。相关产品轮播只列 S2592-03，链接是 /us/en/，没有 target。图注写 Si photodiode S2592-03，alt 写 Si photodiode product photo。",
+        "规格表感光面积 5.8 × 5.8 mm。封装 Metal。封装类别 TO-8。冷却 TE-cooled。反向电压最大 5 V。光谱范围 190 to 1100 nm。峰值 960 nm。光灵敏度典型 0.5 A/W。暗电流最大 200 pA。上升时间典型 1 μs。终端电容典型 380 pF。噪声等效功率典型 1.3×10<sup>-14</sup> W/Hz<sup>1/2</sup>，× 两边没有空格。" +
+          s2592Measure +
+          "光谱图 data-asset 仍是 k_s2592-03_sr_xx,0.jpg，文件名写的是 S2592-03。外形图 data-asset 仍是 k_s2592-03_do_xx,0.jpg。coreimg 路径改到 S2592-04，文件名仍是 k-s2592-03-sr-xx%2C0.jpeg 和 k-s2592-03-do-xx%2C0.jpeg。" +
+          s1226Docs,
+        `${indexIntro}这一行是第 58 行，newState 是 false。productName 写 Si photodiode。productExp 与二级标题相同。thumbAlt 写 Si photodiode product photo。缩略图文件名是 k_s2592-03_-04_pp_xx.jpg。typeNameSort 写成 S02592-0004。类型的值和显示都写成 --。感光面积的值写成 5.8 × 5.8，显示写成 5.8 × 5.8 mm。光谱范围的值写成 190 to 1100，显示才补上 nm。光灵敏度 0.5 A/W。暗电流 200 pA。上升时间的值写成 1，显示写成 1 μs。截止频率是 --。终端电容 380 pF。噪声等效功率的值写成 1.3×10<sup>-14</sup>，显示补上 W/Hz<sup>1/2</sup>。封装 Metal，封装类别 TO-8。冷却 TE-cooled。手册标 916 KB。`,
+        s2592SheetLead +
+          "结构表这一只感光面积 5.8 × 5.8 mm。短路电流 28 µA。暗电流最大 25 pA。上升时间 1 µs。终端电容 380 pF。分流电阻 0.4 GΩ。噪声等效功率文本层写成 1.3 × 10-14。产品页光灵敏度仍写成 0.5 A/W。手册 λp 的 0.42 A/W 印在两行中间。产品页暗电流写成 200 pA，手册这一行是 25 pA。" +
+          `${guide}第 28 页这一行感光面积 5.8 × 5.8，暗电流 25，噪声等效功率 1.3 × 10-14。制冷温度、光谱范围、峰值和封装与 S2592-03 印在中间，没有再写一遍。暗电流对得上手册的 25 pA，对不上产品页和索引的 200 pA。` +
+          placeS2592,
       ]),
     ],
   },
