@@ -189,6 +189,30 @@ const placeS2744 =
 const s2744Docs =
   "相关文档里免责声明 Disclaimer / Opto-semiconductors 标 37 KB/PDF，金属、陶瓷和塑料产品注意事项 Precautions / Metal, Ceramic, Plastic products 标 290 KB/PDF。选型指南 Selection guide / Si photodiodes 标 6.9 MB/PDF，技术笔记 Technical note / X-ray detectors 标 2.4 MB/PDF。";
 
+const s2833Sheet =
+  "https://www.hamamatsu.com/content/dam/hamamatsu-photonics/sites/documents/99_SALES_LIBRARY/ssd/s5627-01_etc_kspd1025e.pdf";
+
+const s2833Page =
+  "产品页没有写发布日期。导语写 Si photodiode。页面标题和 og:title 在型号和竖线之间有一个空格。keywords 写 Si photodiodes，末尾没有空格。name=\"description\" 和 og:description 都写 Features-Visible to near IR range。Features 和连字符之间没有空格，连字符后面也没有空格。型号区 class 含 Type--Migration。二级标题下面是一个只含不换行空格的 p，U+00A0。没有正文段。特性一条写在同一个 p 里，Features 是粗体，后面是 br。这一条另起一行，行首是连字符，后面是一个普通空格：Visible to near IR range。产品页没有写应用栏。下载标 678 KB/PDF。面包屑里的 Si photodiodes 末尾没有空格。主图没有图注。";
+
+const s2833Measure01 =
+  "规格表没有类型，没有截止频率，没有窗材料，也没有噪声等效功率。表头 Package category 的 c 是小写。测量条件写成一行：Ta=25 ℃，℃ 是 U+2103，Typ.，Photosensitivity: λ=λp，λ 是 U+03BB，冒号后面有一个空格，Dark current: V<sub>R</sub>=1 V，1 和 V 之间有空格，Terminal capacitance: V<sub>R</sub>=0 V, f=10 kHz，unless otherwise noted。测量条件没有写上升时间。";
+
+const s2833Measure04 =
+  "规格表没有类型，没有截止频率，没有窗材料，也没有噪声等效功率。表头 Package category 的 c 是小写。测量条件写成一行：Typ. Ta=25 ℃，℃ 是 U+2103，Photosensitivity:λ=λp，λ 是 U+03BB，冒号后面没有空格，Dark current: V<sub>R</sub>=1 V，1 和 V 之间有空格，Terminal capacitance: V<sub>R</sub>=0 V, f=10 kHz，unless otherwise noted。测量条件没有写上升时间。";
+
+const s2833SheetLead =
+  `手册 ${s2833Sheet}。文件名是 s5627-01_etc_kspd1025e.pdf。目录号 KSPD1025E10。pdf 信息里的 Title 是 Si photodiodes S5627-01, S4797-01, S2388-01, etc.。封面可见文本先写 Si photodiodes，再写 S5627-01、S4797-01、S2833-01 etc.，没有写 S2388-01。副题是一行：Photodiodes molded into clear plastic packages。产品页把 packages 写成 package。正文写 These are Si photodiodes molded into clear plastic packages. Two types are available with sensitivity in the visible range and in the visible to near IR range. Two photosensitive areas of 1.3 × 1.3 mm and 2.4 × 2.8 mm are also available. The S5627-01 provides a spectral response characteristic similar to the visible range sensitivity without using visual-compensated filters.。visual-compensated 在行末拆开，写成 visual-compen- 再接 sated。特性行首是 U+0007：S5627-01: Visible range (Filterless type)、S4797-01, S6931-01: Visible to near IR range，下一行写 (Suppressed IR sensitivity type)、S2833-01, S4011-06DS: Visible to near IR range。没有写 S2833-04。应用写 Exposure meters、Illuminometers、Stroboscope light control、Copier、Display light control、Optical switches, etc.。Illuminometers 这一行行首是 U+0007。产品页没有应用栏。结构表 S2833-04 外形 (2)，S2833-01 外形 (4)，感光面积都是 2.4 × 2.8 mm，有效感光面积都是 6.6 mm2。DIP type 印在 S6931-01 和 S4797-01 中间，位置在 S5627-01 到 S2833-04 这一组的中部。Surface mount type 印在 S2833-01 和 S4011-06DS 中间。反向电压 10 V、工作温度 -25 to +85 °C、贮存温度 -40 to +100 °C 印在六只中间，落在 S4797-01 和 S2833-04 之间，° 是 U+00B0。S5627-01、S6931-01、S4797-01 和 S4011-06DS 是别的前缀，没有放进这一页。注 *1 写成 *1: N，下一行 o 前面是 U+0007，接 dew condensation。Note 的 Exceeding 前面是 U+0007。电特性表头写 Electrical and optical characteristics (Typ. Ta=25 °C, unless otherwise noted)。GaP LED 560 nm 的 0.33 A/W、短路电流 6.5 µA、上升时间 2.5 µs、终端电容 700 pF、分流电阻典型 100 GΩ 印在 S2833-04 和 S2833-01 中间。µ 是 U+00B5，Ω 是 U+2126。光谱范围 320 to 1100 的 320 to 印在这两只中间，1100 印在 S2833-01 下一行。峰值 960 nm、λp 光灵敏度 0.58 A/W、He-Ne laser 633 nm 的 0.38 A/W、红外灵敏度比 -、短路电流温度系数 0.1、暗电流最大 10 pA、暗电流温度系数 1.12 times/°C、分流电阻最小 10 GΩ 印在 S2833-01 这一行。表头 λ 是 U+03BB。短路电流条件 100 lx。上升时间条件 VR=0 V, RL=1 kΩ。终端电容条件 VR=0 V, f=10 kHz。暗电流条件 VR=1 V。分流电阻条件 VR=10 mV。产品页上升时间用的 μ 是 U+03BC。无铅焊接那句写 This product does not support lead-free soldering temperature. For details on reflow soldering conditions for surface-mount conponents, please contact our sales office.。conponents 少了一个 m。光谱图号 KSPDB0129EE，条件 (Typ. Ta=25 °C)，曲线标 S2833-01/-04 和 S4011-06DS。上升时间对负载电阻图号 KSPDB0130EE，条件 (Typ. Ta=25 °C, VR=0 V)，曲线也标 S2833-01/-04。暗电流对反向电压图号 KSPDB0131EE。分流电阻对温度图号 KSPDB0132EE，条件 (Typ. VR=10 mV)，曲线标 S2833-01/-04。文本层里 KSPDB0129EE、KSPDB0130EE、KSPDB0131EE 各又出现一次，KSPDB0132E 少写最后一个 E。产品页只放了光谱图和外形图。外形图先写 Dimensional outlines (unit: mm)，outlines 是复数，各只图题用单数 outline。S2833-04 的图题写 (2) S6931-01, S2833-04，图号 KSPDA0184EB。图上 A 写成 S6931-01 0.6、S2833-04 0.7。公差写 Tolerance unless otherwise noted: ±0.1，± 是 U+00B1。引线写 Lead surface finish: Silver plating。包装写 Standard packing: Stick (50 pcs/stick)。S2833-01 图号 KSPDA0123EC，图题写 (4) S2833-01。图上写 14.5 ± 0.3，并有两处 0.3 max.。相关信息网址写 www.hamamatsu.com/sp/ssd/doc_en.html。注意事项写 ∙ Disclaimer、∙ Metal, ceramic, plastic package products 和 ∙ Surface mount type products，∙ 是 U+2219。技术笔记写 ∙ Si photodiode，photodiode 是单数。末页写 Information described in this material is current as of January 2023。最后一行写 Cat. No. KSPD1025E10 Jan. 2023 DN。末页没有写 Created in Japan，改印销售地址，地址写 Higashi-ku。记为约 2023 年 1 月。`;
+
+const placeS2833 =
+  "手册应用写 Exposure meters、Illuminometers、Stroboscope light control、Copier、Display light control 和 Optical switches, etc.。这些句子对不上本站的应用标签，所以不放在应用下面。没有写 TOF。光谱响应是一条灵敏度曲线，不是按波段成像，所以不放在技术下面。";
+
+const s2833Docs01 =
+  "相关文档里免责声明 Disclaimer / Opto-semiconductors 标 37 KB/PDF，表面贴装产品注意事项 Precautions / Surface mount type products 标 407 KB/PDF。选型指南 Selection guide / Si photodiodes 标 6.9 MB/PDF，技术笔记 Technical note / Si photodiodes 标 2.8 MB/PDF。";
+
+const s2833Docs04 =
+  "相关文档里免责声明 Disclaimer / Opto-semiconductors 标 37 KB/PDF，金属、陶瓷和塑料产品注意事项 Precautions / Metal, Ceramic, Plastic products 标 290 KB/PDF。选型指南 Selection guide / Si photodiodes 标 6.9 MB/PDF，技术笔记 Technical note / Si photodiodes 标 2.8 MB/PDF。";
+
 const s1337Resin =
   "树脂灌封那句写 The resin potting may extend a maximum of 0.1 mm above the upper surface of the package.。";
 
@@ -1162,6 +1186,46 @@ export const siPhotodiodeProducts = [
           "产品页封装类别写成 Unsealed，对得上手册窗材料。选型指南这一行窗材料写成 None。产品页感光面积仍写成 20 × 10 mm。手册 λp 的 0.66 A/W 印在四只中间。产品页暗电流仍写成 10000 pA。" +
           `${guide}第 32 页这一行窗材料写 None。感光面积、暗电流和终端电容与 S2744-08 印在中间，没有再写一遍。耗尽层、光谱范围、光灵敏度和封装仍落在这一组的中部。` +
           placeS2744,
+      ]),
+    ],
+  },
+
+  {
+    id: "s2833",
+    date: "2023-01",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S2833：滨松透明塑料封装 Si 光电二极管",
+    summary:
+      "产品页没有写发布日期。两只共用这一页。手册文件名是 s5627-01_etc_kspd1025e.pdf。pdf 信息里的 Title 是 Si photodiodes S5627-01, S4797-01, S2388-01, etc.。末页写 Information described in this material is current as of January 2023。最后一行写 Cat. No. KSPD1025E10 Jan. 2023 DN，记为约 2023 年 1 月。索引 newState 都是 false，是第 61 行和第 62 行。",
+    applications: [],
+    technologies: [],
+    models: [
+      page("S2833-01", "2023-01", part("S2833-01"), [
+        s2833Page +
+          "一级标题写 S2833-01。二级标题写在 span class=\"Txt__Limit\" 里，是一行：Si Photodiode molded into clear plastic package，Photodiode 的 P 是大写。主图 src 写成 k_s2833-01_pp_xx.jpg.thumb.252.252.jpg。alt 写 S2833-01 product photo。相关产品轮播这一块是空的，没有列型号。",
+        "规格表感光面积 2.4 × 2.8 mm，× 是 U+00D7，两边有空格。封装 Plastic。封装类别 --。冷却 Non-cooled。反向电压最大 10 V。光谱范围 320 to 1100 nm。峰值 960 nm。光灵敏度典型 0.58 A/W。暗电流最大 10 pA。上升时间典型 2.5 μs，μ 是 U+03BC。终端电容典型 700 pF。" +
+          s2833Measure01 +
+          "光谱图是 svg，data-asset 写成 KSPDB0129EE.svg。目录名是 03_15_new_Product_graph_svg。coreimg 文件名写成小写 kspdb0129ee.svg，时间戳 1635494709849。外形图标题写 Dimensional outline (unit: mm)，outline 是单数。data-asset 写成 KSPDA0123EC.svg。目录名是 03_14_new_Product_Dimensional outline_svg，Dimensional 和 outline 之间有一个空格。coreimg 文件名写成小写 kspda0123ec.svg，时间戳 1739420373534。" +
+          s2833Docs01,
+        `${indexIntro}这一行是第 61 行，newState 是 false。productName 写 Si photodiode。productExp 与二级标题相同，Photodiode 的 P 是大写。thumbAlt 写 S2833-01 product photo。缩略图文件名是 k_s2833-01_pp_xx.jpg。typeNameSort 写成 S02833-0001。类型的值和显示都写成 --。感光面积的值写成 2.4 × 2.8，显示写成 2.4 × 2.8 mm。光谱范围的值写成 320 to 1100，显示才补上 nm。光灵敏度 0.58 A/W。暗电流 10 pA。上升时间的值写成 2.5，显示写成 2.5 μs，μ 是 U+03BC。截止频率是 --。终端电容 700 pF。噪声等效功率是 --。封装 Plastic，封装类别 --。冷却 Non-cooled。手册标 678 KB。索引地址 ${index}。另一只放在同一页。`,
+        s2833SheetLead +
+          "产品页上升时间写成 2.5 μs，终端电容写成 700 pF，对得上印在两只中间的数。产品页峰值 960 nm、光灵敏度 0.58 A/W、暗电流 10 pA 印在 S2833-01 这一行。手册没有把 S2833-04 写进特性。" +
+          `${guide}第 14 页小标题写 For visible to near IR range。说明写 These photodiodes have sensitivity in the visible to near infrared range.。S2833-01 这一行没有数字。感光面积 2.4 × 2.8 印在上一行 S1787-08 和这一行中间，那是 S1787-08 的面积。S1787 已经单独成页，没有放进这一页。页脚页码写 14 / 46。光谱图号 KSPDB0286EF，图题写 S4011-06DS, S1787-08, S2833-01/-04, S16765-01MS, S16838-02MS, S16840-02MS。图注写 (Typ. Ta=25 ˚C)，˚ 是 U+02DA。同一页表头另一处写 (Typ. Ta=25 °C)，° 是 U+00B0，并写 QE=100%，百分号前面没有空格。手册图号是 KSPDB0129EE。` +
+          placeS2833,
+      ]),
+      page("S2833-04", "2023-01", part("S2833-04"), [
+        s2833Page +
+          "一级标题写 S2833-04。二级标题写在 span class=\"Txt__Limit\" 里，是一行：Si photodiode molded into clear plastic package，photodiode 的 p 是小写。主图 src 写成 k_s2833-04_pp_xx.jpg.thumb.252.252.jpg。alt 写 Si photodiode product photo。相关产品轮播只列 S2833-01。链接是 /us/en/product/optical-sensors/photodiodes/si-photodiodes/S2833-01.html，没有 target。图注写 Si photodiode S2833-01。alt 写 S2833-01 product photo。文件名是 k_s2833-01_pp_xx.jpg，没有 .thumb。",
+        "规格表感光面积 2.4 × 2.8 mm。封装 Plastic。封装类别 --。冷却 Non-cooled。反向电压最大 10 V。光谱范围 320 to 1100 nm。峰值 960 nm。光灵敏度典型 0.58 A/W。暗电流最大 10 pA。上升时间典型 0.5 μs，μ 是 U+03BC。终端电容典型 200 pF。" +
+          s2833Measure04 +
+          "光谱图是 jpg，data-asset 写成 k_s2833-01_sr_xx,0.jpg，文件名写的是 S2833-01，逗号在文件名里。目录名是 03_02_Characteristic Chart，Chart 前面有一个空格。coreimg 文件名写成小写 k-s2833-01-sr-xx%2C0.jpeg，下划线换成连字符，时间戳 1635494118188。外形图标题写 Dimensional outline (unit: mm)，outline 是单数。data-asset 写成 KSPDA0184EB.svg。目录名是 03_14_new_Product_Dimensional outline_svg。coreimg 文件名写成小写 kspda0184eb.svg，时间戳 1739420396268。" +
+          s2833Docs04,
+        `${indexIntro}这一行是第 62 行，newState 是 false。productName 写 Si photodiode。productExp 写 Si photodiode molded into clear plastic package, for visible to NIR range，末尾有一个空格。产品页二级标题没有 for visible to NIR range，photodiode 的 p 是小写。thumbAlt 写 Si photodiode product photo。缩略图文件名是 k_s2833-04_pp_xx.jpg。typeNameSort 写成 S02833-0004。类型的值和显示都写成 --。感光面积的值写成 2.4 × 2.8，显示写成 2.4 × 2.8 mm。光谱范围的值写成 320 to 1100，显示才补上 nm。光灵敏度 0.58 A/W。暗电流 10 pA。上升时间的值写成 0.5，显示写成 0.5 μs，μ 是 U+03BC。截止频率是 --。终端电容 200 pF。噪声等效功率是 --。封装 Plastic，封装类别 --。冷却 Non-cooled。手册标 678 KB。`,
+        s2833SheetLead +
+          "产品页上升时间写成 0.5 μs，终端电容写成 200 pF。手册这两项印在两只中间，是 2.5 µs 和 700 pF。0.5 µs 和 200 pF 印在 S4011-06DS 这一行。产品页峰值、光灵敏度和暗电流仍与印在 S2833-01 这一行的 960 nm、0.58 A/W、10 pA 相同。" +
+          `${guide}第 14 页这一行写光谱范围 320 to 1100，峰值 960，λ=λp 写 0.58，暗电流 10，感光面积 2.4 × 2.8，封装 Plastic。S2833-01 那一行没有这些数字。这一页没有上升时间栏，也没有终端电容栏。光谱图号仍是 KSPDB0286EF。` +
+          placeS2833,
       ]),
     ],
   },
