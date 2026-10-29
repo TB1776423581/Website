@@ -57,6 +57,18 @@ const s1226Page =
 const s1226Measure =
   "规格表没有类型，没有截止频率，没有窗材料，也没有上升时间的测量条件。测量条件写成一行：Ta=25 ℃，℃ 是 U+2103，Typ.，Photosensitivity: λ=720 nm，Dark current: V<sub>R</sub>=10 mV，Terminal capacitance: V<sub>R</sub>=0 V, f=10 kHz，unless otherwise noted。λ 是 U+03BB。";
 
+const s1227Sheet =
+  "https://www.hamamatsu.com/content/dam/hamamatsu-photonics/sites/documents/99_SALES_LIBRARY/ssd/s1227_series_kspd1036e.pdf";
+
+const s1227Page =
+  "产品页没有写发布日期。导语写 Si photodiode。页面标题和 og:title 在型号和竖线之间有一个空格。keywords 写 Si photodiodes，末尾没有空格。二级标题写在 span class=\"Txt__Limit\" 里，是一行：For UV to visible, precision photometry; suppressed IR sensitivity。前六只的二级标题下面是一个只含不换行空格的 p，U+00A0。没有正文段。特性写在同一个 p 里，Features 是粗体，后面是 br。每条另起一行，行首是连字符，后面是一个普通空格。产品页没有写应用栏。下载标 813 KB/PDF。面包屑里的 Si photodiodes 末尾没有空格。相关产品是另外七只 S1227，轮播从 S1227-1010BQ 排起，跳过当前型号。图注写 Si photodiode 再加型号，alt 都写 Si photodiode product photo。主图文件名带 S1337。BR 的主图文件名还带 S12915。S1337 和 S12915 是别的前缀，没有放进这一页。";
+
+const s1227Measure =
+  "规格表没有类型，没有截止频率，没有窗材料，也没有上升时间的测量条件。封装类别的值是 --。表头 Package category 的 c 是小写。测量条件写成一行：Typ. Ta=25 ℃，℃ 是 U+2103，Photosensitivity: λ=720 nm，Dark current: V<sub>R</sub>=10 mV，Terminal capacitance: V<sub>R</sub>=0 V, f=10 kHz，unless otherwise noted。λ 是 U+03BB。";
+
+const s1227SheetLead =
+  `手册 ${s1227Sheet}。文件名是 s1227_series_kspd1036e.pdf。目录号 KSPD1036E07。pdf 信息里的 Title 是空的。封面可见文本先写 Si photodiodes，再写 S1227 series。副题分成两行，产品页把它合成一行，中间是分号。正文写 These Si photodiodes have suppressed IR sensitivity. They are suitable for low-light-level detection in analysis and the like.。特性没有连字符：High UV sensitivity (quartz window type): QE 75 % (l=200 nm)、Suppressed IR sensitivity、Low dark current。文本层把 λ 写成拉丁字母 l，等号是 ASCII。产品页石英窗型号写成 QE＝75 % (λ=200 nm)，＝ 是 U+FF1D。应用写 Analytical equipment 和 Optical measurement equipment, etc.。产品页没有应用栏。绝对最大反向电压 5 V，八只共用。功耗栏没有。工作温度 -20 to +60 °C，贮存温度 -20 to +80 °C，° 是 U+00B0，八只共用。注 * 只标在石英窗四只后面，写 Refer to “Precautions against UV light exposure.”，引号是弯引号。Note 的 Exceeding 前面是 U+0007。电特性表头写 Electrical and optical characteristics (Typ. Ta=25 °C, unless otherwise noted)。峰值 720 nm，八只共用。λp 光灵敏度石英窗是 0.36 A/W，树脂灌封是 0.43 A/W。200 nm 这一列石英窗最小 0.10 A/W、典型 0.12 A/W，树脂灌封是横线。He-Ne 633 nm 石英窗是 0.34 A/W，树脂灌封是 0.39 A/W。暗电流条件 VR=10 mV，表里没有典型值。暗电流温度系数 1.12 times/°C，八只共用。上升时间条件 VR=0 V, RL=1 kΩ，Ω 是 U+2126。表头单位写成 µs，µ 是 U+00B5。产品页上升时间用的 μ 是 U+03BC，测量条件没有写上升时间。终端电容条件 VR=0 V, f=10 kHz。分流电阻条件 VR=10 mV，单位 GΩ。短路电流条件 100 lx。噪声等效功率文本层在 × 两边有空格，-15 没有写成上标。产品页 × 两边没有空格，-15 写成上标。光谱图号 KSPDB0094EC 给 BQ，KSPDB0307EA 给 BR，条件都写 (Typ. Ta=25 °C)。温度特性图号 KSPDB0030EB，条件 (Typ. )，Typ 和右括号之间有空格。暗电流对反向电压图号 KSPDB0096EB，条件 (Typ. Ta=25 °C)，曲线标 S1227-16BQ/BR、S1227-33BQ/BR、S1227-66BQ/BR 和 S1227-1010BQ/BR。产品页只放了光谱 jpeg 和外形图。第 3 页外形图题写 Dimensional outlines (unit: mm)，outlines 是复数。第 4 页文本层没有这句图题。末页写 Information described in this material is current as of October, 2015，October 后面有逗号。最后一行写 Cat. No. KSPD1036E07  Oct. 2015 DN，Oct 前面有两个空格。末页没有写 Created in Japan，改印销售地址。紫外注意事项两条都以 ∙ 开头，后面是空格再加 U+0007。记为约 2015 年 10 月。`;
+
 export const siPhotodiodeProducts = [
   {
     id: "s15152",
@@ -264,4 +276,114 @@ export const siPhotodiodeProducts = [
       ]),
     ],
   },
+
+  {
+    id: "s1227",
+    date: "2015-10",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S1227：滨松紫外到可见精密测光 Si 光电二极管",
+    summary:
+      "产品页没有写发布日期。八只共用这一页。手册文件名是 s1227_series_kspd1036e.pdf。可见文本第一行写 Si photodiodes，pdf 信息里的 Title 是空的。末页写 Information described in this material is current as of October, 2015，October 后面有逗号。最后一行写 Cat. No. KSPD1036E07  Oct. 2015 DN，Oct 前面有两个空格，记为约 2015 年 10 月。索引 newState 都是 false，是第 14 行到第 21 行。",
+    applications: [],
+    technologies: [],
+    models: [
+      page("S1227-16BQ", "2015-10", part("S1227-16BQ"), [
+        s1227Page +
+          "一级标题写 S1227-16BQ。name=\"description\" 和 og:description 都写 Features- High UV sensitivity (quartz window type): QE＝75 % (λ=200 nm)- Suppressed IR sensitivity- Low dark current。＝ 是 U+FF1D，λ 是 U+03BB，百分号前面有空格。特性三条与这段相同。主图文件名是 k_s1227-16bq_s1337-16bq_pp_xx.jpg。",
+        "规格表感光面积 5.9 × 1.1 mm，× 是 U+00D7，两边有空格。封装 Ceramic。封装类别 --。冷却 Non-cooled。反向电压最大 5 V。光谱范围 190 to 1000 nm。峰值 720 nm。光灵敏度典型 0.36 A/W。暗电流最大 5 pA。上升时间典型 0.5 μs，μ 是 U+03BC。终端电容典型 170 pF。噪声等效功率典型 2.5×10<sup>-15</sup> W/Hz<sup>1/2</sup>，× 两边没有空格。" +
+          s1227Measure +
+          "光谱图是 jpeg，文件名 k_s1227-1010bq_sr_xx,0.jpg，资源名同一文件，文件名写的是 S1227-1010BQ。目录名是 03_02_Characteristic Chart，Characteristic 和 Chart 之间有一个空格。外形图标题写 Dimensional outline (unit: mm)，outline 是单数。地址里的文件名是 KSPDA0094EB.svg。目录名是 03_14_new_Product_Dimensional outline_svg，Dimensional 和 outline 之间有一个空格。" +
+          s1226Docs,
+        `${indexIntro}这一行是第 14 行，newState 是 false。productName 写 Si photodiode。productExp 与二级标题相同。thumbAlt 写 Si photodiode product photo。缩略图文件名是 k_s1227-16bq_s1337-16bq_pp_xx.jpg。typeNameSort 写成 S01227-0016BQ。类型的值和显示都写成 --。感光面积的值写成 5.9 × 1.1，显示写成 5.9 × 1.1 mm。光谱范围的值写成 190 to 1000，显示才补上 nm。光灵敏度 0.36 A/W。暗电流 5 pA。上升时间的值写成 0.5，显示写成 0.5 μs，μ 是 U+03BC。截止频率的值和显示都写成 --。终端电容 170 pF。噪声等效功率的值写成 2.5×10<sup>-15</sup>，× 是 U+00D7，显示补上 W/Hz<sup>1/2</sup>。封装的值和显示都写成 Ceramic。封装类别的值和显示都写成 --。冷却的值和显示都写成 Non-cooled。手册标 813 KB。索引地址 ${index}。其余七只放在同一页。`,
+        s1227SheetLead +
+          "结构表这一只外形尺寸 2.7 × 15 mm，窗材料 Quartz，型号后面标 *。感光面积 1.1 × 5.9 mm。产品页和索引写成 5.9 × 1.1 mm。有效感光面积 5.9，表头单位写成 mm2。暗电流最大 5 pA。上升时间 0.5 µs。终端电容 170 pF。分流电阻最小 2 GΩ、典型 20 GΩ。短路电流最小 2.0 µA、典型 3.2 µA。噪声等效功率 2.5 × 10<sup>-15</sup> W/Hz<sup>1/2</sup>。外形图号 KSPDA0094EB，与产品页资源名相同。图上感光面写 1.1 × 5.9。孔写成 Hole (2 ×) 0.8。窗标 Quartz window。" +
+          `${guide}第 9 页标题写 Si photodiodes for precision photometry，小标题写 For UV to near IR range，类型写 IR sensitivity suppressed type。这一行光谱范围 190 to 1000，λ=200 nm 写 0.12，没有印手册里的最小 0.10，λ=720 nm 写 0.36。型号后面有星号。终端电容 170 和感光面积 1.1 × 5.9 印在 S1227-16BQ 和 S1227-16BR 中间。暗电流 5 印在 S1227-16BR 和 S1227-33BQ 中间。封装 Ceramic 印在 S1227-33BR 和 S1227-66BQ 中间。页脚页码写 9 / 46。光谱图号 KSPDB0423EB，图题方括号写 S1226-BQ, S1227-BQ，方括号内侧各有两个 U+2005。另一张图号 KSPDB0308EA，图题方括号写 S1226-BK, S1227-BR。手册图号是 KSPDB0094EC 和 KSPDB0307EA。星号写 Refer to “Precautions against UV light exposure (P.45).”。同一页还有 S1226 和 S2281-01。S2281-01 那一行写 With BNC connector。它们是别的前缀，没有放进这一页。` +
+          placeS1226,
+      ]),
+      page("S1227-16BR", "2015-10", part("S1227-16BR"), [
+        s1227Page +
+          "一级标题写 S1227-16BR。name=\"description\" 和 og:description 都写 Features- Resin potting type- Suppressed IR sensitivity- Low dark current。特性三条与这段相同，没有石英窗那条。主图文件名是 k_s1227-16br_s1337-16br_s12915-16r_pp.xx.jpg，pp 和 xx 之间是句点，不是下划线。",
+        "规格表感光面积 5.9 × 1.1 mm。封装 Ceramic，封装类别 --。冷却 Non-cooled。反向电压最大 5 V。光谱范围 340 to 1000 nm。峰值 720 nm。光灵敏度典型 0.43 A/W。暗电流最大 5 pA。上升时间典型 0.5 μs。终端电容典型 170 pF。噪声等效功率典型 2.1×10<sup>-15</sup> W/Hz<sup>1/2</sup>，× 两边没有空格。" +
+          s1227Measure +
+          "光谱图文件名是 KSPDB0307EA,0.jpg，逗号和 0 写在图号后面。外形图 data-asset 写成 KSPDA0095EB.svg。目录名仍是 03_14_new_Product_Dimensional outline_svg。" +
+          s1226Docs,
+        `${indexIntro}这一行是第 15 行，newState 是 false。productName 写 Si photodiode。productExp 与二级标题相同。thumbAlt 写 Si photodiode product photo。缩略图文件名是 k_s1227-16br_s1337-16br_s12915-16r_pp.xx.jpg，pp 和 xx 之间是句点。typeNameSort 写成 S01227-0016BR。类型的值和显示都写成 --。感光面积的值写成 5.9 × 1.1，显示写成 5.9 × 1.1 mm。光谱范围的值写成 340 to 1000，显示才补上 nm。光灵敏度 0.43 A/W。暗电流 5 pA。上升时间的值写成 0.5，显示写成 0.5 μs。截止频率是 --。终端电容 170 pF。噪声等效功率的值写成 2.1×10<sup>-15</sup>，显示补上 W/Hz<sup>1/2</sup>。封装 Ceramic，封装类别 --。冷却 Non-cooled。手册标 813 KB。`,
+        `手册仍是 ${s1227Sheet}，记为约 2015 年 10 月。结构表这一只窗材料 Resin potting，没有星号。外形尺寸和感光面积与 S1227-16BQ 共用，手册写成 1.1 × 5.9 mm。有效感光面积 5.9。200 nm 光灵敏度是横线。暗电流最大 5 pA。上升时间 0.5 µs。终端电容 170 pF。分流电阻最小 2 GΩ、典型 20 GΩ。短路电流最小 2.2 µA、典型 3.7 µA。噪声等效功率 2.1 × 10<sup>-15</sup> W/Hz<sup>1/2</sup>。外形图号 KSPDA0095EB。图上感光面写 1.1 × 5.9。孔写成 Hole (2 ×) 0.8。树脂那句写 The resin potting may extend a maximum of 0.1 mm above the upper surface of the package。` +
+          `约 2025 年 9 月的选型指南第 9 页把这一行的光谱范围写成 340 to 1000，λ=200 nm 是横线，λ=720 nm 写 0.43。型号后面没有星号。` +
+          placeS1226,
+      ]),
+      page("S1227-33BQ", "2015-10", part("S1227-33BQ"), [
+        s1227Page +
+          "一级标题写 S1227-33BQ。说明和特性与 S1227-16BQ 相同，包括 QE＝75 %。主图文件名是 k_s1227-33bq_s1337-33bq_pp_xx.jpg。",
+        "规格表感光面积 2.4 × 2.4 mm。封装 Ceramic，封装类别 --。冷却 Non-cooled。反向电压最大 5 V。光谱范围 190 to 1000 nm。峰值 720 nm。光灵敏度典型 0.36 A/W。暗电流最大 5 pA。上升时间典型 0.5 μs。终端电容典型 160 pF。噪声等效功率典型 2.5×10<sup>-15</sup> W/Hz<sup>1/2</sup>，× 两边没有空格。" +
+          s1227Measure +
+          "光谱图文件名仍是 k_s1227-1010bq_sr_xx,0.jpg。外形图 data-asset 写成 KSPDA0096EB.svg。" +
+          s1226Docs,
+        `${indexIntro}这一行是第 16 行，newState 是 false。productName 写 Si photodiode。productExp 与二级标题相同。thumbAlt 写 Si photodiode product photo。缩略图文件名是 k_s1227-33bq_s1337-33bq_pp_xx.jpg。typeNameSort 写成 S01227-0033BQ。类型的值和显示都写成 --。感光面积的值写成 2.4 × 2.4，显示写成 2.4 × 2.4 mm。光谱范围的值写成 190 to 1000，显示才补上 nm。光灵敏度 0.36 A/W。暗电流 5 pA。上升时间的值写成 0.5，显示写成 0.5 μs。截止频率是 --。终端电容 160 pF。噪声等效功率的值写成 2.5×10<sup>-15</sup>，显示补上 W/Hz<sup>1/2</sup>。封装 Ceramic，封装类别 --。冷却 Non-cooled。手册标 813 KB。`,
+        `手册仍是 ${s1227Sheet}，记为约 2015 年 10 月。结构表这一只外形尺寸 6 × 7.6 mm，窗材料 Quartz，型号后面标 *。感光面积 2.4 × 2.4 mm。有效感光面积 5.7。200 nm 光灵敏度最小 0.10 A/W、典型 0.12 A/W。暗电流最大 5 pA。上升时间 0.5 µs。终端电容 160 pF。分流电阻最小 2 GΩ、典型 20 GΩ。短路电流最小 2.0 µA、典型 3.0 µA。噪声等效功率 2.5 × 10<sup>-15</sup> W/Hz<sup>1/2</sup>。外形图号 KSPDA0096EB。图上感光面写 2.4 × 2.4。窗标 Quartz window。` +
+          `约 2025 年 9 月的选型指南第 9 页把这一行的光谱范围写成 190 to 1000，λ=200 nm 写 0.12，λ=720 nm 写 0.36。终端电容 160 和感光面积 2.4 × 2.4 印在 S1227-33BQ 和 S1227-33BR 中间。型号后面有星号。` +
+          placeS1226,
+      ]),
+      page("S1227-33BR", "2015-10", part("S1227-33BR"), [
+        s1227Page +
+          "一级标题写 S1227-33BR。name=\"description\" 和 og:description 都写 Features- Resin　potting type- Suppressed IR sensitivity- Low dark current。Resin 和 potting 之间是 U+3000。页面上的特性仍写 Resin potting type，中间是普通空格。主图文件名是 k_s1227-33br_s1337-33br_s12915-33r_pp_xx.jpg。",
+        "规格表感光面积 2.4 × 2.4 mm。封装 Ceramic，封装类别 --。冷却 Non-cooled。反向电压最大 5 V。光谱范围 340 to 1000 nm。峰值 720 nm。光灵敏度典型 0.43 A/W。暗电流最大 5 pA。上升时间典型 0.5 μs。终端电容典型 160 pF。噪声等效功率典型 2.1×10<sup>-15</sup> W/Hz<sup>1/2</sup>，× 两边没有空格。" +
+          s1227Measure +
+          "光谱图文件名是 KSPDB0307EA,0.jpg。外形图 data-asset 写成 KSPDA0097EB.svg。" +
+          s1226Docs,
+        `${indexIntro}这一行是第 17 行，newState 是 false。productName 写 Si photodiode。productExp 与二级标题相同。thumbAlt 写 Si photodiode product photo。缩略图文件名是 k_s1227-33br_s1337-33br_s12915-33r_pp_xx.jpg。typeNameSort 写成 S01227-0033BR。类型的值和显示都写成 --。感光面积的值写成 2.4 × 2.4，显示写成 2.4 × 2.4 mm。光谱范围的值写成 340 to 1000，显示才补上 nm。光灵敏度 0.43 A/W。暗电流 5 pA。上升时间的值写成 0.5，显示写成 0.5 μs。截止频率是 --。终端电容 160 pF。噪声等效功率的值写成 2.1×10<sup>-15</sup>，显示补上 W/Hz<sup>1/2</sup>。封装 Ceramic，封装类别 --。冷却 Non-cooled。手册标 813 KB。`,
+        `手册仍是 ${s1227Sheet}，记为约 2015 年 10 月。结构表这一只窗材料 Resin potting，没有星号。外形尺寸和感光面积与 S1227-33BQ 共用。有效感光面积 5.7。200 nm 光灵敏度是横线。暗电流最大 5 pA。上升时间 0.5 µs。终端电容 160 pF。分流电阻最小 2 GΩ、典型 20 GΩ。短路电流最小 2.2 µA、典型 3.7 µA。噪声等效功率 2.1 × 10<sup>-15</sup> W/Hz<sup>1/2</sup>。外形图号 KSPDA0097EB。图上感光面写 2.4 × 2.4。树脂灌封那句与 S1227-16BR 相同。` +
+          `约 2025 年 9 月的选型指南第 9 页把这一行的光谱范围写成 340 to 1000，λ=200 nm 是横线，λ=720 nm 写 0.43。型号后面没有星号。` +
+          placeS1226,
+      ]),
+      page("S1227-66BQ", "2015-10", part("S1227-66BQ"), [
+        s1227Page +
+          "一级标题写 S1227-66BQ。说明和特性与 S1227-16BQ 相同，包括 QE＝75 %。主图文件名是 k_s1227-66bq_s1337-66bq_pp_xx.jpg。",
+        "规格表感光面积 5.8 × 5.8 mm。封装 Ceramic，封装类别 --。冷却 Non-cooled。反向电压最大 5 V。光谱范围 190 to 1000 nm。峰值 720 nm。光灵敏度典型 0.36 A/W。暗电流最大 20 pA。上升时间典型 2 μs。终端电容典型 950 pF。噪声等效功率典型 5.0×10<sup>-15</sup> W/Hz<sup>1/2</sup>，× 两边没有空格。" +
+          s1227Measure +
+          "光谱图文件名仍是 k_s1227-1010bq_sr_xx,0.jpg。外形图 data-asset 写成 KSPDA0098EB.svg。" +
+          s1226Docs,
+        `${indexIntro}这一行是第 18 行，newState 是 false。productName 写 Si photodiode。productExp 与二级标题相同。thumbAlt 写 Si photodiode product photo。缩略图文件名是 k_s1227-66bq_s1337-66bq_pp_xx.jpg。typeNameSort 写成 S01227-0066BQ。类型的值和显示都写成 --。感光面积的值写成 5.8 × 5.8，显示写成 5.8 × 5.8 mm。光谱范围的值写成 190 to 1000，显示才补上 nm。光灵敏度 0.36 A/W。暗电流 20 pA。上升时间的值写成 2，显示写成 2 μs。截止频率是 --。终端电容 950 pF。噪声等效功率的值写成 5.0×10<sup>-15</sup>，显示补上 W/Hz<sup>1/2</sup>。封装 Ceramic，封装类别 --。冷却 Non-cooled。手册标 813 KB。`,
+        `手册仍是 ${s1227Sheet}，记为约 2015 年 10 月。结构表这一只外形尺寸 8.9 × 10.1 mm，窗材料 Quartz，型号后面标 *。感光面积 5.8 × 5.8 mm。有效感光面积 33。200 nm 光灵敏度最小 0.10 A/W、典型 0.12 A/W。暗电流最大 20 pA。上升时间 2 µs。终端电容 950 pF。分流电阻最小 0.5 GΩ、典型 5 GΩ。短路电流最小 11 µA、典型 16 µA。噪声等效功率 5.0 × 10<sup>-15</sup> W/Hz<sup>1/2</sup>。外形图号 KSPDA0098EB。图上感光面写 5.8 × 5.8。窗标 Quartz window。` +
+          `约 2025 年 9 月的选型指南第 9 页把这一行的光谱范围写成 190 to 1000，λ=200 nm 写 0.12，λ=720 nm 写 0.36。暗电流 20、终端电容 950 和感光面积 5.8 × 5.8 印在 S1227-66BQ 和 S1227-66BR 中间。型号后面有星号。` +
+          placeS1226,
+      ]),
+      page("S1227-66BR", "2015-10", part("S1227-66BR"), [
+        s1227Page +
+          "一级标题写 S1227-66BR。说明和特性写 Resin potting type，Resin 和 potting 之间是普通空格。主图文件名是 k_s1227-66br_s1337-66br_s12915-66r_pp_xx.jpg。",
+        "规格表感光面积 5.8 × 5.8 mm。封装 Ceramic，封装类别 --。冷却 Non-cooled。反向电压最大 5 V。光谱范围 340 to 1000 nm。峰值 720 nm。光灵敏度典型 0.43 A/W。暗电流最大 20 pA。上升时间典型 2 μs。终端电容典型 950 pF。噪声等效功率典型 4.2×10<sup>-15</sup> W/Hz<sup>1/2</sup>，× 两边没有空格。" +
+          s1227Measure +
+          "光谱图文件名是 KSPDB0307EA,0.jpg。外形图不是 svg。data-asset 写成 k_s1227-66br_do_xx,0.jpg，逗号和 0 写在文件名里。目录名是 03_03_Dimensional Outline，Outline 的 O 是大写，Dimensional 和 Outline 之间有一个空格。手册这一只的图号是 KSPDA0099EB。" +
+          s1226Docs,
+        `${indexIntro}这一行是第 19 行，newState 是 false。productName 写 Si photodiode。productExp 与二级标题相同。thumbAlt 写 Si photodiode product photo。缩略图文件名是 k_s1227-66br_s1337-66br_s12915-66r_pp_xx.jpg。typeNameSort 写成 S01227-0066BR。类型的值和显示都写成 --。感光面积的值写成 5.8 × 5.8，显示写成 5.8 × 5.8 mm。光谱范围的值写成 340 to 1000，显示才补上 nm。光灵敏度 0.43 A/W。暗电流 20 pA。上升时间的值写成 2，显示写成 2 μs。截止频率是 --。终端电容 950 pF。噪声等效功率的值写成 4.2×10<sup>-15</sup>，显示补上 W/Hz<sup>1/2</sup>。封装 Ceramic，封装类别 --。冷却 Non-cooled。手册标 813 KB。`,
+        `手册仍是 ${s1227Sheet}，记为约 2015 年 10 月。结构表这一只窗材料 Resin potting，没有星号。外形尺寸和感光面积与 S1227-66BQ 共用。有效感光面积 33。200 nm 光灵敏度是横线。暗电流最大 20 pA。上升时间 2 µs。终端电容 950 pF。分流电阻最小 0.5 GΩ、典型 5 GΩ。短路电流最小 13 µA、典型 19 µA。噪声等效功率 4.2 × 10<sup>-15</sup> W/Hz<sup>1/2</sup>。外形图号 KSPDA0099EB。产品页资源名写成 k_s1227-66br_do_xx,0.jpg。图上感光面写 5.8 × 5.8。树脂灌封那句与 S1227-16BR 相同。` +
+          `约 2025 年 9 月的选型指南第 9 页把这一行的光谱范围写成 340 to 1000，λ=200 nm 是横线，λ=720 nm 写 0.43。型号后面没有星号。` +
+          placeS1226,
+      ]),
+      page("S1227-1010BQ", "2015-10", part("S1227-1010BQ"), [
+        "产品页没有写发布日期。导语写 Si photodiode。一级标题写 S1227-1010BQ。页面标题和 og:title 在型号和竖线之间有一个空格。keywords 写 Si photodiodes，末尾没有空格。name=\"description\" 和 og:description 与 S1227-16BQ 相同，包括 QE＝75 %。二级标题仍在 span class=\"Txt__Limit\" 里。二级标题下面是两个空的 p，里面只有换行，不是不换行空格。Features 前面另有一个 br，不在 p 里面。三条特性后面是 br，再接一个空的 p。没有正文段。产品页没有写应用栏。下载标 813 KB/PDF。主图文件名是 k_s1227-1010bq_s1337-1010bq_pp_xx.jpg。面包屑里的 Si photodiodes 末尾没有空格。",
+        "规格表感光面积 10 × 10 mm。封装 Ceramic，封装类别 --。冷却 Non-cooled。反向电压最大 5 V。光谱范围 190 to 1000 nm。峰值 720 nm。光灵敏度典型 0.36 A/W。暗电流最大 50 pA。上升时间典型 7 μs。终端电容典型 3000 pF。噪声等效功率典型 8.0×10<sup>-15</sup> W/Hz<sup>1/2</sup>，× 两边没有空格。" +
+          s1227Measure +
+          "光谱图文件名是 k_s1227-1010bq_sr_xx,0.jpg，和这一只的型号相同。外形图 data-asset 写成 KSPDA0100EB.svg。目录名仍是 03_14_new_Product_Dimensional outline_svg。" +
+          s1226Docs,
+        `${indexIntro}这一行是第 20 行，newState 是 false。productName 写 Si photodiode。productExp 与二级标题相同。thumbAlt 写 Si photodiode product photo。缩略图文件名是 k_s1227-1010bq_s1337-1010bq_pp_xx.jpg。typeNameSort 写成 S01227-1010BQ，1010 前面没有再补零。类型的值和显示都写成 --。感光面积的值写成 10 × 10，显示写成 10 × 10 mm。光谱范围的值写成 190 to 1000，显示才补上 nm。光灵敏度 0.36 A/W。暗电流 50 pA。上升时间的值写成 7，显示写成 7 μs。截止频率是 --。终端电容 3000 pF。噪声等效功率的值写成 8.0×10<sup>-15</sup>，显示补上 W/Hz<sup>1/2</sup>。封装 Ceramic，封装类别 --。冷却 Non-cooled。手册标 813 KB。`,
+        `手册仍是 ${s1227Sheet}，记为约 2015 年 10 月。结构表这一只外形尺寸 15 × 16.5 mm，窗材料 Quartz，型号后面标 *。感光面积 10 × 10 mm。有效感光面积 100。200 nm 光灵敏度最小 0.10 A/W、典型 0.12 A/W。暗电流最大 50 pA。上升时间 7 µs。终端电容 3000 pF。分流电阻最小 0.2 GΩ、典型 2 GΩ。短路电流最小 32 µA、典型 44 µA。噪声等效功率 8.0 × 10<sup>-15</sup> W/Hz<sup>1/2</sup>。外形图号 KSPDA0100EB。图上感光面写 10 × 10。窗标 Quartz window。` +
+          `约 2025 年 9 月的选型指南第 9 页把这一行的光谱范围写成 190 to 1000，λ=200 nm 写 0.12，λ=720 nm 写 0.36。暗电流 50、终端电容 3000 和感光面积 10 × 10 印在 S1227-1010BQ 和 S1227-1010BR 中间。型号后面有星号。` +
+          placeS1226,
+      ]),
+      page("S1227-1010BR", "2015-10", part("S1227-1010BR"), [
+        "产品页没有写发布日期。导语写 Si photodiode。一级标题写 S1227-1010BR。页面标题和说明的写法与 S1227-1010BQ 相同，二级标题下面同样是两个只有换行的空 p，Features 在 p 外面。name=\"description\" 和 og:description 都写 Features- Resin potting window type- Suppressed IR sensitivity- Low dark current。特性第一条写 Resin potting window type。另外七只树脂灌封型号写的是 Resin potting type，没有 window。手册窗材料写 Resin potting。主图文件名是 k_s1227-1010br_s1337-1010br_s12915-1010r_pp_xx.jpg。",
+        "规格表感光面积 10 × 10 mm。封装 Ceramic，封装类别 --。冷却 Non-cooled。反向电压最大 5 V。光谱范围 340 to 1000 nm。峰值 720 nm。光灵敏度典型 0.43 A/W。暗电流最大 50 pA。上升时间典型 7 μs。终端电容典型 3000 pF。噪声等效功率典型 6.7×10<sup>-15</sup> W/Hz<sup>1/2</sup>，× 两边没有空格。" +
+          s1227Measure +
+          "光谱图文件名是 KSPDB0307EA,0.jpg。外形图 data-asset 写成 KSPDA0101EB.svg。" +
+          s1226Docs,
+        `${indexIntro}这一行是第 21 行，newState 是 false。productName 写 Si photodiode。productExp 与二级标题相同。thumbAlt 写 Si photodiode product photo。缩略图文件名是 k_s1227-1010br_s1337-1010br_s12915-1010r_pp_xx.jpg。typeNameSort 写成 S01227-1010BR，1010 前面没有再补零。类型的值和显示都写成 --。感光面积的值写成 10 × 10，显示写成 10 × 10 mm。光谱范围的值写成 340 to 1000，显示才补上 nm。光灵敏度 0.43 A/W。暗电流 50 pA。上升时间的值写成 7，显示写成 7 μs。截止频率是 --。终端电容 3000 pF。噪声等效功率的值写成 6.7×10<sup>-15</sup>，显示补上 W/Hz<sup>1/2</sup>。封装 Ceramic，封装类别 --。冷却 Non-cooled。手册标 813 KB。`,
+        `手册仍是 ${s1227Sheet}，记为约 2015 年 10 月。结构表这一只窗材料 Resin potting，没有星号。外形尺寸和感光面积与 S1227-1010BQ 共用。有效感光面积 100。200 nm 光灵敏度是横线。暗电流最大 50 pA。上升时间 7 µs。终端电容 3000 pF。分流电阻最小 0.2 GΩ、典型 2 GΩ。短路电流最小 36 µA、典型 53 µA。噪声等效功率 6.7 × 10<sup>-15</sup> W/Hz<sup>1/2</sup>。外形图号 KSPDA0101EB。图上感光面写 10 × 10。树脂灌封那句与 S1227-16BR 相同。` +
+          `约 2025 年 9 月的选型指南第 9 页把这一行的光谱范围写成 340 to 1000，λ=200 nm 是横线，λ=720 nm 写 0.43。型号后面没有星号。` +
+          placeS1226,
+      ]),
+    ],
+  },
+
 ];
