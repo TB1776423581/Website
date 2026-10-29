@@ -87,6 +87,21 @@ const s1337GuideEight =
 const placeS1337 =
   "手册应用写 Analytical equipment 和 Optical measurement equipment。这些句子对不上本站的应用标签，所以不放在应用下面。没有写 TOF。光谱响应是一条灵敏度曲线，不是按波段成像，所以不放在技术下面。";
 
+const s1787Sheet =
+  "https://www.hamamatsu.com/content/dam/hamamatsu-photonics/sites/documents/99_SALES_LIBRARY/ssd/s1787_series_kspd1038e.pdf";
+
+const s1787Page =
+  "产品页没有写发布日期。导语写 Si photodiode。页面标题和 og:title 在型号和竖线之间有一个空格。keywords 写 Si photodiodes，末尾没有空格。二级标题写在 span class=\"Txt__Limit\" 里，是一行：Plastic package photodiode with low dark current。二级标题下面先是一个只含不换行空格的 p，U+00A0，然后是正文段。特性写在同一个 p 里，Features 是粗体，前面是 br，后面也是 br。只有一条，行首是连字符，后面是一个普通空格。产品页没有写应用栏。下载标 467 KB/PDF。面包屑里的 Si photodiodes 末尾没有空格。主图 alt 写 Si photodiode product photo。";
+
+const s1787Measure =
+  "规格表没有类型，没有截止频率，没有窗材料，没有噪声等效功率，也没有上升时间的测量条件。表头 Package category 的 c 是小写。测量条件写成一行：Typ. Ta=25 ℃，℃ 是 U+2103，Photosensitivity: λ=λp，Dark current: V<sub>R</sub>=1V，1 和 V 之间没有空格，Terminal capacitance: V<sub>R</sub>=0 V, f=10 kHz，unless otherwise noted。λ 是 U+03BB。";
+
+const s1787SheetLead =
+  `手册 ${s1787Sheet}。文件名是 s1787_series_kspd1038e.pdf。目录号 KSPD1038E03。pdf 信息里的 Title 是 Si photodiode S1787 series，photodiode 是单数。封面可见文本先写 Si photodiode，再写 S1787 series。副题是一行：Plastic package photodiode with low dark current。正文写 The S1787 series is a family of plastic package photodiodes that offer low dark current. Plastic package used is light-impervious, so no stray light can reach the active area from the side or backside. This allows reliable optical measurements in the visible to near infrared range, over a wide dynamic range from low light levels to high light levels.。light-impervious 在行末拆开，写成 light-imper- 再接 vious。产品页把 active area 写成 photosensitive area。特性没有连字符，按型号分写：S1787-04 写 For visible range，S1787-08 写 For visible to IR range，S1787-12 写 For visible to near IR range。应用写 Exposure meter、Illuminometer、Camera auto exposure、Stroboscope light control、Copier、Display light control、Optical switch, etc.。产品页没有应用栏。结构表没有封装列。窗材料表头写 Window material*，星号在表头。注写 Window material R: resin coating, V: visual-compensation filter, I: infrared-cutting filter。感光面积 2.4 × 2.8 mm、有效感光面积 6.6、反向电压 10 V、工作温度 -10 to +60 °C、贮存温度 -20 to +70 °C，这几项印在三只中间，° 是 U+00B0。三只窗材料分别写 V、R、I。Note 的 Exceeding 前面是 U+0007。电特性表头写 Electrical and optical characteristics (Typ. Ta=25 °C, unless otherwise noted)。光谱范围、峰值、λp 光灵敏度、GaP LED 560 nm、He-Ne laser 633 nm 和短路电流写在各自那一行。S1787-04 的红外灵敏度比是 10，短路电流温度系数是 -0.01。S1787-08 和 S1787-12 的红外灵敏度比是横线，短路电流温度系数 0.1，印在这两只中间。暗电流条件 VR=1 V，1 和 V 之间有空格。暗电流 10 pA、上升时间 2.5 µs、终端电容 700 pF、分流电阻最小 10 GΩ、典型 100 GΩ，印在 S1787-04 和 S1787-08 中间。µ 是 U+00B5，Ω 是 U+2126。上升时间条件 VR=0 V, RL=1 kΩ。终端电容条件 VR=0 V, f=10 kHz。分流电阻条件 VR=10 mV。暗电流温度系数 1.12 times/°C 只印在 S1787-08 这一行。S1787-12 这一行暗电流最大 20 pA，上升时间 0.5 µs，终端电容 200 pF，分流电阻最小 1 GΩ、典型 10 GΩ。产品页上升时间用的 μ 是 U+03BC，暗电流条件写成 VR=1V，1 和 V 之间没有空格。光谱图号 KSPDB0124EB，曲线标 S1787-08、S1787-12 和 S1787-04，条件 (Typ. Ta=25 °C)。上升时间对负载电阻图号 KSPDB0125EB。暗电流对反向电压图号 KSPDB0126EB。分流电阻温度特性图号 KSPDB0127EB。短路电流线性图号 KSPDB0128EB，图题写 “A” light source fully illuminated，引号是弯引号。产品页只放了光谱 svg 和外形图。外形图题写 Dimensional outline (unit: mm)，outline 是单数。图上感光面写 Active area 2.8 × 2.4，另写 Photosensitive surface。图号 KSPDA0056EB。公差写 Tolerance unless otherwise noted: ±0.15，± 是 U+00B1。焊接条件写 Solder temperature 260 °C max. (once, less than 5 s)，备注写 at least 1 mm away from lead roots。相关信息里注意事项写 Disclaimer 和 Metal, ceramic, plastic package products，技术笔记写 Si photodiode，photodiode 是单数。末页写 Information described in this material is current as of May 2022。最后一行写 Cat. No. KSPD1038E03 May 2022 DN。末页没有写 Created in Japan，改印销售地址。记为约 2022 年 5 月。`;
+
+const placeS1787 =
+  "手册应用写 Exposure meter、Illuminometer、Camera auto exposure、Stroboscope light control、Copier、Display light control 和 Optical switch, etc.。这些句子对不上本站的应用标签，所以不放在应用下面。没有写 TOF。光谱响应是一条灵敏度曲线，不是按波段成像，所以不放在技术下面。";
+
 const s1337Resin =
   "树脂灌封那句写 The resin potting may extend a maximum of 0.1 mm above the upper surface of the package.。";
 
@@ -687,6 +702,59 @@ export const siPhotodiodeProducts = [
           s1337Resin +
           "约 2025 年 9 月的选型指南第 7 页把这一行的光谱范围写成 340 to 1100，λ=200 nm 是横线，λ=960 nm 写 0.62。型号后面没有星号。" +
           placeS1337,
+      ]),
+    ],
+  },
+
+  {
+    id: "s1787",
+    date: "2022-05",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S1787：滨松塑料封装低暗电流 Si 光电二极管",
+    summary:
+      "产品页没有写发布日期。三只共用这一页。手册文件名是 s1787_series_kspd1038e.pdf。pdf 信息里的 Title 是 Si photodiode S1787 series。末页写 Information described in this material is current as of May 2022。最后一行写 Cat. No. KSPD1038E03 May 2022 DN，记为约 2022 年 5 月。索引 newState 都是 false，是第 39 行到第 41 行。",
+    applications: [],
+    technologies: [],
+    models: [
+      page("S1787-04", "2022-05", part("S1787-04"), [
+        s1787Page +
+          "一级标题写 S1787-04。主图文件名是 k_s1787-04_pp_xx.jpg。正文写 S1787-04 is a family of plastic package photodiodes that offer low dark current，没有 The，family 用的是单数型号。手册写 The S1787 series is a family。name=\"description\" 和 og:description 都把正文和特性接在一起，levels 后面的句号和 Features 之间没有空格，Features 和连字符之间没有空格，连字符后面也没有空格：Features-For visible range。特性写 For visible range。相关产品轮播按 S1787-08、S1787-12 排，跳过当前型号。图注写 Si photodiode 再加型号。",
+        "规格表感光面积 2.8 × 2.4 mm，× 是 U+00D7，两边有空格。封装 Plastic。封装类别 With filter。冷却 Non-cooled。反向电压最大 10 V。光谱范围 320 to 730 nm。峰值 560 nm。光灵敏度典型 0.3 A/W。暗电流最大 10 pA。上升时间典型 2.5 μs，μ 是 U+03BC。终端电容典型 700 pF。" +
+          s1787Measure +
+          "光谱图是 svg，文件名 KSPDB0124EB.svg，三只相同。目录名是 03_15_new_Product_graph_svg。外形图标题写 Dimensional outline (unit: mm)，outline 是单数。data-asset 写成 KSPDA0056EB.svg。目录名是 03_14_new_Product_Dimensional outline_svg，Dimensional 和 outline 之间有一个空格。" +
+          s1226Docs,
+        `${indexIntro}这一行是第 39 行，newState 是 false。productName 写 Si photodiode。productExp 与二级标题相同。thumbAlt 写 Si photodiode product photo。缩略图文件名是 k_s1787-04_pp_xx.jpg。typeNameSort 写成 S01787-0004。类型的值和显示都写成 --。感光面积的值写成 2.8 × 2.4，显示写成 2.8 × 2.4 mm。光谱范围的值写成 320 to 730，显示才补上 nm。光灵敏度 0.3 A/W。暗电流 10 pA。上升时间的值写成 2.5，显示写成 2.5 μs，μ 是 U+03BC。截止频率的值和显示都写成 --。终端电容 700 pF。噪声等效功率的值和显示都写成 --。封装的值和显示都写成 Plastic。封装类别的值写成 With，显示写成 With filter。冷却的值和显示都写成 Non-cooled。手册标 467 KB。索引地址 ${index}。其余两只放在同一页。`,
+        s1787SheetLead +
+          "结构表这一只窗材料 V，visual-compensation filter。产品页封装类别写成 With filter。手册结构表感光面积写成 2.4 × 2.8，外形图和产品页写成 2.8 × 2.4。λp 光灵敏度 0.3 A/W。GaP LED 560 nm 是 0.3 A/W。He-Ne laser 633 nm 是 0.19 A/W。红外灵敏度比 10%。短路电流 0.65 µA，温度系数 -0.01 %/°C。暗电流、上升时间、终端电容和分流电阻与 S1787-08 共用中间那一栏。外形图号 KSPDA0056EB，与产品页资源名相同。" +
+          `${guide}第 13 页标题写 Si photodiodes for general photometry/visible range，小标题写 For visible range，下面写 With visual-sensitive compensation filter。这一行光谱范围 320 to 730，峰值 560，λ=λp 写 0.3，暗电流 10，感光面积写成 2.4 × 2.8，封装 Plastic。光谱图号 KSPDB0277EE，图题方括号写 S1787-04, S16838-01MS，方括号内侧各有两个 U+2005。图注写 (Typ. Ta=25 ˚C)，˚ 是 U+02DA。手册图号是 KSPDB0124EB。同一页还有 S16838-01MS，是别的前缀，没有放进这一页。页脚页码写 13 / 46。` +
+          placeS1787,
+      ]),
+      page("S1787-08", "2022-05", part("S1787-08"), [
+        s1787Page +
+          "一级标题写 S1787-08。主图文件名是 k_s1787-08_-12_pp_xx.jpg，08 和 -12 之间有一个下划线。正文写 The S1787-08 is a plastic package photodiode that offers low dark current，photodiode 是单数，offers 有 s。手册写 family of plastic package photodiodes that offer，offer 没有 s。name=\"description\" 和 og:description 都写 Features-For visible to IR range，Features 和连字符之间没有空格，连字符后面也没有空格。特性写 For visible to IR range。相关产品轮播按 S1787-04、S1787-12 排，跳过当前型号。",
+        "规格表感光面积 2.8 × 2.4 mm。封装 Plastic。封装类别 --。冷却 Non-cooled。反向电压最大 10 V。光谱范围 320 to 1100 nm。峰值 960 nm。光灵敏度典型 0.58 A/W。暗电流最大 10 pA。上升时间典型 2.5 μs。终端电容典型 700 pF。" +
+          s1787Measure +
+          "光谱图文件名仍是 KSPDB0124EB.svg。外形图 data-asset 仍是 KSPDA0056EB.svg。" +
+          s1226Docs,
+        `${indexIntro}这一行是第 40 行，newState 是 false。productName 写 Si photodiode。productExp 与二级标题相同。thumbAlt 写 Si photodiode product photo。缩略图文件名是 k_s1787-08_-12_pp_xx.jpg。typeNameSort 写成 S01787-0008。类型的值和显示都写成 --。感光面积的值写成 2.8 × 2.4，显示写成 2.8 × 2.4 mm。光谱范围的值写成 320 to 1100，显示才补上 nm。光灵敏度 0.58 A/W。暗电流 10 pA。上升时间的值写成 2.5，显示写成 2.5 μs。截止频率是 --。终端电容 700 pF。噪声等效功率是 --。封装 Plastic。封装类别的值和显示都写成 --。冷却 Non-cooled。手册标 467 KB。`,
+        s1787SheetLead +
+          "结构表这一只窗材料 R，resin coating。产品页封装类别是 --，没有写成 With filter。λp 光灵敏度 0.58 A/W。GaP LED 560 nm 是 0.33 A/W。He-Ne laser 633 nm 是 0.38 A/W。短路电流 5.6 µA。暗电流温度系数 1.12 times/°C 写在这一行。红外灵敏度比的横线和短路电流温度系数 0.1 印在这一只和 S1787-12 中间。暗电流、上升时间、终端电容和分流电阻与 S1787-04 共用中间那一栏。" +
+          `${guide}第 14 页小标题写 For visible to near IR range。说明写 These photodiodes have sensitivity in the visible to near infrared range.。这一行写光谱范围 320 to 1100，峰值 960，λ=λp 写 0.58，暗电流 10，封装 Plastic。感光面积 2.4 × 2.8 印在 S1787-08 和 S2833-01 中间。光谱图号 KSPDB0286EF，图题还写 S4011-06DS、S2833-01/-04、S16765-01MS、S16838-02MS 和 S16840-02MS。图注写 (Typ. Ta=25 ˚C)，˚ 是 U+02DA。手册图号是 KSPDB0124EB。这些是别的前缀，没有放进这一页。页脚页码写 14 / 46。` +
+          placeS1787,
+      ]),
+      page("S1787-12", "2022-05", part("S1787-12"), [
+        s1787Page +
+          "一级标题写 S1787-12。主图文件名与 S1787-08 相同，是 k_s1787-08_-12_pp_xx.jpg。正文写 The S1787-12 is a plastic package photodiode that offers low dark current，photodiode 是单数，offers 有 s。手册写 family of plastic package photodiodes that offer，offer 没有 s。name=\"description\" 和 og:description 都写 Features-For visible to near IR range。特性写 For visible to near IR range。相关产品轮播按 S1787-04、S1787-08 排，跳过当前型号。",
+        "规格表感光面积 2.8 × 2.4 mm。封装 Plastic。封装类别 With filter。冷却 Non-cooled。反向电压最大 10 V。光谱范围 320 to 1000 nm。峰值 650 nm。光灵敏度典型 0.35 A/W。暗电流最大 20 pA。上升时间典型 0.5 μs。终端电容典型 200 pF。" +
+          s1787Measure +
+          "光谱图文件名仍是 KSPDB0124EB.svg。外形图 data-asset 仍是 KSPDA0056EB.svg。" +
+          s1226Docs,
+        `${indexIntro}这一行是第 41 行，newState 是 false。productName 写 Si photodiode。productExp 与二级标题相同。thumbAlt 写 Si photodiode product photo。缩略图文件名是 k_s1787-08_-12_pp_xx.jpg。typeNameSort 写成 S01787-0012。类型的值和显示都写成 --。感光面积的值写成 2.8 × 2.4，显示写成 2.8 × 2.4 mm。光谱范围的值写成 320 to 1000，显示才补上 nm。光灵敏度 0.35 A/W。暗电流 20 pA。上升时间的值写成 0.5，显示写成 0.5 μs。截止频率是 --。终端电容 200 pF。噪声等效功率是 --。封装 Plastic。封装类别的值写成 With，显示写成 With filter。冷却 Non-cooled。手册标 467 KB。`,
+        s1787SheetLead +
+          "结构表这一只窗材料 I，infrared-cutting filter。产品页封装类别写成 With filter。λp 光灵敏度 0.35 A/W。GaP LED 560 nm 是 0.3 A/W。He-Ne laser 633 nm 是 0.34 A/W。短路电流 2.3 µA。暗电流最大 20 pA。上升时间 0.5 µs。终端电容 200 pF。分流电阻最小 1 GΩ、典型 10 GΩ。红外灵敏度比的横线和短路电流温度系数 0.1 与 S1787-08 共用中间那一栏。" +
+          `${guide}第 14 页把这一只放在 S1787-08 前面。峰值 650、λ=λp 写 0.35、感光面积 2.4 × 2.8 写在 S1787-12 这一行。光谱范围 320 to 1000、暗电流 20 和封装 Plastic 印在 S1787-12 和 S4797-01 中间。光谱图号 KSPDB0279EH，图题方括号写 S1787-12, S4797-01，方括号内侧各有两个 U+2005。图注写 (Typ. Ta=25 ˚C)，˚ 是 U+02DA。手册图号是 KSPDB0124EB。S4797-01 是别的前缀，没有放进这一页。页脚页码写 14 / 46。` +
+          placeS1787,
       ]),
     ],
   },
