@@ -2613,6 +2613,32 @@ export const products = [
     ],
   },
   {
+    id: "sc5d8xs",
+    date: "2026-10-29",
+    companyId: "smartsens",
+    category: "product",
+    title: "SC5D8XS：5000 万像素手机图像传感器",
+    summary:
+      "2026 年 10 月 29 日发布。SC5D8XS 是 5000 万像素、1.22 μm、1/1.28 英寸的手机传感器。发布稿写它是业界首颗同时支持 1X 和 2X 焦段 LOFIC 的超高动态范围手机应用图像传感器。Lofic HDR 4.0 下，1X 焦段动态范围最高 110 dB，2X 焦段最高 100 dB。已量产。",
+    applications: ["mobile"],
+    technologies: ["stacked", "hdr", "lowlight"],
+    models: [
+      {
+        name: "SC5D8XS",
+        date: "2026-10-29",
+        url: "https://www.smartsenstech.com/page?id=417",
+        linkLabel: "打开产品发布页",
+        points: [
+          "2026 年 10 月 29 日发布，用于旗舰级智能手机主摄。发布稿写 SC5D8XS 是业界首颗同时支持 1X 和 2X 焦段 LOFIC 的 5000 万像素超高动态范围手机应用图像传感器。基于 SmartClarity-XL Pro，采用 22 nm Stack。首发 Lofic HDR 4.0，并写集成 SFCPixel-2、AllPix ADAF。",
+          "发布稿写 Lofic HDR 4.0 把 LOFIC 做到 2X 焦段。1X 焦段动态范围最高 110 dB，2X 焦段最高 100 dB。高动态由单次曝光内的三帧融合实现，并写能够有效抑制运动拖影。",
+          "Lofic HDR 4.0 模式下支持 4K 60 fps。PixGain HDR 模式下支持 4K 120 fps。",
+          "发布稿写 PixGain HDR 模式支持两帧 PDAF，并新增 LOFIC 帧对焦。LOFIC 模式下，1X 焦段支持 6% 部分像素相位检测对焦，2X 焦段实现 100% 全像素对焦。普通模式写搭载 AllPix ADAF 与 Sparse PDAF，支持 100% 全像素对焦和 6% 部分像素相位检测对焦。",
+          "1/1.28 英寸，像素 1.22 μm。感光度 5751 mV/lux*s，读取噪声 0.85e-。Lofic HDR 4.0 高清视频模式功耗约 550 mW，发布稿写较前代产品降低约 18%。常规工作模式功耗 200 mW。发布稿写目前已实现量产。",
+        ],
+      },
+    ],
+  },
+  {
     id: "scc85xs",
     date: "2026-08-27",
     companyId: "smartsens",

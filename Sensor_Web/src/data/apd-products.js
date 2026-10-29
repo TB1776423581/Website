@@ -105,6 +105,12 @@ const s16453Sheet =
 const placeS16453 =
   "手册应用写 Low-level light measurement 和 Analytical instrument。选型指南第 3 页 Low terminal capacitance 这一行没有写型号，也没有写应用。第 9 页正文写 improved sensitivity at short wavelengths，并和 S8664 series 比较。这些句子没有写 TOF，也对不上本站的应用标签，所以不放在应用下面。光谱响应和量子效率是灵敏度曲线，不是按波段成像，所以不放在技术下面。";
 
+const s17353Sheet =
+  "https://www.hamamatsu.com/content/dam/hamamatsu-photonics/sites/documents/99_SALES_LIBRARY/ssd/s17353_series_kapd1093e.pdf";
+
+const placeS17353 =
+  "手册应用写 Low-light-level measurement 和 Analytical instrument。选型指南第 3 页写 Low-light detection, analytical instruments, medical equipment。这些句子没有写 TOF，也对不上本站的应用标签，所以不放在应用下面。光谱响应和量子效率是灵敏度曲线，不是按波段成像，所以不放在技术下面。";
+
 
 const placeIr =
   "手册应用写 Distance measurement 和 Low-light-level detection。这些句子没有写 TOF，也对不上本站的应用标签，所以不放在应用下面。光谱响应是一条灵敏度曲线，不是按波段成像，所以不放在技术下面。";
@@ -828,6 +834,74 @@ export const apdProducts = [
         `手册仍是 ${s16453Sheet}，记为约 2026 年 2 月。结构表这一行感光面 ϕ5.0，产品页用的是 φ，写成 φ5 mm。有效感光面积 19.6。外形 U+F0C1/K 和封装 TO-8 印在上一行和这一行中间。暗电流典型 3 nA、最大 35 nA。截止频率 30 MHz。终端电容 55 pF。产品页暗电流写成最大 35 nA。外形图仍是 KAPDA0227EA，型号表 A 这一列写 ɸ5.0。` +
           `约 2026 年 6 月的选型指南第 9 页把这一行的感光面写成 ɸ5.0，截止频率 30 MHz，终端电容 55 pF。封装 TO-8 印在 S16453-30K 和这一行中间。第 20 页模块表 Built-in APD 没有写成 S16453-50K。` +
           placeS16453,
+      ]),
+    ],
+  },
+
+  {
+    id: "s17353",
+    date: "2026-03",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S17353：滨松从短波到 800 nm 的高灵敏度 Si APD",
+    summary:
+      "产品页没有写发布日期。六只共用这一页。手册文件名是 s17353_series_kapd1093e.pdf，末页写 Cat. No. KAPD1093E01，下一行 Mar. 2026 DN，并写 Information described in this material is current as of March 2026，记为约 2026 年 3 月。索引 newState 都是 false，是第 59 行到第 64 行。产品页二级标题写 High sensitivity from short wavelength to 800 nm。手册写成 These are APDs。产品页写成 This is an APD。",
+    applications: [],
+    technologies: [],
+    models: [
+      page("S17353-02K", "2026-03", si("S17353-02K"), [
+        "产品页没有写发布日期。一级标题写 S17353-02K。页面标题和 og:title 都写 Si APD S17353-02K | Hamamatsu Photonics，竖线前面是一个空格。这一页没有 name=\"description\"。og:description 是空标签，没有 content。二级标题写 High sensitivity from short wavelength to 800 nm，是一行。二级标题下面是一段正文，句首没有空格：This is an APD with improved sensitivity from short wavelength to 800 nm range. It offers high gain, high sensitivity, and low noise in the wide wavelength range. It is suitable for applications such as low-light-level measurement and analytical instrument。正文后面是一个只含不换行空格的 p，U+00A0。特性只有一条，写在同一个 p 里，Features 是粗体，后面是 br。连字符后面是一个普通空格：High sensitivity and low noise from short wavelength to 800 nm，这一行末尾还有一个 br。特性后面还有一个只含不换行空格的 p。keywords 写 Si APDs，末尾有一个空格。面包屑里的 Si APDs 末尾有一个空格。主图文件名是 k_s8664-02k_etc_pp_xx.jpg。alt 写 Si APD product photo。产品页没有写应用栏。下载标 352 KB/PDF。相关产品按索引顺序去掉本型号，列 Si APD S17353-05K、Si APD S17353-10K、Si APD S17353-20K、Si APD S17353-30K 和 Si APD S17353-50K。alt 都写 Si APD product photo。前三只文件名是 k_s8664-02k_etc_pp_xx.jpg，后两只是 k_s8664-30k_-50k_pp_xx.jpg。图注写 Si APD 加型号。这一列没有别的前缀。",
+        "规格表类型写成一行，Short wavelength type。感光面积 φ0.2 mm，φ 是 U+03C6。封装 Metal。封装类别的表头写成 Package Category，C 是大写，值是 TO-5。峰值 750 nm。光谱范围 320 to 1000 nm。光灵敏度典型 0.44 A/W。暗电流最大 5 nA。截止频率典型 1000 MHz。终端电容典型 1 pF。击穿电压典型 400 V。温度系数典型 0.55 V/℃，℃ 是 U+2103。增益典型 50。规格表没有冷却，没有窗材料，没有量子效率，也没有过剩噪声。测量条件写 Typ. Ta=25 ℃，unless otherwise noted，逗号后面换行，下一行写 Photosensitivity: λ=650 nm, M=1。λ 是 U+03BB。没有写出暗电流、截止频率、终端电容、击穿电压和增益的条件。光谱图的标题写 Spectral response。地址里的文件名是 kapdb0666.svg。data-asset 写成 KAPDB0666.svg。外形图的标题写 Dimensional outline (unit: mm)。地址里的文件名是 kapda0236.svg。data-asset 写成 KAPDA0236.svg。data-asset 的目录名是 03_14_new_Product_Dimensional outline_svg，Dimensional 和 outline 之间有一个空格。" +
+          s2384Docs,
+        `${siIntro}这一行是第 59 行，newState 是 false。productExp 写 High sensitivity from short wavelength to 800 nm，与二级标题相同。thumbAlt 写 Si APD product photo。缩略图文件名是 k_s8664-02k_etc_pp_xx.jpg。typeNameSort 写成 S17353-0002K。类型的值写成 Short wavelength，显示才写成 Short wavelength type。感光面积的值写成 φ0.2，显示写成 φ0.2 mm。光谱范围的值写成 320 to 1000，显示才补上 nm。峰值 750 nm。击穿电压 400 V。温度系数 0.55 V/℃。截止频率 1000 MHz。光灵敏度 0.44 A/W。暗电流 5 nA。终端电容 1 pF。增益的值是 50，没有单位。封装的值和显示都写成 Metal。封装类别的值和显示都写成 TO-5。冷却的值写成 Non-cooled，显示也是 Non-cooled。产品页规格表没有冷却这一行。手册标 352 KB。索引地址 ${siIndex}。S17353-05K、S17353-10K、S17353-20K、S17353-30K 和 S17353-50K 放在同一页。`,
+        `手册 ${s17353Sheet}。文件名是 s17353_series_kapd1093e.pdf。目录号 KAPD1093E01。第 1 页页脚只有 www.hamamatsu.com 和页码 1。末页写 Information described in this material is current as of March 2026。末页写 Cat. No. KAPD1093E01，下一行 Mar. 2026 DN，再写 Created in Japan。记为约 2026 年 3 月。封面标题写 Si APD，型号写 S17353 series。副题写 High sensitivity from short wavelength to 800 nm，是一行。正文写 These are APDs with improved sensitivity from short wavelength to 800 nm range。下一句写 They offer high gain, high sensitivity, and low noise in the wide wavelength range。再下一句写 They are suitable for applications such as low-light-level measurement and analytical instrument。产品页写成 This is an APD，It offers，It is suitable。特性没有连字符。第一条前面是 U+0007，再写 High sensitivity and low noise from short wavelength to 800 nm。应用写 Low-light-level measurement 和 Analytical instrument。产品页没有应用栏。结构表这一只外形文本层是 U+F0C0/K，封装 TO-5。有效感光面积写成 ϕ0.2，ϕ 是 U+03D5，单位 (mm)，产品页用的是 φ，写成 φ0.2 mm。表头是 Effective photosensitive area size，没有另列 mm2。注 *1 写 K=borosilicate glass，K 后面是等号，borosilicate 的 b 是小写。注 *2 写 Area in which a typical gain can be obtained。产品页规格表没有窗材料。工作温度表头的文本层写成 emperature，T 没有进文本层。贮存温度文本层写成 temperature，t 是小写。工作温度 -20 to +60 °C、贮存温度 -55 to +100 °C、正向电流 10 mA 和反向电流 200 µA 印在整组，µ 是 U+00B5，° 是 U+00B0。注 *3 的冒号后面是 U+0007，再写 No dew condensation. When there is a temperature difference between a product and the surrounding area in high humidity environments, dew condensation may occur on the product surface. Dew condensation on the product may cause deterioration in characteristics and reliability。绝对最大的 Note 同样在冒号后面先写 E，再是 U+0007，再写 xceeding the absolute maximum ratings even momentarily may cause a drop in product quality. Always be sure to use the product within the absolute maximum ratings。电特性表头写 Electrical and optical characteristics (Typ. Ta=25 °C, unless otherwise noted)。光谱范围 320 to 1000 nm、峰值 750 nm、光灵敏度 0.44 A/W、量子效率 83%、击穿电压最小 300 V、典型 400 V、最大 500 V、温度系数 0.55 V/°C、过剩噪声指数 0.28 和增益 50 印在整组。峰值标 *4。光灵敏度和量子效率的条件写 M=1、λ=650 nm。击穿电压条件 ID=100 µA。暗电流、截止频率、终端电容和过剩噪声指数都标 *4。这一行暗电流典型 1 nA、最大 5 nA。截止频率 1000 MHz，条件 RL=50 Ω，Ω 是 U+2126。终端电容 1 pF。过剩噪声指数条件 λ=650 nm。增益条件 λ=650 nm。注 *4 写 Values measured at a gain listed in the characteristics table。产品页暗电流只写最大 5 nA，击穿电压只写典型 400 V，没有写量子效率、暗电流典型值和过剩噪声指数。光谱图号 KAPDB0666EA，条件 (Typ. Ta=25 °C, M=50 at 650 nm)。量子效率图号 KAPDB0667EA，条件 (Typ. Ta=25 °C)。暗电流图号 KAPDB0668EA，条件 (Typ. Ta=25 °C)。增益图号 KAPDB0669EA，条件 (Typ. λ=650 nm)，温度标 -20 °C、0 °C、20 °C、40 °C 和 60 °C。终端电容图号 KAPDB0671EA，条件 (Typ. Ta=25 °C, f=100 kHz)。增益波长依赖图号 KAPDB0670EA，条件 (Typ. Ta=25 °C)，图上标 S17353 series、Previous product (Near IR type) S12023 series 和 Previous product (Short wavelength type) S12053 series。产品页只放了光谱图和外形图，文件名是 kapdb0666.svg 和 kapda0236.svg，没有 EA。外形图题写 Dimensional outlines (unit: mm)，上面还有一行抽成 sional outline (unit: mm)。这一只在 U+F0C0，标题写 S17353-02K/-05K/-10K/-20K，图号 KAPDA0236EA。图上的直径符号是 ɸ，ɸ 是 U+0278，结构表用的是 ϕ。图上有 ɸ9.1 ± 0.2、ɸ8.1 ± 0.1、ɸ5.9 ± 0.1、2.6 ± 0.2、4.2 ± 0.2、0.4 max.、(20)、ɸ0.45、ɸ5.08 ± 0.2 和 ɸ1.5 max.。± 是 U+00B1。图上写 Photosensitive area、Photosensitive surface、Lead、Case，并写 Y 和 X。感光面中心对管帽中心写 -0.3≤X≤+0.3 和 -0.3≤Y≤+0.3，≤ 是 U+2264。窗玻璃那句写 The glass window may extend a maximum of 0.2 mm above the upper surface of the cap。文本层没有印 Tolerance unless otherwise noted。型号表 A 这一列写 S17353-02K 为 ɸ0.2。焊接条件写 Solder temperature: 260 °C (10 s or less, once)。下一句写 Solder the leads at a point at least 1 mm away from the package body。注意事项写 Long-term exposure to UV will cause produt characteristics deteriorate. Avoid exposing the products to any unnecessary UV irradiation。produt 少一个 c。相关信息写 http://www.hamamatsu.com/sp/ssd/doc_en.html。Precautions 用 ∙ 列出 Disclaimer 和 Precautions / Metal, ceramic, plastic package products。Catalogs 用 ∙ 只列 Technical note / Si APD。∙ 是 U+2219。ceramic 和 plastic 是小写。产品页的注意事项写成 Metal, Ceramic, Plastic products，并另有选型指南和 APD 模块技术笔记。` +
+          `选型指南 ${siGuide}，产品页标 2.6 MB/PDF。目录号 KAPD0001E15，末页写 Information described in this material is current as of June 2026，并写 Cat. No. KAPD0001E15 和 Jun. 2026 DN，再写 Created in Japan，记为约 2026 年 6 月。第 3 页有一行 Short wavelength to near infrared type，Wide-wavelength band。推荐光谱范围写成 320 to 850，峰值 750。特性写 Enhanced gain over a wide wavelength range from UV to 800 nm。应用写 Low-light detection, analytical instruments, medical equipment。产品页和手册的光谱范围是 320 to 1000 nm，峰值是 750 nm。手册应用写 Low-light-level measurement 和 Analytical instrument，没有写 medical equipment。页脚页码写 3 / 22。第 5 页截止频率图把 S17353-05K 标成 Short wavelength to near infrared type (Wide-wavelength band)，竖线位置在 1000 MHz。第 10 页标题是 Short wavelength to near infrared type，小标题写 Wide-wavelength band。正文写 Achieves high gain over a wide wavelength range from UV to 800 nm。这一行感光面写成 ɸ0.2。截止频率 1000 MHz，表头写 RL=50 Ω，Ω 是 U+03A9。终端电容 1 pF。光谱范围 320 to 1000、击穿电压最大 500 V、温度系数 0.55 V/°C 和增益 50 印在这一组中间。增益表头写 λ=650 nm。封装 TO-5 印在 S17353-05K 和 S17353-10K 两行中间。注 *1 的星号和 1 之间有空格，写 Area in which a typical gain can be obtained。注 *2 写 Value obtained when operated at the gain indicated in the table。光谱图号 KAPDB0666EA，量子效率图号 KAPDB0667EA，与手册相同。页脚页码写 10 / 22。第 20 页模块表 Built-in APD 没有写成 S17353-02K。` +
+          placeS17353,
+      ]),
+      page("S17353-05K", "2026-03", si("S17353-05K"), [
+        "产品页没有写发布日期。一级标题写 S17353-05K。页面标题和 og:title 都写 Si APD S17353-05K | Hamamatsu Photonics，竖线前面是一个空格。这一页没有 name=\"description\"。og:description 是空标签。二级标题和正文与 S17353-02K 相同。正文后面和特性后面各有一个只含不换行空格的 p。特性那一条连字符后面是不换行空格，U+00A0，行末有一个 br。keywords 写 Si APDs，末尾有一个空格。面包屑里的 Si APDs 末尾有一个空格。主图文件名是 k_s8664-02k_etc_pp_xx.jpg。alt 写 Si APD product photo。产品页没有写应用栏。下载标 352 KB/PDF。相关产品按索引顺序去掉本型号，列 Si APD S17353-02K、Si APD S17353-10K、Si APD S17353-20K、Si APD S17353-30K 和 Si APD S17353-50K。",
+        "规格表类型同样写成一行。感光面积 φ0.5 mm。封装 Metal，封装类别 TO-5。峰值 750 nm。光谱范围 320 to 1000 nm。光灵敏度典型 0.44 A/W。暗电流最大 8 nA。截止频率典型 900 MHz。终端电容典型 2.2 pF。击穿电压典型 400 V。温度系数典型 0.55 V/℃。增益典型 50。规格表没有冷却。测量条件与 S17353-02K 相同，只写出光灵敏度 λ=650 nm, M=1。光谱图文件名仍是 kapdb0666.svg，data-asset 仍写成 KAPDB0666.svg。外形图文件仍是 kapda0236.svg，data-asset 仍写成 KAPDA0236.svg。" +
+          s2384Docs,
+        `${siIntro}这一行是第 60 行，newState 是 false。productExp 写 High sensitivity from short wavelength to 800 nm。thumbAlt 写 Si APD product photo。缩略图文件名是 k_s8664-02k_etc_pp_xx.jpg。typeNameSort 写成 S17353-0005K。类型的值同样写成 Short wavelength。感光面积的值写成 φ0.5，显示写成 φ0.5 mm。暗电流 8 nA。截止频率 900 MHz。终端电容 2.2 pF。击穿电压 400 V。增益的值是 50，没有单位。封装 Metal，封装类别 TO-5。冷却的值和显示都写成 Non-cooled。产品页规格表没有冷却这一行。手册标 352 KB。`,
+        `手册仍是 ${s17353Sheet}，记为约 2026 年 3 月。结构表这一行有效感光面积 ϕ0.5，ϕ 是 U+03D5，产品页用的是 φ，写成 φ0.5 mm。外形 U+F0C0/K 和封装 TO-5 印在这一组和 S17353-10K、S17353-20K 所在的一组。暗电流典型 1.5 nA、最大 8 nA。截止频率 900 MHz。终端电容 2.2 pF。光谱范围、峰值、光灵敏度、量子效率、击穿电压、温度系数、过剩噪声指数和增益仍是整组共用。产品页暗电流写成最大 8 nA，击穿电压只写典型 400 V。外形图仍是 KAPDA0236EA，型号表 A 这一列写 ɸ0.5。` +
+          `约 2026 年 6 月的选型指南第 10 页把这一行的感光面写成 ɸ0.5，截止频率 900 MHz，终端电容 2.2 pF。封装 TO-5 印在这一行和 S17353-10K 中间。第 20 页模块表 Built-in APD 没有写成 S17353-05K。` +
+          placeS17353,
+      ]),
+      page("S17353-10K", "2026-03", si("S17353-10K"), [
+        "产品页没有写发布日期。一级标题写 S17353-10K。页面标题和 og:title 都写 Si APD S17353-10K | Hamamatsu Photonics，竖线前面是一个空格。二级标题、正文和特性与 S17353-05K 相同。特性连字符后面是不换行空格，行末有一个 br。keywords 写 Si APDs，末尾有一个空格。面包屑里的 Si APDs 末尾有一个空格。主图文件名是 k_s8664-02k_etc_pp_xx.jpg。alt 写 Si APD product photo。产品页没有写应用栏。下载标 352 KB/PDF。相关产品按索引顺序去掉本型号，列 Si APD S17353-02K、Si APD S17353-05K、Si APD S17353-20K、Si APD S17353-30K 和 Si APD S17353-50K。",
+        "规格表类型同样写成一行。感光面积 φ1 mm，没有写成 φ1.0。封装 Metal，封装类别 TO-5。峰值 750 nm。光谱范围 320 to 1000 nm。光灵敏度典型 0.44 A/W。暗电流最大 10 nA。截止频率典型 500 MHz。终端电容典型 5.5 pF。击穿电压典型 400 V。温度系数典型 0.55 V/℃。增益典型 50。规格表没有冷却。测量条件与 S17353-02K 相同。光谱图和外形图的文件名也与 S17353-02K 相同。" +
+          s2384Docs,
+        `${siIntro}这一行是第 61 行，newState 是 false。productExp 写 High sensitivity from short wavelength to 800 nm。thumbAlt 写 Si APD product photo。缩略图文件名是 k_s8664-02k_etc_pp_xx.jpg。typeNameSort 写成 S17353-0010K。类型的值同样写成 Short wavelength。感光面积的值写成 φ1，显示写成 φ1 mm。暗电流 10 nA。截止频率 500 MHz。终端电容 5.5 pF。击穿电压 400 V。增益的值是 50，没有单位。封装 Metal，封装类别 TO-5。冷却的值和显示都写成 Non-cooled。产品页规格表没有冷却这一行。手册标 352 KB。`,
+        `手册仍是 ${s17353Sheet}，记为约 2026 年 3 月。结构表这一行有效感光面积 ϕ1.0，产品页用的是 φ，写成 φ1 mm。暗电流典型 2 nA、最大 10 nA。截止频率 500 MHz。终端电容 5.5 pF。产品页暗电流写成最大 10 nA。外形图仍是 KAPDA0236EA，型号表 A 这一列写 ɸ1.0。` +
+          `约 2026 年 6 月的选型指南第 10 页把这一行的感光面写成 ɸ1.0，截止频率 500 MHz，终端电容 5.5 pF。封装 TO-5 印在 S17353-05K 和这一行中间。第 20 页模块表 Built-in APD 没有写成 S17353-10K。` +
+          placeS17353,
+      ]),
+      page("S17353-20K", "2026-03", si("S17353-20K"), [
+        "产品页没有写发布日期。一级标题写 S17353-20K。页面标题和 og:title 都写 Si APD S17353-20K | Hamamatsu Photonics，竖线前面是一个空格。二级标题、正文和特性与 S17353-05K 相同。特性连字符后面是不换行空格，行末有一个 br。keywords 写 Si APDs，末尾有一个空格。面包屑里的 Si APDs 末尾有一个空格。主图文件名是 k_s8664-02k_etc_pp_xx.jpg。alt 写 Si APD product photo。产品页没有写应用栏。下载标 352 KB/PDF。相关产品按索引顺序去掉本型号，列 Si APD S17353-02K、Si APD S17353-05K、Si APD S17353-10K、Si APD S17353-30K 和 Si APD S17353-50K。",
+        "规格表类型同样写成一行。感光面积 φ2 mm，没有写成 φ2.0。封装 Metal，封装类别 TO-5。峰值 750 nm。光谱范围 320 to 1000 nm。光灵敏度典型 0.44 A/W。暗电流最大 25 nA。截止频率典型 200 MHz。终端电容典型 15 pF。击穿电压典型 400 V。温度系数典型 0.55 V/℃。增益典型 50。规格表没有冷却。测量条件与 S17353-02K 相同。光谱图和外形图的文件名也与 S17353-02K 相同。" +
+          s2384Docs,
+        `${siIntro}这一行是第 62 行，newState 是 false。productExp 写 High sensitivity from short wavelength to 800 nm。thumbAlt 写 Si APD product photo。缩略图文件名是 k_s8664-02k_etc_pp_xx.jpg。typeNameSort 写成 S17353-0020K。类型的值同样写成 Short wavelength。感光面积的值写成 φ2，显示写成 φ2 mm。暗电流 25 nA。截止频率 200 MHz。终端电容 15 pF。击穿电压 400 V。增益的值是 50，没有单位。封装 Metal，封装类别 TO-5。冷却的值和显示都写成 Non-cooled。产品页规格表没有冷却这一行。手册标 352 KB。`,
+        `手册仍是 ${s17353Sheet}，记为约 2026 年 3 月。结构表这一行有效感光面积 ϕ2.0，产品页用的是 φ，写成 φ2 mm。暗电流典型 5 nA、最大 25 nA。截止频率 200 MHz。终端电容 15 pF。产品页暗电流写成最大 25 nA。外形图仍是 KAPDA0236EA，型号表 A 这一列写 ɸ2.0。` +
+          `约 2026 年 6 月的选型指南第 10 页把这一行的感光面写成 ɸ2.0，截止频率 200 MHz，终端电容 15 pF。封装 TO-5 印在上面两行中间，这一行没有再印一遍。第 20 页模块表 Built-in APD 没有写成 S17353-20K。` +
+          placeS17353,
+      ]),
+      page("S17353-30K", "2026-03", si("S17353-30K"), [
+        "产品页没有写发布日期。一级标题写 S17353-30K。页面标题和 og:title 都写 Si APD S17353-30K | Hamamatsu Photonics，竖线前面是一个空格。二级标题和正文与 S17353-02K 相同。特性那一条连字符后面是不换行空格，行末没有 br，p 直接结束。keywords 写 Si APDs，末尾有一个空格。面包屑里的 Si APDs 末尾有一个空格。主图文件名是 k_s8664-30k_-50k_pp_xx.jpg。alt 写 Si APD product photo。产品页没有写应用栏。下载标 352 KB/PDF。相关产品按索引顺序去掉本型号，列 Si APD S17353-02K、Si APD S17353-05K、Si APD S17353-10K、Si APD S17353-20K 和 Si APD S17353-50K。",
+        "规格表类型同样写成一行。感光面积 φ3 mm，没有写成 φ3.0。封装 Metal，封装类别 TO-8。峰值 750 nm。光谱范围 320 to 1000 nm。光灵敏度典型 0.44 A/W。暗电流最大 50 nA。截止频率典型 90 MHz。终端电容典型 35 pF。击穿电压典型 400 V。温度系数典型 0.55 V/℃。增益典型 50。规格表没有冷却。测量条件与 S17353-02K 相同。光谱图文件名仍是 kapdb0666.svg，data-asset 仍写成 KAPDB0666.svg。外形图地址里的文件名是 kapda0237.svg。data-asset 写成 KAPDA0237.svg。目录名仍是 03_14_new_Product_Dimensional outline_svg。" +
+          s2384Docs,
+        `${siIntro}这一行是第 63 行，newState 是 false。productExp 写 High sensitivity from short wavelength to 800 nm。thumbAlt 写 Si APD product photo。缩略图文件名是 k_s8664-30k_-50k_pp_xx.jpg。typeNameSort 写成 S17353-0030K。类型的值同样写成 Short wavelength。感光面积的值写成 φ3，显示写成 φ3 mm。暗电流 50 nA。截止频率 90 MHz。终端电容 35 pF。击穿电压 400 V。增益的值是 50，没有单位。封装 Metal，封装类别 TO-8。冷却的值和显示都写成 Non-cooled。产品页规格表没有冷却这一行。手册标 352 KB。`,
+        `手册仍是 ${s17353Sheet}，记为约 2026 年 3 月。结构表这一行外形文本层是 U+F0C1/K，封装 TO-8。有效感光面积 ϕ3.0，产品页用的是 φ，写成 φ3 mm。暗电流典型 10 nA、最大 50 nA。截止频率 90 MHz。终端电容 35 pF。产品页暗电流写成最大 50 nA。外形图标题写 S17353-30K/-50K，文本层符号是 U+F0C1，图号 KAPDA0237EA，产品页文件名是 kapda0237.svg。图上的直径符号是 ɸ。图上有 ɸ13.9 ± 0.2、ɸ12.35 ± 0.1、ɸ10.5 ± 0.2、2.9 ± 0.2、4.9 ± 0.2、0.5 max.、(15)、ɸ0.45、ɸ7.5 ± 0.2、Index mark、ɸ1.4 和 ɸ1.0 max.。感光面中心对管帽中心写 -0.4≤X≤+0.4 和 -0.4≤Y≤+0.4。窗玻璃那句与 (1) 相同。型号表 A 这一列写 ɸ3.0。` +
+          `约 2026 年 6 月的选型指南第 10 页把这一行的感光面写成 ɸ3.0，截止频率 90 MHz，终端电容 35 pF。封装 TO-8 印在这一行和 S17353-50K 中间。第 20 页模块表 Built-in APD 没有写成 S17353-30K。` +
+          placeS17353,
+      ]),
+      page("S17353-50K", "2026-03", si("S17353-50K"), [
+        "产品页没有写发布日期。一级标题写 S17353-50K。页面标题和 og:title 都写 Si APD S17353-50K | Hamamatsu Photonics，竖线前面是一个空格。二级标题、正文和特性与 S17353-30K 相同。特性连字符后面是不换行空格，行末没有 br。keywords 写 Si APDs，末尾有一个空格。面包屑里的 Si APDs 末尾有一个空格。主图文件名是 k_s8664-30k_-50k_pp_xx.jpg。alt 写 Si APD product photo。产品页没有写应用栏。下载标 352 KB/PDF。相关产品按索引顺序去掉本型号，列 Si APD S17353-02K、Si APD S17353-05K、Si APD S17353-10K、Si APD S17353-20K 和 Si APD S17353-30K。",
+        "规格表类型同样写成一行。感光面积 φ5 mm，没有写成 φ5.0。封装 Metal，封装类别 TO-8。峰值 750 nm。光谱范围 320 to 1000 nm。光灵敏度典型 0.44 A/W。暗电流最大 130 nA。截止频率典型 35 MHz。终端电容典型 85 pF。击穿电压典型 400 V。温度系数典型 0.55 V/℃。增益典型 50。规格表没有冷却。测量条件与 S17353-02K 相同。光谱图文件名仍是 kapdb0666.svg。外形图文件仍是 kapda0237.svg，data-asset 仍写成 KAPDA0237.svg。" +
+          s2384Docs,
+        `${siIntro}这一行是第 64 行，newState 是 false。productExp 写 High sensitivity from short wavelength to 800 nm。thumbAlt 写 Si APD product photo。缩略图文件名是 k_s8664-30k_-50k_pp_xx.jpg。typeNameSort 写成 S17353-0050K。类型的值同样写成 Short wavelength。感光面积的值写成 φ5，显示写成 φ5 mm。暗电流 130 nA。截止频率 35 MHz。终端电容 85 pF。击穿电压 400 V。增益的值是 50，没有单位。封装 Metal，封装类别 TO-8。冷却的值和显示都写成 Non-cooled。产品页规格表没有冷却这一行。手册标 352 KB。`,
+        `手册仍是 ${s17353Sheet}，记为约 2026 年 3 月。结构表这一行有效感光面积 ϕ5.0，产品页用的是 φ，写成 φ5 mm。外形 U+F0C1/K 和封装 TO-8 印在上一行和这一行中间。暗电流典型 25 nA、最大 130 nA。截止频率 35 MHz。终端电容 85 pF。产品页暗电流写成最大 130 nA。外形图仍是 KAPDA0237EA，型号表 A 这一列写 ɸ5.0。` +
+          `约 2026 年 6 月的选型指南第 10 页把这一行的感光面写成 ɸ5.0，截止频率 35 MHz，终端电容 85 pF。封装 TO-8 印在 S17353-30K 和这一行中间。第 20 页模块表 Built-in APD 没有写成 S17353-50K。` +
+          placeS17353,
       ]),
     ],
   },
