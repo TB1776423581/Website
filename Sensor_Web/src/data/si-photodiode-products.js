@@ -129,6 +129,18 @@ const s2386Measure =
 const s2386SheetLead =
   `手册 ${s2386Sheet}。文件名是 s2386_series_kspd1035e.pdf。目录号 KSPD1035E09。pdf 信息里的 Title 是 Si photodiode S2386 series，photodiode 是单数。封面可见文本先写 Si photodiodes，再写 S2386 series。副题是一行：For visible to near IR, general-purpose photometry。封面没有正文段。特性没有连字符：High sensitivity in visible to near infrared range、Low dark current、High reliability、Superior linearity。应用写 Analytical instruments 和 Optical measurement equipment。产品页没有应用栏。结构表按 S2386-18K、S2386-18L、S2386-5K、S2386-44K、S2386-45K、S2386-8K 排，和索引顺序不同。窗材料注写 K=borosilicate glass, L=lens type borosilicate glass，borosilicate 的 b 是小写。反向电压 30 V、工作温度 -40 to +100 °C、贮存温度 -55 to +125 °C，六只共用，° 是 U+00B0。Note 写成 Note: Exceeding，冒号后面是一个普通空格，没有 U+0007。电特性表头写 Electrical and optical characteristics (Typ. Ta=25 °C, unless otherwise noted)。光谱范围 320 to 1100、峰值 960 nm、λp 光灵敏度 0.6 A/W、GaP LED 560 nm 的 0.38 A/W、He-Ne laser 633 nm 的 0.43 A/W、GaAs LED 930 nm 的 0.59 A/W、暗电流温度系数 1.12 times/°C，这几项印在六只中间。表头里的 λ 是 U+F06C，分流电阻单位里的 Ω 是 U+F057。短路电流单位 μA 和上升时间单位 μs 的 μ 是 U+03BC。上升时间条件 VR=0 V, RL=1 kΩ。暗电流条件 VR=10 mV，表里只有最大值。终端电容条件 VR=0 V, f=10 kHz，表头把 VR 拆开，V 和 R 之间有空格。分流电阻条件 VR=10 mV。噪声等效功率条件 VR=0 V, λ=λp，文本层在 × 两边有空格，× 是 U+00D7，指数没有写成上标。产品页 × 两边没有空格，指数写成上标。光谱图号 KSPDB0110EB，条件 (Typ. Ta=25 °C)。光灵敏度温度特性图号 KSPDB0058EC，条件 (Typ.)。指向性图号 KSPDB0111EA，条件 (Typ. Ta=25 °C)，曲线标 S2386-18L 和 S2386-18K。暗电流对反向电压图号 KSPDB0113ED，条件 (Typ. Ta=25 °C)，曲线标 S2386-8K 和 S2386-18K/-5K/-44K/-45K。产品页只放了光谱 svg 和外形图。外形图题写 Dimensional outlines (unit: mm)，outlines 是复数。窗玻璃那句写 The glass window may extend a maximum of 0.2 mm above the upper surface of the cap.。相关信息里注意事项写 Disclaimer 和 Metal, ceramic, plastic package products。技术信息写 Si photodiode/Application circuit examples，不是 Technical note。末页写 Information described in this material is current as of April 2019。最后一行写 Cat. No. KSPD1035E09 Apr. 2019 DN。末页没有写 Created in Japan，改印销售地址，地址写 Higashi-ku。记为约 2019 年 4 月。`;
 
+const s2387Sheet =
+  "https://www.hamamatsu.com/content/dam/hamamatsu-photonics/sites/documents/99_SALES_LIBRARY/ssd/s2387_series_kspd1033e.pdf";
+
+const s2387Page =
+  "产品页没有写发布日期。导语写 Si photodiode。页面标题和 og:title 在型号和竖线之间有一个空格。keywords 写 Si photodiodes，末尾没有空格。型号区 class 含 Type--Migration。二级标题写在 span class=\"Txt__Limit\" 里，是一行：For visible to IR, general-purpose photometry。二级标题下面先是一个只含不换行空格的 p，U+00A0，然后是正文段，正文后面又是一个只含不换行空格的 p。没有特性列表，没有规格表，没有应用栏，没有光谱图，也没有外形图。下载只有手册，标 523 KB/PDF。面包屑里的 Si photodiodes 末尾没有空格。主图 alt 写 Si photodiode product photo。主图没有图注。相关产品轮播按 S12915-16R、S12915-33R、S12915-66R、S12915-1010R 排，四页相同。轮播链接是 /us/en/，没有 target。图注写 Si photodiode 再加型号。轮播图文件名是 k_s1227-16br_s1337-16br_s12915-16r_pp.xx.jpg、k_s1227-33br_s1337-33br_s12915-33r_pp_xx.jpg、k_s1227-66br_s1337-66br_s12915-66r_pp_xx.jpg 和 k_s1227-1010br_s1337-1010br_s12915-1010r_pp_xx.jpg。S12915 是别的前缀，没有放进这一页。";
+
+const s2387SheetLead =
+  `手册 ${s2387Sheet}。文件名是 s2387_series_kspd1033e.pdf。目录号 KSPD1033E06。pdf 信息里的 Title 是 Si photodiodes S2387 series，photodiodes 是复数。封面可见文本先写 Si photodiodes，再写 S2387 series。副题是一行：For visible to IR, general-purpose photometry。封面没有正文段。特性没有连字符：High sensitivity in visible to infrared range、Low dark current、High linearity。应用写 Analytical equipment 和 Optical measurement equipment, etc.。产品页没有特性列表，也没有应用栏。结构表按 S2387-16R、S2387-33R、S2387-66R、S2387-1010R 排，和索引顺序相同。窗材料 Resin potting、反向电压 30 V、工作温度 -20 to +60 °C、贮存温度 -20 to +80 °C，印在四只中间，四只共用，° 是 U+00B0。封装列的单位是 mm，写的是外形尺寸，没有写 Ceramic。注 * 后面是一个空格和 U+0007，下一行写 No dew condensation。Note 写成 Note:，冒号后面是一个普通空格，然后是 U+0007，下一行写 Exceeding。电特性表头写 Electrical and optical characteristics (Typ. Ta=25 °C, unless otherwise noted)。光谱范围 340 to 1100、峰值 960 nm、λp 光灵敏度 0.58 A/W、GaP LED 560 nm 的 0.33 A/W、He-Ne laser 633 nm 的 0.37 A/W、暗电流温度系数 1.12 times/°C，这几项印在四只中间。表头 λ 是 U+03BB。短路电流单位 µA 和上升时间单位 µs 的 µ 是 U+00B5。上升时间条件 VR=0 V, RL=1 kΩ，Ω 是 U+2126。暗电流条件 VR=10 mV，表里只有最大值。终端电容条件 VR=0 V, f=10 kHz。分流电阻条件 VR=10 mV，单位 GΩ。短路电流条件 100 lx。噪声等效功率条件 VR=0 V, λ=λp，文本层在 × 两边有空格，× 是 U+00D7，指数没有写成上标。索引 × 两边没有空格，指数写成上标，上升时间显示用的 μ 是 U+03BC。光谱图号 KSPDB0115EB，条件 (Typ. Ta=25 °C)。光灵敏度温度特性图号 KSPDB0058EC，条件 (Typ.)。暗电流对反向电压图号 KSPDB0117ED，条件 (Typ. Ta=25 ˚C)，˚ 是 U+02DA，曲线标 S2387-1010R、S2387-66R 和 S2387-16R/33R。产品页没有放这些图。外形图先写 Dimensional outlines (unit: mm)，outlines 是复数。各只图题用单数 outline，并同时写 S1337 的树脂灌封型号。图上写 The resin potting may extend a maximum of 0.1 mm above the upper surface of the package.。图上也写 Photosensitive surface 和 Anode terminal mark。S1337 已经单独成页，没有放进这一页。焊接条件写 Solder temperature: 260 °C (5 s or less, once)，并写 Solder the leads at a point at least 2 mm away from the package body.。相关信息网址写 www.hamamatsu.com/sp/ssd/doc_en.html。注意事项写 ∙ Disclaimer 和 ∙ Metal, ceramic, plastic package products，∙ 是 U+2219。技术笔记写 ∙ Si photodiodes。末页写 Information described in this material is current as of July 2022，July 后面没有逗号。最后一行写 Cat. No. KSPD1033E06 Jul. 2022 DN。末页没有写 Created in Japan，改印销售地址，地址写 Higashi-ku。记为约 2022 年 7 月。`;
+
+const placeS2387 =
+  "手册应用写 Analytical equipment 和 Optical measurement equipment, etc.。这些句子对不上本站的应用标签，所以不放在应用下面。没有写 TOF。光谱响应是一条灵敏度曲线，不是按波段成像，所以不放在技术下面。";
+
 const s1337Resin =
   "树脂灌封那句写 The resin potting may extend a maximum of 0.1 mm above the upper surface of the package.。";
 
@@ -927,6 +939,60 @@ export const siPhotodiodeProducts = [
           "结构表这一只外形 (5)/K，窗材料硼硅玻璃。封装没有再写，TO-5 印在 S2386-44K 那一行。感光面积 3.9 × 4.6 mm。短路电流最小 12 μA、典型 17 μA。暗电流最大 30 pA。上升时间 5.5 μs。终端电容 2300 pF。分流电阻最小 0.3 GΩ。典型分流电阻和噪声等效功率与 S2386-44K 共用中间那一栏。外形图 (5) 图号 KSPDA0178EF，产品页资源名是 KSPDA0178EE,0。图上感光面写 3.9 × 4.6。感光面中心对管帽中心写成 -0.7≤X≤ - 0.1，减号两边各有一个空格，下一行 -0.3≤Y≤+0.3。引线写成 0.45。" +
           `${guide}第 11 页这一行暗电流 30，终端电容 2300，感光面积 3.9 × 4.6。封装没有再写。` +
           placeS2281,
+      ]),
+    ],
+  },
+
+  {
+    id: "s2387",
+    date: "2022-07",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S2387：滨松可见到红外通用测光 Si 光电二极管",
+    summary:
+      "产品页没有写发布日期。四只共用这一页。产品页写 Not recommended for new designs，并推荐后继系列 S12915。手册文件名是 s2387_series_kspd1033e.pdf。pdf 信息里的 Title 是 Si photodiodes S2387 series。末页写 Information described in this material is current as of July 2022。最后一行写 Cat. No. KSPD1033E06 Jul. 2022 DN，记为约 2022 年 7 月。索引 newState 都是 false，是第 51 行到第 54 行。",
+    applications: [],
+    technologies: [],
+    models: [
+      page("S2387-16R", "2022-07", part("S2387-16R"), [
+        s2387Page +
+          "一级标题写 S2387-16R。主图 src 写成 k_s1227-16br_s1337-16br_s12915-16r_pp.xx.jpg.thumb.252.252.jpg，pp 和 xx 之间是句点。正文写 S2387-16R: Not recommended for new designs. 下一行写 We recommend the successor, S12915 series when purchasing a new product. 再下一行写 For more information, refer to the following webpage.。name=\"description\" 和 og:description 都没有第一句，把 product. 和 For 接在一起，中间没有空格，句末再写 Si photodiode S12915 Series - Successor to S2387 series S12915-16R，Series 的 S 是大写。产品详情链接写 /jp/en/product/optical-sensors/photodiodes/si-photodiodes/S12915-16R.html，target 是 _blank。",
+        "产品页没有规格表。索引这一行感光面积写成 5.9 × 1.1 mm，× 是 U+00D7。封装 Ceramic，封装类别 --。冷却 Non-cooled。光谱范围 340 to 1100 nm。光灵敏度 0.58 A/W。暗电流 5 pA。上升时间 1.8 μs，μ 是 U+03BC。终端电容 730 pF。噪声等效功率 9.9×10<sup>-16</sup> W/Hz<sup>1/2</sup>，× 两边没有空格。",
+        `${indexIntro}这一行是第 51 行，newState 是 false。productName 写 Si photodiode。productExp 与二级标题相同。thumbAlt 写 Si photodiode product photo。缩略图文件名是 k_s1227-16br_s1337-16br_s12915-16r_pp.xx.jpg。typeNameSort 写成 S02387-0016R。类型的值和显示都写成 --。感光面积的值写成 5.9 × 1.1，显示写成 5.9 × 1.1 mm。光谱范围的值写成 340 to 1100，显示才补上 nm。光灵敏度 0.58 A/W。暗电流 5 pA。上升时间的值写成 1.8，显示写成 1.8 μs，μ 是 U+03BC。截止频率是 --。终端电容 730 pF。噪声等效功率的值写成 9.9×10<sup>-16</sup>，× 是 U+00D7，显示补上 W/Hz<sup>1/2</sup>。封装 Ceramic，封装类别 --。冷却 Non-cooled。手册标 523 KB。索引地址 ${index}。其余三只放在同一页。`,
+        s2387SheetLead +
+          "结构表这一只外形尺寸 2.7 × 15 mm，感光面积 1.1 × 5.9 mm，有效感光面积 6.4 mm2。索引把感光面积写成 5.9 × 1.1。短路电流最小 4.4 µA、典型 6.0 µA。暗电流最大 5 pA、上升时间 1.8 µs、终端电容 730 pF、分流电阻最小 2 GΩ、典型 50 GΩ、噪声等效功率 9.9 × 10-16，印在这一只和 S2387-33R 中间。外形图题写 Dimensional outline (S1337-16BR, S2387-16R, unit: mm)。图号 KSPDA0106EB。图上感光面写 1.1 × 5.9。图上还有 Hole 和 (2 ×) 0.8。" +
+          `${guide}第 11 页列出 S2386，第 12 页列出 S12915-16R、S12915-33R、S12915-66R 和 S12915-1010R，没有写出 S2387。第 12 页页脚写 12 / 46。S12915-16R 的感光面积写成 1.0 × 6.0，光灵敏度写成 0.64。图题方括号写 S12915 series，方括号内侧各有两个 U+2005。图号 KSPDB0363EA。` +
+          placeS2387,
+      ]),
+      page("S2387-33R", "2022-07", part("S2387-33R"), [
+        s2387Page +
+          "一级标题写 S2387-33R。主图 src 写成 k_s1227-33br_s1337-33br_s12915-33r_pp_xx.jpg.thumb.252.252.jpg。正文把型号写成 S2387-33R。name=\"description\" 和 og:description 句末写 S12915-33R。产品详情链接写 /jp/en/product/optical-sensors/photodiodes/si-photodiodes/S12915-33R.html，target 是 _blank。",
+        "产品页没有规格表。索引这一行感光面积写成 2.4 × 2.4 mm。封装 Ceramic，封装类别 --。冷却 Non-cooled。光谱范围 340 to 1100 nm。光灵敏度 0.58 A/W。暗电流 5 pA。上升时间 1.8 μs。终端电容 730 pF。噪声等效功率 9.9×10<sup>-16</sup> W/Hz<sup>1/2</sup>，× 两边没有空格。",
+        `${indexIntro}这一行是第 52 行，newState 是 false。productName 写 Si photodiode。productExp 与二级标题相同。thumbAlt 写 Si photodiode product photo。缩略图文件名是 k_s1227-33br_s1337-33br_s12915-33r_pp_xx.jpg。typeNameSort 写成 S02387-0033R。类型的值和显示都写成 --。感光面积的值写成 2.4 × 2.4，显示写成 2.4 × 2.4 mm。光谱范围的值写成 340 to 1100，显示才补上 nm。光灵敏度 0.58 A/W。暗电流 5 pA。上升时间的值写成 1.8，显示写成 1.8 μs。截止频率是 --。终端电容 730 pF。噪声等效功率的值写成 9.9×10<sup>-16</sup>，显示补上 W/Hz<sup>1/2</sup>。封装 Ceramic，封装类别 --。冷却 Non-cooled。手册标 523 KB。`,
+        s2387SheetLead +
+          "结构表这一只外形尺寸 6 × 7.6 mm，感光面积 2.4 × 2.4 mm，有效感光面积 5.7 mm2。短路电流最小 4.4 µA、典型 5.8 µA。暗电流、上升时间、终端电容、分流电阻和噪声等效功率与 S2387-16R 共用中间那一栏。外形图题写 Dimensional outline (S1337-33BR, S2387-33R, unit: mm)。图号 KSPDA0108EB。图上感光面写 2.4 × 2.4。" +
+          `${guide}第 12 页 S12915-33R 的感光面积写成 2.4 × 2.4，终端电容写成 680。这一页没有写出 S2387-33R。` +
+          placeS2387,
+      ]),
+      page("S2387-66R", "2022-07", part("S2387-66R"), [
+        s2387Page +
+          "一级标题写 S2387-66R。主图 src 写成 k_s1227-66br_s1337-66br_s12915-66r_pp_xx.jpg.thumb.252.252.jpg。正文把型号写成 S2387-66R。name=\"description\" 和 og:description 句末写 S12915-66R。产品详情链接写 /jp/en/product/optical-sensors/photodiodes/si-photodiodes/S12915-66R.html，target 是 _blank。",
+        "产品页没有规格表。索引这一行感光面积写成 5.8 × 5.8 mm。封装 Ceramic，封装类别 --。冷却 Non-cooled。光谱范围 340 to 1100 nm。光灵敏度 0.58 A/W。暗电流 50 pA。上升时间 10 μs。终端电容 4300 pF。噪声等效功率 2.2×10<sup>-15</sup> W/Hz<sup>1/2</sup>，× 两边没有空格。",
+        `${indexIntro}这一行是第 53 行，newState 是 false。productName 写 Si photodiode。productExp 与二级标题相同。thumbAlt 写 Si photodiode product photo。缩略图文件名是 k_s1227-66br_s1337-66br_s12915-66r_pp_xx.jpg。typeNameSort 写成 S02387-0066R。类型的值和显示都写成 --。感光面积的值写成 5.8 × 5.8，显示写成 5.8 × 5.8 mm。光谱范围的值写成 340 to 1100，显示才补上 nm。光灵敏度 0.58 A/W。暗电流 50 pA。上升时间的值写成 10，显示写成 10 μs。截止频率是 --。终端电容 4300 pF。噪声等效功率的值写成 2.2×10<sup>-15</sup>，显示补上 W/Hz<sup>1/2</sup>。封装 Ceramic，封装类别 --。冷却 Non-cooled。手册标 523 KB。`,
+        s2387SheetLead +
+          "结构表这一只外形尺寸 8.9 × 10.1 mm，感光面积 5.8 × 5.8 mm，有效感光面积 33 mm2。短路电流最小 24 µA、典型 31 µA。暗电流最大 50 pA。上升时间 10 µs。终端电容 4300 pF。分流电阻最小 0.2 GΩ、典型 10 GΩ。噪声等效功率文本层写成 2.2 × 10-15。外形图题写 Dimensional outline (S1337-66BR, S2387-66R, unit: mm)。图号 KSPDA0110EB。图上感光面写 5.8 × 5.8。" +
+          `${guide}第 12 页 S12915-66R 的终端电容写成 4000，感光面积写成 5.8 × 5.8。暗电流 50 印在 S12915-33R 和 S12915-66R 中间。这一页没有写出 S2387-66R。` +
+          placeS2387,
+      ]),
+      page("S2387-1010R", "2022-07", part("S2387-1010R"), [
+        s2387Page +
+          "一级标题写 S2387-1010R。主图 src 写成 k_s1227-1010br_s1337-1010br_s12915-1010r_pp_xx.jpg.thumb.252.252.jpg。正文把型号写成 S2387-1010R。name=\"description\" 和 og:description 句末写 S12915-1010R。产品详情链接写 /jp/en/product/optical-sensors/photodiodes/si-photodiodes/S12915-1010R.html，target 是 _blank。",
+        "产品页没有规格表。索引这一行感光面积写成 10 × 10 mm。封装 Ceramic，封装类别 --。冷却 Non-cooled。光谱范围 340 to 1100 nm。光灵敏度 0.58 A/W。暗电流 200 pA。上升时间 33 μs。终端电容 12000 pF。噪声等效功率 3.1×10<sup>-15</sup> W/Hz<sup>1/2</sup>，× 两边没有空格。",
+        `${indexIntro}这一行是第 54 行，newState 是 false。productName 写 Si photodiode。productExp 与二级标题相同。thumbAlt 写 Si photodiode product photo。缩略图文件名是 k_s1227-1010br_s1337-1010br_s12915-1010r_pp_xx.jpg。typeNameSort 写成 S02387-1010R，1010 前面没有再补零。类型的值和显示都写成 --。感光面积的值写成 10 × 10，显示写成 10 × 10 mm。光谱范围的值写成 340 to 1100，显示才补上 nm。光灵敏度 0.58 A/W。暗电流 200 pA。上升时间的值写成 33，显示写成 33 μs。截止频率是 --。终端电容 12000 pF。噪声等效功率的值写成 3.1×10<sup>-15</sup>，显示补上 W/Hz<sup>1/2</sup>。封装 Ceramic，封装类别 --。冷却 Non-cooled。手册标 523 KB。`,
+        s2387SheetLead +
+          "结构表这一只外形尺寸 15 × 16.5 mm，感光面积 10 × 10 mm，有效感光面积 100 mm2。短路电流最小 68 µA、典型 91 µA。暗电流最大 200 pA。上升时间 33 µs。终端电容 12000 pF。分流电阻最小 0.05 GΩ、典型 5 GΩ。噪声等效功率文本层写成 3.1 × 10-15。外形图题写 Dimensional outline (S1337-1010BR, S2387-1010R, unit: mm)。图号 KSPDA0112EB。图上感光面写 10 × 10。" +
+          `${guide}第 12 页 S12915-1010R 的终端电容写成 13000，感光面积写成 10 × 10。这一页没有写出 S2387-1010R。` +
+          placeS2387,
       ]),
     ],
   },
