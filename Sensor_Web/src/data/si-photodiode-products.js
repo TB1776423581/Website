@@ -102,6 +102,21 @@ const s1787SheetLead =
 const placeS1787 =
   "手册应用写 Exposure meter、Illuminometer、Camera auto exposure、Stroboscope light control、Copier、Display light control 和 Optical switch, etc.。这些句子对不上本站的应用标签，所以不放在应用下面。没有写 TOF。光谱响应是一条灵敏度曲线，不是按波段成像，所以不放在技术下面。";
 
+const s2281Sheet =
+  "https://www.hamamatsu.com/content/dam/hamamatsu-photonics/sites/documents/99_SALES_LIBRARY/ssd/s2281_series_kspd1044e.pdf";
+
+const s2281Page =
+  "产品页没有写发布日期。导语写 Si photodiode。页面标题和 og:title 在型号和竖线之间有一个空格。keywords 写 Si photodiodes，末尾没有空格。二级标题写在 span class=\"Txt__Limit\" 里，是一行：Si photodiode with BNC connector。二级标题下面先是一个只含不换行空格的 p，U+00A0，然后是正文段。特性三条写在同一个 p 里，Features 是粗体，后面是 br。每条另起一行，行首是连字符，后面是一个普通空格：Metal package with BNC connector、High sensitivity、High reliability。产品页没有写应用栏。下载标 399 KB/PDF。面包屑里的 Si photodiodes 末尾没有空格。主图 alt 写 Si photodiode product photo。图注写 Si photodiode 再加型号。";
+
+const s2281Measure =
+  "规格表没有类型，没有截止频率，没有窗材料，也没有上升时间的测量条件。表头 Package category 的 c 是小写。测量条件写成一行：Typ. Ta=25 ℃，℃ 是 U+2103，Photosensitivity: λ=960 nm，Dark current: V<sub>R</sub>=10 mV，Terminal capacitance: V<sub>R</sub>=0 V, f=10 kHz，Noise equivalent power: V<sub>R</sub>=0 V, λ=λp，unless otherwise noted。λ 是 U+03BB。三只产品页的光灵敏度条件都写成 λ=960 nm。";
+
+const s2281SheetLead =
+  `手册 ${s2281Sheet}。文件名是 s2281_series_kspd1044e.pdf。目录号 KSPD1044E06。pdf 信息里的 Title 是 Si photodiodes S2281 series，photodiodes 是复数。封面可见文本先写 Si photodiodes，再写 S2281 series。副题是一行：Si photodiodes with BNC connector。产品页二级标题把 photodiodes 写成 photodiode。正文写 The S2281 series is a Si photodiode sealed in a metal package with a BNC connector. This configuration allows easy connection to Hamamatsu C9329-01 photosensor amplifier (The S2281-01 has a large terminal capacitance which may cause a gain peaking to occur when the C9329-01 is used with the gain set to the “M” range.). Two different spectral response characteristics are provided and the large photosensitive area makes the S2281 series well suited for optical power meters. Hamamatsu also provides the E2573 BNC-BNC coaxial cable (length: 1 m) as an option.。connection 在行末拆开，写成 connec- 再接 tion。characteristics 写成 characteris- 再接 tics。引号是弯引号，“ 是 U+201C，” 是 U+201D。产品页正文把 C9329-01 写成 C9329 的是 name 和 og 的 description，可见正文写的是 C9329-01。特性没有连字符：Metal package with BNC connector、High sensitivity、High reliability。应用写 Analytical instruments 和 Optical measurement equipment。产品页没有应用栏。结构表感光面积尺寸用 ϕ，ϕ 是 U+03D5。窗材料三只都写 Quartz glass。封装写成 Metal package with BNC connector，三只共用，单位栏是横线。绝对最大反向电压 5 V，三只共用。工作温度 -10 to +60 °C，贮存温度 -20 to +70 °C，° 是 U+00B0。注 * 的 N 单独落在星号那一行，下一行 o 前面是 U+0007，接 dew condensation。Note 的 Exceeding 前面是 U+0007。电特性表头写 Electrical and optical characteristics (Ta=25 °C, unless otherwise noted)，没有 Typ.。200 nm 光灵敏度三只都是最小 0.10 A/W、典型 0.12 A/W。λp 光灵敏度 S2281 和 S2281-04 是 0.5 A/W，S2281-01 是 0.36 A/W。短路电流条件 100 lx，单位 µA，µ 是 U+00B5。暗电流条件 VR=10 mV。分流电阻条件 VR=10 mV，单位 MΩ，Ω 是 U+2126。上升时间条件 VR=0 V, RL=1 kΩ，Ω 是 U+03A9，单位 µs。终端电容条件 VR=0 V, f=10 kHz。噪声等效功率条件 VR=0 V, λ=λp，文本层在 × 两边有空格，× 是 U+00D7，指数没有写成上标。产品页 × 两边没有空格，指数写成上标，上升时间用的 μ 是 U+03BC。光谱图号 KSPDB0090EA，条件 (Typ. Ta=25 °C)，曲线标 S2281/-04 和 S2281-01。暗电流对反向电压图号 KSPDB0180EA，曲线也标 S2281/-04 和 S2281-01。终端电容对反向电压图号 KSPDB0181EB，条件 (Typ. Ta=25 °C, f=1 MHz)，频率和电特性表的 10 kHz 不同，曲线标 S2281-01 和 S2281/-04。这三个图号在文本层里各又出现一次。产品页只放了光谱 svg 和外形图。外形图先出现 Dimensional outline (S2281 series, unit: mm)，outline 是单数，后面又写 Dimensional outlines (unit: mm)，outlines 是复数。图号 KSPDA0080EA。图上感光面用 ɸ，ɸ 是 U+0278，S2281 与 S2281-01 写 ɸ11.3，括号写 100 mm2，S2281-04 写 ɸ7.98，括号写 50 mm2。旁边写 Glass window。BNC 注写 BNC : UG-625B/U，Core : Cathode，这两处冒号前面有空格，Case: Anode 的冒号前面没有空格。外形尺寸还写 ɸ25.0 ± 0.1、ɸ17.5 ± 0.1、5.0 ± 0.2、10.0 ± 0.1，以及 ɸ16.0 的公差 +0 和 -0.1，± 是 U+00B1。相关信息里注意事项写 Disclaimer 和 Metal, ceramic, plastic package products，技术笔记写 Si photodiodes，photodiodes 是复数。末页写 Information described in this material is current as of March, 2025，March 后面有逗号。最后一行写 Cat. No. KSPD1044E06 Mar. 2025 DN。末页没有写 Created in Japan，改印销售地址。紫外注意事项两条都以 ∙ 开头，∙ 是 U+2219，第一个字母和后面的字母之间是 U+0007。C9329-01 和 E2573 不是这一索引上的光电二极管型号，没有另开一页。记为约 2025 年 3 月。`;
+
+const placeS2281 =
+  "手册应用写 Analytical instruments 和 Optical measurement equipment。这些句子对不上本站的应用标签，所以不放在应用下面。没有写 TOF。光谱响应是一条灵敏度曲线，不是按波段成像，所以不放在技术下面。";
+
 const s1337Resin =
   "树脂灌封那句写 The resin potting may extend a maximum of 0.1 mm above the upper surface of the package.。";
 
@@ -755,6 +770,59 @@ export const siPhotodiodeProducts = [
           "结构表这一只窗材料 I，infrared-cutting filter。产品页封装类别写成 With filter。λp 光灵敏度 0.35 A/W。GaP LED 560 nm 是 0.3 A/W。He-Ne laser 633 nm 是 0.34 A/W。短路电流 2.3 µA。暗电流最大 20 pA。上升时间 0.5 µs。终端电容 200 pF。分流电阻最小 1 GΩ、典型 10 GΩ。红外灵敏度比的横线和短路电流温度系数 0.1 与 S1787-08 共用中间那一栏。" +
           `${guide}第 14 页把这一只放在 S1787-08 前面。峰值 650、λ=λp 写 0.35、感光面积 2.4 × 2.8 写在 S1787-12 这一行。光谱范围 320 to 1000、暗电流 20 和封装 Plastic 印在 S1787-12 和 S4797-01 中间。光谱图号 KSPDB0279EH，图题方括号写 S1787-12, S4797-01，方括号内侧各有两个 U+2005。图注写 (Typ. Ta=25 ˚C)，˚ 是 U+02DA。手册图号是 KSPDB0124EB。S4797-01 是别的前缀，没有放进这一页。页脚页码写 14 / 46。` +
           placeS1787,
+      ]),
+    ],
+  },
+
+  {
+    id: "s2281",
+    date: "2025-03",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S2281：滨松带 BNC 连接器的 Si 光电二极管",
+    summary:
+      "产品页没有写发布日期。三只共用这一页。手册文件名是 s2281_series_kspd1044e.pdf。pdf 信息里的 Title 是 Si photodiodes S2281 series。末页写 Information described in this material is current as of March, 2025。最后一行写 Cat. No. KSPD1044E06 Mar. 2025 DN，记为约 2025 年 3 月。索引 newState 都是 false，是第 42 行到第 44 行。",
+    applications: [],
+    technologies: [],
+    models: [
+      page("S2281", "2025-03", part("S2281"), [
+        s2281Page +
+          "一级标题写 S2281。主图文件名是 k_s2281_pp_xx.jpg。正文写 The S2281 is a Si photodiode sealed in a metal package with a BNC connector. This configuration allows easy connection to Hamamatsu C9329-01 photosensor amplifier. The large photosensitive area makes the S2281 well suited for optical power meters. Hamamatsu also provides E2573 BNC-BNC coaxial cable (length: 1 m) as an option.。手册写 The S2281 series，并写 the E2573。name=\"description\" 和 og:description 都把放大器写成 C9329，没有 -01，正文句号和 Features 之间没有空格，Features 和连字符之间没有空格，连字符后面有一个空格：Features- Metal package with BNC connector- High sensitivity- High reliability。相关产品轮播按 S2281-01、S2281-04 排，跳过当前型号。",
+        "规格表感光面积 φ11.3 mm，φ 是 U+03C6。封装 Metal。封装类别 --。冷却 Non-cooled。反向电压最大 5 V。光谱范围 190 to 1100 nm。峰值 960 nm。光灵敏度典型 0.5 A/W。暗电流最大 500 pA。上升时间典型 3 μs，μ 是 U+03BC。终端电容典型 1300 pF。噪声等效功率典型 1.8×10<sup>-14</sup> W/Hz<sup>1/2</sup>，× 是 U+00D7，两边没有空格。" +
+          s2281Measure +
+          "光谱图是 svg，data-asset 写成 KSPDB0090EA.svg，三只相同。目录名是 03_15_new_Product_graph_svg。coreimg 文件名写成小写 kspdb0090ea.svg。外形图标题写 Dimensional outline (unit: mm)，outline 是单数。data-asset 写成 KSPDA0080EA.svg。目录名是 03_14_new_Product_Dimensional outline_svg，Dimensional 和 outline 之间有一个空格。coreimg 文件名写成小写 kspda0080ea.svg。" +
+          s1226Docs,
+        `${indexIntro}这一行是第 42 行，newState 是 false。productName 写 Si photodiode。productExp 与二级标题相同。thumbAlt 写 Si photodiode product photo。缩略图文件名是 k_s2281_pp_xx.jpg。typeNameSort 写成 S02281-0000。类型的值和显示都写成 --。感光面积的值写成 φ11.3，显示写成 φ11.3 mm。光谱范围的值写成 190 to 1100，显示才补上 nm。光灵敏度 0.5 A/W。暗电流 500 pA。上升时间的值写成 3，显示写成 3 μs，μ 是 U+03BC。截止频率的值和显示都写成 --。终端电容 1300 pF。噪声等效功率的值写成 1.8×10<sup>-14</sup>，× 是 U+00D7，显示补上 W/Hz<sup>1/2</sup>。封装的值和显示都写成 Metal。封装类别的值和显示都写成 --。冷却的值和显示都写成 Non-cooled。手册标 399 KB。索引地址 ${index}。其余两只放在同一页。`,
+        s2281SheetLead +
+          "结构表这一只感光面积尺寸 ϕ11.3，有效感光面积 100 mm2。λp 是 960 nm。λp 光灵敏度 0.5 A/W。短路电流最小 64 µA、典型 80 µA。暗电流典型 50 pA、最大 500 pA。分流电阻最小 20 MΩ、典型 200 MΩ。上升时间 3 µs。终端电容 1300 pF。噪声等效功率 1.8 × 10<sup>-14</sup> W/Hz<sup>1/2</sup>。" +
+          `${guide}第 8 页标题写 Si photodiodes for precision photometry，小标题写 For UV to near IR range。说明写 They are suitable for low-light-level detection in analysis and the like.。这一只型号后面是 *1 *2。光谱范围 190 to 1100、λ=200 nm 写 0.12、λ=960 nm 写 0.5、暗电流 500、终端电容 1300，印在 S2281 和 S2281-04 中间，没有印手册里的最小 0.10。感光面积写成 ϕ11.3，ϕ 是 U+03D5。封装 With BNC connector 拆成两行。光谱图号 KSPDB0422EB，图题方括号写 S2281 series，方括号内侧各有两个 U+2005。图注写 (Typ. Ta=25 °C)，° 是 U+00B0。曲线标 S2281-01 和 S2281/-04。手册图号是 KSPDB0090EA。同一页上方 S1337-21 的图号是 KSPDB0421EB，是别的前缀，没有放进这一页。注 *1 写 Refer to “Precautions against UV light exposure (P.45).”。注 *2 写 Weak photocurrent can be amplified with low noise by connecting to the photosensor amplifier C9329-01 (using BNC-BNC coaxial cable E2573).。页脚页码写 8 / 46。` +
+          placeS2281,
+      ]),
+      page("S2281-01", "2025-03", part("S2281-01"), [
+        s2281Page +
+          "一级标题写 S2281-01。主图文件名与 S2281 相同，是 k_s2281_pp_xx.jpg。正文写 The S2281-01 is a Si photodiode sealed in a metal package with a BNC connector. This configuration allows easy connection to Hamamatsu C9329-01 photosensor amplifier (S2281-01 has a large terminal capacitance which may cause a gain peaking to occur when C9329-01 is used with the gain set to the \"M\" range.). The large photosensitive area makes the S2281-01 well suited for optical power meters. Hamamatsu also provides E2573 BNC-BNC coaxial cable (length: 1 m) as an option.。括号里的 S2281-01 前面没有 The，放大器写 C9329-01。M 两边是直引号。手册写 The S2281-01，放大器写 the C9329-01，M 两边是弯引号。name=\"description\" 和 og:description 把放大器写成 C9329，没有 -01，括号里也写成 when C9329 is used，M 写成 &#34;。Features 仍接在 option. 后面，没有空格。相关产品轮播按 S2281、S2281-04 排，跳过当前型号。",
+        "规格表感光面积 φ11.3 mm。封装 Metal。封装类别 --。冷却 Non-cooled。反向电压最大 5 V。光谱范围 190 to 1000 nm。峰值 720 nm。光灵敏度典型 0.36 A/W。暗电流最大 300 pA。上升时间典型 7 μs。终端电容典型 3200 pF。噪声等效功率典型 8.6×10<sup>-15</sup> W/Hz<sup>1/2</sup>，× 两边没有空格。" +
+          s2281Measure +
+          "测量条件仍写 Photosensitivity: λ=960 nm，峰值栏是 720 nm。光谱图 data-asset 仍是 KSPDB0090EA.svg。外形图 data-asset 仍是 KSPDA0080EA.svg。" +
+          s1226Docs,
+        `${indexIntro}这一行是第 43 行，newState 是 false。productName 写 Si photodiode。productExp 与二级标题相同。thumbAlt 写 Si photodiode product photo。缩略图文件名是 k_s2281_pp_xx.jpg。typeNameSort 写成 S02281-0001。类型的值和显示都写成 --。感光面积的值写成 φ11.3，显示写成 φ11.3 mm。光谱范围的值写成 190 to 1000，显示才补上 nm。光灵敏度 0.36 A/W。暗电流 300 pA。上升时间的值写成 7，显示写成 7 μs。截止频率是 --。终端电容 3200 pF。噪声等效功率的值写成 8.6×10<sup>-15</sup>，显示补上 W/Hz<sup>1/2</sup>。封装 Metal。封装类别 --。冷却 Non-cooled。手册标 399 KB。`,
+        s2281SheetLead +
+          "结构表这一只感光面积尺寸与 S2281 相同，ϕ11.3，有效感光面积 100 mm2。峰值 720 nm。λp 光灵敏度 0.36 A/W。短路电流最小 32 µA、典型 40 µA。暗电流典型 6 pA、最大 300 pA。分流电阻最小 30 MΩ、典型 1700 MΩ。上升时间 7 µs。终端电容 3200 pF。噪声等效功率 8.6 × 10<sup>-15</sup> W/Hz<sup>1/2</sup>。" +
+          `${guide}第 9 页小标题仍写 For UV to near IR range，类型写 IR sensitivity suppressed type。说明写 These Si photodiodes have suppressed sensitivity in the infrared range and are suitable for low-light-level detection in analysis and the like.。这一行光谱范围 190 to 1000，λ=200 nm 写 0.12，没有印手册里的最小 0.10，λ=720 nm 写 0.36。暗电流 300。终端电容 3200。感光面积 ϕ11.3。型号后面只有一个星号。封装 With BNC 印在型号上一行，connector 印在型号下一行。注写 Refer to “Precautions against UV light exposure (P.45).”。光谱图号 KSPDB0308EA，图题方括号写 S1226-BK, S1227-BR。S2281-01 的曲线标在第 8 页 KSPDB0422EB 上。S1226 和 S1227 是别的前缀，没有放进这一页。页脚页码写 9 / 46。` +
+          placeS2281,
+      ]),
+      page("S2281-04", "2025-03", part("S2281-04"), [
+        s2281Page +
+          "一级标题写 S2281-04。主图文件名是 k_s2281-04_pp_xx.jpg。正文写 The S2281-04 is a Si photodiode sealed in a metal package with a BNC connector. This configuration allows easy connection to Hamamatsu C9329-01 photosensor amplifier. The large photosensitive area makes S2281-04 well suited for optical power meters. Hamamatsu also provides E2573 BNC-BNC coaxial cable (length: 1 m) as an option.。makes 和型号之间没有 the。name=\"description\" 和 og:description 同样没有 the，并把放大器写成 C9329，没有 -01。Features 仍接在 option. 后面，没有空格。相关产品轮播按 S2281、S2281-01 排，跳过当前型号。",
+        "规格表感光面积 φ7.98 mm。封装 Metal。封装类别 --。冷却 Non-cooled。反向电压最大 5 V。光谱范围 190 to 1100 nm。峰值 960 nm。光灵敏度典型 0.5 A/W。暗电流最大 500 pA。上升时间典型 3 μs。终端电容典型 1300 pF。噪声等效功率典型 1.8×10<sup>-14</sup> W/Hz<sup>1/2</sup>，× 两边没有空格。" +
+          s2281Measure +
+          "光谱图 data-asset 仍是 KSPDB0090EA.svg。外形图 data-asset 仍是 KSPDA0080EA.svg。" +
+          s1226Docs,
+        `${indexIntro}这一行是第 44 行，newState 是 false。productName 写 Si photodiode。productExp 与二级标题相同。thumbAlt 写 Si photodiode product photo。缩略图文件名是 k_s2281-04_pp_xx.jpg。typeNameSort 写成 S02281-0004。类型的值和显示都写成 --。感光面积的值写成 φ7.98，显示写成 φ7.98 mm。光谱范围的值写成 190 to 1100，显示才补上 nm。光灵敏度 0.5 A/W。暗电流 500 pA。上升时间的值写成 3，显示写成 3 μs。截止频率是 --。终端电容 1300 pF。噪声等效功率的值写成 1.8×10<sup>-14</sup>，显示补上 W/Hz<sup>1/2</sup>。封装 Metal。封装类别 --。冷却 Non-cooled。手册标 399 KB。`,
+        s2281SheetLead +
+          "结构表这一只感光面积尺寸 ϕ7.98，有效感光面积 50 mm2。峰值 960 nm。λp 光灵敏度 0.5 A/W。短路电流最小 32 µA、典型 40 µA。暗电流典型 50 pA、最大 500 pA。分流电阻最小 20 MΩ、典型 200 MΩ。上升时间 3 µs。终端电容 1300 pF。噪声等效功率 1.8 × 10<sup>-14</sup> W/Hz<sup>1/2</sup>。200 nm 最小 0.10 A/W、典型 0.12 A/W 与另外两只相同。" +
+          `${guide}第 8 页把这一只放在 S2281 下面，型号后面也是 *1 *2。感光面积写成 ϕ7.98。光谱范围、λ=200 nm 的 0.12、λ=960 nm 的 0.5、暗电流 500 和终端电容 1300 与 S2281 印在中间，没有再写一遍。` +
+          placeS2281,
       ]),
     ],
   },
