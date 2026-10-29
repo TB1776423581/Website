@@ -141,6 +141,21 @@ const s2387SheetLead =
 const placeS2387 =
   "手册应用写 Analytical equipment 和 Optical measurement equipment, etc.。这些句子对不上本站的应用标签，所以不放在应用下面。没有写 TOF。光谱响应是一条灵敏度曲线，不是按波段成像，所以不放在技术下面。";
 
+const s2506Sheet =
+  "https://www.hamamatsu.com/content/dam/hamamatsu-photonics/sites/documents/99_SALES_LIBRARY/ssd/s2506-02_etc_kpin1048e.pdf";
+
+const s2506Page =
+  "产品页没有写发布日期。导语写 Si PIN photodiode。页面标题和 og:title 在型号和竖线之间有一个空格。keywords 写 Si photodiodes，末尾没有空格。型号区 class 含 Type--Migration。二级标题写在 span class=\"Txt__Limit\" 里，是一行：Plastic SIP (single in-line package)。二级标题下面先是一个只含不换行空格的 p，U+00A0。产品页没有写应用栏。下载标 659 KB/PDF。面包屑里的 Si photodiodes 末尾没有空格。";
+
+const s2506Measure =
+  "规格表没有类型，没有窗材料，也没有上升时间。表头 Package category 的 c 是小写。测量条件写成一行：Ta=25 ℃，℃ 是 U+2103，Typ.，Photosensitivity: λ=780 nm，Dark current: V<sub>R</sub>=12 V，Cutoff frequency: V<sub>R</sub>=12 V，Terminal capacitance: V<sub>R</sub>=12 V, f=1 MHz，Noise equivalent power: V<sub>R</sub>=12 V，unless otherwise noted。λ 是 U+03BB。";
+
+const s2506SheetLead =
+  `手册 ${s2506Sheet}。文件名是 s2506-02_etc_kpin1048e.pdf。目录号 KPIN1048E12。pdf 信息里的 Title 是 Si PIN photodiodes S2506/S6775/S6967 series。封面可见文本先写 S2506/S6775/S6967 series，再写 Si PIN photodiodes。副题是一行：Plastic SIP (single in-line package)。正文写 S2506/S6775 series and S6967 are Si PIN photodiodes with large active areas, molded into a clear or visible-cut plastic SIP for detecting visible to near infrared range or near infrared range only. These Si PIN photodiodes feature a high sensitivity, a high-speed response and large active areas.。high- 在行末拆开，下一行写 speed。特性行首是 U+0007。S2506-02 写 visible to near infrared range。S2506-04 写 visible-cut。S6775, S6967 写 visible to near infrared range, high sensitivity，下一行写 high-speed response, large active area。S6775-01, S6967-01 写 visible-cut, high sensitivity，下一行写 high-speed response, large active area。Plastic package: 7 × 7.8 mm 这一行行首也是 U+0007，× 是 U+00D7。Photosensitive area size 这一行行首也是 U+0007，下面写 S2506 series: 2.77 × 2.77 mm 和 S6775/S6967 series: 5.5 × 4.8 mm。应用写 FSO (free space optics)、Optical switches 和 Laser radar, etc.。产品页没有应用栏。绝对最大额定值里，封装 Plastic、反向电压 20 V、工作温度 -25 to +85 °C、贮存温度 -40 to +100 °C 印在六只中间，° 是 U+00B0。功耗 150 mW、感光面积 2.77 × 2.77 mm 和有效感光面积 7.7 mm2 印在 S2506-02 和 S2506-04 中间。S6775 和 S6967 那一组另有面积和功耗，是别的前缀，没有放进这一页。Note 写成 Note:，冒号后面是一个普通空格，然后是 U+0007，下一行写 Exceeding。电特性表头写 Electrical and optical characteristics (Typ. Ta=25 °C, unless otherwise noted)。峰值 960 nm、λp 光灵敏度 0.56 A/W、暗电流典型 0.1 nA、最大 10 nA、截止频率 25 MHz、终端电容 15 pF、噪声等效功率 1.0 × 10-14，这几项印在 S2506-02 和 S2506-04 中间，并标 *1。暗电流温度系数 1.15 times/°C 印在六只中间。表头 λ 是 U+03BB。短路电流单位 µA 的 µ 是 U+00B5。截止频率表头写 RL=50 Ω，Ω 是 U+2126，并写 -3 dB。终端电容条件 f=1 MHz。*1 写 VR=12 V。噪声等效功率文本层在 × 两边有空格，× 是 U+00D7，指数没有写成上标。产品页 × 两边没有空格，指数写成上标。光谱图号 KPINB0348EB，条件 (Typ. Ta=25 °C)，曲线标 S2506-04 和 S2506-02，并写 QE=100 %，百分号前面有空格。光灵敏度温度特性图号 KPINB0063ED，条件 (Typ.)，曲线标 S2506-02 和 S2506-04。指向性图号 KPINB0065EB，条件 (Typ. Ta=25 °C)。暗电流对反向电压图号 KPINB0168EG，条件 (Typ. Ta=25 °C)，曲线标 S2506-02/-04、S6775/-01 和 S6967/-01。暗电流对温度图号 KPINB0169EE，条件 (Typ.)，S2506-02/-04 标 VR=12 V，另外两条标 VR=10 V。终端电容对反向电压图号 KPINB0170EF，条件 (Typ. Ta=25 °C, f=1 MHz)，曲线同样标这三组。产品页只放了光谱 jpg 和外形图。外形图题写 Dimensional outline (unit: mm)，outline 是单数。图号 KPINA0084EF，与产品页资源名相同。图上 S2506 series 的 B 写成 2.77 × 2.77，A 写成 2.8 ± 0.2。ϕ5.0 的 ϕ 是 U+03D5。Center of 和 Photosensitive area 分成两行。公差写 Tolerance unless otherwise noted: ±0.1。包装写 Packing: Polyethylene pack [anti-static type]。括号里的数写 Values in parentheses indicate reference values.。焊接条件写 Solder temperature 260 °C max. (once, 10 s or less)，备注写 at least 2 mm away from lead roots。焊接 Note 的 When 前面是 U+0007，并把 product 写成 prouct。相关信息网址写 www.hamamatsu.com/sp/ssd/doc_en.html。注意事项写 ∙Notice 和 ∙Metal, ceramic, plastic package products，∙ 是 U+2219。技术笔记写 ∙Si photodiodes。末页写 Information described in this material is current as of May 2024。最后一行写 Cat. No. KPIN1048E12，后面是两个空格，再写 May 2024 DN。末页没有写 Created in Japan，改印销售地址。记为约 2024 年 5 月。`;
+
+const placeS2506 =
+  "手册应用写 FSO (free space optics)、Optical switches 和 Laser radar, etc.。这些句子对不上本站的应用标签，所以不放在应用下面。没有写 TOF。光谱响应是一条灵敏度曲线，不是按波段成像，所以不放在技术下面。";
+
 const s1337Resin =
   "树脂灌封那句写 The resin potting may extend a maximum of 0.1 mm above the upper surface of the package.。";
 
@@ -993,6 +1008,46 @@ export const siPhotodiodeProducts = [
           "结构表这一只外形尺寸 15 × 16.5 mm，感光面积 10 × 10 mm，有效感光面积 100 mm2。短路电流最小 68 µA、典型 91 µA。暗电流最大 200 pA。上升时间 33 µs。终端电容 12000 pF。分流电阻最小 0.05 GΩ、典型 5 GΩ。噪声等效功率文本层写成 3.1 × 10-15。外形图题写 Dimensional outline (S1337-1010BR, S2387-1010R, unit: mm)。图号 KSPDA0112EB。图上感光面写 10 × 10。" +
           `${guide}第 12 页 S12915-1010R 的终端电容写成 13000，感光面积写成 10 × 10。这一页没有写出 S2387-1010R。` +
           placeS2387,
+      ]),
+    ],
+  },
+
+  {
+    id: "s2506",
+    date: "2024-05",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S2506：滨松塑料单列直插封装 Si PIN 光电二极管",
+    summary:
+      "产品页没有写发布日期。两只共用这一页。手册文件名是 s2506-02_etc_kpin1048e.pdf。pdf 信息里的 Title 是 Si PIN photodiodes S2506/S6775/S6967 series。末页写 Information described in this material is current as of May 2024。最后一行写 Cat. No. KPIN1048E12，后面是两个空格，再写 May 2024 DN，记为约 2024 年 5 月。索引 newState 都是 false，是第 55 行和第 56 行。",
+    applications: [],
+    technologies: [],
+    models: [
+      page("S2506-02", "2024-05", part("S2506-02"), [
+        s2506Page +
+          "一级标题写 S2506-02。主图 src 写成 k_s2506-02_pp_xx.jpg.thumb.252.252.jpg。alt 写 s2506-02 product photo。正文写 S2506-02 is a Si PIN photodiode with large active areas, molded into a clear plastic SIP for detecting visible to near infrared range.。手册写 are，并写 clear or visible-cut。name=\"description\" 和 og:description 都把 range. 和 Features 接在一起，中间没有空格，Features 和连字符之间没有空格，连字符后面是一个空格：Features- Visible to near infrared range- Plastic package: 7 × 7.8 mm- Photosensitive area size: 2.77 × 2.77 mm。可见特性写在同一个 p 里，Features 是粗体，后面是 br。每条另起一行，行首是连字符，后面是一个普通空格：Visible to near infrared range、Plastic package: 7 × 7.8 mm、Photosensitive area size: 2.77 × 2.77 mm。相关产品轮播只列 S2506-04，图注写 Si PIN photodiode S2506-04，alt 写 Si photodiode product photo，文件名是 k_s2506-04_pp_xx.jpg。",
+        "规格表感光面积 2.77 × 2.77 mm，× 是 U+00D7，两边有空格。封装 Plastic。封装类别 --。冷却 Non-cooled。反向电压最大 20 V。光谱范围 320 to 1100 nm。峰值 960 nm。光灵敏度典型 0.48 A/W。暗电流最大 10000 pA。截止频率典型 25 MHz。终端电容典型 15 pF。噪声等效功率典型 1.0×10<sup>-14</sup> W/Hz<sup>1/2</sup>，× 两边没有空格，× 是 U+00D7。" +
+          s2506Measure +
+          "光谱图是 jpg，data-asset 写成 k_s2506-02_sr_xx,0.jpg，逗号在文件名里。目录名是 03_02_Characteristic Chart，Chart 前面有一个空格。coreimg 文件名写成小写 k-s2506-02-sr-xx%2C0.jpeg，下划线换成连字符。外形图标题写 Dimensional outline (unit: mm)，outline 是单数。data-asset 写成 KPINA0084EF.svg。目录名是 03_14_new_Product_Dimensional outline_svg，Dimensional 和 outline 之间有一个空格。coreimg 文件名写成小写 kpina0084ef.svg。" +
+          s1226Docs,
+        `${indexIntro}这一行是第 55 行，newState 是 false。productName 写 Si PIN photodiode。productExp 与二级标题相同。thumbAlt 写 s2506-02 product photo。缩略图文件名是 k_s2506-02_pp_xx.jpg。typeNameSort 写成 S02506-0002。类型的值和显示都写成 --。感光面积的值写成 2.77 × 2.77，显示写成 2.77 × 2.77 mm。光谱范围的值写成 320 to 1100，显示才补上 nm。光灵敏度 0.48 A/W。暗电流 10000 pA。上升时间的值和显示都写成 --。截止频率的值写成 25，显示写成 25 MHz。终端电容 15 pF。噪声等效功率的值写成 1.0×10<sup>-14</sup>，× 是 U+00D7，显示补上 W/Hz<sup>1/2</sup>。封装 Plastic，封装类别 --。冷却 Non-cooled。手册标 659 KB。索引地址 ${index}。另一只放在同一页。`,
+        s2506SheetLead +
+          "结构表这一只光谱范围 320 to 1100。660 nm 光灵敏度 0.4 A/W、780 nm 的 0.48 A/W、830 nm 的 0.5 A/W 写在这一行。短路电流 7.3 µA 写在这一行。峰值、λp 光灵敏度、暗电流、截止频率、终端电容和噪声等效功率与 S2506-04 共用中间那一栏。产品页光灵敏度 0.48 A/W 对得上 780 nm 这一列，测量条件也写 λ=780 nm。手册 λp 是 0.56 A/W。产品页暗电流只写最大 10000 pA，手册最大是 10 nA，典型是 0.1 nA。" +
+          `${guide}第 17 页标题写 High-speed response Si PIN photodiodes。小标题写 Cutoff frequency，下一行写 10 MHz to less than 100 MHz。说明写 A wide variety of types are provided including a low-cost plastic package type and a visible-cut type.。这一行 λ=660 nm 写 0.4，λ=780 nm 写 0.48。截止频率 25、终端电容 15 和感光面积 2.77 × 2.77 印在 S2506-02 和 S2506-04 中间，截止频率和终端电容都标 (VR=12 V)。这一行没有再写封装。页脚页码写 17 / 46。光谱图号 KPINB0354EC，图题方括号写 S4707-01, S2506 series，方括号内侧各有两个 U+2005。图注写 (Typ. Ta=25 ˚C)，˚ 是 U+02DA。曲线标 S2506-02、S2506-04 和 S4707-01。QE=100%，百分号前面没有空格。手册图号是 KPINB0348EB。同一页还有 S6775、S6967、S8385、S8729 和 S4707-01，是别的前缀，没有放进这一页。` +
+          placeS2506,
+      ]),
+      page("S2506-04", "2024-05", part("S2506-04"), [
+        s2506Page +
+          "一级标题写 S2506-04。主图 src 写成 k_s2506-04_pp_xx.jpg.thumb.252.252.jpg。alt 写 Si photodiode product photo。正文写 S2506-04 is a Si PIN photodiode with large active areas, molded into a visible-cut plastic SIP for detecting near infrared range only.。手册把 visible-cut 和 clear 写在同一句。name=\"description\" 和 og:description 都把 only. 和 Features 接在一起，中间没有空格：Features- Visible-cut- Plastic package: 7 × 7.8 mm- Photosensitive area size: 2.77 × 2.77 mm。可见特性第一条写 Visible-cut。相关产品轮播只列 S2506-02，图注写 Si PIN photodiode S2506-02，alt 写 s2506-02 product photo，文件名是 k_s2506-02_pp_xx.jpg。",
+        "规格表感光面积 2.77 × 2.77 mm。封装 Plastic。封装类别 --。冷却 Non-cooled。反向电压最大 20 V。光谱范围 760 to 1100 nm。峰值 960 nm。光灵敏度典型 0.56 A/W。暗电流最大 10000 pA。截止频率典型 25 MHz。终端电容典型 15 pF。噪声等效功率典型 1.0×10<sup>-14</sup> W/Hz<sup>1/2</sup>，× 两边没有空格。" +
+          s2506Measure +
+          "测量条件仍写 Photosensitivity: λ=780 nm。光谱图 data-asset 仍是 k_s2506-02_sr_xx,0.jpg，文件名写的是 S2506-02。外形图 data-asset 仍是 KPINA0084EF.svg。" +
+          s1226Docs,
+        `${indexIntro}这一行是第 56 行，newState 是 false。productName 写 Si PIN photodiode。productExp 与二级标题相同。thumbAlt 写 Si photodiode product photo。缩略图文件名是 k_s2506-04_pp_xx.jpg。typeNameSort 写成 S02506-0004。类型的值和显示都写成 --。感光面积的值写成 2.77 × 2.77，显示写成 2.77 × 2.77 mm。光谱范围的值写成 760 to 1100，显示才补上 nm。光灵敏度 0.56 A/W。暗电流 10000 pA。上升时间是 --。截止频率的值写成 25，显示写成 25 MHz。终端电容 15 pF。噪声等效功率的值写成 1.0×10<sup>-14</sup>，显示补上 W/Hz<sup>1/2</sup>。封装 Plastic，封装类别 --。冷却 Non-cooled。手册标 659 KB。`,
+        s2506SheetLead +
+          "结构表这一只光谱范围 760 to 1100。660 nm 和 780 nm 是横线。830 nm 光灵敏度 0.25 A/W 写在这一行。短路电流 4.1 µA 写在这一行。产品页光灵敏度写成 0.56 A/W，对得上印在两行中间的 λp，测量条件仍写 λ=780 nm，这一列在手册里是横线。产品页峰值写成 960 nm，手册也印在两行中间。" +
+          `${guide}第 17 页这一行写 0.25 (λ=830 nm) 和 0.56 (λ=λp)。封装写成 Plastic，下一行写 (visible-cut type)。截止频率、终端电容和感光面积与 S2506-02 印在中间，没有再写一遍。` +
+          placeS2506,
       ]),
     ],
   },
