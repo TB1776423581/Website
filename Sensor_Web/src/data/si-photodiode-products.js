@@ -267,6 +267,15 @@ const s1227Measure =
 const s1227SheetLead =
   `手册 ${s1227Sheet}。文件名是 s1227_series_kspd1036e.pdf。目录号 KSPD1036E07。pdf 信息里的 Title 是空的。封面可见文本先写 Si photodiodes，再写 S1227 series。副题分成两行，产品页把它合成一行，中间是分号。正文写 These Si photodiodes have suppressed IR sensitivity. They are suitable for low-light-level detection in analysis and the like.。特性没有连字符：High UV sensitivity (quartz window type): QE 75 % (l=200 nm)、Suppressed IR sensitivity、Low dark current。文本层把 λ 写成拉丁字母 l，等号是 ASCII。产品页石英窗型号写成 QE＝75 % (λ=200 nm)，＝ 是 U+FF1D。应用写 Analytical equipment 和 Optical measurement equipment, etc.。产品页没有应用栏。绝对最大反向电压 5 V，八只共用。功耗栏没有。工作温度 -20 to +60 °C，贮存温度 -20 to +80 °C，° 是 U+00B0，八只共用。注 * 只标在石英窗四只后面，写 Refer to “Precautions against UV light exposure.”，引号是弯引号。Note 的 Exceeding 前面是 U+0007。电特性表头写 Electrical and optical characteristics (Typ. Ta=25 °C, unless otherwise noted)。峰值 720 nm，八只共用。λp 光灵敏度石英窗是 0.36 A/W，树脂灌封是 0.43 A/W。200 nm 这一列石英窗最小 0.10 A/W、典型 0.12 A/W，树脂灌封是横线。He-Ne 633 nm 石英窗是 0.34 A/W，树脂灌封是 0.39 A/W。暗电流条件 VR=10 mV，表里没有典型值。暗电流温度系数 1.12 times/°C，八只共用。上升时间条件 VR=0 V, RL=1 kΩ，Ω 是 U+2126。表头单位写成 µs，µ 是 U+00B5。产品页上升时间用的 μ 是 U+03BC，测量条件没有写上升时间。终端电容条件 VR=0 V, f=10 kHz。分流电阻条件 VR=10 mV，单位 GΩ。短路电流条件 100 lx。噪声等效功率文本层在 × 两边有空格，-15 没有写成上标。产品页 × 两边没有空格，-15 写成上标。光谱图号 KSPDB0094EC 给 BQ，KSPDB0307EA 给 BR，条件都写 (Typ. Ta=25 °C)。温度特性图号 KSPDB0030EB，条件 (Typ. )，Typ 和右括号之间有空格。暗电流对反向电压图号 KSPDB0096EB，条件 (Typ. Ta=25 °C)，曲线标 S1227-16BQ/BR、S1227-33BQ/BR、S1227-66BQ/BR 和 S1227-1010BQ/BR。产品页只放了光谱 jpeg 和外形图。第 3 页外形图题写 Dimensional outlines (unit: mm)，outlines 是复数。第 4 页文本层没有这句图题。末页写 Information described in this material is current as of October, 2015，October 后面有逗号。最后一行写 Cat. No. KSPD1036E07  Oct. 2015 DN，Oct 前面有两个空格。末页没有写 Created in Japan，改印销售地址。紫外注意事项两条都以 ∙ 开头，后面是空格再加 U+0007。记为约 2015 年 10 月。`;
 
+const s3399Page =
+  "产品页没有写发布日期。导语写 Si PIN photodiode。页面标题和 og:title 在型号和竖线之间有一个空格。keywords 写 Si photodiodes，末尾没有空格。型号区 class 含 Type--Migration。二级标题写在 span class=\"Txt__Limit\" 里，是一行：Large area, high-speed Si PIN photodiode。二级标题下面先是一个只含不换行空格的 p，U+00A0，然后是正文段。特性三条写在同一个 p 里，Features 是粗体，前面是 br，后面也是 br。每条另起一行，行首是连字符，后面是一个普通空格。产品页没有写应用栏。下载标 597 KB/PDF。面包屑里的 Si photodiodes 末尾没有空格。主图没有图注。";
+
+const s3399Measure =
+  "规格表没有类型，没有窗材料，也没有上升时间。表头 Package category 的 c 是小写。测量条件写成一行：Ta=25 ℃，℃ 是 U+2103，Typ.，Photosensitivity: λ=780 nm，Dark current: V<sub>R</sub>=10 V，Cutoff frequency: V<sub>R</sub>=10 V，Terminal capacitance: V<sub>R</sub>=10 V, f=1 MHz，Noise equivalent power: V<sub>R</sub>=10 V, λ=λp，unless otherwise noted。λ 是 U+03BB。终端电容那一截在 f=1 MHz 后面是逗号，接着写 Noise equivalent power，没有再写 λ=λp。λ=λp 只写在噪声等效功率后面。";
+
+const s3399SheetLead =
+  `手册 ${s3071Sheet}。文件名是 s3071_etc_kpin1044e.pdf。目录号 KPIN1044E08。pdf 信息里的 Title 是空的。封面可见文本先写 Si PIN photodiodes，再写 S3071、S3072、S3399、S3883。副题是一行：Large area, high-speed Si PIN photodiodes，photodiodes 是复数。产品页把 photodiodes 写成 photodiode。正文写 The S3071, S3072, S3399 and S3883 are Si PIN photodiodes having a relatively large photosensitive area from ϕ1.5 to ϕ5.0 mm yet they offer excellent frequency response from 40 to 300 MHz. These photodiodes are suitable for FSO (free space optics) and high-speed pulsed light detection.。ϕ 是 U+03D5。FSO 和左括号之间有一个空格。产品页正文把 are 写成 is，把 they 写成 it，并写成 This photodiode，频率只写 100 MHz，FSO 和左括号之间没有空格。特性没有连字符：Photosensitive area size 下面写 S3399: ϕ3.0 mm。Cutoff frequency 下面写 S3399: 100 MHz (VR=10 V)。High reliability: TO-5/8 metal package。应用写 FSO 和 High-speed pulsed light detection。产品页没有应用栏。结构表 S3399 这一行写 (3)/K、TO-5、ϕ3.0、有效感光面积 7.0 mm2。反向电压 30 V 印在 S3399 和 S3883 中间。功耗 50 mW、工作温度 -40 to +100 °C、贮存温度 -55 to +125 °C 印在 S3072 和 S3399 中间，位置在四只的中部，° 是 U+00B0。S3071 和 S3072 已经单独成页。S3883 是别的前缀，索引是第 76 行，没有放进这一页。注 *1 写 Window material K=borosilicate glass，borosilicate 的 b 是小写。注 *2 写成 *2:，下一行 No 前面是 U+0007，接 condensation。Note 写成 Note:，下一行 Exceeding 前面是 U+0007。电特性表头写 Electrical and optical characteristics (Typ. Ta=25 °C, unless otherwise noted)。光谱范围 320 to 1000、峰值 840 nm、λp 光灵敏度 0.6 A/W、660 nm 的 0.45 A/W、780 nm 的 0.58 A/W、830 nm 的 0.6 A/W、暗电流温度系数 1.12 times/°C，印在 S3399 和 S3883 中间。表头 λ 是 U+03BB。短路电流单位 µA 的 µ 是 U+00B5。截止频率表头写 RL=50 Ω，Ω 是 U+2126。终端电容表头写 f=1 MHz。噪声等效功率条件 λ=λp。*4 写 VR=10 V，R 落在下一行。S3399 这一行短路电流 5.6 µA，暗电流典型 0.1 nA、最大 1.0 nA，截止频率 100 MHz，终端电容 20 pF，噪声等效功率 9.4 × 10-15，这些数都标 *4。噪声等效功率文本层在 × 两边有空格，× 是 U+00D7，指数没有写成上标。产品页 × 两边没有空格，指数写成上标。光谱图号 KPINB0147EB，条件 (Typ. Ta=25 °C)，曲线标 S3399, S3883 和 S3071, S3072。光灵敏度温度特性图号 KPINB0148EB。暗电流对反向电压图号 KPINB0149EA。终端电容对反向电压图号 KPINB0150EA，条件 (Typ. Ta=25 °C, f=1 MHz)。这四个图号在文本层里各又出现一次。产品页只放了光谱 jpg 和外形图。第 4 页外形文本层从 ensional outline (unit: mm) 写起，前面的 D 没有进文本层。另一行写 (S3883, mm)，前面一串是乱码。图题写 (3) S3399 和 (4) S3883。S3399 图号 KPINA0026ED，文本层又出现一次。图上 ɸ 是 U+0278，感光面写 ɸ3.0。窗玻璃那句写 The glass window may extend a maximum of 0.15 mm above the upper surface of the cap.。感光面中心到管帽中心写 -0.3≤X≤+0.3 和 -0.3≤Y≤+0.3。S3883 图号 KPINA0025ED，没有放进这一页。相关信息网址写 www.hamamatsu.com/sp/ssd/doc_en.html。注意事项写 ∙ Disclaimer 和 ∙ Metal, ceramic, plastic package products，∙ 是 U+2219。Catalog 下面写 ∙ Technical note / Si photodiodes。末页写 Information described in this material is current as of April, 2025，April 后面有逗号。最后一行写 Cat. No. KPIN1044E08 Apr. 2025 DN。末页没有写 Created in Japan，改印销售地址，地址写 Chuo-ku。记为约 2025 年 4 月。`;
+
 export const siPhotodiodeProducts = [
   {
     id: "s15152",
@@ -1337,6 +1346,33 @@ export const siPhotodiodeProducts = [
           "产品页封装类别写成 Unsealed，对得上手册窗材料。选型指南这一行窗材料写成 None。产品页感光面积仍写成 18 × 18 mm。手册暗电流最大 20 nA 印在两只中间。产品页只写最大 20000 pA。产品页光谱图文件名对得上没有窗的那张，图号 KPINB0264ED。" +
           `${guide}第 32 页这一行窗材料写 None。感光面积、暗电流和终端电容与 S3204-08 印在中间，没有再写一遍。耗尽层、光谱范围、光灵敏度和封装仍落在 S3204-09 和 S3584-08 中间。` +
           placeS3204,
+      ]),
+    ],
+  },
+
+  {
+    id: "s3399",
+    date: "2025-04",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S3399：滨松大面积高速 Si PIN 光电二极管",
+    summary:
+      "产品页没有写发布日期。手册文件名是 s3071_etc_kpin1044e.pdf。pdf 信息里的 Title 是空的。末页写 Information described in this material is current as of April, 2025。最后一行写 Cat. No. KPIN1044E08 Apr. 2025 DN，记为约 2025 年 4 月。索引 newState 是 false，是第 67 行。",
+    applications: [],
+    technologies: [],
+    models: [
+      page("S3399", "2025-04", part("S3399"), [
+        s3399Page +
+          "一级标题写 S3399。主图 src 写成 k_s3072_s3399_pp_xx.jpg.thumb.252.252.jpg。alt 写 Si photodiode product photo。正文写 The S3399 is a Si PIN photodiode having a relatively large photosensitive area yet it offers excellent frequency response at 100 MHz. This photodiode is suitable for FSO(free space optics) and high-speed pulsed light detection.。is 和 a 之间是一个空格。FSO 和左括号之间没有空格。name=\"description\" 和 og:description 都在 is 和 a 之间写成两个空格，并把 detection. 和 Features 接上，中间没有空格。Features 和连字符之间没有空格，连字符后面也没有空格：Features-Photosensitive area size: φ3.0 mm-Cutoff frequency: 100 MHz (VR=10 V)-High reliability: TO-5 metal package。可见特性三条是 Photosensitive area size: φ3.0 mm、Cutoff frequency: 100 MHz (V<sub>R</sub>=10 V)、High reliability: TO-5 metal package。φ 是 U+03C6。截止频率这一条的 R 写成下标。相关产品轮播只列 C8366。链接是 /us/en/product/optical-sensors/photodiodes/photosensor-amplifier/C8366.html，没有 target。alt 写 C8366, -01 product photo，图注写 Photosensor amplifier C8366，文件名是 k_c8366_pp_xx.jpg。C8366 不在这一索引上，没有另开一页。",
+        "规格表感光面积 φ3.0 mm，φ 是 U+03C6。封装 Metal。封装类别 TO-5。冷却 Non-cooled。反向电压最大 30 V。光谱范围 320 to 1000 nm。峰值 840 nm。光灵敏度典型 0.58 A/W。暗电流最大 1000 pA。截止频率典型 100 MHz。终端电容典型 20 pF。噪声等效功率典型 9.4×10<sup>-15</sup> W/Hz<sup>1/2</sup>，× 两边没有空格，× 是 U+00D7。" +
+          s3399Measure +
+          "光谱图是 jpg，data-asset 写成 k_s3071_sr_xx,0.jpg，文件名写的是 S3071，逗号在文件名里。目录名是 03_02_Characteristic Chart，Chart 前面有一个空格。coreimg 文件名写成小写 k-s3071-sr-xx%2C0.jpeg，下划线换成连字符，时间戳 1635494118440。外形图标题写 Dimensional outline (unit: mm)，outline 是单数。data-asset 写成 KPINA0026.svg，没有 ED。目录名是 03_14_new_Product_Dimensional outline_svg，Dimensional 和 outline 之间有一个空格。coreimg 文件名写成小写 kpina0026.svg，时间戳 1743569407010。" +
+          s1226Docs,
+        `${indexIntro}这一行是第 67 行，newState 是 false。productName 写 Si PIN photodiode。productExp 写 Large photosensitive area, high-speed Si PIN photodiode。产品页二级标题没有 photosensitive，也没有这个逗号。thumbAlt 写 Si photodiode product photo。缩略图文件名是 k_s3072_s3399_pp_xx.jpg。typeNameSort 写成 S03399。类型的值和显示都写成 --。感光面积的值写成 φ3.0，显示写成 φ3.0 mm。光谱范围的值写成 320 to 1000，显示才补上 nm。光灵敏度 0.58 A/W。暗电流 1000 pA。上升时间的值和显示都写成 --。截止频率的值写成 100，显示写成 100 MHz。终端电容 20 pF。噪声等效功率的值写成 9.4×10<sup>-15</sup>，× 是 U+00D7，显示补上 W/Hz<sup>1/2</sup>。封装 Metal，封装类别 TO-5。冷却 Non-cooled。手册标 597 KB。索引地址 ${index}。下一行是第 68 行，S3584-08。S3584-09 是第 69 行，共用 s3204-08_etc_kpin1051e.pdf，是别的前缀。`,
+        s3399SheetLead +
+          "产品页光灵敏度写成 0.58 A/W，测量条件写 λ=780 nm，对得上印在 S3399 和 S3883 中间的 780 nm 这一列。手册 λp 是 0.6 A/W。产品页峰值写成 840 nm，光谱范围写成 320 to 1000 nm，对得上印在这两只中间的数。产品页暗电流只写最大 1000 pA，对得上这一行最大 1.0 nA，没有写典型 0.1 nA。产品页截止频率 100 MHz、终端电容 20 pF 对得上这一行，条件是 *4，VR=10 V。产品页反向电压最大 30 V，对得上印在 S3399 和 S3883 中间的 30 V。产品页封装类别写成 TO-5，对得上手册这一行。" +
+          `${guide}第 16 页标题写 High-speed response Si PIN photodiodes。小标题写 100 MHz to less than 1 GHz。说明写 These Si PIN photodiodes have a large photosensitive area (ϕ0.79 to ϕ3 mm) yet deliver excellent frequency response characteristics.。S3399 这一行感光面积 ϕ3，没有 .0。终端电容 20，条件 (VR=10 V)，R 落在下一行。截止频率的数字 100 印在 S5971 和 S3399 中间，更靠近 S5971。它的条件 (VR=10 V) 也印在这两行中间，更靠近 S3399。λ=660 nm 的 0.45、λ=780 nm 的 0.58 和封装 TO-5 印在 S3399 和 S3883 中间。这一页没有暗电流栏，也没有峰值栏。页脚页码写 16 / 46。表头条件写成 (Typ. Ta=25 °C)，° 是 U+00B0。图题方括号写 S5971, S5972, S3399, S3883, S13337-01，方括号内侧各有两个 U+2005。曲线标 S3399, S3883。图号 KPINB0316EE。图注写 QE=100%，百分号前面没有空格。手册图号是 KPINB0147EB。同一页还有 S5971、S5972、S3883、S10783、S10784、S11062-35GT 和 S13337-01，是别的前缀，没有放进这一页。` +
+          placeS3071,
       ]),
     ],
   },
