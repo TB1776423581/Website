@@ -243,6 +243,12 @@ const s3584Measure =
 const s3584SheetLead =
   `手册 ${s3204Sheet}。文件名是 s3204-08_etc_kpin1051e.pdf。目录号 KPIN1051E10。pdf 信息里的 Title 是 s3204_etc_kpin1051e10.indd。封面可见文本先写 Si PIN photodiode，photodiode 是单数，再写 S3204/S3584 series。副题是一行：Large active area Si PIN photodiodes。产品页二级标题把 active 写成 photosensitive。封面没有正文段。特性没有连字符：Sensitivity matching with BGO and CsI (TI) scintillators、High quantum efficiency (Unsealed type): QE=85 % (λ=540 nm)、Low capacitance、High-speed response、High stability、Good energy resolution。CsI 和 (TI) 之间有空格。百分号前面有空格。文本层把 efficiency 拆成 effi 和 ciency。产品页把 CsI(TI) 写成没有空格，并且没有写量子效率这一条。应用写 Scintillation detectors、Hodoscopes 和 TOF counters。产品页没有应用栏。结构表窗材料 S3584-08 写 Epoxy resin，S3584-09 写 Unsealed。感光面积 28 × 28 印在这两只中间。耗尽层厚度 0.3 mm、反向电压 100 V、功耗 100 mW、工作温度 -20 to +60 °C、贮存温度 -20 to +80 °C，印在 S3204-09 和 S3584-08 中间，四只共用，° 是 U+00B0。反向电压表头写成 V R max，V 和 R 是分开的词。S3204-08 和 S3204-09 已经单独成页。Note 写成 Note:，冒号后面是一个普通空格，没有 U+0007。电特性表头写 Electrical and optical characteristics (Typ. Ta=25 °C, unless otherwise noted)。光谱范围 340 to 1100、峰值 960 nm、λp 光灵敏度 0.66 A/W、暗电流温度系数 1.12 times/°C，印在 S3204-09 和 S3584-08 中间。表头 λ 是 U+03BB。短路电流单位 μA 的 μ 是 U+03BC。表头把 coefficient 拆成 coeffi 和 cient。LSO 420 nm、BGO 480 nm、CsI(TI) 540 nm 写在各自那一行，表头 CsI(TI) 没有空格。S3584-08 写 0.20 A/W、0.30 A/W、0.36 A/W，短路电流 780 μA。S3584-09 写 0.22 A/W、0.33 A/W、0.41 A/W，短路电流 730 μA。暗电流典型 10 nA、最大 30 nA、截止频率 10 MHz、终端电容 300 pF、噪声等效功率 8.6 × 10 -14，印在 S3584-08 和 S3584-09 中间。截止频率表头写成 Cut-off Frequency。终端电容条件 f=1MHz，1 和 M 之间没有空格。噪声等效功率文本层把 8.6、×、10、-14 拆开，× 是 U+00D7，指数没有写成上标，10 和 -14 之间有空格。产品页 × 两边没有空格，指数写成上标，f 和 1 之间有空格。光谱图一边图号 KPINB0227ED，条件 (Typ. Ta=25 °C)，曲线标 S3204/S3584-08。另一边图号 KPINB0264ED，条件同样写 (Typ. Ta=25 °C)，曲线标 S3204/S3584-09。光灵敏度温度特性图号 KPINB0093ED，条件 (Typ.)。暗电流对反向电压图号 KPINB0228EE，条件 (Typ. Ta=25 °C)，曲线标 S3204-08/-09 和 S3584-08/-09。终端电容对反向电压图号 KPINB0230EE，条件 (Typ. Ta=25 °C, f=1 MHz)，曲线标 S3584-08/-09 和 S3204-08/-09。产品页只放了光谱图和外形图。外形图题写 Dimensional outline (unit: mm)，outline 是单数。S3584-08 图号 KPINA0041ED，图上感光面写 Active area 28 × 28，并写 Resin、Photosensitive surface 和 White ceramic。S3584-09 图号 KPINA0111EA，图上感光面也写 Active area 28 × 28，并写 Photosensitive surface 和 White ceramic，文本层没有 Resin。两张图的引线都写成 0.45。外形尺寸写 35.6 +0 和 -0.8、3.4、2.54 ± 0.2、1.2、10、1.75、5.0 ± 0.2，± 是 U+00B1。末页写 Information described in this material is current as of January, 2012，January 后面有逗号。最后一行写 Cat. No. KPIN1051E10 Jan. 2012 DN。末页没有写 Created in Japan，改印销售地址，地址写 Higashi-ku。记为约 2012 年 1 月。`;
 
+const s3588Page =
+  "产品页没有写发布日期。导语写 Si PIN photodiode。页面标题和 og:title 在型号和竖线之间有一个空格。keywords 写 Si photodiodes,Si photodiodes，逗号两边没有空格，末尾没有空格。name=\"description\" 和 og:description 都写 Features-Sensitivity matching with BGO and CsI(TI) scintillators-Low capacitance-High-speed response-High stability-Good energy resolution。Features 和连字符之间没有空格，连字符后面也没有空格。型号区 class 含 Type--Migration。二级标题写在 span class=\"Txt__Limit\" 里，是一行：Large photosensitive area Si PIN photodiode，photodiode 是单数。二级标题下面是一个只含不换行空格的 p，U+00A0。没有正文段。特性五条写在同一个 p 里，Features 是粗体，后面是 br。每条另起一行，行首是连字符，后面是一个普通空格：Sensitivity matching with BGO and CsI(TI) scintillators、Low capacitance、High-speed response、High stability、Good energy resolution。CsI 和 (TI) 之间没有空格。产品页没有写应用栏。下载标 581 KB/PDF。面包屑里的 Si photodiodes 末尾没有空格。主图没有图注。";
+
+const s3588SheetLead =
+  `手册 ${s2744Sheet}。文件名是 s2744-08_etc_kpin1049e.pdf。目录号 KPIN1049E06。pdf 信息里的 Title 是 Si PIN photodiode S2744/S3588-08/-09，photodiode 是单数，-09 前面是斜杠。封面可见文本先写 Si PIN photodiode，再写 S2744/S3588-08, -09，-09 前面是逗号、空格和连字符。副题是一行：Large active area Si PIN photodiodes。产品页二级标题把 active 写成 photosensitive，并把 photodiodes 写成 photodiode。封面没有正文段。特性没有连字符：Sensitivity matching with BGO and CsI (TI) scintillators、High quantum efficiency (Unsealed type): QE=85 % (λ=540 nm)、Low capacitance、High-speed response、High stability、Good energy resolution。CsI 和 (TI) 之间有空格。百分号前面有空格。产品页把 CsI(TI) 写成没有空格，并且没有写量子效率这一条。应用写 Scintillation detectors、Hodoscopes 和 TOF counters。产品页没有应用栏。结构表窗材料 S3588-08 写 Epoxy resin，S3588-09 写 Unsealed。感光面积 3 × 30 印在这两只中间。耗尽层厚度 0.3 mm、反向电压 100 V、功耗 100 mW、工作温度 -20 to +60 °C、贮存温度 -20 to +80 °C，四只共用，° 是 U+00B0。S2744-08 和 S2744-09 已经单独成页。Note 写成 Note:，冒号后面是一个普通空格，没有 U+0007。电特性表头写 Electrical and optical characteristics (Typ. Ta=25 °C, unless otherwise noted)。光谱范围 340 to 1100、峰值 960 nm、λp 光灵敏度 0.66 A/W、暗电流典型 3 nA、最大 10 nA、暗电流温度系数 1.12 times/°C、噪声等效功率 4.7 × 10 -14，印在四只中间。表头 λ 是 U+03BB。短路电流单位 μA 的 μ 是 U+03BC。LSO 420 nm、BGO 480 nm、CsI(TI) 540 nm 写在各自那一行，表头 CsI(TI) 没有空格。S3588-08 写 0.20 A/W、0.30 A/W、0.36 A/W，短路电流 100 μA。S3588-09 写 0.22 A/W、0.33 A/W、0.41 A/W，短路电流 80 μA。截止频率表头写成 Cut-off Frequency，条件 VR=70 V。终端电容条件 f=1MHz，1 和 M 之间没有空格，另一处写 VR=70 V。截止频率 40 MHz 和终端电容 40 pF 印在 S3588-08 和 S3588-09 中间。噪声等效功率条件 VR=70 V, λ=λp，文本层在 × 两边有空格，× 是 U+00D7，指数没有写成上标。产品页 × 两边没有空格，指数写成上标，f 和 1 之间有空格。光谱图号 KPINB0265EC，条件 (Typ. Ta=25 °C)，曲线标 S2744/S3588-09 和 S2744/S3588-08。光灵敏度温度特性图号 KPINB0093ED，条件 (Typ.)。暗电流对反向电压图号 KPINB0220EB，条件 (Typ. Ta=25 °C)。终端电容对反向电压图号 KPINB0222EB，条件 (Typ. Ta=25 °C, f=1 MHz)，曲线标 S2744-08/-09 和 S3588-08/-09。产品页只放了光谱 jpg 和外形图。外形图题写 Dimensional outline (unit: mm)，outline 是单数。S3588-08 图号 KPINA0042EC，图上感光面写 Active area 3 × 30，并写 Resin surface、Photosensitive surface 和 White ceramic。灌封那句写 The potting resin may extend a maximum of 0.1 mm beyond the upper surface of the package.。S3588-09 图号 KPINA0109EA，图上感光面也写 Active area 3 × 30，文本层没有 Resin。两张图的引线文本层都写成 ȁ0.45，ȁ 是 U+0201。外形尺寸写 34.0 +0 和 -0.8、5.8 +0 和 -0.4、1.2、1.52 ± 0.2、0.45、10、1.1、2.5 ± 0.2，± 是 U+00B1。末页写 Information described in this material is current as of October, 2011，October 后面有逗号。最后一行写 Cat. No. KPIN1049E06 Oct. 2011 DN，Oct 前面是一个空格。末页没有写 Created in Japan，改印销售地址，地址写 Higashi-ku。记为约 2011 年 10 月。`;
+
 const s2833Docs01 =
   "相关文档里免责声明 Disclaimer / Opto-semiconductors 标 37 KB/PDF，表面贴装产品注意事项 Precautions / Surface mount type products 标 407 KB/PDF。选型指南 Selection guide / Si photodiodes 标 6.9 MB/PDF，技术笔记 Technical note / Si photodiodes 标 2.8 MB/PDF。";
 
@@ -1420,6 +1426,47 @@ export const siPhotodiodeProducts = [
           "产品页封装类别写成 Unsealed，对得上手册窗材料。选型指南这一行窗材料写成 None。产品页感光面积仍写成 28 × 28 mm。手册暗电流最大 30 nA 印在两只中间。产品页只写最大 30000 pA。产品页光谱图文件名对得上没有窗的那张，图号 KPINB0264ED。" +
           `${guide}第 32 页这一行窗材料写 None。感光面积、暗电流和终端电容与 S3584-08 印在中间，没有再写一遍。耗尽层、光谱范围、光灵敏度和封装仍落在 S3204-09 和 S3584-08 中间。` +
           placeS3204,
+      ]),
+    ],
+  },
+
+  {
+    id: "s3588",
+    date: "2011-10",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S3588：滨松大感光面积 Si PIN 光电二极管",
+    summary:
+      "产品页没有写发布日期。两只共用这一页。手册文件名是 s2744-08_etc_kpin1049e.pdf。pdf 信息里的 Title 是 Si PIN photodiode S2744/S3588-08/-09。末页写 Information described in this material is current as of October, 2011。最后一行写 Cat. No. KPIN1049E06 Oct. 2011 DN，记为约 2011 年 10 月。索引 newState 都是 false，是第 70 行和第 71 行。",
+    applications: [],
+    technologies: [],
+    models: [
+      page("S3588-08", "2011-10", part("S3588-08"), [
+        s3588Page +
+          "一级标题写 S3588-08。主图 src 写成 k_s3588-08_pp_xx.jpg.thumb.252.252.jpg。alt 写 Si photodiode product photo。相关产品轮播按 S2744-08、S2744-09、S3204-08、S3204-09、S3584-08、S3584-09、S3588-09 排。链接是 /us/en/product/optical-sensors/photodiodes/si-photodiodes/ 再加型号，没有 target。图注写 Si PIN photodiode 再加型号。S3204-08 的 alt 写 S3204-08 product photo，其余 alt 写 Si photodiode product photo。S2744、S3204 和 S3584 已经单独成页。",
+        "规格表感光面积 30 × 3 mm，× 是 U+00D7，两边有空格。封装 Ceramic。封装类别 --。冷却 Non-cooled。反向电压最大 100 V。光谱范围 340 to 1100 nm。峰值 960 nm。光灵敏度典型 0.66 A/W。暗电流最大 10000 pA。截止频率典型 40 MHz。终端电容典型 40 pF。噪声等效功率典型 4.7×10<sup>-14</sup> W/Hz<sup>1/2</sup>，× 两边没有空格，× 是 U+00D7。" +
+          s3584Measure +
+          "光谱图是 jpg，data-asset 写成 k_s3588-08_sr_xx,0.jpg，逗号在文件名里。目录名是 03_02_Characteristic Chart，Chart 前面有一个空格。coreimg 文件名写成小写 k-s3588-08-sr-xx%2C0.jpeg，下划线换成连字符，时间戳 1635494119595。外形图标题写 Dimensional outline (unit: mm)，outline 是单数。data-asset 写成 KPINA0042EC.svg。目录名是 03_14_new_Product_Dimensional outline_svg，Dimensional 和 outline 之间有一个空格。coreimg 文件名写成小写 kpina0042ec.svg，时间戳 1635494578408。" +
+          s2744Docs,
+        `${indexIntro}这一行是第 70 行，newState 是 false。productName 写 Si PIN photodiode。productExp 写 Large photosensitive area Si PIN photodiode，photodiode 是单数，产品页二级标题也是单数 photodiode。thumbAlt 写 Si photodiode product photo。缩略图文件名是 k_s3588-08_pp_xx.jpg。typeNameSort 写成 S03588-0008。类型的值写成 For X-ray，显示写成 For X-ray detection。感光面积的值写成 30 × 3，显示写成 30 × 3 mm。光谱范围的值写成 340 to 1100，显示才补上 nm。光灵敏度 0.66 A/W。暗电流 10000 pA。上升时间的值和显示都写成 --。截止频率的值写成 40，显示写成 40 MHz。终端电容 40 pF。噪声等效功率的值写成 4.7×10<sup>-14</sup>，× 是 U+00D7，显示补上 W/Hz<sup>1/2</sup>。封装 Ceramic，封装类别 --。冷却 Non-cooled。手册标 581 KB。索引地址 ${index}。另一只放在同一页。`,
+        s3588SheetLead +
+          "产品页感光面积写成 30 × 3 mm。手册、外形图和选型指南都写成 3 × 30。产品页暗电流只写最大 10000 pA，对得上印在四只中间的最大 10 nA，没有写典型 3 nA。产品页光灵敏度 0.66 A/W 对得上 λp，测量条件写 λ=λp。产品页截止频率 40 MHz、终端电容 40 pF 对得上印在两只中间的数。产品页封装类别写成 --。手册窗材料写 Epoxy resin。选型指南这一行窗材料也写 Epoxy resin。" +
+          `${guide}第 32 页标题写 Large-area Si PIN photodiodes。说明写 These are photosensors for high energy physics, mainly used with a scintillator being coupled. A long and narrow shape type is also available.。S3588-08 窗材料写 Epoxy resin。S3588-09 窗材料写 None。感光面积 3 × 30、暗电流 10 和终端电容 40 印在这两只中间。耗尽层厚度 0.3、光谱范围 340 to 1100、λ=960 nm 光灵敏度 0.66 和封装 Ceramic 印在 S3204-09 和 S3584-08 中间，位置在 S2744-08 到 S3588-09 这一组的中部。这一页没有截止频率栏，也没有噪声等效功率栏。页脚页码写 32 / 46。表头条件写成 (Typ.Ta=25 °C)，Typ 和 Ta 之间没有空格，° 是 U+00B0。光谱图号 KPINB0265EE，图题方括号写 S2744/S3588 series，方括号内侧各有两个 U+2005。曲线标 S2744/S3588-08 和 S2744/S3588-09。图注写 (Typ. Ta=25 ˚C)，˚ 是 U+02DA，并写 QE=100%，百分号前面没有空格。手册图号是 KPINB0265EC。同一页还有 S2744、S3204 和 S3584。这三只已经单独成页。` +
+          placeS2744,
+      ]),
+      page("S3588-09", "2011-10", part("S3588-09"), [
+        s3588Page +
+          "一级标题写 S3588-09。主图 src 写成 k_s3588-09_pp_xx.jpg.thumb.252.252.jpg。alt 写 Si photodiode product photo。name=\"description\" 和 og:description 与 S3588-08 相同。锚点比 S3588-08 多一项 Notice，排在 Specifications 前面。Notice 正文写 The chip of this product is not sealed and is exposed. 下一行写 Parts such as electrodes on the chip are not protected by an enclosure or window and so require especially strict care during handling compared to ordinary products. 再下一行写 Before using this product, always read “Precautions / Unsealed products” described below.。引号是弯引号，“ 是 U+201C，” 是 U+201D。这段 p 后面多一个 </p>。Notice 下面先列未密封产品注意事项 Precautions / Unsealed products，标 373 KB/PDF。相关产品轮播按 S2744-08、S2744-09、S3204-08、S3204-09、S3584-08、S3584-09、S3588-08 排，轮播里有 S3588-08，没有当前型号。链接同样是产品路径，没有 target。S3204-08 的 alt 写 S3204-08 product photo，其余 alt 写 Si photodiode product photo。",
+        "规格表感光面积 30 × 3 mm。封装 Ceramic。封装类别 Unsealed。冷却 Non-cooled。反向电压最大 100 V。光谱范围 340 to 1100 nm。峰值 960 nm。光灵敏度典型 0.66 A/W。暗电流最大 10000 pA。截止频率典型 40 MHz。终端电容典型 40 pF。噪声等效功率典型 4.7×10<sup>-14</sup> W/Hz<sup>1/2</sup>，× 两边没有空格。" +
+          s3584Measure +
+          "光谱图 data-asset 仍是 k_s3588-08_sr_xx,0.jpg，文件名写的是 S3588-08。coreimg 路径改到 S3588-09，文件名仍是 k-s3588-08-sr-xx%2C0.jpeg，时间戳仍是 1635494119595。外形图 data-asset 写成 kpina0109ea.svg，字母是小写。coreimg 文件名写成 kpina0109ea.svg，时间戳 1635494695192。" +
+          "相关文档在金属、陶瓷和塑料产品注意事项后面再列一次未密封产品注意事项 Precautions / Unsealed products，仍标 373 KB/PDF。" +
+          s2744Docs,
+        `${indexIntro}这一行是第 71 行，newState 是 false。productName 写 Si PIN photodiode。productExp 与 S3588-08 相同，photodiode 是单数。thumbAlt 写 Si photodiode product photo。缩略图文件名是 k_s3588-09_pp_xx.jpg。typeNameSort 写成 S03588-0009。类型的值写成 For X-ray，显示写成 For X-ray detection。感光面积的值写成 30 × 3，显示写成 30 × 3 mm。光谱范围的值写成 340 to 1100，显示才补上 nm。光灵敏度 0.66 A/W。暗电流 10000 pA。上升时间是 --。截止频率的值写成 40，显示写成 40 MHz。终端电容 40 pF。噪声等效功率的值写成 4.7×10<sup>-14</sup>，显示补上 W/Hz<sup>1/2</sup>。封装 Ceramic，封装类别 Unsealed。冷却 Non-cooled。手册标 581 KB。下一行是第 72 行，S3590-08。S3590-09、S3590-18 和 S3590-19 跟在后面，共用 s3590-08_etc_kpin1052e.pdf，是别的前缀。`,
+        s3588SheetLead +
+          "产品页封装类别写成 Unsealed，对得上手册窗材料。选型指南这一行窗材料写成 None。产品页感光面积仍写成 30 × 3 mm。手册暗电流最大 10 nA 印在四只中间。产品页只写最大 10000 pA。产品页截止频率和终端电容仍对得上印在两只中间的 40 MHz 和 40 pF。" +
+          `${guide}第 32 页这一行窗材料写 None。感光面积、暗电流和终端电容与 S3588-08 印在中间，没有再写一遍。耗尽层、光谱范围、光灵敏度和封装仍落在 S3204-09 和 S3584-08 中间。` +
+          placeS2744,
       ]),
     ],
   },
