@@ -315,6 +315,21 @@ const s3883Measure =
 const s3883SheetLead =
   `手册 ${s3071Sheet}。文件名是 s3071_etc_kpin1044e.pdf。目录号 KPIN1044E08。pdf 信息里的 Title 是空的。封面可见文本先写 Si PIN photodiodes，再写 S3071、S3072、S3399、S3883。副题是一行：Large area, high-speed Si PIN photodiodes，photodiodes 是复数。产品页把 photodiodes 写成 photodiode。正文写 The S3071, S3072, S3399 and S3883 are Si PIN photodiodes having a relatively large photosensitive area from ϕ1.5 to ϕ5.0 mm yet they offer excellent frequency response from 40 to 300 MHz. These photodiodes are suitable for FSO (free space optics) and high-speed pulsed light detection.。ϕ 是 U+03D5。FSO 和左括号之间有一个空格。产品页正文把 are 写成 is，把 they 写成 it，并写成 This photodiode，频率只写 300 MHz，FSO 和左括号之间没有空格。特性没有连字符：Photosensitive area size 下面写 S3883: ϕ1.5 mm。Cutoff frequency 下面写 S3883: 300 MHz (VR=20 V)。High reliability: TO-5/8 metal package。应用写 FSO 和 High-speed pulsed light detection。产品页没有应用栏。结构表 S3883 这一行写 (4)/K、ϕ1.5、有效感光面积 1.7 mm2。封装格没有词。TO-5 印在 S3399 这一行。反向电压 30 V 印在 S3399 和 S3883 中间。功耗 50 mW、工作温度 -40 to +100 °C、贮存温度 -55 to +125 °C 印在 S3072 和 S3399 中间，位置在四只的中部，° 是 U+00B0。S3071、S3072 和 S3399 已经单独成页。注 *1 写 Window material K=borosilicate glass，borosilicate 的 b 是小写。注 *2 写成 *2:，下一行 No 前面是 U+0007，接 condensation。Note 写成 Note:，下一行 Exceeding 前面是 U+0007。电特性表头写 Electrical and optical characteristics (Typ. Ta=25 °C, unless otherwise noted)。光谱范围 320 to 1000、峰值 840 nm、λp 光灵敏度 0.6 A/W、660 nm 的 0.45 A/W、780 nm 的 0.58 A/W、830 nm 的 0.6 A/W、暗电流温度系数 1.12 times/°C，印在 S3399 和 S3883 中间。表头 λ 是 U+03BB。短路电流单位 µA 的 µ 是 U+00B5。截止频率表头写 RL=50 Ω，Ω 是 U+2126。终端电容表头写 f=1 MHz。噪声等效功率条件 λ=λp。*5 写 VR=20 V。S3883 这一行短路电流 1.4 µA。暗电流典型 0.05 nA、最大 1.0 nA，星号数字 5 落到下一行。截止频率写成 300* 5，终端电容写成 6* 5，星号和 5 之间有空格。噪声等效功率写成 6.7 × 10-15 *5，× 是 U+00D7，指数没有写成上标，*5 前面有空格。这些数都标 *5。产品页 × 两边没有空格，指数写成上标。光谱图号 KPINB0147EB，条件 (Typ. Ta=25 °C)，曲线标 S3399, S3883 和 S3071, S3072。光灵敏度温度特性图号 KPINB0148EB，条件 (Typ.)，曲线同样标这两组。暗电流对反向电压图号 KPINB0149EA，条件 (Typ. Ta=25 °C)，曲线里有 S3883。终端电容对反向电压图号 KPINB0150EA，条件 (Typ. Ta=25 °C, f=1 MHz)，曲线里有 S3883。这四个图号在文本层里各又出现一次。产品页只放了光谱 jpg 和外形图。第 4 页外形文本层从 ensional outline (unit: mm) 写起，前面的 D 没有进文本层。另一行写 (S3883, mm)，前面一串是乱码。图题写 (3) S3399 和 (4) S3883。S3883 图号 KPINA0025ED，文本层又出现一次。图上 ɸ 是 U+0278，感光面写 ɸ1.5。窗玻璃那句写 The glass window may extend a maximum of 0.15 mm above the upper surface of the cap.。感光面中心到管帽中心写 -0.3≤X≤+0.3 和 -0.3≤Y≤+0.3。相关信息网址写 www.hamamatsu.com/sp/ssd/doc_en.html。注意事项写 ∙ Disclaimer 和 ∙ Metal, ceramic, plastic package products，∙ 是 U+2219。Catalog 下面写 ∙ Technical note / Si photodiodes。末页写 Information described in this material is current as of April, 2025，April 后面有逗号。最后一行写 Cat. No. KPIN1044E08 Apr. 2025 DN。末页没有写 Created in Japan，改印销售地址，地址写 Chuo-ku。记为约 2025 年 4 月。`;
 
+const s3994Sheet =
+  "https://www.hamamatsu.com/content/dam/hamamatsu-photonics/sites/documents/99_SALES_LIBRARY/ssd/s3994-01_kpin1057e.pdf";
+
+const s3994Page =
+  "产品页没有写发布日期。导语写 Si PIN photodiode。页面标题和 og:title 在型号和竖线之间有一个空格。keywords 写 Si photodiodes，末尾没有空格。name=\"description\" 和 og:description 都把 less 和 susceptible 接上，handling. 和 Features 接上，中间没有空格。Features 和连字符之间没有空格，连字符后面也没有空格：Features-Thin package (1.4 mm max.)-High sensitivity: 0.25 A/W typ. (λ=400 nm)-Large photosensitive area: 10 × 10 mm。λ 是 U+03BB，× 是 U+00D7。型号区 class 含 Type--Migration。二级标题写在 span class=\"Txt__Limit\" 里，是一行：Si PIN photodiode for optical power meters。二级标题下面先是一个只含不换行空格的 p，U+00A0，然后是正文段。特性三条写在另一个 p 里，这个 p 以 br 开头。Features 是粗体，后面也是 br。每条另起一行，行首是连字符，后面是一个普通空格：Thin package (1.4 mm max.)、High sensitivity: 0.25 A/W typ. (λ=400 nm)、Large photosensitive area: 10 × 10 mm。产品页没有写应用栏。下载标 286 KB/PDF。面包屑里的 Si photodiodes 末尾没有空格。主图没有图注。页面没有相关产品轮播。";
+
+const s3994Measure =
+  "规格表没有类型，没有窗材料，没有上升时间，也没有噪声等效功率。表头 Package category 的 c 是小写。测量条件写成一行：Ta=25 ℃，℃ 是 U+2103，Typ.，Photosensitivity: λ=λp，Dark current: V<sub>R</sub>==30 V，等号写成两个，Cutoff frequency: V<sub>R</sub>=30 V，Terminal capacitance: V<sub>R</sub>=30 V, f=1 MHz，unless otherwise noted。λ 是 U+03BB。f 和 1 之间有空格。";
+
+const s3994SheetLead =
+  `手册 ${s3994Sheet}。文件名是 s3994-01_kpin1057e.pdf。目录号 KPIN1057E03。pdf 信息里的 Title 是 Si PIN photodiode S3994-01。封面可见文本先写 Si PIN photodiode，再写 S3994-01。副题是一行：Si PIN photodiode for optical power meters。产品页二级标题也是这一句。正文写 The S3994-01 is a Si PIN photodiode designed for optical power meters. The flat glass used as the light input window is less susceptible to scratches than resin windows, allowing easy handling.。less 在行末，下一行才写 susceptible，中间没有连字符。特性没有连字符：Thin package (1.4 mm max.)、High sensitivity: 0.25 A/W typ. (λ=400 nm)、Large photosensitive area: 10 × 10 mm。应用写 Optical power meters。产品页没有应用栏。绝对最大额定值表头写 Absolute maximum ratings (Ta=25 °C)，没有 Typ.。反向电压 VR max 50 V。工作温度 -20 to +60 °C。贮存温度 -20 to +80 °C。° 是 U+00B0。电特性表头写 Electrical and optical characteristics (Ta=25 °C)，没有 Typ.，也没有 unless otherwise noted。光谱范围 320 to 1100 nm。峰值 960 nm。表头 λ 是 U+03BB。光灵敏度 λ=400 nm 最小 0.20 A/W、典型 0.25 A/W，λ=λp 最小 0.54 A/W、典型 0.65 A/W。暗电流条件 VR=30 V，典型 3 nA、最大 10 nA。终端电容条件 VR=30 V, f=1 MHz，典型 40 pF，1 和 M 之间有空格。截止频率条件 VR=30 V, RL=50 Ω，下一行写 -3 dB，典型 20 MHz。Ω 是 U+03A9。光谱图号 KPINB0198EA，条件 (Typ. Ta=25 °C)。暗电流对反向电压图号 KPINB0199EA，条件 (Typ. Ta=25 °C)。终端电容对反向电压图号 KPINB0200EA，条件 (Typ. Ta=25 °C)。这三个图号各只出现一次。产品页只放了光谱 jpg 和外形图。外形图题写 Dimensional outline (unit: mm)，outline 是单数。图号 KPINA0078EA。图上写 15.0 ± 0.5、11.6 ± 0.2、1.4 max.、10.0、10.5、11.0、1.0、(4.0)、(6.0)、0.7，并写 Glass、Ceramic、Resin、Lead、Photosensitive area、Photosensitive surface、Soldering、Red 和 White。± 是 U+00B1。相关信息网址没有出现。末页没有写 Created in Japan，改印销售地址，地址写 Higashi-ku。末页写 Information described in this material is current as of January, 2012，January 后面有逗号。最后一行写 Cat. No. KPIN1057E03 Jan. 2012 DN。记为约 2012 年 1 月。`;
+
+const placeS3994 =
+  "手册应用写 Optical power meters。这些句子对不上本站的应用标签，所以不放在应用下面。没有写 TOF。光谱响应是一条灵敏度曲线，不是按波段成像，所以不放在技术下面。";
+
 export const siPhotodiodeProducts = [
   {
     id: "s15152",
@@ -1593,6 +1608,33 @@ export const siPhotodiodeProducts = [
           "产品页光灵敏度写成 0.58 A/W，测量条件写 λ=780 nm，对得上印在 S3399 和 S3883 中间的 780 nm 这一列。手册 λp 是 0.6 A/W。产品页峰值写成 840 nm，光谱范围写成 320 to 1000 nm，对得上印在这两只中间的数。产品页暗电流只写最大 1000 pA，对得上这一行最大 1.0 nA，没有写典型 0.05 nA。产品页截止频率 300 MHz、终端电容 6 pF 对得上这一行，条件是 *5，VR=20 V。产品页反向电压最大 30 V，对得上印在 S3399 和 S3883 中间的 30 V。产品页封装类别写成 TO-5。手册结构表的 TO-5 印在 S3399 这一行，S3883 的封装格没有词。手册特性写 TO-5/8 metal package。产品页特性写成 TO-5 metal package。产品页外形图文件名是 k_s3883_do_xx,0.jpg。手册图号是 KPINA0025ED。" +
           `${guide}第 16 页标题写 High-speed response Si PIN photodiodes。小标题写 100 MHz to less than 1 GHz。说明写 These Si PIN photodiodes have a large photosensitive area (ϕ0.79 to ϕ3 mm) yet deliver excellent frequency response characteristics.。S3883 这一行感光面积 ϕ1.5，ϕ 是 U+03D5。截止频率的数字 300 和终端电容 6 印在 S3399 和 S3883 中间。条件 (VR=20 V) 印在 S3883 这一行，截止频率和终端电容各有一处。λ=660 nm 的 0.45、λ=780 nm 的 0.58 和封装 TO-5 印在 S3399 和 S3883 中间。这一页没有暗电流栏，也没有峰值栏。页脚页码写 16 / 46。表头条件写成 (Typ. Ta=25 °C)，° 是 U+00B0。图题方括号写 S5971, S5972, S3399, S3883, S13337-01，方括号内侧各有两个 U+2005。曲线标 S3399, S3883。图号 KPINB0316EE。图注写 QE=100%，百分号前面没有空格。手册图号是 KPINB0147EB。同一页还有 S5971、S5972、S3399、S10783、S10784、S11062-35GT 和 S13337-01。S3399 已经单独成页。其余是别的前缀，没有放进这一页。` +
           placeS3071,
+      ]),
+    ],
+  },
+
+  {
+    id: "s3994-01",
+    date: "2012-01",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S3994-01：滨松光功率计用 Si PIN 光电二极管",
+    summary:
+      "产品页没有写发布日期。手册文件名是 s3994-01_kpin1057e.pdf。pdf 信息里的 Title 是 Si PIN photodiode S3994-01。末页写 Information described in this material is current as of January, 2012。最后一行写 Cat. No. KPIN1057E03 Jan. 2012 DN，记为约 2012 年 1 月。索引 newState 是 false，是第 77 行。",
+    applications: [],
+    technologies: [],
+    models: [
+      page("S3994-01", "2012-01", part("S3994-01"), [
+        s3994Page +
+          "一级标题写 S3994-01。主图 src 写成 k_s3994-01_pp_xx.jpg.thumb.252.252.jpg。alt 写 Si photodiode product photo。正文写 The S3994-01 is a Si PIN photodiode designed for optical power meters. The flat glass used as the light input window is less susceptible to scratches than resin windows, allowing easy handling.。less 和 susceptible 之间有一个空格。可见特性三条是 Thin package (1.4 mm max.)、High sensitivity: 0.25 A/W typ. (λ=400 nm)、Large photosensitive area: 10 × 10 mm。λ 是 U+03BB。× 是 U+00D7。",
+        "规格表感光面积 10 × 10 mm，× 是 U+00D7。封装 Ceramic。封装类别 --。冷却 Non-cooled。反向电压最大 50 V。光谱范围 320 to 1100 nm。峰值 960 nm。光灵敏度典型 0.65 A/W。暗电流最大 10000 pA。截止频率典型 20 MHz。终端电容典型 40 pF。" +
+          s3994Measure +
+          "光谱图是 jpg，data-asset 写成 k_s3994-01_sr_xx,0.jpg，逗号在文件名里。目录名是 03_02_Characteristic Chart，Chart 前面有一个空格。coreimg 文件名写成小写 k-s3994-01-sr-xx%2C0.jpeg，下划线换成连字符，时间戳 1635494121436。外形图标题写 Dimensional outline (unit: mm)，outline 是单数。data-asset 写成 k_s3994-01_do_xx,0.jpg，逗号和 0 在文件名里。目录名是 03_03_Dimensional Outline，Outline 的 O 是大写，Dimensional 和 Outline 之间有一个空格。coreimg 文件名写成小写 k-s3994-01-do-xx%2C0.jpeg，时间戳 1635494286456。" +
+          s1226Docs,
+        `${indexIntro}这一行是第 77 行，newState 是 false。productName 写 Si PIN photodiode。productExp 写 Si PIN photodiode for optical power meters。产品页二级标题也是这一句。thumbAlt 写 Si photodiode product photo。缩略图文件名是 k_s3994-01_pp_xx.jpg。typeNameSort 写成 S03994-0001。类型的值和显示都写成 --。感光面积的值写成 10 × 10，显示写成 10 × 10 mm，× 是 U+00D7。光谱范围的值写成 320 to 1100，显示才补上 nm。光灵敏度 0.65 A/W。暗电流 10000 pA。上升时间的值和显示都写成 --。截止频率的值写成 20，显示写成 20 MHz。终端电容 40 pF。噪声等效功率的值和显示都写成 --。封装 Ceramic，封装类别 --。冷却 Non-cooled。手册标 286 KB。索引地址 ${index}。下一行是第 78 行，S4011-06DS。它和 S5627-01、S4797-01、S2833-01、S6931-01 共用 s5627-01_etc_kspd1025e.pdf。S2833-01 已经单独成页。S4011-06DS 是别的前缀。`,
+        s3994SheetLead +
+          "产品页光灵敏度写成 0.65 A/W，测量条件写 λ=λp，对得上手册 λ=λp 典型 0.65 A/W。手册 λ=400 nm 最小 0.20 A/W、典型 0.25 A/W。产品页特性写 0.25 A/W typ. (λ=400 nm)，规格表没有写这一列。产品页暗电流只写最大 10000 pA，对得上手册最大 10 nA，没有写典型 3 nA。产品页截止频率 20 MHz、终端电容 40 pF 对得上，条件是 VR=30 V。手册截止频率还写 RL=50 Ω 和 -3 dB。产品页反向电压最大 50 V，对得上 VR max 50 V。产品页封装写成 Ceramic，封装类别 --。手册外形图标 Ceramic，没有单独的封装表。产品页外形图文件名是 k_s3994-01_do_xx,0.jpg。手册图号是 KPINA0078EA。" +
+          `${guide}第 36 页标题写 Special application Si photodiodes。小标题写 Violet and blue sensitivity enhanced type。说明分成三行：These are photodiodes、for violet and blue laser、diode detection.。S3994-01 这一行截止频率 20，条件 (VR=30 V)。感光面积 10 × 10，× 是 U+00D7，两边有空格。峰值 960。光灵敏度 0.25，条件 (λ=400 nm)。暗电流最大 10，条件 (VR=30 V)。终端电容 40，条件 (VR=30 V)。表头终端电容写 f=1 MHz，1 和 M 之间有空格。封装 Ceramic。表头条件写成 (Typ. Ta=25 °C)，° 是 U+00B0。页脚页码写 36 / 46。图题方括号写 S3994-01，方括号内侧各有两个 U+2005。图注写 (Typ. Ta=25 ˚C)，˚ 是 U+02DA，并写 QE=100%，百分号前面没有空格。图号 KPINB0198EB。手册图号是 KPINB0198EA。同一页还有 S5973-02 和 S9195。S5973-02 的感光面积写成 ϕ0.4，ϕ 是 U+03D5。S9195 的感光面积写成 5×5，× 两边没有空格。这两只的图题方括号写 S5973-02, S9195，方括号内侧各有两个 U+2005。图号 KSPDB0425EA。S5973-02 索引是第 92 行，手册是 s5971_etc_kpin1025e.pdf。S9195 索引是第 123 行，手册是 s9195_kpin1068e.pdf。两只都是别的前缀，没有放进这一页。` +
+          placeS3994,
       ]),
     ],
   },
