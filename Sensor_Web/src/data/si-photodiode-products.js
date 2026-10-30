@@ -339,6 +339,21 @@ const s3994SheetLead =
 const placeS3994 =
   "手册应用写 Optical power meters。这些句子对不上本站的应用标签，所以不放在应用下面。没有写 TOF。光谱响应是一条灵敏度曲线，不是按波段成像，所以不放在技术下面。";
 
+const s4707Sheet =
+  "https://www.hamamatsu.com/content/dam/hamamatsu-photonics/sites/documents/99_SALES_LIBRARY/ssd/s4707-01_kpin1070e.pdf";
+
+const s4707Page =
+  "产品页没有写发布日期。导语写 Si PIN photodiode。页面标题和 og:title 在型号和竖线之间有一个空格。keywords 写 Si photodiodes，末尾没有空格。name=\"description\" 和 og:description 都写 Features-Clear plastic package: 4.5 × 5.5 mm-4-pin DIP type-Photosensitive area: 2.4 × 2.8 mm。Features 和连字符之间没有空格，连字符后面也没有空格。× 是 U+00D7，两边有空格。型号区 class 含 Type--Migration。二级标题写在 span class=\"Txt__Limit\" 里，是一行：Si PIN photodiode for general photometry。二级标题下面是一个只含不换行空格的 p，U+00A0。没有正文段。特性三条写在同一个 p 里，Features 是粗体，后面是 br。每条另起一行，行首是连字符，后面是一个普通空格：Clear plastic package: 4.5 × 5.5 mm、4-pin DIP type、Photosensitive area: 2.4 × 2.8 mm。产品页没有写应用栏。下载标 377 KB/PDF。面包屑里的 Si photodiodes 末尾没有空格。当前面包屑的 aria-label 写 Si PIN photodiode S4707-01。主图 alt 写 Si photodiode product photo。没有图注。相关产品这一块是空的，class 是 JS__Load--ContentsRelated1 State--Hide，没有列型号。";
+
+const s4707Measure =
+  "规格表没有类型，没有窗材料，没有上升时间，也没有噪声等效功率。表头 Package category 的 c 是小写。测量条件写成一行：Typ. Ta=25 ℃，℃ 是 U+2103，Photosensitivity: λ=960 nm，λ 是 U+03BB，冒号后面有一个空格，Dark current: V<sub>R</sub>=10 V，Cutoff frequency: V<sub>R</sub>=10 V，Terminal capacitance: V<sub>R</sub>=10 V, f=1 MHz，unless otherwise noted。1 和 M 之间有空格。";
+
+const s4707SheetLead =
+  `手册 ${s4707Sheet}。文件名是 s4707-01_kpin1070e.pdf。目录号 KPIN1070E03。pdf 信息里的 Title 是 Si PIN photodiode S4707-01。封面可见文本先写 Si PIN photodiode，再写 S4707-01。副题是一行：Si PIN photodiode for general photometry。产品页二级标题也是这一句。封面没有正文段。特性没有连字符：Clear plastic package: 4.5 × 5.5 mm、4-pin DIP type、Active area: 2.35 × 2.75 mm。× 是 U+00D7，两边有空格。产品页把 Active area 写成 Photosensitive area，并把 2.35 × 2.75 mm 写成 2.4 × 2.8 mm。应用写 Optical switch, etc.。产品页没有应用栏。绝对最大额定值表头写 Absolute maximum ratings (Ta=25 °C)，没有 Typ.。反向电压 VR max 20 V。工作温度 -25 to +85 °C。贮存温度 -40 to +100 °C。° 是 U+00B0。Note 写成 Note:，冒号后面是一个普通空格，再接 U+0007，然后接 Exceeding the absolute maximum ratings even momentarily may cause a drop in product quality. Always be sure to use the product within the absolute maximum ratings.。电特性表头写 Electrical and optical characteristics (Ta=25 °C)，没有 Typ.，也没有 unless otherwise noted。光谱范围 320 to 1100 nm。峰值 960 nm。表头 λ 是 U+03BB。光灵敏度条件 λ=λp，最小 0.5 A/W，典型 0.6 A/W。短路电流条件 100 lx, 2856 K，典型 6.6 µA，µ 是 U+00B5。暗电流条件 VR=10 V，典型 0.08 nA，最大 5 nA。截止频率条件分成两行：VR=10 V, RL=50 Ω，下一行写 -3 dB, λ=780 nm，典型 20 MHz。Ω 是 U+2126。终端电容条件 VR=10 V, f=1 MHz，典型 14 pF，最大 30 pF，1 和 M 之间有空格。光谱图题写 Spectral response，图号 KPINB0299EB，文本层出现两次。条件 (Typ. Ta=25 °C)。图上写 QE=100%，百分号前面没有空格。暗电流对反向电压图题写 Dark current vs. reverse voltage，图号 KPINB0300EB，文本层另有一处写成 KPINB0。条件 (Typ. Ta=25 °C)。终端电容对反向电压图题写 Terminal capacitance vs. reverse voltage，图号 KPINB0301EB，文本层出现两次。同一页还写 Terminal capacitance vs. reverse voltage (S4707-01)。条件 (Typ. Ta=25 °C)。产品页只放了光谱 jpg 和外形图。外形图题写 Dimensional outline (unit: mm)，outline 是单数。图号 KPINA0099EC，文本层出现两次。文本层还有一行写成 tline (S4707-01, unit: mm)。图上写 4.6 ± 0.2，旁边写 (Including burr)，I 是大写。另一处写 5.6 ± 0.2，旁边写 (including burr)，i 是小写。还写 5.4*、5.5*、4.5*、5.75 ± 0.2、2.54、0.7、1.0、2.0、(2 ×) 10°、(2 ×) 3°、(2 ×) 5°、(4 ×) 0.5、(4 ×) 0.6、(4 ×) 0.25、(4 ×) 7.5 ± 5° 和 (4 ×) 4.5 ± 0.4。± 是 U+00B1。图上写 Photosensitive surface、Anode、Cathode、NC，Cathode 写了两次。公差写 Tolerance unless otherwise noted: ±0.1, ±2°。下一行写 Shaded area indicates burr.。位置精度写 Chip position accuracy with respect to the package dimensions marked *，下一行写 X, Y≤±0.2, θ≤±2°。≤ 是 U+2264，θ 是 U+03B8。相关信息网址写 www.hamamatsu.com/sp/ssd/doc_en.html。注意事项写 ∙ Disclaimer 和 ∙ Precautions / Metal, ceramic, plastic package products，∙ 是 U+2219。Catalogs 下面写 ∙ Technical note / Si photodiodes。末页写 Information described in this material is current as of April 2026，April 后面没有逗号。右侧写 Cat. No. KPIN1070E03，下一行写 Apr. 2026 DN，再下一行写 Created in Japan。末页还写 Visit our website for product and contact information. 和 www.hamamatsu.com。记为约 2026 年 4 月。`;
+
+const placeS4707 =
+  "手册应用写 Optical switch, etc.。这些句子对不上本站的应用标签，所以不放在应用下面。没有写 TOF。光谱响应是一条灵敏度曲线，不是按波段成像，所以不放在技术下面。";
+
 export const siPhotodiodeProducts = [
   {
     id: "s15152",
@@ -1671,6 +1686,33 @@ export const siPhotodiodeProducts = [
           "产品页感光面积写成 1.3 × 1.3 mm，对得上结构表这一行。产品页上升时间写成 0.5 μs，终端电容写成 200 pF，对得上电特性表印在 S4011-06DS 这一行的 0.5 µs 和 200 pF。产品页峰值 960 nm、光灵敏度 0.58 A/W、暗电流 10 pA 印在 S2833-01 这一行，没有印在 S4011-06DS 这一行。产品页光谱范围写成 320 to 1100 nm。手册 320 to 印在 S2833-04 和 S2833-01 中间，1100 印在 S2833-01 和 S4011-06DS 中间。产品页没有写短路电流 1.9 µA，也没有写分流电阻典型 250 GΩ。产品页反向电压最大 10 V，对得上印在六只中间的 10 V。产品页封装写成 Plastic，封装类别 --。手册把 Surface mount type 印在 S2833-01 和 S4011-06DS 中间。产品页外形图文件名是 KSPDA0163ED.svg。手册图号是 KSPDA0163ED。" +
           `${guide}第 14 页小标题写 For visible to near IR range。说明写 These photodiodes have sensitivity in the visible to near infrared range.。S4011-06DS 这一行只写感光面积 1.3 × 1.3，× 是 U+00D7。光谱范围、峰值、光灵敏度和暗电流没有印在这一行。下一行 S1787-08 写 320 to 1100、峰值 960、λ=λp 的 0.58、暗电流 10 和 Plastic。S1787 已经单独成页，没有放进这一页。页脚页码写 14 / 46。图题一行写 S4011-06DS, S1787-08, S2833-01/-04，下一行写 S16765-01MS, S16838-02MS, S16840-02MS。图注写 (Typ. Ta=25 ˚C)，˚ 是 U+02DA，并写 QE=100%，百分号前面没有空格。图号 KSPDB0279EH 印在这一带上方。另一处图题写 S4011-06DS, S1787-08, S2833-01/-04，图号 KSPDB0286EF。手册图号是 KSPDB0129EE。同一页上方图题方括号写 S1787-12, S4797-01，方括号内侧各有两个 U+2005。S2833 已经单独成页。S4797-01、S16765-01MS、S16838-02MS 和 S16840-02MS 是别的前缀，没有放进这一页。` +
           placeS2833,
+      ]),
+    ],
+  },
+
+  {
+    id: "s4707-01",
+    date: "2026-04",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S4707-01：滨松普通测光用 Si PIN 光电二极管",
+    summary:
+      "产品页没有写发布日期。手册文件名是 s4707-01_kpin1070e.pdf。pdf 信息里的 Title 是 Si PIN photodiode S4707-01。末页写 Information described in this material is current as of April 2026。右侧写 Cat. No. KPIN1070E03，下一行写 Apr. 2026 DN，再写 Created in Japan，记为约 2026 年 4 月。索引 newState 是 false，是第 79 行。",
+    applications: [],
+    technologies: [],
+    models: [
+      page("S4707-01", "2026-04", part("S4707-01"), [
+        s4707Page +
+          "一级标题写 S4707-01。二级标题写在 span class=\"Txt__Limit\" 里，是一行：Si PIN photodiode for general photometry。主图 src 写成 k_s4707-01_pp_xx.jpg.thumb.252.252.jpg。",
+        "规格表感光面积 2.4 × 2.8 mm，× 是 U+00D7，两边有空格。封装 Plastic。封装类别 --。冷却 Non-cooled。反向电压最大 20 V。光谱范围 320 to 1100 nm。峰值 960 nm。光灵敏度典型 0.6 A/W。暗电流最大 5000 pA。截止频率典型 20 MHz。终端电容典型 14 pF。" +
+          s4707Measure +
+          "光谱图是 jpg，img 没有 alt。data-asset 写成 k_s4707-01_sr_xx,0.jpg，逗号在文件名里。目录名是 03_02_Characteristic Chart，Chart 前面有一个空格。coreimg 文件名写成小写 k-s4707-01-sr-xx%2C0.jpeg，下划线换成连字符，时间戳 1635494122473。外形图标题写 Dimensional outline (unit: mm)，outline 是单数。img 没有 alt。data-asset 写成 KPINA0099.svg。目录名是 03_14_new_Product_Dimensional outline_svg，Dimensional 和 outline 之间有一个空格。coreimg 文件名写成小写 kpina0099.svg，时间戳 1775810270480。" +
+          s1226Docs,
+        `${indexIntro}这一行是第 79 行，newState 是 false。productName 写 Si PIN photodiode。productExp 写 Si PIN photodiode for general photometry。产品页二级标题也是这一句。thumbAlt 写 Si photodiode product photo。缩略图文件名是 k_s4707-01_pp_xx.jpg。typeNameSort 写成 S04707-0001。类型的值和显示都写成 --。感光面积的值写成 2.4 × 2.8，显示写成 2.4 × 2.8 mm，× 是 U+00D7。光谱范围的值写成 320 to 1100，显示才补上 nm。光灵敏度 0.6 A/W。暗电流 5000 pA。上升时间的值和显示都写成 --。截止频率的值写成 20，显示写成 20 MHz。终端电容 14 pF。噪声等效功率的值和显示都写成 --。封装 Plastic，封装类别 --。冷却 Non-cooled。手册标 377 KB。索引地址 ${index}。下一行是第 80 行，S4797-01。它和 S5627-01、S2833-01、S6931-01、S4011-06DS 共用 s5627-01_etc_kspd1025e.pdf。S2833 和 S4011-06DS 已经单独成页。S4797-01 是别的前缀。`,
+        s4707SheetLead +
+          "产品页光灵敏度写成 0.6 A/W，测量条件写 λ=960 nm。手册条件写 λ=λp，最小 0.5 A/W，典型 0.6 A/W。产品页没有写最小 0.5 A/W，也没有写短路电流 6.6 µA。产品页暗电流只写最大 5000 pA，对得上手册最大 5 nA，没有写典型 0.08 nA。产品页截止频率 20 MHz、终端电容 14 pF 对得上典型值。手册截止频率还写 RL=50 Ω、-3 dB 和 λ=780 nm。手册终端电容还有最大 30 pF。产品页反向电压最大 20 V，对得上 VR max 20 V。产品页封装写成 Plastic，封装类别 --。手册特性写 Clear plastic package 和 4-pin DIP type，没有单独的封装表。产品页特性写 Photosensitive area: 2.4 × 2.8 mm。手册特性写 Active area: 2.35 × 2.75 mm。产品页外形图文件名是 KPINA0099.svg。手册图号是 KPINA0099EC。" +
+          `${guide}第 17 页标题写 High-speed response Si PIN photodiodes。小标题写 Cutoff frequency，下一行写 10 MHz to less than 100 MHz。说明写 A wide variety of types are provided including a low-cost plastic package type and a visible-cut type.。S4707-01 这一行感光面积 2.4 × 2.8，× 是 U+00D7。λ=660 nm 写 0.4，λ=780 nm 写 0.48。截止频率 20，条件 (VR=10 V)。终端电容 14，条件也是 (VR=10 V)。封装 Plastic。这一页没有暗电流栏，也没有峰值栏。页脚页码写 17 / 46。表头终端电容写 f=1 MHz，1 和 M 之间有空格。图题方括号写 S4707-01, S2506 series，方括号内侧各有两个 U+2005。图注写 (Typ. Ta=25 ˚C)，˚ 是 U+02DA。曲线标 S4707-01。图上写 QE=100%，百分号前面没有空格。图号 KPINB0354EC。手册图号是 KPINB0299EB。同一页还有 S6775、S6967、S8385、S8729 和 S2506。S2506 已经单独成页。其余是别的前缀，没有放进这一页。` +
+          placeS4707,
       ]),
     ],
   },
