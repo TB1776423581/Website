@@ -288,6 +288,27 @@ const s3399Measure =
 const s3399SheetLead =
   `手册 ${s3071Sheet}。文件名是 s3071_etc_kpin1044e.pdf。目录号 KPIN1044E08。pdf 信息里的 Title 是空的。封面可见文本先写 Si PIN photodiodes，再写 S3071、S3072、S3399、S3883。副题是一行：Large area, high-speed Si PIN photodiodes，photodiodes 是复数。产品页把 photodiodes 写成 photodiode。正文写 The S3071, S3072, S3399 and S3883 are Si PIN photodiodes having a relatively large photosensitive area from ϕ1.5 to ϕ5.0 mm yet they offer excellent frequency response from 40 to 300 MHz. These photodiodes are suitable for FSO (free space optics) and high-speed pulsed light detection.。ϕ 是 U+03D5。FSO 和左括号之间有一个空格。产品页正文把 are 写成 is，把 they 写成 it，并写成 This photodiode，频率只写 100 MHz，FSO 和左括号之间没有空格。特性没有连字符：Photosensitive area size 下面写 S3399: ϕ3.0 mm。Cutoff frequency 下面写 S3399: 100 MHz (VR=10 V)。High reliability: TO-5/8 metal package。应用写 FSO 和 High-speed pulsed light detection。产品页没有应用栏。结构表 S3399 这一行写 (3)/K、TO-5、ϕ3.0、有效感光面积 7.0 mm2。反向电压 30 V 印在 S3399 和 S3883 中间。功耗 50 mW、工作温度 -40 to +100 °C、贮存温度 -55 to +125 °C 印在 S3072 和 S3399 中间，位置在四只的中部，° 是 U+00B0。S3071 和 S3072 已经单独成页。S3883 是别的前缀，索引是第 76 行，没有放进这一页。注 *1 写 Window material K=borosilicate glass，borosilicate 的 b 是小写。注 *2 写成 *2:，下一行 No 前面是 U+0007，接 condensation。Note 写成 Note:，下一行 Exceeding 前面是 U+0007。电特性表头写 Electrical and optical characteristics (Typ. Ta=25 °C, unless otherwise noted)。光谱范围 320 to 1000、峰值 840 nm、λp 光灵敏度 0.6 A/W、660 nm 的 0.45 A/W、780 nm 的 0.58 A/W、830 nm 的 0.6 A/W、暗电流温度系数 1.12 times/°C，印在 S3399 和 S3883 中间。表头 λ 是 U+03BB。短路电流单位 µA 的 µ 是 U+00B5。截止频率表头写 RL=50 Ω，Ω 是 U+2126。终端电容表头写 f=1 MHz。噪声等效功率条件 λ=λp。*4 写 VR=10 V，R 落在下一行。S3399 这一行短路电流 5.6 µA，暗电流典型 0.1 nA、最大 1.0 nA，截止频率 100 MHz，终端电容 20 pF，噪声等效功率 9.4 × 10-15，这些数都标 *4。噪声等效功率文本层在 × 两边有空格，× 是 U+00D7，指数没有写成上标。产品页 × 两边没有空格，指数写成上标。光谱图号 KPINB0147EB，条件 (Typ. Ta=25 °C)，曲线标 S3399, S3883 和 S3071, S3072。光灵敏度温度特性图号 KPINB0148EB。暗电流对反向电压图号 KPINB0149EA。终端电容对反向电压图号 KPINB0150EA，条件 (Typ. Ta=25 °C, f=1 MHz)。这四个图号在文本层里各又出现一次。产品页只放了光谱 jpg 和外形图。第 4 页外形文本层从 ensional outline (unit: mm) 写起，前面的 D 没有进文本层。另一行写 (S3883, mm)，前面一串是乱码。图题写 (3) S3399 和 (4) S3883。S3399 图号 KPINA0026ED，文本层又出现一次。图上 ɸ 是 U+0278，感光面写 ɸ3.0。窗玻璃那句写 The glass window may extend a maximum of 0.15 mm above the upper surface of the cap.。感光面中心到管帽中心写 -0.3≤X≤+0.3 和 -0.3≤Y≤+0.3。S3883 图号 KPINA0025ED，没有放进这一页。相关信息网址写 www.hamamatsu.com/sp/ssd/doc_en.html。注意事项写 ∙ Disclaimer 和 ∙ Metal, ceramic, plastic package products，∙ 是 U+2219。Catalog 下面写 ∙ Technical note / Si photodiodes。末页写 Information described in this material is current as of April, 2025，April 后面有逗号。最后一行写 Cat. No. KPIN1044E08 Apr. 2025 DN。末页没有写 Created in Japan，改印销售地址，地址写 Chuo-ku。记为约 2025 年 4 月。`;
 
+const s3590Sheet =
+  "https://www.hamamatsu.com/content/dam/hamamatsu-photonics/sites/documents/99_SALES_LIBRARY/ssd/s3590-08_etc_kpin1052e.pdf";
+
+const s3590Page =
+  "产品页没有写发布日期。导语写 Si PIN photodiode。页面标题和 og:title 在型号和竖线之间有一个空格。keywords 写 Si photodiodes,Si photodiodes，逗号两边没有空格，末尾没有空格。型号区 class 含 Type--Migration。二级标题写在 span class=\"Txt__Limit\" 里，是一行：Large photosensitive area Si PIN photodiode，photodiode 是单数。二级标题下面是一个只含不换行空格的 p，U+00A0。没有正文段。特性写在同一个 p 里，Features 是粗体，后面是 br。每条另起一行，行首是连字符，后面是一个普通空格。产品页没有写应用栏。下载标 561 KB/PDF。面包屑里的 Si photodiodes 末尾没有空格。主图没有图注。";
+
+const s3590Measure =
+  "规格表没有类型，没有窗材料，也没有上升时间。表头 Package category 的 c 是小写。测量条件写成一行，没有 br：Ta=25 ℃，℃ 是 U+2103，Typ.，Photosensitivity: λ=λp，Dark current: V<sub>R</sub>=70 V，Cutoff frequency: V<sub>R</sub>=70 V，Terminal capacitance: V<sub>R</sub>=70 V, f=1 MHz，Noise equivalent power: V<sub>R</sub>=70 V，unless otherwise noted。λ 是 U+03BB。f 和 1 之间有空格。";
+
+const s3590SheetLead =
+  `手册 ${s3590Sheet}。文件名是 s3590-08_etc_kpin1052e.pdf。目录号 KPIN1052E12。pdf 信息里的 Title 是 Si PIN photodiodes S3590 series，photodiodes 是复数。封面可见文本先写 Si PIN photodiodes，再写 S3590 series。副题是一行：Large area Si PIN photodiodes。产品页二级标题在 area 前面加上 photosensitive，并把 photodiodes 写成 photodiode。封面没有正文段。特性行首是 U+0007：Sensitivity suitable for BGO and CsI(Tl) scintillators:，下一行写 S3590-08/-09。再一个 U+0007：Sensitivity suitable for blue scintillator (LSO, GSO, etc.):，下一行写 S3590-18/-19。下一行没有 U+0007，写 Bare chip type (unsealed): S3590-09/-19。High quantum efficiency: 后面是 U+0007，换行再写 S3590-09 (λ=540 nm) 和 S3590-19 (λ=400 nm)。后面四条没有 U+0007：Low capacitance、High-speed response、High stability、Good energy resolution。CsI(Tl) 的 l 是小写拉丁字母。产品页把 suitable 写成 matching，并把 CsI(TI) 的 I 写成大写。应用写 Scintillation detection、Hodoscopes、TOF counters、Radiation detection 和 X-ray detection。产品页没有应用栏。结构表窗材料 S3590-08 和 S3590-18 写 Epoxy resin，S3590-09 和 S3590-19 写 Unsealed。感光面积 10 × 10、耗尽层厚度 0.3 mm、反向电压 100 V、功耗 100 mW、工作温度 -20 to +60 °C、贮存温度 -20 to +80 °C，四只共用，° 是 U+00B0。反向电压表头写成 VR max，V 和 R 之间没有空格。注写成 *，星号后面是一个空格，然后是 U+0007，换行再写 No dew condensation。后面两句写 When there is a temperature difference between a product and the surrounding area in high humidity environments, dew condensation may occur on the product surface. Dew condensation may cause deterioration in characteristics and reliability.。Note 写成 Note:，冒号后面是一个空格，然后是 U+0007，换行再写 Exceeding。电特性表头写 Electrical and optical characteristics (Typ. Ta=25 °C, unless otherwise noted)。文本层在 Photosensitivity 后面单独落一个 S。表头光灵敏度写成 λ=λp、λ=420 nm、λ=480 nm、λ=540 nm，没有写 LSO、BGO 或 CsI。表头 λ 是 U+03BB。短路电流单位 µA 的 µ 是 U+00B5，条件 100 lx。暗电流温度系数的符号写成 ΔTID，Δ 是 U+0394。截止频率表头写成 Cutoff Frequency，F 是大写。终端电容表头写成 f=1MHz，1 和 M 之间没有空格，另一处写 VR=70 V。光谱范围 340 to 1100、峰值 960 nm、暗电流温度系数 1.12 times/°C、截止频率 40 MHz、终端电容 40 pF，四只共用，印在这一组中部。λp 光灵敏度 0.66 A/W、暗电流典型 2 nA、最大 6 nA、噪声等效功率 3.8 × 10-14，印在 S3590-08 和 S3590-09 中间。S3590-08 写 420 nm 0.20 A/W、480 nm 0.30 A/W、540 nm 0.36 A/W，短路电流 100 µA。S3590-09 写 0.22 A/W、0.33 A/W、0.41 A/W，短路电流 90 µA。S3590-18 这一行 λp 写 0.65 A/W，420 nm 0.28 A/W、480 nm 0.34 A/W、540 nm 0.38 A/W，短路电流 100 µA。暗电流典型 4 nA、最大 10 nA、噪声等效功率 7.6 × 10-14，印在 S3590-18 和 S3590-19 中间。S3590-19 这一行 λp 写 0.58 A/W，420 nm 0.33 A/W、480 nm 0.37 A/W、540 nm 0.4 A/W，短路电流 86 µA。噪声等效功率文本层在 × 两边有空格，× 是 U+00D7，指数没有写成上标。产品页 × 两边没有空格，指数写成上标，f 和 1 之间有空格。光谱图 S3590-08 图号 KPINB0231EC，条件 (Typ. Ta=25 °C)，QE=100%，百分号前面没有空格，文本层把这个图号又印了一次。S3590-09 图号 KPINB0263EC，QE=100 %，百分号前面有空格，文本层另有一处写成 KPINB0263E，少最后一个 C。S3590-18 图号 KPINB0223EC，QE=100 %，文本层又印了一次。S3590-19 图号 KPINB0224EC，QE=100 %，文本层另有一处只剩 KPINB0。四张图都标 Bare chip type 的是 -09 和 -19。光灵敏度温度特性图号 KPINB0093EE，条件 (Typ.)，文本层又印了一次。暗电流对反向电压图号 KPINB0232EE，条件 (Typ. Ta=25 °C)，曲线标 S3590-08/-09 和 S3590-18/-19，文本层另有一处写成 KPINB0232E。终端电容对反向电压图号 KPINB0234EE，条件 (Typ. Ta=25 °C, f=1 MHz)，曲线标 S3590-08/-09 和 S3590-18/-19，文本层又印了一次。产品页只放了光谱 jpg 和外形图。外形图先写 Dimensional outlines (unit: mm)，outlines 是复数，各只图题用单数 outline。S3590-08/-18 图号 KPINA0014EI，文本层又印了一次，图上感光面写 Photosensitive area 10 × 10，并写 Resin、Photosensitive surface、White ceramic 和 Lead。灌封那句写 The coating resin may extend a maximum of 0.1 mm beyond the upper surface of the package.。S3590-09/-19 图号 KPINA0098EG，图上感光面也写 Photosensitive area 10 × 10，并写 Photosensitive surface、White ceramic 和 Lead，文本层没有 Resin，也没有 coating resin 那句。文本层另有一处只剩 KPI。两张图的尺寸都写 14.5 +0 和 -0.5、12.7 +0 和 -0.5、1.4、1.78 ± 0.2、0.7、0.45、10、5.0 ± 0.2、1.25，± 是 U+00B1。相关信息网址写 www.hamamatsu.com/sp/ssd/doc_en.html。注意事项写 ∙ Disclaimer、∙ Metal, ceramic, plastic package products 和 ∙ Unsealed products，技术笔记写 ∙ Si photodiodes，∙ 是 U+2219。末页写 Information described in this material is current as of July 2023，July 后面没有逗号。最后一行写 Cat. No. KPIN1052E12 Jul. 2023 DN。末页没有写 Created in Japan，改印销售地址，地址写 Higashi-ku。记为约 2023 年 7 月。`;
+
+const s3590Guide =
+  `${guide}第 31 页标题写 Large-area Si PIN photodiodes。说明写 These are photosensors for high energy physics, mainly used with a scintillator being coupled.The S3590-18/19 are violet sensitivity enhanced type and the S3590-19 is an unsealed type.The S8650 is a type in which the epoxy resin surface is processed flat to improve coupling with the scintillator.。coupled. 和 The 之间没有空格，type. 和 The 之间也没有空格。文本层在 For X-ray detection 下面单独写 1 和 2。表头条件写成 (Typ.Ta=25 °C)，Typ 和 Ta 之间没有空格，° 是 U+00B0。S3590-08 窗材料写 Epoxy resin。S3590-09 窗材料写 None。S3590-18 窗材料写 Epoxy resin。S3590-19 窗材料写 None。感光面积 10 × 10、耗尽层厚度 0.3、光谱范围 340 to 1100、终端电容 40 和封装 Ceramic 印在这一组中部，落在 S3590-18 这一行。λ=960 nm 的 0.66 和暗电流 6 印在 S3590-08 和 S3590-09 中间。S3590-18 这一行 λ=960 nm 写 0.65。暗电流 10 印在 S3590-18 和 S3590-19 中间。S3590-19 这一行 λ=960 nm 写 0.58。S8650 这一行另写 0.66 和 6。这一页没有截止频率栏，也没有噪声等效功率栏。终端电容表头写成 VR=70V，70 和 V 之间没有空格，f=1 MHz，1 和 M 之间有空格。暗电流表头写成 VR=70 V，有空格。页脚页码写 31 / 46。光谱图号 KSPDB0424EA，图题方括号写 S3590-08, S3590-09, S8650，方括号内侧各有两个 U+2005。曲线标 S3590-09 和 S3590-08, S8650。另一张图号 KPINB0322EC，图题方括号写 S3590-18/-19，方括号内侧各有两个 U+2005。曲线标 S3590-18 和 S3590-19。两张图注都写 (Typ. Ta=25 ˚C)，˚ 是 U+02DA，并写 QE=100%，百分号前面没有空格。手册图号是 KPINB0231EC、KPINB0263EC、KPINB0223EC 和 KPINB0224EC。同一页还有 S8650，索引是第 113 行，手册是 s8650_kpin1061e.pdf，是别的前缀，没有放进这一页。`;
+
+const placeS3590 =
+  "手册应用写 Scintillation detection、Hodoscopes、TOF counters、Radiation detection 和 X-ray detection。这些句子对不上本站的应用标签，所以不放在应用下面。TOF counters 没有写成测量物体远近，也没有写 iTOF 或 dTOF，所以不放在技术下面。光谱响应是一条灵敏度曲线，不是按波段成像，所以不放在技术下面。";
+
+const s3590Notice =
+  "锚点比 S3590-08 多一项 Notice，排在 Specifications 前面。Notice 正文写 The chip of this product is not sealed and is exposed. 下一行写 Parts such as electrodes on the chip are not protected by an enclosure or window and so require especially strict care during handling compared to ordinary products. 再下一行写 Before using this product, always read “Precautions / Unsealed products” described below.。引号是弯引号，“ 是 U+201C，” 是 U+201D。这段 p 后面多一个 </p>。Notice 下面先列未密封产品注意事项 Precautions / Unsealed products，标 373 KB/PDF。";
+
 export const siPhotodiodeProducts = [
   {
     id: "s15152",
@@ -1467,6 +1488,78 @@ export const siPhotodiodeProducts = [
           "产品页封装类别写成 Unsealed，对得上手册窗材料。选型指南这一行窗材料写成 None。产品页感光面积仍写成 30 × 3 mm。手册暗电流最大 10 nA 印在四只中间。产品页只写最大 10000 pA。产品页截止频率和终端电容仍对得上印在两只中间的 40 MHz 和 40 pF。" +
           `${guide}第 32 页这一行窗材料写 None。感光面积、暗电流和终端电容与 S3588-08 印在中间，没有再写一遍。耗尽层、光谱范围、光灵敏度和封装仍落在 S3204-09 和 S3584-08 中间。` +
           placeS2744,
+      ]),
+    ],
+  },
+
+  {
+    id: "s3590",
+    date: "2023-07",
+    companyId: "hamamatsu",
+    category: "product",
+    title: "S3590：滨松大感光面积 Si PIN 光电二极管",
+    summary:
+      "产品页没有写发布日期。四只共用这一页。手册文件名是 s3590-08_etc_kpin1052e.pdf。pdf 信息里的 Title 是 Si PIN photodiodes S3590 series。末页写 Information described in this material is current as of July 2023。最后一行写 Cat. No. KPIN1052E12 Jul. 2023 DN，记为约 2023 年 7 月。索引 newState 都是 false，是第 72 行到第 75 行。",
+    applications: [],
+    technologies: [],
+    models: [
+      page("S3590-08", "2023-07", part("S3590-08"), [
+        s3590Page +
+          "name=\"description\" 和 og:description 都写 Features-Low capacitance-High-speed response-High stability-Good energy resolution-Sensitivity matching with BGO and CsI(TI) scintillators。Features 和连字符之间没有空格，连字符后面也没有空格。可见特性五条是 Low capacitance、High-speed response、High stability、Good energy resolution、Sensitivity matching with BGO and CsI(TI) scintillators。CsI(TI) 的 I 是大写。一级标题写 S3590-08。主图 src 写成 k_s3590-08_s3590-18_pp_xx.jpg.thumb.252.252.jpg。alt 写 Si photodiode product photo。相关产品轮播按 S3590-09、S3590-18、S3590-19、S8650 排。链接是 /us/en/product/optical-sensors/photodiodes/si-photodiodes/ 再加型号，没有 target。图注写 Si PIN photodiode 再加型号。前三只 alt 写 Si photodiode product photo。S8650 的 alt 写 S8650 product photo。S8650 是别的前缀，没有放进这一页。",
+        "规格表感光面积 10 × 10 mm，× 是 U+00D7，两边有空格。封装 Ceramic。封装类别 --。冷却 Non-cooled。反向电压最大 100 V。光谱范围 340 to 1100 nm。峰值 960 nm。光灵敏度典型 0.66 A/W。暗电流最大 6000 pA。截止频率典型 40 MHz。终端电容典型 40 pF。噪声等效功率典型 3.8×10<sup>-14</sup> W/Hz<sup>1/2</sup>，× 两边没有空格，× 是 U+00D7。" +
+          s3590Measure +
+          "光谱图是 jpg，data-asset 写成 k_s3590-08_sr_xx,0.jpg，逗号在文件名里。目录名是 03_02_Characteristic Chart，Chart 前面有一个空格。coreimg 文件名写成小写 k-s3590-08-sr-xx%2C0.jpeg，下划线换成连字符，时间戳 1635494119835。外形图标题写 Dimensional outline (unit: mm)，outline 是单数。data-asset 写成 KPINA0014EG,0.svg，逗号和 0 在文件名里。目录名是 03_14_new_Product_Dimensional outline_svg，Dimensional 和 outline 之间有一个空格。coreimg 文件名写成小写 kpina0014eg%2C0.svg，时间戳 1635494542347。" +
+          s2744Docs,
+        `${indexIntro}这一行是第 72 行，newState 是 false。productName 写 Si PIN photodiode。productExp 写 Large photosensitive area Si PIN photodiode，photodiode 是单数，产品页二级标题也是单数 photodiode。thumbAlt 写 Si photodiode product photo。缩略图文件名是 k_s3590-08_s3590-18_pp_xx.jpg。typeNameSort 写成 S03590-0008。类型的值写成 For X-ray，显示写成 For X-ray detection。感光面积的值写成 10 × 10，显示写成 10 × 10 mm。光谱范围的值写成 340 to 1100，显示才补上 nm。光灵敏度 0.66 A/W。暗电流 6000 pA。上升时间的值和显示都写成 --。截止频率的值写成 40，显示写成 40 MHz。终端电容 40 pF。噪声等效功率的值写成 3.8×10<sup>-14</sup>，× 是 U+00D7，显示补上 W/Hz<sup>1/2</sup>。封装 Ceramic，封装类别 --。冷却 Non-cooled。手册标 561 KB。索引地址 ${index}。另外三只放在同一页。`,
+        s3590SheetLead +
+          "产品页感光面积写成 10 × 10 mm，对得上手册和选型指南。产品页暗电流只写最大 6000 pA，对得上印在 S3590-08 和 S3590-09 中间的最大 6 nA，没有写典型 2 nA。产品页光灵敏度 0.66 A/W 对得上 λp，测量条件写 λ=λp。选型指南 λ=960 nm 这一列也写 0.66。产品页截止频率 40 MHz、终端电容 40 pF 对得上四只共用的数。产品页封装类别写成 --。手册窗材料写 Epoxy resin。选型指南这一行窗材料也写 Epoxy resin。产品页外形图文件名是 KPINA0014EG,0.svg。手册图号是 KPINA0014EI。" +
+          s3590Guide +
+          placeS3590,
+      ]),
+      page("S3590-09", "2023-07", part("S3590-09"), [
+        s3590Page +
+          "name=\"description\" 和 og:description 都写 Features-Sensitivity matching with BGO and CsI(TI) scintillators-Bare chip type (unsealed)-High quantum efficiency-Low capacitance-High-speed response-High stability-Good energy resolution。Features 和连字符之间没有空格，连字符后面也没有空格。可见特性七条按这个顺序写，CsI(TI) 的 I 是大写。一级标题写 S3590-09。主图 src 写成 k_s3590-09_s3590-19_pp_xx.jpg.thumb.252.252.jpg。alt 写 Si photodiode product photo。" +
+          s3590Notice +
+          "相关产品轮播按 S3590-08、S3590-18、S3590-19、S8650 排，轮播里有 S3590-08，没有当前型号。链接同样是产品路径，没有 target。前三只 alt 写 Si photodiode product photo。S8650 的 alt 写 S8650 product photo。",
+        "规格表感光面积 10 × 10 mm。封装 Ceramic。封装类别 Unsealed。冷却 Non-cooled。反向电压最大 100 V。光谱范围 340 to 1100 nm。峰值 960 nm。光灵敏度典型 0.66 A/W。暗电流最大 6000 pA。截止频率典型 40 MHz。终端电容典型 40 pF。噪声等效功率典型 3.8×10<sup>-14</sup> W/Hz<sup>1/2</sup>，× 两边没有空格。" +
+          s3590Measure +
+          "光谱图是 jpg，data-asset 写成 k_s3590-09_sr_xx,0.jpg。目录名仍是 03_02_Characteristic Chart。coreimg 文件名写成 k-s3590-09-sr-xx%2C0.jpeg，时间戳 1635494120087。外形图 data-asset 写成 KPINA0098EE.svg，字母是大写，没有逗号。coreimg 文件名写成 kpina0098ee.svg，时间戳 1635494542595。" +
+          "相关文档在金属、陶瓷和塑料产品注意事项后面再列一次未密封产品注意事项 Precautions / Unsealed products，仍标 373 KB/PDF。" +
+          s2744Docs,
+        `${indexIntro}这一行是第 73 行，newState 是 false。productName 写 Si PIN photodiode。productExp 与 S3590-08 相同，photodiode 是单数。thumbAlt 写 Si photodiode product photo。缩略图文件名是 k_s3590-09_s3590-19_pp_xx.jpg。typeNameSort 写成 S03590-0009。类型的值写成 For X-ray，显示写成 For X-ray detection。感光面积的值写成 10 × 10，显示写成 10 × 10 mm。光谱范围的值写成 340 to 1100，显示才补上 nm。光灵敏度 0.66 A/W。暗电流 6000 pA。上升时间是 --。截止频率的值写成 40，显示写成 40 MHz。终端电容 40 pF。噪声等效功率的值写成 3.8×10<sup>-14</sup>，显示补上 W/Hz<sup>1/2</sup>。封装 Ceramic，封装类别 Unsealed。冷却 Non-cooled。手册标 561 KB。`,
+        s3590SheetLead +
+          "产品页封装类别写成 Unsealed，对得上手册窗材料。选型指南这一行窗材料写成 None。产品页感光面积仍写成 10 × 10 mm。手册暗电流最大 6 nA 印在 S3590-08 和 S3590-09 中间。产品页只写最大 6000 pA。产品页光灵敏度仍是 0.66 A/W。产品页外形图文件名是 KPINA0098EE.svg。手册图号是 KPINA0098EG。" +
+          `${guide}第 31 页这一行窗材料写 None。λ=960 nm 的 0.66 和暗电流 6 与 S3590-08 印在中间，没有再写一遍。感光面积、耗尽层、光谱范围、终端电容和封装仍落在 S3590-18 这一行。` +
+          placeS3590,
+      ]),
+      page("S3590-18", "2023-07", part("S3590-18"), [
+        s3590Page +
+          "name=\"description\" 和 og:description 都写 Features-Sensitivity matching with blue scintillator (LSO, GSO, etc.)-Low capacitance-High-speed response-High stability-Good energy resolution。Features 和连字符之间没有空格，连字符后面也没有空格。可见特性五条按这个顺序写。一级标题写 S3590-18。主图 src 写成 k_s3590-08_s3590-18_pp_xx.jpg.thumb.252.252.jpg，文件名同时写了 S3590-08。alt 写 Si photodiode product photo。相关产品轮播按 S3590-08、S3590-09、S3590-19、S8650 排。链接同样是产品路径，没有 target。前三只 alt 写 Si photodiode product photo。S8650 的 alt 写 S8650 product photo。",
+        "规格表感光面积 10 × 10 mm。封装 Ceramic。封装类别 --。冷却 Non-cooled。反向电压最大 100 V。光谱范围 340 to 1100 nm。峰值 960 nm。光灵敏度典型 0.65 A/W。暗电流最大 10000 pA。截止频率典型 40 MHz。终端电容典型 40 pF。噪声等效功率典型 7.6×10<sup>-14</sup> W/Hz<sup>1/2</sup>，× 两边没有空格。" +
+          s3590Measure +
+          "光谱图是 jpg，data-asset 写成 k_s3590-18_sr_xx,0.jpg。coreimg 文件名写成 k-s3590-18-sr-xx%2C0.jpeg，时间戳 1635494120382。外形图 data-asset 仍是 KPINA0014EG,0.svg，和 S3590-08 同一个文件，时间戳仍是 1635494542347。" +
+          s2744Docs,
+        `${indexIntro}这一行是第 74 行，newState 是 false。productName 写 Si PIN photodiode。productExp 与 S3590-08 相同，photodiode 是单数。thumbAlt 写 Si photodiode product photo。缩略图文件名是 k_s3590-08_s3590-18_pp_xx.jpg，和 S3590-08 相同。typeNameSort 写成 S03590-0018。类型的值写成 For X-ray，显示写成 For X-ray detection。感光面积的值写成 10 × 10，显示写成 10 × 10 mm。光谱范围的值写成 340 to 1100，显示才补上 nm。光灵敏度 0.65 A/W。暗电流 10000 pA。上升时间是 --。截止频率的值写成 40，显示写成 40 MHz。终端电容 40 pF。噪声等效功率的值写成 7.6×10<sup>-14</sup>，显示补上 W/Hz<sup>1/2</sup>。封装 Ceramic，封装类别 --。冷却 Non-cooled。手册标 561 KB。`,
+        s3590SheetLead +
+          "产品页光灵敏度写成 0.65 A/W，对得上这一行的 λp。选型指南 λ=960 nm 这一列也写 0.65。产品页暗电流只写最大 10000 pA，对得上印在 S3590-18 和 S3590-19 中间的最大 10 nA，没有写典型 4 nA。产品页封装类别写成 --。手册窗材料写 Epoxy resin。选型指南这一行窗材料也写 Epoxy resin。产品页外形图仍是 KPINA0014EG,0.svg。手册把 S3590-08 和 S3590-18 画在 KPINA0014EI 上。" +
+          `${guide}第 31 页说明把 S3590-18/19 写成 violet sensitivity enhanced type。这一行窗材料写 Epoxy resin。λ=960 nm 写 0.65。暗电流 10 与 S3590-19 印在中间。感光面积、耗尽层、光谱范围、终端电容和封装落在这一行。` +
+          placeS3590,
+      ]),
+      page("S3590-19", "2023-07", part("S3590-19"), [
+        s3590Page +
+          "name=\"description\" 和 og:description 都写 Features-Sensitivity matching with blue scintillator (LSO, GSO, etc.)-Bare chip type (unsealed)-High quantum efficiency-Low capacitance-High-speed response-High stability-Good energy resolution。Features 和连字符之间没有空格，连字符后面也没有空格。可见特性七条按这个顺序写。一级标题写 S3590-19。主图 src 写成 k_s3590-09_s3590-19_pp_xx.jpg.thumb.252.252.jpg，文件名同时写了 S3590-09。alt 写 Si photodiode product photo。" +
+          s3590Notice +
+          "相关产品轮播按 S3590-08、S3590-09、S3590-18、S8650 排，轮播里有前三只，没有当前型号。链接同样是产品路径，没有 target。前三只 alt 写 Si photodiode product photo。S8650 的 alt 写 S8650 product photo。",
+        "规格表感光面积 10 × 10 mm。封装 Ceramic。封装类别 Unsealed。冷却 Non-cooled。反向电压最大 100 V。光谱范围 340 to 1100 nm。峰值 960 nm。光灵敏度典型 0.58 A/W。暗电流最大 10000 pA。截止频率典型 40 MHz。终端电容典型 40 pF。噪声等效功率典型 7.6×10<sup>-14</sup> W/Hz<sup>1/2</sup>，× 两边没有空格。" +
+          s3590Measure +
+          "光谱图是 jpg，data-asset 写成 k_s3590-19_sr_xx,0.jpg。coreimg 文件名写成 k-s3590-19-sr-xx%2C0.jpeg，时间戳 1635494120617。外形图 data-asset 仍是 KPINA0098EE.svg，和 S3590-09 同一个文件，时间戳仍是 1635494542595。" +
+          "相关文档在金属、陶瓷和塑料产品注意事项后面再列一次未密封产品注意事项 Precautions / Unsealed products，仍标 373 KB/PDF。" +
+          s2744Docs,
+        `${indexIntro}这一行是第 75 行，newState 是 false。productName 写 Si PIN photodiode。productExp 与 S3590-08 相同，photodiode 是单数。thumbAlt 写 Si photodiode product photo。缩略图文件名是 k_s3590-09_s3590-19_pp_xx.jpg，和 S3590-09 相同。typeNameSort 写成 S03590-0019。类型的值写成 For X-ray，显示写成 For X-ray detection。感光面积的值写成 10 × 10，显示写成 10 × 10 mm。光谱范围的值写成 340 to 1100，显示才补上 nm。光灵敏度 0.58 A/W。暗电流 10000 pA。上升时间是 --。截止频率的值写成 40，显示写成 40 MHz。终端电容 40 pF。噪声等效功率的值写成 7.6×10<sup>-14</sup>，显示补上 W/Hz<sup>1/2</sup>。封装 Ceramic，封装类别 Unsealed。冷却 Non-cooled。手册标 561 KB。下一行是第 76 行，S3883。它和 S3071、S3072、S3399 共用 s3071_etc_kpin1044e.pdf。那三只已经单独成页。S3883 是别的前缀。`,
+        s3590SheetLead +
+          "产品页封装类别写成 Unsealed，对得上手册窗材料。选型指南这一行窗材料写成 None。选型指南说明只把 S3590-19 写成 unsealed type，没有在这句里写 S3590-09。产品页光灵敏度写成 0.58 A/W，对得上这一行的 λp。选型指南 λ=960 nm 这一列也写 0.58。产品页暗电流只写最大 10000 pA。手册最大 10 nA 印在 S3590-18 和 S3590-19 中间。产品页外形图仍是 KPINA0098EE.svg。手册把 S3590-09 和 S3590-19 画在 KPINA0098EG 上。" +
+          `${guide}第 31 页这一行窗材料写 None。λ=960 nm 写 0.58。暗电流 10 与 S3590-18 印在中间，没有再写一遍。感光面积、耗尽层、光谱范围、终端电容和封装仍落在 S3590-18 这一行。` +
+          placeS3590,
       ]),
     ],
   },
